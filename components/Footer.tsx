@@ -39,6 +39,11 @@ export default function Footer() {
                   Rooster
                 </Link>
               </li>
+              <li>
+                <Link href="/hyrox" className="hover:text-cinnabar transition-colors">
+                  HYROX Simulation
+                </Link>
+              </li>
             </ul>
           </div>
 

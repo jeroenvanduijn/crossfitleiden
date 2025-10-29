@@ -11,6 +11,7 @@ export default function Header() {
     { name: "Over ons", href: "/over-ons" },
     { name: "Aanbod", href: "/aanbod" },
     { name: "Rooster", href: "/rooster" },
+    { name: "HYROX", href: "/hyrox" },
     { name: "Tarieven", href: "/tarieven" },
     { name: "Contact", href: "/contact" },
   ];
