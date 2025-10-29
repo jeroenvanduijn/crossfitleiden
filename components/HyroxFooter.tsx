@@ -1,70 +1,46 @@
 import Link from "next/link";
 
-export default function Footer() {
+export default function HyroxFooter() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
-          <div className="col-span-1">
-            <h3 className="text-white text-xl font-heading font-bold mb-4">
-              CrossFit Leiden
+          <div>
+            <h3 className="text-white text-xl font-bold mb-2">
+              HYROX Simulation
             </h3>
+            <p className="text-sm text-gray-400 mb-4">
+              CrossFit Leiden Event
+            </p>
             <p className="text-sm text-gray-400 italic">
               Everyday people, exceptionally strong
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Event Info */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Navigatie</h4>
-            <ul className="space-y-2">
+            <h4 className="text-white font-semibold mb-4">Event</h4>
+            <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-cinnabar transition-colors">
-                  Home
+                <a href="#over" className="hover:text-cinnabar transition-colors">
+                  Over HYROX Simulation
+                </a>
+              </li>
+              <li>
+                <a href="#waarom" className="hover:text-cinnabar transition-colors">
+                  Waarom Meedoen
+                </a>
+              </li>
+              <li>
+                <Link href="/hyrox/heats" className="hover:text-cinnabar transition-colors">
+                  Heats & Uitslagen
                 </Link>
               </li>
               <li>
-                <Link href="/over-ons" className="hover:text-cinnabar transition-colors">
-                  Over ons
-                </Link>
-              </li>
-              <li>
-                <Link href="/aanbod" className="hover:text-cinnabar transition-colors">
-                  Aanbod
-                </Link>
-              </li>
-              <li>
-                <Link href="/rooster" className="hover:text-cinnabar transition-colors">
-                  Rooster
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* More Links */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Info</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/starten" className="hover:text-cinnabar transition-colors">
-                  Starten
-                </Link>
-              </li>
-              <li>
-                <Link href="/ervaringen" className="hover:text-cinnabar transition-colors">
-                  Ervaringen
-                </Link>
-              </li>
-              <li>
-                <Link href="/tarieven" className="hover:text-cinnabar transition-colors">
-                  Tarieven
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-cinnabar transition-colors">
-                  Contact
-                </Link>
+                <a href="#inschrijven" className="hover:text-cinnabar transition-colors">
+                  Inschrijven
+                </a>
               </li>
             </ul>
           </div>
@@ -73,6 +49,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm">
+              <li>CrossFit Leiden</li>
               <li>Rooseveltstraat 49C</li>
               <li>2321 BL Leiden</li>
               <li className="pt-2">
@@ -115,9 +92,23 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} CrossFit Leiden. Alle rechten voorbehouden.</p>
+        {/* Divider */}
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-gray-400">
+              &copy; {new Date().getFullYear()} CrossFit Leiden. Alle rechten voorbehouden.
+            </p>
+
+            {/* Link back to main site */}
+            <a
+              href="https://crossfitleiden.com"
+              className="text-sm text-gray-400 hover:text-cinnabar transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bezoek CrossFit Leiden →
+            </a>
+          </div>
         </div>
       </div>
     </footer>

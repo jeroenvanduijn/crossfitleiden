@@ -6,7 +6,30 @@
   "framework": "nextjs",
   "git": {
     "deploymentEnabled": {
-      "claude/create-web-app-011CUaHgrMQMuXwQF1McEAhv": true
+      "claude/create-web-app-011CUaHgrMQMuXwQF1McEAhv": true,
+      "claude/hyrox-simulation-website-011CUb5vVfhT1Zm6eNWcYC6n": true
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/hyrox/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "hyrox.crossfitleiden.com"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "destination": "/hyrox",
+      "has": [
+        {
+          "type": "host",
+          "value": "hyrox.crossfitleiden.com"
+        }
+      ]
+    }
+  ]
 }

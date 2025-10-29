@@ -77,7 +77,7 @@ export default function HyroxPage() {
       </section>
 
       {/* Waarom Meedoen Section */}
-      <section className="section-padding bg-white">
+      <section id="waarom" className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -132,7 +132,7 @@ export default function HyroxPage() {
       </section>
 
       {/* Event Info Section */}
-      <section className="section-padding bg-gray-50">
+      <section id="over" className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
