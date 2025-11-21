@@ -1,92 +1,125 @@
 import Link from "next/link";
+import CTA from "@/components/CTA";
 
 export default function UnlockMotion() {
   return (
     <>
+      {/* 1. Mini Hero */}
       <section className="bg-gradient-to-r from-verdigris to-teal-600 text-white section-padding">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Unlock Motion Programma 🧘</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Unlock Motion</h1>
           <p className="text-xl max-w-2xl">
-            Mobiliteit, flexibiliteit en bewegingskwaliteit. Beweeg beter, presteer sterker en voorkom blessures.
+            Beweeg vrijer, pijnvrij en met meer gemak. Voor iedereen die zich stijf voelt.
           </p>
         </div>
       </section>
 
+      {/* 2. Wat is dit? */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Wat is Unlock Motion?</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Unlock Motion is ons gespecialiseerde programma gericht op mobiliteit, flexibiliteit en bewegingskwaliteit.
-              Perfect voor mensen met stijfheid, pijn of blessures, maar ook voor atleten die hun bewegingspatronen willen verbeteren.
+              Voel je je vaak stijf na een dag achter de computer? Heb je last van je rug of schouders? 
+              Unlock Motion is speciaal ontwikkeld om je weer soepel te laten bewegen.
             </p>
             <p className="text-lg text-gray-700">
-              Door gerichte mobility work, stretching en corrective exercises leer je je lichaam beter te bewegen,
-              waardoor je sterker wordt én minder kans op blessures hebt.
+              In deze lessen werken we aan mobiliteit, flexibiliteit en balans. Geen zware gewichten, 
+              maar rustige, gecontroleerde bewegingen die je gewrichten "smeren" en je spieren losmaken. 
+              Het is de perfecte aanvulling op CrossFit, maar ook geweldig als op zichzelf staande training.
             </p>
           </div>
         </div>
       </section>
 
+      {/* 3. Voor wie? */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Programma Opbouw</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
-              <div className="text-4xl mb-4">🔍</div>
-              <h3 className="text-xl font-bold mb-3">Movement Assessments</h3>
-              <p className="text-gray-700">We analyseren je bewegingspatronen en identificeren beperkingen</p>
-            </div>
-            <div className="bg-white rounded-xl p-6">
-              <div className="text-4xl mb-4">🧘</div>
-              <h3 className="text-xl font-bold mb-3">Mobility Sessies</h3>
-              <p className="text-gray-700">Gerichte oefeningen voor gewrichtsmobiliteit en flexibiliteit</p>
-            </div>
-            <div className="bg-white rounded-xl p-6">
-              <div className="text-4xl mb-4">🔧</div>
-              <h3 className="text-xl font-bold mb-3">Corrective Exercises</h3>
-              <p className="text-gray-700">Oefeningen om bewegingspatronen te corrigeren en pijn te verminderen</p>
-            </div>
-            <div className="bg-white rounded-xl p-6">
-              <div className="text-4xl mb-4">🌟</div>
-              <h3 className="text-xl font-bold mb-3">Yoga & Stretching</h3>
-              <p className="text-gray-700">Elementen van yoga voor ontspanning en flexibiliteit</p>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-center">Voor wie is dit?</h2>
+            <div className="space-y-4">
+              <div className="bg-white rounded-lg p-6 flex items-start gap-4">
+                <div className="w-8 h-8 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">Kantoorwerkers</h3>
+                  <p className="text-gray-700">Compenseer het vele zitten en maak je heupen en rug weer los.</p>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 flex items-start gap-4">
+                <div className="w-8 h-8 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">Sporters</h3>
+                  <p className="text-gray-700">Verbeter je mobiliteit voor betere prestaties en minder blessures.</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 flex items-start gap-4">
+                <div className="w-8 h-8 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">Mensen met lichte klachten</h3>
+                  <p className="text-gray-700">Verminder stijfheid en leer bewegen zonder pijn.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* 5. Hoe werkt het? */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">Voor wie?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-verdigris/5 rounded-lg p-4">
-                <p className="text-gray-700">✅ Mensen met chronische pijn of stijfheid</p>
+          <h2 className="text-3xl font-bold mb-12 text-center">Wat doen we in de les?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-verdigris/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🧘</span>
               </div>
-              <div className="bg-verdigris/5 rounded-lg p-4">
-                <p className="text-gray-700">✅ Herstel van blessures</p>
+              <h3 className="font-bold text-lg mb-2">Stretchen</h3>
+              <p className="text-gray-700 mt-2">Actief en passief rekken om je spieren te verlengen.</p>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-verdigris/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🔄</span>
               </div>
-              <div className="bg-verdigris/5 rounded-lg p-4">
-                <p className="text-gray-700">✅ Ouderen die mobiel willen blijven</p>
+              <h3 className="font-bold text-lg mb-2">Mobiliteit</h3>
+              <p className="text-gray-700 mt-2">Oefeningen om de bewegingsvrijheid van je gewrichten te vergroten.</p>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-verdigris/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">⚖️</span>
               </div>
-              <div className="bg-verdigris/5 rounded-lg p-4">
-                <p className="text-gray-700">✅ Atleten die performance willen verbeteren</p>
-              </div>
+              <h3 className="font-bold text-lg mb-2">Balans & Controle</h3>
+              <p className="text-gray-700 mt-2">Leer je lichaam beter beheersen voor een betere houding.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* 9. CTA */}
       <section className="section-padding bg-verdigris text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Start met Unlock Motion</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Voel het verschil</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Kom langs voor een gratis proefles of movement assessment.
+            Kom een keer meedoen en ervaar hoe fijn het is om soepel te bewegen.
           </p>
-          <Link href="/starten" className="bg-white text-verdigris px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
-            Plan Proefles
-          </Link>
+          <CTA variant="primary-intro-alt2">
+            Plan Gratis Proefles
+          </CTA>
         </div>
       </section>
     </>

@@ -1,86 +1,92 @@
 import Link from "next/link";
+import CTA from "@/components/CTA";
 
 export default function Aanbod() {
   const services = [
     {
       icon: "🏋️",
-      title: "CrossFit Groepslessen",
-      description: "Onze kern: gevarieerde, uitdagende WOD's (Workouts of the Day) voor alle niveaus.",
+      title: "Groepslessen",
+      description: "Train samen op jouw niveau. Gevarieerd, effectief en altijd onder begeleiding.",
       features: [
-        "60 minuten intensieve training",
-        "Maximaal 12 personen per groep",
-        "Persoonlijke aandacht van coaches",
-        "Scaling opties voor elk niveau",
-        "Multiple tijden per dag"
-      ]
+        "60 minuten training",
+        "Max 12 personen",
+        "Altijd een coach erbij",
+        "Voor elk niveau"
+      ],
+      link: "/aanbod/groepslessen"
     },
     {
       icon: "🎯",
-      title: "Beginners Programma",
-      description: "Nieuw met CrossFit? Geen zorgen – we begeleiden je vanaf dag één.",
+      title: "Beginners",
+      description: "Nieuw met fitness? Geen zorgen. We leren je de basis in een rustige omgeving.",
       features: [
-        "Extra aandacht aan techniek en veiligheid",
-        "Maandelijkse introductieles voor beginners",
-        "Rustige sfeer om de basics te leren",
-        "Direct instappen mogelijk"
-      ]
+        "Veilig starten",
+        "Extra aandacht techniek",
+        "Geen ervaring nodig",
+        "Stap voor stap"
+      ],
+      link: "/starten"
     },
     {
       icon: "👤",
-      title: "Personal Training",
-      description: "Wil je 1-op-1 begeleiding of specifieke aandacht voor jouw doelen?",
+      title: "Private Coaching",
+      description: "1-op-1 begeleiding voor specifieke doelen of extra aandacht.",
       features: [
-        "Persoonlijke coaching op afspraak",
-        "Focus op jouw specifieke doelen",
-        "Techniek verfijning",
-        "Extra motivatie en begeleiding"
-      ]
+        "100% persoonlijke aandacht",
+        "Eigen schema",
+        "Flexibel inplannen",
+        "Sneller resultaat"
+      ],
+      link: "/aanbod/private-coaching"
     },
     {
       icon: "🍎",
-      title: "Voedingsadvies",
-      description: "Gezond eten is het halve werk – wij helpen je op weg.",
+      title: "Nutrition",
+      description: "Gezond eten zonder ingewikkelde diëten. Praktisch en haalbaar.",
       features: [
-        "Persoonlijk voedingsadvies",
-        "Tips voor drukke ouders",
-        "Praktische meal planning",
-        "Begeleiding bij lifestyle verandering"
-      ]
+        "Geen streng dieet",
+        "Tips voor drukke levens",
+        "Gezonde gewoontes",
+        "Blijvend resultaat"
+      ],
+      link: "/nutrition"
     }
   ];
 
   return (
     <>
-      {/* Hero */}
+      {/* 1. Hero */}
       <section className="bg-gradient-to-r from-verdigris to-verdigris/80 text-white section-padding">
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Ons Aanbod</h1>
           <p className="text-xl max-w-2xl">
-            Onze trainingen zijn gevarieerd, uitdagend en altijd aanpasbaar. Of je nu een doorgewinterde
-            sporter bent of net begint – bij elke WOD vind je jouw niveau.
+            Of je nu net begint of al jaren traint – wij hebben een programma dat bij jou past.
+            Veilig, effectief en altijd onder begeleiding.
           </p>
         </div>
       </section>
 
-      {/* Intro */}
+      {/* 2. Intro */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Hoe wil jij trainen?</h2>
             <p className="text-lg text-gray-700">
-              We trainen in kleine groepen met veel persoonlijke aandacht, zodat iedereen veilig en
-              effectief kan meedoen. De oefeningen zijn functioneel en helpen om sterker te worden
-              in het dagelijks leven.
+              Bij CrossFit Leiden geloven we in maatwerk. Iedereen is anders, en elk leven is anders.
+              Daarom bieden we verschillende manieren om fit te worden. Kies wat bij jou past.
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {services.map((service, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-700 mb-6">{service.description}</p>
-                <ul className="space-y-2">
+              <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all border border-gray-100 flex flex-col">
+                <div className="flex items-center mb-4">
+                  <div className="text-4xl mr-4">{service.icon}</div>
+                  <h3 className="text-2xl font-bold">{service.title}</h3>
+                </div>
+                <p className="text-gray-700 mb-6 flex-grow">{service.description}</p>
+                <ul className="space-y-3 mb-8">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,92 +96,84 @@ export default function Aanbod() {
                     </li>
                   ))}
                 </ul>
+                <Link href={service.link} className="text-verdigris font-semibold hover:underline mt-auto flex items-center">
+                  Meer informatie <span className="ml-1">→</span>
+                </Link>
               </div>
             ))}
           </div>
+          
+          {/* Other Programs List */}
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold mb-6 text-center">Speciale Programma's</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <Link href="/aanbod/hyrox" className="bg-white border border-gray-200 p-4 rounded-lg hover:border-cinnabar hover:shadow-md transition-all text-center">
+                <span className="block font-bold mb-1">Hyrox</span>
+                <span className="text-sm text-gray-600">Fitness racing voor iedereen</span>
+              </Link>
+              <Link href="/aanbod/getshredded" className="bg-white border border-gray-200 p-4 rounded-lg hover:border-cinnabar hover:shadow-md transition-all text-center">
+                <span className="block font-bold mb-1">GetShredded</span>
+                <span className="text-sm text-gray-600">8-weeks transformatie programma</span>
+              </Link>
+              <Link href="/aanbod/unlock-motion" className="bg-white border border-gray-200 p-4 rounded-lg hover:border-cinnabar hover:shadow-md transition-all text-center">
+                <span className="block font-bold mb-1">Unlock Motion</span>
+                <span className="text-sm text-gray-600">Mobiliteit & pijnvrij bewegen</span>
+              </Link>
+              <Link href="/aanbod/pre-teens" className="bg-white border border-gray-200 p-4 rounded-lg hover:border-cinnabar hover:shadow-md transition-all text-center">
+                <span className="block font-bold mb-1">Pre-teens (8-12j)</span>
+                <span className="text-sm text-gray-600">Spelenderwijs fit worden</span>
+              </Link>
+              <Link href="/aanbod/teens" className="bg-white border border-gray-200 p-4 rounded-lg hover:border-cinnabar hover:shadow-md transition-all text-center">
+                <span className="block font-bold mb-1">Teens (13-17j)</span>
+                <span className="text-sm text-gray-600">Sterk & zelfverzekerd</span>
+              </Link>
+              <Link href="/aanbod/sports-performance" className="bg-white border border-gray-200 p-4 rounded-lg hover:border-cinnabar hover:shadow-md transition-all text-center">
+                <span className="block font-bold mb-1">Sports Performance</span>
+                <span className="text-sm text-gray-600">Voor sportteams</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Schedule Times Highlight */}
-      <section className="section-padding bg-verdigris/10">
+      {/* 3. Waarom CrossFit Leiden? */}
+      <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Flexibel Rooster</h2>
+            <h2 className="text-3xl font-bold mb-6">Meer dan alleen training</h2>
             <p className="text-lg text-gray-700 mb-8">
-              We bieden dagelijks meerdere lestijden, zodat er altijd een moment is dat in jouw
-              drukke agenda past. Van vroege ochtend tot late avond – we got you!
+              Bij ons gaat het niet alleen om zweten. Het gaat om een complete aanpak: 
+              training, voeding, mindset en community. Zo werk je aan een fitte lifestyle 
+              die je wél volhoudt.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-lg p-6">
-                <div className="text-3xl mb-2">🌅</div>
-                <h4 className="font-semibold mb-1">Ochtend</h4>
-                <p className="text-gray-600">06:00 - 09:00</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              <div className="bg-white p-6 rounded-lg">
+                <h4 className="font-bold mb-2">✅ Persoonlijk</h4>
+                <p className="text-sm text-gray-600">We kennen je naam en je doelen.</p>
               </div>
-              <div className="bg-white rounded-lg p-6">
-                <div className="text-3xl mb-2">☀️</div>
-                <h4 className="font-semibold mb-1">Middag</h4>
-                <p className="text-gray-600">12:00 - 13:00</p>
+              <div className="bg-white p-6 rounded-lg">
+                <h4 className="font-bold mb-2">✅ Flexibel</h4>
+                <p className="text-sm text-gray-600">Rooster dat past bij jouw leven.</p>
               </div>
-              <div className="bg-white rounded-lg p-6">
-                <div className="text-3xl mb-2">🌙</div>
-                <h4 className="font-semibold mb-1">Avond</h4>
-                <p className="text-gray-600">17:00 - 21:00</p>
+              <div className="bg-white p-6 rounded-lg">
+                <h4 className="font-bold mb-2">✅ Plezier</h4>
+                <p className="text-sm text-gray-600">Sporten moet leuk zijn, anders houd je het niet vol.</p>
               </div>
-            </div>
-            <Link href="/rooster" className="cta-button-secondary">
-              Bekijk het Volledige Rooster
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Holistic Approach */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">Meer dan alleen training</h2>
-            <p className="text-lg text-gray-700 text-center mb-8">
-              Bij CrossFit Leiden denken we breder dan alleen workouts. Het gaat om een holistische
-              aanpak: training, voeding, mindset en community. Zo werk je aan een complete lifestyle
-              verandering die past in je drukke leven.
-            </p>
-            <div className="bg-cinnabar/5 rounded-xl p-8">
-              <h3 className="text-xl font-semibold mb-4">Wat maakt ons anders?</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-3 text-xl">•</span>
-                  We wisselen intensieve oefeningen af met korte pauzes – zo werk je efficiënt aan je conditie
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-3 text-xl">•</span>
-                  Functionele bewegingen die je in het dagelijks leven helpen (denk: tillen, bukken, dragen)
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-3 text-xl">•</span>
-                  Constant variërende workouts – je verveelt je nooit
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-3 text-xl">•</span>
-                  Samen zweten = samen groeien – de groepsdynamiek motiveert
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* 4. CTA */}
       <section className="section-padding bg-cinnabar text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Weet je het al zeker?
+            Weet je niet zeker wat bij je past?
           </h2>
-          <p className="text-xl mb-8">
-            Plan meteen je proefles en doe mee!
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Geen probleem! Plan een gratis No Sweat Intro, dan kijken we samen wat het beste werkt voor jou.
           </p>
-          <Link href="/starten" className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
-            Plan Gratis Proefles
-          </Link>
+          <CTA variant="primary-intro-alt2" />
         </div>
       </section>
     </>

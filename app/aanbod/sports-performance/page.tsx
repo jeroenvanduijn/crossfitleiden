@@ -1,139 +1,112 @@
 import Link from "next/link";
+import CTA from "@/components/CTA";
 
 export default function SportsPerformance() {
   return (
     <>
+      {/* 1. Mini Hero */}
       <section className="bg-gradient-to-r from-chinese-violet to-indigo-700 text-white section-padding">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Sports & Performance ⚽🏃</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Sports Performance</h1>
           <p className="text-xl max-w-2xl">
-            Strength & Conditioning voor atleten. Train als een pro, presteer als een kampioen.
+            Word een betere atleet. Sneller, sterker en explosiever voor jouw sport.
           </p>
         </div>
       </section>
 
+      {/* 2. Wat is dit? */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Sports & Performance Training</h2>
+            <h2 className="text-3xl font-bold mb-6">Support voor jouw sport</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Onze Sports & Performance programma's zijn ontworpen voor atleten die hun sportprestaties naar het volgende niveau
-              willen tillen. Of je nu voetbal, hockey, rugby speelt of traint voor een marathon - wij helpen je sterker,
-              sneller en explosiver te worden.
+              Of je nu voetbalt, hockeyt, rugbyt of hardloopt: kracht en conditie zijn de basis van elke prestatie. 
+              Met ons Sports Performance programma helpen we je om die basis te vergroten.
             </p>
             <p className="text-lg text-gray-700">
-              We combineren CrossFit methodologie met sport-specifieke conditioning en injury prevention om jou de beste
-              off-season of in-season training te bieden.
+              We trainen niet om de beste CrossFitter te worden, maar om jou beter te maken in jouw eigen sport. 
+              Meer power in je sprint, meer stabiliteit in je duels, en minder blessuregevoelig.
             </p>
           </div>
         </div>
       </section>
 
+      {/* 3. Voor wie? */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Voor welke sporten?</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {[
-              { icon: '⚽', name: 'Voetbal' },
-              { icon: '🏑', name: 'Hockey' },
-              { icon: '🏉', name: 'Rugby' },
-              { icon: '🏃', name: 'Hardlopen' },
-              { icon: '🏊', name: 'Zwemmen' },
-              { icon: '🚴', name: 'Wielrennen' },
-              { icon: '🥊', name: 'Vechtsporten' },
-              { icon: '🎾', name: 'Tennis' },
-            ].map((sport) => (
-              <div key={sport.name} className="bg-white rounded-lg p-4 text-center">
-                <div className="text-3xl mb-2">{sport.icon}</div>
-                <p className="font-semibold text-sm">{sport.name}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-gray-600 mt-6">En nog veel meer sporten!</p>
-        </div>
-      </section>
-
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Wat bieden we?</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Wat levert het op?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-gray-50 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-4">💥</div>
-              <h3 className="text-xl font-bold mb-3">Power & Explosiveness</h3>
-              <p className="text-gray-700">Olympic lifts, plyometrics en sprint work voor maximale power output</p>
+            <div className="bg-white rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-chinese-violet/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">💥</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Explosiviteit</h3>
+              <p className="text-gray-700 mt-2">Snellere sprints, hogere sprongen en hardere schoten.</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-4">🏃</div>
-              <h3 className="text-xl font-bold mb-3">Sport-Specific Conditioning</h3>
-              <p className="text-gray-700">Energy system work afgestemd op de demands van jouw sport</p>
+
+            <div className="bg-white rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-chinese-violet/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🛡️</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Blessurepreventie</h3>
+              <p className="text-gray-700 mt-2">Een sterker lichaam kan meer klappen opvangen en herstelt sneller.</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-4">🛡️</div>
-              <h3 className="text-xl font-bold mb-3">Injury Prevention</h3>
-              <p className="text-gray-700">Mobility, stability en correctieve oefeningen om blessures te voorkomen</p>
+
+            <div className="bg-white rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-chinese-violet/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🔋</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Uithoudingsvermogen</h3>
+              <p className="text-gray-700 mt-2">Blijf gaan tot het laatste fluitsignaal, terwijl je tegenstander moe wordt.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-chinese-violet/10">
+      {/* 5. Hoe werkt het? */}
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">Programma Opties</h2>
-            <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="text-xl font-bold mb-3">Group Training</h3>
-                <p className="text-gray-700 mb-3">
-                  Train 2-3x per week in een groep met andere atleten. Ideaal voor algemene athletic development.
+            <h2 className="text-3xl font-bold mb-6 text-center">Teams & Individueel</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-chinese-violet/5 rounded-lg p-6">
+                <h3 className="font-bold text-xl mb-2">Voor Teams</h3>
+                <p className="text-gray-700 mb-4">
+                  Kom met je hele team trainen in de voorbereiding of tijdens het seizoen. 
+                  We maken een programma op maat, afgestemd op jullie sport en speelschema.
                 </p>
-                <p className="font-semibold text-cinnabar">€85/maand</p>
+                <ul className="list-disc list-inside text-gray-600 text-sm">
+                  <li>Teambuilding</li>
+                  <li>Fysieke basis leggen</li>
+                  <li>Samen sterker worden</li>
+                </ul>
               </div>
-
-              <div className="bg-white rounded-xl p-6 border-2 border-chinese-violet">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold">Semi-Private (2-4 atleten)</h3>
-                  <span className="bg-chinese-violet text-white text-xs px-2 py-1 rounded">POPULAIR</span>
-                </div>
-                <p className="text-gray-700 mb-3">
-                  Sport-specifiek programma met een klein team. Meer persoonlijke aandacht en customization.
+              <div className="bg-chinese-violet/5 rounded-lg p-6">
+                <h3 className="font-bold text-xl mb-2">Voor Individuen</h3>
+                <p className="text-gray-700 mb-4">
+                  Wil je zelf extra trainen naast je clubtrainingen? Sluit je aan bij onze lessen of kies voor Personal Training.
                 </p>
-                <p className="font-semibold text-cinnabar">€150/maand (2x/week)</p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="text-xl font-bold mb-3">1-on-1 Performance Coaching</h3>
-                <p className="text-gray-700 mb-3">
-                  Volledig gepersonaliseerd programma inclusief testing, periodization en ongoing adjustments.
-                </p>
-                <p className="font-semibold text-cinnabar">Op aanvraag</p>
+                <ul className="list-disc list-inside text-gray-600 text-sm">
+                  <li>Persoonlijke aandacht</li>
+                  <li>Werken aan je zwakke punten</li>
+                  <li>Voorrang op de concurrentie</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Success Stories</h2>
-            <div className="bg-gray-50 rounded-xl p-8">
-              <p className="text-lg text-gray-700 italic mb-4">
-                "Dankzij de S&P training bij CrossFit Leiden ben ik sneller, sterker en explosiever geworden op het voetbalveld.
-                Geen blessures meer en ik voel me fitter dan ooit!"
-              </p>
-              <p className="font-semibold text-gray-900">- Tim, 24, voetballer DESTO</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* 9. CTA */}
       <section className="section-padding bg-chinese-violet text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Klaar voor next level performance?</h2>
-          <p className="text-xl mb-8">Boek een performance assessment en we bespreken jouw doelen.</p>
-          <Link href="/contact" className="bg-white text-chinese-violet px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
-            Boek Assessment
-          </Link>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Klaar om te winnen?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Neem contact op voor de mogelijkheden voor jou of je team.
+          </p>
+          <CTA variant="secondary-support-alt" href="/contact">
+            Neem Contact Op
+          </CTA>
         </div>
       </section>
     </>
