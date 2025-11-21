@@ -122,7 +122,7 @@ export default function Header() {
 
             {/* CTA Button */}
             <Link href="/starten" className="cta-button">
-              Gratis Proefles
+              Plan een Gratis Intro
             </Link>
           </div>
 
@@ -209,7 +209,7 @@ export default function Header() {
                 className="cta-button text-center mx-4 mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Gratis Proefles
+                Plan een Gratis Intro
               </Link>
             </div>
           </div>

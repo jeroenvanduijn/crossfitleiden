@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CTA from "@/components/CTA";
 
 export default function Tarieven() {
   const memberships = [
@@ -8,7 +9,7 @@ export default function Tarieven() {
       period: "per maand",
       description: "Ideaal om rustig te starten of te combineren met andere sporten.",
       features: [
-        "2 WOD's per week op flexibele dagen",
+        "2 trainingen per week op flexibele dagen",
         "Persoonlijke begeleiding van coaches",
         "Toegang tot community events",
         "Maandelijks opzegbaar"
@@ -20,9 +21,9 @@ export default function Tarieven() {
       name: "Onbeperkt",
       price: "€95",
       period: "per maand",
-      description: "Voor de echte fanatiekelingen of als je snel progressie wilt.",
+      description: "Voor als je vaker wilt komen of snel progressie wilt maken.",
       features: [
-        "Onbeperkt WOD's per week",
+        "Onbeperkt trainingen per week",
         "Toegang tot Open Gym tijden",
         "Voorrang bij speciale workshops",
         "Community events & social activities",
@@ -54,9 +55,23 @@ export default function Tarieven() {
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Tarieven & Lidmaatschap</h1>
           <p className="text-xl max-w-2xl">
-            Omdat ieder leven anders is, hebben we bij CrossFit Leiden flexibele lidmaatschapsopties.
+            Transparant, flexibel en zonder verborgen kosten. 
             Kies wat het beste bij jou past.
           </p>
+        </div>
+      </section>
+
+      {/* Intro - Angst wegnemen */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Geen verrassingen, gewoon eerlijk</h2>
+            <p className="text-lg text-gray-700">
+              We begrijpen dat prijzen belangrijk zijn. Daarom zijn we volledig transparant. 
+              Geen inschrijfkosten, geen verborgen kosten, geen lange contracten. 
+              Je betaalt alleen wat je ziet, en je kunt maandelijks opzeggen.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -103,31 +118,30 @@ export default function Tarieven() {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    href="/starten"
-                    className={`block text-center py-3 rounded-lg font-semibold transition-all ${
-                      membership.popular
-                        ? "bg-cinnabar text-white hover:bg-cinnabar/90"
-                        : "bg-gray-100 text-gray-900 hover:bg-gray-200"
-                    }`}
-                  >
-                    Start Nu
-                  </Link>
+                  <CTA 
+                    variant={membership.popular ? "primary-intro" : "secondary-support-alt2"}
+                    className="w-full text-center"
+                  />
                 </div>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-sm text-gray-600">
-            * Alle prijzen zijn inclusief BTW. Geen inschrijfkosten bij eerste aanmelding.
-          </p>
+          <div className="bg-white rounded-lg p-6 max-w-2xl mx-auto text-center">
+            <p className="text-sm text-gray-600">
+              * Alle prijzen zijn inclusief BTW. Geen inschrijfkosten bij eerste aanmelding.
+            </p>
+            <p className="text-sm text-gray-600 mt-2">
+              ** Alle abonnementen zijn maandelijks opzegbaar. Geen lange contracten.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Extra Services */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Aanvullende Diensten</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Aanvullende diensten</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center p-6 bg-gray-50 rounded-xl">
               <div className="text-4xl mb-4">💪</div>
@@ -207,17 +221,17 @@ export default function Tarieven() {
         </div>
       </section>
 
-      {/* Payment Info */}
+      {/* Payment Info & FAQ */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde vragen</h2>
             <div className="space-y-6">
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-2">Zijn er inschrijfkosten?</h3>
                 <p className="text-gray-700">
                   Nee, bij je eerste aanmelding rekenen we geen inschrijfkosten. Je betaalt alleen je
-                  maandelijkse contributie.
+                  maandelijkse contributie. Geen verborgen kosten.
                 </p>
               </div>
 
@@ -225,7 +239,7 @@ export default function Tarieven() {
                 <h3 className="font-semibold text-lg mb-2">Hoe lang zit ik vast aan mijn abonnement?</h3>
                 <p className="text-gray-700">
                   Ons maandabonnement is flexibel en maandelijks opzegbaar. Geen lange contracten – wel
-                  zo fijn in een druk leven.
+                  zo fijn in een druk leven. Je kunt elk moment opzeggen.
                 </p>
               </div>
 
@@ -250,11 +264,19 @@ export default function Tarieven() {
                   Kan ik eerst proberen voordat ik me inschrijf?
                 </h3>
                 <p className="text-gray-700">
-                  Absoluut! We bieden een <strong>gratis proefles</strong> aan. Zo kun je de sfeer proeven
+                  Absoluut! We bieden een <strong>gratis No Sweat Intro</strong> aan. Zo kun je de sfeer proeven
                   en ervaren of CrossFit Leiden bij je past, zonder verplichtingen.{" "}
                   <Link href="/starten" className="text-cinnabar font-semibold hover:underline">
                     Meld je hier aan →
                   </Link>
+                </p>
+              </div>
+
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="font-semibold text-lg mb-2">Wat als ik niet tevreden ben?</h3>
+                <p className="text-gray-700">
+                  We hopen natuurlijk dat je tevreden bent! Maar als het niet bevalt, kun je gewoon maandelijks opzeggen. 
+                  Geen vragen, geen gedoe. We willen dat je blij bent met je keuze.
                 </p>
               </div>
             </div>
@@ -266,14 +288,14 @@ export default function Tarieven() {
       <section className="section-padding bg-cinnabar text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Klaar om lid te worden?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-4 max-w-2xl mx-auto">
             Investeer in jezelf – voor nog geen €3 per dag werk je aan een fittere, gelukkigere jij.
+          </p>
+          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
             Dat verdien je!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/starten" className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all">
-              Plan Gratis Proefles
-            </Link>
+            <CTA variant="primary-intro-alt2" />
             <Link href="/contact" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-cinnabar transition-all">
               Neem Contact Op
             </Link>
