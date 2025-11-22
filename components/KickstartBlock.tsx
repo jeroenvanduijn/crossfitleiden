@@ -1,47 +1,28 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function KickstartBlock() {
   return (
-    <section className="relative overflow-hidden bg-gray-50">
-      {/* Hero Section with Background Image */}
-      <div className="relative py-20 md:py-28">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/hero-background-5.jpg"
-            alt="CrossFit Leiden Kickstart"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-        {/* Overlay */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/85 via-gray-900/70 to-gray-900/50"></div>
-
-        {/* Content */}
-        <div className="container-custom relative z-10">
-          <div className="max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Start veilig en sterk met onze Kickstart
-            </h2>
-            <div className="space-y-4 text-lg text-gray-100">
-              <p>
-                De Kickstart is ons 28-dagen beginnersprogramma, speciaal ontworpen voor mensen zonder ervaring.
-                Je hoeft geen topsporter te zijn. Geen extreme conditie. Gewoon beginnen, op jouw tempo, met persoonlijke begeleiding.
-              </p>
-              <p>
-                Perfect voor drukke ouders die structuur zoeken, mensen die lang niet hebben gesport,
-                of iedereen die CrossFit wel interessant vindt maar het nog spannend vindt.
-                Wij zorgen ervoor dat je veilig en vol vertrouwen begint.
-              </p>
-            </div>
+    <section className="section-padding bg-gradient-to-b from-white to-gray-50">
+      <div className="container-custom">
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Start veilig en sterk met onze Kickstart
+          </h2>
+          <div className="space-y-4 text-lg text-gray-700">
+            <p>
+              De Kickstart is ons 28-dagen beginnersprogramma, speciaal ontworpen voor mensen zonder ervaring.
+              Je hoeft geen topsporter te zijn. Geen extreme conditie. Gewoon beginnen, op jouw tempo, met persoonlijke begeleiding.
+            </p>
+            <p>
+              Perfect voor drukke ouders die structuur zoeken, mensen die lang niet hebben gesport,
+              of iedereen die CrossFit wel interessant vindt maar het nog spannend vindt.
+              Wij zorgen ervoor dat je veilig en vol vertrouwen begint.
+            </p>
           </div>
         </div>
-      </div>
 
-      {/* Main Content Section */}
-      <div className="container-custom py-16 md:py-20">
+        {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 mb-16">
           {/* Voor wie is het */}
           <div className="bg-white rounded-2xl p-8 shadow-sm">

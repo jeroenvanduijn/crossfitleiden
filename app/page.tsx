@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import CTA from "@/components/CTA";
 import KickstartBlock from "@/components/KickstartBlock";
 
@@ -7,8 +8,18 @@ export default function Home() {
     <>
       {/* 1. HERO - Result-focused, beginner-reassuring */}
       <section className="relative bg-gray-900 text-white section-padding">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/hero-background-5.jpg"
+            alt="CrossFit Leiden"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 to-gray-900/70 z-10"></div>
-        {/* Background image would go here */}
         <div className="relative z-20 container-custom">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
