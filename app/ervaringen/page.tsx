@@ -220,7 +220,7 @@ export default function Ervaringen() {
             Ben jij klaar om jouw eigen verhaal te schrijven? 📖
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Doe een eerste stap net als deze leden. Schrijf je in voor een proefles en ontdek wat
+            Doe een eerste stap net als deze leden. Plan een gratis intro en ontdek wat
             CrossFit Leiden voor jou kan betekenen.
           </p>
           <Link href="/starten" className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">

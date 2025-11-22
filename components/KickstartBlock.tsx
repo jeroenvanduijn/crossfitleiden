@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import CTAButton from "./CTAButton";
 
 export default function KickstartBlock() {
   return (
@@ -207,12 +207,9 @@ export default function KickstartBlock() {
           <p className="text-gray-700 mb-6">
             Plan een gratis gesprek. Geen verplichtingen, gewoon kennismaken.
           </p>
-          <Link
-            href="/starten"
-            className="inline-block bg-jonquil text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-jonquil/90 transition-all shadow-md hover:shadow-lg"
-          >
+          <CTAButton variant="primary">
             Plan een Gratis Intro
-          </Link>
+          </CTAButton>
         </div>
       </div>
     </section>

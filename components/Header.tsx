@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import CTAButton from "./CTAButton";
+import HighLevelPopup from "./HighLevelPopup";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -115,9 +117,9 @@ export default function Header() {
             </div>
 
             {/* CTA Button */}
-            <Link href="/starten" className="bg-jonquil text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-jonquil/90 transition-all shadow-md whitespace-nowrap">
+            <CTAButton variant="primary" className="whitespace-nowrap">
               Plan een Gratis Intro
-            </Link>
+            </CTAButton>
           </div>
 
           {/* Mobile menu button */}
@@ -198,13 +200,11 @@ export default function Header() {
                   )}
                 </div>
               ))}
-              <Link
-                href="/starten"
-                className="bg-jonquil text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-jonquil/90 transition-all shadow-md text-center mx-4 mt-4 block"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Plan een Gratis Intro
-              </Link>
+              <div className="mx-4 mt-4">
+                <CTAButton variant="primary" className="w-full text-center">
+                  Plan een Gratis Intro
+                </CTAButton>
+              </div>
 
               {/* Language Toggle Mobile */}
               <div className="flex items-center justify-center space-x-2 text-sm mt-4">
@@ -216,6 +216,7 @@ export default function Header() {
           </div>
         )}
       </nav>
+      <HighLevelPopup />
     </header>
   );
 }

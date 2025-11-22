@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import CTA from "@/components/CTA";
+import CTAButton from "@/components/CTAButton";
+import HighLevelPopup from "@/components/HighLevelPopup";
 import KickstartBlock from "@/components/KickstartBlock";
 
 export default function Home() {
@@ -29,14 +30,9 @@ export default function Home() {
               Voor drukke ouders die weer fit willen worden, zonder oordeel en met begeleiding op jouw niveau.
               Geen ervaring nodig – wij leren je alles stap voor stap.
             </p>
-            <CTA
-              variant="hero"
-              title=""
-              description=""
-              buttonText="Plan een Gratis Intro"
-              href="/starten"
-              className="inline-block"
-            />
+            <CTAButton variant="hero" className="inline-block">
+              Plan een Gratis Intro
+            </CTAButton>
             <p className="text-sm text-gray-300 mt-4">
               👉 Geen workout, gewoon een gesprek. Ontdek of CrossFit Leiden bij je past.
             </p>
@@ -172,11 +168,9 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <CTA
-              variant="button-primary"
-              buttonText="Plan Mijn Gratis Intro"
-              href="/starten"
-            />
+            <CTAButton variant="primary">
+              Plan Mijn Gratis Intro
+            </CTAButton>
           </div>
         </div>
       </section>
@@ -317,13 +311,19 @@ export default function Home() {
       </section>
 
       {/* 7. FOOTER CTA - Warm Final Push */}
-      <CTA
-        variant="footer"
-        title="Zie je jezelf hier al sporten?"
-        description="Plan je gratis intro – het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten. Gewoon kennismaken en kijken of het klikt. We kijken ernaar uit!"
-        buttonText="Ja, ik wil kennismaken!"
-        href="/starten"
-      />
+      <section className="section-padding bg-cinnabar text-white">
+        <div className="container-custom text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Zie je jezelf hier al sporten?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Plan je gratis intro – het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten. Gewoon kennismaken en kijken of het klikt. We kijken ernaar uit!
+          </p>
+          <CTAButton variant="hero">
+            Ja, ik wil kennismaken!
+          </CTAButton>
+        </div>
+      </section>
+
+      <HighLevelPopup />
     </>
   );
 }

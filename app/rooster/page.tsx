@@ -20,7 +20,7 @@ export default function Rooster() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto mb-12 text-center">
             <p className="text-lg text-gray-700 mb-4">
-              Hieronder zie je ons actuele rooster. Nog geen lid? Probeer eerst een gratis intro of proefles!
+              Hieronder zie je ons actuele rooster. Nog geen lid? Begin met een gratis intro!
             </p>
             <Link href="/starten" className="text-cinnabar font-semibold hover:underline text-lg">
               Plan een gratis intro →

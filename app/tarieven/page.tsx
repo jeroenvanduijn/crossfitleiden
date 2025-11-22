@@ -411,8 +411,8 @@ export default function Tarieven() {
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Absoluut! We bieden een <strong>gratis No Sweat Intro</strong> waar we kennismaken zonder dat je hoeft te sporten.
-                  Je kunt ook een gratis proefles doen om te ervaren hoe het is. Pas als je tevreden bent, beslis je of je lid wordt.{" "}
+                  Absoluut! Alle nieuwe leden beginnen met een <strong>gratis intro</strong> waar we kennismaken zonder dat je hoeft te sporten.
+                  Pas als je tevreden bent en het klikt, beslis je of je lid wordt.{" "}
                   <Link href="/starten" className="text-cinnabar font-semibold hover:underline">
                     Plan hier je intro →
                   </Link>

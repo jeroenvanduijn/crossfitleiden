@@ -339,9 +339,9 @@ export default function PreTeens() {
       {/* CTA */}
       <CTA
         variant="footer"
-        title="Laat Je Kind een Gratis Proefles Doen!"
-        description="Nieuwsgierig of dit iets voor je kind is? Meld je aan voor een gratis proefles. Je mag meekijken, je kind kan kennismaken met de coaches en andere kinderen, en daarna beslissen jullie samen of het leuk is!"
-        buttonText="Plan Gratis Proefles"
+        title="Laat Je Kind een Gratis Intro Doen!"
+        description="Nieuwsgierig of dit iets voor je kind is? Meld je aan voor een gratis intro. Je mag meekijken, je kind kan kennismaken met de coaches en andere kinderen, en daarna beslissen jullie samen of het leuk is!"
+        buttonText="Plan Gratis Intro"
         href="/contact"
       />
 

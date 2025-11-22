@@ -99,7 +99,7 @@ export default function DropIn() {
 
               <div>
                 <h3 className="font-bold text-lg mb-2">✋ Belangrijk</h3>
-                <p className="text-gray-700">Je moet lid zijn van een andere CrossFit box of ervaring hebben met CrossFit. Geen ervaring? Boek dan een proefles!</p>
+                <p className="text-gray-700">Je moet lid zijn van een andere CrossFit box of ervaring hebben met CrossFit. Geen ervaring? Plan dan een gratis intro!</p>
               </div>
             </div>
           </div>

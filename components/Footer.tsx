@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import CTAButton from "./CTAButton";
 
 export default function Footer() {
   return (

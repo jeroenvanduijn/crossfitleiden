@@ -206,7 +206,7 @@ export default function Contact() {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verdigris focus:border-transparent"
                     >
                       <option value="algemeen">Algemene vraag</option>
-                      <option value="proefles">Proefles</option>
+                      <option value="intro">Gratis Intro</option>
                       <option value="lidmaatschap">Lidmaatschap</option>
                       <option value="tarieven">Tarieven</option>
                       <option value="anders">Iets anders</option>
@@ -280,9 +280,9 @@ export default function Contact() {
               pand) – de koffie staat klaar. ☕
             </p>
             <p className="text-gray-600">
-              Liever eerst een <strong>gratis proefles</strong> plannen?{" "}
+              Wil je direct een <strong>gratis intro</strong> plannen?{" "}
               <a href="/starten" className="text-cinnabar font-semibold hover:underline">
-                Meld je hier aan →
+                Klik hier →
               </a>
             </p>
           </div>

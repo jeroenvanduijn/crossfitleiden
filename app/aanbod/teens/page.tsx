@@ -213,9 +213,9 @@ export default function Teens() {
               </div>
 
               <div className="bg-gray-50 rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Kan ik een proefles doen?</h3>
+                <h3 className="font-semibold text-lg mb-2">Kan ik een gratis intro doen?</h3>
                 <p className="text-gray-700">
-                  Ja, de eerste les is gratis! Zo kun je kijken of het bij je past zonder verplichtingen.
+                  Ja, absoluut! We beginnen altijd met een gratis intro. Zo kun je kennismaken en kijken of het bij je past zonder verplichtingen.
                 </p>
               </div>
             </div>
@@ -227,8 +227,8 @@ export default function Teens() {
       <CTA
         variant="footer"
         title="Klaar om te beginnen?"
-        description="Meld je aan voor een gratis proefles. Geen ervaring nodig, gewoon komen proberen!"
-        buttonText="Plan Gratis Proefles"
+        description="Plan een gratis intro. Geen ervaring nodig, gewoon kennismaken!"
+        buttonText="Plan Gratis Intro"
         href="/contact"
       />
 

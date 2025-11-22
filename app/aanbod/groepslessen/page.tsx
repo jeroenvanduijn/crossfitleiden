@@ -333,7 +333,7 @@ export default function Groepslessen() {
       <CTA
         variant="footer"
         title="Klaar om het te proberen?"
-        description="Plan een gratis intro (geen sporten, gewoon praten) of kom meteen een proefles doen. Beide zijn gratis en vrijblijvend. Kies wat jou het beste lijkt!"
+        description="Alle nieuwe leden beginnen met een gratis intro. Dit is een ontspannen gesprek van 20-30 minuten waar je niet hoeft te sporten – gewoon kennismaken en kijken of het bij je past!"
         buttonText="Plan Mijn Gratis Intro"
         href="/starten"
       />

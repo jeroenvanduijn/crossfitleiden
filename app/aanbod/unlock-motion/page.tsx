@@ -288,8 +288,8 @@ export default function UnlockMotion() {
       <CTA
         variant="footer"
         title="Klaar om weer soepel te bewegen?"
-        description="Kom eerst een gratis proefles doen. Ervaar hoe Unlock Motion werkt, bespreek je klachten met een coach, en kijk of het bij je past. Geen verplichtingen!"
-        buttonText="Plan een Gratis Proefles"
+        description="Begin met een gratis intro. We bespreken je klachten, leggen uit hoe Unlock Motion werkt, en kijken of het bij je past. Geen verplichtingen!"
+        buttonText="Plan een Gratis Intro"
         href="/starten"
       />
 
