@@ -184,97 +184,21 @@ export default function Home() {
       {/* 4. KICKSTART BLOCK - 28-day Beginner Program */}
       <KickstartBlock />
 
-      {/* 5. SOCIAL PROOF - 3 Stories + Google Review */}
+      {/* 5. SOCIAL PROOF - Google Review Widget */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Zij gingen je voor</h2>
-          <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-            Gewone mensen met drukke levens, net als jij. Dit is wat ze bereikten.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Zij gingen je voor</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Story 1 - Marieke */}
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">👩</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-center">Marieke, 39</h3>
-              <p className="text-sm text-gray-600 mb-4 text-center">Moeder van 2, werkt fulltime</p>
-              <p className="text-gray-700 italic mb-4">
-                "Ik durfde niet te beginnen – bang dat ik het niet zou kunnen. Nu, 8 maanden later, heb ik meer energie dan in jaren.
-                Mijn kinderen zien een blije mama!"
-              </p>
-              <div className="text-sm text-cinnabar font-semibold">
-                ✅ Meer energie<br />
-                ✅ 2x per week, past perfect<br />
-                ✅ Warme community
-              </div>
-            </div>
-
-            {/* Story 2 - Peter */}
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">👨</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-center">Peter, 45</h3>
-              <p className="text-sm text-gray-600 mb-4 text-center">20 jaar niet gesport</p>
-              <p className="text-gray-700 italic mb-4">
-                "Ik had 20 jaar niet gesport en voelde me oud. CrossFit Leiden leerde me alles vanaf nul.
-                Nu til ik mijn dochter weer moeiteloos op!"
-              </p>
-              <div className="text-sm text-cinnabar font-semibold">
-                ✅ Van 0 naar sterk in 6 maanden<br />
-                ✅ Blessurevrij<br />
-                ✅ Nieuwe vrienden
-              </div>
-            </div>
-
-            {/* Story 3 - Lisa */}
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">👩‍💼</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-center">Lisa, 38</h3>
-              <p className="text-sm text-gray-600 mb-4 text-center">Drukke ondernemer</p>
-              <p className="text-gray-700 italic mb-4">
-                "Dacht altijd: 'Geen tijd'. Totdat ik besefte dat 3 uur per week investeren me 10x meer energie geeft.
-                Beste beslissing ooit."
-              </p>
-              <div className="text-sm text-cinnabar font-semibold">
-                ✅ Beter slapen<br />
-                ✅ Minder stress<br />
-                ✅ Meer productief
-              </div>
-            </div>
-          </div>
-
-          {/* Google Review Score */}
-          <div className="max-w-md mx-auto bg-gradient-to-br from-cinnabar/10 to-verdigris/10 rounded-xl p-8 text-center">
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <span className="text-4xl font-bold">4.9</span>
-              <div>
-                <div className="flex gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <svg key={star} className="w-6 h-6 text-jonquil fill-current" viewBox="0 0 24 24">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-600">Google Reviews</p>
-              </div>
-            </div>
-            <p className="text-gray-700 font-medium">
-              "Beste box van Leiden! Coaches zijn super betrokken en community is geweldig." – 127 reviews
-            </p>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link href="/ervaringen" className="text-cinnabar font-semibold hover:underline text-lg inline-flex items-center gap-2">
-              Lees meer verhalen
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
+          {/* Google Review Widget */}
+          <div className="max-w-5xl mx-auto">
+            <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
+            <iframe
+              className='lc_reviews_widget'
+              src='https://reputationhub.site/reputation/widgets/review_widget/s0YuoK12A9YPXCKsfUp3?widgetId=690b468e0591d2ab3477c77a'
+              frameBorder='0'
+              scrolling='no'
+              style={{minWidth: '100%', width: '100%'}}
+            ></iframe>
           </div>
         </div>
       </section>
@@ -310,8 +234,8 @@ export default function Home() {
                 </svg>
               </summary>
               <p className="text-gray-700 mt-4">
-                We raden 2-3x per week aan voor goede resultaten, maar je mag komen zo vaak als je wilt met jouw lidmaatschap.
-                Veel drukke ouders komen 2x per week en zien al geweldige vooruitgang. Kwaliteit boven kwantiteit!
+                We raden 2–3 keer per week aan voor goede resultaten. Hoe vaak je kunt komen hangt af van je lidmaatschap: tot 6 keer per week.
+                Focus op kwaliteit en regelmaat, niet op extreme uren.
               </p>
             </details>
 
@@ -323,11 +247,17 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="text-gray-700 mt-4">
-                Begrijpelijk dat je dat denkt! Maar juist door onze begeleiding is CrossFit véél veiliger dan alleen sporten.
-                We leren je eerst de juiste techniek met lichte gewichten. Pas als je beweging goed zit, gaan we verder.
-                Blessurepreventie staat bij ons voorop.
-              </p>
+              <div className="mt-4 space-y-3">
+                <p className="text-gray-700">
+                  Begrijpelijk dat je dat denkt! Maar juist door onze begeleiding is CrossFit véél veiliger dan alleen sporten.
+                  We leren je eerst de juiste techniek met lichte gewichten. Pas als je beweging goed zit, gaan we verder.
+                  Blessurepreventie staat bij ons voorop.
+                </p>
+                <p className="text-gray-700">
+                  We samenwerken met Fysiofabriek, een professionele fysiopraktijk die een eigen behandelruimte in onze gym heeft.
+                  Hierdoor kunnen we snel schakelen bij pijntjes, revalidatie of advies.
+                </p>
+              </div>
             </details>
 
             {/* FAQ 4 */}
@@ -355,7 +285,7 @@ export default function Home() {
               </summary>
               <p className="text-gray-700 mt-4">
                 We snappen dat! Daarom duren onze lessen precies 1 uur (inclusief warming-up en cooling-down).
-                We hebben lessen van 06:00 tot 20:30, dus er is altijd wel een moment dat past.
+                Onze lessen lopen van 06:00 tot 22:00, dus er is altijd een moment dat past.
                 Veel leden komen voor het werk, in de lunchpauze of 's avonds als de kids op bed liggen.
               </p>
             </details>
