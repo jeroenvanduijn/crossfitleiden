@@ -27,24 +27,15 @@ export default function Rooster() {
             </Link>
           </div>
 
-          {/* Schedule Iframe - Placeholder */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-8">
-            <div className="bg-white rounded-lg shadow-inner min-h-[600px] flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">📅</div>
-                <h3 className="text-2xl font-bold mb-4">Actueel Rooster</h3>
-                <p className="text-gray-600 mb-4">
-                  Hier komt de iframe van het roostersysteem (bijv. WODify, CrossHero, of Google Calendar)
-                </p>
-                <div className="bg-gray-100 rounded-lg p-6 max-w-md mx-auto">
-                  <p className="text-sm text-gray-700 mb-2 font-mono">
-                    {'<iframe src="https://yourschedulesystem.com/...">'}
-                  </p>
-                  <p className="text-xs text-gray-500">
-                    Vervang dit door het echte rooster-embed
-                  </p>
-                </div>
-              </div>
+          {/* Schedule Embed */}
+          <div className="bg-gray-50 rounded-xl p-4 md:p-8 mb-8">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <link rel="stylesheet" href="https://crossfitleiden.sportbitapp.nl/cbm/css/embed/rooster/rooster.css" type="text/css" />
+              <script type="text/javascript" src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"></script>
+              <div id="sportbit-rooster">&nbsp;</div>
+              <script type="text/javascript" dangerouslySetInnerHTML={{
+                __html: `(function(){embed_rooster.init('https://crossfitleiden.sportbitapp.nl/',7);})();`
+              }} />
             </div>
           </div>
 

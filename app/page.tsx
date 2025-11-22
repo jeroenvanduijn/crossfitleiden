@@ -185,20 +185,28 @@ export default function Home() {
       <KickstartBlock />
 
       {/* 5. SOCIAL PROOF - Google Review Widget */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white py-16 md:py-24">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Zij gingen je voor</h2>
 
-          {/* Google Review Widget */}
-          <div className="max-w-5xl mx-auto">
-            <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
-            <iframe
-              className='lc_reviews_widget'
-              src='https://reputationhub.site/reputation/widgets/review_widget/s0YuoK12A9YPXCKsfUp3?widgetId=690b468e0591d2ab3477c77a'
-              frameBorder='0'
-              scrolling='no'
-              style={{minWidth: '100%', width: '100%'}}
-            ></iframe>
+          {/* Google Review Widget - Fixed Container */}
+          <div className="max-w-6xl mx-auto">
+            <div className="relative w-full min-h-[800px] md:min-h-[600px]">
+              <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
+              <iframe
+                className='lc_reviews_widget'
+                src='https://reputationhub.site/reputation/widgets/review_widget/s0YuoK12A9YPXCKsfUp3?widgetId=690b468e0591d2ab3477c77a'
+                frameBorder='0'
+                scrolling='no'
+                style={{
+                  minWidth: '100%',
+                  width: '100%',
+                  minHeight: '800px',
+                  height: '100%',
+                  border: 'none'
+                }}
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>

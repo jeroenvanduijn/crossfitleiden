@@ -57,10 +57,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Adres</h3>
-                    <p className="text-gray-700">Rooseveltstraat 49C</p>
-                    <p className="text-gray-700">2321 BL Leiden</p>
+                    <p className="text-gray-700">Marie Diebenplaats 108</p>
+                    <p className="text-gray-700">2324 NG Leiden</p>
                     <p className="text-sm text-gray-600 mt-2">
-                      (Industrieterrein Roosevelt, nabij de A4 afrit)
+                      (Makkelijk bereikbaar met voldoende parkeerruimte)
                     </p>
                   </div>
                 </div>

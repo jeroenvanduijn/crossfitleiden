@@ -66,6 +66,21 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy" className="hover:text-cinnabar transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-cinnabar transition-colors">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="/opzeggen" className="hover:text-cinnabar transition-colors">
+                  Abonnement opzeggen
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -73,8 +88,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li>Rooseveltstraat 49C</li>
-              <li>2321 BL Leiden</li>
+              <li>Marie Diebenplaats 108</li>
+              <li>2324 NG Leiden</li>
               <li className="pt-2">
                 <a href="mailto:welcome@crossfitleiden.com" className="hover:text-cinnabar transition-colors">
                   welcome@crossfitleiden.com
