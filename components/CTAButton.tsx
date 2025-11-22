@@ -10,19 +10,9 @@ export default function CTAButton({ children, className = '', variant = 'primary
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
 
-    // Try to find and click the HighLevel form trigger
-    const iframe = document.getElementById('popup-nGDExYgYZcuHjGNwCsue') as HTMLIFrameElement;
-
-    // HighLevel forms typically need a trigger click
-    // The form should auto-show because of data-trigger-type="alwaysShow"
-    // But we can also manually trigger it
-    if (iframe) {
-      iframe.style.display = 'block';
-
-      // If there's a HighLevel API available, use it
-      if (window.hl_form_embed) {
-        window.hl_form_embed.show('nGDExYgYZcuHjGNwCsue');
-      }
+    // Call the global openCFLPopup function defined in HighLevelPopup component
+    if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
+      (window as any).openCFLPopup();
     }
   };
 
@@ -42,13 +32,4 @@ export default function CTAButton({ children, className = '', variant = 'primary
       {children}
     </button>
   );
-}
-
-// Extend window type for TypeScript
-declare global {
-  interface Window {
-    hl_form_embed?: {
-      show: (formId: string) => void;
-    };
-  }
 }
