@@ -92,7 +92,7 @@ export default function OverOns() {
               <div className="w-16 h-16 bg-cinnabar/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🤝</span>
               </div>
-              <h3 className="text-xl font-bold mb-3">Community > Competitie</h3>
+              <h3 className="text-xl font-bold mb-3">Community &gt; Competitie</h3>
               <p className="text-gray-700">
                 We zijn geen competitie-gym. Hier train je samen, moedig je elkaar aan en vier je elkaars vooruitgang.
                 Vriendschap staat voorop.
