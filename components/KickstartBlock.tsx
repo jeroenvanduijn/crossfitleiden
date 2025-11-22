@@ -6,7 +6,7 @@ export default function KickstartBlock() {
     <section className="relative overflow-hidden bg-gray-50">
       {/* Hero Section with Background Image */}
       <div className="relative py-20 md:py-28">
-        {/* Background Image with Overlay */}
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
             src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/hero-background-5.jpg"
@@ -15,8 +15,9 @@ export default function KickstartBlock() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/85 via-gray-900/70 to-gray-900/50"></div>
         </div>
+        {/* Overlay */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/85 via-gray-900/70 to-gray-900/50"></div>
 
         {/* Content */}
         <div className="container-custom relative z-10">
