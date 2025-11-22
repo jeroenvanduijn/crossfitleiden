@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CTA from "@/components/CTA";
+import KickstartBlock from "@/components/KickstartBlock";
 
 export default function Home() {
   return (
@@ -169,7 +170,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. SOCIAL PROOF - 3 Stories + Google Review */}
+      {/* 4. KICKSTART BLOCK - 28-day Beginner Program */}
+      <KickstartBlock />
+
+      {/* 5. SOCIAL PROOF - 3 Stories + Google Review */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Zij gingen je voor</h2>
@@ -264,7 +268,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. FAQ - 6 Common Beginner Questions */}
+      {/* 6. FAQ - 6 Common Beginner Questions */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Veelgestelde Vragen</h2>
@@ -363,7 +367,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. FOOTER CTA - Warm Final Push */}
+      {/* 7. FOOTER CTA - Warm Final Push */}
       <CTA
         variant="footer"
         title="Zie je jezelf hier al sporten?"
