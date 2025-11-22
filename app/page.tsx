@@ -149,7 +149,7 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-bold mb-2">Ontspannen Gesprek (Geen Training!)</h3>
                 <p className="text-lg text-gray-700 mb-3">
-                  We leren je kennen, beantwoorden al je vragen en laten je onze box zien. Je hoeft niet te sporten – gewoon een kop koffie en een praatje.
+                  We leren je kennen, beantwoorden al je vragen en laten je onze box zien. In dit gesprek leggen we ook het Kickstart-programma uit en kijken we of dat bij jou past. Je hoeft niet te sporten – gewoon een kop koffie en een praatje.
                 </p>
                 <p className="text-sm text-gray-600 italic">
                   💡 Dit noemen we een "No Sweat Intro" – letterlijk: geen zweten!
@@ -185,13 +185,13 @@ export default function Home() {
       <KickstartBlock />
 
       {/* 5. SOCIAL PROOF - Google Review Widget */}
-      <section className="section-padding bg-white py-16 md:py-24">
+      <section className="section-padding bg-white py-8 md:py-12">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Zij gingen je voor</h2>
 
           {/* Google Review Widget - Fixed Container */}
           <div className="max-w-6xl mx-auto">
-            <div className="relative w-full min-h-[800px] md:min-h-[600px]">
+            <div className="relative w-full min-h-[500px] md:min-h-[400px]">
               <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
               <iframe
                 className='lc_reviews_widget'
@@ -201,7 +201,7 @@ export default function Home() {
                 style={{
                   minWidth: '100%',
                   width: '100%',
-                  minHeight: '800px',
+                  minHeight: '500px',
                   height: '100%',
                   border: 'none'
                 }}

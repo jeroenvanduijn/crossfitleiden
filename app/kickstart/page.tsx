@@ -30,9 +30,13 @@ export default function Kickstart() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Wat is de Kickstart?</h2>
             <p className="text-lg text-gray-700 mb-4">
-              De Kickstart is het programma waar elke nieuwe starter mee begint bij CrossFit Leiden.
-              Het is speciaal ontworpen voor mensen die nog nooit CrossFit hebben gedaan, of die lang niet gesport hebben.
+              De Kickstart is ons 28-dagen beginnersprogramma, speciaal ontworpen voor mensen die nog nooit CrossFit hebben gedaan, of die lang niet gesport hebben.
             </p>
+            <div className="bg-verdigris/10 rounded-lg p-5 mb-6">
+              <p className="text-gray-800">
+                <strong>Let op:</strong> Iedereen begint met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.
+              </p>
+            </div>
             <p className="text-lg text-gray-700 mb-4">
               Gedurende <strong>28 dagen</strong> werk je aan je energie, routine en krijg je alle basis-bewegingen
               onder de knie – volledig op jouw tempo, met persoonlijke begeleiding van onze coaches.

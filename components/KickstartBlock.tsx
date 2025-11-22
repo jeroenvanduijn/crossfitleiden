@@ -21,9 +21,12 @@ export default function KickstartBlock() {
             />
           </div>
 
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Ons 28-dagen beginnersprogramma voor mensen zonder ervaring.
             Persoonlijke begeleiding, veilige opbouw, op jouw tempo.
+          </p>
+          <p className="text-base text-gray-600 leading-relaxed bg-jonquil/10 rounded-lg p-4">
+            <strong>Belangrijk:</strong> Je begint altijd met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.
           </p>
         </div>
 
@@ -121,10 +124,10 @@ export default function KickstartBlock() {
                 <span className="text-xl font-bold text-white">2</span>
               </div>
               <h4 className="text-lg font-bold text-gray-900 mb-2">
-                Plan maken
+                Kickstart uitleg
               </h4>
               <p className="text-gray-600 text-sm">
-                We leggen de Kickstart uit en beantwoorden je vragen.
+                We leggen de Kickstart uit en checken samen of het bij jou past.
               </p>
             </div>
 
@@ -134,10 +137,10 @@ export default function KickstartBlock() {
                 <span className="text-xl font-bold text-white">3</span>
               </div>
               <h4 className="text-lg font-bold text-gray-900 mb-2">
-                Starten
+                Kickstart starten
               </h4>
               <p className="text-gray-600 text-sm">
-                Begin op jouw moment met persoonlijke begeleiding.
+                Klikt het? Dan start je op jouw moment met de Kickstart.
               </p>
             </div>
           </div>
