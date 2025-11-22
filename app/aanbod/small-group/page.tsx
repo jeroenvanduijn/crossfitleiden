@@ -38,6 +38,78 @@ export default function SemiPrivate() {
         </div>
       </section>
 
+      {/* Specialized Programs */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <h2 className="text-3xl font-bold mb-8 text-center">Gespecialiseerde Small Group Programma's</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Naast algemene small group training bieden we ook specifieke programma's aan met gerichte doelen.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* GetShredded */}
+            <div className="bg-white rounded-xl p-8 border-2 border-cinnabar/20">
+              <div className="text-4xl mb-4">🔥</div>
+              <h3 className="text-2xl font-bold mb-3">GetShredded: 12-Weken Transformatie</h3>
+              <p className="text-gray-700 mb-4">
+                Een praktisch transformatieprogramma voor drukke ouders die willen afvallen, fitter worden en meer energie krijgen.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700 mb-4">
+                <li>✓ 4-5x per week effectieve trainingen</li>
+                <li>✓ Eenvoudig voedingsplan (geen extreme diëten)</li>
+                <li>✓ Wekelijkse begeleiding & metingen</li>
+                <li>✓ Privé WhatsApp groep voor support</li>
+              </ul>
+              <div className="bg-cinnabar/10 rounded-lg p-4 mb-4">
+                <p className="text-sm text-gray-700">
+                  <strong>Gemiddelde resultaten:</strong> 5-12 kg gewichtsverlies, veel meer energie, en blijvende gezonde gewoontes.
+                </p>
+              </div>
+              <p className="text-lg font-bold text-cinnabar mb-2">€495</p>
+              <p className="text-sm text-gray-600 mb-4">12 weken compleet programma (incl. onbeperkt groepslessen)</p>
+              <p className="text-sm text-gray-700">
+                <strong>Start:</strong> 4x per jaar (januari, april, juli, oktober)
+              </p>
+            </div>
+
+            {/* Unlock Motion */}
+            <div className="bg-white rounded-xl p-8 border-2 border-verdigris/20">
+              <div className="text-4xl mb-4">🧘</div>
+              <h3 className="text-2xl font-bold mb-3">Unlock Motion: Mobiliteit & Herstel</h3>
+              <p className="text-gray-700 mb-4">
+                Voor iedereen met een stijve rug, pijnlijke schouders of stramme heupen door te veel zitten. Leer weer soepel bewegen zonder pijn.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700 mb-4">
+                <li>✓ Rustige groepslessen (max 8 personen)</li>
+                <li>✓ Gerichte mobiliteits- en rekoefeningen</li>
+                <li>✓ Lichte krachtoefeningen voor stabiliteit</li>
+                <li>✓ Thuisoefeningen voor sneller resultaat</li>
+              </ul>
+              <div className="bg-verdigris/10 rounded-lg p-4 mb-4">
+                <p className="text-sm text-gray-700">
+                  <strong>Perfect voor:</strong> Kantoorwerk, chronische rugpijn, herstel na blessure, of voorbereiding op intensievere training.
+                </p>
+              </div>
+              <p className="text-lg font-bold text-verdigris mb-2">€65/maand</p>
+              <p className="text-sm text-gray-600 mb-4">2x per week, 60 minuten per les</p>
+              <p className="text-sm text-gray-700">
+                <strong>Combineer:</strong> +€20/maand bij regulier lidmaatschap
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-gray-700">
+              Interesse in een van deze programma's?{" "}
+              <Link href="/contact" className="text-verdigris font-semibold hover:underline">
+                Neem contact op
+              </Link>
+              {" "}voor meer informatie of plan een gratis intro!
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Voordelen van Small Group</h2>
