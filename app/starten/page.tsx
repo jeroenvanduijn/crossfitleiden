@@ -191,6 +191,64 @@ export default function StartenPage() {
           </div>
         </div>
       </section>
+
+      {/* What Happens Next Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+              Wat gebeurt er daarna?
+            </h2>
+
+            <div className="space-y-8">
+              {/* Step 1 */}
+              <div className="flex gap-6 bg-white rounded-xl p-6 md:p-8 shadow-sm">
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 bg-[#E4572E] rounded-full flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold">1</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Kennismaking & rondleiding</h3>
+                  <p className="text-lg text-gray-700">
+                    We leren je kennen, luisteren naar je doelen en beantwoorden al je vragen.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex gap-6 bg-white rounded-xl p-6 md:p-8 shadow-sm">
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 bg-[#17BEBB] rounded-full flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold">2</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Persoonlijk advies</h3>
+                  <p className="text-lg text-gray-700">
+                    We leggen uit hoe onze aanpak werkt en of de Kickstart bij jou past. Helemaal vrijblijvend.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex gap-6 bg-white rounded-xl p-6 md:p-8 shadow-sm">
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 bg-[#6A4C93] rounded-full flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold">3</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">Jouw plan voor de komende weken</h3>
+                  <p className="text-lg text-gray-700">
+                    Wil je door? Dan maken we samen een beginplan dat past bij jouw tijd, niveau en doelen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

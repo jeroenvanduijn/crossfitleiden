@@ -18,6 +18,7 @@ export default function Header() {
         { name: "Over CrossFit Leiden", href: "/over-ons" },
         { name: "Het Team", href: "/over-ons/team" },
         { name: "Onze Locatie", href: "/over-ons/locatie" },
+        { name: "Tarieven", href: "/tarieven" },
       ],
     },
     {
@@ -27,13 +28,20 @@ export default function Header() {
         { name: "Small Group Training", href: "/aanbod/small-group" },
         { name: "Kickstart Programma", href: "/kickstart" },
         { name: "Personal Training", href: "/aanbod/private-coaching" },
+        { name: "HYROX", href: "/aanbod/hyrox" },
         { name: "Fysiofabriek", href: "/aanbod/fysiofabriek" },
         { name: "Sport & Performance", href: "/aanbod/sport-performance" },
-        { name: "HYROX Simulatie Event", href: "/events/hyrox-simulation" },
       ],
     },
     { name: "Rooster", href: "/rooster" },
-    { name: "Tarieven", href: "/tarieven" },
+    {
+      name: "Events",
+      href: "#",
+      dropdown: [
+        { name: "HYROX Simulation", href: "/events/hyrox-simulation" },
+        { name: "De Volgende Ronde", href: "/events/de-volgende-ronde" },
+      ],
+    },
     { name: "Ervaringen", href: "/ervaringen" },
     { name: "Contact", href: "/contact" },
   ];
@@ -48,7 +56,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-heading font-bold text-cinnabar">
+            <span className="text-2xl font-heading font-bold text-[#E4572E]">
               CrossFit Leiden
             </span>
           </Link>
@@ -64,7 +72,7 @@ export default function Header() {
               >
                 {item.dropdown ? (
                   <>
-                    <button className="text-gray-700 hover:text-cinnabar transition-colors font-medium flex items-center gap-1">
+                    <button className="text-gray-700 hover:text-[#E4572E] transition-colors font-medium flex items-center gap-1">
                       {item.name}
                       <svg
                         className="w-4 h-4"
@@ -87,7 +95,7 @@ export default function Header() {
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className="block px-4 py-2 text-gray-700 hover:bg-cinnabar/5 hover:text-cinnabar transition-colors"
+                            className="block px-4 py-2 text-gray-700 hover:bg-[#E4572E]/5 hover:text-[#E4572E] transition-colors"
                           >
                             {subItem.name}
                           </Link>
@@ -99,7 +107,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-gray-700 hover:text-cinnabar transition-colors font-medium"
+                    className="text-gray-700 hover:text-[#E4572E] transition-colors font-medium"
                   >
                     {item.name}
                   </Link>
@@ -109,15 +117,15 @@ export default function Header() {
 
             {/* Language Toggle */}
             <div className="flex items-center space-x-2 text-sm">
-              <button className="text-gray-700 hover:text-cinnabar font-medium">
+              <button className="text-gray-700 hover:text-[#E4572E] font-medium">
                 NL
               </button>
               <span className="text-gray-300">|</span>
-              <button className="text-gray-400 hover:text-cinnabar">EN</button>
+              <button className="text-gray-400 hover:text-[#E4572E]">EN</button>
             </div>
 
             {/* CTA Button */}
-            <CTAButton variant="primary" className="whitespace-nowrap">
+            <CTAButton variant="header" className="whitespace-nowrap">
               Plan een Gratis Intro
             </CTAButton>
           </div>
@@ -155,7 +163,7 @@ export default function Header() {
                     <>
                       <button
                         onClick={() => toggleDropdown(item.name)}
-                        className="w-full text-left px-4 py-2 text-gray-700 hover:text-cinnabar font-medium flex items-center justify-between"
+                        className="w-full text-left px-4 py-2 text-gray-700 hover:text-[#E4572E] font-medium flex items-center justify-between"
                       >
                         {item.name}
                         <svg
@@ -180,7 +188,7 @@ export default function Header() {
                             <Link
                               key={subItem.name}
                               href={subItem.href}
-                              className="block px-8 py-2 text-gray-600 hover:text-cinnabar text-sm"
+                              className="block px-8 py-2 text-gray-600 hover:text-[#E4572E] text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               {subItem.name}
@@ -192,7 +200,7 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-4 py-2 text-gray-700 hover:text-cinnabar font-medium"
+                      className="block px-4 py-2 text-gray-700 hover:text-[#E4572E] font-medium"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
@@ -201,16 +209,16 @@ export default function Header() {
                 </div>
               ))}
               <div className="mx-4 mt-4">
-                <CTAButton variant="primary" className="w-full text-center">
+                <CTAButton variant="header" className="w-full text-center">
                   Plan een Gratis Intro
                 </CTAButton>
               </div>
 
               {/* Language Toggle Mobile */}
               <div className="flex items-center justify-center space-x-2 text-sm mt-4">
-                <button className="text-gray-700 hover:text-cinnabar font-medium">NL</button>
+                <button className="text-gray-700 hover:text-[#E4572E] font-medium">NL</button>
                 <span className="text-gray-300">|</span>
-                <button className="text-gray-400 hover:text-cinnabar">EN</button>
+                <button className="text-gray-400 hover:text-[#E4572E]">EN</button>
               </div>
             </div>
           </div>

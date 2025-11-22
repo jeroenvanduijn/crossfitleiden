@@ -168,7 +168,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <CTAButton variant="primary">
+            <CTAButton variant="white-bg">
               Plan Mijn Gratis Intro
             </CTAButton>
           </div>

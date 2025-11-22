@@ -207,7 +207,7 @@ export default function KickstartBlock() {
           <p className="text-gray-700 mb-6">
             Plan een gratis gesprek. Geen verplichtingen, gewoon kennismaken.
           </p>
-          <CTAButton variant="primary">
+          <CTAButton variant="white-bg">
             Plan een Gratis Intro
           </CTAButton>
         </div>

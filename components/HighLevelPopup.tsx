@@ -80,7 +80,7 @@ export default function HighLevelPopup() {
           {/* Description */}
           <div className="cfl-popup-header">
             <h3>Plan je gratis intro</h3>
-            <p>Het duurt 20 minuten en je hoeft niet te sporten.</p>
+            <p>Het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten.</p>
           </div>
 
           {/* HighLevel Form Iframe */}
