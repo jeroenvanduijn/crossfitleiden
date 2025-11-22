@@ -9,38 +9,31 @@ export default function Header() {
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Over ons", href: "/over-ons" },
+    {
+      name: "Over ons",
+      href: "#",
+      dropdown: [
+        { name: "Ons Verhaal", href: "/over-ons" },
+        { name: "Team", href: "/over-ons#team" },
+        { name: "Community & Events", href: "/over-ons#community" },
+      ],
+    },
     {
       name: "Aanbod",
       href: "#",
       dropdown: [
         { name: "Groepslessen", href: "/aanbod/groepslessen" },
-        { name: "GetShredded Programma", href: "/aanbod/getshredded" },
-        { name: "Unlock Motion Programma", href: "/aanbod/unlock-motion" },
-        { name: "Private Coaching", href: "/aanbod/private-coaching" },
-        { name: "Hyrox Lessen", href: "/aanbod/hyrox" },
-        { name: "Pre-teens (8-12 jaar)", href: "/aanbod/pre-teens" },
-        { name: "Teens (13-17 jaar)", href: "/aanbod/teens" },
-        { name: "Sports & Performance", href: "/aanbod/sports-performance" },
+        { name: "Personal Training", href: "/aanbod/private-coaching" },
+        { name: "Small Group / Semi-Private", href: "/aanbod/semi-private" },
+        { name: "Nutrition", href: "/nutrition" },
+        { name: "Kickstart", href: "/kickstart" },
+        { name: "HYROX", href: "/aanbod/hyrox" },
+        { name: "Workshops", href: "/aanbod/workshops" },
+        { name: "Teens", href: "/aanbod/teens" },
       ],
     },
-    { name: "Nutrition", href: "/nutrition" },
-    {
-      name: "More Info",
-      href: "#",
-      dropdown: [
-        { name: "De Faciliteit", href: "/info/faciliteit" },
-        { name: "Rooster", href: "/rooster" },
-        { name: "Tarieven", href: "/tarieven" },
-        { name: "Drop-in", href: "/info/drop-in" },
-      ],
-    },
-    {
-      name: "Events",
-      href: "#",
-      dropdown: [{ name: "Hyrox Simulation", href: "/events/hyrox-simulation" }],
-    },
-    { name: "Blog", href: "/blog" },
+    { name: "Rooster", href: "/rooster" },
+    { name: "Tarieven", href: "/tarieven" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -121,8 +114,8 @@ export default function Header() {
             </div>
 
             {/* CTA Button */}
-            <Link href="/starten" className="cta-button">
-              Gratis Proefles
+            <Link href="/starten" className="bg-jonquil text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-jonquil/90 transition-all shadow-md whitespace-nowrap">
+              Plan een Gratis Intro
             </Link>
           </div>
 
@@ -206,11 +199,18 @@ export default function Header() {
               ))}
               <Link
                 href="/starten"
-                className="cta-button text-center mx-4 mt-4"
+                className="bg-jonquil text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-jonquil/90 transition-all shadow-md text-center mx-4 mt-4 block"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Gratis Proefles
+                Plan een Gratis Intro
               </Link>
+
+              {/* Language Toggle Mobile */}
+              <div className="flex items-center justify-center space-x-2 text-sm mt-4">
+                <button className="text-gray-700 hover:text-cinnabar font-medium">NL</button>
+                <span className="text-gray-300">|</span>
+                <button className="text-gray-400 hover:text-cinnabar">EN</button>
+              </div>
             </div>
           </div>
         )}
