@@ -34,6 +34,7 @@ export default function Header() {
         { name: "Sport & Performance", href: "/aanbod/sport-performance" },
         { name: "Voeding", href: "/nutrition" },
         { name: "Teens", href: "/aanbod/teens" },
+        { name: "Pre Teens", href: "/aanbod/pre-teens" },
       ],
     },
     { name: "Rooster", href: "/rooster" },
