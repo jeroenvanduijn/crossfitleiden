@@ -7,9 +7,10 @@ import CTA from "@/components/CTA";
 
 export default function Rooster() {
   useEffect(() => {
-    // Wait for embed_rooster to be available, then initialize
+    // Wait for embed_rooster to be available, then initialize group classes schedule
     const checkAndInit = () => {
       if (typeof window !== 'undefined' && (window as any).embed_rooster) {
+        // Initialize group classes schedule (category 7)
         (window as any).embed_rooster.init('https://crossfitleiden.sportbitapp.nl/', 7);
       } else {
         // Retry after 100ms
@@ -48,15 +49,42 @@ export default function Rooster() {
             </Link>
           </div>
 
-          {/* Sportbit Schedule Embed */}
-          <div className="bg-gray-50 rounded-xl p-4 md:p-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
-              <link rel="stylesheet" href="https://crossfitleiden.sportbitapp.nl/cbm/css/embed/rooster/rooster.css" type="text/css" />
-              <Script
-                src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"
-                strategy="afterInteractive"
-              />
-              <div id="sportbit-rooster">&nbsp;</div>
+          {/* Groepslessen Rooster */}
+          <div className="mb-12">
+            <div className="bg-verdigris/10 rounded-t-xl p-4 border-b-4 border-verdigris">
+              <h3 className="text-2xl font-bold text-center">Groepslessen</h3>
+              <p className="text-center text-gray-700 mt-2">
+                Alle niveaus welkom • Max 12 personen per les • 60 minuten
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-b-xl p-4 md:p-8">
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
+                <link rel="stylesheet" href="https://crossfitleiden.sportbitapp.nl/cbm/css/embed/rooster/rooster.css" type="text/css" />
+                <Script
+                  src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"
+                  strategy="afterInteractive"
+                />
+                <div id="sportbit-rooster">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Small Group Training Rooster */}
+          <div className="mb-12">
+            <div className="bg-cinnabar/10 rounded-t-xl p-4 border-b-4 border-cinnabar">
+              <h3 className="text-2xl font-bold text-center">Small Group Training</h3>
+              <p className="text-center text-gray-700 mt-2">
+                2-4 personen • Persoonlijke aandacht • Op maat gemaakt programma
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-b-xl p-4 md:p-8">
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+                <iframe
+                  src="https://crossfitleiden.sportbitapp.nl/rooster?cat=1&embed=1"
+                  className="w-full min-h-[600px] border-0"
+                  title="Small Group Training Rooster"
+                />
+              </div>
             </div>
           </div>
         </div>
