@@ -46,6 +46,225 @@ export default function Rooster() {
         </div>
       </section>
 
+      {/* Lesson Overview Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Onze Lessen</h2>
+            <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+              Bij CrossFit Leiden hebben we een breed aanbod aan lessen. Van intense group classes tot persoonlijke small group training – er is voor ieder wat wils.
+            </p>
+
+            {/* Group Classes */}
+            <div className="mb-16">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Group Classes</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                {/* Training */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-verdigris to-teal-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">💪</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Training</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Algemene CrossFit-style training. Full body workout, geschikt voor alle niveaus. De perfecte mix van kracht, conditie en techniek.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Beginners en gevorderden, 18+
+                  </p>
+                </div>
+
+                {/* Hyrox */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-cinnabar to-red-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🏃</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Hyrox</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Geïnspireerd op HYROX races: veel conditie, sled pushes, lunges, ski, row en meer. Train voor je volgende race!
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Atleten die aan HYROX willen werken of hun uithoudingsvermogen willen verbeteren
+                  </p>
+                </div>
+
+                {/* Flex Friday */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-jonquil to-yellow-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🎉</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Flex Friday</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Speelsere vrijdag-workout met focus op fun, teamwork en het afsluiten van de werkweek. Minder serieus, meer plezier!
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Alle leden die de week gezellig en actief willen afsluiten
+                  </p>
+                </div>
+
+                {/* Running */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🏃‍♂️</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Running</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Hardlooptraining buiten, focus op techniek, tempo en duurvermogen. Van beginner tot marathon voorbereiding.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Leden die beter willen worden in hardlopen, ook beginners
+                  </p>
+                </div>
+
+                {/* Olympic Lifting */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🏋️</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Olympic Lifting</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Focus op gewichtheffen: snatch, clean & jerk met veel techniekcoaching. Word sterker en verbeter je techniek.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Leden die sterker willen worden en aan hun techniek willen werken
+                  </p>
+                </div>
+
+                {/* Teens */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">👦</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Teens</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Veilige en speelse training voor tieners. Focus op bewegen, kracht en zelfvertrouwen in een positieve omgeving.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Tieners (13-17 jaar)
+                  </p>
+                </div>
+
+                {/* Pre Teens */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🧒</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Pre Teens</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Training voor jongere kids met veel fun en basisbewegingen. Leren bewegen, sterk worden en samen sporten!
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Kinderen (9-12 jaar)
+                  </p>
+                </div>
+
+                {/* Urban Training */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🌆</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Urban Training</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Training buiten in de stad, gebruikmakend van de omgeving en obstakels. Frisse lucht, nieuwe uitdagingen!
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Leden die buiten willen trainen en van variatie houden
+                  </p>
+                </div>
+
+                {/* Mobility */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🧘</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Mobility</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Rustige les met focus op mobiliteit, flexibiliteit en beter bewegen. Perfect voor herstel en preventie van blessures.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Iedereen die stijve schouders/heupen heeft en beter wil herstellen
+                  </p>
+                </div>
+
+                {/* Gymnastics */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-6xl">🤸</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">Gymnastics</h4>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Focus op bodyweight skills: pull-ups, handstand, dips en core. Technisch sterker worden in gymnastische bewegingen.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Leden die sterker en technisch beter willen worden in gymnastiek
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Small Group */}
+            <div className="mb-12">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Small Group / Semi-Private</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                {/* GetShredded */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-xl font-bold">GetShredded</h4>
+                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">Small Group</span>
+                  </div>
+                  <div className="h-40 bg-gradient-to-br from-orange-400 to-red-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-5xl">🔥</span>
+                  </div>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Small group programma met focus op afvallen, strakker worden en conditie. Max 5 personen, persoonlijke aandacht.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Leden die vetmassa willen verliezen en zich fitter willen voelen
+                  </p>
+                </div>
+
+                {/* Unlock Motion */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-xl font-bold">Unlock Motion</h4>
+                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">Small Group</span>
+                  </div>
+                  <div className="h-40 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-5xl">🔓</span>
+                  </div>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Small group programma gericht op beter bewegen, pijnvrij trainen en mobiliteit. Ideaal bij klachten of beperkingen.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Leden met pijntjes, beperkingen of focus op techniek en bewegingskwaliteit
+                  </p>
+                </div>
+
+                {/* Kickstart */}
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-xl font-bold">Kickstart</h4>
+                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">Small Group</span>
+                  </div>
+                  <div className="h-40 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-5xl">🚀</span>
+                  </div>
+                  <p className="text-gray-700 text-sm mb-3">
+                    Instapprogramma voor nieuwe leden. Veilige opbouw van bewegingen, extra coaching en begeleiding in kleine groep.
+                  </p>
+                  <p className="text-xs text-cinnabar font-semibold">
+                    Voor: Complete beginners en mensen die rustig en veilig willen starten
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Schedule Info */}
       <section className="section-padding bg-white">
         <div className="container-custom">
