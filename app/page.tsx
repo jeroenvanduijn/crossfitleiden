@@ -3,6 +3,7 @@ import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import HighLevelPopup from "@/components/HighLevelPopup";
 import KickstartBlock from "@/components/KickstartBlock";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Home() {
   return (
@@ -311,17 +312,11 @@ export default function Home() {
       </section>
 
       {/* 7. FOOTER CTA - Warm Final Push */}
-      <section className="section-padding bg-cinnabar text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Zie je jezelf hier al sporten?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Plan je gratis intro – het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten. Gewoon kennismaken en kijken of het klikt. We kijken ernaar uit!
-          </p>
-          <CTAButton variant="hero">
-            Ja, ik wil kennismaken!
-          </CTAButton>
-        </div>
-      </section>
+      <IntroCtaSection
+        title="Zie je jezelf hier al sporten?"
+        subtitle="Plan je gratis intro – het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten. Gewoon kennismaken en kijken of het klikt. We kijken ernaar uit!"
+        buttonLabel="Ja, ik wil kennismaken!"
+      />
 
       <HighLevelPopup />
     </>

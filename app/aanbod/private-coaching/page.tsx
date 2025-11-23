@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function PrivateCoaching() {
   return (
@@ -336,12 +336,10 @@ export default function PrivateCoaching() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Klaar voor persoonlijke begeleiding?"
-        description="Start met een gratis intakegesprek (30 min). We bespreken jouw doelen, welke coach bij je past, en stellen een plan op. Daarna kun je beslissen of private coaching iets voor jou is. Geen verplichtingen!"
-        buttonText="Boek Gratis Intakegesprek"
-        href="/contact"
+        subtitle="Start met een gratis intakegesprek (30 min). We bespreken jouw doelen, welke coach bij je past, en stellen een plan op. Daarna kun je beslissen of private coaching iets voor jou is. Geen verplichtingen!"
+        buttonLabel="Boek Gratis Intakegesprek"
       />
 
       {/* Final note */}

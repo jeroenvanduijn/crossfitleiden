@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function TeamPage() {
   const coaches = [
@@ -179,12 +179,10 @@ export default function TeamPage() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Klaar om kennis te maken?"
-        description="Plan je gratis intro en ontmoet het team. Geen verplichtingen, gewoon een goed gesprek over jouw doelen."
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Plan je gratis intro en ontmoet het team. Geen verplichtingen, gewoon een goed gesprek over jouw doelen."
+        buttonLabel="Plan een Gratis Intro"
       />
     </>
   );

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function HYROXPage() {
   return (
@@ -102,12 +102,10 @@ export default function HYROXPage() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Klaar om te beginnen met HYROX training?"
-        description="Plan een gratis intro en kom kennismaken. We vertellen je alles over ons HYROX programma."
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Plan een gratis intro en kom kennismaken. We vertellen je alles over ons HYROX programma."
+        buttonLabel="Plan een Gratis Intro"
       />
     </>
   );

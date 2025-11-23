@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Kickstart() {
   return (
@@ -385,12 +385,10 @@ export default function Kickstart() {
       </section>
 
       {/* Afsluitende CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Benieuwd of de Kickstart bij jou past?"
-        description="Plan een gratis intro – geen workout, alleen een rustig gesprek en een rondleiding. We leggen je graag alles uit en beantwoorden al je vragen. Volledig vrijblijvend!"
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Plan een gratis intro – geen workout, alleen een rustig gesprek en een rondleiding. We leggen je graag alles uit en beantwoorden al je vragen. Volledig vrijblijvend!"
+        buttonLabel="Plan een Gratis Intro"
       />
 
       {/* Final note */}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function PreTeens() {
   return (
@@ -337,12 +337,10 @@ export default function PreTeens() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Laat Je Kind een Gratis Intro Doen!"
-        description="Nieuwsgierig of dit iets voor je kind is? Meld je aan voor een gratis intro. Je mag meekijken, je kind kan kennismaken met de coaches en andere kinderen, en daarna beslissen jullie samen of het leuk is!"
-        buttonText="Plan Gratis Intro"
-        href="/contact"
+        subtitle="Nieuwsgierig of dit iets voor je kind is? Meld je aan voor een gratis intro. Je mag meekijken, je kind kan kennismaken met de coaches en andere kinderen, en daarna beslissen jullie samen of het leuk is!"
+        buttonLabel="Plan Gratis Intro"
       />
 
       {/* Final note */}

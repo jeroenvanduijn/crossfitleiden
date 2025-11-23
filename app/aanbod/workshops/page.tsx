@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Workshops() {
   return (
@@ -170,12 +170,10 @@ export default function Workshops() {
         </div>
       </section>
 
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Interesse in Onze Workshops?"
-        description="Word lid en krijg toegang tot alle workshops. Plan een gratis intro en ontdek wat CrossFit Leiden voor jou kan betekenen!"
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Word lid en krijg toegang tot alle workshops. Plan een gratis intro en ontdek wat CrossFit Leiden voor jou kan betekenen!"
+        buttonLabel="Plan een Gratis Intro"
       />
 
       <section className="section-padding bg-white">

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useState } from "react";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Rooster() {
   const [activeRooster, setActiveRooster] = useState<'groepslessen' | 'small-group'>('groepslessen');
@@ -164,12 +164,10 @@ export default function Rooster() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Zie je een tijd die bij jou past?"
-        description="Probeer het eerst vrijblijvend met een gratis intro. We laten je de box zien, beantwoorden al je vragen en kijken samen welke lestijden bij jou passen!"
-        buttonText="Plan Mijn Gratis Intro"
-        href="/starten"
+        subtitle="Probeer het eerst vrijblijvend met een gratis intro. We laten je de box zien, beantwoorden al je vragen en kijken samen welke lestijden bij jou passen!"
+        buttonLabel="Plan Mijn Gratis Intro"
       />
 
       {/* Questions */}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function SemiPrivate() {
   return (
@@ -194,12 +194,10 @@ export default function SemiPrivate() {
         </div>
       </section>
 
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Interesse in Small Group Training?"
-        description="Plan een gratis intro. We bespreken je doelen, laten je de gym zien en kijken of small group iets voor jou is!"
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Plan een gratis intro. We bespreken je doelen, laten je de gym zien en kijken of small group iets voor jou is!"
+        buttonLabel="Plan een Gratis Intro"
       />
 
       <section className="section-padding bg-white">

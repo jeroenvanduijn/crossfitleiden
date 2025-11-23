@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Tarieven() {
   const memberships = [
@@ -451,12 +451,10 @@ export default function Tarieven() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Klaar om in jezelf te investeren?"
-        description="Voor minder dan €3 per dag krijg je professionele begeleiding, een warme community en een gezonder leven. Probeer het vrijblijvend met een gratis intro!"
-        buttonText="Plan Mijn Gratis Intro"
-        href="/starten"
+        subtitle="Voor minder dan €3 per dag krijg je professionele begeleiding, een warme community en een gezonder leven. Probeer het vrijblijvend met een gratis intro!"
+        buttonLabel="Plan Mijn Gratis Intro"
       />
     </>
   );

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function DeVolgendeRondePage() {
   return (
@@ -81,12 +81,10 @@ export default function DeVolgendeRondePage() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Nieuwsgierig naar onze community?"
-        description="Kom kennismaken tijdens een gratis intro. Dan vertellen we je alles over onze events!"
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Kom kennismaken tijdens een gratis intro. Dan vertellen we je alles over onze events!"
+        buttonLabel="Plan een Gratis Intro"
       />
     </>
   );

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function LocatiePage() {
   return (
@@ -161,12 +161,10 @@ export default function LocatiePage() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Kom langs voor een gratis intro"
-        description="Nieuwsgierig? Plan je gratis intro en kom de gym, het team en de sfeer ontdekken."
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Nieuwsgierig? Plan je gratis intro en kom de gym, het team en de sfeer ontdekken."
+        buttonLabel="Plan een Gratis Intro"
       />
     </>
   );

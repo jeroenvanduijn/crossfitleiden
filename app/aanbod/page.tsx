@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Aanbod() {
   return (
@@ -283,12 +283,10 @@ export default function Aanbod() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Nog twijfelen?"
-        description="Plan een gratis intro en ervaar zelf waarom zoveel mensen hier trainen. Geen verplichtingen, gewoon kennismaken en kijken of het bij je past!"
-        buttonText="Plan Mijn Gratis Intro"
-        href="/starten"
+        subtitle="Plan een gratis intro en ervaar zelf waarom zoveel mensen hier trainen. Geen verplichtingen, gewoon kennismaken en kijken of het bij je past!"
+        buttonLabel="Plan Mijn Gratis Intro"
       />
     </>
   );

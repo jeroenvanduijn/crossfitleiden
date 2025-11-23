@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function FysiofabriekPage() {
   return (
@@ -222,12 +222,10 @@ export default function FysiofabriekPage() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Nieuw bij CrossFit Leiden?"
-        description="Plan je gratis intro en ontdek hoe wij je helpen sterker te worden – met professionele zorg als backup."
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Plan je gratis intro en ontdek hoe wij je helpen sterker te worden – met professionele zorg als backup."
+        buttonLabel="Plan een Gratis Intro"
       />
     </>
   );

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Groepslessen() {
   return (
@@ -329,13 +329,11 @@ export default function Groepslessen() {
         </div>
       </section>
 
-      {/* Pricing & CTA - Using CTA Component */}
-      <CTA
-        variant="footer"
+      {/* Pricing & CTA */}
+      <IntroCtaSection
         title="Klaar om het te proberen?"
-        description="Alle nieuwe leden beginnen met een gratis intro. Dit is een ontspannen gesprek van 20-30 minuten waar je niet hoeft te sporten – gewoon kennismaken en kijken of het bij je past!"
-        buttonText="Plan Mijn Gratis Intro"
-        href="/starten"
+        subtitle="Alle nieuwe leden beginnen met een gratis intro. Dit is een ontspannen gesprek van 20-30 minuten waar je niet hoeft te sporten – gewoon kennismaken en kijken of het bij je past!"
+        buttonLabel="Plan Mijn Gratis Intro"
       />
     </>
   );

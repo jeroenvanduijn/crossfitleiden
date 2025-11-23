@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Nutrition() {
   return (
@@ -353,12 +353,10 @@ export default function Nutrition() {
         </div>
       </section>
 
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Klaar om gezonder te gaan eten?"
-        description="Download eerst ons gratis e-book of boek meteen een 1-op-1 consult. Kleine stappen, groot verschil!"
-        buttonText="Boek Voedingsconsult"
-        href="/contact"
+        subtitle="Download eerst ons gratis e-book of boek meteen een 1-op-1 consult. Kleine stappen, groot verschil!"
+        buttonLabel="Boek Voedingsconsult"
       />
     </>
   );

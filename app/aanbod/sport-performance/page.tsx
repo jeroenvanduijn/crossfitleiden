@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function SportPerformancePage() {
   return (
@@ -269,12 +269,10 @@ export default function SportPerformancePage() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Ook als individu welkom"
-        description="Zoek je persoonlijke training? Bekijk onze andere programma's of plan een gratis intro."
-        buttonText="Plan een Gratis Intro"
-        href="/starten"
+        subtitle="Zoek je persoonlijke training? Bekijk onze andere programma's of plan een gratis intro."
+        buttonLabel="Plan een Gratis Intro"
       />
     </>
   );

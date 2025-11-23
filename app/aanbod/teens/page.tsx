@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTA from "@/components/CTA";
+import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Teens() {
   return (
@@ -224,12 +224,10 @@ export default function Teens() {
       </section>
 
       {/* CTA */}
-      <CTA
-        variant="footer"
+      <IntroCtaSection
         title="Klaar om te beginnen?"
-        description="Plan een gratis intro. Geen ervaring nodig, gewoon kennismaken!"
-        buttonText="Plan Gratis Intro"
-        href="/contact"
+        subtitle="Plan een gratis intro. Geen ervaring nodig, gewoon kennismaken!"
+        buttonLabel="Plan Gratis Intro"
       />
 
       {/* Final note */}
