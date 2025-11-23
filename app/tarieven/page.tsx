@@ -296,8 +296,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🎯</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Small Group / Semi-Private</h3>
-                      <p className="text-sm text-gray-600">GetShredded</p>
+                      <h3 className="text-xl font-bold text-gray-900">GetShredded</h3>
+                      <p className="text-sm text-gray-600">Small Group / Semi-Private</p>
                     </div>
                   </div>
                   <svg
@@ -415,6 +415,46 @@ export default function Tarieven() {
 
                       <p className="text-gray-700">
                         Voor mensen met terugkerende pijn of fysieke beperkingen. Je traint 12 weken in een kleine groep aan mobiliteit, kracht en bewegingskwaliteit, met een plan dat helemaal op jouw lichaam is afgestemd.
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Body APK */}
+              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+                <button
+                  onClick={() => toggleSection('body-apk')}
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-[#E25C2A]/10 rounded-full flex items-center justify-center">
+                      <span className="text-2xl">📋</span>
+                    </div>
+                    <div className="text-left">
+                      <h3 className="text-xl font-bold text-gray-900">Body APK</h3>
+                      <p className="text-sm text-gray-600">intake voor UnlockMotion — inbegrepen bij UnlockMotion</p>
+                    </div>
+                  </div>
+                  <svg
+                    className={`w-6 h-6 text-gray-500 transition-transform ${openSection === 'body-apk' ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {openSection === 'body-apk' && (
+                  <div className="px-6 pb-6 border-t">
+                    <div className="pt-6 space-y-4">
+                      <div className="text-center">
+                        <p className="text-3xl font-bold text-[#E25C2A]">€220</p>
+                      </div>
+
+                      <p className="text-gray-700">
+                        Een volledige check van je houding, mobiliteit en bewegingen. Je ontdekt waarom je klachten hebt (of krijgt) en krijgt een duidelijk actieplan.
                       </p>
                     </div>
                   </div>
@@ -684,46 +724,6 @@ export default function Tarieven() {
                           <span className="text-xl font-bold text-[#E25C2A]">€80 p/m</span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Body APK */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-                <button
-                  onClick={() => toggleSection('body-apk')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-[#E25C2A]/10 rounded-full flex items-center justify-center">
-                      <span className="text-2xl">📋</span>
-                    </div>
-                    <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Body APK</h3>
-                      <p className="text-sm text-gray-600">intake voor UnlockMotion — inbegrepen bij UnlockMotion</p>
-                    </div>
-                  </div>
-                  <svg
-                    className={`w-6 h-6 text-gray-500 transition-transform ${openSection === 'body-apk' ? 'rotate-180' : ''}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-
-                {openSection === 'body-apk' && (
-                  <div className="px-6 pb-6 border-t">
-                    <div className="pt-6 space-y-4">
-                      <div className="text-center">
-                        <p className="text-3xl font-bold text-[#E25C2A]">€220</p>
-                      </div>
-
-                      <p className="text-gray-700">
-                        Een volledige check van je houding, mobiliteit en bewegingen. Je ontdekt waarom je klachten hebt (of krijgt) en krijgt een duidelijk actieplan.
-                      </p>
                     </div>
                   </div>
                 )}
