@@ -2,56 +2,36 @@
 
 import Link from "next/link";
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import CTA from "@/components/CTA";
 
 export default function Rooster() {
+  const [activeRooster, setActiveRooster] = useState<'groepslessen' | 'small-group'>('groepslessen');
+
   useEffect(() => {
-    // Wait for embed_rooster to be available, then initialize both schedules
+    // Wait for embed_rooster to be available, then initialize the active schedule
     const checkAndInit = () => {
       if (typeof window !== 'undefined' && (window as any).embed_rooster) {
-        // Initialize group classes schedule (category 7) in first container
-        (window as any).embed_rooster.init('https://crossfitleiden.sportbitapp.nl/', 7);
+        // Clear the container first
+        const container = document.getElementById('sportbit-rooster');
+        if (container) {
+          container.innerHTML = '&nbsp;';
+        }
 
-        // For the second schedule, we need to modify the DOM
-        // The Sportbit embed looks for the div with id "sportbit-rooster"
-        // We'll need to reinitialize after swapping the div ID
-        setTimeout(() => {
-          // Temporarily change the first rooster's ID
-          const firstRooster = document.getElementById('sportbit-rooster');
-          if (firstRooster) {
-            firstRooster.id = 'sportbit-rooster-groups';
-          }
-
-          // Change the second container's ID to what the script expects
-          const secondRooster = document.getElementById('sportbit-rooster-small');
-          if (secondRooster) {
-            secondRooster.id = 'sportbit-rooster';
-            // Initialize small group schedule (category 1)
-            (window as any).embed_rooster.init('https://crossfitleiden.sportbitapp.nl/', 1);
-
-            // Restore the ID after initialization
-            setTimeout(() => {
-              if (secondRooster) {
-                secondRooster.id = 'sportbit-rooster-small';
-              }
-              if (firstRooster) {
-                firstRooster.id = 'sportbit-rooster';
-              }
-            }, 100);
-          }
-        }, 2000);
+        // Initialize the appropriate category based on active rooster
+        const category = activeRooster === 'groepslessen' ? 7 : 1;
+        (window as any).embed_rooster.init('https://crossfitleiden.sportbitapp.nl/', category);
       } else {
         // Retry after 100ms
         setTimeout(checkAndInit, 100);
       }
     };
 
-    // Start checking after a short delay to ensure scripts are loaded
+    // Start checking after a short delay
     const timer = setTimeout(checkAndInit, 500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [activeRooster]); // Re-run when activeRooster changes
 
   return (
     <>
@@ -78,38 +58,68 @@ export default function Rooster() {
             </Link>
           </div>
 
-          {/* Groepslessen Rooster */}
-          <div className="mb-12">
-            <div className="bg-verdigris/10 rounded-t-xl p-4 border-b-4 border-verdigris">
-              <h3 className="text-2xl font-bold text-center">Groepslessen</h3>
-              <p className="text-center text-gray-700 mt-2">
-                Alle niveaus welkom • Max 12 personen per les • 60 minuten
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-b-xl p-4 md:p-8">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
-                <link rel="stylesheet" href="https://crossfitleiden.sportbitapp.nl/cbm/css/embed/rooster/rooster.css" type="text/css" />
-                <Script
-                  src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"
-                  strategy="afterInteractive"
-                />
-                <div id="sportbit-rooster">&nbsp;</div>
-              </div>
+          {/* Rooster Type Selector */}
+          <div className="mb-8">
+            <div className="flex flex-col md:flex-row gap-4 max-w-3xl mx-auto">
+              <button
+                onClick={() => setActiveRooster('groepslessen')}
+                className={`flex-1 p-6 rounded-xl border-2 transition-all ${
+                  activeRooster === 'groepslessen'
+                    ? 'border-verdigris bg-verdigris/10 shadow-lg'
+                    : 'border-gray-200 bg-white hover:border-verdigris/50'
+                }`}
+              >
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  <span className="text-3xl">👥</span>
+                  <h3 className="text-2xl font-bold">Groepslessen</h3>
+                </div>
+                <p className="text-sm text-gray-700 text-center">
+                  Alle niveaus • Max 12 personen • 60 minuten
+                </p>
+                {activeRooster === 'groepslessen' && (
+                  <div className="mt-3 text-center">
+                    <span className="inline-block bg-verdigris text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      Actief rooster ✓
+                    </span>
+                  </div>
+                )}
+              </button>
+
+              <button
+                onClick={() => setActiveRooster('small-group')}
+                className={`flex-1 p-6 rounded-xl border-2 transition-all ${
+                  activeRooster === 'small-group'
+                    ? 'border-cinnabar bg-cinnabar/10 shadow-lg'
+                    : 'border-gray-200 bg-white hover:border-cinnabar/50'
+                }`}
+              >
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  <span className="text-3xl">🎯</span>
+                  <h3 className="text-2xl font-bold">Small Group</h3>
+                </div>
+                <p className="text-sm text-gray-700 text-center">
+                  2-4 personen • Persoonlijke aandacht • Op maat
+                </p>
+                {activeRooster === 'small-group' && (
+                  <div className="mt-3 text-center">
+                    <span className="inline-block bg-cinnabar text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      Actief rooster ✓
+                    </span>
+                  </div>
+                )}
+              </button>
             </div>
           </div>
 
-          {/* Small Group Training Rooster */}
-          <div className="mb-12">
-            <div className="bg-cinnabar/10 rounded-t-xl p-4 border-b-4 border-cinnabar">
-              <h3 className="text-2xl font-bold text-center">Small Group Training</h3>
-              <p className="text-center text-gray-700 mt-2">
-                2-4 personen • Persoonlijke aandacht • Op maat gemaakt programma
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-b-xl p-4 md:p-8">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
-                <div id="sportbit-rooster-small">&nbsp;</div>
-              </div>
+          {/* Sportbit Schedule Embed */}
+          <div className="bg-gray-50 rounded-xl p-4 md:p-8">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
+              <link rel="stylesheet" href="https://crossfitleiden.sportbitapp.nl/cbm/css/embed/rooster/rooster.css" type="text/css" />
+              <Script
+                src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"
+                strategy="afterInteractive"
+              />
+              <div id="sportbit-rooster">&nbsp;</div>
             </div>
           </div>
         </div>
