@@ -11,12 +11,34 @@ export default function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In productie: verstuur naar backend/email service
-    console.log("Contact form submitted:", formData);
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Er ging iets mis');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Er ging iets mis bij het verzenden van je bericht');
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -226,11 +248,19 @@ export default function Contact() {
                     />
                   </div>
 
+                  {error && (
+                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                      <p className="font-semibold">⚠️ Fout</p>
+                      <p className="text-sm">{error}</p>
+                    </div>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full cta-button-secondary text-center py-4 text-lg"
+                    disabled={isSubmitting}
+                    className="w-full cta-button-secondary text-center py-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Verstuur Bericht
+                    {isSubmitting ? 'Verzenden...' : 'Verstuur Bericht'}
                   </button>
 
                   <p className="text-sm text-gray-600 text-center">
