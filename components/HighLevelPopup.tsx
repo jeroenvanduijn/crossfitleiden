@@ -88,12 +88,24 @@ export default function HighLevelPopup() {
             <iframe
               src="https://kilo.gymleadmachine.com/widget/form/nGDExYgYZcuHjGNwCsue"
               style={{
+                display: 'block',
                 width: '100%',
                 height: '100%',
                 border: 'none',
                 borderRadius: '7px'
               }}
               id="popup-nGDExYgYZcuHjGNwCsue"
+              data-layout='{"id":"POPUP"}'
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Website Form"
+              data-height="undefined"
+              data-layout-iframe-id="popup-nGDExYgYZcuHjGNwCsue"
+              data-form-id="nGDExYgYZcuHjGNwCsue"
               title="Website Form"
             />
           </div>

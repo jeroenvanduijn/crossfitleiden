@@ -44,10 +44,10 @@ export default function IntroCtaSection({
         )}
         <button
           onClick={handleClick}
-          className="inline-block px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          className="inline-block px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 border-2 border-[#E25C2A] hover:bg-[#E25C2A]/10"
           style={{
             backgroundColor: '#FFFFFF',
-            color: '#EF4D37'
+            color: '#E25C2A'
           }}
         >
           {buttonLabel}

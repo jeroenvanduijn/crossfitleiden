@@ -25,8 +25,9 @@ export default function Header() {
       name: "Aanbod",
       href: "#",
       dropdown: [
-        { name: "Small Group Training", href: "/aanbod/small-group" },
         { name: "Kickstart Programma", href: "/kickstart" },
+        { name: "Groepstraining", href: "/aanbod/groepslessen" },
+        { name: "Small Group Training", href: "/aanbod/small-group" },
         { name: "Personal Training", href: "/aanbod/private-coaching" },
         { name: "HYROX", href: "/aanbod/hyrox" },
         { name: "Fysiofabriek", href: "/aanbod/fysiofabriek" },

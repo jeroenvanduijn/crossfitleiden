@@ -112,58 +112,6 @@ export default function PrivateCoaching() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Verhalen van Private Coaching Cliënten</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 mb-4 italic">
-                "Ik heb jaren geblesseerd rondgelopen. Met private coaching kon mijn coach elke beweging controleren
-                en aanpassen. Na 12 sessies ben ik eindelijk pijnvrij en kan ik weer sporten. Goud waard!"
-              </p>
-              <div>
-                <p className="font-semibold">Tom, 44 jaar</p>
-                <p className="text-sm text-gray-600">Herstel van rugblessure</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 mb-4 italic">
-                "Ik was doodsbang om in een groep te trainen. Private coaching gaf me de ruimte om op mijn eigen tempo
-                te leren zonder me onzeker te voelen. Nu train ik zelfs in groepslessen!"
-              </p>
-              <div>
-                <p className="font-semibold">Emma, 37 jaar</p>
-                <p className="text-sm text-gray-600">Van 0 naar groepslessen in 8 weken</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 mb-4 italic">
-                "Mijn werkschema is chaotisch en groepslessen passen er nooit in. Met private coaching train ik wanneer
-                ik kan – vroeg in de ochtend of laat in de avond. Super flexibel!"
-              </p>
-              <div>
-                <p className="font-semibold">Jasper, 41 jaar</p>
-                <p className="text-sm text-gray-600">Consultant met veel reizen</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 mb-4 italic">
-                "Ik wilde snel resultaat voor mijn vakantie. 10 private sessies in 5 weken, 100% focus op afvallen
-                en sterker worden. Ik verloor 6 kilo en voelde me geweldig. Het werkt echt!"
-              </p>
-              <div>
-                <p className="font-semibold">Sophie, 39 jaar</p>
-                <p className="text-sm text-gray-600">Intensief 5-weken programma</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Voor wie */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
@@ -201,76 +149,63 @@ export default function PrivateCoaching() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Pakketten & Tarieven</h2>
-            <p className="text-center text-gray-700 mb-8">
-              Alle sessies zijn 60 minuten 1-op-1 training. Grotere pakketten = lagere prijs per sessie.
-            </p>
-            <div className="space-y-4">
-              <div className="bg-gray-50 rounded-lg p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <div>
-                    <h3 className="font-bold text-lg">Losse Sessie</h3>
-                    <p className="text-sm text-gray-600">60 minuten 1-op-1 training</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-2xl font-bold text-cinnabar">€75</p>
-                  </div>
-                </div>
-                <p className="text-sm text-gray-600">Perfect om te proberen of voor incidentele begeleiding</p>
-              </div>
 
-              <div className="bg-gray-50 rounded-lg p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <div>
-                    <h3 className="font-bold text-lg">5 Sessies Pakket</h3>
-                    <p className="text-sm text-gray-600">5x 60 minuten • €70 per sessie</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-2xl font-bold text-cinnabar">€350</p>
-                    <p className="text-sm text-green-600 font-semibold">Bespaar €25</p>
+            {/* Punchcards */}
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold mb-6">Personal Training Punchcards</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* 60 min */}
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-bold text-gray-900 mb-4">60 minuten PT</h4>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-700">5 sessies</span>
+                      <span className="text-xl font-bold text-[#E25C2A]">€450</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-700">10 sessies</span>
+                      <span className="text-xl font-bold text-[#E25C2A]">€800</span>
+                    </div>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">Goed voor korte focus (bijv. techniek perfectioneren)</p>
-              </div>
 
-              <div className="bg-chinese-violet/10 border-2 border-chinese-violet rounded-lg p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <div>
-                    <h3 className="font-bold text-lg flex items-center gap-2">
-                      10 Sessies Pakket
-                      <span className="bg-chinese-violet text-white text-xs px-2 py-1 rounded">POPULAIR</span>
-                    </h3>
-                    <p className="text-sm text-gray-600">10x 60 minuten • €65 per sessie</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-2xl font-bold text-cinnabar">€650</p>
-                    <p className="text-sm text-green-600 font-semibold">Bespaar €100</p>
-                  </div>
-                </div>
-                <p className="text-sm text-gray-700 font-semibold">
-                  💡 Beste prijs-kwaliteit voor serieuze resultaten (2-3 maanden 1x per week)
-                </p>
-              </div>
-
-              <div className="bg-gray-50 rounded-lg p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <div>
-                    <h3 className="font-bold text-lg">Maandabonnement</h3>
-                    <p className="text-sm text-gray-600">4x per maand • €60 per sessie</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-2xl font-bold text-cinnabar">€240/maand</p>
-                    <p className="text-sm text-green-600 font-semibold">Beste deal!</p>
+                {/* 30 min */}
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-bold text-gray-900 mb-4">30 minuten PT</h4>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-700">5 sessies</span>
+                      <span className="text-xl font-bold text-[#E25C2A]">€225</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-700">10 sessies</span>
+                      <span className="text-xl font-bold text-[#E25C2A]">€400</span>
+                    </div>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">Voor langdurige begeleiding (minimaal 3 maanden commitment)</p>
               </div>
             </div>
 
-            <div className="mt-8 bg-verdigris/10 rounded-xl p-6">
-              <p className="text-gray-700 text-sm">
-                <strong>💡 Combinatie met groepslessen?</strong> Veel mensen doen 1-2x private per maand als aanvulling
-                op hun groepslidmaatschap (€35/maand extra voor 2x private). Vraag naar de combi-deals!
+            {/* Monthly Private Coaching */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Monthly Private Coaching</h3>
+              <p className="text-gray-700 mb-4">
+                Elke maand een privé coachmoment waarin je werkt aan techniek, kracht, mobiliteit of herstel.
               </p>
+              <div className="space-y-3">
+                <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                  <span className="font-semibold text-gray-900">Skill 1</span>
+                  <span className="text-xl font-bold text-[#E25C2A]">€90 p/m</span>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                  <span className="font-semibold text-gray-900">Skill 2</span>
+                  <span className="text-xl font-bold text-[#E25C2A]">€175 p/m</span>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                  <span className="font-semibold text-gray-900">Skill 4</span>
+                  <span className="text-xl font-bold text-[#E25C2A]">€370 p/m</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -281,55 +216,85 @@ export default function PrivateCoaching() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
-            <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Hoe vaak moet ik trainen voor resultaat?</h3>
-                <p className="text-gray-700">
+            <div className="space-y-4">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Hoe vaak moet ik trainen voor resultaat?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Dat hangt van je doel af. Voor techniek leren: 5-10 sessies is vaak genoeg. Voor blijvende resultaten
                   (afvallen, sterker): minimaal 1x per week voor 8-12 weken. Veel mensen starten met 2x per week en
                   schalen af naar 1x per week onderhoud.
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Welke coach krijg ik?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Welke coach krijg ik?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Tijdens het intakegesprek bespreken we jouw doelen en koppelen we je aan de coach die het beste bij je past
                   (bijv. specialisatie in blessures, afvallen, of kracht). Je houdt dezelfde coach voor continuïteit.
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Kan ik later overstappen naar groepslessen?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Kan ik later overstappen naar groepslessen?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Absoluut! Veel mensen starten met private coaching om techniek te leren en stappen daarna over naar
                   groepslessen. We helpen je graag met de overgang op het juiste moment.
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Hoe flexibel is het plannen?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Hoe flexibel is het plannen?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Zeer flexibel! Je spreekt tijden af met je coach die bij jullie beiden passen. Annuleren kan tot
                   24 uur van tevoren. Ideaal voor onregelmatige schema's.
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Wat als ik niet tevreden ben?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Wat als ik niet tevreden ben?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Na de eerste sessie kun je kosteloos stoppen als het niet bij je past. Daarna geldt voor pakketten:
                   ongebruikte sessies kun je binnen 3 maanden omzetten of terugkrijgen (minus €25 administratie).
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Krijg ik ook een voedingsplan?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Krijg ik ook een voedingsplan?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Op verzoek wel! Vooral bij doelen zoals afvallen combineren we training met voedingsadvies.
                   Dit is inclusief in de prijs – geen extra kosten.
                 </p>
-              </div>
+              </details>
             </div>
           </div>
         </div>

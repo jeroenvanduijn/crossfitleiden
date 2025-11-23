@@ -1,7 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Kickstart() {
+  // Handler for opening the intro popup
+  const handlePopupClick = () => {
+    if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
+      (window as any).openCFLPopup();
+    }
+  };
   return (
     <>
       {/* Hero sectie */}
@@ -12,14 +20,14 @@ export default function Kickstart() {
               Start veilig en sterk met onze Kickstart
             </h1>
             <p className="text-xl mb-8 text-gray-800">
-              Ons 28-dagen beginnersprogramma met persoonlijke begeleiding, veilige opbouw en een duidelijk plan.
+              Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.
             </p>
-            <Link
-              href="/starten"
-              className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all shadow-lg text-lg"
+            <button
+              onClick={handlePopupClick}
+              className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all shadow-lg text-lg cursor-pointer"
             >
               Plan een Gratis Intro
-            </Link>
+            </button>
           </div>
         </div>
       </section>
@@ -30,11 +38,11 @@ export default function Kickstart() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Wat is de Kickstart?</h2>
             <p className="text-lg text-gray-700 mb-4">
-              De Kickstart is ons 28-dagen beginnersprogramma, speciaal ontworpen voor mensen die nog nooit CrossFit hebben gedaan, of die lang niet gesport hebben.
+              Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.
             </p>
-            <div className="bg-verdigris/10 rounded-lg p-5 mb-6">
+            <div className="bg-jonquil/10 rounded-lg p-5 mb-6">
               <p className="text-gray-800">
-                <strong>Let op:</strong> Iedereen begint met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.
+                <strong>Belangrijk:</strong> Je begint altijd met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.
               </p>
             </div>
             <p className="text-lg text-gray-700 mb-4">
@@ -262,12 +270,12 @@ export default function Kickstart() {
             </div>
 
             <div className="mt-12 text-center">
-              <Link
-                href="/starten"
-                className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all shadow-lg text-lg"
+              <button
+                onClick={handlePopupClick}
+                className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all shadow-lg text-lg cursor-pointer"
               >
                 Plan een Gratis Intro
-              </Link>
+              </button>
               <p className="text-gray-600 text-sm mt-4">
                 Het gesprek is gratis en vrijblijvend. Geen verplichtingen!
               </p>
@@ -331,54 +339,60 @@ export default function Kickstart() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
-            <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Moet ik fit zijn om de Kickstart te doen?</h3>
-                <p className="text-gray-700">
+            <div className="space-y-4">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                  Moet ik fit zijn om de Kickstart te doen?
+                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Absoluut niet! De Kickstart is speciaal gemaakt voor beginners die nog niet fit zijn.
                   We passen alles aan op jouw niveau en bouwen rustig op.
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Hoe vaak train ik tijdens de Kickstart?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                  Hoe vaak train ik tijdens de Kickstart?
+                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   We raden 2-3 keer per week aan voor de beste resultaten. Dat is haalbaar naast werk en gezin,
                   en geeft je lichaam genoeg tijd om te herstellen.
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Is de Kickstart verplicht?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                  Is de Kickstart verplicht?
+                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Nee, maar we raden het sterk aan! 95% van onze nieuwe leden kiest voor de Kickstart omdat het rust,
                   structuur en vertrouwen geeft. Het is de beste manier om veilig te starten.
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Wat kost de Kickstart?</h3>
-                <p className="text-gray-700">
-                  De Kickstart is inbegrepen in je lidmaatschap. Je betaalt het normale maandtarief en krijgt volledige
-                  toegang tot de Kickstart begeleiding. Tijdens je gratis intro bespreken we alle opties.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Kan ik na de Kickstart stoppen?</h3>
-                <p className="text-gray-700">
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                  Kan ik na de Kickstart stoppen?
+                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-700 mt-4">
                   Ja, je kunt maandelijks opzeggen. Maar de meeste mensen gaan graag door omdat ze merken
                   hoeveel verschil het maakt in hun energie en welzijn!
                 </p>
-              </div>
+              </details>
 
-              <div className="bg-white rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-2">Train ik alleen of in een groep?</h3>
-                <p className="text-gray-700">
-                  Dat kies je zelf! Sommige mensen starten in een kleine groep (max 8-10 personen), anderen kiezen
-                  voor semi-private (2-4 personen). We bespreken tijdens de intro wat het beste bij jou past.
+              <details className="bg-white rounded-xl p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                  Train ik alleen of in een groep?
+                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-700 mt-4">
+                  Nee, je traint in een kleine groep van max 5 personen.
                 </p>
-              </div>
+              </details>
             </div>
           </div>
         </div>
