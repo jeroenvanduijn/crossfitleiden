@@ -32,6 +32,7 @@ export default function Header() {
         { name: "HYROX", href: "/aanbod/hyrox" },
         { name: "Fysiofabriek", href: "/aanbod/fysiofabriek" },
         { name: "Sport & Performance", href: "/aanbod/sport-performance" },
+        { name: "Voeding", href: "/nutrition" },
         { name: "Teens", href: "/aanbod/teens" },
       ],
     },
