@@ -1,3 +1,5 @@
+"use client";
+
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function DropIn() {
