@@ -50,11 +50,6 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Info</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/starten" className="hover:text-cinnabar transition-colors">
-                  Starten
-                </Link>
-              </li>
-              <li>
                 <Link href="/ervaringen" className="hover:text-cinnabar transition-colors">
                   Ervaringen
                 </Link>

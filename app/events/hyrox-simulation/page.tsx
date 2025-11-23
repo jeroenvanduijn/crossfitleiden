@@ -20,9 +20,19 @@ export default function HyroxSimulation() {
               Onze Hyrox Simulation is een volledig in-house Hyrox race event. Je doorloopt alle 8 officiële Hyrox stations
               in hetzelfde format als een echte Hyrox race: 8 rondes van 1km running + station.
             </p>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 mb-6">
               Perfect als voorbereiding voor een officiële Hyrox race, of gewoon als ultimate challenge voor jezelf!
             </p>
+            <div className="text-center">
+              <a
+                href="https://hyrox.crossfitleiden.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all shadow-lg"
+              >
+                Ga naar HYROX Sim Website
+              </a>
+            </div>
           </div>
         </div>
       </section>
