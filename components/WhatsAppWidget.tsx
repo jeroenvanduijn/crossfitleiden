@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppWidget() {
-  const phoneNumber = "31970102580"; // WhatsApp format: country code + number
+  const phoneNumber = "3197010258140"; // WhatsApp format: country code + number
   const message = "Hallo! Ik heb een vraag over CrossFit Leiden.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
