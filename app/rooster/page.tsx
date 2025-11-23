@@ -80,9 +80,10 @@ export default function Rooster() {
             <div className="bg-gray-50 rounded-b-xl p-4 md:p-8">
               <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                 <iframe
-                  src="https://crossfitleiden.sportbitapp.nl/rooster?cat=1&embed=1"
+                  src="https://crossfitleiden.sportbitapp.nl/rooster?cat=1"
                   className="w-full min-h-[600px] border-0"
                   title="Small Group Training Rooster"
+                  allow="fullscreen"
                 />
               </div>
             </div>
