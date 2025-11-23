@@ -90,14 +90,79 @@ export default function HYROXPage() {
 
       {/* Schedule */}
       <section className="section-padding bg-white">
-        <div className="container-custom max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Training Schema</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Elke week staat de HYROX training in ons rooster. Check het rooster voor actuele tijden.
+        <div className="container-custom max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">Lessenrooster</h2>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Maandag</h3>
+              <p className="text-gray-700">2 Hyrox lessen</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Woensdag</h3>
+              <p className="text-gray-700">2 Hyrox lessen</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Vrijdag</h3>
+              <p className="text-gray-700">2 Hyrox lessen (90 minuten)</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Zaterdag</h3>
+              <p className="text-gray-700">1 Hyrox les</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <Link href="/rooster" className="inline-block bg-[#E25C2A] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/90 transition-all shadow-md">
+              Bekijk Rooster voor Tijden
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Hyrox Simulations */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center">HYROX Simulaties</h2>
+          <p className="text-lg text-gray-700 mb-8 text-center">
+            Regelmatig organiseren we volledige HYROX simulaties waar je de echte race kunt ervaren.
+            Perfect voor je race voorbereiding!
           </p>
-          <Link href="/rooster" className="inline-block bg-[#E4572E] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E4572E]/90 transition-all shadow-md">
-            Bekijk Rooster
-          </Link>
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white rounded-xl p-6">
+              <h3 className="text-xl font-bold mb-4">Volledige Race</h3>
+              <p className="text-gray-700 mb-4">
+                8 rondes van 1 km rennen + alle 8 stations. Ervaar de echte HYROX race in een veilige,
+                ondersteunende omgeving met coaches die je door de race heen helpen.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6">
+              <h3 className="text-xl font-bold mb-4">Halve Race & Divisions</h3>
+              <p className="text-gray-700 mb-4">
+                Ook halve races beschikbaar. Kies tussen Solo of Doubles divisions.
+                Ideaal als je nog niet klaar bent voor de volledige afstand.
+              </p>
+            </div>
+          </div>
+          <div className="text-center space-y-4">
+            <p className="text-gray-700">
+              Check ons HYROX Simulation event voor meer informatie:
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/events/hyrox-simulation"
+                className="inline-block bg-[#E25C2A] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/90 transition-all shadow-md"
+              >
+                HYROX Simulation Event
+              </Link>
+              <a
+                href="https://hyrox.crossfitleiden.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-[#E25C2A] border-2 border-[#E25C2A] px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/10 transition-all shadow-md"
+              >
+                Officiële HYROX Sim Website
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -54,7 +54,7 @@ export default function HyroxSimulation() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">🏃 Solo Division</h3>
                 <p className="text-gray-700">Doe de volledige race individueel. Voor de echte warriors!</p>
@@ -62,6 +62,10 @@ export default function HyroxSimulation() {
               <div className="bg-white rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">👥 Doubles Division</h3>
                 <p className="text-gray-700">Doe het met een partner - verdeel de stations zoals je wilt!</p>
+              </div>
+              <div className="bg-white rounded-xl p-6">
+                <h3 className="text-xl font-bold mb-3">✂️ Halve Race</h3>
+                <p className="text-gray-700">Nog niet klaar voor de volledige afstand? Doe de halve race!</p>
               </div>
             </div>
           </div>
@@ -93,15 +97,17 @@ export default function HyroxSimulation() {
       <section className="section-padding bg-cinnabar/10">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Aankomende Events</h2>
+            <h2 className="text-3xl font-bold mb-6">Hyrox Simulation Events</h2>
             <div className="bg-white rounded-xl p-8 mb-6">
-              <div className="text-6xl mb-4">📅</div>
-              <h3 className="text-2xl font-bold mb-2">Volgende Hyrox Simulation</h3>
-              <p className="text-xl text-gray-700 mb-4">Zaterdag 15 Maart 2025</p>
-              <p className="text-gray-600 mb-6">Starts vanaf 09:00 (heat elke 30 min)</p>
+              <div className="text-6xl mb-4">🏆</div>
+              <h3 className="text-2xl font-bold mb-4">Ervaar de Volledige HYROX Race</h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Regelmatig organiseren we HYROX simulaties in onze box. 8 rondes van 1km rennen + alle 8 stations,
+                of kies voor de halve race als je daar nog niet klaar voor bent.
+              </p>
               <div className="space-y-2 text-left max-w-md mx-auto mb-6">
-                <p className="text-gray-700">💶 <strong>Inschrijving:</strong> €35 (incl. timing, medal, foto's)</p>
-                <p className="text-gray-700">👥 <strong>Max deelnemers:</strong> 50 (vol = vol!)</p>
+                <p className="text-gray-700">🏃 <strong>Opties:</strong> Volledige race, halve race</p>
+                <p className="text-gray-700">👥 <strong>Divisions:</strong> Solo of Doubles</p>
                 <p className="text-gray-700">🏅 <strong>Included:</strong> Finisher medal, professionele timing, rankings, foto's</p>
               </div>
             </div>
@@ -118,11 +124,16 @@ export default function HyroxSimulation() {
 
       <section className="section-padding bg-cinnabar text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Schrijf je in!</h2>
-          <p className="text-xl mb-8">Plekken zijn beperkt. Wacht niet te lang!</p>
-          <Link href="/contact" className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
-            Inschrijven voor Event
-          </Link>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Meer Informatie & Inschrijven</h2>
+          <p className="text-xl mb-8">Check de officiële HYROX Simulation website voor data en inschrijving!</p>
+          <a
+            href="https://hyrox.crossfitleiden.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block"
+          >
+            Ga naar HYROX Sim Website
+          </a>
         </div>
       </section>
     </>

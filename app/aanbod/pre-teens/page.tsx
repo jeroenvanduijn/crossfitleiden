@@ -6,7 +6,7 @@ export default function PreTeens() {
     <>
       <section className="bg-gradient-to-r from-verdigris to-cyan-600 text-white section-padding">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Sporten voor Kinderen (8-12 jaar)</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Sporten voor Kinderen (9-12 jaar)</h1>
           <p className="text-xl max-w-2xl">
             Laat je kind sterker, zelfverzekerder en fitter worden in een veilige, leuke omgeving.
             Speciaal aangepaste lessen voor basisschool-leeftijd – geen ervaring nodig!
@@ -19,7 +19,7 @@ export default function PreTeens() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Waarom Onze Kinderlessen?</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Onze lessen voor 8-12 jarigen zijn speciaal ontworpen voor kinderen in de basisschoolleeftijd.
+              Onze lessen voor 9-12 jarigen zijn speciaal ontworpen voor kinderen in de basisschoolleeftijd.
               We focussen op plezier, beweging en een gezonde relatie met sport opbouwen – niet op presteren of competitie.
             </p>
             <p className="text-lg text-gray-700 mb-6">
@@ -244,9 +244,9 @@ export default function PreTeens() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-verdigris/10 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">📅 Wanneer?</h3>
-                <p className="text-gray-700 mb-2">Ma, Wo & Vr: 16:00-17:00</p>
+                <p className="text-gray-700 mb-2">Woensdag 16:00</p>
                 <p className="text-sm text-gray-600">
-                  Je kind kan zoveel lessen volgen als het wil (onbeperkt abonnement)
+                  1 training per week
                 </p>
               </div>
 
@@ -260,9 +260,9 @@ export default function PreTeens() {
 
               <div className="bg-verdigris/10 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">💰 Prijs</h3>
-                <p className="text-gray-700 mb-2">€45 per maand</p>
+                <p className="text-gray-700 mb-2">€42,50 per maand</p>
                 <p className="text-sm text-gray-600">
-                  Onbeperkt lessen, maandelijks opzegbaar. Gezinskorting beschikbaar!
+                  Maandelijks opzegbaar
                 </p>
               </div>
 

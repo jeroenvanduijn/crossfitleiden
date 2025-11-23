@@ -151,9 +151,9 @@ export default function Teens() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">📅 Wanneer?</h3>
-                <p className="text-gray-700 mb-2">Ma, Di, Do: 17:00-18:00<br/>Za: 10:00-11:00</p>
+                <p className="text-gray-700 mb-2">Woensdag<br/>Zaterdag 11:00</p>
                 <p className="text-sm text-gray-600">
-                  Kies zelf hoe vaak je komt (2x of onbeperkt)
+                  Kies zelf hoe vaak je komt (1x of 2x per week)
                 </p>
               </div>
 
@@ -167,7 +167,7 @@ export default function Teens() {
 
               <div className="bg-white rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">💰 Prijs</h3>
-                <p className="text-gray-700 mb-2">€55/maand (2x per week)<br/>€75/maand (onbeperkt)</p>
+                <p className="text-gray-700 mb-2">€42,50/maand (1x per week)<br/>€80/maand (2x per week)</p>
                 <p className="text-sm text-gray-600">
                   Maandelijks opzegbaar
                 </p>
