@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function LocatiePage() {
@@ -10,21 +10,38 @@ export default function LocatiePage() {
   const galleryImages = Array.from({ length: 22 }, (_, i) => {
     const number = i + 7;
     return {
-      url: `https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/faciliteit/hero-background-${number}.jpg`,
+      url: `https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/faciliteit/hero-background-${String(number).padStart(2, '0')}.jpg`,
       number: number
     };
   });
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Scroll functie voor galerij navigatie
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 336; // breedte van foto (320px) + gap (16px)
+      const currentScroll = scrollContainerRef.current.scrollLeft;
+      const targetScroll = direction === 'left'
+        ? currentScroll - scrollAmount
+        : currentScroll + scrollAmount;
+
+      scrollContainerRef.current.scrollTo({
+        left: targetScroll,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   return (
     <>
-      {/* Hero Section met foto 21 */}
+      {/* Hero Section met foto 32 */}
       <section className="relative bg-gray-900 text-white overflow-hidden">
-        {/* Hero Background Image - foto 21 */}
+        {/* Hero Background Image - foto 32 */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/faciliteit/hero-background-21.jpg"
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/faciliteit/hero-background-32.jpg"
             alt="CrossFit Leiden faciliteit"
             fill
             className="object-cover"
@@ -195,7 +212,7 @@ export default function LocatiePage() {
         </div>
       </section>
 
-      {/* Fotosectie - Horizontale rij */}
+      {/* Fotosectie - Horizontale rij met navigatieknoppen */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-3 text-center">Een kijkje in onze gym</h2>
@@ -203,10 +220,26 @@ export default function LocatiePage() {
             Krijg een indruk van onze gym, lounge en trainingsruimte.
           </p>
 
-          {/* Horizontale scrollbare fotorij */}
-          <div className="relative">
-            <div className="overflow-x-auto pb-4 scroll-smooth">
-              <div className="flex gap-4 min-w-max px-4">
+          {/* Horizontale scrollbare fotorij met navigatieknoppen */}
+          <div className="relative max-w-7xl mx-auto">
+            {/* Linker navigatieknop */}
+            <button
+              onClick={() => scroll('left')}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all hover:scale-110"
+              aria-label="Vorige foto's"
+            >
+              <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            {/* Fotorij */}
+            <div
+              ref={scrollContainerRef}
+              className="overflow-x-auto pb-4 scroll-smooth scrollbar-hide"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              <div className="flex gap-4 min-w-max px-12">
                 {galleryImages.map((img) => (
                   <div
                     key={img.number}
@@ -224,6 +257,17 @@ export default function LocatiePage() {
                 ))}
               </div>
             </div>
+
+            {/* Rechter navigatieknop */}
+            <button
+              onClick={() => scroll('right')}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all hover:scale-110"
+              aria-label="Volgende foto's"
+            >
+              <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
 
           <p className="text-center text-gray-600 mt-6 text-sm">
@@ -257,13 +301,27 @@ export default function LocatiePage() {
         </div>
       )}
 
-      {/* Vind ons */}
+      {/* Google Maps */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-4 text-center">Vind ons</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Vind ons</h2>
           <p className="text-center text-gray-600 text-lg mb-8">
             Marie Diebenplaats 108, 2324 NG Leiden
           </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.775976603252!2d4.477064777311962!3d52.13839647196366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c659350263d7%3A0x1da63fc16f0b0158!2sCrossFit%20Leiden!5e0!3m2!1sen!2snl!4v1763899362690!5m2!1sen!2snl"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="CrossFit Leiden op Google Maps"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -273,6 +331,12 @@ export default function LocatiePage() {
         subtitle="Nieuwsgierig? Plan je gratis intro en kom de gym, het team en de sfeer ontdekken."
         buttonLabel="Plan een Gratis Intro"
       />
+
+      <style jsx global>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </>
   );
 }
