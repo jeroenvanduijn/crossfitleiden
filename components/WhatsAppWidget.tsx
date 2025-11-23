@@ -1,19 +1,21 @@
 "use client";
 
+import { useState } from "react";
+import WhatsAppPopup from "./WhatsAppPopup";
+
 export default function WhatsAppWidget() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const phoneNumber = "3197010258140"; // WhatsApp format: country code + number
   const message = "Hallo! Ik heb een vraag over CrossFit Leiden.";
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <a
-      href={whatsappUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 group"
-      aria-label="Chat via WhatsApp"
-    >
-      <div className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all transform hover:scale-110 flex items-center gap-3">
+    <>
+      <button
+        onClick={() => setIsPopupOpen(true)}
+        className="fixed bottom-6 right-6 z-50 group"
+        aria-label="Chat via WhatsApp"
+      >
+        <div className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all transform hover:scale-110 flex items-center gap-3">
         {/* WhatsApp Icon */}
         <svg
           className="w-7 h-7"
@@ -29,6 +31,14 @@ export default function WhatsAppWidget() {
           Chat met ons
         </span>
       </div>
-    </a>
+      </button>
+
+      <WhatsAppPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+        phoneNumber={phoneNumber}
+        message={message}
+      />
+    </>
   );
 }
