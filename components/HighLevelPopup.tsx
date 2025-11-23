@@ -127,6 +127,7 @@ export default function HighLevelPopup() {
           align-items: center;
           justify-content: center;
           padding: 20px;
+          overflow-y: auto;
         }
 
         /* Popup Content Container */
@@ -135,10 +136,13 @@ export default function HighLevelPopup() {
           background: #ffffff;
           border-radius: 12px;
           box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-          max-width: 500px;
+          max-width: 600px;
           width: 100%;
+          max-height: 90vh;
           padding: 32px;
           animation: slideIn 0.3s ease-out;
+          overflow-y: auto;
+          margin: auto;
         }
 
         @keyframes slideIn {
@@ -196,17 +200,27 @@ export default function HighLevelPopup() {
         /* Form Container */
         .cfl-popup-form {
           width: 100%;
-          min-height: 400px;
+          min-height: 600px;
+          height: auto;
           background: #f9f9f9;
           border-radius: 8px;
-          overflow: hidden;
+          overflow: visible;
         }
 
         /* Mobile Responsive */
         @media (max-width: 640px) {
+          #cfl-popup-modal {
+            padding: 10px;
+          }
+
           .cfl-popup-content {
-            max-width: 90%;
-            padding: 24px;
+            max-width: 95%;
+            max-height: 95vh;
+            padding: 20px;
+          }
+
+          .cfl-popup-header {
+            margin-bottom: 16px;
           }
 
           .cfl-popup-header h3 {
@@ -224,7 +238,7 @@ export default function HighLevelPopup() {
           }
 
           .cfl-popup-form {
-            min-height: 350px;
+            min-height: 500px;
           }
         }
       `}</style>
