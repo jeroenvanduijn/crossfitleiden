@@ -1,8 +1,28 @@
+"use client";
+
 import Link from "next/link";
 import Script from "next/script";
+import { useEffect } from "react";
 import CTA from "@/components/CTA";
 
 export default function Rooster() {
+  useEffect(() => {
+    // Wait for embed_rooster to be available, then initialize
+    const checkAndInit = () => {
+      if (typeof window !== 'undefined' && (window as any).embed_rooster) {
+        (window as any).embed_rooster.init('https://crossfitleiden.sportbitapp.nl/', 7);
+      } else {
+        // Retry after 100ms
+        setTimeout(checkAndInit, 100);
+      }
+    };
+
+    // Start checking after a short delay to ensure scripts are loaded
+    const timer = setTimeout(checkAndInit, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       {/* Hero - Simplified */}
@@ -37,13 +57,6 @@ export default function Rooster() {
                 strategy="afterInteractive"
               />
               <div id="sportbit-rooster">&nbsp;</div>
-              <Script
-                id="sportbit-init"
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                  __html: `(function(){embed_rooster.init('https://crossfitleiden.sportbitapp.nl/',7);})();`
-                }}
-              />
             </div>
           </div>
         </div>
