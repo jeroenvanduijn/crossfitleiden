@@ -94,8 +94,8 @@ export default function HighLevelPopup() {
                 border: 'none',
                 borderRadius: '7px'
               }}
-              id="popup-nGDExYgYZcuHjGNwCsue"
-              data-layout='{"id":"POPUP"}'
+              id="inline-nGDExYgYZcuHjGNwCsue"
+              data-layout='{"id":"INLINE"}'
               data-trigger-type="alwaysShow"
               data-trigger-value=""
               data-activation-type="alwaysActivated"
@@ -103,8 +103,8 @@ export default function HighLevelPopup() {
               data-deactivation-type="neverDeactivate"
               data-deactivation-value=""
               data-form-name="Website Form"
-              data-height="undefined"
-              data-layout-iframe-id="popup-nGDExYgYZcuHjGNwCsue"
+              data-height="600"
+              data-layout-iframe-id="inline-nGDExYgYZcuHjGNwCsue"
               data-form-id="nGDExYgYZcuHjGNwCsue"
               title="Website Form"
             />
