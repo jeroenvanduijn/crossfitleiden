@@ -7,11 +7,40 @@ import CTA from "@/components/CTA";
 
 export default function Rooster() {
   useEffect(() => {
-    // Wait for embed_rooster to be available, then initialize group classes schedule
+    // Wait for embed_rooster to be available, then initialize both schedules
     const checkAndInit = () => {
       if (typeof window !== 'undefined' && (window as any).embed_rooster) {
-        // Initialize group classes schedule (category 7)
+        // Initialize group classes schedule (category 7) in first container
         (window as any).embed_rooster.init('https://crossfitleiden.sportbitapp.nl/', 7);
+
+        // For the second schedule, we need to modify the DOM
+        // The Sportbit embed looks for the div with id "sportbit-rooster"
+        // We'll need to reinitialize after swapping the div ID
+        setTimeout(() => {
+          // Temporarily change the first rooster's ID
+          const firstRooster = document.getElementById('sportbit-rooster');
+          if (firstRooster) {
+            firstRooster.id = 'sportbit-rooster-groups';
+          }
+
+          // Change the second container's ID to what the script expects
+          const secondRooster = document.getElementById('sportbit-rooster-small');
+          if (secondRooster) {
+            secondRooster.id = 'sportbit-rooster';
+            // Initialize small group schedule (category 1)
+            (window as any).embed_rooster.init('https://crossfitleiden.sportbitapp.nl/', 1);
+
+            // Restore the ID after initialization
+            setTimeout(() => {
+              if (secondRooster) {
+                secondRooster.id = 'sportbit-rooster-small';
+              }
+              if (firstRooster) {
+                firstRooster.id = 'sportbit-rooster';
+              }
+            }, 100);
+          }
+        }, 2000);
       } else {
         // Retry after 100ms
         setTimeout(checkAndInit, 100);
@@ -78,13 +107,8 @@ export default function Rooster() {
               </p>
             </div>
             <div className="bg-gray-50 rounded-b-xl p-4 md:p-8">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-                <iframe
-                  src="https://crossfitleiden.sportbitapp.nl/rooster?cat=1"
-                  className="w-full min-h-[600px] border-0"
-                  title="Small Group Training Rooster"
-                  allow="fullscreen"
-                />
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
+                <div id="sportbit-rooster-small">&nbsp;</div>
               </div>
             </div>
           </div>
