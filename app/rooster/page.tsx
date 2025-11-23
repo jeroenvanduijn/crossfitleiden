@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import CTA from "@/components/CTA";
 
 export default function Rooster() {
@@ -27,109 +28,22 @@ export default function Rooster() {
             </Link>
           </div>
 
-          {/* Schedule Embed */}
-          <div className="bg-gray-50 rounded-xl p-4 md:p-8 mb-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+          {/* Sportbit Schedule Embed */}
+          <div className="bg-gray-50 rounded-xl p-4 md:p-8">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
               <link rel="stylesheet" href="https://crossfitleiden.sportbitapp.nl/cbm/css/embed/rooster/rooster.css" type="text/css" />
-              <script type="text/javascript" src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"></script>
+              <Script
+                src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"
+                strategy="afterInteractive"
+              />
               <div id="sportbit-rooster">&nbsp;</div>
-              <script type="text/javascript" dangerouslySetInnerHTML={{
-                __html: `(function(){embed_rooster.init('https://crossfitleiden.sportbitapp.nl/',7);})();`
-              }} />
-            </div>
-          </div>
-
-          {/* Weekly Schedule Preview */}
-          <div className="mt-12">
-            <h3 className="text-2xl font-bold mb-6 text-center">Typische Week Overzicht</h3>
-            <p className="text-center text-gray-600 mb-8">Dit is hoe een typische week eruit ziet – handig om te plannen!</p>
-
-            <div className="grid grid-cols-1 md:grid-cols-7 gap-4">
-              {[
-                { day: 'Ma', label: 'Maandag' },
-                { day: 'Di', label: 'Dinsdag' },
-                { day: 'Wo', label: 'Woensdag' },
-                { day: 'Do', label: 'Donderdag' },
-                { day: 'Vr', label: 'Vrijdag' },
-                { day: 'Za', label: 'Zaterdag' },
-                { day: 'Zo', label: 'Zondag' }
-              ].map((dayInfo, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-lg p-4">
-                  <h4 className="font-bold text-center mb-3 text-lg">{dayInfo.day}</h4>
-                  <div className="space-y-2 text-sm">
-                    {index < 5 ? ( // Weekdays
-                      <>
-                        <div className="bg-verdigris/10 rounded p-2">
-                          <p className="font-semibold">06:30</p>
-                          <p className="text-xs text-gray-600">Groepsles</p>
-                        </div>
-                        <div className="bg-verdigris/10 rounded p-2">
-                          <p className="font-semibold">09:00</p>
-                          <p className="text-xs text-gray-600">Groepsles</p>
-                        </div>
-                        <div className="bg-verdigris/10 rounded p-2">
-                          <p className="font-semibold">12:00</p>
-                          <p className="text-xs text-gray-600">Groepsles</p>
-                        </div>
-                        <div className="bg-verdigris/10 rounded p-2">
-                          <p className="font-semibold">17:30</p>
-                          <p className="text-xs text-gray-600">Groepsles</p>
-                        </div>
-                        <div className="bg-verdigris/10 rounded p-2">
-                          <p className="font-semibold">18:30</p>
-                          <p className="text-xs text-gray-600">Groepsles</p>
-                        </div>
-                        <div className="bg-verdigris/10 rounded p-2">
-                          <p className="font-semibold">19:30</p>
-                          <p className="text-xs text-gray-600">Groepsles</p>
-                        </div>
-                      </>
-                    ) : index === 5 ? ( // Saturday
-                      <>
-                        <div className="bg-jonquil/20 rounded p-2">
-                          <p className="font-semibold">09:00</p>
-                          <p className="text-xs text-gray-600">Groepsles</p>
-                        </div>
-                        <div className="bg-jonquil/20 rounded p-2">
-                          <p className="font-semibold">10:00</p>
-                          <p className="text-xs text-gray-600">Beginners</p>
-                        </div>
-                        <div className="bg-chinese-violet/20 rounded p-2">
-                          <p className="font-semibold">11:00</p>
-                          <p className="text-xs text-gray-600">Vrij trainen</p>
-                        </div>
-                      </>
-                    ) : ( // Sunday
-                      <div className="text-center text-gray-400 py-4">
-                        <p className="text-xs font-semibold">Vrij Trainen</p>
-                        <p className="text-xs">10:00 - 12:00</p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="text-center text-sm text-gray-500 mt-6">
-              * Dit is een voorbeeld rooster. Check het actuele rooster hierboven voor de laatste wijzigingen en beschikbaarheid.
-            </p>
-          </div>
-
-          {/* Legend */}
-          <div className="mt-12 max-w-2xl mx-auto bg-gray-50 rounded-xl p-6">
-            <h4 className="font-semibold mb-4 text-center">Legenda</h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="flex items-center justify-center md:justify-start">
-                <div className="w-4 h-4 bg-verdigris/20 rounded mr-3"></div>
-                <span className="text-gray-700">Groepslessen - Alle niveaus</span>
-              </div>
-              <div className="flex items-center justify-center md:justify-start">
-                <div className="w-4 h-4 bg-jonquil/20 rounded mr-3"></div>
-                <span className="text-gray-700">Beginners - Extra begeleiding</span>
-              </div>
-              <div className="flex items-center justify-center md:justify-start">
-                <div className="w-4 h-4 bg-chinese-violet/20 rounded mr-3"></div>
-                <span className="text-gray-700">Vrij Trainen - Open Gym</span>
-              </div>
+              <Script
+                id="sportbit-init"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `(function(){embed_rooster.init('https://crossfitleiden.sportbitapp.nl/',7);})();`
+                }}
+              />
             </div>
           </div>
         </div>
