@@ -57,8 +57,8 @@ export default function HighLevelPopup() {
       if (document.body.contains(script)) {
         document.body.removeChild(script);
       }
-      delete (window as any).openCFLPopup;
-      delete (window as any).closeCFLPopup;
+      // Niet verwijderen - deze functies moeten beschikbaar blijven
+      // voor CTA buttons die mogelijk na cleanup nog proberen te openen
     };
   }, []);
 
