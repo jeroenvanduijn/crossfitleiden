@@ -280,6 +280,140 @@ export default function Groepslessen() {
         </div>
       </section>
 
+      {/* Guided by certified coaches */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Rochelle */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png"
+                  alt="Rochelle"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Rochelle</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Rochelle is turncoach op nationaal niveau en brengt die expertise naar CrossFit Leiden. Ze is geweldig met kinderen en volwassenen, en helpt iedereen om bewegingen veilig te leren.
+              </p>
+            </div>
+
+            {/* Natália */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
+                  alt="Natália"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Natália</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Natália komt uit Brazilië en verhuisde in 2022 naar Nederland. Met een diploma in bewegingswetenschappen en een passie voor hardlopen brengt ze creativiteit en positiviteit naar elke les.
+              </p>
+            </div>
+
+            {/* Sem */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20sem.png"
+                  alt="Sem Li"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Sem Li</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Sem is altijd vrolijk en maakt graag contact met iedereen in zijn lessen. Hij houdt van Olympic weightlifting en staat elke ochtend om 5 uur op om te trainen voordat hij de eerste les geeft.
+              </p>
+            </div>
+
+            {/* Max */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png"
+                  alt="Max"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Max</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Kickstart Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Max heeft jaren ervaring als personal trainer en CrossFit coach. Hij houdt van wandelen en kamperen met zijn familie. Als coach creëert Max een leuke en positieve sfeer waar iedereen zich welkom voelt.
+              </p>
+            </div>
+
+            {/* Jeffrey */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png"
+                  alt="Jeffrey Perez Stoof"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Jeffrey Perez</h3>
+                  <p className="text-cinnabar text-sm font-semibold">GetShredded Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Jeffrey was profvoetballer voordat hij CrossFit coach werd. Hij snapt wat het betekent om te presteren én om je op je gemak te voelen. Jeffrey past zijn coaching aan op wat jij nodig hebt.
+              </p>
+            </div>
+
+            {/* Erin */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Erin.png"
+                  alt="Erin"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Erin</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Erin coachte al in 2019 bij CrossFit Leiden en is nu terug. Overdag werkt ze bij Defensie waar ze militairen helpt mentaal sterk te blijven. In haar vrije tijd geeft ze salsalessen.
+              </p>
+            </div>
+
+            {/* Hoite */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/hoite.png"
+                  alt="Hoite"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Hoite</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Hoite is een van onze toegewijde coaches die graag met beginners werkt. Hij neemt de tijd om bewegingen goed uit te leggen en zorgt ervoor dat je je op je gemak voelt tijdens de les.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing & CTA */}
       <IntroCtaSection
         title="Klaar om het te proberen?"
