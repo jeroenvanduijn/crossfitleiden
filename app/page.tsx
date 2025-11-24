@@ -34,8 +34,8 @@ export default function Home() {
               Meer energie voor jouw gezin én jezelf
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Voor drukke ouders die weer fit willen worden, zonder oordeel en met begeleiding op jouw niveau.
-              Geen ervaring nodig – wij leren je alles stap voor stap.
+              Voor drukke ouders en professionals die weer fit willen worden, zonder oordeel en met begeleiding op jouw niveau.
+              Geen ervaring nodig, we leren je alles stap voor stap.
             </p>
             <CTAButton variant="hero" className="inline-block">
               Plan een Gratis Intro
