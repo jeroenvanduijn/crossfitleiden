@@ -284,6 +284,50 @@ export default function Kickstart() {
         </div>
       </section>
 
+      {/* Guided by certified coaches */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Coach Max */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png"
+                  alt="Coach Max"
+                  className="w-20 h-20 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h3 className="font-bold text-xl">Coach Max</h3>
+                  <p className="text-cinnabar font-semibold">Kickstart Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700">
+                Max is de coach die zelfs tijdens burpees blijft glimlachen. Rustig, duidelijk en positief – en hij zorgt dat jij je meteen thuis voelt.
+              </p>
+            </div>
+
+            {/* Coach Annie */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png"
+                  alt="Coach Annie"
+                  className="w-20 h-20 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h3 className="font-bold text-xl">Coach Annie</h3>
+                  <p className="text-cinnabar font-semibold">Nutrition Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700">
+                Annie is onze rustige kracht. Geen gedoe, geen drama – gewoon praktische tips die passen in je drukke leven.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Resultaten van leden - Social proof */}
       <section className="section-padding bg-white">
         <div className="container-custom">
@@ -291,29 +335,14 @@ export default function Kickstart() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
-                <div className="text-3xl mr-3">👩</div>
-                <div>
-                  <p className="font-bold">Lisa, 38 jaar</p>
-                  <p className="text-sm text-gray-600">Moeder van 2, drukke baan</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "Ik begon met nul ervaring en was echt zenuwachtig. De Kickstart gaf me precies de structuur en rust
-                die ik nodig had. Binnen 4 weken voelde ik me al sterker en energieker!"
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center mb-4">
                 <div className="text-3xl mr-3">👨</div>
                 <div>
-                  <p className="font-bold">Peter, 45 jaar</p>
-                  <p className="text-sm text-gray-600">15 jaar niet gesport</p>
+                  <p className="font-bold">Matthew, 43</p>
+                  <p className="text-sm text-gray-600">Father of 4 kids</p>
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "De Kickstart gaf mij precies de structuur die ik nodig had. De coaches namen de tijd om alles uit te leggen
-                en ik voelde me nooit gehaast. Perfect programma voor mensen zoals ik."
+                "Just completed the intake month – what a great experience. Max explained everything so clearly and kept it fun. If you're thinking about it, just book. The environment is incredibly welcoming."
               </p>
             </div>
 
@@ -321,13 +350,25 @@ export default function Kickstart() {
               <div className="flex items-center mb-4">
                 <div className="text-3xl mr-3">👩</div>
                 <div>
-                  <p className="font-bold">Marieke, 39 jaar</p>
-                  <p className="text-sm text-gray-600">Moeder van 3</p>
+                  <p className="font-bold">Liselotte, 42</p>
+                  <p className="text-sm text-gray-600">Mother of a young child</p>
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "Perfect voor drukke ouders! Haalbaar in te plannen, warm ontvangen, en ik voelde me nooit onzeker.
-                De Kickstart heeft me geholpen een nieuwe routine op te bouwen."
+                "I'm so glad I started training here. After one month of small-group training and nutrition guidance, I already feel fitter and have more energy. The coaches are professional and relaxed."
+              </p>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <div className="text-3xl mr-3">👩</div>
+                <div>
+                  <p className="font-bold">Julia, 44</p>
+                  <p className="text-sm text-gray-600">Mom with low energy</p>
+                </div>
+              </div>
+              <p className="text-gray-700 italic">
+                "If you're hesitating: DO IT. I started the Kickstart at the end of October and it changed everything. After four weeks of coaching and community, I feel fitter, stronger and honestly happier."
               </p>
             </div>
           </div>
