@@ -245,7 +245,7 @@ export default function HighLevelPopup() {
           background: transparent;
           border-radius: 8px;
           overflow: visible;
-          margin-bottom: 8px;
+          margin-bottom: 0;
         }
 
         /* Benefits Section - New, scannable */
@@ -253,6 +253,7 @@ export default function HighLevelPopup() {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 12px;
+          margin-top: -16px;
           margin-bottom: 20px;
           padding: 20px;
           background: #f9fafb;
