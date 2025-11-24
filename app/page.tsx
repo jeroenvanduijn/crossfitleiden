@@ -24,6 +24,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 to-gray-900/70 z-10"></div>
         <div className="relative z-20 container-custom">
           <div className="max-w-3xl">
+            {/* Google Review Stars */}
+            <div className="mb-6">
+              <p className="text-yellow-400 text-lg">
+                ⭐ ⭐ ⭐ ⭐ ⭐ <span className="text-white ml-2">265 plus Google reviews van 5 sterren</span>
+              </p>
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Meer energie voor jouw gezin én jezelf
             </h1>

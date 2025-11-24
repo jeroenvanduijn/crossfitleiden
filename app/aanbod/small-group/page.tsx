@@ -50,56 +50,33 @@ export default function SemiPrivate() {
             {/* GetShredded */}
             <div className="bg-white rounded-xl p-8 border-2 border-cinnabar/20">
               <div className="text-4xl mb-4">🔥</div>
-              <h3 className="text-2xl font-bold mb-3">GetShredded: 12-Weken Transformatie</h3>
+              <h3 className="text-2xl font-bold mb-3">GetShredded</h3>
               <p className="text-gray-700 mb-4">
-                Een praktisch transformatieprogramma voor drukke ouders die willen afvallen, fitter worden en meer energie krijgen.
+                GetShredded is ons small group programma voor drukke ouders die fitter, sterker en slanker willen worden. Je traint drie keer per week in een kleine groep met persoonlijke aandacht. Geen metingen, geen ingewikkelde schema's, gewoon een aanpak die werkt.
               </p>
-              <ul className="space-y-2 text-sm text-gray-700 mb-4">
-                <li>✓ 4-5x per week effectieve trainingen</li>
-                <li>✓ Eenvoudig voedingsplan (geen extreme diëten)</li>
-                <li>✓ Wekelijkse begeleiding & metingen</li>
-                <li>✓ Privé WhatsApp groep voor support</li>
-              </ul>
               <div className="bg-cinnabar/10 rounded-lg p-4 mb-4">
                 <p className="text-sm text-gray-700">
-                  <strong>Gemiddelde resultaten:</strong> 5-12 kg gewichtsverlies, veel meer energie, en blijvende gezonde gewoontes.
+                  <strong>Gemiddelde resultaten in 12 weken.</strong>
                 </p>
               </div>
               <div className="space-y-2 mb-4">
                 <p className="text-lg font-bold text-cinnabar">€450 per maand</p>
                 <p className="text-lg font-bold text-cinnabar">€400 per maand <span className="text-sm font-normal text-gray-600">(bij 6 maanden commitment)</span></p>
               </div>
-              <p className="text-sm text-gray-700 mb-2">
-                <strong>Minimaal 2 maanden commitment</strong>
-              </p>
               <p className="text-sm text-gray-700">
-                <strong>Start:</strong> 4x per jaar (januari, april, juli, oktober)
+                <strong>Je kunt elke maand starten.</strong>
               </p>
             </div>
 
             {/* Unlock Motion */}
             <div className="bg-white rounded-xl p-8 border-2 border-verdigris/20">
               <div className="text-4xl mb-4">🧘</div>
-              <h3 className="text-2xl font-bold mb-3">Unlock Motion: Mobiliteit & Herstel</h3>
+              <h3 className="text-2xl font-bold mb-3">Unlock Motion</h3>
               <p className="text-gray-700 mb-4">
-                Voor iedereen met een stijve rug, pijnlijke schouders of stramme heupen door te veel zitten. Leer weer soepel bewegen zonder pijn.
+                Unlock Motion is ons semi private programma voor iedereen die beter wil bewegen. Je start met een Body APK waarin we kijken naar compensaties, houding, ademhaling en bewegingspatronen. Vanuit daar maken we een persoonlijk plan om pijnvrijer, sterker en stabieler te bewegen. Denk aan betere core kracht, betere mobiliteit en een betere basishouding.
               </p>
-              <ul className="space-y-2 text-sm text-gray-700 mb-4">
-                <li>✓ Rustige groepslessen (max 8 personen)</li>
-                <li>✓ Gerichte mobiliteits- en rekoefeningen</li>
-                <li>✓ Lichte krachtoefeningen voor stabiliteit</li>
-                <li>✓ Thuisoefeningen voor sneller resultaat</li>
-              </ul>
-              <div className="bg-verdigris/10 rounded-lg p-4 mb-4">
-                <p className="text-sm text-gray-700">
-                  <strong>Perfect voor:</strong> Kantoorwerk, chronische rugpijn, herstel na blessure, of voorbereiding op intensievere training.
-                </p>
-              </div>
               <p className="text-lg font-bold text-verdigris mb-2">€1575</p>
-              <p className="text-sm text-gray-600 mb-4">12 weken programma</p>
-              <p className="text-sm text-gray-700">
-                <strong>Start:</strong> met 12 weken
-              </p>
+              <p className="text-sm text-gray-600">12 weken programma</p>
             </div>
           </div>
 

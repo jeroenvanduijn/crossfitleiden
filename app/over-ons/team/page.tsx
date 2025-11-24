@@ -5,27 +5,9 @@ export default function TeamPage() {
   const coaches = [
     {
       name: "Rochelle",
-      role: "Coach",
+      role: "Lead Coach",
       image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png",
       story: "Rochelle is turncoach op nationaal niveau en brengt die expertise naar CrossFit Leiden. Ze is geweldig met kinderen en volwassenen, en helpt iedereen om bewegingen veilig te leren. Naast coaching bij ons, traint ze haar turnploeg voor wereldkampioenschappen."
-    },
-    {
-      name: "Jeffrey Perez Stoof",
-      role: "Coach",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png",
-      story: "Jeffrey was profvoetballer voordat hij CrossFit coach werd. Hij snapt wat het betekent om te presteren én om je op je gemak te voelen. Jeffrey past zijn coaching aan op wat jij nodig hebt, of je nu uitdaging zoekt of juist rustig wilt opbouwen."
-    },
-    {
-      name: "Jari Jansen",
-      role: "Coach",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jari.png",
-      story: "Jari kwam in 2016 als enthousiaste student naar CrossFit Leiden en groeide uit tot een van onze meest veelzijdige coaches. Met roots in Curaçao brengt hij een positieve energie. Jari geeft lessen, workshops en helpt bij blessurepreventie."
-    },
-    {
-      name: "Sem Li",
-      role: "Coach",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20sem.png",
-      story: "Sem is altijd vrolijk en maakt graag contact met iedereen in zijn lessen. Hij houdt van Olympic weightlifting en staat elke ochtend om 5 uur op om te trainen voordat hij de eerste les geeft. Die toewijding en energie zie je terug in zijn coaching."
     },
     {
       name: "Saskia",
@@ -34,16 +16,40 @@ export default function TeamPage() {
       story: "Saskia kwam een paar jaar geleden naar CrossFit Leiden om van haar rugpijn af te komen, en het werkte zo goed dat ze van baan veranderde. Ze zorgt ervoor dat alles in de gym soepel loopt en dat iedereen zich welkom voelt."
     },
     {
+      name: "Jeffrey Perez Stoof",
+      role: "GetShredded Lead Coach",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png",
+      story: "Jeffrey was profvoetballer voordat hij CrossFit coach werd. Hij snapt wat het betekent om te presteren én om je op je gemak te voelen. Jeffrey past zijn coaching aan op wat jij nodig hebt, of je nu uitdaging zoekt of juist rustig wilt opbouwen."
+    },
+    {
+      name: "Jari Jansen",
+      role: "Movement Specialist",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jari.png",
+      story: "Jari geeft small group lessen, de Unlock Motion lessen en workshops. Hij helpt leden met pijn, beperkte mobiliteit of techniek. Als jij ergens last van hebt, is de kans groot dat Jari je kan helpen dit op te lossen."
+    },
+    {
+      name: "Max",
+      role: "Kickstart Lead Coach",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png",
+      story: "Max heeft jaren ervaring als personal trainer en CrossFit coach. Hij houdt van wandelen en kamperen met zijn familie. Als coach creëert Max een leuke en positieve sfeer waar iedereen zich welkom voelt, ongeacht niveau."
+    },
+    {
+      name: "Annie",
+      role: "Voedingscoach",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/annie.png",
+      story: "Annie helpt leden met praktische voedingsadviezen die passen bij een druk leven. Geen extreme diëten, maar simpele stappen die werken."
+    },
+    {
+      name: "Sem Li",
+      role: "Coach",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20sem.png",
+      story: "Sem is altijd vrolijk en maakt graag contact met iedereen in zijn lessen. Hij houdt van Olympic weightlifting en staat elke ochtend om 5 uur op om te trainen voordat hij de eerste les geeft. Die toewijding en energie zie je terug in zijn coaching."
+    },
+    {
       name: "Natália",
       role: "Coach",
       image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png",
       story: "Natália komt uit Brazilië en verhuisde in 2022 naar Nederland. Met een diploma in bewegingswetenschappen en een passie voor hardlopen brengt ze creativiteit en positiviteit naar elke les. Ze coacht groepslessen en de Teens sessies met veel energie en geduld."
-    },
-    {
-      name: "Max",
-      role: "Coach",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png",
-      story: "Max heeft jaren ervaring als personal trainer en CrossFit coach. Hij houdt van wandelen en kamperen met zijn familie. Als coach creëert Max een leuke en positieve sfeer waar iedereen zich welkom voelt, ongeacht niveau."
     },
     {
       name: "Erin",
@@ -99,7 +105,7 @@ export default function TeamPage() {
                     <div>
                       <h4 className="font-bold text-lg text-cinnabar mb-2">Kees Houwaart</h4>
                       <p className="text-gray-700 leading-relaxed">
-                        Kees groeide op in een sportschool en ontdekte CrossFit in 2012. Hij startte in 2014 zijn eerste gym en richtte in 2015 samen met Jeroen CrossFit Leiden op. Kees woont met zijn vrouw Nathalie en hun twee zoons Neal en Jake in Katwijk aan Zee.
+                        Kees groeide op in een sportschool en ontdekte CrossFit in 2012. Hij startte in 2014 Gymbox Noordwijk. In 2015 richtte hij samen met Jeroen CrossFit Leiden op. Kees woont met zijn vrouw Nathalie en hun twee zoons Neal en Jake in Katwijk aan Zee.
                       </p>
                     </div>
 

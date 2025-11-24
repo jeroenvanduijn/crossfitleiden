@@ -85,26 +85,10 @@ export default function OverOns() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Onze missie voor Leiden</h2>
+            <h2 className="text-3xl font-bold mb-6">Onze missie</h2>
             <div className="space-y-6 text-lg text-gray-700">
-              <p>
-                We willen Leiden zo fit en veerkrachtig mogelijk maken. Niet door iedereen op een podium te zetten, maar door mensen te helpen die kracht en energie in hun dagelijks leven te brengen.
-              </p>
-              <div className="bg-cinnabar/10 rounded-xl p-6">
-                <p className="font-semibold text-gray-900 mb-4">
-                  De komende tien jaar:
-                </p>
-                <ul className="space-y-2 text-gray-700">
-                  <li>📈 <strong>~10 nieuwe mensen per maand</strong> veilig laten starten</li>
-                  <li>📈 <strong>~120 nieuwe leden per jaar</strong> welkom heten</li>
-                  <li>📈 <strong>~1.200 gezinnen</strong> en <strong>~4.800 mensen</strong> helpen sterker, positiever en energieker te leven</li>
-                </ul>
-              </div>
-              <p>
-                Dit gaat niet alleen over fitness. Het gaat over families die meer energie hebben voor elkaar. Over mensen die weer durven te bewegen. Over een stad waarin steeds meer mensen vol vertrouwen in hun lijf staan en daardoor beter kunnen bouwen aan hun werk, hun gezin en hun dromen.
-              </p>
-              <p>
-                CrossFit Leiden is het middel. Jouw leven buiten de gym is het doel.
+              <p className="text-xl font-semibold text-gray-900">
+                De komende 10 jaar willen we 4800 mensen helpen om sterker, positiever en energieker te worden.
               </p>
             </div>
           </div>

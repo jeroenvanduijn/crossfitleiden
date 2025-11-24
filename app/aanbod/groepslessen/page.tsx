@@ -44,7 +44,7 @@ export default function Groepslessen() {
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-6 text-center">Hoe ziet een les eruit?</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-            Elke les duurt precies 60 minuten en bestaat uit 4 onderdelen. Zo weet je precies waar je aan begint!
+            Dit is een voorbeeld van een les. Soms vier onderdelen, soms twee. Het kan bijvoorbeeld ook een warming up zijn met daarna een langere cardio workout.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {/* Part 1 */}
@@ -185,19 +185,19 @@ export default function Groepslessen() {
               <div className="bg-white rounded-xl p-8 text-center">
                 <div className="text-5xl mb-4">🌅</div>
                 <h4 className="font-bold text-xl mb-2">Ochtend</h4>
-                <p className="text-gray-600 mb-3">06:30 - 09:00</p>
+                <p className="text-gray-600 mb-3">6 tot 11 uur</p>
                 <p className="text-sm text-gray-600">Perfect voor de werk, fris en energiek de dag in!</p>
               </div>
               <div className="bg-white rounded-xl p-8 text-center">
                 <div className="text-5xl mb-4">☀️</div>
                 <h4 className="font-bold text-xl mb-2">Middag</h4>
-                <p className="text-gray-600 mb-3">12:00 - 13:00</p>
+                <p className="text-gray-600 mb-3">12 tot 13 uur</p>
                 <p className="text-sm text-gray-600">Lunchbreak? Trainingsbreak! Perfecte pauze van je werkdag.</p>
               </div>
               <div className="bg-white rounded-xl p-8 text-center">
                 <div className="text-5xl mb-4">🌙</div>
                 <h4 className="font-bold text-xl mb-2">Avond</h4>
-                <p className="text-gray-600 mb-3">17:00 - 21:00</p>
+                <p className="text-gray-600 mb-3">16 tot 22 uur</p>
                 <p className="text-sm text-gray-600">Na het werk of als de kids op bed liggen – tijd voor jezelf!</p>
               </div>
             </div>
@@ -244,35 +244,28 @@ export default function Groepslessen() {
                   <span className="text-3xl flex-shrink-0">👕</span>
                   <div>
                     <p className="font-semibold mb-1">Sportkleding</p>
-                    <p className="text-sm text-gray-600">Comfortabel en ademend – gewoon je normale sportkleding</p>
+                    <p className="text-sm text-gray-600">Comfortabel en ademend</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="text-3xl flex-shrink-0">👟</span>
                   <div>
-                    <p className="font-semibold mb-1">Sportschoenen</p>
-                    <p className="text-sm text-gray-600">Stabiele schoenen (geen hardloopschoenen) – CrossFit schoenen niet verplicht!</p>
+                    <p className="font-semibold mb-1">Stabiele schoenen voor krachttraining</p>
+                    <p className="text-sm text-gray-600">Geen hardloopschoenen voor de krachtdelen</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="text-3xl flex-shrink-0">👟</span>
+                  <div>
+                    <p className="font-semibold mb-1">Optioneel hardloopschoenen</p>
+                    <p className="text-sm text-gray-600">Voor workouts met rennen</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="text-3xl flex-shrink-0">💧</span>
                   <div>
-                    <p className="font-semibold mb-1">Waterfles</p>
-                    <p className="text-sm text-gray-600">Blijf lekker gehydrateerd tijdens de training</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-3xl flex-shrink-0">🧴</span>
-                  <div>
-                    <p className="font-semibold mb-1">Handdoek (optioneel)</p>
-                    <p className="text-sm text-gray-600">Voor als je wilt douchen na de les</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-3xl flex-shrink-0">😊</span>
-                  <div>
-                    <p className="font-semibold mb-1">Goede zin!</p>
-                    <p className="text-sm text-gray-600">Dat is eigenlijk het belangrijkste 😉</p>
+                    <p className="font-semibold mb-1">Waterfles en handdoek</p>
+                    <p className="text-sm text-gray-600">Blijf gehydrateerd en fris</p>
                   </div>
                 </li>
               </ul>
@@ -280,48 +273,6 @@ export default function Groepslessen() {
                 <p className="text-gray-700 text-center">
                   <strong>💪 Al het trainingsmateriaal hebben wij!</strong><br />
                   <span className="text-sm">Gewichten, touwjes, rowers, bikes – je hoeft niks zelf mee te nemen.</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof - Real Experience */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Wat zeggen anderen?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-xl">👩</span>
-                  </div>
-                  <div>
-                    <p className="font-bold">Linda, 42</p>
-                    <p className="text-sm text-gray-600">Moeder van 3, sinds 1 jaar lid</p>
-                  </div>
-                </div>
-                <p className="text-gray-700 italic">
-                  "Ik was zo zenuwachtig voor mijn eerste les. Maar iedereen was super aardig en de coach legde alles rustig uit.
-                  Nu is het het hoogtepunt van mijn week!"
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-xl">👨</span>
-                  </div>
-                  <div>
-                    <p className="font-bold">Jeroen, 38</p>
-                    <p className="text-sm text-gray-600">15 jaar niet gesport, sinds 6 maanden lid</p>
-                  </div>
-                </div>
-                <p className="text-gray-700 italic">
-                  "Dacht dat ik te oud en te stijf was. Maar de groep trekt je mee en de coach past alles aan.
-                  Nu til ik weer makkelijk mijn kinderen op!"
                 </p>
               </div>
             </div>

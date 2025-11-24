@@ -814,43 +814,28 @@ export default function Tarieven() {
         </div>
       </section>
 
-      {/* Reviews */}
+      {/* Google Review Widget */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Wat zeggen onze leden?</h2>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-yellow-400">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 mb-4 italic">
-                "Eerst dacht ik dat €135 veel was, maar nu realiseer ik me dat dit de beste investering is die ik doe. Meer energie, beter slapen en ik voel me echt fitter."
-              </p>
-              <p className="font-semibold text-gray-900">Lisa, 38</p>
-              <p className="text-sm text-gray-600">Lid sinds 8 maanden</p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-yellow-400">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 mb-4 italic">
-                "De coaches kennen mijn naam en helpen me echt verder. Dat krijg je niet bij een gewone sportschool. Voor mij is het de prijs dubbel en dwars waard."
-              </p>
-              <p className="font-semibold text-gray-900">Mark, 45</p>
-              <p className="text-sm text-gray-600">Lid sinds 1 jaar</p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-yellow-400">⭐⭐⭐⭐⭐</span>
-              </div>
-              <p className="text-gray-700 mb-4 italic">
-                "Ik was eerst bang dat ik niet fit genoeg was, maar ze helpen je echt op jouw niveau. Super fijn dat je niet vastzit aan een jaarcontract."
-              </p>
-              <p className="font-semibold text-gray-900">Sarah, 42</p>
-              <p className="text-sm text-gray-600">Lid sinds 5 maanden</p>
+          {/* Google Review Widget */}
+          <div className="max-w-6xl mx-auto">
+            <div className="relative w-full min-h-[500px] md:min-h-[400px]">
+              <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
+              <iframe
+                className='lc_reviews_widget'
+                src='https://reputationhub.site/reputation/widgets/review_widget/s0YuoK12A9YPXCKsfUp3?widgetId=690b468e0591d2ab3477c77a'
+                frameBorder='0'
+                scrolling='no'
+                style={{
+                  minWidth: '100%',
+                  width: '100%',
+                  minHeight: '500px',
+                  height: '100%',
+                  border: 'none'
+                }}
+              ></iframe>
             </div>
           </div>
         </div>

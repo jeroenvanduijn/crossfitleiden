@@ -146,22 +146,14 @@ export default function HYROXPage() {
             <p className="text-gray-700">
               Check ons HYROX Simulation event voor meer informatie:
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/events/hyrox-simulation"
-                className="inline-block bg-[#E25C2A] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/90 transition-all shadow-md"
-              >
-                HYROX Simulation Event
-              </Link>
-              <a
-                href="https://hyrox.crossfitleiden.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-[#E25C2A] border-2 border-[#E25C2A] px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/10 transition-all shadow-md"
-              >
-                Officiële HYROX Sim Website
-              </a>
-            </div>
+            <a
+              href="https://hyrox.crossfitleiden.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#E25C2A] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/90 transition-all shadow-md"
+            >
+              Ga naar de Hyrox Simulatie Website
+            </a>
           </div>
         </div>
       </section>
