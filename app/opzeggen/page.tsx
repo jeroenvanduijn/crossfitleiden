@@ -1,4 +1,22 @@
+"use client";
+
+import { useEffect } from "react";
+
 export default function OpzeggenPage() {
+  useEffect(() => {
+    // Load the HighLevel script for the cancellation form
+    const script = document.createElement('script');
+    script.src = 'https://kilo.gymleadmachine.com/js/form_embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <>
       <section className="bg-gradient-to-r from-gray-700 to-gray-600 text-white section-padding">
@@ -31,23 +49,34 @@ export default function OpzeggenPage() {
             </div>
           </div>
 
-          {/* HighLevel Form Embed Placeholder */}
+          {/* HighLevel Cancellation Form */}
           <div className="bg-gray-50 rounded-xl p-8">
             <h3 className="text-xl font-bold mb-6 text-center">Opzegformulier</h3>
 
-            {/* Placeholder for HighLevel form - replace with actual embed code */}
-            <div className="bg-white rounded-lg p-8 text-center border-2 border-dashed border-gray-300">
-              <p className="text-gray-600 mb-4">
-                Hier komt het HighLevel opzegformulier
-              </p>
-              <p className="text-sm text-gray-500">
-                Vervang deze placeholder met de embed code van je HighLevel form
-              </p>
-              <div className="mt-6 bg-gray-100 rounded p-4">
-                <code className="text-xs text-gray-700">
-                  {`<iframe src="your-highlevel-form-url" ...></iframe>`}
-                </code>
-              </div>
+            <div className="bg-white rounded-lg overflow-hidden">
+              <iframe
+                src="https://kilo.gymleadmachine.com/widget/form/w5EXGx4kP2dLSKIsFarq"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  minHeight: '1018px',
+                  border: 'none',
+                  borderRadius: '7px'
+                }}
+                id="inline-w5EXGx4kP2dLSKIsFarq" 
+                data-layout='{"id":"INLINE"}'
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Cancellation Form"
+                data-height="1018"
+                data-layout-iframe-id="inline-w5EXGx4kP2dLSKIsFarq"
+                data-form-id="w5EXGx4kP2dLSKIsFarq"
+                title="Cancellation Form"
+              />
             </div>
 
             {/* Alternative: Direct contact */}

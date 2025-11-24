@@ -245,7 +245,7 @@ export default function HighLevelPopup() {
           background: transparent;
           border-radius: 8px;
           overflow: visible;
-          margin-bottom: 24px;
+          margin-bottom: 8px;
         }
 
         /* Benefits Section - New, scannable */
@@ -301,7 +301,7 @@ export default function HighLevelPopup() {
           }
 
           .cfl-popup-header {
-            margin-bottom: 24px;
+            margin-bottom: 8px;
             padding-right: 40px;
           }
 
