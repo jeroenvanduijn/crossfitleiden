@@ -27,7 +27,48 @@ export default function Aanbod() {
           </div>
 
           {/* Main Programs Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Kickstart */}
+            <div className="bg-gradient-to-br from-verdigris/10 to-verdigris/5 rounded-2xl p-8 border-2 border-verdigris relative">
+              <div className="absolute top-4 right-4 bg-verdigris text-white text-xs font-bold px-3 py-1 rounded-full">
+                START HIER
+              </div>
+              <div className="text-6xl mb-4">🚀</div>
+              <h3 className="text-2xl font-bold mb-3">Kickstart Programma</h3>
+              <p className="text-gray-700 mb-6">
+                Perfect voor beginners! 4 weken intensive onboarding waar je alles leert over CrossFit in kleine groepjes. Na afloop ben je klaar voor de groepslessen.
+              </p>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">4 weken intensive begeleiding</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Max 5 personen per groep</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Inclusief voedingsadvies</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Geen ervaring nodig</span>
+                </li>
+              </ul>
+              <Link href="/kickstart" className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
+                Meer over Kickstart
+              </Link>
+            </div>
+
             {/* Groepslessen - PRIMAIR */}
             <div className="bg-gradient-to-br from-cinnabar/10 to-cinnabar/5 rounded-2xl p-8 border-2 border-cinnabar relative">
               <div className="absolute top-4 right-4 bg-cinnabar text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -76,7 +117,7 @@ export default function Aanbod() {
             {/* Private Coaching */}
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="text-6xl mb-4">👤</div>
-              <h3 className="text-2xl font-bold mb-3">Private Coaching</h3>
+              <h3 className="text-2xl font-bold mb-3">Personal Training</h3>
               <p className="text-gray-700 mb-6">
                 1-op-1 begeleiding voor specifieke doelen, blessures of als je extra aandacht wilt.
                 Jouw coach, jouw training, jouw tempo.
@@ -108,7 +149,7 @@ export default function Aanbod() {
                 </li>
               </ul>
               <Link href="/aanbod/private-coaching" className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
-                Meer over Private Coaching
+                Meer over Personal Training
               </Link>
             </div>
           </div>
@@ -124,22 +165,12 @@ export default function Aanbod() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {/* GetShredded */}
-            <Link href="/aanbod/getshredded" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
-              <div className="text-4xl mb-3">🔥</div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">GetShredded</h3>
+            {/* Small Group Training */}
+            <Link href="/aanbod/small-group" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+              <div className="text-4xl mb-3">👥</div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Small Group Training</h3>
               <p className="text-sm text-gray-700 mb-3">
-                6-12 weken transformatie programma voor wie echt snel resultaat wil zien. Strak plan, maximaal effect.
-              </p>
-              <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
-            </Link>
-
-            {/* Unlock Motion */}
-            <Link href="/aanbod/unlock-motion" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
-              <div className="text-4xl mb-3">🧘</div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Unlock Motion</h3>
-              <p className="text-sm text-gray-700 mb-3">
-                Focus op mobiliteit en bewegingskwaliteit. Perfect als je stijf bent of blessure wilt voorkomen.
+                Train met max 5 personen en krijg een programma op maat. Inclusief GetShredded en Unlock Motion.
               </p>
               <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
             </Link>
@@ -147,9 +178,19 @@ export default function Aanbod() {
             {/* Hyrox */}
             <Link href="/aanbod/hyrox" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🏃</div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Hyrox Training</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">HYROX Training</h3>
               <p className="text-sm text-gray-700 mb-3">
                 Voorbereiding op Hyrox races. Gecombineerde conditie en kracht training voor dit populaire evenement.
+              </p>
+              <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
+            </Link>
+
+            {/* Fysiofabriek */}
+            <Link href="/aanbod/fysiofabriek" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+              <div className="text-4xl mb-3">🩺</div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Fysiofabriek</h3>
+              <p className="text-sm text-gray-700 mb-3">
+                Professionele fysiotherapie en revalidatie. Specialistische begeleiding bij blessures en pijn.
               </p>
               <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
             </Link>
@@ -192,9 +233,9 @@ export default function Aanbod() {
               </p>
             </Link>
 
-            <Link href="/aanbod/sports-performance" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
+            <Link href="/aanbod/sport-performance" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">⚽</div>
-              <h3 className="text-xl font-bold mb-2 text-center">Sports & Performance</h3>
+              <h3 className="text-xl font-bold mb-2 text-center">Sport & Performance</h3>
               <p className="text-gray-700 text-center text-sm">
                 Voor jonge atleten die beter willen worden in hun sport. Functionele conditioning.
               </p>
