@@ -36,7 +36,7 @@ export default function TeamPage() {
     {
       name: "Annie",
       role: "Voedingscoach",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/annie.png",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png",
       story: "Annie helpt leden met praktische voedingsadviezen die passen bij een druk leven. Geen extreme diëten, maar simpele stappen die werken."
     },
     {
