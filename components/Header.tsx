@@ -59,15 +59,12 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center">
             <img
               src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/cfl%20logo.png"
               alt="CrossFit Leiden Logo"
               className="w-12 h-12 rounded-full"
             />
-            <span className="text-2xl font-heading font-bold text-[#E4572E]">
-              CrossFit Leiden
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
