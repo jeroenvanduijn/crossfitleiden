@@ -2,11 +2,9 @@
 
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
-import { useState } from "react";
+import CTAButton from "@/components/CTAButton";
 
 export default function Nutrition() {
-  const bookingUrl = "https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/goalreview?user_id=FCGLJ30Zesqd3ZV6nbLR";
-
   return (
     <>
       {/* Hero Section */}
@@ -21,14 +19,9 @@ export default function Nutrition() {
                 Persoonlijke voedingscoaching met Coach Annie. Geen strenge diëten, geen ingewikkelde plannen.
                 Gewoon praktische begeleiding die werkt.
               </p>
-              <a
-                href={bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-cinnabar text-white px-10 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-cinnabar/90 transition-all"
-              >
-                Boek een Goal Review
-              </a>
+              <CTAButton className="bg-cinnabar hover:bg-cinnabar/90">
+                Plan een Gratis Intro
+              </CTAButton>
               <p className="text-sm text-gray-200 mt-4">
                 ✨ Warme, persoonlijke begeleiding in het hart van Leiden
               </p>
@@ -57,9 +50,9 @@ export default function Nutrition() {
               <div className="w-16 h-16 bg-verdigris text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-3">Boek je Goal Review</h3>
+              <h3 className="text-xl font-bold mb-3">Plan een gratis intro</h3>
               <p className="text-gray-700">
-                Een gratis kennismakingsgesprek van 20 minuten om jouw doelen en uitdagingen te bespreken.
+                Een vrijblijvend kennismakingsgesprek om jouw doelen en uitdagingen te bespreken.
               </p>
             </div>
 
@@ -117,14 +110,9 @@ export default function Nutrition() {
                 Geen oordeel, geen perfectie – gewoon praktische tips die werken. Annie begrijpt dat je een druk
                 leven hebt en helpt je om gezonde keuzes te maken zonder dat het voelt als een extra last.
               </p>
-              <a
-                href={bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-cinnabar text-white px-8 py-3 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all"
-              >
-                Boek een Goal Review
-              </a>
+              <CTAButton className="bg-cinnabar hover:bg-cinnabar/90">
+                Plan een Gratis Intro
+              </CTAButton>
             </div>
           </div>
         </div>
@@ -180,23 +168,25 @@ export default function Nutrition() {
                 <strong>Perfect voor:</strong> Maximale begeleiding en duidelijke resultaten
               </p>
 
-              <a
-                href={bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="block text-center bg-cinnabar text-white py-4 px-6 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all"
               >
-                Boek een Goal Review
-              </a>
+                Neem Contact Op
+              </Link>
             </div>
 
             {/* 28-Day Kickstart */}
             <div className="bg-gradient-to-br from-verdigris/10 to-verdigris/5 rounded-3xl p-8 sm:p-12 shadow-xl border-2 border-verdigris/20">
               <div className="text-5xl mb-4">🚀</div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">28-Dagen Kickstart</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Voeding Kickstart (28 dagen)</h3>
+              <p className="text-gray-700 mb-4">
+                Dit is hetzelfde 28-dagen Kickstart programma, maar dan alleen het voedingsdeel.
+                Perfect voor zowel leden als niet-leden die een kickstart willen in hun voeding.
+              </p>
               <p className="text-gray-700 mb-6">
                 Groepsprogramma van 4 weken met dagelijkse check-ins en wekelijkse thema's. Simpele,
-                haalbare stappen die je direct kunt toepassen. Ideaal om te starten of opnieuw op te pakken.
+                haalbare stappen die je direct kunt toepassen.
               </p>
 
               <div className="bg-white/70 rounded-xl p-6 mb-6">
@@ -220,7 +210,7 @@ export default function Nutrition() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-verdigris mr-2">✓</span>
-                    <span>Je kunt het programma 1x herhalen</span>
+                    <span>Ook te volgen zonder training (voor niet-leden)</span>
                   </li>
                 </ul>
               </div>
@@ -234,14 +224,12 @@ export default function Nutrition() {
                 <strong>Perfect voor:</strong> Groepsenergie en een kickstart van 4 weken
               </p>
 
-              <a
-                href={bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="block text-center bg-verdigris text-white py-4 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all"
               >
-                Boek een Goal Review
-              </a>
+                Neem Contact Op
+              </Link>
             </div>
           </div>
         </div>
@@ -262,7 +250,7 @@ export default function Nutrition() {
                 <tr className="bg-gray-100">
                   <th className="p-6 text-left font-bold"></th>
                   <th className="p-6 text-center font-bold text-cinnabar text-xl">1-op-1 Coaching</th>
-                  <th className="p-6 text-center font-bold text-verdigris text-xl">28-Dagen Kickstart</th>
+                  <th className="p-6 text-center font-bold text-verdigris text-xl">Voeding Kickstart</th>
                 </tr>
               </thead>
               <tbody>
@@ -289,7 +277,12 @@ export default function Nutrition() {
                 <tr className="border-t">
                   <td className="p-6 font-semibold">Duur</td>
                   <td className="p-6 text-center bg-cinnabar/5">Minimaal 2 maanden</td>
-                  <td className="p-6 text-center bg-verdigris/5">28 dagen (herhaalbaar)</td>
+                  <td className="p-6 text-center bg-verdigris/5">28 dagen</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="p-6 font-semibold">Voor wie</td>
+                  <td className="p-6 text-center bg-cinnabar/5">Leden en niet-leden</td>
+                  <td className="p-6 text-center bg-verdigris/5">Leden en niet-leden</td>
                 </tr>
                 <tr className="border-t">
                   <td className="p-6 font-semibold">Perfect voor</td>
@@ -310,34 +303,31 @@ export default function Nutrition() {
                 <div><span className="font-semibold">Aanpak:</span> Data-gedreven of principes</div>
                 <div><span className="font-semibold">Prijs:</span> <span className="text-cinnabar font-bold">€350/maand</span></div>
                 <div><span className="font-semibold">Duur:</span> Minimaal 2 maanden</div>
+                <div><span className="font-semibold">Voor wie:</span> Leden en niet-leden</div>
                 <div><span className="font-semibold">Perfect voor:</span> Maximale ondersteuning</div>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-verdigris/10 to-verdigris/5 rounded-xl p-6 border-2 border-verdigris/20">
-              <h3 className="text-xl font-bold text-verdigris mb-4">28-Dagen Kickstart</h3>
+              <h3 className="text-xl font-bold text-verdigris mb-4">Voeding Kickstart</h3>
               <div className="space-y-3 text-sm">
                 <div><span className="font-semibold">Structuur:</span> Groepsprogramma</div>
                 <div><span className="font-semibold">Begeleiding:</span> Dagelijkse check-ins + groep</div>
                 <div><span className="font-semibold">Aanpak:</span> Simpele actie-stappen</div>
                 <div><span className="font-semibold">Prijs:</span> <span className="text-verdigris font-bold">€200 totaal</span></div>
-                <div><span className="font-semibold">Duur:</span> 28 dagen (herhaalbaar)</div>
+                <div><span className="font-semibold">Duur:</span> 28 dagen</div>
+                <div><span className="font-semibold">Voor wie:</span> Leden en niet-leden</div>
                 <div><span className="font-semibold">Perfect voor:</span> Kickstart in groepsverband</div>
               </div>
             </div>
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href={bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-cinnabar text-white px-10 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-cinnabar/90 transition-all"
-            >
-              Boek een Goal Review
-            </a>
+            <CTAButton className="bg-cinnabar hover:bg-cinnabar/90">
+              Plan een Gratis Intro
+            </CTAButton>
             <p className="text-sm text-gray-600 mt-4">
-              Nog niet zeker? Tijdens de Goal Review helpen we je het juiste programma te kiezen
+              Nog niet zeker? Tijdens de gratis intro helpen we je het juiste programma te kiezen
             </p>
           </div>
         </div>
@@ -395,7 +385,7 @@ export default function Nutrition() {
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Nee! Voedingscoaching is beschikbaar voor iedereen, ook als je niet bij ons traint.
+                  Nee! Beide voedingsprogramma's zijn beschikbaar voor iedereen, ook als je niet bij ons traint.
                   Natuurlijk werkt de combinatie van training én voeding het beste, maar het is geen vereiste.
                 </p>
               </details>
@@ -408,9 +398,9 @@ export default function Nutrition() {
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Dat bespreken we tijdens je gratis Goal Review! Als je maximale ondersteuning en persoonlijke
+                  Dat bespreken we tijdens je gratis intro! Als je maximale ondersteuning en persoonlijke
                   aandacht wilt, is 1-op-1 coaching ideaal. Als je graag de groepsenergie voelt en een kickstart
-                  van 4 weken wilt, kies dan voor de 28-Dagen Kickstart.
+                  van 4 weken wilt, kies dan voor de Voeding Kickstart.
                 </p>
               </details>
 
@@ -423,7 +413,7 @@ export default function Nutrition() {
                 </summary>
                 <p className="text-gray-700 mt-4">
                   Bij 1-op-1 coaching kun je kiezen: data-gedreven (met tracking) of principes-gebaseerd (zonder tracking).
-                  Bij de 28-Dagen Kickstart werken we met simpele richtlijnen en geen verplichte tracking.
+                  Bij de Voeding Kickstart werken we met simpele richtlijnen en geen verplichte tracking.
                   We passen het aan op wat voor jou werkt.
                 </p>
               </details>
@@ -455,31 +445,31 @@ export default function Nutrition() {
                   Als het niet praktisch is, werkt het niet.
                 </p>
               </details>
+
+              <details className="bg-white rounded-lg p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Is de Voeding Kickstart hetzelfde als het Kickstart programma?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
+                  De Voeding Kickstart is hetzelfde 28-dagen programma als ons reguliere Kickstart programma,
+                  maar dan alleen het voedingsdeel (zonder de training sessies). Perfect voor mensen die al ergens
+                  anders trainen of eerst alleen aan hun voeding willen werken.
+                </p>
+              </details>
             </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="section-padding bg-gradient-to-r from-verdigris via-cinnabar/20 to-verdigris text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Klaar om je beter te voelen in je lichaam?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-100">
-            Boek een gratis Goal Review en ontdek welk programma het beste bij jou past.
-            Geen verplichtingen, gewoon een goed gesprek.
-          </p>
-          <a
-            href={bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-cinnabar px-10 py-4 rounded-lg font-semibold shadow-xl hover:shadow-2xl hover:bg-gray-50 transition-all text-lg"
-          >
-            Boek een Goal Review
-          </a>
-        </div>
-      </section>
+      <IntroCtaSection
+        title="Klaar om gezonder te gaan eten?"
+        subtitle="Plan een gratis intro en ontdek welk voedingsprogramma het beste bij jou past. Geen verplichtingen, gewoon een goed gesprek over jouw doelen."
+        buttonLabel="Plan een Gratis Intro"
+      />
     </>
   );
 }
