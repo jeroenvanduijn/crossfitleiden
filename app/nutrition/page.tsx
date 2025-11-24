@@ -1,253 +1,344 @@
+"use client";
+
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { useState } from "react";
 
 export default function Nutrition() {
+  const bookingUrl = "https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/goalreview?user_id=FCGLJ30Zesqd3ZV6nbLR";
+
   return (
     <>
+      {/* Hero Section */}
       <section className="bg-gradient-to-r from-verdigris to-teal-700 text-white section-padding">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Voeding Coaching</h1>
-          <p className="text-xl max-w-2xl">
-            Gezond eten zonder strenge diëten of ingewikkelde plannen. Perfect voor drukke ouders die écht resultaat willen.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Eet beter. Voel je sterker. Met een plan dat bij jouw leven past.
+              </h1>
+              <p className="text-xl mb-8 text-gray-100">
+                Persoonlijke voedingscoaching met Coach Annie. Geen strenge diëten, geen ingewikkelde plannen.
+                Gewoon praktische begeleiding die werkt.
+              </p>
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-cinnabar text-white px-10 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-cinnabar/90 transition-all"
+              >
+                Boek een Goal Review
+              </a>
+              <p className="text-sm text-gray-200 mt-4">
+                ✨ Warme, persoonlijke begeleiding in het hart van Leiden
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              <img
+                src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png"
+                alt="Coach Annie"
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* How It Works */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Waarom is voeding zo belangrijk?</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              Je kunt nog zo hard trainen, maar zonder goede voeding zie je niet de resultaten die je wilt.
-              <strong> 80% van je resultaat komt van wat je eet</strong> – niet van hoeveel je traint!
-            </p>
-            <p className="text-lg text-gray-700 mb-4">
-              Maar we snappen het: als drukke ouder heb je geen tijd voor ingewikkelde meal prep, strenge diëten of eindeloze
-              calorie-telling. Daarom maken wij het simpel, haalbaar en duurzaam.
-            </p>
-            <div className="bg-cinnabar/10 rounded-xl p-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Hoe het werkt</h2>
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+            Van kennismaking tot resultaat in vier simpele stappen
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-verdigris text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                1
+              </div>
+              <h3 className="text-xl font-bold mb-3">Boek je Goal Review</h3>
               <p className="text-gray-700">
-                <strong>💡 Onze filosofie:</strong> Geen crash diëten, geen verboden voedsel, geen onrealistische plannen.
-                Gewoon praktische tips die passen in jouw drukke leven en die je echt kunt volhouden.
+                Een gratis kennismakingsgesprek van 20 minuten om jouw doelen en uitdagingen te bespreken.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-cinnabar text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                2
+              </div>
+              <h3 className="text-xl font-bold mb-3">Bepaal je persoonlijke plan</h3>
+              <p className="text-gray-700">
+                We kiezen samen het programma dat het beste bij jou past: 1-op-1 of groepsprogramma.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-verdigris/70 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                3
+              </div>
+              <h3 className="text-xl font-bold mb-3">Wekelijkse begeleiding</h3>
+              <p className="text-gray-700">
+                Persoonlijke check-ins, praktische tips en directe ondersteuning wanneer je het nodig hebt.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-cinnabar/70 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                4
+              </div>
+              <h3 className="text-xl font-bold mb-3">Zie en voel het resultaat</h3>
+              <p className="text-gray-700">
+                Meer energie, beter slapen, sterker voelen – duurzame verandering die blijft.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Meet Coach Annie */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Onze Aanpak</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-xl p-8 text-center">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold mb-3">Geen Diëten</h3>
-              <p className="text-gray-700">
-                We geloven niet in strikte diëten die je na 2 weken alweer opgeeft. We leren je bewuste keuzes maken die je voor altijd kunt volhouden.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div>
+              <img
+                src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png"
+                alt="Coach Annie"
+                className="rounded-2xl shadow-lg"
+              />
             </div>
-
-            <div className="bg-white rounded-xl p-8 text-center">
-              <div className="text-5xl mb-4">👨‍👩‍👧</div>
-              <h3 className="text-xl font-bold mb-3">Praktisch & Haalbaar</h3>
-              <p className="text-gray-700">
-                Speciaal voor drukke ouders: simpele recepten, realistische planning en tips die passen bij een vol gezinsleven.
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Maak kennis met Coach Annie</h2>
+              <p className="text-lg text-gray-700 mb-4">
+                Annie is onze voedingscoach. Rustig, duidelijk en warm in haar begeleiding. Ze helpt je niet met
+                strenge diëten of ingewikkelde plannen, maar met simpele stappen die passen bij jouw leven.
               </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 text-center">
-              <div className="text-5xl mb-4">📊</div>
-              <h3 className="text-xl font-bold mb-3">Begrijpen wat je Lichaam Nodig Heeft</h3>
-              <p className="text-gray-700">
-                Leer de basics van voeding: wat je lichaam nodig heeft en waarom. Geen rocket science, gewoon begrijpelijke uitleg.
+              <p className="text-lg text-gray-700 mb-6">
+                Geen oordeel, geen perfectie – gewoon praktische tips die werken. Annie begrijpt dat je een druk
+                leven hebt en helpt je om gezonde keuzes te maken zonder dat het voelt als een extra last.
               </p>
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-cinnabar text-white px-8 py-3 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all"
+              >
+                Boek een Goal Review
+              </a>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Program 1: 1-on-1 Coaching */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Wat We Je Leren</h2>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-3 flex items-center">
-                <span className="text-2xl mr-3">✓</span>
-                Simpel Boodschappen Doen
-              </h3>
-              <p className="text-gray-700 text-sm">
-                Wat koop je wel en niet? We leren je labels lezen en slimme keuzes maken in de supermarkt zonder veel tijd te verliezen.
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Onze Programma's</h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-8">
+            {/* 1-on-1 Coaching */}
+            <div className="bg-gradient-to-br from-cinnabar/10 to-cinnabar/5 rounded-3xl p-8 sm:p-12 shadow-xl border-2 border-cinnabar/20">
+              <div className="text-5xl mb-4">🎯</div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">1-op-1 Coaching</h3>
+              <p className="text-gray-700 mb-6">
+                Volledig persoonlijk voedingsprogramma met wekelijkse begeleiding. Kies tussen data-gedreven
+                (met tracking) of principes-gebaseerd (zonder tracking). Maximale ondersteuning en duidelijke resultaten.
               </p>
+
+              <div className="bg-white/70 rounded-xl p-6 mb-6">
+                <h4 className="font-bold mb-4">Dit krijg je:</h4>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-cinnabar mr-2">✓</span>
+                    <span>Volledig gepersonaliseerd plan</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cinnabar mr-2">✓</span>
+                    <span>Wekelijkse 1-op-1 check-ins</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cinnabar mr-2">✓</span>
+                    <span>WhatsApp ondersteuning</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cinnabar mr-2">✓</span>
+                    <span>Focus op basics: eiwit, groente, beweging, calorieën</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cinnabar mr-2">✓</span>
+                    <span>Hoge accountability</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-3xl font-bold text-cinnabar mb-2">€350 per maand</p>
+                <p className="text-gray-600">Minimaal 2 maanden</p>
+              </div>
+
+              <p className="text-sm text-gray-700 mb-6">
+                <strong>Perfect voor:</strong> Maximale begeleiding en duidelijke resultaten
+              </p>
+
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-cinnabar text-white py-4 px-6 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all"
+              >
+                Boek een Goal Review
+              </a>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-3 flex items-center">
-                <span className="text-2xl mr-3">✓</span>
-                Meal Prep voor Drukke Ouders
-              </h3>
-              <p className="text-gray-700 text-sm">
-                In 1-2 uur op zondag je hele week voorbereiden. Simpele recepten die je hele gezin lekker vindt.
+            {/* 28-Day Kickstart */}
+            <div className="bg-gradient-to-br from-verdigris/10 to-verdigris/5 rounded-3xl p-8 sm:p-12 shadow-xl border-2 border-verdigris/20">
+              <div className="text-5xl mb-4">🚀</div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">28-Dagen Kickstart</h3>
+              <p className="text-gray-700 mb-6">
+                Groepsprogramma van 4 weken met dagelijkse check-ins en wekelijkse thema's. Simpele,
+                haalbare stappen die je direct kunt toepassen. Ideaal om te starten of opnieuw op te pakken.
               </p>
-            </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-3 flex items-center">
-                <span className="text-2xl mr-3">✓</span>
-                Gezonde Snacks
-              </h3>
-              <p className="text-gray-700 text-sm">
-                Wat eet je tussen de maaltijden? We geven je een lijst met makkelijke, gezonde snacks die je energie geven (geen suikercrash!).
-              </p>
-            </div>
+              <div className="bg-white/70 rounded-xl p-6 mb-6">
+                <h4 className="font-bold mb-4">Dit krijg je:</h4>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-verdigris mr-2">✓</span>
+                    <span>Groepsbegeleiding (max 10 personen)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-verdigris mr-2">✓</span>
+                    <span>Dagelijkse check-ins via app</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-verdigris mr-2">✓</span>
+                    <span>Wekelijkse thema's en focus</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-verdigris mr-2">✓</span>
+                    <span>Simpele, haalbare actie-stappen</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-verdigris mr-2">✓</span>
+                    <span>Je kunt het programma 1x herhalen</span>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-3 flex items-center">
-                <span className="text-2xl mr-3">✓</span>
-                Omgaan met Sociale Momenten
-              </h3>
-              <p className="text-gray-700 text-sm">
-                Verjaardagen, etentjes, feestjes – hoe blijf je on track zonder je sociaal leven op te geven? We leren je de balans vinden.
-              </p>
-            </div>
+              <div className="mb-6">
+                <p className="text-3xl font-bold text-verdigris mb-2">€200 totaal</p>
+                <p className="text-gray-600">28 dagen programma</p>
+              </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-3 flex items-center">
-                <span className="text-2xl mr-3">✓</span>
-                Porties & Hoeveelheden
-              </h3>
-              <p className="text-gray-700 text-sm">
-                Hoeveel heb je eigenlijk nodig? Geen geweeg en gemeet, maar simpele hand-portie methodes die altijd werken.
+              <p className="text-sm text-gray-700 mb-6">
+                <strong>Perfect voor:</strong> Groepsenergie en een kickstart van 4 weken
               </p>
-            </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-3 flex items-center">
-                <span className="text-2xl mr-3">✓</span>
-                Omgaan met Tegenslagen
-              </h3>
-              <p className="text-gray-700 text-sm">
-                Slechte dag gehad? Te veel gegeten? We leren je hoe je verder gaat zonder schuldgevoel. Geen perfectie, wel vooruitgang!
-              </p>
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-verdigris text-white py-4 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all"
+              >
+                Boek een Goal Review
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-verdigris/5">
+      {/* Comparison Table */}
+      <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Onze Programma's</h2>
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* 1-op-1 Coaching */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="flex items-start gap-6">
-                <div className="text-6xl flex-shrink-0">🥗</div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-4">1-op-1 Voedingscoaching (4 weken)</h3>
-                  <p className="text-gray-700 mb-4">
-                    Persoonlijke begeleiding van onze nutrition coach Lisa. We analyseren je huidige eetpatroon,
-                    stellen realistische doelen en maken een plan dat perfect past bij jouw leven.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li className="flex items-start">
-                        <span className="text-verdigris mr-2">✓</span>
-                        <span>Intake gesprek & doelen bepalen</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-verdigris mr-2">✓</span>
-                        <span>Persoonlijk voedingsplan</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-verdigris mr-2">✓</span>
-                        <span>Wekelijkse check-ins (4 weken)</span>
-                      </li>
-                    </ul>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li className="flex items-start">
-                        <span className="text-verdigris mr-2">✓</span>
-                        <span>WhatsApp support (binnen 24u antwoord)</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-verdigris mr-2">✓</span>
-                        <span>Boodschappen lijsten & recepten</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-verdigris mr-2">✓</span>
-                        <span>Meal prep planning</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <p className="text-2xl font-bold text-cinnabar">€125 (eenmalig)</p>
-                    <Link href="/contact" className="bg-cinnabar text-white px-6 py-3 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all">
-                      Start Nu
-                    </Link>
-                  </div>
-                </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Welk programma past bij jou?</h2>
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+            Vergelijk beide programma's en kies wat het beste bij jouw situatie past
+          </p>
+
+          {/* Desktop Table */}
+          <div className="hidden md:block max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="p-6 text-left font-bold"></th>
+                  <th className="p-6 text-center font-bold text-cinnabar text-xl">1-op-1 Coaching</th>
+                  <th className="p-6 text-center font-bold text-verdigris text-xl">28-Dagen Kickstart</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t">
+                  <td className="p-6 font-semibold">Structuur</td>
+                  <td className="p-6 text-center bg-cinnabar/5">Volledig persoonlijk</td>
+                  <td className="p-6 text-center bg-verdigris/5">Groepsprogramma</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="p-6 font-semibold">Begeleiding</td>
+                  <td className="p-6 text-center bg-cinnabar/5">Wekelijkse 1-op-1 sessies</td>
+                  <td className="p-6 text-center bg-verdigris/5">Dagelijkse check-ins + groep</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="p-6 font-semibold">Aanpak</td>
+                  <td className="p-6 text-center bg-cinnabar/5">Data-gedreven of principes</td>
+                  <td className="p-6 text-center bg-verdigris/5">Simpele actie-stappen</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="p-6 font-semibold">Prijs</td>
+                  <td className="p-6 text-center bg-cinnabar/5 font-bold text-cinnabar">€350/maand</td>
+                  <td className="p-6 text-center bg-verdigris/5 font-bold text-verdigris">€200 totaal</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="p-6 font-semibold">Duur</td>
+                  <td className="p-6 text-center bg-cinnabar/5">Minimaal 2 maanden</td>
+                  <td className="p-6 text-center bg-verdigris/5">28 dagen (herhaalbaar)</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="p-6 font-semibold">Perfect voor</td>
+                  <td className="p-6 text-center bg-cinnabar/5">Maximale ondersteuning</td>
+                  <td className="p-6 text-center bg-verdigris/5">Kickstart in groepsverband</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Mobile Cards */}
+          <div className="md:hidden space-y-6">
+            <div className="bg-gradient-to-br from-cinnabar/10 to-cinnabar/5 rounded-xl p-6 border-2 border-cinnabar/20">
+              <h3 className="text-xl font-bold text-cinnabar mb-4">1-op-1 Coaching</h3>
+              <div className="space-y-3 text-sm">
+                <div><span className="font-semibold">Structuur:</span> Volledig persoonlijk</div>
+                <div><span className="font-semibold">Begeleiding:</span> Wekelijkse 1-op-1 sessies</div>
+                <div><span className="font-semibold">Aanpak:</span> Data-gedreven of principes</div>
+                <div><span className="font-semibold">Prijs:</span> <span className="text-cinnabar font-bold">€350/maand</span></div>
+                <div><span className="font-semibold">Duur:</span> Minimaal 2 maanden</div>
+                <div><span className="font-semibold">Perfect voor:</span> Maximale ondersteuning</div>
               </div>
             </div>
 
-            {/* Workshops */}
-            <div className="bg-white rounded-2xl p-8">
-              <div className="flex items-start gap-6">
-                <div className="text-6xl flex-shrink-0">📚</div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-4">Maandelijkse Workshops</h3>
-                  <p className="text-gray-700 mb-4">
-                    Elke maand organiseren we een workshop over een ander onderwerp. Kom langs, leer nieuwe dingen en stel al je vragen!
-                  </p>
-                  <div className="bg-gray-50 rounded-lg p-4 mb-4">
-                    <p className="font-semibold mb-2">Komende workshops:</p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Meal Prep 101: In 2 uur je hele week klaarmaken</li>
-                      <li>• Boodschappen doen: Labels lezen & slimme keuzes</li>
-                      <li>• Gezond eten met kids: Recepten die je hele gezin lekker vindt</li>
-                      <li>• Omgaan met cravings: Hoe blijf je on track?</li>
-                    </ul>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <p className="text-xl font-bold text-cinnabar">€25 per workshop</p>
-                    <Link href="/contact" className="bg-verdigris text-white px-6 py-3 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
-                      Aanmelden
-                    </Link>
-                  </div>
-                </div>
+            <div className="bg-gradient-to-br from-verdigris/10 to-verdigris/5 rounded-xl p-6 border-2 border-verdigris/20">
+              <h3 className="text-xl font-bold text-verdigris mb-4">28-Dagen Kickstart</h3>
+              <div className="space-y-3 text-sm">
+                <div><span className="font-semibold">Structuur:</span> Groepsprogramma</div>
+                <div><span className="font-semibold">Begeleiding:</span> Dagelijkse check-ins + groep</div>
+                <div><span className="font-semibold">Aanpak:</span> Simpele actie-stappen</div>
+                <div><span className="font-semibold">Prijs:</span> <span className="text-verdigris font-bold">€200 totaal</span></div>
+                <div><span className="font-semibold">Duur:</span> 28 dagen (herhaalbaar)</div>
+                <div><span className="font-semibold">Perfect voor:</span> Kickstart in groepsverband</div>
               </div>
             </div>
+          </div>
 
-            {/* Free E-book */}
-            <div className="bg-gradient-to-br from-jonquil/20 to-jonquil/10 rounded-2xl p-8">
-              <div className="flex items-start gap-6">
-                <div className="text-6xl flex-shrink-0">📖</div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-4">Gratis E-book Download</h3>
-                  <p className="text-gray-700 mb-4">
-                    Download ons gratis e-book <strong>"Gezond Eten voor Drukke Ouders"</strong> met:
-                  </p>
-                  <ul className="space-y-2 text-gray-700 mb-6">
-                    <li className="flex items-start">
-                      <span className="mr-2">📌</span>
-                      <span>20 simpele, gezonde recepten (max 30 min kooktijd)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2">📌</span>
-                      <span>Boodschappen checklist voor de hele week</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2">📌</span>
-                      <span>Meal prep tips voor 2 uur op zondag</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2">📌</span>
-                      <span>Gezonde snack lijst (voor thuis én onderweg)</span>
-                    </li>
-                  </ul>
-                  <Link href="/contact" className="inline-block bg-jonquil text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-jonquil/90 transition-all">
-                    Download Gratis E-book
-                  </Link>
-                </div>
-              </div>
-            </div>
+          <div className="text-center mt-12">
+            <a
+              href={bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-cinnabar text-white px-10 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl hover:bg-cinnabar/90 transition-all"
+            >
+              Boek een Goal Review
+            </a>
+            <p className="text-sm text-gray-600 mt-4">
+              Nog niet zeker? Tijdens de Goal Review helpen we je het juiste programma te kiezen
+            </p>
           </div>
         </div>
       </section>
@@ -255,38 +346,36 @@ export default function Nutrition() {
       {/* Testimonials */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Wat zeggen anderen?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">
-                "Lisa's voedingscoaching heeft mijn leven veranderd. Geen strenge diëten, gewoon simpele stapjes die ik echt kon volhouden.
-                In 4 weken heb ik meer energie en ben ik 3kg lichter – zonder honger!"
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Wat zeggen anderen?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gray-50 rounded-xl p-8 relative">
+              <div className="text-4xl text-cinnabar/20 mb-4">"</div>
+              <p className="text-gray-700 mb-6">
+                Ik stopte eindelijk met teveel nadenken over eten. Annie hielp me simpele gewoontes te bouwen
+                die ik echt kon volhouden. Geen stress meer, gewoon gezonde keuzes die normaal voelen.
               </p>
-              <p className="font-semibold">– Marieke, 41, moeder van 2</p>
+              <p className="font-semibold">— Lisa, 42</p>
+              <p className="text-sm text-gray-600">Moeder van 3 kinderen</p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">
-                "De meal prep workshop was eye-opening. Nu prep ik elke zondag 2 uur en de hele week is geregeld.
-                Mijn gezin eet gezonder én ik bespaar tijd en geld!"
+            <div className="bg-gray-50 rounded-xl p-8 relative">
+              <div className="text-4xl text-cinnabar/20 mb-4">"</div>
+              <p className="text-gray-700 mb-6">
+                Ik voelde me de hele weg ondersteund. Geen oordeel, alleen praktisch advies.
+                Na 4 weken had ik meer energie en voelde ik me sterker dan in jaren.
               </p>
-              <p className="font-semibold">– Tom, 45, vader van 3</p>
+              <p className="font-semibold">— Tom, 38</p>
+              <p className="text-sm text-gray-600">Drukke ondernemer</p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">
-                "Ik dacht altijd dat gezond eten ingewikkeld was. Lisa maakte het super simpel – gewoon goede keuzes maken, geen rocket science.
-                Nu eet ik beter dan ooit en het voelt makkelijk."
+            <div className="bg-gray-50 rounded-xl p-8 relative">
+              <div className="text-4xl text-cinnabar/20 mb-4">"</div>
+              <p className="text-gray-700 mb-6">
+                Annie hielp me begrijpen wat werkt voor mij. Niet een standaard plan, maar advies dat
+                paste bij mijn leven. Het voelde makkelijk, niet als nog een to-do.
               </p>
-              <p className="font-semibold">– Sandra, 38, ondernemer</p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">
-                "Door training én voeding aan te pakken zag ik pas echt resultaat. Het gratis e-book gaf me al zoveel nuttige tips!
-                De personal coaching daarnaweg was de game-changer."
-              </p>
-              <p className="font-semibold">– Peter, 48, manager</p>
+              <p className="font-semibold">— Sandra, 45</p>
+              <p className="text-sm text-gray-600">Moeder met druk werk</p>
             </div>
           </div>
         </div>
@@ -296,43 +385,60 @@ export default function Nutrition() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
             <div className="space-y-4">
               <details className="bg-white rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
-                  <span>Moet ik leden zijn om voedingscoaching te krijgen?</span>
+                  <span>Moet ik lid zijn van CrossFit Leiden?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Nee! Voedingscoaching is ook beschikbaar voor niet-leden. Maar natuurlijk werkt de combinatie van training én voeding het beste!
+                  Nee! Voedingscoaching is beschikbaar voor iedereen, ook als je niet bij ons traint.
+                  Natuurlijk werkt de combinatie van training én voeding het beste, maar het is geen vereiste.
                 </p>
               </details>
 
               <details className="bg-white rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
-                  <span>Ga ik op streng dieet?</span>
+                  <span>Welk programma is beter voor mij?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Absoluut niet! We geloven niet in strenge diëten. We leren je gewoon betere keuzes maken die je voor altijd kunt volhouden.
-                  Je mag nog steeds genieten – het gaat om balans!
+                  Dat bespreken we tijdens je gratis Goal Review! Als je maximale ondersteuning en persoonlijke
+                  aandacht wilt, is 1-op-1 coaching ideaal. Als je graag de groepsenergie voelt en een kickstart
+                  van 4 weken wilt, kies dan voor de 28-Dagen Kickstart.
                 </p>
               </details>
 
               <details className="bg-white rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
-                  <span>Moet ik callorieën tellen?</span>
+                  <span>Moet ik calorieën tellen of eten wegen?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Alleen als je dat wilt! We werken met simpele hand-portie methodes die voor de meeste mensen prima werken.
-                  Geen geweeg, geen app nodig – gewoon gezond verstand.
+                  Bij 1-op-1 coaching kun je kiezen: data-gedreven (met tracking) of principes-gebaseerd (zonder tracking).
+                  Bij de 28-Dagen Kickstart werken we met simpele richtlijnen en geen verplichte tracking.
+                  We passen het aan op wat voor jou werkt.
+                </p>
+              </details>
+
+              <details className="bg-white rounded-lg p-6 group">
+                <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
+                  <span>Ga ik op een streng dieet?</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p className="text-gray-700 mt-4">
+                  Absoluut niet! We geloven niet in strenge diëten of extreme veranderingen. We focussen op
+                  simpele, haalbare stappen: meer eiwit, meer groente, voldoende beweging en calorieën in balans.
+                  Geen verboden, geen perfectie – gewoon gezonde gewoontes die blijven.
                 </p>
               </details>
 
@@ -344,8 +450,9 @@ export default function Nutrition() {
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Absoluut! Ons programma is juist ontworpen voor drukke ouders. Simpele recepten, realistische planning en geen uren in de keuken.
-                  Als het niet praktisch is, werkt het niet!
+                  Ja! Beide programma's zijn speciaal ontworpen voor drukke mensen. We geven je praktische tips
+                  die passen bij jouw leven – geen ingewikkelde meal prep of uren in de keuken.
+                  Als het niet praktisch is, werkt het niet.
                 </p>
               </details>
             </div>
@@ -353,11 +460,26 @@ export default function Nutrition() {
         </div>
       </section>
 
-      <IntroCtaSection
-        title="Klaar om gezonder te gaan eten?"
-        subtitle="Download eerst ons gratis e-book of boek meteen een 1-op-1 consult. Kleine stappen, groot verschil!"
-        buttonLabel="Boek Voedingsconsult"
-      />
+      {/* Final CTA */}
+      <section className="section-padding bg-gradient-to-r from-verdigris via-cinnabar/20 to-verdigris text-white">
+        <div className="container-custom text-center">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            Klaar om je beter te voelen in je lichaam?
+          </h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-100">
+            Boek een gratis Goal Review en ontdek welk programma het beste bij jou past.
+            Geen verplichtingen, gewoon een goed gesprek.
+          </p>
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-cinnabar px-10 py-4 rounded-lg font-semibold shadow-xl hover:shadow-2xl hover:bg-gray-50 transition-all text-lg"
+          >
+            Boek een Goal Review
+          </a>
+        </div>
+      </section>
     </>
   );
 }
