@@ -113,31 +113,6 @@ export default function HighLevelPopup() {
               title="Website Form"
             />
           </div>
-
-          {/* Micro-bullets - New Section */}
-          <div className="cfl-popup-benefits">
-            <div className="benefit-item">
-              <span className="benefit-icon">☕</span>
-              <span>Geen workout, gewoon kennismaken</span>
-            </div>
-            <div className="benefit-item">
-              <span className="benefit-icon">👂</span>
-              <span>We luisteren naar jouw doelen</span>
-            </div>
-            <div className="benefit-item">
-              <span className="benefit-icon">📅</span>
-              <span>Je kiest straks zelf een tijd</span>
-            </div>
-            <div className="benefit-item">
-              <span className="benefit-icon">🤝</span>
-              <span>Vrijblijvend en persoonlijk</span>
-            </div>
-          </div>
-
-          {/* Bottom reassurance text */}
-          <div className="cfl-popup-footer">
-            <p>Je zit nergens aan vast.</p>
-          </div>
         </div>
       </div>
 
@@ -248,46 +223,6 @@ export default function HighLevelPopup() {
           margin-bottom: 0;
         }
 
-        /* Benefits Section - New, scannable */
-        .cfl-popup-benefits {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 12px;
-          margin-top: -16px;
-          margin-bottom: 20px;
-          padding: 20px;
-          background: #f9fafb;
-          border-radius: 12px;
-        }
-
-        .benefit-item {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 14px;
-          color: #444;
-          line-height: 1.4;
-        }
-
-        .benefit-icon {
-          font-size: 18px;
-          flex-shrink: 0;
-        }
-
-        /* Footer reassurance */
-        .cfl-popup-footer {
-          text-align: center;
-          padding-top: 16px;
-          border-top: 1px solid #e5e7eb;
-        }
-
-        .cfl-popup-footer p {
-          margin: 0;
-          font-size: 15px;
-          color: #6b7280;
-          font-style: italic;
-        }
-
         /* Mobile Responsive */
         @media (max-width: 640px) {
           #cfl-popup-modal {
@@ -323,20 +258,6 @@ export default function HighLevelPopup() {
 
           .cfl-popup-form {
             min-height: 500px;
-          }
-
-          .cfl-popup-benefits {
-            grid-template-columns: 1fr;
-            gap: 10px;
-            padding: 16px;
-          }
-
-          .benefit-item {
-            font-size: 13px;
-          }
-
-          .benefit-icon {
-            font-size: 16px;
           }
         }
       `}</style>
