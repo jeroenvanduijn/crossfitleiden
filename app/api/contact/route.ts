@@ -38,7 +38,7 @@ export async function POST(request: Request) {
 
     // Send email using Resend
     const data = await resend.emails.send({
-      from: 'CrossFit Leiden Website <noreply@crossfitleiden.com>',
+      from: 'onboarding@resend.dev',  // Resend's test email (always works)
       to: ['welcome@crossfitleiden.com'],
       replyTo: email,
       subject: `Website Contact: ${subjectLabel} - ${name}`,

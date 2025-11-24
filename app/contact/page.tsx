@@ -28,7 +28,16 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      // Check if response has content before parsing JSON
+      const text = await response.text();
+      let data;
+
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch (parseError) {
+        console.error('Failed to parse response:', text);
+        throw new Error('Onverwachte response van server');
+      }
 
       if (!response.ok) {
         throw new Error(data.error || 'Er ging iets mis');
@@ -36,6 +45,7 @@ export default function Contact() {
 
       setSubmitted(true);
     } catch (err) {
+      console.error('Contact form error:', err);
       setError(err instanceof Error ? err.message : 'Er ging iets mis bij het verzenden van je bericht');
       setIsSubmitting(false);
     }
