@@ -20,7 +20,6 @@ export default function Footer() {
                 CrossFit Leiden
               </h3>
             </div>
-            </h3>
             <p className="text-sm text-gray-400 italic">
               Everyday people, exceptionally strong
             </p>

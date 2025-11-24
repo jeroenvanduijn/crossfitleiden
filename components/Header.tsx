@@ -65,6 +65,8 @@ export default function Header() {
               alt="CrossFit Leiden Logo"
               className="w-12 h-12 rounded-full"
             />
+            <span className="text-2xl font-heading font-bold text-[#E4572E]">
+              CrossFit Leiden
             </span>
           </Link>
 
