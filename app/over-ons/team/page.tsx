@@ -4,16 +4,16 @@ import IntroCtaSection from "@/components/IntroCtaSection";
 export default function TeamPage() {
   const coaches = [
     {
-      name: "Rochelle",
-      role: "Lead Coach",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png",
-      story: "Rochelle is turncoach op nationaal niveau en brengt die expertise naar CrossFit Leiden. Ze is geweldig met kinderen en volwassenen, en helpt iedereen om bewegingen veilig te leren. Naast coaching bij ons, traint ze haar turnploeg voor wereldkampioenschappen."
-    },
-    {
       name: "Saskia",
       role: "General Manager",
       image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/saskia.png",
       story: "Saskia kwam een paar jaar geleden naar CrossFit Leiden om van haar rugpijn af te komen, en het werkte zo goed dat ze van baan veranderde. Ze zorgt ervoor dat alles in de gym soepel loopt en dat iedereen zich welkom voelt."
+    },
+    {
+      name: "Rochelle",
+      role: "Lead Coach",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png",
+      story: "Rochelle is turncoach op nationaal niveau en brengt die expertise naar CrossFit Leiden. Ze is geweldig met kinderen en volwassenen, en helpt iedereen om bewegingen veilig te leren. Naast coaching bij ons, traint ze haar turnploeg voor wereldkampioenschappen."
     },
     {
       name: "Jeffrey Perez Stoof",
@@ -34,6 +34,12 @@ export default function TeamPage() {
       story: "Max heeft jaren ervaring als personal trainer en CrossFit coach. Hij houdt van wandelen en kamperen met zijn familie. Als coach creëert Max een leuke en positieve sfeer waar iedereen zich welkom voelt, ongeacht niveau."
     },
     {
+      name: "Natália",
+      role: "Coach",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png",
+      story: "Natália komt uit Brazilië en verhuisde in 2022 naar Nederland. Met een diploma in bewegingswetenschappen en een passie voor hardlopen brengt ze creativiteit en positiviteit naar elke les. Ze coacht groepslessen en de Teens sessies met veel energie en geduld."
+    },
+    {
       name: "Annie",
       role: "Voedingscoach",
       image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png",
@@ -44,12 +50,6 @@ export default function TeamPage() {
       role: "Coach",
       image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20sem.png",
       story: "Sem is altijd vrolijk en maakt graag contact met iedereen in zijn lessen. Hij houdt van Olympic weightlifting en staat elke ochtend om 5 uur op om te trainen voordat hij de eerste les geeft. Die toewijding en energie zie je terug in zijn coaching."
-    },
-    {
-      name: "Natália",
-      role: "Coach",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png",
-      story: "Natália komt uit Brazilië en verhuisde in 2022 naar Nederland. Met een diploma in bewegingswetenschappen en een passie voor hardlopen brengt ze creativiteit en positiviteit naar elke les. Ze coacht groepslessen en de Teens sessies met veel energie en geduld."
     },
     {
       name: "Erin",
