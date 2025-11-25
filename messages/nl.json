@@ -255,6 +255,78 @@
       "button": "Plan een Gratis Intro"
     }
   },
+  "location": {
+    "hero": {
+      "title": "Onze Locatie",
+      "subtitle": "Makkelijk bereikbaar in Leiden, met veel parkeerruimte direct voor de deur.",
+      "imageAlt": "CrossFit Leiden faciliteit"
+    },
+    "addressContact": {
+      "title": "Adres & Contact",
+      "addressTitle": "Adres",
+      "name": "CrossFit Leiden",
+      "street": "Marie Diebenplaats 108",
+      "city": "2324 NG Leiden",
+      "googleMaps": "Bekijk op Google Maps",
+      "contactTitle": "Contact",
+      "hoursTitle": "Openingstijden lessen",
+      "monFri": "Maandag t/m vrijdag:",
+      "monFriHours": "06:00 - 22:00",
+      "sat": "Zaterdag:",
+      "satHours": "07:00 - 13:00",
+      "sun": "Zondag:",
+      "sunHours": "08:00 - 13:00",
+      "scheduleNote": "Controleer altijd het <a>rooster</a> voor actuele lestijden."
+    },
+    "practicalInfo": {
+      "title": "Praktische Info",
+      "parking": {
+        "title": "Parkeren",
+        "item1": "• Ruime parkeergelegenheid direct voor de deur",
+        "item2": "• Maandag t/m vrijdag van 07:30 tot 19:30 parkeer je de eerste twee uur voor €0,20 per uur",
+        "item3": "• Daarna geldt het normale tarief van de gemeente",
+        "item4": "• Op zaterdag en zondag is parkeren gratis",
+        "item5": "• Er is een invalide parkeerplek direct voor de deur"
+      },
+      "fysiofabriek": {
+        "title": "Fysiofabriek in-house",
+        "text1": "We hebben een professionele fysiopraktijk direct in onze gym. Bij pijntjes, blessures of revalidatie kun je snel terecht.",
+        "text2": "Voor leden zijn er gratis inloopuren, zodat je laagdrempelig even kunt laten checken wat er aan de hand is.",
+        "link": "Meer over Fysiofabriek"
+      },
+      "facilities": {
+        "title": "Faciliteiten",
+        "item1": "• Professionele CrossFit apparatuur",
+        "item2": "• Ruime kleedkamers en douches",
+        "item3": "• Klimaatbeheersing",
+        "item4": "• Gratis wifi voor leden",
+        "item5": "• Waterstation om je bidon te vullen",
+        "item6": "• Gratis koffie en thee in de lounge",
+        "item7": "• Toiletten",
+        "item8": "• Rolstoeltoegankelijke entree",
+        "item9": "• Buitenruimte met rubberen tegels",
+        "item10": "• Hardloopmogelijkheden buiten"
+      }
+    },
+    "gallery": {
+      "title": "Een kijkje in onze gym",
+      "subtitle": "Krijg een indruk van onze gym, lounge en trainingsruimte.",
+      "clickToEnlarge": "Klik op een foto voor een grotere weergave",
+      "imageAlt": "CrossFit Leiden faciliteit",
+      "prevButton": "Vorige foto's",
+      "nextButton": "Volgende foto's",
+      "closeButton": "Sluit"
+    },
+    "map": {
+      "title": "Vind ons",
+      "address": "Marie Diebenplaats 108, 2324 NG Leiden"
+    },
+    "cta": {
+      "title": "Kom langs voor een gratis intro",
+      "subtitle": "Nieuwsgierig? Plan je gratis intro en kom de gym, het team en de sfeer ontdekken.",
+      "button": "Plan een Gratis Intro"
+    }
+  },
   "team": {
     "hero": {
       "title": "Ontmoet het Team",

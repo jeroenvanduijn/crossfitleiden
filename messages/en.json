@@ -255,6 +255,78 @@
       "button": "Schedule a Free Intro"
     }
   },
+  "location": {
+    "hero": {
+      "title": "Our Location",
+      "subtitle": "Easily accessible in Leiden, with ample parking right in front of the door.",
+      "imageAlt": "CrossFit Leiden facility"
+    },
+    "addressContact": {
+      "title": "Address & Contact",
+      "addressTitle": "Address",
+      "name": "CrossFit Leiden",
+      "street": "Marie Diebenplaats 108",
+      "city": "2324 NG Leiden",
+      "googleMaps": "View on Google Maps",
+      "contactTitle": "Contact",
+      "hoursTitle": "Class Hours",
+      "monFri": "Monday to Friday:",
+      "monFriHours": "06:00 - 22:00",
+      "sat": "Saturday:",
+      "satHours": "07:00 - 13:00",
+      "sun": "Sunday:",
+      "sunHours": "08:00 - 13:00",
+      "scheduleNote": "Always check the <a>schedule</a> for current class times."
+    },
+    "practicalInfo": {
+      "title": "Practical Info",
+      "parking": {
+        "title": "Parking",
+        "item1": "• Ample parking directly in front",
+        "item2": "• Monday to Friday from 07:30 to 19:30, park for the first two hours at €0.20 per hour",
+        "item3": "• After that, the normal municipal rate applies",
+        "item4": "• Parking is free on Saturday and Sunday",
+        "item5": "• There is a disabled parking spot directly in front"
+      },
+      "fysiofabriek": {
+        "title": "Fysiofabriek in-house",
+        "text1": "We have a professional physiotherapy practice right in our gym. For aches, injuries or rehabilitation, you can get help quickly.",
+        "text2": "For members, there are free walk-in hours, so you can easily have someone check what's going on.",
+        "link": "More about Fysiofabriek"
+      },
+      "facilities": {
+        "title": "Facilities",
+        "item1": "• Professional CrossFit equipment",
+        "item2": "• Spacious changing rooms and showers",
+        "item3": "• Climate control",
+        "item4": "• Free wifi for members",
+        "item5": "• Water station to fill your bottle",
+        "item6": "• Free coffee and tea in the lounge",
+        "item7": "• Restrooms",
+        "item8": "• Wheelchair accessible entrance",
+        "item9": "• Outdoor area with rubber tiles",
+        "item10": "• Running opportunities outside"
+      }
+    },
+    "gallery": {
+      "title": "A look inside our gym",
+      "subtitle": "Get an impression of our gym, lounge and training area.",
+      "clickToEnlarge": "Click on a photo for a larger view",
+      "imageAlt": "CrossFit Leiden facility",
+      "prevButton": "Previous photos",
+      "nextButton": "Next photos",
+      "closeButton": "Close"
+    },
+    "map": {
+      "title": "Find us",
+      "address": "Marie Diebenplaats 108, 2324 NG Leiden"
+    },
+    "cta": {
+      "title": "Come by for a free intro",
+      "subtitle": "Curious? Schedule your free intro and come discover the gym, team and atmosphere.",
+      "button": "Schedule a Free Intro"
+    }
+  },
   "team": {
     "hero": {
       "title": "Meet the Team",
