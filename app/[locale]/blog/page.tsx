@@ -1,51 +1,56 @@
+"use client";
+
 import Link from "next/link";
+import { useLocale } from 'next-intl';
 
 export default function Blog() {
-  // Placeholder blog posts - in productie zou dit komen uit een CMS of markdown files
+  const locale = useLocale();
+
+  // Blog posts
   const blogPosts = [
     {
-      id: 1,
-      title: "5 Tips voor CrossFit Beginners",
-      excerpt: "Net begonnen met CrossFit? Deze 5 tips helpen je om veilig en effectief te starten.",
-      date: "15 Jan 2025",
+      slug: "how-to-start-crossfit-when-youre-busy",
+      title: "How to Start CrossFit When You're Busy With Work and Kids",
+      excerpt: "You don't need hours of free time to get stronger. Just one hour, two or three times a week.",
+      date: "25 Nov 2025",
       category: "Training Tips",
-      image: "📝",
+      image: "⏰",
     },
     {
-      id: 2,
-      title: "Community Spotlight: Meet Marieke",
-      excerpt: "Marieke (39, moeder van 2) vertelt hoe CrossFit haar leven veranderde.",
-      date: "8 Jan 2025",
+      slug: "is-crossfit-safe",
+      title: "Is CrossFit Safe? Here's How We Make It Safe at CrossFit Leiden",
+      excerpt: "Technique first, light weights first, coaching always watching you. Your safety is our priority.",
+      date: "24 Nov 2025",
+      category: "Training Tips",
+      image: "🛡️",
+    },
+    {
+      slug: "why-80-percent-start-as-beginners",
+      title: "Why 80% of Our Members Start as Complete Beginners",
+      excerpt: "You don't need to be fit to start. You get fit by starting. Most of our members had zero experience.",
+      date: "23 Nov 2025",
       category: "Community",
-      image: "👩",
+      image: "👥",
     },
     {
-      id: 3,
-      title: "Voedingstips voor Drukke Ouders",
-      excerpt: "Gezond eten met weinig tijd? Deze meal prep hacks maken het makkelijk.",
-      date: "3 Jan 2025",
-      category: "Nutrition",
-      image: "🍎",
+      slug: "what-happens-during-free-intro",
+      title: "What Really Happens During a Free Intro (Step-by-Step)",
+      excerpt: "No workout, no pressure. Just coffee, conversation, and a tour. Here's exactly what to expect.",
+      date: "22 Nov 2025",
+      category: "Getting Started",
+      image: "☕",
     },
     {
-      id: 4,
-      title: "Hyrox: Alles wat je moet weten",
-      excerpt: "Wat is Hyrox en hoe kun je je erop voorbereiden? Een complete guide.",
-      date: "28 Dec 2024",
-      category: "Events",
-      image: "🏃",
-    },
-    {
-      id: 5,
-      title: "Recovery: Het Belang van Rust",
-      excerpt: "Train hard, herstel harder. Waarom recovery net zo belangrijk is als je workouts.",
-      date: "20 Dec 2024",
+      slug: "crossfit-for-40-plus-beginners",
+      title: "CrossFit for 40+ Beginners: Getting Stronger Without Injuries",
+      excerpt: "It's never too late to start. We have members in their 50s, 60s, and 70s who started as beginners.",
+      date: "21 Nov 2025",
       category: "Training Tips",
-      image: "😴",
+      image: "💪",
     },
   ];
 
-  const categories = ["Alle", "Training Tips", "Nutrition", "Community", "Events"];
+  const categories = ["All", "Training Tips", "Community", "Getting Started"];
 
   return (
     <>
@@ -54,7 +59,7 @@ export default function Blog() {
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog</h1>
           <p className="text-xl max-w-2xl">
-            Tips, verhalen en updates van CrossFit Leiden. Blijf op de hoogte en leer meer over fitness, nutrition en onze community.
+            Tips, stories, and updates from CrossFit Leiden. Learn more about fitness, training, and our community.
           </p>
         </div>
       </section>
@@ -67,7 +72,7 @@ export default function Blog() {
               <button
                 key={cat}
                 className={`px-6 py-2 rounded-full font-medium transition-all ${
-                  cat === "Alle"
+                  cat === "All"
                     ? "bg-cinnabar text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
@@ -80,7 +85,7 @@ export default function Blog() {
           {/* Blog Posts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {blogPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <article key={post.slug} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                   <span className="text-6xl">{post.image}</span>
                 </div>
@@ -90,14 +95,14 @@ export default function Blog() {
                     <span className="text-sm text-gray-500">{post.date}</span>
                   </div>
                   <h2 className="text-xl font-bold mb-3 hover:text-cinnabar transition-colors">
-                    <Link href={`/blog/${post.id}`}>{post.title}</Link>
+                    <Link href={`/${locale}/blog/${post.slug}`}>{post.title}</Link>
                   </h2>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
                   <Link
-                    href={`/blog/${post.id}`}
+                    href={`/${locale}/blog/${post.slug}`}
                     className="text-cinnabar font-semibold hover:underline inline-flex items-center gap-2"
                   >
-                    Lees meer
+                    Read more
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -107,33 +112,28 @@ export default function Blog() {
             ))}
           </div>
 
-          {/* Pagination Placeholder */}
-          <div className="flex justify-center gap-2 mt-12">
-            <button className="px-4 py-2 bg-cinnabar text-white rounded-lg font-medium">1</button>
-            <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200">2</button>
-            <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200">3</button>
-          </div>
         </div>
       </section>
 
-      {/* Newsletter CTA */}
+      {/* CTA Section */}
       <section className="section-padding bg-chinese-violet/10">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Blijf op de hoogte</h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-lg text-gray-700 mb-8">
-              Ontvang onze nieuwsbrief met de laatste blog posts, tips en updates van CrossFit Leiden.
+              Join our community and discover how CrossFit Leiden can help you get stronger, healthier, and more confident.
             </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Je email adres"
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-chinese-violet focus:border-transparent"
-              />
-              <button type="submit" className="bg-chinese-violet text-white px-6 py-3 rounded-lg font-semibold hover:bg-chinese-violet/90 transition-all">
-                Inschrijven
-              </button>
-            </form>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
+                  (window as any).openCFLPopup();
+                }
+              }}
+              className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-bold hover:bg-cinnabar/90 transition-all shadow-md cursor-pointer"
+            >
+              Schedule Your Free Intro
+            </button>
           </div>
         </div>
       </section>
