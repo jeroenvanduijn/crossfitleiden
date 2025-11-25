@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Tarieven() {
+  const t = useTranslations('pricing');
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   const toggleSection = (section: string) => {
@@ -19,7 +21,7 @@ export default function Tarieven() {
         <div className="absolute inset-0 z-0">
           <Image
             src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/faciliteit/hero-background-15.jpg"
-            alt="CrossFit Leiden gym"
+            alt={t('hero.imageAlt')}
             fill
             className="object-cover"
             priority
@@ -30,10 +32,10 @@ export default function Tarieven() {
         <div className="relative z-20 container-custom section-padding">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Investeer in je gezondheid voor maar €4,50 per dag
+              {t('hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8">
-              Persoonlijke coaching in kleine groepen, een warme community en maandelijks opzegbare memberships. Geen verborgen kosten.
+              {t('hero.subtitle')}
             </p>
             <button
               onClick={() => {
@@ -43,7 +45,7 @@ export default function Tarieven() {
               }}
               className="inline-block bg-white text-[#E25C2A] px-10 py-4 rounded-lg font-bold text-lg hover:bg-[#E25C2A]/10 transition-all shadow-lg hover:shadow-xl border-2 border-[#E25C2A]"
             >
-              Plan Gratis Intro
+              {t('hero.button')}
             </button>
           </div>
         </div>
@@ -53,41 +55,41 @@ export default function Tarieven() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Waar ga je het aan uit?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">{t('comparison.title')}</h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
               <div className="bg-gray-50 rounded-xl p-6 text-center">
-                <div className="text-4xl mb-3">☕</div>
-                <p className="font-semibold mb-2">Dagelijkse flat white</p>
-                <p className="text-2xl font-bold text-gray-900">€100</p>
-                <p className="text-sm text-gray-600">per maand</p>
+                <div className="text-4xl mb-3">{t('comparison.coffee.emoji')}</div>
+                <p className="font-semibold mb-2">{t('comparison.coffee.title')}</p>
+                <p className="text-2xl font-bold text-gray-900">{t('comparison.coffee.price')}</p>
+                <p className="text-sm text-gray-600">{t('comparison.coffee.period')}</p>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-6 text-center">
-                <div className="text-4xl mb-3">🍽️</div>
-                <p className="font-semibold mb-2">1x per week uit eten</p>
-                <p className="text-2xl font-bold text-gray-900">€320</p>
-                <p className="text-sm text-gray-600">per maand</p>
+                <div className="text-4xl mb-3">{t('comparison.dining.emoji')}</div>
+                <p className="font-semibold mb-2">{t('comparison.dining.title')}</p>
+                <p className="text-2xl font-bold text-gray-900">{t('comparison.dining.price')}</p>
+                <p className="text-sm text-gray-600">{t('comparison.dining.period')}</p>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-6 text-center">
-                <div className="text-4xl mb-3">📺</div>
-                <p className="font-semibold mb-2">Streaming</p>
-                <p className="text-2xl font-bold text-gray-900">€50</p>
-                <p className="text-sm text-gray-600">per maand</p>
+                <div className="text-4xl mb-3">{t('comparison.streaming.emoji')}</div>
+                <p className="font-semibold mb-2">{t('comparison.streaming.title')}</p>
+                <p className="text-2xl font-bold text-gray-900">{t('comparison.streaming.price')}</p>
+                <p className="text-sm text-gray-600">{t('comparison.streaming.period')}</p>
               </div>
 
               <div className="bg-[#E25C2A]/10 border-2 border-[#E25C2A] rounded-xl p-6 text-center">
-                <div className="text-4xl mb-3">💪</div>
-                <p className="font-semibold mb-2">CrossFit Leiden</p>
-                <p className="text-2xl font-bold text-[#E25C2A]">€135</p>
-                <p className="text-sm text-gray-600">per maand</p>
+                <div className="text-4xl mb-3">{t('comparison.crossfit.emoji')}</div>
+                <p className="font-semibold mb-2">{t('comparison.crossfit.title')}</p>
+                <p className="text-2xl font-bold text-[#E25C2A]">{t('comparison.crossfit.price')}</p>
+                <p className="text-sm text-gray-600">{t('comparison.crossfit.period')}</p>
               </div>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-8 text-center max-w-3xl mx-auto">
               <p className="text-lg text-gray-700">
-                Je betaalt óf nu aan je gezondheid, óf later aan klachten, weinig energie en zorgkosten. Bij ons bouw je rustig en veilig aan een fitter leven.
+                {t('comparison.message')}
               </p>
             </div>
           </div>
@@ -98,9 +100,9 @@ export default function Tarieven() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Onze Programma's</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('programs.title')}</h2>
             <p className="text-lg text-gray-600 mb-10 text-center">
-              Klik op een programma voor meer informatie en prijzen
+              {t('programs.subtitle')}
             </p>
 
             <div className="space-y-4">
@@ -115,8 +117,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🚀</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">28-Day Kickstart</h3>
-                      <p className="text-sm text-gray-600">Perfect voor beginners</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.kickstart.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.kickstart.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -133,36 +135,36 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-6">
                       <div className="text-center mb-4">
-                        <p className="text-3xl font-bold text-[#E25C2A]">€600</p>
-                        <p className="text-sm text-gray-600">eenmalig</p>
+                        <p className="text-3xl font-bold text-[#E25C2A]">{t('programs.kickstart.price')}</p>
+                        <p className="text-sm text-gray-600">{t('programs.kickstart.period')}</p>
                       </div>
 
                       <p className="text-gray-700">
-                        Voor beginners of mensen die veilig willen opbouwen. Je traint in kleine groepen, leert de basis en krijgt begeleiding van meerdere coaches. We bouwen rustig op zodat je vertrouwen groeit.
+                        {t('programs.kickstart.description')}
                       </p>
 
                       <div className="bg-gray-50 rounded-lg p-5">
-                        <h4 className="font-bold text-gray-900 mb-3">Inclusief:</h4>
+                        <h4 className="font-bold text-gray-900 mb-3">{t('programs.kickstart.included')}</h4>
                         <ul className="space-y-2 text-sm text-gray-700">
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>2 small group sessies per week</span>
+                            <span>{t('programs.kickstart.item1')}</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>1 groepsles per week</span>
+                            <span>{t('programs.kickstart.item2')}</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>InBody scan</span>
+                            <span>{t('programs.kickstart.item3')}</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>Persoonlijke coaching en voedingsdoelen</span>
+                            <span>{t('programs.kickstart.item4')}</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>Groepssupport</span>
+                            <span>{t('programs.kickstart.item5')}</span>
                           </li>
                         </ul>
                       </div>
@@ -182,8 +184,8 @@ export default function Tarieven() {
                       <span className="text-2xl">👥</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Group Coaching</h3>
-                      <p className="text-sm text-gray-600">max 14 personen • elke les gecoacht</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.group.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.group.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -200,85 +202,85 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-6">
                       <p className="text-gray-700">
-                        Bij ons train je nooit alleen. Onze coaches kennen je naam, helpen je veilig te bewegen en zorgen dat elke les past bij jouw niveau. De sfeer is warm, persoonlijk en zonder ego's. Je bouwt stap voor stap aan kracht, energie en vertrouwen.
+                        {t('programs.group.description')}
                       </p>
 
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
-                            <h4 className="text-lg font-bold text-gray-900">Base Membership</h4>
+                            <h4 className="text-lg font-bold text-gray-900">{t('programs.group.base.title')}</h4>
                             <div className="text-right">
-                              <p className="text-2xl font-bold text-[#E25C2A]">€135</p>
-                              <p className="text-sm text-gray-600">per maand</p>
+                              <p className="text-2xl font-bold text-[#E25C2A]">{t('programs.group.base.price')}</p>
+                              <p className="text-sm text-gray-600">{t('programs.group.base.period')}</p>
                             </div>
                           </div>
                           <ul className="space-y-2 text-sm text-gray-700">
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>3 groepslessen per week</span>
+                              <span>{t('programs.group.base.item1')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Elke 90 dagen Goal Review</span>
+                              <span>{t('programs.group.base.item2')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Toegang tot workshops & community events</span>
+                              <span>{t('programs.group.base.item3')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Gratis 10-min fysiocheck</span>
+                              <span>{t('programs.group.base.item4')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Koffie, fruit & douches inbegrepen</span>
+                              <span>{t('programs.group.base.item5')}</span>
                             </li>
                           </ul>
                         </div>
 
                         <div className="bg-gray-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
-                            <h4 className="text-lg font-bold text-gray-900">Pro Membership</h4>
+                            <h4 className="text-lg font-bold text-gray-900">{t('programs.group.pro.title')}</h4>
                             <div className="text-right">
-                              <p className="text-2xl font-bold text-[#E25C2A]">€159</p>
-                              <p className="text-sm text-gray-600">per maand</p>
+                              <p className="text-2xl font-bold text-[#E25C2A]">{t('programs.group.pro.price')}</p>
+                              <p className="text-sm text-gray-600">{t('programs.group.pro.period')}</p>
                             </div>
                           </div>
                           <ul className="space-y-2 text-sm text-gray-700">
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>4 groepslessen per week</span>
+                              <span>{t('programs.group.pro.item1')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Inclusief alles uit Base</span>
+                              <span>{t('programs.group.pro.item2')}</span>
                             </li>
                           </ul>
                         </div>
 
                         <div className="bg-gray-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
-                            <h4 className="text-lg font-bold text-gray-900">Elite Membership</h4>
+                            <h4 className="text-lg font-bold text-gray-900">{t('programs.group.elite.title')}</h4>
                             <div className="text-right">
-                              <p className="text-2xl font-bold text-[#E25C2A]">€169</p>
-                              <p className="text-sm text-gray-600">per maand</p>
+                              <p className="text-2xl font-bold text-[#E25C2A]">{t('programs.group.elite.price')}</p>
+                              <p className="text-sm text-gray-600">{t('programs.group.elite.period')}</p>
                             </div>
                           </div>
                           <ul className="space-y-2 text-sm text-gray-700">
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>6 groepslessen per week</span>
+                              <span>{t('programs.group.elite.item1')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Inclusief alles uit Base</span>
+                              <span>{t('programs.group.elite.item2')}</span>
                             </li>
                           </ul>
                         </div>
                       </div>
 
                       <p className="text-center text-gray-600 italic">
-                        Nieuw bij ons? Tijdens een gratis Intro kijken we welke optie bij jou past.
+                        {t('programs.group.note')}
                       </p>
                     </div>
                   </div>
@@ -296,8 +298,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🎯</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">GetShredded</h3>
-                      <p className="text-sm text-gray-600">Small Group / Semi-Private</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.small.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.small.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -314,66 +316,66 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-6">
                       <p className="text-gray-700">
-                        Small Group voelt als personal training met de energie van een kleine groep. Je traint op vaste tijden met een coach die precies weet wat jij nodig hebt. Perfect voor wie sneller resultaat wil en meer persoonlijke begeleiding zoekt.
+                        {t('programs.small.description')}
                       </p>
 
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
-                            <h4 className="text-lg font-bold text-gray-900">3x per week</h4>
+                            <h4 className="text-lg font-bold text-gray-900">{t('programs.small.tier3.title')}</h4>
                             <div className="text-right">
-                              <p className="text-2xl font-bold text-[#E25C2A]">€450</p>
-                              <p className="text-sm text-gray-600">per maand</p>
-                              <p className="text-sm text-gray-600">of €400 (6 maanden)</p>
+                              <p className="text-2xl font-bold text-[#E25C2A]">{t('programs.small.tier3.price')}</p>
+                              <p className="text-sm text-gray-600">{t('programs.small.tier3.period')}</p>
+                              <p className="text-sm text-gray-600">{t('programs.small.tier3.period2')}</p>
                             </div>
                           </div>
                           <ul className="space-y-2 text-sm text-gray-700">
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>3 semi-private sessies</span>
+                              <span>{t('programs.small.tier3.item1')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Persoonlijk trainingsplan</span>
+                              <span>{t('programs.small.tier3.item2')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Vaste plek</span>
+                              <span>{t('programs.small.tier3.item3')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Inclusief alles uit Base</span>
+                              <span>{t('programs.small.tier3.item4')}</span>
                             </li>
                           </ul>
                         </div>
 
                         <div className="bg-gray-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
-                            <h4 className="text-lg font-bold text-gray-900">2x per week</h4>
+                            <h4 className="text-lg font-bold text-gray-900">{t('programs.small.tier2.title')}</h4>
                             <div className="text-right">
-                              <p className="text-2xl font-bold text-[#E25C2A]">€400</p>
-                              <p className="text-sm text-gray-600">per maand</p>
+                              <p className="text-2xl font-bold text-[#E25C2A]">{t('programs.small.tier2.price')}</p>
+                              <p className="text-sm text-gray-600">{t('programs.small.tier2.period')}</p>
                             </div>
                           </div>
                           <ul className="space-y-2 text-sm text-gray-700">
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>2 semi-private sessies</span>
+                              <span>{t('programs.small.tier2.item1')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Persoonlijk plan</span>
+                              <span>{t('programs.small.tier2.item2')}</span>
                             </li>
                             <li className="flex items-start gap-2">
                               <span className="text-[#E25C2A] mt-1">✓</span>
-                              <span>Inclusief 2 groepslessen per week</span>
+                              <span>{t('programs.small.tier2.item3')}</span>
                             </li>
                           </ul>
                         </div>
                       </div>
 
                       <p className="text-center text-gray-600 italic">
-                        Onze meest resultaatgerichte vorm van coaching.
+                        {t('programs.small.note')}
                       </p>
                     </div>
                   </div>
@@ -391,8 +393,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🔓</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Unlock Motion</h3>
-                      <p className="text-sm text-gray-600">Small Group / Semi-Private (UnlockMotion)</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.unlock.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.unlock.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -409,12 +411,12 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-4">
                       <div className="text-center">
-                        <p className="text-3xl font-bold text-[#E25C2A]">€1575</p>
-                        <p className="text-sm text-gray-600">12 weken</p>
+                        <p className="text-3xl font-bold text-[#E25C2A]">{t('programs.unlock.price')}</p>
+                        <p className="text-sm text-gray-600">{t('programs.unlock.period')}</p>
                       </div>
 
                       <p className="text-gray-700">
-                        Voor mensen met terugkerende pijn of fysieke beperkingen. Je traint 12 weken in een kleine groep aan mobiliteit, kracht en bewegingskwaliteit, met een plan dat helemaal op jouw lichaam is afgestemd.
+                        {t('programs.unlock.description')}
                       </p>
                     </div>
                   </div>
@@ -432,8 +434,8 @@ export default function Tarieven() {
                       <span className="text-2xl">📋</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Body APK</h3>
-                      <p className="text-sm text-gray-600">intake voor UnlockMotion — inbegrepen bij UnlockMotion</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.bodyApk.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.bodyApk.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -450,11 +452,11 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-4">
                       <div className="text-center">
-                        <p className="text-3xl font-bold text-[#E25C2A]">€220</p>
+                        <p className="text-3xl font-bold text-[#E25C2A]">{t('programs.bodyApk.price')}</p>
                       </div>
 
                       <p className="text-gray-700">
-                        Een volledige check van je houding, mobiliteit en bewegingen. Je ontdekt waarom je klachten hebt (of krijgt) en krijgt een duidelijk actieplan.
+                        {t('programs.bodyApk.description')}
                       </p>
                     </div>
                   </div>
@@ -472,8 +474,8 @@ export default function Tarieven() {
                       <span className="text-2xl">💪</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Personal Training</h3>
-                      <p className="text-sm text-gray-600">Punchcards • 1-op-1 coaching</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.pt.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.pt.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -490,34 +492,34 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-6">
                       <p className="text-gray-700">
-                        Voor wie 1-op-1 wil werken aan techniek, blessureherstel of specifieke doelen. Helemaal afgestemd op jou, flexibel in te plannen en ideaal voor snelle progressie.
+                        {t('programs.pt.description')}
                       </p>
 
                       <div className="grid md:grid-cols-2 gap-4">
                         <div className="bg-gray-50 rounded-lg p-5">
-                          <h4 className="text-lg font-bold text-gray-900 mb-4">60 minuten PT</h4>
+                          <h4 className="text-lg font-bold text-gray-900 mb-4">{t('programs.pt.pt60.title')}</h4>
                           <div className="space-y-3">
                             <div className="flex justify-between items-center">
-                              <span className="text-gray-700">5 sessies</span>
-                              <span className="text-xl font-bold text-[#E25C2A]">€450</span>
+                              <span className="text-gray-700">{t('programs.pt.pt60.tier1')}</span>
+                              <span className="text-xl font-bold text-[#E25C2A]">{t('programs.pt.pt60.price1')}</span>
                             </div>
                             <div className="flex justify-between items-center">
-                              <span className="text-gray-700">10 sessies</span>
-                              <span className="text-xl font-bold text-[#E25C2A]">€800</span>
+                              <span className="text-gray-700">{t('programs.pt.pt60.tier2')}</span>
+                              <span className="text-xl font-bold text-[#E25C2A]">{t('programs.pt.pt60.price2')}</span>
                             </div>
                           </div>
                         </div>
 
                         <div className="bg-gray-50 rounded-lg p-5">
-                          <h4 className="text-lg font-bold text-gray-900 mb-4">30 minuten PT</h4>
+                          <h4 className="text-lg font-bold text-gray-900 mb-4">{t('programs.pt.pt30.title')}</h4>
                           <div className="space-y-3">
                             <div className="flex justify-between items-center">
-                              <span className="text-gray-700">5 sessies</span>
-                              <span className="text-xl font-bold text-[#E25C2A]">€225</span>
+                              <span className="text-gray-700">{t('programs.pt.pt30.tier1')}</span>
+                              <span className="text-xl font-bold text-[#E25C2A]">{t('programs.pt.pt30.price1')}</span>
                             </div>
                             <div className="flex justify-between items-center">
-                              <span className="text-gray-700">10 sessies</span>
-                              <span className="text-xl font-bold text-[#E25C2A]">€400</span>
+                              <span className="text-gray-700">{t('programs.pt.pt30.tier2')}</span>
+                              <span className="text-xl font-bold text-[#E25C2A]">{t('programs.pt.pt30.price2')}</span>
                             </div>
                           </div>
                         </div>
@@ -538,8 +540,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🎯</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Monthly Private Coaching</h3>
-                      <p className="text-sm text-gray-600">Skill development • maandelijks</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.skill.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.skill.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -556,21 +558,21 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-6">
                       <p className="text-gray-700">
-                        Elke maand een privé coachmoment waarin je werkt aan techniek, kracht, mobiliteit of herstel. Simpel, duidelijk en super effectief om gericht stappen te zetten.
+                        {t('programs.skill.description')}
                       </p>
 
                       <div className="space-y-3">
                         <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
-                          <span className="font-semibold text-gray-900">Skill 1</span>
-                          <span className="text-xl font-bold text-[#E25C2A]">€90 p/m</span>
+                          <span className="font-semibold text-gray-900">{t('programs.skill.skill1')}</span>
+                          <span className="text-xl font-bold text-[#E25C2A]">{t('programs.skill.price1')}</span>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
-                          <span className="font-semibold text-gray-900">Skill 2</span>
-                          <span className="text-xl font-bold text-[#E25C2A]">€175 p/m</span>
+                          <span className="font-semibold text-gray-900">{t('programs.skill.skill2')}</span>
+                          <span className="text-xl font-bold text-[#E25C2A]">{t('programs.skill.price2')}</span>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
-                          <span className="font-semibold text-gray-900">Skill 4</span>
-                          <span className="text-xl font-bold text-[#E25C2A]">€370 p/m</span>
+                          <span className="font-semibold text-gray-900">{t('programs.skill.skill4')}</span>
+                          <span className="text-xl font-bold text-[#E25C2A]">{t('programs.skill.price4')}</span>
                         </div>
                       </div>
                     </div>
@@ -589,8 +591,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🍎</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Nutrition Kickstart</h3>
-                      <p className="text-sm text-gray-600">4 weken programma</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.nutritionKickstart.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.nutritionKickstart.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -607,32 +609,32 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-6">
                       <div className="text-center mb-4">
-                        <p className="text-3xl font-bold text-[#E25C2A]">€200</p>
-                        <p className="text-sm text-gray-600">4 weken</p>
+                        <p className="text-3xl font-bold text-[#E25C2A]">{t('programs.nutritionKickstart.price')}</p>
+                        <p className="text-sm text-gray-600">{t('programs.nutritionKickstart.period')}</p>
                       </div>
 
                       <p className="text-gray-700">
-                        Samen met je coach werk je vier weken aan simpele, haalbare voedingsgewoontes. Geen ingewikkelde regels, maar duidelijke begeleiding en dagelijks contact.
+                        {t('programs.nutritionKickstart.description')}
                       </p>
 
                       <div className="bg-gray-50 rounded-lg p-5">
-                        <h4 className="font-bold text-gray-900 mb-3">Inclusief:</h4>
+                        <h4 className="font-bold text-gray-900 mb-3">{t('programs.nutritionKickstart.included')}</h4>
                         <ul className="space-y-2 text-sm text-gray-700">
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>Persoonlijke targets</span>
+                            <span>{t('programs.nutritionKickstart.item1')}</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>Dagelijkse accountability</span>
+                            <span>{t('programs.nutritionKickstart.item2')}</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>InBody scan</span>
+                            <span>{t('programs.nutritionKickstart.item3')}</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-[#E25C2A] mt-1">✓</span>
-                            <span>Groepssupport</span>
+                            <span>{t('programs.nutritionKickstart.item4')}</span>
                           </li>
                         </ul>
                       </div>
@@ -652,8 +654,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🥗</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Nutrition Membership</h3>
-                      <p className="text-sm text-gray-600">Langdurige begeleiding</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.nutrition.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.nutrition.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -670,12 +672,12 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-4">
                       <div className="text-center">
-                        <p className="text-3xl font-bold text-[#E25C2A]">€350</p>
-                        <p className="text-sm text-gray-600">per maand</p>
+                        <p className="text-3xl font-bold text-[#E25C2A]">{t('programs.nutrition.price')}</p>
+                        <p className="text-sm text-gray-600">{t('programs.nutrition.period')}</p>
                       </div>
 
                       <p className="text-gray-700 text-center">
-                        Voor wie langdurig structuur wil op voeding en leefstijl.
+                        {t('programs.nutrition.description')}
                       </p>
                     </div>
                   </div>
@@ -693,8 +695,8 @@ export default function Tarieven() {
                       <span className="text-2xl">🧑</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Teens Membership</h3>
-                      <p className="text-sm text-gray-600">Voor tieners</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.teens.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.teens.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -711,17 +713,17 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-6">
                       <p className="text-gray-700">
-                        Veilige en leuke trainingen die tieners sterker, fitter en zelfverzekerder laten worden.
+                        {t('programs.teens.description')}
                       </p>
 
                       <div className="space-y-3">
                         <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
-                          <span className="font-semibold text-gray-900">1x per week</span>
-                          <span className="text-xl font-bold text-[#E25C2A]">€42,50 p/m</span>
+                          <span className="font-semibold text-gray-900">{t('programs.teens.tier1')}</span>
+                          <span className="text-xl font-bold text-[#E25C2A]">{t('programs.teens.price1')}</span>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
-                          <span className="font-semibold text-gray-900">2x per week</span>
-                          <span className="text-xl font-bold text-[#E25C2A]">€80 p/m</span>
+                          <span className="font-semibold text-gray-900">{t('programs.teens.tier2')}</span>
+                          <span className="text-xl font-bold text-[#E25C2A]">{t('programs.teens.price2')}</span>
                         </div>
                       </div>
                     </div>
@@ -740,8 +742,8 @@ export default function Tarieven() {
                       <span className="text-2xl">📚</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Base Weekend</h3>
-                      <p className="text-sm text-gray-600">2-daags trainingsweekend</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.baseWeekend.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.baseWeekend.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -758,11 +760,11 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-4">
                       <div className="text-center">
-                        <p className="text-3xl font-bold text-[#E25C2A]">€599</p>
+                        <p className="text-3xl font-bold text-[#E25C2A]">{t('programs.baseWeekend.price')}</p>
                       </div>
 
                       <p className="text-gray-700">
-                        Een 2-daags trainingsweekend waarin je leert bewegen zoals onze coaches trainen. Praktisch, leerzaam en perfect voor sportliefhebbers die dieper willen begrijpen hoe het lichaam werkt.
+                        {t('programs.baseWeekend.description')}
                       </p>
                     </div>
                   </div>
@@ -780,8 +782,8 @@ export default function Tarieven() {
                       <span className="text-2xl">👫</span>
                     </div>
                     <div className="text-left">
-                      <h3 className="text-xl font-bold text-gray-900">Flex Friday</h3>
-                      <p className="text-sm text-gray-600">Vriend meenemen</p>
+                      <h3 className="text-xl font-bold text-gray-900">{t('programs.flex.title')}</h3>
+                      <p className="text-sm text-gray-600">{t('programs.flex.subtitle')}</p>
                     </div>
                   </div>
                   <svg
@@ -798,12 +800,12 @@ export default function Tarieven() {
                   <div className="px-6 pb-6 border-t">
                     <div className="pt-6 space-y-4">
                       <div className="text-center">
-                        <p className="text-xl font-bold text-gray-900">Elke vrijdag</p>
-                        <p className="text-sm text-gray-600">12:00 en 20:00</p>
+                        <p className="text-xl font-bold text-gray-900">{t('programs.flex.time')}</p>
+                        <p className="text-sm text-gray-600">{t('programs.flex.schedule')}</p>
                       </div>
 
                       <p className="text-gray-700">
-                        Leden mogen tijdens deze les een vriend meenemen. Ontspannen, sociaal en de perfecte manier om iemand kennis te laten maken met CFL.
+                        {t('programs.flex.description')}
                       </p>
                     </div>
                   </div>
@@ -817,7 +819,7 @@ export default function Tarieven() {
       {/* Google Review Widget */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Wat zeggen onze leden?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">{t('reviews.title')}</h2>
 
           {/* Google Review Widget */}
           <div className="max-w-6xl mx-auto">
@@ -845,54 +847,54 @@ export default function Tarieven() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">{t('faq.title')}</h2>
 
             <div className="space-y-4">
               <details className="bg-white rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
-                  <span>Moet ik fit zijn om te starten?</span>
+                  <span>{t('faq.q1')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Nee, je begint op jouw niveau. Wij begeleiden je stap voor stap.
+                  {t('faq.a1')}
                 </p>
               </details>
 
               <details className="bg-white rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
-                  <span>Kan ik pauzeren bij vakantie of drukte?</span>
+                  <span>{t('faq.q2')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Ja, gewoon even laten weten en we regelen het.
+                  {t('faq.a2')}
                 </p>
               </details>
 
               <details className="bg-white rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
-                  <span>Hoe werkt betalen?</span>
+                  <span>{t('faq.q3')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Automatische incasso. Geen inschrijfkosten. Geen kleine lettertjes.
+                  {t('faq.a3')}
                 </p>
               </details>
 
               <details className="bg-white rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
-                  <span>Wat maakt CrossFit Leiden anders dan een normale sportschool?</span>
+                  <span>{t('faq.q4')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Kleine groepen, persoonlijke coaching, warme community. Bij ons hoef je het niet alleen te doen.
+                  {t('faq.a4')}
                 </p>
               </details>
             </div>
@@ -902,9 +904,9 @@ export default function Tarieven() {
 
       {/* CTA */}
       <IntroCtaSection
-        title="Klaar om in jezelf te investeren?"
-        subtitle="Plan je gratis intro en kom kennismaken. Geen verplichtingen, gewoon ontdekken of CrossFit Leiden bij jou past."
-        buttonLabel="Plan Gratis Intro"
+        title={t('cta.title')}
+        subtitle={t('cta.subtitle')}
+        buttonLabel={t('cta.button')}
       />
     </>
   );
