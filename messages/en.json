@@ -254,5 +254,106 @@
       "subtitle": "Schedule a free intro and meet our team, see the box, and experience the atmosphere. No workout, just getting to know each other over coffee. We look forward to meeting you!",
       "button": "Schedule a Free Intro"
     }
+  },
+  "programs": {
+    "hero": {
+      "title": "Our Programs",
+      "subtitle": "From regular group classes to special programs – we have something for everyone. Every program is fully adaptable to your level, experience, and goals."
+    },
+    "intro": {
+      "title": "Where do you want to start?",
+      "subtitle": "New to training? No problem – our <strong>group classes</strong> are perfect to start. Already experienced or looking for something specific? Then our special programs might be for you!"
+    },
+    "kickstart": {
+      "badge": "START HERE",
+      "title": "Kickstart Program",
+      "description": "Perfect for beginners! 4-week intensive onboarding where you learn everything about CrossFit in small groups. After completion, you're ready for group classes.",
+      "feature1": "4 weeks of intensive coaching",
+      "feature2": "Max 5 people per group",
+      "feature3": "Includes nutrition advice",
+      "feature4": "No experience needed",
+      "link": "More about Kickstart"
+    },
+    "groupClasses": {
+      "badge": "MOST POPULAR",
+      "title": "CrossFit Group Classes",
+      "description": "The foundation and favorite of 90% of our members. Train together in a group where everyone encourages each other. Perfect for beginners and advanced!",
+      "feature1": "60 minutes per class, everything included",
+      "feature2": "Max 12 people - personal attention",
+      "feature3": "Fully adapted to your level",
+      "feature4": "Multiple times available every day",
+      "link": "More about Group Classes",
+      "ctaLink": "Or schedule a free intro right away →"
+    },
+    "personal": {
+      "title": "Personal Training",
+      "description": "1-on-1 guidance for specific goals, injuries, or if you want extra attention. Your coach, your training, your pace.",
+      "feature1": "Custom personal training plan",
+      "feature2": "Focus on your specific goals",
+      "feature3": "Perfect technique refinement",
+      "feature4": "Flexible scheduling",
+      "link": "More about Personal Training"
+    },
+    "special": {
+      "title": "Special Programs",
+      "subtitle": "Looking for something specific? These programs combine group classes with extra focus on specific goals.",
+      "smallGroup": {
+        "title": "Small Group Training",
+        "description": "Train with max 5 people and get a customized program. Includes GetShredded and Unlock Motion."
+      },
+      "hyrox": {
+        "title": "HYROX Training",
+        "description": "Preparation for Hyrox races. Combined conditioning and strength training for this popular event."
+      },
+      "fysiofabriek": {
+        "title": "Fysiofabriek",
+        "description": "Professional physiotherapy and rehabilitation. Specialized guidance for injuries and pain."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "description": "80% of results come from nutrition. Learn to eat healthy without strict diets. For busy people!"
+      }
+    },
+    "youth": {
+      "title": "For Young Athletes",
+      "subtitle": "Because fit kids become fit adults. Our youth programs are specially designed for different age groups.",
+      "preTeens": {
+        "title": "Pre-teens (8-12 years)",
+        "description": "Learning to move in a fun, playful way. Basic techniques and group dynamics."
+      },
+      "teens": {
+        "title": "Teens (13-17 years)",
+        "description": "Building strength and conditioning in a safe environment. Focus on technique and healthy habits."
+      },
+      "sportPerformance": {
+        "title": "Sport & Performance",
+        "description": "For young athletes who want to improve in their sport. Functional conditioning."
+      }
+    },
+    "schedule": {
+      "title": "Flexible Schedule",
+      "subtitle": "We offer multiple class times daily, from early morning to late evening. There's always a time that fits you!",
+      "morning": "Morning",
+      "morningTime": "06:00 - 09:00",
+      "afternoon": "Afternoon",
+      "afternoonTime": "12:00 - 13:00",
+      "evening": "Evening",
+      "eveningTime": "17:00 - 21:00",
+      "link": "View Full Schedule"
+    },
+    "whyUs": {
+      "title": "Why CrossFit Leiden?",
+      "subtitle": "What makes our training different from a regular gym?",
+      "feature1": "<strong>Small groups (max 12 people)</strong> – No massive gyms where you're on your own. Here you get personal attention.",
+      "feature2": "<strong>Professional coaching</strong> – Every class is led by certified coaches who improve your technique and motivate you.",
+      "feature3": "<strong>Functional movements</strong> – We train movements that also help you in daily life (lifting, bending, carrying, running).",
+      "feature4": "<strong>Variety</strong> – Every day is different. You never get bored and your body stays challenged.",
+      "feature5": "<strong>Community</strong> – You don't train alone, but with a group that supports and motivates each other. That makes the difference!"
+    },
+    "cta": {
+      "title": "Still hesitating?",
+      "subtitle": "Schedule a free intro and experience yourself why so many people train here. No obligations, just getting to know each other and seeing if it's a fit!",
+      "button": "Schedule My Free Intro"
+    }
   }
 }

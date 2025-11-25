@@ -1,16 +1,18 @@
 import Link from "next/link";
+import { getTranslations } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function Aanbod() {
+export default async function Aanbod() {
+  const t = await getTranslations('programs');
+
   return (
     <>
       {/* Hero - Result-focused */}
       <section className="bg-gradient-to-r from-verdigris to-verdigris/80 text-white section-padding">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Ons Aanbod</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('hero.title')}</h1>
           <p className="text-xl max-w-2xl">
-            Van gewone groepslessen tot speciale programma's – we hebben voor iedereen iets.
-            Elk programma is volledig aanpasbaar aan jouw niveau, ervaring en doelen.
+            {t('hero.subtitle')}
           </p>
         </div>
       </section>
@@ -19,11 +21,8 @@ export default function Aanbod() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6">Waar wil je mee beginnen?</h2>
-            <p className="text-lg text-gray-700">
-              Nieuw met sporten? Geen probleem – onze <strong>groepslessen</strong> zijn perfect om te starten.
-              Al ervaren of op zoek naar iets specifieks? Dan zijn onze speciale programma's misschien wat voor jou!
-            </p>
+            <h2 className="text-3xl font-bold mb-6">{t('intro.title')}</h2>
+            <p className="text-lg text-gray-700" dangerouslySetInnerHTML={{ __html: t('intro.subtitle') }} />
           </div>
 
           {/* Main Programs Grid */}
@@ -31,125 +30,123 @@ export default function Aanbod() {
             {/* Kickstart */}
             <div className="bg-gradient-to-br from-verdigris/10 to-verdigris/5 rounded-2xl p-8 border-2 border-verdigris relative">
               <div className="absolute top-4 right-4 bg-verdigris text-white text-xs font-bold px-3 py-1 rounded-full">
-                START HIER
+                {t('kickstart.badge')}
               </div>
               <div className="text-6xl mb-4">🚀</div>
-              <h3 className="text-2xl font-bold mb-3">Kickstart Programma</h3>
+              <h3 className="text-2xl font-bold mb-3">{t('kickstart.title')}</h3>
               <p className="text-gray-700 mb-6">
-                Perfect voor beginners! 4 weken intensive onboarding waar je alles leert over CrossFit in kleine groepjes. Na afloop ben je klaar voor de groepslessen.
+                {t('kickstart.description')}
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">4 weken intensive begeleiding</span>
+                  <span className="text-gray-700">{t('kickstart.feature1')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Max 5 personen per groep</span>
+                  <span className="text-gray-700">{t('kickstart.feature2')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Inclusief voedingsadvies</span>
+                  <span className="text-gray-700">{t('kickstart.feature3')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Geen ervaring nodig</span>
+                  <span className="text-gray-700">{t('kickstart.feature4')}</span>
                 </li>
               </ul>
               <Link href="/kickstart" className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
-                Meer over Kickstart
+                {t('kickstart.link')}
               </Link>
             </div>
 
             {/* Groepslessen - PRIMAIR */}
             <div className="bg-gradient-to-br from-cinnabar/10 to-cinnabar/5 rounded-2xl p-8 border-2 border-cinnabar relative">
               <div className="absolute top-4 right-4 bg-cinnabar text-white text-xs font-bold px-3 py-1 rounded-full">
-                MEEST GEKOZEN
+                {t('groupClasses.badge')}
               </div>
               <div className="text-6xl mb-4">🏋️</div>
-              <h3 className="text-2xl font-bold mb-3">CrossFit Groepslessen</h3>
+              <h3 className="text-2xl font-bold mb-3">{t('groupClasses.title')}</h3>
               <p className="text-gray-700 mb-6">
-                De basis en favoriet van 90% van onze leden. Train samen in een groep waar iedereen elkaar aanmoedigt.
-                Perfect voor beginners én gevorderden!
+                {t('groupClasses.description')}
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-cinnabar mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">60 minuten per les, alles inbegrepen</span>
+                  <span className="text-gray-700">{t('groupClasses.feature1')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-cinnabar mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Max 12 personen - persoonlijke aandacht</span>
+                  <span className="text-gray-700">{t('groupClasses.feature2')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-cinnabar mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Volledig aangepast op jouw niveau</span>
+                  <span className="text-gray-700">{t('groupClasses.feature3')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-cinnabar mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Elke dag meerdere tijden beschikbaar</span>
+                  <span className="text-gray-700">{t('groupClasses.feature4')}</span>
                 </li>
               </ul>
               <Link href="/aanbod/groepslessen" className="block text-center bg-cinnabar text-white py-3 px-6 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all mb-3">
-                Meer over Groepslessen
+                {t('groupClasses.link')}
               </Link>
               <Link href="/starten" className="block text-center text-cinnabar font-semibold hover:underline">
-                Of plan meteen een gratis intro →
+                {t('groupClasses.ctaLink')}
               </Link>
             </div>
 
             {/* Private Coaching */}
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="text-6xl mb-4">👤</div>
-              <h3 className="text-2xl font-bold mb-3">Personal Training</h3>
+              <h3 className="text-2xl font-bold mb-3">{t('personal.title')}</h3>
               <p className="text-gray-700 mb-6">
-                1-op-1 begeleiding voor specifieke doelen, blessures of als je extra aandacht wilt.
-                Jouw coach, jouw training, jouw tempo.
+                {t('personal.description')}
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Persoonlijk trainingsplan op maat</span>
+                  <span className="text-gray-700">{t('personal.feature1')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Focus op jouw specifieke doelen</span>
+                  <span className="text-gray-700">{t('personal.feature2')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Perfecte techniek verfijning</span>
+                  <span className="text-gray-700">{t('personal.feature3')}</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-verdigris mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-700">Flexibel in te plannen</span>
+                  <span className="text-gray-700">{t('personal.feature4')}</span>
                 </li>
               </ul>
               <Link href="/aanbod/private-coaching" className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
-                Meer over Personal Training
+                {t('personal.link')}
               </Link>
             </div>
           </div>
@@ -159,18 +156,18 @@ export default function Aanbod() {
       {/* Special Programs */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-4 text-center">Speciale Programma's</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">{t('special.title')}</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-            Op zoek naar iets specifieks? Deze programma's combineren groepslessen met extra focus op bepaalde doelen.
+            {t('special.subtitle')}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* Small Group Training */}
             <Link href="/aanbod/small-group" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">👥</div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Small Group Training</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.smallGroup.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
-                Train met max 5 personen en krijg een programma op maat. Inclusief GetShredded en Unlock Motion.
+                {t('special.smallGroup.description')}
               </p>
               <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
             </Link>
@@ -178,9 +175,9 @@ export default function Aanbod() {
             {/* Hyrox */}
             <Link href="/aanbod/hyrox" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🏃</div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">HYROX Training</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.hyrox.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
-                Voorbereiding op Hyrox races. Gecombineerde conditie en kracht training voor dit populaire evenement.
+                {t('special.hyrox.description')}
               </p>
               <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
             </Link>
@@ -188,9 +185,9 @@ export default function Aanbod() {
             {/* Fysiofabriek */}
             <Link href="/aanbod/fysiofabriek" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🩺</div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Fysiofabriek</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.fysiofabriek.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
-                Professionele fysiotherapie en revalidatie. Specialistische begeleiding bij blessures en pijn.
+                {t('special.fysiofabriek.description')}
               </p>
               <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
             </Link>
@@ -198,9 +195,9 @@ export default function Aanbod() {
             {/* Nutrition */}
             <Link href="/nutrition" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🍎</div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Voeding</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.nutrition.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
-                80% van resultaat komt van voeding. Leer gezond eten zonder strenge diëten. Voor drukke mensen!
+                {t('special.nutrition.description')}
               </p>
               <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
             </Link>
@@ -211,33 +208,33 @@ export default function Aanbod() {
       {/* Youth Programs */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-4 text-center">Voor de Jongeren</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">{t('youth.title')}</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-            Omdat fitte kinderen fitte volwassenen worden. Onze jeugdprogramma's zijn speciaal ontworpen voor verschillende leeftijden.
+            {t('youth.subtitle')}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <Link href="/aanbod/pre-teens" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">👧👦</div>
-              <h3 className="text-xl font-bold mb-2 text-center">Pre-teens (8-12 jaar)</h3>
+              <h3 className="text-xl font-bold mb-2 text-center">{t('youth.preTeens.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
-                Leren bewegen op een leuke, speelse manier. Basis technieken en groepsdynamiek.
+                {t('youth.preTeens.description')}
               </p>
             </Link>
 
             <Link href="/aanbod/teens" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">🧑‍🎓</div>
-              <h3 className="text-xl font-bold mb-2 text-center">Teens (13-17 jaar)</h3>
+              <h3 className="text-xl font-bold mb-2 text-center">{t('youth.teens.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
-                Kracht en conditie opbouwen in een veilige omgeving. Focus op techniek en gezonde gewoontes.
+                {t('youth.teens.description')}
               </p>
             </Link>
 
             <Link href="/aanbod/sport-performance" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">⚽</div>
-              <h3 className="text-xl font-bold mb-2 text-center">Sport & Performance</h3>
+              <h3 className="text-xl font-bold mb-2 text-center">{t('youth.sportPerformance.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
-                Voor jonge atleten die beter willen worden in hun sport. Functionele conditioning.
+                {t('youth.sportPerformance.description')}
               </p>
             </Link>
           </div>
@@ -248,30 +245,29 @@ export default function Aanbod() {
       <section className="section-padding bg-verdigris/10">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Flexibel Rooster</h2>
+            <h2 className="text-3xl font-bold mb-6">{t('schedule.title')}</h2>
             <p className="text-lg text-gray-700 mb-8">
-              We bieden dagelijks meerdere lestijden, van vroege ochtend tot late avond.
-              Er is altijd wel een moment dat bij jou past!
+              {t('schedule.subtitle')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-white rounded-lg p-6">
                 <div className="text-3xl mb-2">🌅</div>
-                <h4 className="font-semibold mb-1">Ochtend</h4>
-                <p className="text-gray-600">06:00 - 09:00</p>
+                <h4 className="font-semibold mb-1">{t('schedule.morning')}</h4>
+                <p className="text-gray-600">{t('schedule.morningTime')}</p>
               </div>
               <div className="bg-white rounded-lg p-6">
                 <div className="text-3xl mb-2">☀️</div>
-                <h4 className="font-semibold mb-1">Middag</h4>
-                <p className="text-gray-600">12:00 - 13:00</p>
+                <h4 className="font-semibold mb-1">{t('schedule.afternoon')}</h4>
+                <p className="text-gray-600">{t('schedule.afternoonTime')}</p>
               </div>
               <div className="bg-white rounded-lg p-6">
                 <div className="text-3xl mb-2">🌙</div>
-                <h4 className="font-semibold mb-1">Avond</h4>
-                <p className="text-gray-600">17:00 - 21:00</p>
+                <h4 className="font-semibold mb-1">{t('schedule.evening')}</h4>
+                <p className="text-gray-600">{t('schedule.eveningTime')}</p>
               </div>
             </div>
             <Link href="/rooster" className="inline-block bg-verdigris text-white px-8 py-4 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
-              Bekijk het Volledige Rooster
+              {t('schedule.link')}
             </Link>
           </div>
         </div>
@@ -281,41 +277,31 @@ export default function Aanbod() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">Waarom CrossFit Leiden?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">{t('whyUs.title')}</h2>
             <p className="text-lg text-gray-700 text-center mb-8">
-              Wat maakt onze trainingen anders dan een reguliere sportschool?
+              {t('whyUs.subtitle')}
             </p>
             <div className="bg-gray-50 rounded-xl p-8">
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-cinnabar mr-3 text-2xl flex-shrink-0">✓</span>
-                  <div>
-                    <strong>Kleine groepen (max 12 personen)</strong> – Geen massale gyms waar je op jezelf bent. Hier krijg je persoonlijke aandacht.
-                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: t('whyUs.feature1') }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-cinnabar mr-3 text-2xl flex-shrink-0">✓</span>
-                  <div>
-                    <strong>Professionele coaching</strong> – Elke les wordt begeleid door gecertificeerde coaches die je techniek verbeteren en motiveren.
-                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: t('whyUs.feature2') }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-cinnabar mr-3 text-2xl flex-shrink-0">✓</span>
-                  <div>
-                    <strong>Functionele bewegingen</strong> – We trainen bewegingen die je ook in het dagelijks leven helpen (tillen, bukken, dragen, rennen).
-                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: t('whyUs.feature3') }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-cinnabar mr-3 text-2xl flex-shrink-0">✓</span>
-                  <div>
-                    <strong>Variatie</strong> – Elke dag is anders. Je verveelt je nooit en je lichaam blijft verrast.
-                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: t('whyUs.feature4') }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-cinnabar mr-3 text-2xl flex-shrink-0">✓</span>
-                  <div>
-                    <strong>Community</strong> – Je traint niet alleen, maar met een groep die elkaar steunt en motiveert. Dat maakt het verschil!
-                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: t('whyUs.feature5') }} />
                 </li>
               </ul>
             </div>
@@ -325,9 +311,9 @@ export default function Aanbod() {
 
       {/* CTA */}
       <IntroCtaSection
-        title="Nog twijfelen?"
-        subtitle="Plan een gratis intro en ervaar zelf waarom zoveel mensen hier trainen. Geen verplichtingen, gewoon kennismaken en kijken of het bij je past!"
-        buttonLabel="Plan Mijn Gratis Intro"
+        title={t('cta.title')}
+        subtitle={t('cta.subtitle')}
+        buttonLabel={t('cta.button')}
       />
     </>
   );

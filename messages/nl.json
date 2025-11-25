@@ -254,5 +254,106 @@
       "subtitle": "Plan een gratis intro en ontmoet ons team, zie de box en ervaar de sfeer. Geen sporten, gewoon kennismaken over een kop koffie. We kijken ernaar uit!",
       "button": "Plan een Gratis Intro"
     }
+  },
+  "programs": {
+    "hero": {
+      "title": "Ons Aanbod",
+      "subtitle": "Van gewone groepslessen tot speciale programma's – we hebben voor iedereen iets. Elk programma is volledig aanpasbaar aan jouw niveau, ervaring en doelen."
+    },
+    "intro": {
+      "title": "Waar wil je mee beginnen?",
+      "subtitle": "Nieuw met sporten? Geen probleem – onze <strong>groepslessen</strong> zijn perfect om te starten. Al ervaren of op zoek naar iets specifieks? Dan zijn onze speciale programma's misschien wat voor jou!"
+    },
+    "kickstart": {
+      "badge": "START HIER",
+      "title": "Kickstart Programma",
+      "description": "Perfect voor beginners! 4 weken intensive onboarding waar je alles leert over CrossFit in kleine groepjes. Na afloop ben je klaar voor de groepslessen.",
+      "feature1": "4 weken intensive begeleiding",
+      "feature2": "Max 5 personen per groep",
+      "feature3": "Inclusief voedingsadvies",
+      "feature4": "Geen ervaring nodig",
+      "link": "Meer over Kickstart"
+    },
+    "groupClasses": {
+      "badge": "MEEST GEKOZEN",
+      "title": "CrossFit Groepslessen",
+      "description": "De basis en favoriet van 90% van onze leden. Train samen in een groep waar iedereen elkaar aanmoedigt. Perfect voor beginners én gevorderden!",
+      "feature1": "60 minuten per les, alles inbegrepen",
+      "feature2": "Max 12 personen - persoonlijke aandacht",
+      "feature3": "Volledig aangepast op jouw niveau",
+      "feature4": "Elke dag meerdere tijden beschikbaar",
+      "link": "Meer over Groepslessen",
+      "ctaLink": "Of plan meteen een gratis intro →"
+    },
+    "personal": {
+      "title": "Personal Training",
+      "description": "1-op-1 begeleiding voor specifieke doelen, blessures of als je extra aandacht wilt. Jouw coach, jouw training, jouw tempo.",
+      "feature1": "Persoonlijk trainingsplan op maat",
+      "feature2": "Focus op jouw specifieke doelen",
+      "feature3": "Perfecte techniek verfijning",
+      "feature4": "Flexibel in te plannen",
+      "link": "Meer over Personal Training"
+    },
+    "special": {
+      "title": "Speciale Programma's",
+      "subtitle": "Op zoek naar iets specifieks? Deze programma's combineren groepslessen met extra focus op bepaalde doelen.",
+      "smallGroup": {
+        "title": "Small Group Training",
+        "description": "Train met max 5 personen en krijg een programma op maat. Inclusief GetShredded en Unlock Motion."
+      },
+      "hyrox": {
+        "title": "HYROX Training",
+        "description": "Voorbereiding op Hyrox races. Gecombineerde conditie en kracht training voor dit populaire evenement."
+      },
+      "fysiofabriek": {
+        "title": "Fysiofabriek",
+        "description": "Professionele fysiotherapie en revalidatie. Specialistische begeleiding bij blessures en pijn."
+      },
+      "nutrition": {
+        "title": "Voeding",
+        "description": "80% van resultaat komt van voeding. Leer gezond eten zonder strenge diëten. Voor drukke mensen!"
+      }
+    },
+    "youth": {
+      "title": "Voor de Jongeren",
+      "subtitle": "Omdat fitte kinderen fitte volwassenen worden. Onze jeugdprogramma's zijn speciaal ontworpen voor verschillende leeftijden.",
+      "preTeens": {
+        "title": "Pre-teens (8-12 jaar)",
+        "description": "Leren bewegen op een leuke, speelse manier. Basis technieken en groepsdynamiek."
+      },
+      "teens": {
+        "title": "Teens (13-17 jaar)",
+        "description": "Kracht en conditie opbouwen in een veilige omgeving. Focus op techniek en gezonde gewoontes."
+      },
+      "sportPerformance": {
+        "title": "Sport & Performance",
+        "description": "Voor jonge atleten die beter willen worden in hun sport. Functionele conditioning."
+      }
+    },
+    "schedule": {
+      "title": "Flexibel Rooster",
+      "subtitle": "We bieden dagelijks meerdere lestijden, van vroege ochtend tot late avond. Er is altijd wel een moment dat bij jou past!",
+      "morning": "Ochtend",
+      "morningTime": "06:00 - 09:00",
+      "afternoon": "Middag",
+      "afternoonTime": "12:00 - 13:00",
+      "evening": "Avond",
+      "eveningTime": "17:00 - 21:00",
+      "link": "Bekijk het Volledige Rooster"
+    },
+    "whyUs": {
+      "title": "Waarom CrossFit Leiden?",
+      "subtitle": "Wat maakt onze trainingen anders dan een reguliere sportschool?",
+      "feature1": "<strong>Kleine groepen (max 12 personen)</strong> – Geen massale gyms waar je op jezelf bent. Hier krijg je persoonlijke aandacht.",
+      "feature2": "<strong>Professionele coaching</strong> – Elke les wordt begeleid door gecertificeerde coaches die je techniek verbeteren en motiveren.",
+      "feature3": "<strong>Functionele bewegingen</strong> – We trainen bewegingen die je ook in het dagelijks leven helpen (tillen, bukken, dragen, rennen).",
+      "feature4": "<strong>Variatie</strong> – Elke dag is anders. Je verveelt je nooit en je lichaam blijft verrast.",
+      "feature5": "<strong>Community</strong> – Je traint niet alleen, maar met een groep die elkaar steunt en motiveert. Dat maakt het verschil!"
+    },
+    "cta": {
+      "title": "Nog twijfelen?",
+      "subtitle": "Plan een gratis intro en ervaar zelf waarom zoveel mensen hier trainen. Geen verplichtingen, gewoon kennismaken en kijken of het bij je past!",
+      "button": "Plan Mijn Gratis Intro"
+    }
   }
 }
