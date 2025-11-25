@@ -156,5 +156,44 @@
       "subtitle": "Book your drop-in and experience the CrossFit Leiden atmosphere!",
       "button": "Book a Drop-in"
     }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Have questions or want to visit? We'd love to hear from you!"
+    },
+    "visitUs": {
+      "title": "Visit us",
+      "address": "Address",
+      "addressLine1": "Marie Diebenplaats 108",
+      "addressLine2": "2324 NG Leiden",
+      "addressNote": "(Easily accessible with ample parking)",
+      "email": "Email",
+      "phone": "Phone",
+      "phoneNumber": "071 - 234 0477",
+      "openingHours": "Opening Hours",
+      "monFri": "Mon - Fri: 06:00 - 22:00",
+      "sat": "Sat: 07:00 - 13:00",
+      "sun": "Sun: 08:00 - 13:00",
+      "followUs": "Follow us"
+    },
+    "route": {
+      "title": "Directions & Parking",
+      "byCar": "<strong>By car:</strong> Ample parking in front (including disabled parking spot). €0.20 per hour from 07:30 - 19:30 on Mon-Fri. Free parking the rest of the time.",
+      "byBike": "<strong>By bike:</strong> Leiden Central Station is 10 minutes cycling. Leiden Lammerschans Station is 3 minutes cycling.",
+      "byPublicTransport": "<strong>By public transport:</strong> Bus stop 800 meters away."
+    },
+    "form": {
+      "title": "Send us a message"
+    },
+    "map": {
+      "title": "Find us on the map"
+    },
+    "welcome": {
+      "title": "Feel free to drop by!",
+      "text": "Feel free to drop by to get a feel for the atmosphere. You'll find us on the south side of the sports complex with our own entrance. Coffee is ready. ☕",
+      "introQuestion": "Want to schedule a <strong>free intro</strong> right away?",
+      "introLink": "Click here →"
+    }
   }
 }

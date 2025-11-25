@@ -1,12 +1,18 @@
+"use client";
+
+import { useTranslations } from 'next-intl';
+
 export default function Contact() {
+  const t = useTranslations('contact');
+
   return (
     <>
       {/* Hero */}
       <section className="bg-gradient-to-r from-verdigris to-verdigris/80 text-white section-padding">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('hero.title')}</h1>
           <p className="text-xl max-w-2xl">
-            Heb je vragen of wil je langskomen? We horen graag van je!
+            {t('hero.subtitle')}
           </p>
         </div>
       </section>
@@ -17,7 +23,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Bezoek ons</h2>
+              <h2 className="text-3xl font-bold mb-8">{t('visitUs.title')}</h2>
 
               {/* Address */}
               <div className="mb-8">
@@ -29,11 +35,11 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Adres</h3>
-                    <p className="text-gray-700">Marie Diebenplaats 108</p>
-                    <p className="text-gray-700">2324 NG Leiden</p>
+                    <h3 className="font-semibold text-lg mb-1">{t('visitUs.address')}</h3>
+                    <p className="text-gray-700">{t('visitUs.addressLine1')}</p>
+                    <p className="text-gray-700">{t('visitUs.addressLine2')}</p>
                     <p className="text-sm text-gray-600 mt-2">
-                      (Makkelijk bereikbaar met voldoende parkeerruimte)
+                      {t('visitUs.addressNote')}
                     </p>
                   </div>
                 </div>
@@ -48,7 +54,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">E-mail</h3>
+                    <h3 className="font-semibold text-lg mb-1">{t('visitUs.email')}</h3>
                     <a href="mailto:welcome@crossfitleiden.com" className="text-cinnabar hover:underline">
                       welcome@crossfitleiden.com
                     </a>
@@ -65,9 +71,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Telefoon</h3>
+                    <h3 className="font-semibold text-lg mb-1">{t('visitUs.phone')}</h3>
                     <a href="tel:0712340477" className="text-cinnabar hover:underline">
-                      071 - 234 0477
+                      {t('visitUs.phoneNumber')}
                     </a>
                   </div>
                 </div>
@@ -82,17 +88,17 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Openingstijden</h3>
-                    <p className="text-gray-700">Ma - Vr: 06:00 - 22:00</p>
-                    <p className="text-gray-700">Za: 07:00 - 13:00</p>
-                    <p className="text-gray-700">Zo: 08:00 - 13:00</p>
+                    <h3 className="font-semibold text-lg mb-1">{t('visitUs.openingHours')}</h3>
+                    <p className="text-gray-700">{t('visitUs.monFri')}</p>
+                    <p className="text-gray-700">{t('visitUs.sat')}</p>
+                    <p className="text-gray-700">{t('visitUs.sun')}</p>
                   </div>
                 </div>
               </div>
 
               {/* Social Media */}
               <div>
-                <h3 className="font-semibold text-lg mb-4">Volg ons</h3>
+                <h3 className="font-semibold text-lg mb-4">{t('visitUs.followUs')}</h3>
                 <div className="flex space-x-4">
                   <a
                     href="https://instagram.com/crossfitleiden"
@@ -121,22 +127,16 @@ export default function Contact() {
 
               {/* Parking & Route */}
               <div className="mt-8 bg-gray-50 rounded-lg p-6">
-                <h3 className="font-semibold text-lg mb-3">Route & Parkeren</h3>
-                <p className="text-gray-700 mb-2">
-                  <strong>Met de auto:</strong> Ruime parkeergelegenheid voor de deur (inclusief invalide parkeerplek). €0,20 per uur van 07:30 - 19:30 op ma-vr. Voor de rest gratis parkeren.
-                </p>
-                <p className="text-gray-700 mb-2">
-                  <strong>Met de fiets:</strong> Station Leiden Centraal op 10 minuten fietsen. Station Leiden Lammerschans op 3 minuten fietsen.
-                </p>
-                <p className="text-gray-700">
-                  <strong>Met openbaar vervoer:</strong> Bushalte op 800 meter afstand.
-                </p>
+                <h3 className="font-semibold text-lg mb-3">{t('route.title')}</h3>
+                <p className="text-gray-700 mb-2" dangerouslySetInnerHTML={{ __html: t('route.byCar') }} />
+                <p className="text-gray-700 mb-2" dangerouslySetInnerHTML={{ __html: t('route.byBike') }} />
+                <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: t('route.byPublicTransport') }} />
               </div>
             </div>
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Stuur ons een bericht</h2>
+              <h2 className="text-3xl font-bold mb-8">{t('form.title')}</h2>
 
               <div className="w-full" style={{ minHeight: '432px' }}>
                 <iframe
@@ -166,7 +166,7 @@ export default function Contact() {
       {/* Map */}
       <section className="bg-gray-50">
         <div className="container-custom py-12">
-          <h2 className="text-3xl font-bold mb-8 text-center">Vind ons op de kaart</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">{t('map.title')}</h2>
           <div className="rounded-xl overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3201.2644277469594!2d4.477064777316185!3d52.13839647196366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c659350263d7%3A0x1da63fc16f0b0158!2sCrossFit%20Leiden!5e1!3m2!1snl!2snl!4v1764066893232!5m2!1snl!2snl"
@@ -197,19 +197,19 @@ export default function Contact() {
 
             {/* Text */}
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl font-bold mb-6">Loop gerust eens binnen!</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('welcome.title')}</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Loop gerust eens binnen om de sfeer te proeven. Je vindt ons aan de zuidkant van het sportcomplex met onze eigen ingang. De koffie staat klaar. ☕
+                {t('welcome.text')}
               </p>
               <p className="text-gray-600 mb-6">
-                Wil je direct een <strong>gratis intro</strong> plannen?{" "}
+                <span dangerouslySetInnerHTML={{ __html: t('welcome.introQuestion') }} />{" "}
                 <a
                   href="https://crossfitleiden.referralrock.com/l/1CROSSFITLEIDEN95/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cinnabar font-semibold hover:underline"
                 >
-                  Klik hier →
+                  {t('welcome.introLink')}
                 </a>
               </p>
             </div>
