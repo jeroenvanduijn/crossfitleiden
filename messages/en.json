@@ -255,6 +255,90 @@
       "button": "Schedule a Free Intro"
     }
   },
+  "team": {
+    "hero": {
+      "title": "Meet the Team",
+      "subtitle": "Get to know the coaches who guide you. Regular people with a passion for movement and community."
+    },
+    "owners": {
+      "intro": "CrossFit Leiden was founded by Kees and Jeroen, two friends who believe everyone should be welcome to exercise.",
+      "title": "The Founders",
+      "kees": {
+        "name": "Kees Houwaart",
+        "bio": "Kees grew up in a gym and discovered CrossFit in 2012. He started Gymbox Noordwijk in 2014. In 2015, he founded CrossFit Leiden together with Jeroen. Kees lives with his wife Nathalie and their two sons Neal and Jake in Katwijk aan Zee."
+      },
+      "jeroen": {
+        "name": "Jeroen van Duijn",
+        "bio": "Jeroen was always active, from soccer to surfing. In 2014, he chose the fitness world and trained people in Chile before returning to the Netherlands. Together with Kees, he built CrossFit Leiden into a place where everyone feels at home. Jeroen lives with his wife Amanda and daughter Zoe in Katwijk aan Zee."
+      },
+      "story": "In 2015, Kees and Jeroen started CrossFit Leiden with a simple idea: a place where everyone is welcome, regardless of level or experience. What started as one gym has grown into a network of fitness facilities where community comes first.",
+      "meetCta": "Want to meet Kees, Jeroen and the team? Schedule a free intro and come have a cup of coffee."
+    },
+    "coaches": {
+      "title": "Our Coaching Team",
+      "saskia": {
+        "name": "Saskia",
+        "role": "General Manager",
+        "story": "Saskia came to CrossFit Leiden a few years ago to get rid of her back pain, and it worked so well that she changed careers. She makes sure everything runs smoothly in the gym and that everyone feels welcome."
+      },
+      "rochelle": {
+        "name": "Rochelle",
+        "role": "Lead Coach",
+        "story": "Rochelle is a national-level gymnastics coach and brings that expertise to CrossFit Leiden. She's great with kids and adults alike, helping everyone learn movements safely. In addition to coaching with us, she trains her gymnastics team for world championships."
+      },
+      "jeffrey": {
+        "name": "Jeffrey Perez Stoof",
+        "role": "GetShredded Lead Coach",
+        "story": "Jeffrey was a professional soccer player before becoming a CrossFit coach. He understands what it means to perform and to feel comfortable. Jeffrey adapts his coaching to what you need, whether you're seeking challenge or prefer to build up gradually."
+      },
+      "jari": {
+        "name": "Jari Jansen",
+        "role": "Movement Specialist",
+        "story": "Jari teaches small group classes, Unlock Motion sessions, and workshops. He helps members with pain, limited mobility, or technique. If you're dealing with something, chances are Jari can help you solve it."
+      },
+      "max": {
+        "name": "Max",
+        "role": "Kickstart Lead Coach",
+        "story": "Max has years of experience as a personal trainer and CrossFit coach. He loves hiking and camping with his family. As a coach, Max creates a fun and positive atmosphere where everyone feels welcome, regardless of level."
+      },
+      "natalia": {
+        "name": "Natália",
+        "role": "Coach",
+        "story": "Natália comes from Brazil and moved to the Netherlands in 2022. With a degree in exercise science and a passion for running, she brings creativity and positivity to every class. She coaches group classes and Teens sessions with lots of energy and patience."
+      },
+      "annie": {
+        "name": "Annie",
+        "role": "Nutrition Coach",
+        "story": "Annie helps members with practical nutrition advice that fits a busy life. No extreme diets, just simple steps that work."
+      },
+      "sem": {
+        "name": "Sem Li",
+        "role": "Coach",
+        "story": "Sem is always cheerful and loves connecting with everyone in his classes. He loves Olympic weightlifting and wakes up at 5 AM every morning to train before teaching the first class. That dedication and energy are reflected in his coaching."
+      },
+      "erin": {
+        "name": "Erin",
+        "role": "Coach",
+        "story": "Erin coached at CrossFit Leiden in 2019 and is now back. During the day, she works at Defense helping soldiers stay mentally strong. In her free time, she teaches salsa lessons. That combination of rhythm, focus, and resilience is reflected in her coaching."
+      },
+      "hoite": {
+        "name": "Hoite",
+        "role": "Coach",
+        "story": "Hoite is one of our dedicated coaches who loves working with beginners. He takes the time to explain movements properly and makes sure you feel comfortable during class."
+      }
+    },
+    "whyMatters": {
+      "title": "Why our coaches make the difference",
+      "p1": "Our coaches aren't drill sergeants. They're regular people with busy lives, just like you. They understand what it feels like to doubt or be uncertain.",
+      "p2": "Personal attention comes first. We know your name, remember your goals, and adapt every workout to your level. Whether you're holding a barbell for the first time or have been training for years, you get the guidance you need.",
+      "p3": "At CrossFit Leiden, you're not a number, but a person with your own story."
+    },
+    "cta": {
+      "title": "Ready to meet us?",
+      "subtitle": "Schedule your free intro and meet the team. No commitments, just a good conversation about your goals.",
+      "button": "Schedule a Free Intro"
+    }
+  },
   "kickstartBlock": {
     "title": "Start safe and strong with our Kickstart",
     "imageAlt": "CrossFit Leiden Kickstart",

@@ -255,6 +255,90 @@
       "button": "Plan een Gratis Intro"
     }
   },
+  "team": {
+    "hero": {
+      "title": "Ontmoet het Team",
+      "subtitle": "Kennismaken met de coaches die je begeleiden. Gewoon mensen met een passie voor beweging en community."
+    },
+    "owners": {
+      "intro": "CrossFit Leiden is opgericht door Kees en Jeroen, twee vrienden die geloven dat iedereen welkom moet zijn om te sporten.",
+      "title": "De Oprichters",
+      "kees": {
+        "name": "Kees Houwaart",
+        "bio": "Kees groeide op in een sportschool en ontdekte CrossFit in 2012. Hij startte in 2014 Gymbox Noordwijk. In 2015 richtte hij samen met Jeroen CrossFit Leiden op. Kees woont met zijn vrouw Nathalie en hun twee zoons Neal en Jake in Katwijk aan Zee."
+      },
+      "jeroen": {
+        "name": "Jeroen van Duijn",
+        "bio": "Jeroen was altijd actief, van voetbal tot surfen. In 2014 koos hij voor de fitnesswereld en trainde mensen in Chili voordat hij terugkwam naar Nederland. Samen met Kees bouwde hij CrossFit Leiden tot een plek waar iedereen zich thuis voelt. Jeroen woont met zijn vrouw Amanda en dochter Zoe in Katwijk aan Zee."
+      },
+      "story": "In 2015 startten Kees en Jeroen CrossFit Leiden met een simpel idee: een plek waar iedereen welkom is, ongeacht je niveau of ervaring. Wat begon als één gym is uitgegroeid tot een netwerk van sportscholen waar community voorop staat.",
+      "meetCta": "Wil je kennismaken met Kees, Jeroen en het team? Plan een gratis intro en kom een kopje koffie drinken."
+    },
+    "coaches": {
+      "title": "Ons Coach Team",
+      "saskia": {
+        "name": "Saskia",
+        "role": "General Manager",
+        "story": "Saskia kwam een paar jaar geleden naar CrossFit Leiden om van haar rugpijn af te komen, en het werkte zo goed dat ze van baan veranderde. Ze zorgt ervoor dat alles in de gym soepel loopt en dat iedereen zich welkom voelt."
+      },
+      "rochelle": {
+        "name": "Rochelle",
+        "role": "Lead Coach",
+        "story": "Rochelle is turncoach op nationaal niveau en brengt die expertise naar CrossFit Leiden. Ze is geweldig met kinderen en volwassenen, en helpt iedereen om bewegingen veilig te leren. Naast coaching bij ons, traint ze haar turnploeg voor wereldkampioenschappen."
+      },
+      "jeffrey": {
+        "name": "Jeffrey Perez Stoof",
+        "role": "GetShredded Lead Coach",
+        "story": "Jeffrey was profvoetballer voordat hij CrossFit coach werd. Hij snapt wat het betekent om te presteren én om je op je gemak te voelen. Jeffrey past zijn coaching aan op wat jij nodig hebt, of je nu uitdaging zoekt of juist rustig wilt opbouwen."
+      },
+      "jari": {
+        "name": "Jari Jansen",
+        "role": "Movement Specialist",
+        "story": "Jari geeft small group lessen, de Unlock Motion lessen en workshops. Hij helpt leden met pijn, beperkte mobiliteit of techniek. Als jij ergens last van hebt, is de kans groot dat Jari je kan helpen dit op te lossen."
+      },
+      "max": {
+        "name": "Max",
+        "role": "Kickstart Lead Coach",
+        "story": "Max heeft jaren ervaring als personal trainer en CrossFit coach. Hij houdt van wandelen en kamperen met zijn familie. Als coach creëert Max een leuke en positieve sfeer waar iedereen zich welkom voelt, ongeacht niveau."
+      },
+      "natalia": {
+        "name": "Natália",
+        "role": "Coach",
+        "story": "Natália komt uit Brazilië en verhuisde in 2022 naar Nederland. Met een diploma in bewegingswetenschappen en een passie voor hardlopen brengt ze creativiteit en positiviteit naar elke les. Ze coacht groepslessen en de Teens sessies met veel energie en geduld."
+      },
+      "annie": {
+        "name": "Annie",
+        "role": "Voedingscoach",
+        "story": "Annie helpt leden met praktische voedingsadviezen die passen bij een druk leven. Geen extreme diëten, maar simpele stappen die werken."
+      },
+      "sem": {
+        "name": "Sem Li",
+        "role": "Coach",
+        "story": "Sem is altijd vrolijk en maakt graag contact met iedereen in zijn lessen. Hij houdt van Olympic weightlifting en staat elke ochtend om 5 uur op om te trainen voordat hij de eerste les geeft. Die toewijding en energie zie je terug in zijn coaching."
+      },
+      "erin": {
+        "name": "Erin",
+        "role": "Coach",
+        "story": "Erin coachte al in 2019 bij CrossFit Leiden en is nu terug. Overdag werkt ze bij Defensie waar ze militairen helpt mentaal sterk te blijven. In haar vrije tijd geeft ze salsalessen. Die combinatie van ritme, focus en veerkracht zie je terug in haar coaching."
+      },
+      "hoite": {
+        "name": "Hoite",
+        "role": "Coach",
+        "story": "Hoite is een van onze toegewijde coaches die graag met beginners werkt. Hij neemt de tijd om bewegingen goed uit te leggen en zorgt ervoor dat je je op je gemak voelt tijdens de les."
+      }
+    },
+    "whyMatters": {
+      "title": "Waarom onze coaches het verschil maken",
+      "p1": "Onze coaches zijn geen drill-sergeants. Het zijn gewone mensen met drukke levens, net als jij. Ze begrijpen hoe het voelt om te twijfelen of onzeker te zijn.",
+      "p2": "Persoonlijke aandacht staat voorop. We kennen je naam, onthouden je doelen en passen elke training aan op jouw niveau. Of je nu voor het eerst een barbell vasthoudt of al jaren traint, je krijgt de begeleiding die jij nodig hebt.",
+      "p3": "Bij CrossFit Leiden ben je geen nummer, maar een persoon met je eigen verhaal."
+    },
+    "cta": {
+      "title": "Klaar om kennis te maken?",
+      "subtitle": "Plan je gratis intro en ontmoet het team. Geen verplichtingen, gewoon een goed gesprek over jouw doelen.",
+      "button": "Plan een Gratis Intro"
+    }
+  },
   "kickstartBlock": {
     "title": "Start veilig en sterk met onze Kickstart",
     "imageAlt": "CrossFit Leiden Kickstart",
