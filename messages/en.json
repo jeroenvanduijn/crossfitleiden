@@ -195,5 +195,64 @@
       "introQuestion": "Want to schedule a <strong>free intro</strong> right away?",
       "introLink": "Click here →"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "Everyday people, exceptional results",
+      "subtitle": "CrossFit Leiden is a place where busy parents, young professionals, students, expats, and people who haven't exercised in years get stronger together. No judgment, no pressure. Just training and growing together."
+    },
+    "whyDifferent": {
+      "title": "Why CrossFit Leiden is different",
+      "p1": "We're not your typical gym. CrossFit Leiden was founded on a simple idea: <strong>everyone should feel welcome to exercise</strong>, regardless of age, fitness level, or experience.",
+      "p2": "No macho culture or intimidating atmosphere. Here you train alongside parents who come after putting the kids to bed, young professionals who come before work, students picking up a barbell for the first time, expats looking for a new community, and people who haven't exercised in 10 or 20 years. Members specifically training for Hyrox or seeking extra challenge also find their place here. <strong>Everyone starts somewhere</strong>, and we'll help you along the way.",
+      "p3": "We understand how it feels to have doubts: \"Am I fit enough?\", \"Do I have time?\", \"Will I fit in?\" The answer is always: <strong>yes!</strong> Our community is built on support, not judgment. Here we know each other's names, celebrate each other's successes (big or small), and encourage each other.",
+      "p4": "We don't just train in the gym. We also tackle challenges together outside the box: Hyrox events, runs, outdoor challenges, and trips. The gym is the means, but the goal is for you to stand stronger and more confident in your life."
+    },
+    "story": {
+      "title": "The story behind CrossFit Leiden",
+      "p1": "I'm Jeroen, founder of CrossFit Leiden.",
+      "p2": "Before I started this gym, I worked in an office as a business controller at Samsung. I sat behind a desk all day, felt increasingly unfit, gained weight, and noticed my confidence slowly fading. I wasn't deeply unhappy, but I felt very clearly: this isn't for me.",
+      "p3": "Around 2013, I saw a video online of someone doing CrossFit. Someone training with complete confidence. I felt immediately: that's what I'm missing. Shortly after, I started training, first at CrossFit Bink and later at Gymbox Noordwijk. Slowly everything changed. I got stronger, fitter, and especially much more confident in my body. That energy also spread to my girlfriend, now my wife.",
+      "p4": "At a certain point I knew: I don't just want to improve numbers in Excel, I want to help people feel better in their own bodies. In 2016, together with Kees Houwaart, owner of Gymbox Noordwijk, I started CrossFit Leiden.",
+      "p5": "Since then, we've been able to help over 3,000 people. We've learned so much, heard so many stories, and built a community that I'm proud to walk into every day.",
+      "p6": "Now I'm a father of two children and I see even more clearly how important it is for people to stay strong and healthy. We live in a time when we need builders: people with energy, resilience, and joy in what they do. I want CrossFit Leiden to be a positive beacon in the city. A place where energy starts and spreads to families, businesses, and the streets of Leiden.",
+      "p7": "That's why our mission is very concrete: over the next ten years, we want to help about ten people start safely in Leiden every month. That's about 120 new members per year, and ultimately around 1,200 families and approximately 4,800 people we help to stand stronger, more positive, and more energetic in life.",
+      "p8": "We don't do this with quick tricks, but with good coaching, a strong community, and workouts you can sustain. In the gym we build strength and confidence, so you dare more outside: tackle new challenges, go on adventures, grow professionally, or simply run after your kids with joy again.",
+      "p9": "CrossFit Leiden is the means for that. A second living room where you feel seen, where you get to know each other, and where you walk out a little stronger every week than you walked in."
+    },
+    "mission": {
+      "title": "Our mission",
+      "statement": "Over the next 10 years, we want to help 4,800 people become stronger, more positive, and more energetic."
+    },
+    "values": {
+      "title": "What we stand for",
+      "community": {
+        "title": "Community > Competition",
+        "text": "We're not a competition gym. Here you train together, encourage each other, and celebrate each other's progress. Friendship comes first."
+      },
+      "everyone": {
+        "title": "Everyone Welcome",
+        "text": "Whether you're 25 or 55, fit or not, experienced or beginner – you're welcome here as you are. We adapt to you.",
+        "list1": "• Busy parents training between work and family",
+        "list2": "• Young professionals and students",
+        "list3": "• Expats looking for their community",
+        "list4": "• People who haven't exercised in 10-20 years",
+        "list5": "• Members wanting Hyrox or extra challenge"
+      },
+      "personal": {
+        "title": "Personal Attention",
+        "text": "You're not a number with us. Our coaches know your name, your goals, and your challenges. We guide you personally.",
+        "list1": "• Small group training for extra guidance",
+        "list2": "• Beginner programs to start safely",
+        "list3": "• Coaches who think along and adapt",
+        "list4": "• You never stand alone"
+      },
+      "teamLink": "Meet our team"
+    },
+    "cta": {
+      "title": "Want to get to know us?",
+      "subtitle": "Schedule a free intro and meet our team, see the box, and experience the atmosphere. No workout, just getting to know each other over coffee. We look forward to meeting you!",
+      "button": "Schedule a Free Intro"
+    }
   }
 }

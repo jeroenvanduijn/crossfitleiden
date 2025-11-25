@@ -195,5 +195,64 @@
       "introQuestion": "Wil je direct een <strong>gratis intro</strong> plannen?",
       "introLink": "Klik hier →"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "Gewone mensen, buitengewone resultaten",
+      "subtitle": "CrossFit Leiden is een plek waar drukke ouders, young professionals, studenten, expats en mensen die lang niet hebben gesport samen sterker worden. Geen oordeel, geen druk. Gewoon samen trainen en groeien."
+    },
+    "whyDifferent": {
+      "title": "Waarom CrossFit Leiden anders is",
+      "p1": "We zijn geen typische sportschool. CrossFit Leiden is opgericht vanuit een simpele gedachte: <strong>iedereen moet zich welkom voelen om te sporten</strong>, ongeacht je leeftijd, fitheid of ervaring.",
+      "p2": "Geen macho-cultuur of intimiderende sfeer. Hier train je naast ouders die na het kinderbedtijd nog komen, young professionals die voor hun werk komen, studenten die hun eerste barbell oppakken, expats die een nieuwe community zoeken, en mensen die 10 of 20 jaar niet hebben gesport. Ook leden die specifiek voor Hyrox trainen of extra uitdaging zoeken vinden hier hun plek. <strong>Iedereen begint ergens</strong>, en wij helpen je op weg.",
+      "p3": "We begrijpen hoe het voelt om te twijfelen: \"Ben ik wel fit genoeg?\", \"Heb ik wel tijd?\", \"Pas ik hier wel?\" Het antwoord is altijd: <strong>ja!</strong> Onze community is gebouwd op support, niet op oordeel. Hier kennen we elkaars naam, vieren we elkaars successen (groot of klein), en moedigen we elkaar aan.",
+      "p4": "We trainen niet alleen in de gym. We gaan ook samen uitdagingen aan buiten de box: Hyrox events, runs, outdoor challenges en trips. De gym is het middel, maar het doel is dat je sterker en zelfverzekerder in je leven staat."
+    },
+    "story": {
+      "title": "Het verhaal achter CrossFit Leiden",
+      "p1": "Ik ben Jeroen, oprichter van CrossFit Leiden.",
+      "p2": "Voordat ik deze gym startte, werkte ik op kantoor als business controller bij Samsung. Ik zat hele dagen achter een bureau, voelde me steeds minder fit, werd zwaarder en merkte dat mijn zelfvertrouwen langzaam wegzakte. Ik was niet diep ongelukkig, maar ik voelde heel duidelijk: dit is het niet voor mij.",
+      "p3": "Rond 2013 zag ik online een video van iemand die CrossFit deed. Iemand die vol zelfvertrouwen aan het sporten was. Ik voelde meteen: dat mis ik. Kort daarna ben ik begonnen met trainen, eerst bij CrossFit Bink en later bij Gymbox Noordwijk. Langzaam veranderde alles. Ik werd sterker, fitter en vooral veel zekerder in mijn lijf. Die energie sloeg ook over op mijn vriendin, nu mijn vrouw.",
+      "p4": "Op een gegeven moment wist ik: ik wil niet alleen cijfers in Excel beter maken, ik wil mensen beter laten voelen in hun eigen lichaam. In 2016 ben ik samen met Kees Houwaart, eigenaar van Gymbox Noordwijk, CrossFit Leiden gestart.",
+      "p5": "Sindsdien hebben we al meer dan 3.000 mensen mogen helpen. We hebben zo veel geleerd, zo veel verhalen gehoord en een community gebouwd waar ik zelf elke dag trots binnenstap.",
+      "p6": "Inmiddels ben ik vader van twee kinderen en zie ik nog duidelijker hoe belangrijk het is dat mensen sterk en gezond blijven. We leven in een tijd waarin we bouwers nodig hebben: mensen met energie, veerkracht en plezier in wat ze doen. Ik wil dat CrossFit Leiden een positieve vuurtoren is in de stad. Een plek waar energie begint en zich verspreidt naar gezinnen, bedrijven en de straten van Leiden.",
+      "p7": "Daarom is onze missie heel concreet: de komende tien jaar willen we in Leiden elke maand ongeveer tien mensen veilig laten starten. Dat zijn zo'n 120 nieuwe leden per jaar, en uiteindelijk rond de 1.200 gezinnen en ongeveer 4.800 mensen die we helpen om sterker, positiever en energieker in het leven te staan.",
+      "p8": "Dat doen we niet met snelle trucs, maar met goede coaching, een sterke community en trainingen die je volhoudt. In de gym bouwen we aan kracht en vertrouwen, zodat jij daarbuiten meer durft: nieuwe uitdagingen aangaan, avonturen beleven, zakelijk groeien of gewoon weer met plezier achter je kinderen aanrennen.",
+      "p9": "CrossFit Leiden is daarvoor het middel. Een tweede huiskamer waar je je gezien voelt, waar je elkaar leert kennen en waar je elke week een beetje sterker wegloopt dan je binnenkwam."
+    },
+    "mission": {
+      "title": "Onze missie",
+      "statement": "De komende 10 jaar willen we 4800 mensen helpen om sterker, positiever en energieker te worden."
+    },
+    "values": {
+      "title": "Waar we voor staan",
+      "community": {
+        "title": "Community > Competitie",
+        "text": "We zijn geen competitie-gym. Hier train je samen, moedig je elkaar aan en vier je elkaars vooruitgang. Vriendschap staat voorop."
+      },
+      "everyone": {
+        "title": "Iedereen Welkom",
+        "text": "Of je nu 25 of 55 bent, fit of niet, ervaren of beginner – je bent hier welkom zoals je bent. Wij passen ons aan jou aan.",
+        "list1": "• Drukke ouders die tussen werk en gezin trainen",
+        "list2": "• Young professionals en studenten",
+        "list3": "• Expats die hun community zoeken",
+        "list4": "• Mensen die 10-20 jaar niet hebben gesport",
+        "list5": "• Members die Hyrox of extra uitdaging willen"
+      },
+      "personal": {
+        "title": "Persoonlijke Aandacht",
+        "text": "Je bent geen nummer bij ons. Onze coaches kennen je naam, je doelen en je uitdagingen. We begeleiden je persoonlijk.",
+        "list1": "• Small group training voor extra begeleiding",
+        "list2": "• Beginnersprogramma's om veilig te starten",
+        "list3": "• Coaches die meedenken en aanpassen",
+        "list4": "• Je staat er nooit alleen voor"
+      },
+      "teamLink": "Ontmoet ons team"
+    },
+    "cta": {
+      "title": "Wil je ons leren kennen?",
+      "subtitle": "Plan een gratis intro en ontmoet ons team, zie de box en ervaar de sfeer. Geen sporten, gewoon kennismaken over een kop koffie. We kijken ernaar uit!",
+      "button": "Plan een Gratis Intro"
+    }
   }
 }
