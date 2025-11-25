@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default async function Aanbod() {
   const t = await getTranslations('programs');
+  const locale = await getLocale();
 
   return (
     <>
@@ -63,7 +64,7 @@ export default async function Aanbod() {
                   <span className="text-gray-700">{t('kickstart.feature4')}</span>
                 </li>
               </ul>
-              <Link href="/kickstart" className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
+              <Link href={`/${locale}/starten`} className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
                 {t('kickstart.link')}
               </Link>
             </div>
@@ -104,10 +105,10 @@ export default async function Aanbod() {
                   <span className="text-gray-700">{t('groupClasses.feature4')}</span>
                 </li>
               </ul>
-              <Link href="/aanbod/groepslessen" className="block text-center bg-cinnabar text-white py-3 px-6 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all mb-3">
+              <Link href={`/${locale}/aanbod/groepslessen`} className="block text-center bg-cinnabar text-white py-3 px-6 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all mb-3">
                 {t('groupClasses.link')}
               </Link>
-              <Link href="/starten" className="block text-center text-cinnabar font-semibold hover:underline">
+              <Link href={`/${locale}/starten`} className="block text-center text-cinnabar font-semibold hover:underline">
                 {t('groupClasses.ctaLink')}
               </Link>
             </div>
@@ -145,7 +146,7 @@ export default async function Aanbod() {
                   <span className="text-gray-700">{t('personal.feature4')}</span>
                 </li>
               </ul>
-              <Link href="/aanbod/private-coaching" className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
+              <Link href={`/${locale}/aanbod/private-coaching`} className="block text-center bg-verdigris text-white py-3 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
                 {t('personal.link')}
               </Link>
             </div>
@@ -163,7 +164,7 @@ export default async function Aanbod() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* Small Group Training */}
-            <Link href="/aanbod/small-group" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/aanbod/small-group`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">👥</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.smallGroup.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -173,7 +174,7 @@ export default async function Aanbod() {
             </Link>
 
             {/* Hyrox */}
-            <Link href="/aanbod/hyrox" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/aanbod/hyrox`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🏃</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.hyrox.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -183,7 +184,7 @@ export default async function Aanbod() {
             </Link>
 
             {/* Fysiofabriek */}
-            <Link href="/aanbod/fysiofabriek" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/aanbod/fysiofabriek`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🩺</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.fysiofabriek.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -193,7 +194,7 @@ export default async function Aanbod() {
             </Link>
 
             {/* Nutrition */}
-            <Link href="/nutrition" className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/contact`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🍎</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.nutrition.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -214,7 +215,7 @@ export default async function Aanbod() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Link href="/aanbod/pre-teens" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
+            <Link href={`/${locale}/aanbod/pre-teens`} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">👧👦</div>
               <h3 className="text-xl font-bold mb-2 text-center">{t('youth.preTeens.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
@@ -222,7 +223,7 @@ export default async function Aanbod() {
               </p>
             </Link>
 
-            <Link href="/aanbod/teens" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
+            <Link href={`/${locale}/aanbod/teens`} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">🧑‍🎓</div>
               <h3 className="text-xl font-bold mb-2 text-center">{t('youth.teens.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
@@ -230,7 +231,7 @@ export default async function Aanbod() {
               </p>
             </Link>
 
-            <Link href="/aanbod/sport-performance" className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
+            <Link href={`/${locale}/aanbod/sport-performance`} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">⚽</div>
               <h3 className="text-xl font-bold mb-2 text-center">{t('youth.sportPerformance.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
@@ -266,7 +267,7 @@ export default async function Aanbod() {
                 <p className="text-gray-600">{t('schedule.eveningTime')}</p>
               </div>
             </div>
-            <Link href="/rooster" className="inline-block bg-verdigris text-white px-8 py-4 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
+            <Link href={`/${locale}/rooster`} className="inline-block bg-verdigris text-white px-8 py-4 rounded-lg font-semibold hover:bg-verdigris/90 transition-all">
               {t('schedule.link')}
             </Link>
           </div>
