@@ -236,6 +236,50 @@ export default function PreTeens() {
         </div>
       </section>
 
+      {/* Guided by certified coaches */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Rochelle */}
+            <div className="bg-white rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png"
+                  alt="Rochelle"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Rochelle</h3>
+                  <p className="text-verdigris text-sm font-semibold">Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Rochelle is turncoach op nationaal niveau en brengt die expertise naar CrossFit Leiden. Ze is geweldig met kinderen en helpt iedereen om bewegingen spelenderwijs te leren.
+              </p>
+            </div>
+
+            {/* Natália */}
+            <div className="bg-white rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
+                  alt="Natália"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Natália</h3>
+                  <p className="text-verdigris text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Natália komt uit Brazilië met een diploma in bewegingswetenschappen. Ze coacht met veel energie en geduld en maakt training leuk voor jonge kinderen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Praktische info */}
       <section className="section-padding bg-white">
         <div className="container-custom">

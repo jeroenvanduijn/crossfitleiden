@@ -88,8 +88,88 @@ export default function HYROXPage() {
         </div>
       </section>
 
-      {/* Schedule */}
+      {/* Guided by certified coaches */}
       <section className="section-padding bg-white">
+        <div className="container-custom">
+          <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {/* Natália */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
+                  alt="Natália"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Natália</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Natália komt uit Brazilië met een passie voor hardlopen. Ze coacht met veel energie en brengt creativiteit naar elke HYROX sessie.
+              </p>
+            </div>
+
+            {/* Hoite */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/hoite.png"
+                  alt="Hoite"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Hoite</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Hoite neemt de tijd om bewegingen goed uit te leggen en zorgt ervoor dat je je op je gemak voelt tijdens de training.
+              </p>
+            </div>
+
+            {/* Max */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png"
+                  alt="Max"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Max</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Kickstart Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Max creëert een leuke en positieve sfeer waar iedereen zich welkom voelt, ongeacht niveau. Jarenlange ervaring als personal trainer.
+              </p>
+            </div>
+
+            {/* Jeffrey */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png"
+                  alt="Jeffrey Perez"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Jeffrey Perez</h3>
+                  <p className="text-cinnabar text-sm font-semibold">GetShredded Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Jeffrey was profvoetballer en snapt wat het betekent om te presteren. Hij past zijn coaching aan op wat jij nodig hebt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Schedule */}
+      <section className="section-padding bg-gray-50">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Lessenrooster</h2>
           <div className="grid md:grid-cols-2 gap-6 mb-8">

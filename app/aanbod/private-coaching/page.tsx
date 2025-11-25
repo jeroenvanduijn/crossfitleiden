@@ -144,8 +144,106 @@ export default function PrivateCoaching() {
         </div>
       </section>
 
-      {/* Pakketten & Tarieven */}
+      {/* Guided by certified coaches */}
       <section className="section-padding bg-white">
+        <div className="container-custom">
+          <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Natália */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
+                  alt="Natália"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Natália</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Natália komt uit Brazilië met een diploma in bewegingswetenschappen. Ze brengt creativiteit en positiviteit naar elke sessie en coacht met veel energie en geduld.
+              </p>
+            </div>
+
+            {/* Rochelle */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png"
+                  alt="Rochelle"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Rochelle</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Rochelle is turncoach op nationaal niveau en brengt die expertise naar CrossFit Leiden. Ze helpt iedereen om bewegingen veilig en effectief te leren.
+              </p>
+            </div>
+
+            {/* Jari */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jari.png"
+                  alt="Jari"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Jari Jansen</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Movement Specialist</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Jari helpt leden met pijn, beperkte mobiliteit of techniek. Als je ergens last van hebt, is de kans groot dat Jari je kan helpen dit op te lossen.
+              </p>
+            </div>
+
+            {/* Jeffrey */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png"
+                  alt="Jeffrey Perez"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Jeffrey Perez</h3>
+                  <p className="text-cinnabar text-sm font-semibold">GetShredded Lead Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Jeffrey was profvoetballer voordat hij CrossFit coach werd. Hij past zijn coaching aan op wat jij nodig hebt, of je nu uitdaging zoekt of juist rustig wilt opbouwen.
+              </p>
+            </div>
+
+            {/* Annie */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png"
+                  alt="Annie"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Annie</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Voedingscoach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Annie helpt leden met praktische voedingsadviezen die passen bij een druk leven. Geen extreme diëten, maar simpele stappen die werken.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pakketten & Tarieven */}
+      <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Pakketten & Tarieven</h2>

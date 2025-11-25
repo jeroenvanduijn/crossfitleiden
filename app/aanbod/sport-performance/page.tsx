@@ -193,6 +193,50 @@ export default function SportPerformancePage() {
         </div>
       </section>
 
+      {/* Guided by certified coaches */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Jari */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jari.png"
+                  alt="Jari"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Jari Jansen</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Movement Specialist</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Jari geeft workshops en helpt teams met pijn, beperkte mobiliteit of techniek. Hij heeft uitgebreide ervaring met bewegingsanalyse en performance verbetering.
+              </p>
+            </div>
+
+            {/* Hoite */}
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/hoite.png"
+                  alt="Hoite"
+                  className="w-16 h-16 rounded-full object-cover mr-3"
+                />
+                <div>
+                  <h3 className="font-bold text-lg">Hoite</h3>
+                  <p className="text-cinnabar text-sm font-semibold">Coach</p>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Hoite is toegewijd aan het werken met teams en atleten. Hij neemt de tijd om bewegingen goed uit te leggen en zorgt voor effectieve training.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How it Works */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom max-w-3xl mx-auto">
