@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@next/third-parties": "^16.0.4",
     "@types/node": "^24.9.2",
     "@types/react": "^19.2.2",
     "next": "^16.0.1",
