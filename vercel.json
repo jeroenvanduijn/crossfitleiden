@@ -15,28 +15,6 @@
       "has": [
         {
           "type": "host",
-          "value": "crossfitleiden.nl"
-        }
-      ],
-      "destination": "https://www.crossfitleiden.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.crossfitleiden.nl"
-        }
-      ],
-      "destination": "https://www.crossfitleiden.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
           "value": "crossfitleiden.com"
         }
       ],
