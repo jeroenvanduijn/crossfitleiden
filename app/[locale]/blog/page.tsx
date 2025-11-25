@@ -14,7 +14,7 @@ export default function Blog() {
       excerpt: "You don't need hours of free time to get stronger. Just one hour, two or three times a week.",
       date: "25 Nov 2025",
       category: "Training Tips",
-      image: "⏰",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-61.jpg",
     },
     {
       slug: "is-crossfit-safe",
@@ -22,7 +22,7 @@ export default function Blog() {
       excerpt: "Technique first, light weights first, coaching always watching you. Your safety is our priority.",
       date: "24 Nov 2025",
       category: "Training Tips",
-      image: "🛡️",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-62.jpg",
     },
     {
       slug: "why-80-percent-start-as-beginners",
@@ -30,7 +30,7 @@ export default function Blog() {
       excerpt: "You don't need to be fit to start. You get fit by starting. Most of our members had zero experience.",
       date: "23 Nov 2025",
       category: "Community",
-      image: "👥",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-64.jpg",
     },
     {
       slug: "what-happens-during-free-intro",
@@ -38,7 +38,7 @@ export default function Blog() {
       excerpt: "No workout, no pressure. Just coffee, conversation, and a tour. Here's exactly what to expect.",
       date: "22 Nov 2025",
       category: "Getting Started",
-      image: "☕",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-63.jpg",
     },
     {
       slug: "crossfit-for-40-plus-beginners",
@@ -46,7 +46,7 @@ export default function Blog() {
       excerpt: "It's never too late to start. We have members in their 50s, 60s, and 70s who started as beginners.",
       date: "21 Nov 2025",
       category: "Training Tips",
-      image: "💪",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-65.jpg",
     },
   ];
 
@@ -86,9 +86,15 @@ export default function Blog() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {blogPosts.map((post) => (
               <article key={post.slug} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                  <span className="text-6xl">{post.image}</span>
-                </div>
+                <Link href={`/${locale}/blog/${post.slug}`}>
+                  <div className="aspect-video overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </Link>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-sm text-cinnabar font-semibold">{post.category}</span>
