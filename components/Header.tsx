@@ -24,6 +24,7 @@ export default function Header() {
         { name: t('aboutCFL'), href: `/${locale}/over-ons` },
         { name: t('theTeam'), href: `/${locale}/over-ons/team` },
         { name: t('ourLocation'), href: `/${locale}/over-ons/locatie` },
+        { name: t('schedule'), href: `/${locale}/rooster` },
         { name: t('pricing'), href: `/${locale}/tarieven` },
       ],
     },
@@ -43,7 +44,7 @@ export default function Header() {
         { name: t('preTeens'), href: `/${locale}/aanbod/pre-teens` },
       ],
     },
-    { name: t('schedule'), href: `/${locale}/rooster` },
+    { name: t('blog'), href: `/${locale}/blog` },
     {
       name: t('events'),
       href: "#",
