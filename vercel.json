@@ -8,5 +8,24 @@
     "deploymentEnabled": {
       "claude/create-web-app-011CUaHgrMQMuXwQF1McEAhv": true
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "(.*nl.*)"
+        }
+      ],
+      "destination": "/nl",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "/en",
+      "permanent": false
+    }
+  ]
 }
