@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://crossfitleiden.nl';
+  const baseUrl = 'https://www.crossfitleiden.com';
 
   return {
     rules: [
