@@ -1,32 +1,36 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 import CTAButton from "./CTAButton";
 
 export default function KickstartBlock() {
+  const t = useTranslations('kickstartBlock');
+
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            Start veilig en sterk met onze Kickstart
+            {t('title')}
           </h2>
 
           {/* Hero Image */}
           <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-8 shadow-lg">
             <Image
               src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/hero-background-6.jpg"
-              alt="CrossFit Leiden Kickstart"
+              alt={t('imageAlt')}
               fill
               className="object-cover"
             />
           </div>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Ons 28-dagen beginnersprogramma voor mensen zonder ervaring.
-            Persoonlijke begeleiding, veilige opbouw, op jouw tempo.
+            {t('description')}
           </p>
           <p className="text-base text-gray-600 leading-relaxed bg-jonquil/10 rounded-lg p-4">
-            <strong>Belangrijk:</strong> Je begint altijd met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.
+            <span dangerouslySetInnerHTML={{ __html: t('important') }} />
           </p>
         </div>
 
@@ -35,32 +39,32 @@ export default function KickstartBlock() {
           {/* Voor wie is het */}
           <div className="bg-gray-50 rounded-xl p-6 md:p-8">
             <h3 className="text-xl font-bold text-gray-900 mb-5">
-              Voor wie is de Kickstart?
+              {t('forWho.title')}
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-verdigris flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-700">Beginners zonder ervaring</span>
+                <span className="text-gray-700">{t('forWho.item1')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-verdigris flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-700">Drukke ouders die structuur zoeken</span>
+                <span className="text-gray-700">{t('forWho.item2')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-verdigris flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-700">Mensen die lang niet hebben gesport</span>
+                <span className="text-gray-700">{t('forWho.item3')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-verdigris flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-700">Mensen met onzekerheid of pijntjes</span>
+                <span className="text-gray-700">{t('forWho.item4')}</span>
               </li>
             </ul>
           </div>
@@ -68,32 +72,32 @@ export default function KickstartBlock() {
           {/* Wat zit erin */}
           <div className="bg-gray-50 rounded-xl p-6 md:p-8">
             <h3 className="text-xl font-bold text-gray-900 mb-5">
-              Wat zit er in de Kickstart?
+              {t('whatsIncluded.title')}
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-jonquil flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="8" />
                 </svg>
-                <span className="text-gray-700">2–3 lessen per week, op jouw niveau</span>
+                <span className="text-gray-700">{t('whatsIncluded.item1')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-jonquil flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="8" />
                 </svg>
-                <span className="text-gray-700">Persoonlijke coaching & techniektraining</span>
+                <span className="text-gray-700">{t('whatsIncluded.item2')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-jonquil flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="8" />
                 </svg>
-                <span className="text-gray-700">Voeding & leefstijl basics</span>
+                <span className="text-gray-700">{t('whatsIncluded.item3')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-jonquil flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="8" />
                 </svg>
-                <span className="text-gray-700">Check-ins & voortgangsgesprekken</span>
+                <span className="text-gray-700">{t('whatsIncluded.item4')}</span>
               </li>
             </ul>
           </div>
@@ -102,7 +106,7 @@ export default function KickstartBlock() {
         {/* Hoe werkt het - Korter & scanbaarder */}
         <div className="mb-16 max-w-4xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-            Hoe begin je?
+            {t('howToStart.title')}
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Stap 1 */}
@@ -111,10 +115,10 @@ export default function KickstartBlock() {
                 <span className="text-xl font-bold text-gray-900">1</span>
               </div>
               <h4 className="text-lg font-bold text-gray-900 mb-2">
-                Gratis Intro
+                {t('howToStart.step1Title')}
               </h4>
               <p className="text-gray-600 text-sm">
-                20 min kennismaken. Geen workout, gewoon een gesprek.
+                {t('howToStart.step1Text')}
               </p>
             </div>
 
@@ -124,10 +128,10 @@ export default function KickstartBlock() {
                 <span className="text-xl font-bold text-white">2</span>
               </div>
               <h4 className="text-lg font-bold text-gray-900 mb-2">
-                Kickstart uitleg
+                {t('howToStart.step2Title')}
               </h4>
               <p className="text-gray-600 text-sm">
-                We leggen de Kickstart uit en checken samen of het bij jou past.
+                {t('howToStart.step2Text')}
               </p>
             </div>
 
@@ -137,10 +141,10 @@ export default function KickstartBlock() {
                 <span className="text-xl font-bold text-white">3</span>
               </div>
               <h4 className="text-lg font-bold text-gray-900 mb-2">
-                Kickstart starten
+                {t('howToStart.step3Title')}
               </h4>
               <p className="text-gray-600 text-sm">
-                Klikt het? Dan start je op jouw moment met de Kickstart.
+                {t('howToStart.step3Text')}
               </p>
             </div>
           </div>
@@ -149,7 +153,7 @@ export default function KickstartBlock() {
         {/* Testimonials - Nieuwe reviews */}
         <div className="mb-12">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-            Ervaringen van starters
+            {t('testimonials.title')}
           </h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Matthew */}
@@ -160,11 +164,10 @@ export default function KickstartBlock() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
-                Just completed the intake month – what a great experience. Max explained everything so clearly and kept it fun.
-                If you're thinking about it, just book. The environment is incredibly welcoming.
+                {t('testimonials.matthew.text')}
               </p>
-              <p className="text-gray-900 font-semibold">Matthew, 43</p>
-              <p className="text-gray-500 text-sm">Father of 4 kids</p>
+              <p className="text-gray-900 font-semibold">{t('testimonials.matthew.name')}</p>
+              <p className="text-gray-500 text-sm">{t('testimonials.matthew.subtitle')}</p>
             </div>
 
             {/* Liselotte */}
@@ -175,11 +178,10 @@ export default function KickstartBlock() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
-                I'm so glad I started training here. After one month of small-group training and nutrition guidance, I already feel fitter and have more energy.
-                The coaches are professional and relaxed.
+                {t('testimonials.liselotte.text')}
               </p>
-              <p className="text-gray-900 font-semibold">Liselotte, 42</p>
-              <p className="text-gray-500 text-sm">Mother of a young child</p>
+              <p className="text-gray-900 font-semibold">{t('testimonials.liselotte.name')}</p>
+              <p className="text-gray-500 text-sm">{t('testimonials.liselotte.subtitle')}</p>
             </div>
 
             {/* Julia */}
@@ -190,11 +192,10 @@ export default function KickstartBlock() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
-                If you're hesitating: DO IT. I started the Kickstart at the end of October and it changed everything.
-                After four weeks of coaching and community, I feel fitter, stronger and honestly happier.
+                {t('testimonials.julia.text')}
               </p>
-              <p className="text-gray-900 font-semibold">Julia, 44</p>
-              <p className="text-gray-500 text-sm">Mom with low energy</p>
+              <p className="text-gray-900 font-semibold">{t('testimonials.julia.name')}</p>
+              <p className="text-gray-500 text-sm">{t('testimonials.julia.subtitle')}</p>
             </div>
           </div>
         </div>
@@ -202,13 +203,13 @@ export default function KickstartBlock() {
         {/* CTA Section */}
         <div className="text-center max-w-2xl mx-auto">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Klaar om te beginnen?
+            {t('cta.title')}
           </h3>
           <p className="text-gray-700 mb-6">
-            Plan een gratis gesprek. Geen verplichtingen, gewoon kennismaken.
+            {t('cta.subtitle')}
           </p>
           <CTAButton variant="white-bg">
-            Plan een Gratis Intro
+            {t('cta.button')}
           </CTAButton>
         </div>
       </div>

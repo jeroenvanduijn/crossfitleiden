@@ -255,6 +255,58 @@
       "button": "Plan een Gratis Intro"
     }
   },
+  "kickstartBlock": {
+    "title": "Start veilig en sterk met onze Kickstart",
+    "imageAlt": "CrossFit Leiden Kickstart",
+    "description": "Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.",
+    "important": "<strong>Belangrijk:</strong> Je begint altijd met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.",
+    "forWho": {
+      "title": "Voor wie is de Kickstart?",
+      "item1": "Beginners zonder ervaring",
+      "item2": "Drukke ouders die structuur zoeken",
+      "item3": "Mensen die lang niet hebben gesport",
+      "item4": "Mensen met onzekerheid of pijntjes"
+    },
+    "whatsIncluded": {
+      "title": "Wat zit er in de Kickstart?",
+      "item1": "2–3 lessen per week, op jouw niveau",
+      "item2": "Persoonlijke coaching & techniektraining",
+      "item3": "Voeding & leefstijl basics",
+      "item4": "Check-ins & voortgangsgesprekken"
+    },
+    "howToStart": {
+      "title": "Hoe begin je?",
+      "step1Title": "Gratis Intro",
+      "step1Text": "20 min kennismaken. Geen workout, gewoon een gesprek.",
+      "step2Title": "Kickstart uitleg",
+      "step2Text": "We leggen de Kickstart uit en checken samen of het bij jou past.",
+      "step3Title": "Kickstart starten",
+      "step3Text": "Klikt het? Dan start je op jouw moment met de Kickstart."
+    },
+    "testimonials": {
+      "title": "Ervaringen van starters",
+      "matthew": {
+        "text": "Just completed the intake month – what a great experience. Max explained everything so clearly and kept it fun. If you're thinking about it, just book. The environment is incredibly welcoming.",
+        "name": "Matthew, 43",
+        "subtitle": "Father of 4 kids"
+      },
+      "liselotte": {
+        "text": "I'm so glad I started training here. After one month of small-group training and nutrition guidance, I already feel fitter and have more energy. The coaches are professional and relaxed.",
+        "name": "Liselotte, 42",
+        "subtitle": "Mother of a young child"
+      },
+      "julia": {
+        "text": "If you're hesitating: DO IT. I started the Kickstart at the end of October and it changed everything. After four weeks of coaching and community, I feel fitter, stronger and honestly happier.",
+        "name": "Julia, 44",
+        "subtitle": "Mom with low energy"
+      }
+    },
+    "cta": {
+      "title": "Klaar om te beginnen?",
+      "subtitle": "Plan een gratis gesprek. Geen verplichtingen, gewoon kennismaken.",
+      "button": "Plan een Gratis Intro"
+    }
+  },
   "programs": {
     "hero": {
       "title": "Ons Aanbod",
