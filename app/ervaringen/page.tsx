@@ -2,6 +2,42 @@ import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Ervaringen() {
+  // Community photos with stories
+  const communityPhotos = [
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-33.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-34.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-35.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-36.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-37.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-38.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-39.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-40.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    }
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -29,15 +65,16 @@ export default function Ervaringen() {
               Gewone mensen die kozen voor zichzelf
             </p>
 
-            {/* Video Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Video 1 */}
+            {/* Video Grid - 5 videos */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Video 1 - Raul (Portrait) */}
               <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "56.25% 0 0 0" }}>
+                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
                   <iframe
-                    src="https://player.vimeo.com/video/VIMEO_ID_1?badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1140347883?badge=0&autopause=0&player_id=0&app_id=58479"
                     frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
                     style={{
                       position: "absolute",
                       top: 0,
@@ -45,18 +82,19 @@ export default function Ervaringen() {
                       width: "100%",
                       height: "100%"
                     }}
-                    title="Member Story 1"
+                    title="Raul - 4 years of CrossFit"
                   />
                 </div>
               </div>
 
-              {/* Video 2 */}
+              {/* Video 2 - Joost (Landscape) */}
               <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "56.25% 0 0 0" }}>
+                <div className="relative" style={{ padding: "75% 0 0 0" }}>
                   <iframe
-                    src="https://player.vimeo.com/video/VIMEO_ID_2?badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1140347959?badge=0&autopause=0&player_id=0&app_id=58479"
                     frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
                     style={{
                       position: "absolute",
                       top: 0,
@@ -64,18 +102,19 @@ export default function Ervaringen() {
                       width: "100%",
                       height: "100%"
                     }}
-                    title="Member Story 2"
+                    title="Joost - 100 visits milestone"
                   />
                 </div>
               </div>
 
-              {/* Video 3 */}
+              {/* Video 3 - Daan (Portrait) */}
               <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "56.25% 0 0 0" }}>
+                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
                   <iframe
-                    src="https://player.vimeo.com/video/VIMEO_ID_3?badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1139251716?badge=0&autopause=0&player_id=0&app_id=58479"
                     frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
                     style={{
                       position: "absolute",
                       top: 0,
@@ -83,7 +122,47 @@ export default function Ervaringen() {
                       width: "100%",
                       height: "100%"
                     }}
-                    title="Member Story 3"
+                    title="Daan - From Leiden to Chicago"
+                  />
+                </div>
+              </div>
+
+              {/* Video 4 - Elcin (Portrait) */}
+              <div className="bg-gray-50 rounded-xl overflow-hidden md:col-start-1 lg:col-start-2">
+                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
+                  <iframe
+                    src="https://player.vimeo.com/video/1133807494?badge=0&autopause=0&player_id=0&app_id=58479"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%"
+                    }}
+                    title="Elcin - 100 visits milestone"
+                  />
+                </div>
+              </div>
+
+              {/* Video 5 - Fleur (Portrait) */}
+              <div className="bg-gray-50 rounded-xl overflow-hidden">
+                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
+                  <iframe
+                    src="https://player.vimeo.com/video/1133807460?badge=0&autopause=0&player_id=0&app_id=58479"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%"
+                    }}
+                    title="Fleur - 300 workouts strong"
                   />
                 </div>
               </div>
@@ -147,64 +226,22 @@ export default function Ervaringen() {
               Onze community in beeld
             </h2>
 
-            {/* Photo Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_1"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_2"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_3"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_4"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_5"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_6"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_7"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="PHOTO_URL_8"
-                  alt="CrossFit Leiden Community"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                />
-              </div>
+            {/* Photo Grid with Stories */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+              {communityPhotos.map((photo, index) => (
+                <div key={index} className="flex flex-col gap-4">
+                  <div className="aspect-square rounded-xl overflow-hidden">
+                    <img
+                      src={photo.url}
+                      alt={`CrossFit Leiden Community ${index + 1}`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    />
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    {photo.story}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
