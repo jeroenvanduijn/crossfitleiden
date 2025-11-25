@@ -2,7 +2,36 @@ import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Ervaringen() {
-  // Community photos with stories
+  // Member video testimonials
+  const memberVideos = [
+    {
+      vimeoId: "1140347883",
+      name: "Raul",
+      title: "4 years of CrossFit"
+    },
+    {
+      vimeoId: "1140347959",
+      name: "Joost",
+      title: "100 visits milestone"
+    },
+    {
+      vimeoId: "1139251716",
+      name: "Daan",
+      title: "From Leiden to Chicago"
+    },
+    {
+      vimeoId: "1133807494",
+      name: "Elcin",
+      title: "100 visits milestone"
+    },
+    {
+      vimeoId: "1133807460",
+      name: "Fleur",
+      title: "300 workouts strong"
+    }
+  ];
+
+  // Community photos with stories - All 15 photos
   const communityPhotos = [
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-33.jpg",
@@ -35,6 +64,34 @@ export default function Ervaringen() {
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-40.jpg",
       story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-41.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-42.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-43.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-44.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-45.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-46.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-47.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
     }
   ];
 
@@ -65,107 +122,31 @@ export default function Ervaringen() {
               Gewone mensen die kozen voor zichzelf
             </p>
 
-            {/* Video Grid - 5 videos */}
+            {/* Video Grid - 5 videos, all same size */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Video 1 - Raul (Portrait) */}
-              <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/1140347883?badge=0&autopause=0&player_id=0&app_id=58479"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%"
-                    }}
-                    title="Raul - 4 years of CrossFit"
-                  />
+              {memberVideos.map((video, index) => (
+                <div key={index} className="flex flex-col gap-3">
+                  <div className="bg-gray-50 rounded-xl overflow-hidden">
+                    <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
+                      <iframe
+                        src={`https://player.vimeo.com/video/${video.vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                        frameBorder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%"
+                        }}
+                        title={`${video.name} - ${video.title}`}
+                      />
+                    </div>
+                  </div>
+                  <p className="text-center font-semibold text-gray-900">{video.name}</p>
                 </div>
-              </div>
-
-              {/* Video 2 - Joost (Landscape) */}
-              <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "75% 0 0 0" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/1140347959?badge=0&autopause=0&player_id=0&app_id=58479"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%"
-                    }}
-                    title="Joost - 100 visits milestone"
-                  />
-                </div>
-              </div>
-
-              {/* Video 3 - Daan (Portrait) */}
-              <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/1139251716?badge=0&autopause=0&player_id=0&app_id=58479"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%"
-                    }}
-                    title="Daan - From Leiden to Chicago"
-                  />
-                </div>
-              </div>
-
-              {/* Video 4 - Elcin (Portrait) */}
-              <div className="bg-gray-50 rounded-xl overflow-hidden md:col-start-1 lg:col-start-2">
-                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/1133807494?badge=0&autopause=0&player_id=0&app_id=58479"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%"
-                    }}
-                    title="Elcin - 100 visits milestone"
-                  />
-                </div>
-              </div>
-
-              {/* Video 5 - Fleur (Portrait) */}
-              <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/1133807460?badge=0&autopause=0&player_id=0&app_id=58479"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%"
-                    }}
-                    title="Fleur - 300 workouts strong"
-                  />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -226,10 +207,10 @@ export default function Ervaringen() {
               Onze community in beeld
             </h2>
 
-            {/* Photo Grid with Stories */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {/* Photo Grid with Stories - 3 columns for smaller photos */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {communityPhotos.map((photo, index) => (
-                <div key={index} className="flex flex-col gap-4">
+                <div key={index} className="flex flex-col gap-3">
                   <div className="aspect-square rounded-xl overflow-hidden">
                     <img
                       src={photo.url}
@@ -237,7 +218,7 @@ export default function Ervaringen() {
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
                     />
                   </div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     {photo.story}
                   </p>
                 </div>
