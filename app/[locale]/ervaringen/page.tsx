@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function Ervaringen() {
+export default async function Ervaringen() {
+  const t = await getTranslations('testimonials');
   // Member video testimonials
   const memberVideos = [
     {
@@ -35,87 +37,87 @@ export default function Ervaringen() {
   const communityPhotos = [
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-33.jpg",
-      story: "Een moment van rust midden in het avontuur. Coach Sem peddelt over de Lesse tijdens ons jaarlijkse Ardennen-weekend. Buitenlucht, lachen en samen iets nieuws proberen."
+      storyKey: "photo1"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-34.jpg",
-      story: "Onze community gaat verder dan de box. Tijdens dit klettersteigweekend in Oostenrijk nam lid Richard ons mee de bergen in. Spannend, veilig en vooral heel mooi."
+      storyKey: "photo2"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-35.jpg",
-      story: "Kamp Stoof. Bijna 20 uur samen doorzetten, lachen, vloeken en groeien. Jeffrey nam tien CFL'ers mee op een mentale én fysieke reis die niemand ooit vergeet."
+      storyKey: "photo3"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-36.jpg",
-      story: "Coach Rochelle geeft tieners het vertrouwen om te bewegen, te leren en plezier te hebben. Hier nog op onze oude locatie, maar de energie is altijd hetzelfde."
+      storyKey: "photo4"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-37.jpg",
-      story: "Coach Sem laat zien dat goed tillen niet moeilijk hoeft te zijn. Stap voor stap, veilig en helder. Zo bouw je kracht waar je de rest van je leven iets aan hebt."
+      storyKey: "photo5"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-38.jpg",
-      story: "Trainen bij ons is hard werken, maar vooral veel plezier. Coach Sem lacht vaker dan hij squat, en dat zegt genoeg."
+      storyKey: "photo6"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-39.jpg",
-      story: "In het GetShredded small group programma helpt coach Jeffrey je sterker te squatten dan je ooit dacht. Techniek eerst, gewicht komt daarna."
+      storyKey: "photo7"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-40.jpg",
-      story: "Een warm afscheid voor coach Wouter. Onze community viert niet alleen trainingen, maar vooral mensen."
+      storyKey: "photo8"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-41.jpg",
-      story: "Coach Jari traint elke week met Brandweer Leiden Zuid zodat zij de stad veilig kunnen houden. Functioneel trainen in het echt."
+      storyKey: "photo9"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-42.jpg",
-      story: "Elke les minstens één high five. Vaak meer. Want samen sporten voelt beter dan alleen."
+      storyKey: "photo10"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-43.jpg",
-      story: "Tijdens de wallballs staat coach Jeffrey achter je. Voor techniek, voor tempo, maar vooral voor mentale steun."
+      storyKey: "photo11"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-44.jpg",
-      story: "Ons coachteam tijdens het jaarlijkse gala. Geen sportkleren, wel dezelfde gezelligheid."
+      storyKey: "photo12"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-45.jpg",
-      story: "High fives verzamelen na elke les. Simpel ritueel, groot effect. Je gaat altijd met een glimlach naar huis."
+      storyKey: "photo13"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-46.jpg",
-      story: "Hyrox simulaties zijn het leukste met een buddy. Zweten, lachen en je grenzen verkennen."
+      storyKey: "photo14"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-47.jpg",
-      story: "In 2025 kwalificeerden we ons voor het NK Drakenboot. Een team dat nog nooit gevaren had, maar wel samen alles gaf."
+      storyKey: "photo15"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-48.jpg",
-      story: "Je traint nooit alleen. Er is altijd iemand naast je die meedoet, helpt of lacht."
+      storyKey: "photo16"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-49.jpg",
-      story: "Coach Max wijst je de weg. Heldere uitleg, rustige energie en altijd aandacht voor jou."
+      storyKey: "photo17"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-50.jpg",
-      story: "Moeder en dochter die samen een Hyrox simulatie doen. Zo mooi om te zien wat samen sporten kan doen."
+      storyKey: "photo18"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-51.jpg",
-      story: "De moeder van onze GM Saskia bewijst dat plezier in bewegen geen leeftijd kent. Vooral als er een roeier bij is."
+      storyKey: "photo19"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-52.jpg",
-      story: "Samen met je dochter rennen. Kleine momentjes, grote herinneringen. Dit is waar we het voor doen."
+      storyKey: "photo20"
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-53.jpg",
-      story: "Huub laat zien hoe je fit en vrolijk ouder wordt. Sterk, nuchter en elke week trouw op de vloer."
+      storyKey: "photo21"
     }
   ];
 
@@ -126,10 +128,10 @@ export default function Ervaringen() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Echte mensen. Echte resultaten.
+              {t('hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-white/90">
-              Bij CrossFit Leiden trainen gewone mensen met volle agenda's. Geen fitness influencers, geen proteine-shakes op Instagram. Gewoon mensen die fitter, sterker en gezonder willen worden.
+              {t('hero.subtitle')}
             </p>
           </div>
         </div>
@@ -140,10 +142,10 @@ export default function Ervaringen() {
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Bekijk hun verhalen
+              {t('videoStories.title')}
             </h2>
             <p className="text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-              Gewone mensen die kozen voor zichzelf
+              {t('videoStories.subtitle')}
             </p>
 
             {/* Video Grid - 5 videos, all same size */}
@@ -181,28 +183,28 @@ export default function Ervaringen() {
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Wat onze leden het meest noemen in hun reviews
+              {t('wordCloud.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-12 text-center">
-              Gebaseerd op honderden 5-sterren reviews op Google
+              {t('wordCloud.subtitle')}
             </p>
 
             {/* Word Cloud */}
             <div className="bg-white rounded-2xl p-8 md:p-12">
               <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-                <span className="text-3xl md:text-5xl font-bold text-cinnabar">coaches</span>
-                <span className="text-2xl md:text-4xl font-semibold text-verdigris">community</span>
-                <span className="text-xl md:text-3xl font-semibold text-cinnabar/70">vriendelijk</span>
-                <span className="text-2xl md:text-4xl font-bold text-verdigris/80">persoonlijk</span>
-                <span className="text-xl md:text-3xl font-semibold text-cinnabar">sfeer</span>
-                <span className="text-3xl md:text-5xl font-bold text-verdigris">welkom</span>
-                <span className="text-xl md:text-2xl font-medium text-cinnabar/60">support</span>
-                <span className="text-2xl md:text-3xl font-semibold text-verdigris/70">techniek</span>
-                <span className="text-xl md:text-3xl font-bold text-cinnabar/80">begeleiding</span>
-                <span className="text-2xl md:text-4xl font-semibold text-verdigris">energie</span>
-                <span className="text-xl md:text-2xl font-medium text-cinnabar/70">gezellig</span>
-                <span className="text-2xl md:text-3xl font-bold text-verdigris/80">resultaten</span>
-                <span className="text-xl md:text-3xl font-semibold text-cinnabar">hyrox</span>
+                <span className="text-3xl md:text-5xl font-bold text-cinnabar">{t('wordCloud.words.coaches')}</span>
+                <span className="text-2xl md:text-4xl font-semibold text-verdigris">{t('wordCloud.words.community')}</span>
+                <span className="text-xl md:text-3xl font-semibold text-cinnabar/70">{t('wordCloud.words.friendly')}</span>
+                <span className="text-2xl md:text-4xl font-bold text-verdigris/80">{t('wordCloud.words.personal')}</span>
+                <span className="text-xl md:text-3xl font-semibold text-cinnabar">{t('wordCloud.words.atmosphere')}</span>
+                <span className="text-3xl md:text-5xl font-bold text-verdigris">{t('wordCloud.words.welcome')}</span>
+                <span className="text-xl md:text-2xl font-medium text-cinnabar/60">{t('wordCloud.words.support')}</span>
+                <span className="text-2xl md:text-3xl font-semibold text-verdigris/70">{t('wordCloud.words.technique')}</span>
+                <span className="text-xl md:text-3xl font-bold text-cinnabar/80">{t('wordCloud.words.guidance')}</span>
+                <span className="text-2xl md:text-4xl font-semibold text-verdigris">{t('wordCloud.words.energy')}</span>
+                <span className="text-xl md:text-2xl font-medium text-cinnabar/70">{t('wordCloud.words.fun')}</span>
+                <span className="text-2xl md:text-3xl font-bold text-verdigris/80">{t('wordCloud.words.results')}</span>
+                <span className="text-xl md:text-3xl font-semibold text-cinnabar">{t('wordCloud.words.hyrox')}</span>
               </div>
             </div>
 
@@ -213,7 +215,7 @@ export default function Ervaringen() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-cinnabar font-semibold hover:underline"
               >
-                Lees alle reviews op Google
+                {t('wordCloud.link')}
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -228,7 +230,7 @@ export default function Ervaringen() {
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Onze community in beeld
+              {t('gallery.title')}
             </h2>
 
             {/* Photo Grid with Stories - 3 columns for smaller photos */}
@@ -243,7 +245,7 @@ export default function Ervaringen() {
                     />
                   </div>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    {photo.story}
+                    {t(`gallery.photos.${photo.storyKey}`)}
                   </p>
                 </div>
               ))}
@@ -257,13 +259,13 @@ export default function Ervaringen() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Klaar voor jouw eigen verhaal?
+              {t('cta.title')}
             </h2>
             <Link
               href="https://crossfitleiden.referralrock.com/l/1CROSSFITLEIDEN95/"
               className="inline-block bg-white text-cinnabar px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-50 transition-all shadow-lg"
             >
-              Plan een gratis intro
+              {t('cta.button')}
             </Link>
           </div>
         </div>

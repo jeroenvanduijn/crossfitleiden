@@ -899,5 +899,65 @@
       "text": "Geen idee welke tijd bij jou past of heb je vragen over het rooster? <a>Stuur ons een berichtje</a> – we helpen je graag!",
       "link": "Stuur ons een berichtje"
     }
+  },
+  "testimonials": {
+    "hero": {
+      "title": "Echte mensen. Echte resultaten.",
+      "subtitle": "Bij CrossFit Leiden trainen gewone mensen met volle agenda's. Geen fitness influencers, geen proteine-shakes op Instagram. Gewoon mensen die fitter, sterker en gezonder willen worden."
+    },
+    "videoStories": {
+      "title": "Bekijk hun verhalen",
+      "subtitle": "Gewone mensen die kozen voor zichzelf"
+    },
+    "wordCloud": {
+      "title": "Wat onze leden het meest noemen in hun reviews",
+      "subtitle": "Gebaseerd op honderden 5-sterren reviews op Google",
+      "link": "Lees alle reviews op Google",
+      "words": {
+        "coaches": "coaches",
+        "community": "community",
+        "friendly": "vriendelijk",
+        "personal": "persoonlijk",
+        "atmosphere": "sfeer",
+        "welcome": "welkom",
+        "support": "support",
+        "technique": "techniek",
+        "guidance": "begeleiding",
+        "energy": "energie",
+        "fun": "gezellig",
+        "results": "resultaten",
+        "hyrox": "hyrox"
+      }
+    },
+    "gallery": {
+      "title": "Onze community in beeld",
+      "photos": {
+        "photo1": "Een moment van rust midden in het avontuur. Coach Sem peddelt over de Lesse tijdens ons jaarlijkse Ardennen-weekend. Buitenlucht, lachen en samen iets nieuws proberen.",
+        "photo2": "Onze community gaat verder dan de box. Tijdens dit klettersteigweekend in Oostenrijk nam lid Richard ons mee de bergen in. Spannend, veilig en vooral heel mooi.",
+        "photo3": "Kamp Stoof. Bijna 20 uur samen doorzetten, lachen, vloeken en groeien. Jeffrey nam tien CFL'ers mee op een mentale én fysieke reis die niemand ooit vergeet.",
+        "photo4": "Coach Rochelle geeft tieners het vertrouwen om te bewegen, te leren en plezier te hebben. Hier nog op onze oude locatie, maar de energie is altijd hetzelfde.",
+        "photo5": "Coach Sem laat zien dat goed tillen niet moeilijk hoeft te zijn. Stap voor stap, veilig en helder. Zo bouw je kracht waar je de rest van je leven iets aan hebt.",
+        "photo6": "Trainen bij ons is hard werken, maar vooral veel plezier. Coach Sem lacht vaker dan hij squat, en dat zegt genoeg.",
+        "photo7": "In het GetShredded small group programma helpt coach Jeffrey je sterker te squatten dan je ooit dacht. Techniek eerst, gewicht komt daarna.",
+        "photo8": "Een warm afscheid voor coach Wouter. Onze community viert niet alleen trainingen, maar vooral mensen.",
+        "photo9": "Coach Jari traint elke week met Brandweer Leiden Zuid zodat zij de stad veilig kunnen houden. Functioneel trainen in het echt.",
+        "photo10": "Elke les minstens één high five. Vaak meer. Want samen sporten voelt beter dan alleen.",
+        "photo11": "Tijdens de wallballs staat coach Jeffrey achter je. Voor techniek, voor tempo, maar vooral voor mentale steun.",
+        "photo12": "Ons coachteam tijdens het jaarlijkse gala. Geen sportkleren, wel dezelfde gezelligheid.",
+        "photo13": "High fives verzamelen na elke les. Simpel ritueel, groot effect. Je gaat altijd met een glimlach naar huis.",
+        "photo14": "Hyrox simulaties zijn het leukste met een buddy. Zweten, lachen en je grenzen verkennen.",
+        "photo15": "In 2025 kwalificeerden we ons voor het NK Drakenboot. Een team dat nog nooit gevaren had, maar wel samen alles gaf.",
+        "photo16": "Je traint nooit alleen. Er is altijd iemand naast je die meedoet, helpt of lacht.",
+        "photo17": "Coach Max wijst je de weg. Heldere uitleg, rustige energie en altijd aandacht voor jou.",
+        "photo18": "Moeder en dochter die samen een Hyrox simulatie doen. Zo mooi om te zien wat samen sporten kan doen.",
+        "photo19": "De moeder van onze GM Saskia bewijst dat plezier in bewegen geen leeftijd kent. Vooral als er een roeier bij is.",
+        "photo20": "Samen met je dochter rennen. Kleine momentjes, grote herinneringen. Dit is waar we het voor doen.",
+        "photo21": "Huub laat zien hoe je fit en vrolijk ouder wordt. Sterk, nuchter en elke week trouw op de vloer."
+      }
+    },
+    "cta": {
+      "title": "Klaar voor jouw eigen verhaal?",
+      "button": "Plan een gratis intro"
+    }
   }
 }

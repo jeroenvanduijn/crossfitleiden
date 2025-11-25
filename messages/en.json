@@ -899,5 +899,65 @@
       "text": "No idea which time fits you or have questions about the schedule? <a>Send us a message</a> – we're happy to help!",
       "link": "Send us a message"
     }
+  },
+  "testimonials": {
+    "hero": {
+      "title": "Real people. Real results.",
+      "subtitle": "At CrossFit Leiden, regular people with full schedules train. No fitness influencers, no protein shakes on Instagram. Just people who want to get fitter, stronger and healthier."
+    },
+    "videoStories": {
+      "title": "Watch their stories",
+      "subtitle": "Regular people who chose themselves"
+    },
+    "wordCloud": {
+      "title": "What our members mention most in their reviews",
+      "subtitle": "Based on hundreds of 5-star reviews on Google",
+      "link": "Read all reviews on Google",
+      "words": {
+        "coaches": "coaches",
+        "community": "community",
+        "friendly": "friendly",
+        "personal": "personal",
+        "atmosphere": "atmosphere",
+        "welcome": "welcome",
+        "support": "support",
+        "technique": "technique",
+        "guidance": "guidance",
+        "energy": "energy",
+        "fun": "fun",
+        "results": "results",
+        "hyrox": "hyrox"
+      }
+    },
+    "gallery": {
+      "title": "Our community in pictures",
+      "photos": {
+        "photo1": "A moment of peace in the middle of adventure. Coach Sem paddles down the Lesse during our annual Ardennes weekend. Fresh air, laughter and trying something new together.",
+        "photo2": "Our community goes beyond the box. During this via ferrata weekend in Austria, member Richard took us into the mountains. Exciting, safe and especially beautiful.",
+        "photo3": "Camp Stoof. Almost 20 hours of pushing through together, laughing, cursing and growing. Jeffrey took ten CFLers on a mental and physical journey no one will ever forget.",
+        "photo4": "Coach Rochelle gives teenagers the confidence to move, learn and have fun. Still at our old location here, but the energy is always the same.",
+        "photo5": "Coach Sem shows that proper lifting doesn't have to be difficult. Step by step, safe and clear. This is how you build strength you'll use for the rest of your life.",
+        "photo6": "Training with us is hard work, but mainly lots of fun. Coach Sem laughs more than he squats, and that says enough.",
+        "photo7": "In the GetShredded small group program, coach Jeffrey helps you squat stronger than you ever thought. Technique first, weight comes later.",
+        "photo8": "A warm farewell for coach Wouter. Our community doesn't just celebrate workouts, but especially people.",
+        "photo9": "Coach Jari trains weekly with Leiden South Fire Department so they can keep the city safe. Functional training in real life.",
+        "photo10": "Every class at least one high five. Often more. Because training together feels better than alone.",
+        "photo11": "During wall balls, coach Jeffrey stands behind you. For technique, for pace, but especially for mental support.",
+        "photo12": "Our coaching team during the annual gala. No workout clothes, but the same fun atmosphere.",
+        "photo13": "Collecting high fives after every class. Simple ritual, big impact. You always go home with a smile.",
+        "photo14": "Hyrox simulations are most fun with a buddy. Sweating, laughing and exploring your limits.",
+        "photo15": "In 2025 we qualified for the National Dragon Boat Championship. A team that had never rowed before, but gave everything together.",
+        "photo16": "You never train alone. There's always someone next to you joining in, helping or laughing.",
+        "photo17": "Coach Max shows you the way. Clear explanation, calm energy and always attention for you.",
+        "photo18": "Mother and daughter doing a Hyrox simulation together. So beautiful to see what training together can do.",
+        "photo19": "The mother of our GM Saskia proves that joy in movement knows no age. Especially when there's a rower involved.",
+        "photo20": "Running with your daughter. Small moments, big memories. This is what we do it for.",
+        "photo21": "Huub shows how to age fit and cheerfully. Strong, down-to-earth and faithfully on the floor every week."
+      }
+    },
+    "cta": {
+      "title": "Ready for your own story?",
+      "button": "Schedule a free intro"
+    }
   }
 }
