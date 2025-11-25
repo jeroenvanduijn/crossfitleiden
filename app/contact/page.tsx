@@ -1,63 +1,4 @@
-"use client";
-
-import { useState } from "react";
-
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "algemeen",
-    message: ""
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError("");
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      // Check if response has content before parsing JSON
-      const text = await response.text();
-      let data;
-
-      try {
-        data = text ? JSON.parse(text) : {};
-      } catch (parseError) {
-        console.error('Failed to parse response:', text);
-        throw new Error('Onverwachte response van server');
-      }
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Er ging iets mis');
-      }
-
-      setSubmitted(true);
-    } catch (err) {
-      console.error('Contact form error:', err);
-      setError(err instanceof Error ? err.message : 'Er ging iets mis bij het verzenden van je bericht');
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <>
       {/* Hero */}
@@ -142,12 +83,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Openingstijden</h3>
-                    <p className="text-gray-700">Ma - Vr: 06:30 - 21:00</p>
-                    <p className="text-gray-700">Zaterdag: 08:00 - 13:00</p>
-                    <p className="text-gray-700">Zondag: 10:00 - 12:00 (Open Gym)</p>
-                    <p className="text-sm text-gray-600 mt-2">
-                      * Tijdens lesuren. Buiten lestijden op afspraak.
-                    </p>
+                    <p className="text-gray-700">Ma - Vr: 06:00 - 22:00</p>
+                    <p className="text-gray-700">Za: 07:00 - 13:00</p>
+                    <p className="text-gray-700">Zo: 08:00 - 13:00</p>
                   </div>
                 </div>
               </div>
@@ -185,13 +123,13 @@ export default function Contact() {
               <div className="mt-8 bg-gray-50 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3">Route & Parkeren</h3>
                 <p className="text-gray-700 mb-2">
-                  <strong>Met de auto:</strong> Gratis parkeren voor de deur op het bedrijventerrein.
+                  <strong>Met de auto:</strong> Ruime parkeergelegenheid voor de deur (inclusief invalide parkeerplek). €0,20 per uur van 07:30 - 19:30 op ma-vr. Voor de rest gratis parkeren.
                 </p>
                 <p className="text-gray-700 mb-2">
-                  <strong>Met de fiets:</strong> Vanaf Leiden Centraal ~10 minuten fietsen.
+                  <strong>Met de fiets:</strong> Station Leiden Centraal op 10 minuten fietsen. Station Leiden Lammerschans op 3 minuten fietsen.
                 </p>
                 <p className="text-gray-700">
-                  <strong>Openbaar vervoer:</strong> Bus 43 stopt om de hoek.
+                  <strong>Met openbaar vervoer:</strong> Bushalte op 800 meter afstand.
                 </p>
               </div>
             </div>
@@ -200,92 +138,26 @@ export default function Contact() {
             <div>
               <h2 className="text-3xl font-bold mb-8">Stuur ons een bericht</h2>
 
-              {!submitted ? (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-semibold mb-2">Naam *</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verdigris focus:border-transparent"
-                      placeholder="Je naam"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold mb-2">E-mail *</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verdigris focus:border-transparent"
-                      placeholder="je@email.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold mb-2">Waar gaat je vraag over? *</label>
-                    <select
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verdigris focus:border-transparent"
-                    >
-                      <option value="algemeen">Algemene vraag</option>
-                      <option value="intro">Gratis Intro</option>
-                      <option value="lidmaatschap">Lidmaatschap</option>
-                      <option value="tarieven">Tarieven</option>
-                      <option value="anders">Iets anders</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold mb-2">Bericht *</label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verdigris focus:border-transparent"
-                      placeholder="Laat hier je berichtje achter – we helpen je graag!"
-                    />
-                  </div>
-
-                  {error && (
-                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
-                      <p className="font-semibold">⚠️ Fout</p>
-                      <p className="text-sm">{error}</p>
-                    </div>
-                  )}
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full cta-button-secondary text-center py-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? 'Verzenden...' : 'Verstuur Bericht'}
-                  </button>
-
-                  <p className="text-sm text-gray-600 text-center">
-                    We antwoorden meestal binnen 1 werkdag.
-                  </p>
-                </form>
-              ) : (
-                <div className="bg-verdigris/5 rounded-xl p-8 text-center">
-                  <div className="text-6xl mb-4">✅</div>
-                  <h3 className="text-2xl font-bold mb-4">Bericht verzonden!</h3>
-                  <p className="text-gray-700">
-                    Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.
-                  </p>
-                </div>
-              )}
+              <div className="w-full" style={{ minHeight: '432px' }}>
+                <iframe
+                  src="https://kilo.gymleadmachine.com/widget/form/rJedGDBwxGQzC9EPaPLY"
+                  style={{ width: '100%', height: '100%', minHeight: '432px', border: 'none', borderRadius: '3px' }}
+                  id="inline-rJedGDBwxGQzC9EPaPLY"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="website contact form"
+                  data-height="432"
+                  data-layout-iframe-id="inline-rJedGDBwxGQzC9EPaPLY"
+                  data-form-id="rJedGDBwxGQzC9EPaPLY"
+                  title="website contact form"
+                />
+                <script src="https://kilo.gymleadmachine.com/js/form_embed.js"></script>
+              </div>
             </div>
           </div>
         </div>
