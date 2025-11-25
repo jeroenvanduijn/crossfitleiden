@@ -167,17 +167,17 @@ export default function Contact() {
       <section className="bg-gray-50">
         <div className="container-custom py-12">
           <h2 className="text-3xl font-bold mb-8 text-center">Vind ons op de kaart</h2>
-          <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="text-6xl mb-4">🗺️</div>
-              <p className="text-gray-700 font-semibold mb-2">Google Maps Embed</p>
-              <p className="text-sm text-gray-600 max-w-md">
-                Hier komt een Google Maps iframe met de locatie Rooseveltstraat 49C, Leiden
-              </p>
-              <p className="text-xs text-gray-500 mt-4 font-mono">
-                {'<iframe src="https://maps.google.com/...">'}
-              </p>
-            </div>
+          <div className="rounded-xl overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3201.2644277469594!2d4.477064777316185!3d52.13839647196366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c659350263d7%3A0x1da63fc16f0b0158!2sCrossFit%20Leiden!5e1!3m2!1snl!2snl!4v1764066893232!5m2!1snl!2snl"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="CrossFit Leiden locatie"
+            />
           </div>
         </div>
       </section>
@@ -185,18 +185,34 @@ export default function Contact() {
       {/* Visit Us */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Loop gerust eens binnen!</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              Loop gerust eens binnen om de sfeer te proeven (je vindt ons op de 1e etage van het
-              pand) – de koffie staat klaar. ☕
-            </p>
-            <p className="text-gray-600">
-              Wil je direct een <strong>gratis intro</strong> plannen?{" "}
-              <a href="/starten" className="text-cinnabar font-semibold hover:underline">
-                Klik hier →
-              </a>
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Photo */}
+            <div className="order-2 lg:order-1">
+              <img
+                src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/contact/hero-background-54.jpg"
+                alt="CrossFit Leiden gevel en ingang"
+                className="rounded-xl shadow-lg w-full h-auto"
+              />
+            </div>
+
+            {/* Text */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl font-bold mb-6">Loop gerust eens binnen!</h2>
+              <p className="text-lg text-gray-700 mb-4">
+                Loop gerust eens binnen om de sfeer te proeven. Je vindt ons aan de zuidkant van het sportcomplex met onze eigen ingang. De koffie staat klaar. ☕
+              </p>
+              <p className="text-gray-600 mb-6">
+                Wil je direct een <strong>gratis intro</strong> plannen?{" "}
+                <a
+                  href="https://crossfitleiden.referralrock.com/l/1CROSSFITLEIDEN95/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cinnabar font-semibold hover:underline"
+                >
+                  Klik hier →
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
