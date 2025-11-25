@@ -1,7 +1,8 @@
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function Workshops() {
+export default async function Workshops() {
+  const locale = await getLocale();
   return (
     <>
       <section className="bg-gradient-to-r from-chinese-violet to-purple-700 text-white section-padding">
@@ -181,7 +182,7 @@ export default function Workshops() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
               Vragen over workshops of wil je een specifieke workshop voorstellen?{" "}
-              <Link href="/contact" className="text-chinese-violet font-semibold hover:underline">
+              <Link href={`/${locale}/contact`} className="text-chinese-violet font-semibold hover:underline">
                 Neem contact met ons op
               </Link>
               {" "}– we horen graag van je!

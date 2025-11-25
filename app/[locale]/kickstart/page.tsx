@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useLocale } from 'next-intl';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Kickstart() {
+  const locale = useLocale();
   // Handler for opening the intro popup
   const handlePopupClick = () => {
     if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
@@ -452,7 +454,7 @@ export default function Kickstart() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
               Heb je vragen over de Kickstart of wil je meer weten?{" "}
-              <Link href="/contact" className="text-cinnabar font-semibold hover:underline">
+              <Link href={`/${locale}/contact`} className="text-cinnabar font-semibold hover:underline">
                 Neem contact met ons op
               </Link>
               {" "}– we helpen je graag!

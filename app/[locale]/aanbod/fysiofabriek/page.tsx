@@ -1,7 +1,8 @@
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function FysiofabriekPage() {
+export default async function FysiofabriekPage() {
+  const locale = await getLocale();
   return (
     <>
       {/* Hero Section */}
@@ -212,7 +213,7 @@ export default function FysiofabriekPage() {
               Bezoek Fysiofabriek Website
             </a>
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="inline-block bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-200 transition-all"
             >
               Neem Contact Op

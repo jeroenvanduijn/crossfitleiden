@@ -1,7 +1,8 @@
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function PrivateCoaching() {
+export default async function PrivateCoaching() {
+  const locale = await getLocale();
   return (
     <>
       <section className="bg-gradient-to-r from-chinese-violet to-purple-700 text-white section-padding">
@@ -411,7 +412,7 @@ export default function PrivateCoaching() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
               Vragen over private coaching of twijfel je tussen groepslessen en 1-op-1?{" "}
-              <Link href="/contact" className="text-chinese-violet font-semibold hover:underline">
+              <Link href={`/${locale}/contact`} className="text-chinese-violet font-semibold hover:underline">
                 Neem contact met ons op
               </Link>
               {" "}– we helpen je graag de juiste keuze maken!

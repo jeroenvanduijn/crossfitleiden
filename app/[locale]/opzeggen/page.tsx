@@ -1,8 +1,10 @@
 "use client";
+import { useLocale } from 'next-intl';
 
 import { useEffect } from "react";
 
 export default function OpzeggenPage() {
+  const locale = useLocale();
   useEffect(() => {
     // Load the HighLevel script for the cancellation form
     const script = document.createElement('script');
@@ -121,7 +123,7 @@ export default function OpzeggenPage() {
             Heb je vragen of wil je praten over alternatieven? We denken graag mee over oplossingen.
           </p>
           <a
-            href="/contact"
+            href={`/${locale}/contact`}
             className="inline-block bg-cinnabar text-white px-8 py-3 rounded-lg font-bold hover:bg-cinnabar/90 transition-all"
           >
             Neem Contact Op

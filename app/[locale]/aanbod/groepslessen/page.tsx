@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function Groepslessen() {
+export default async function Groepslessen() {
+  const locale = await getLocale();
   return (
     <>
       {/* Hero - Warm & Welcoming */}
@@ -225,7 +227,7 @@ export default function Groepslessen() {
             </div>
 
             <div className="text-center mt-8">
-              <Link href="/rooster" className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all">
+              <Link href={`/${locale}/rooster`} className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all">
                 Bekijk het Volledige Rooster
               </Link>
             </div>

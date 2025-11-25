@@ -1,7 +1,8 @@
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function SemiPrivate() {
+export default async function SemiPrivate() {
+  const locale = await getLocale();
   return (
     <>
       <section className="bg-gradient-to-r from-verdigris to-teal-600 text-white section-padding">
@@ -117,7 +118,7 @@ export default function SemiPrivate() {
           <div className="mt-8 text-center">
             <p className="text-gray-700">
               Interesse in een van deze programma's?{" "}
-              <Link href="/contact" className="text-verdigris font-semibold hover:underline">
+              <Link href={`/${locale}/contact`} className="text-verdigris font-semibold hover:underline">
                 Neem contact op
               </Link>
               {" "}voor meer informatie of plan een gratis intro!
@@ -176,7 +177,7 @@ export default function SemiPrivate() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
               Vragen over small group training?{" "}
-              <Link href="/contact" className="text-verdigris font-semibold hover:underline">
+              <Link href={`/${locale}/contact`} className="text-verdigris font-semibold hover:underline">
                 Neem contact met ons op
               </Link>
               {" "}– we helpen je graag!

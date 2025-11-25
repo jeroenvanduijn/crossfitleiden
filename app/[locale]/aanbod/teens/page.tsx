@@ -1,7 +1,8 @@
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function Teens() {
+export default async function Teens() {
+  const locale = await getLocale();
   return (
     <>
       <section className="bg-gradient-to-r from-cinnabar to-red-600 text-white section-padding">
@@ -280,7 +281,7 @@ export default function Teens() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
               Vragen of twijfel je nog?{" "}
-              <Link href="/contact" className="text-cinnabar font-semibold hover:underline">
+              <Link href={`/${locale}/contact`} className="text-cinnabar font-semibold hover:underline">
                 Neem contact met ons op
               </Link>
               {" "}– we helpen je graag!

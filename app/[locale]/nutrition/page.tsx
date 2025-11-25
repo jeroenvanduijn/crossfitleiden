@@ -1,10 +1,12 @@
 "use client";
+import { useLocale } from 'next-intl';
 
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 import CTAButton from "@/components/CTAButton";
 
 export default function Nutrition() {
+  const locale = useLocale();
   return (
     <>
       {/* Hero Section */}
@@ -169,7 +171,7 @@ export default function Nutrition() {
               </p>
 
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="block text-center bg-cinnabar text-white py-4 px-6 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all"
               >
                 Neem Contact Op
@@ -225,7 +227,7 @@ export default function Nutrition() {
               </p>
 
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="block text-center bg-verdigris text-white py-4 px-6 rounded-lg font-semibold hover:bg-verdigris/90 transition-all"
               >
                 Neem Contact Op

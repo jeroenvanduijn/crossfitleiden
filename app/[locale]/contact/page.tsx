@@ -5,6 +5,13 @@ import { useTranslations } from 'next-intl';
 export default function Contact() {
   const t = useTranslations('contact');
 
+  const handlePopupClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
+      (window as any).openCFLPopup();
+    }
+  };
+
   return (
     <>
       {/* Hero */}
@@ -203,14 +210,12 @@ export default function Contact() {
               </p>
               <p className="text-gray-600 mb-6">
                 <span dangerouslySetInnerHTML={{ __html: t('welcome.introQuestion') }} />{" "}
-                <a
-                  href="https://crossfitleiden.referralrock.com/l/1CROSSFITLEIDEN95/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cinnabar font-semibold hover:underline"
+                <button
+                  onClick={handlePopupClick}
+                  className="text-cinnabar font-semibold hover:underline cursor-pointer bg-transparent border-none p-0"
                 >
                   {t('welcome.introLink')}
-                </a>
+                </button>
               </p>
             </div>
           </div>

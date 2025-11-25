@@ -1,7 +1,10 @@
+import { getLocale } from 'next-intl/server';
 import Link from "next/link";
+import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function HYROXPage() {
+export default async function HYROXPage() {
+  const locale = await getLocale();
   return (
     <>
       {/* Hero */}
@@ -191,7 +194,7 @@ export default function HYROXPage() {
             </div>
           </div>
           <div className="text-center">
-            <Link href="/rooster" className="inline-block bg-[#E25C2A] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/90 transition-all shadow-md">
+            <Link href={`/${locale}/rooster`} className="inline-block bg-[#E25C2A] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#E25C2A]/90 transition-all shadow-md">
               Bekijk Rooster voor Tijden
             </Link>
           </div>

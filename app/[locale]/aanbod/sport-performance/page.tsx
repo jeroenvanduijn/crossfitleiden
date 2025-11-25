@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function SportPerformancePage() {
+export default async function SportPerformancePage() {
+  const locale = await getLocale();
   return (
     <>
       {/* Hero Section */}
@@ -295,20 +297,12 @@ export default function SportPerformancePage() {
           <p className="text-lg text-gray-700 mb-8">
             Neem contact op voor een vrijblijvend gesprek over de mogelijkheden en een offerte op maat.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-bold hover:bg-cinnabar/90 transition-all shadow-md"
-            >
-              Vraag Offerte Aan
-            </Link>
-            <a
-              href="mailto:welcome@crossfitleiden.com"
-              className="inline-block bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-200 transition-all"
-            >
-              Email Direct
-            </a>
-          </div>
+          <Link
+            href={`/${locale}/contact`}
+            className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-bold hover:bg-cinnabar/90 transition-all shadow-md"
+          >
+            Vraag Offerte Aan
+          </Link>
         </div>
       </section>
 

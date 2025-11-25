@@ -1,7 +1,8 @@
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
-export default function PreTeens() {
+export default async function PreTeens() {
+  const locale = await getLocale();
   return (
     <>
       <section className="bg-gradient-to-r from-verdigris to-cyan-600 text-white section-padding">
@@ -393,7 +394,7 @@ export default function PreTeens() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
               Vragen over de kinderlessen of twijfel je nog?{" "}
-              <Link href="/contact" className="text-verdigris font-semibold hover:underline">
+              <Link href={`/${locale}/contact`} className="text-verdigris font-semibold hover:underline">
                 Neem contact met ons op
               </Link>
               {" "}– we helpen je graag!

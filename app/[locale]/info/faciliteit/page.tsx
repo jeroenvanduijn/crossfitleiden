@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-export default function Faciliteit() {
+export default async function Faciliteit() {
+  const locale = await getLocale();
   return (
     <>
       <section className="bg-gradient-to-r from-cinnabar to-orange-600 text-white section-padding">
@@ -133,7 +134,7 @@ export default function Faciliteit() {
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Kom langs!</h2>
           <p className="text-xl mb-8">Loop gerust eens binnen om de box te zien - de koffie staat klaar.</p>
-          <Link href="/contact" className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
+          <Link href={`/${locale}/contact`} className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
             Plan een Rondleiding
           </Link>
         </div>
