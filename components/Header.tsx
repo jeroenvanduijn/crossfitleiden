@@ -43,7 +43,6 @@ export default function Header() {
       href: "#",
       dropdown: [
         { name: "HYROX Simulation", href: "/events/hyrox-simulation" },
-        { name: "De Volgende Ronde", href: "/events/de-volgende-ronde" },
       ],
     },
     { name: "Ervaringen", href: "/ervaringen" },

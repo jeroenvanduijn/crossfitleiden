@@ -38,7 +38,10 @@ export default function OpzeggenPage() {
             <h2 className="text-2xl font-bold mb-4">Belangrijke informatie</h2>
             <div className="bg-gray-50 rounded-xl p-6 space-y-3 text-gray-700">
               <p>
-                <strong>Let op:</strong> Je opzegging moet voor de 1e van de maand zijn ingediend om de volgende maand te stoppen.
+                <strong>Opzegtermijn:</strong> We hanteren minimaal 1 kalendermaand opzegtermijn (tenzij jouw abonnement hierop afwijkt, zoals GetShredded met 2 maanden).
+              </p>
+              <p>
+                <strong>Voorbeeld:</strong> Wil je per 1 januari stoppen? Dan moet je voor 1 december opzeggen.
               </p>
               <p>
                 Je blijft welkom tot het einde van de betaalde periode. Je hebt nog steeds toegang tot alle lessen.
