@@ -109,5 +109,52 @@
       "subtitle": "Schedule your free intro – it's non-binding, takes 20 minutes and you don't have to work out. Just get to know each other and see if it clicks. We're looking forward to meeting you!",
       "button": "Yes, I want to meet you!"
     }
+  },
+  "dropIn": {
+    "hero": {
+      "title": "Train with us at CrossFit Leiden",
+      "subtitle": "In the area or want to try our box? Book a drop-in and join at your level. For experienced CrossFitters only.",
+      "cta": "Book a Drop-in"
+    },
+    "howItWorks": {
+      "title": "How does it work?",
+      "step1Title": "Choose your class",
+      "step1Text": "First select the location <strong>CrossFit Leiden</strong> in SportBit. Then choose from two class options:",
+      "step1Option1": "<strong>\"Training\"</strong> (regular CrossFit WOD) – drop-in fee €30",
+      "step1Option2": "<strong>\"HYROX Training\"</strong> – €30 for 60 minutes, €35 for 90 minutes",
+      "step1Note": "Other classes are not available for drop-ins.",
+      "step2Title": "Choose your time and book",
+      "step2Text": "Available times appear in the calendar. Fill in your details, accept the terms and pay directly when booking. No cash or card payment at the gym.",
+      "step3Title": "Arrive 10 minutes early",
+      "step3Text": "Check in with the coach. Tour depends on how busy the class is."
+    },
+    "practicalInfo": {
+      "title": "Practical Info",
+      "priceTitle": "💶 Price",
+      "price1": "<strong>Training (WOD)</strong> – €30",
+      "price2": "<strong>HYROX 60 minutes</strong> – €30",
+      "price3": "<strong>HYROX 90 minutes</strong> – €35",
+      "priceNote": "Payment is made directly when booking via SportBit. No cash or card.",
+      "whatToBringTitle": "🎒 What to bring?",
+      "bring1": "Workout clothes and shoes",
+      "bring2": "Water bottle",
+      "bring3": "Towel for showering (optional)"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Can I do a drop-in as a beginner?",
+      "a1": "No. Drop-ins are only for people with CrossFit experience. Completely new? Schedule a free intro first.",
+      "q2": "What does a drop-in cost?",
+      "a2": "Depending on the class, 30 to 35 euros. Payment is made online during booking.",
+      "q3": "Which class should I choose?",
+      "a3": "HYROX Training is often more accessible due to less technical movements and more cardio. Training (WOD) varies per day. It can be strength, technique or cardio. Both options are suitable for experienced athletes.",
+      "q4": "Do I need to book in advance?",
+      "a4": "Yes. You must always book in advance via the drop-in calendar so we can guarantee a spot for you."
+    },
+    "cta": {
+      "title": "Ready to train with us?",
+      "subtitle": "Book your drop-in and experience the CrossFit Leiden atmosphere!",
+      "button": "Book a Drop-in"
+    }
   }
 }
