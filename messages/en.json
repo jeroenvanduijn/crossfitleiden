@@ -49,5 +49,65 @@
     "testimonials": "Testimonials",
     "pricing": "Pricing",
     "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "googleReviews": "265+ Google reviews with 5 stars",
+      "title": "More energy for your family and yourself",
+      "subtitle": "For busy parents and professionals who want to get fit again, without judgment and with guidance at your level. No experience needed, we'll teach you everything step by step.",
+      "cta": "Schedule a Free Intro",
+      "ctaNote": "👉 No workout, just a conversation. Discover if CrossFit Leiden is right for you."
+    },
+    "why": {
+      "title": "Why CrossFit Leiden?",
+      "subtitle": "We understand you're busy and maybe haven't exercised in years. That's why we make it easy.",
+      "usp1Title": "Personal Coaching",
+      "usp1Text": "Our coaches know your name, watch your technique, and guide you step by step. You're never just a number.",
+      "usp2Title": "Perfect for Beginners",
+      "usp2Text": "You don't need to be fit to start. We adjust everything to your level – whether you're 35 or 55.",
+      "usp3Title": "Warm, Tight-Knit Community",
+      "usp3Text": "Train with other parents and professionals. Here you support and encourage each other – no judgment, only support.",
+      "usp4Title": "Safe & Responsible",
+      "usp4Text": "Injury prevention comes first. We teach you the right technique so you get stronger safely, without risk.",
+      "usp5Title": "Fits Your Busy Schedule",
+      "usp5Text": "From early morning to late evening – there's always a class that fits. Classes last 1 hour, including warm-up."
+    },
+    "howItWorks": {
+      "title": "How does it work?",
+      "subtitle": "Three simple steps – no commitments, no pressure. Just getting to know each other.",
+      "step1Title": "Schedule a Free Intro",
+      "step1Text": "Click the button, choose a time that suits you and fill in your details. Takes 30 seconds.",
+      "step2Title": "Relaxed Conversation (No Workout!)",
+      "step2Text": "We get to know you, answer all your questions and show you our box. In this conversation we also explain the Kickstart program and see if it fits you. You don't have to work out – just coffee and a chat.",
+      "step2Note": "💡 We call this a \"No Sweat Intro\" – literally: no sweating!",
+      "step3Title": "Your Personal Plan",
+      "step3Text": "If it clicks, we create a plan together that fits your goals and schedule. Want to think about it? That's fine!",
+      "cta": "Schedule My Free Intro"
+    },
+    "socialProof": {
+      "title": "They went before you"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "We get these questions often. Do you recognize yourself?",
+      "q1": "Am I fit enough to start CrossFit?",
+      "a1": "Absolutely! You don't need to be fit to start. 80% of our members had no sports experience when they started. We adjust every exercise to your level – whether you haven't exercised in 20 years or are quite active.",
+      "q2": "How often should I come?",
+      "a2": "We recommend 2–3 times per week for good results. How often you can come depends on your membership: up to 6 times per week. Focus on quality and consistency, not extreme hours.",
+      "q3": "Isn't CrossFit dangerous? I don't want injuries...",
+      "a3p1": "Understandable concern! But precisely because of our coaching, CrossFit is much safer than working out alone. We teach you the right technique with light weights first. Only when your movement is good do we progress. Injury prevention is our priority.",
+      "a3p2": "We partner with Fysiofabriek, a professional physiotherapy practice with their own treatment room in our gym. This allows us to act quickly with aches, rehabilitation or advice.",
+      "q4": "Am I not too old to start?",
+      "a4": "Not at all! Our members are between 20 and 65 years old, with most between 35-50. CrossFit is perfect for \"older\" beginners because we adjust everything to your body and goals. You're never too old to get stronger and healthier!",
+      "q5": "I really don't have time, with work and kids...",
+      "a5": "We understand! That's why our classes last exactly 1 hour (including warm-up and cool-down). Our classes run from 06:00 to 22:00, so there's always a time that fits. Many members come before work, during lunch break or in the evening when the kids are in bed.",
+      "q6": "What happens during the Free Intro?",
+      "a6": "The intro lasts 20-30 minutes. We get to know you, talk about your goals and concerns, show you the box and answer all your questions. You do NOT have to work out during this intro – just getting to know each other. Afterwards we create a plan together if you want to continue. No commitments, no pressure!"
+    },
+    "footerCta": {
+      "title": "Can you see yourself training here?",
+      "subtitle": "Schedule your free intro – it's non-binding, takes 20 minutes and you don't have to work out. Just get to know each other and see if it clicks. We're looking forward to meeting you!",
+      "button": "Yes, I want to meet you!"
+    }
   }
 }

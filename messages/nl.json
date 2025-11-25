@@ -49,5 +49,65 @@
     "testimonials": "Ervaringen",
     "pricing": "Tarieven",
     "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "googleReviews": "265 plus Google reviews van 5 sterren",
+      "title": "Meer energie voor jouw gezin én jezelf",
+      "subtitle": "Voor drukke ouders en professionals die weer fit willen worden, zonder oordeel en met begeleiding op jouw niveau. Geen ervaring nodig, we leren je alles stap voor stap.",
+      "cta": "Plan een Gratis Intro",
+      "ctaNote": "👉 Geen workout, gewoon een gesprek. Ontdek of CrossFit Leiden bij je past."
+    },
+    "why": {
+      "title": "Waarom CrossFit Leiden?",
+      "subtitle": "We snappen dat je druk bent en misschien al jaren niet meer gesport hebt. Daarom maken we het je makkelijk.",
+      "usp1Title": "Persoonlijke Begeleiding",
+      "usp1Text": "Onze coaches kennen je naam, letten op je techniek en begeleiden je stap voor stap. Je bent nooit zomaar een nummer.",
+      "usp2Title": "Perfect voor Beginners",
+      "usp2Text": "Je hoeft niet fit te zijn om te starten. We passen alles aan op jouw niveau – of je nu 35 of 55 bent.",
+      "usp3Title": "Warme, Hechte Community",
+      "usp3Text": "Sport met andere ouders en professionals. Hier support en moedig je elkaar aan – geen oordeel, alleen support.",
+      "usp4Title": "Veilig & Verantwoord",
+      "usp4Text": "Blessurepreventie staat voorop. We leren je de juiste techniek zodat je veilig sterker wordt, zonder risico.",
+      "usp5Title": "Past in je Drukke Schema",
+      "usp5Text": "Van vroege ochtend tot late avond – er is altijd een les die past. Lessen duren 1 uur, inclusief warming-up."
+    },
+    "howItWorks": {
+      "title": "Hoe werkt het?",
+      "subtitle": "Drie simpele stappen – geen verplichtingen, geen druk. Gewoon kennismaken.",
+      "step1Title": "Plan een Gratis Intro",
+      "step1Text": "Klik op de knop, kies een moment dat jou past en vul je gegevens in. Het duurt 30 seconden.",
+      "step2Title": "Ontspannen Gesprek (Geen Training!)",
+      "step2Text": "We leren je kennen, beantwoorden al je vragen en laten je onze box zien. In dit gesprek leggen we ook het Kickstart-programma uit en kijken we of dat bij jou past. Je hoeft niet te sporten – gewoon een kop koffie en een praatje.",
+      "step2Note": "💡 Dit noemen we een \"No Sweat Intro\" – letterlijk: geen zweten!",
+      "step3Title": "Jouw Persoonlijke Plan",
+      "step3Text": "Als het klikt, maken we samen een plan dat past bij jouw doelen en schema. Wil je nog even nadenken? Prima!",
+      "cta": "Plan Mijn Gratis Intro"
+    },
+    "socialProof": {
+      "title": "Zij gingen je voor"
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "subtitle": "Deze vragen krijgen we vaak. Herken je jezelf?",
+      "q1": "Ben ik wel fit genoeg om te beginnen met CrossFit?",
+      "a1": "Absoluut! Je hoeft helemaal niet fit te zijn om te starten. 80% van onze leden had geen enkele sportervaring toen ze begonnen. We passen elke oefening aan op jouw niveau – of je nu 20 jaar niet hebt gesport of juist wel actief bent.",
+      "q2": "Hoe vaak moet ik komen?",
+      "a2": "We raden 2–3 keer per week aan voor goede resultaten. Hoe vaak je kunt komen hangt af van je lidmaatschap: tot 6 keer per week. Focus op kwaliteit en regelmaat, niet op extreme uren.",
+      "q3": "Is CrossFit niet gevaarlijk? Ik wil geen blessures...",
+      "a3p1": "Begrijpelijk dat je dat denkt! Maar juist door onze begeleiding is CrossFit véél veiliger dan alleen sporten. We leren je eerst de juiste techniek met lichte gewichten. Pas als je beweging goed zit, gaan we verder. Blessurepreventie staat bij ons voorop.",
+      "a3p2": "We samenwerken met Fysiofabriek, een professionele fysiopraktijk die een eigen behandelruimte in onze gym heeft. Hierdoor kunnen we snel schakelen bij pijntjes, revalidatie of advies.",
+      "q4": "Ben ik niet te oud om te beginnen?",
+      "a4": "Helemaal niet! Onze leden zijn tussen de 20 en 65 jaar, met de meesten tussen 35-50. CrossFit is juist perfect voor \"oudere\" beginners omdat we alles aanpassen aan jouw lichaam en doelen. Je bent nooit te oud om sterker en gezonder te worden!",
+      "q5": "Heb ik echt geen tijd, met werk en kinderen...",
+      "a5": "We snappen dat! Daarom duren onze lessen precies 1 uur (inclusief warming-up en cooling-down). Onze lessen lopen van 06:00 tot 22:00, dus er is altijd een moment dat past. Veel leden komen voor het werk, in de lunchpauze of 's avonds als de kids op bed liggen.",
+      "q6": "Wat gebeurt er tijdens de Gratis Intro?",
+      "a6": "De intro duurt 20-30 minuten. We leren je kennen, praten over je doelen en zorgen, laten je de box zien en beantwoorden al je vragen. Je hoeft NIET te sporten tijdens deze intro – gewoon kennismaken. Daarna maken we samen een plan als je door wilt. Geen verplichtingen, geen druk!"
+    },
+    "footerCta": {
+      "title": "Zie je jezelf hier al sporten?",
+      "subtitle": "Plan je gratis intro – het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten. Gewoon kennismaken en kijken of het klikt. We kijken ernaar uit!",
+      "button": "Ja, ik wil kennismaken!"
+    }
   }
 }
