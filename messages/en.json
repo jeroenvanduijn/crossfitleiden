@@ -773,5 +773,131 @@
       "subtitle": "Schedule a free intro and experience yourself why so many people train here. No obligations, just getting to know each other and seeing if it's a fit!",
       "button": "Schedule My Free Intro"
     }
+  },
+  "schedule": {
+    "hero": {
+      "title": "Class Schedule",
+      "subtitle": "From early morning to late evening – there's always a time that fits. All classes are suitable for every level!"
+    },
+    "ourClasses": {
+      "title": "Our Classes",
+      "subtitle": "At CrossFit Leiden we have a wide range of classes. From intense group classes to personal small group training – there's something for everyone."
+    },
+    "groupClasses": {
+      "title": "Group Classes",
+      "training": {
+        "title": "Training",
+        "description": "General CrossFit-style training. Full body workout, suitable for all levels. The perfect mix of strength, conditioning and technique.",
+        "for": "For: Beginners and advanced, 18+"
+      },
+      "hyrox": {
+        "title": "Hyrox",
+        "description": "Inspired by HYROX races: lots of conditioning, sled pushes, lunges, ski, row and more. Train for your next race!",
+        "for": "For: Athletes who want to work on HYROX or improve their endurance"
+      },
+      "flexFriday": {
+        "title": "Flex Friday",
+        "description": "More playful Friday workout with focus on fun, teamwork and ending the work week. Less serious, more fun!",
+        "for": "For: All members who want to end the week socially and actively"
+      },
+      "running": {
+        "title": "Running",
+        "description": "Outdoor running training, focus on technique, pace and endurance. From beginner to marathon preparation.",
+        "for": "For: Members who want to improve their running, beginners welcome"
+      },
+      "olympicLifting": {
+        "title": "Olympic Lifting",
+        "description": "Focus on weightlifting: snatch, clean & jerk with lots of technique coaching. Get stronger and improve your technique.",
+        "for": "For: Members who want to get stronger and work on their technique"
+      },
+      "teens": {
+        "title": "Teens",
+        "description": "Safe and playful training for teenagers. Focus on movement, strength and confidence in a positive environment.",
+        "for": "For: Teenagers (13-17 years)"
+      },
+      "preTeens": {
+        "title": "Pre Teens",
+        "description": "Training for younger kids with lots of fun and basic movements. Learn to move, get strong and exercise together!",
+        "for": "For: Children (9-12 years)"
+      },
+      "urbanTraining": {
+        "title": "Urban Training",
+        "description": "Outdoor training in the city, using the environment and obstacles. Fresh air, new challenges!",
+        "for": "For: Members who want to train outside and enjoy variety"
+      },
+      "mobility": {
+        "title": "Mobility",
+        "description": "Calm class with focus on mobility, flexibility and better movement. Perfect for recovery and injury prevention.",
+        "for": "For: Everyone with stiff shoulders/hips who wants to recover better"
+      },
+      "gymnastics": {
+        "title": "Gymnastics",
+        "description": "Focus on bodyweight skills: pull-ups, handstands, dips and core. Get technically stronger in gymnastic movements.",
+        "for": "For: Members who want to get stronger and technically better at gymnastics"
+      }
+    },
+    "smallGroup": {
+      "title": "Small Group / Semi-Private",
+      "badge": "Small Group",
+      "getShredded": {
+        "title": "GetShredded",
+        "description": "Small group program with focus on weight loss, getting leaner and conditioning. Max 5 people, personal attention.",
+        "for": "For: Members who want to lose body fat and feel fitter"
+      },
+      "unlockMotion": {
+        "title": "Unlock Motion",
+        "description": "Small group program focused on better movement, pain-free training and mobility. Ideal for complaints or limitations.",
+        "for": "For: Members with aches, limitations or focus on technique and movement quality"
+      },
+      "kickstart": {
+        "title": "Kickstart",
+        "description": "Onboarding program for new members. Safe progression of movements, extra coaching and guidance in small group.",
+        "for": "For: Complete beginners and people who want to start safely and gradually"
+      }
+    },
+    "scheduleInfo": {
+      "intro": "Below you see our current schedule. Not a member yet? Start with a free intro!",
+      "link": "Schedule a free intro →"
+    },
+    "selector": {
+      "groupClasses": {
+        "title": "Group Classes",
+        "subtitle": "All levels • Max 12 people • 60 minutes",
+        "badge": "Active schedule ✓"
+      },
+      "smallGroup": {
+        "title": "Small Group",
+        "subtitle": "2-4 people • Personal attention • Customized",
+        "badge": "Active schedule ✓"
+      }
+    },
+    "tips": {
+      "title": "Good to know",
+      "tip1": {
+        "title": "🕐 When should I arrive?",
+        "text": "Come 5-10 minutes before class. That way you have time to change and start relaxed."
+      },
+      "tip2": {
+        "title": "📱 Do I need to sign up?",
+        "text": "Yes, via our app or website. This way we can ensure the group doesn't get too big (max 12 people)."
+      },
+      "tip3": {
+        "title": "❓ Which class is best for beginners?",
+        "text": "All classes are suitable! Coaches adjust exercises to your level. The Saturday morning class has extra focus on beginners."
+      },
+      "tip4": {
+        "title": "🔄 Can I cancel a class?",
+        "text": "Yes, up to 2 hours in advance via the app. No worries if something comes up – we understand!"
+      }
+    },
+    "cta": {
+      "title": "See a time that fits you?",
+      "subtitle": "Try it first with a free intro. We'll show you the box, answer all your questions and together we'll see which class times fit you best!",
+      "button": "Schedule My Free Intro"
+    },
+    "questions": {
+      "text": "No idea which time fits you or have questions about the schedule? <a>Send us a message</a> – we're happy to help!",
+      "link": "Send us a message"
+    }
   }
 }

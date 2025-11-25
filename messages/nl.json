@@ -773,5 +773,131 @@
       "subtitle": "Plan een gratis intro en ervaar zelf waarom zoveel mensen hier trainen. Geen verplichtingen, gewoon kennismaken en kijken of het bij je past!",
       "button": "Plan Mijn Gratis Intro"
     }
+  },
+  "schedule": {
+    "hero": {
+      "title": "Lessen Rooster",
+      "subtitle": "Van vroege ochtend tot late avond – er is altijd een moment dat bij jou past. Alle lessen zijn geschikt voor elk niveau!"
+    },
+    "ourClasses": {
+      "title": "Onze Lessen",
+      "subtitle": "Bij CrossFit Leiden hebben we een breed aanbod aan lessen. Van intense group classes tot persoonlijke small group training – er is voor ieder wat wils."
+    },
+    "groupClasses": {
+      "title": "Group Classes",
+      "training": {
+        "title": "Training",
+        "description": "Algemene CrossFit-style training. Full body workout, geschikt voor alle niveaus. De perfecte mix van kracht, conditie en techniek.",
+        "for": "Voor: Beginners en gevorderden, 18+"
+      },
+      "hyrox": {
+        "title": "Hyrox",
+        "description": "Geïnspireerd op HYROX races: veel conditie, sled pushes, lunges, ski, row en meer. Train voor je volgende race!",
+        "for": "Voor: Atleten die aan HYROX willen werken of hun uithoudingsvermogen willen verbeteren"
+      },
+      "flexFriday": {
+        "title": "Flex Friday",
+        "description": "Speelsere vrijdag-workout met focus op fun, teamwork en het afsluiten van de werkweek. Minder serieus, meer plezier!",
+        "for": "Voor: Alle leden die de week gezellig en actief willen afsluiten"
+      },
+      "running": {
+        "title": "Running",
+        "description": "Hardlooptraining buiten, focus op techniek, tempo en duurvermogen. Van beginner tot marathon voorbereiding.",
+        "for": "Voor: Leden die beter willen worden in hardlopen, ook beginners"
+      },
+      "olympicLifting": {
+        "title": "Olympic Lifting",
+        "description": "Focus op gewichtheffen: snatch, clean & jerk met veel techniekcoaching. Word sterker en verbeter je techniek.",
+        "for": "Voor: Leden die sterker willen worden en aan hun techniek willen werken"
+      },
+      "teens": {
+        "title": "Teens",
+        "description": "Veilige en speelse training voor tieners. Focus op bewegen, kracht en zelfvertrouwen in een positieve omgeving.",
+        "for": "Voor: Tieners (13-17 jaar)"
+      },
+      "preTeens": {
+        "title": "Pre Teens",
+        "description": "Training voor jongere kids met veel fun en basisbewegingen. Leren bewegen, sterk worden en samen sporten!",
+        "for": "Voor: Kinderen (9-12 jaar)"
+      },
+      "urbanTraining": {
+        "title": "Urban Training",
+        "description": "Training buiten in de stad, gebruikmakend van de omgeving en obstakels. Frisse lucht, nieuwe uitdagingen!",
+        "for": "Voor: Leden die buiten willen trainen en van variatie houden"
+      },
+      "mobility": {
+        "title": "Mobility",
+        "description": "Rustige les met focus op mobiliteit, flexibiliteit en beter bewegen. Perfect voor herstel en preventie van blessures.",
+        "for": "Voor: Iedereen die stijve schouders/heupen heeft en beter wil herstellen"
+      },
+      "gymnastics": {
+        "title": "Gymnastics",
+        "description": "Focus op bodyweight skills: pull-ups, handstand, dips en core. Technisch sterker worden in gymnastische bewegingen.",
+        "for": "Voor: Leden die sterker en technisch beter willen worden in gymnastiek"
+      }
+    },
+    "smallGroup": {
+      "title": "Small Group / Semi-Private",
+      "badge": "Small Group",
+      "getShredded": {
+        "title": "GetShredded",
+        "description": "Small group programma met focus op afvallen, strakker worden en conditie. Max 5 personen, persoonlijke aandacht.",
+        "for": "Voor: Leden die vetmassa willen verliezen en zich fitter willen voelen"
+      },
+      "unlockMotion": {
+        "title": "Unlock Motion",
+        "description": "Small group programma gericht op beter bewegen, pijnvrij trainen en mobiliteit. Ideaal bij klachten of beperkingen.",
+        "for": "Voor: Leden met pijntjes, beperkingen of focus op techniek en bewegingskwaliteit"
+      },
+      "kickstart": {
+        "title": "Kickstart",
+        "description": "Instapprogramma voor nieuwe leden. Veilige opbouw van bewegingen, extra coaching en begeleiding in kleine groep.",
+        "for": "Voor: Complete beginners en mensen die rustig en veilig willen starten"
+      }
+    },
+    "scheduleInfo": {
+      "intro": "Hieronder zie je ons actuele rooster. Nog geen lid? Begin met een gratis intro!",
+      "link": "Plan een gratis intro →"
+    },
+    "selector": {
+      "groupClasses": {
+        "title": "Groepslessen",
+        "subtitle": "Alle niveaus • Max 12 personen • 60 minuten",
+        "badge": "Actief rooster ✓"
+      },
+      "smallGroup": {
+        "title": "Small Group",
+        "subtitle": "2-4 personen • Persoonlijke aandacht • Op maat",
+        "badge": "Actief rooster ✓"
+      }
+    },
+    "tips": {
+      "title": "Handig om te weten",
+      "tip1": {
+        "title": "🕐 Hoe laat moet ik er zijn?",
+        "text": "Kom 5-10 minuten voor de les. Zo heb je tijd om te verkleden en rustig te beginnen."
+      },
+      "tip2": {
+        "title": "📱 Moet ik me aanmelden?",
+        "text": "Ja, via onze app of website. Zo kunnen we zorgen dat de groep niet te groot wordt (max 12 personen)."
+      },
+      "tip3": {
+        "title": "❓ Welke les is het beste voor beginners?",
+        "text": "Alle lessen zijn geschikt! Coaches passen oefeningen aan op jouw niveau. De zaterdagochtend les heeft wel extra focus op beginners."
+      },
+      "tip4": {
+        "title": "🔄 Kan ik een les annuleren?",
+        "text": "Ja, tot 2 uur van tevoren via de app. Geen zorgen als iets tussenkomt – we snappen dat!"
+      }
+    },
+    "cta": {
+      "title": "Zie je een tijd die bij jou past?",
+      "subtitle": "Probeer het eerst vrijblijvend met een gratis intro. We laten je de box zien, beantwoorden al je vragen en kijken samen welke lestijden bij jou passen!",
+      "button": "Plan Mijn Gratis Intro"
+    },
+    "questions": {
+      "text": "Geen idee welke tijd bij jou past of heb je vragen over het rooster? <a>Stuur ons een berichtje</a> – we helpen je graag!",
+      "link": "Stuur ons een berichtje"
+    }
   }
 }

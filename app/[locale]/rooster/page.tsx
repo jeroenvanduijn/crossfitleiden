@@ -3,9 +3,12 @@
 import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useState } from "react";
+import { useTranslations, useLocale } from "next-intl";
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Rooster() {
+  const t = useTranslations('schedule');
+  const locale = useLocale();
   const [activeRooster, setActiveRooster] = useState<'groepslessen' | 'small-group'>('groepslessen');
 
   useEffect(() => {
@@ -38,10 +41,9 @@ export default function Rooster() {
       {/* Hero - Simplified */}
       <section className="bg-gradient-to-r from-jonquil to-jonquil/80 text-gray-900 section-padding">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Lessen Rooster</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('hero.title')}</h1>
           <p className="text-xl max-w-2xl">
-            Van vroege ochtend tot late avond – er is altijd een moment dat bij jou past.
-            Alle lessen zijn geschikt voor elk niveau!
+            {t('hero.subtitle')}
           </p>
         </div>
       </section>
@@ -50,27 +52,27 @@ export default function Rooster() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Onze Lessen</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('ourClasses.title')}</h2>
             <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
-              Bij CrossFit Leiden hebben we een breed aanbod aan lessen. Van intense group classes tot persoonlijke small group training – er is voor ieder wat wils.
+              {t('ourClasses.subtitle')}
             </p>
 
             {/* Group Classes */}
             <div className="mb-16">
-              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Group Classes</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">{t('groupClasses.title')}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
+
                 {/* Training */}
                 <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-verdigris to-teal-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">💪</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Training</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.training.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Algemene CrossFit-style training. Full body workout, geschikt voor alle niveaus. De perfecte mix van kracht, conditie en techniek.
+                    {t('groupClasses.training.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Beginners en gevorderden, 18+
+                    {t('groupClasses.training.for')}
                   </p>
                 </div>
 
@@ -79,12 +81,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-cinnabar to-red-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🏃</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Hyrox</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.hyrox.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Geïnspireerd op HYROX races: veel conditie, sled pushes, lunges, ski, row en meer. Train voor je volgende race!
+                    {t('groupClasses.hyrox.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Atleten die aan HYROX willen werken of hun uithoudingsvermogen willen verbeteren
+                    {t('groupClasses.hyrox.for')}
                   </p>
                 </div>
 
@@ -93,12 +95,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-jonquil to-yellow-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🎉</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Flex Friday</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.flexFriday.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Speelsere vrijdag-workout met focus op fun, teamwork en het afsluiten van de werkweek. Minder serieus, meer plezier!
+                    {t('groupClasses.flexFriday.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Alle leden die de week gezellig en actief willen afsluiten
+                    {t('groupClasses.flexFriday.for')}
                   </p>
                 </div>
 
@@ -107,12 +109,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🏃‍♂️</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Running</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.running.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Hardlooptraining buiten, focus op techniek, tempo en duurvermogen. Van beginner tot marathon voorbereiding.
+                    {t('groupClasses.running.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Leden die beter willen worden in hardlopen, ook beginners
+                    {t('groupClasses.running.for')}
                   </p>
                 </div>
 
@@ -121,12 +123,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🏋️</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Olympic Lifting</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.olympicLifting.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Focus op gewichtheffen: snatch, clean & jerk met veel techniekcoaching. Word sterker en verbeter je techniek.
+                    {t('groupClasses.olympicLifting.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Leden die sterker willen worden en aan hun techniek willen werken
+                    {t('groupClasses.olympicLifting.for')}
                   </p>
                 </div>
 
@@ -135,12 +137,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">👦</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Teens</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.teens.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Veilige en speelse training voor tieners. Focus op bewegen, kracht en zelfvertrouwen in een positieve omgeving.
+                    {t('groupClasses.teens.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Tieners (13-17 jaar)
+                    {t('groupClasses.teens.for')}
                   </p>
                 </div>
 
@@ -149,12 +151,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🧒</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Pre Teens</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.preTeens.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Training voor jongere kids met veel fun en basisbewegingen. Leren bewegen, sterk worden en samen sporten!
+                    {t('groupClasses.preTeens.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Kinderen (9-12 jaar)
+                    {t('groupClasses.preTeens.for')}
                   </p>
                 </div>
 
@@ -163,12 +165,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🌆</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Urban Training</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.urbanTraining.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Training buiten in de stad, gebruikmakend van de omgeving en obstakels. Frisse lucht, nieuwe uitdagingen!
+                    {t('groupClasses.urbanTraining.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Leden die buiten willen trainen en van variatie houden
+                    {t('groupClasses.urbanTraining.for')}
                   </p>
                 </div>
 
@@ -177,12 +179,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🧘</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Mobility</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.mobility.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Rustige les met focus op mobiliteit, flexibiliteit en beter bewegen. Perfect voor herstel en preventie van blessures.
+                    {t('groupClasses.mobility.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Iedereen die stijve schouders/heupen heeft en beter wil herstellen
+                    {t('groupClasses.mobility.for')}
                   </p>
                 </div>
 
@@ -191,12 +193,12 @@ export default function Rooster() {
                   <div className="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🤸</span>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">Gymnastics</h4>
+                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.gymnastics.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
-                    Focus op bodyweight skills: pull-ups, handstand, dips en core. Technisch sterker worden in gymnastische bewegingen.
+                    {t('groupClasses.gymnastics.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Leden die sterker en technisch beter willen worden in gymnastiek
+                    {t('groupClasses.gymnastics.for')}
                   </p>
                 </div>
 
@@ -205,57 +207,57 @@ export default function Rooster() {
 
             {/* Small Group */}
             <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Small Group / Semi-Private</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">{t('smallGroup.title')}</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                
+
                 {/* GetShredded */}
                 <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-xl font-bold">GetShredded</h4>
-                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">Small Group</span>
+                    <h4 className="text-xl font-bold">{t('smallGroup.getShredded.title')}</h4>
+                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
                   </div>
                   <div className="h-40 bg-gradient-to-br from-orange-400 to-red-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-5xl">🔥</span>
                   </div>
                   <p className="text-gray-700 text-sm mb-3">
-                    Small group programma met focus op afvallen, strakker worden en conditie. Max 5 personen, persoonlijke aandacht.
+                    {t('smallGroup.getShredded.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Leden die vetmassa willen verliezen en zich fitter willen voelen
+                    {t('smallGroup.getShredded.for')}
                   </p>
                 </div>
 
                 {/* Unlock Motion */}
                 <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-xl font-bold">Unlock Motion</h4>
-                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">Small Group</span>
+                    <h4 className="text-xl font-bold">{t('smallGroup.unlockMotion.title')}</h4>
+                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
                   </div>
                   <div className="h-40 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-5xl">🔓</span>
                   </div>
                   <p className="text-gray-700 text-sm mb-3">
-                    Small group programma gericht op beter bewegen, pijnvrij trainen en mobiliteit. Ideaal bij klachten of beperkingen.
+                    {t('smallGroup.unlockMotion.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Leden met pijntjes, beperkingen of focus op techniek en bewegingskwaliteit
+                    {t('smallGroup.unlockMotion.for')}
                   </p>
                 </div>
 
                 {/* Kickstart */}
                 <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-xl font-bold">Kickstart</h4>
-                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">Small Group</span>
+                    <h4 className="text-xl font-bold">{t('smallGroup.kickstart.title')}</h4>
+                    <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
                   </div>
                   <div className="h-40 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-5xl">🚀</span>
                   </div>
                   <p className="text-gray-700 text-sm mb-3">
-                    Instapprogramma voor nieuwe leden. Veilige opbouw van bewegingen, extra coaching en begeleiding in kleine groep.
+                    {t('smallGroup.kickstart.description')}
                   </p>
                   <p className="text-xs text-cinnabar font-semibold">
-                    Voor: Complete beginners en mensen die rustig en veilig willen starten
+                    {t('smallGroup.kickstart.for')}
                   </p>
                 </div>
 
@@ -270,10 +272,10 @@ export default function Rooster() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto mb-12 text-center">
             <p className="text-lg text-gray-700 mb-4">
-              Hieronder zie je ons actuele rooster. Nog geen lid? Begin met een gratis intro!
+              {t('scheduleInfo.intro')}
             </p>
-            <Link href="/starten" className="text-cinnabar font-semibold hover:underline text-lg">
-              Plan een gratis intro →
+            <Link href={`/${locale}/starten`} className="text-cinnabar font-semibold hover:underline text-lg">
+              {t('scheduleInfo.link')}
             </Link>
           </div>
 
@@ -290,15 +292,15 @@ export default function Rooster() {
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-3xl">👥</span>
-                  <h3 className="text-2xl font-bold">Groepslessen</h3>
+                  <h3 className="text-2xl font-bold">{t('selector.groupClasses.title')}</h3>
                 </div>
                 <p className="text-sm text-gray-700 text-center">
-                  Alle niveaus • Max 12 personen • 60 minuten
+                  {t('selector.groupClasses.subtitle')}
                 </p>
                 {activeRooster === 'groepslessen' && (
                   <div className="mt-3 text-center">
                     <span className="inline-block bg-verdigris text-white text-xs font-semibold px-3 py-1 rounded-full">
-                      Actief rooster ✓
+                      {t('selector.groupClasses.badge')}
                     </span>
                   </div>
                 )}
@@ -314,15 +316,15 @@ export default function Rooster() {
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-3xl">🎯</span>
-                  <h3 className="text-2xl font-bold">Small Group</h3>
+                  <h3 className="text-2xl font-bold">{t('selector.smallGroup.title')}</h3>
                 </div>
                 <p className="text-sm text-gray-700 text-center">
-                  2-4 personen • Persoonlijke aandacht • Op maat
+                  {t('selector.smallGroup.subtitle')}
                 </p>
                 {activeRooster === 'small-group' && (
                   <div className="mt-3 text-center">
                     <span className="inline-block bg-cinnabar text-white text-xs font-semibold px-3 py-1 rounded-full">
-                      Actief rooster ✓
+                      {t('selector.smallGroup.badge')}
                     </span>
                   </div>
                 )}
@@ -348,33 +350,33 @@ export default function Rooster() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-6 text-center">Handig om te weten</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center">{t('tips.title')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-lg p-6">
-                <h4 className="font-semibold mb-2">🕐 Hoe laat moet ik er zijn?</h4>
+                <h4 className="font-semibold mb-2">{t('tips.tip1.title')}</h4>
                 <p className="text-gray-700 text-sm">
-                  Kom 5-10 minuten voor de les. Zo heb je tijd om te verkleden en rustig te beginnen.
+                  {t('tips.tip1.text')}
                 </p>
               </div>
 
               <div className="bg-white rounded-lg p-6">
-                <h4 className="font-semibold mb-2">📱 Moet ik me aanmelden?</h4>
+                <h4 className="font-semibold mb-2">{t('tips.tip2.title')}</h4>
                 <p className="text-gray-700 text-sm">
-                  Ja, via onze app of website. Zo kunnen we zorgen dat de groep niet te groot wordt (max 12 personen).
+                  {t('tips.tip2.text')}
                 </p>
               </div>
 
               <div className="bg-white rounded-lg p-6">
-                <h4 className="font-semibold mb-2">❓ Welke les is het beste voor beginners?</h4>
+                <h4 className="font-semibold mb-2">{t('tips.tip3.title')}</h4>
                 <p className="text-gray-700 text-sm">
-                  Alle lessen zijn geschikt! Coaches passen oefeningen aan op jouw niveau. De zaterdagochtend les heeft wel extra focus op beginners.
+                  {t('tips.tip3.text')}
                 </p>
               </div>
 
               <div className="bg-white rounded-lg p-6">
-                <h4 className="font-semibold mb-2">🔄 Kan ik een les annuleren?</h4>
+                <h4 className="font-semibold mb-2">{t('tips.tip4.title')}</h4>
                 <p className="text-gray-700 text-sm">
-                  Ja, tot 2 uur van tevoren via de app. Geen zorgen als iets tussenkomt – we snappen dat!
+                  {t('tips.tip4.text')}
                 </p>
               </div>
             </div>
@@ -384,9 +386,9 @@ export default function Rooster() {
 
       {/* CTA */}
       <IntroCtaSection
-        title="Zie je een tijd die bij jou past?"
-        subtitle="Probeer het eerst vrijblijvend met een gratis intro. We laten je de box zien, beantwoorden al je vragen en kijken samen welke lestijden bij jou passen!"
-        buttonLabel="Plan Mijn Gratis Intro"
+        title={t('cta.title')}
+        subtitle={t('cta.subtitle')}
+        buttonLabel={t('cta.button')}
       />
 
       {/* Questions */}
@@ -394,11 +396,13 @@ export default function Rooster() {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
-              Geen idee welke tijd bij jou past of heb je vragen over het rooster?{" "}
-              <Link href="/contact" className="text-cinnabar font-semibold hover:underline">
-                Stuur ons een berichtje
-              </Link>
-              {" "}– we helpen je graag!
+              {t.rich('questions.text', {
+                a: (chunks) => (
+                  <Link href={`/${locale}/contact`} className="text-cinnabar font-semibold hover:underline">
+                    {chunks}
+                  </Link>
+                ),
+              })}
             </p>
           </div>
         </div>
