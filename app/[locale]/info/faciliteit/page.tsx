@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getLocale } from 'next-intl/server';
 
 export default async function Faciliteit() {
   const locale = await getLocale();

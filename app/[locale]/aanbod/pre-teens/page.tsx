@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default async function PreTeens() {
