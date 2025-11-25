@@ -255,6 +255,216 @@
       "button": "Plan een Gratis Intro"
     }
   },
+  "pricing": {
+    "hero": {
+      "title": "Investeer in je gezondheid voor maar €4,50 per dag",
+      "subtitle": "Persoonlijke coaching in kleine groepen, een warme community en maandelijks opzegbare memberships. Geen verborgen kosten.",
+      "button": "Plan Gratis Intro",
+      "imageAlt": "CrossFit Leiden gym"
+    },
+    "comparison": {
+      "title": "Waar ga je het aan uit?",
+      "coffee": {
+        "emoji": "☕",
+        "title": "Dagelijkse flat white",
+        "price": "€100",
+        "period": "per maand"
+      },
+      "dining": {
+        "emoji": "🍽️",
+        "title": "1x per week uit eten",
+        "price": "€320",
+        "period": "per maand"
+      },
+      "streaming": {
+        "emoji": "📺",
+        "title": "Streaming",
+        "price": "€50",
+        "period": "per maand"
+      },
+      "crossfit": {
+        "emoji": "💪",
+        "title": "CrossFit Leiden",
+        "price": "€135",
+        "period": "per maand"
+      },
+      "message": "Je betaalt óf nu aan je gezondheid, óf later aan klachten, weinig energie en zorgkosten. Bij ons bouw je rustig en veilig aan een fitter leven."
+    },
+    "programs": {
+      "title": "Onze Programma's",
+      "subtitle": "Klik op een programma voor meer informatie en prijzen",
+      "kickstart": {
+        "title": "28-Day Kickstart",
+        "subtitle": "Perfect voor beginners",
+        "price": "€600",
+        "period": "eenmalig",
+        "description": "Voor beginners of mensen die veilig willen opbouwen. Je traint in kleine groepen, leert de basis en krijgt begeleiding van meerdere coaches. We bouwen rustig op zodat je vertrouwen groeit.",
+        "included": "Inclusief:",
+        "item1": "2 small group sessies per week",
+        "item2": "1 groepsles per week",
+        "item3": "InBody scan",
+        "item4": "Persoonlijke coaching en voedingsdoelen",
+        "item5": "Groepssupport"
+      },
+      "group": {
+        "title": "Group Coaching",
+        "subtitle": "max 14 personen • elke les gecoacht",
+        "description": "Bij ons train je nooit alleen. Onze coaches kennen je naam, helpen je veilig te bewegen en zorgen dat elke les past bij jouw niveau. De sfeer is warm, persoonlijk en zonder ego's. Je bouwt stap voor stap aan kracht, energie en vertrouwen.",
+        "base": {
+          "title": "Base Membership",
+          "price": "€135",
+          "period": "per maand",
+          "item1": "3 groepslessen per week",
+          "item2": "Elke 90 dagen Goal Review",
+          "item3": "Toegang tot workshops & community events",
+          "item4": "Gratis 10-min fysiocheck",
+          "item5": "Koffie, fruit & douches inbegrepen"
+        },
+        "pro": {
+          "title": "Pro Membership",
+          "price": "€159",
+          "period": "per maand",
+          "item1": "4 groepslessen per week",
+          "item2": "Inclusief alles uit Base"
+        },
+        "elite": {
+          "title": "Elite Membership",
+          "price": "€169",
+          "period": "per maand",
+          "item1": "6 groepslessen per week",
+          "item2": "Inclusief alles uit Base"
+        },
+        "note": "Nieuw bij ons? Tijdens een gratis Intro kijken we welke optie bij jou past."
+      },
+      "small": {
+        "title": "GetShredded",
+        "subtitle": "Small Group / Semi-Private",
+        "description": "Small Group voelt als personal training met de energie van een kleine groep. Je traint op vaste tijden met een coach die precies weet wat jij nodig hebt. Perfect voor wie sneller resultaat wil en meer persoonlijke begeleiding zoekt.",
+        "tier3": {
+          "title": "3x per week",
+          "price": "€450",
+          "period": "per maand",
+          "period2": "of €400 (6 maanden)",
+          "item1": "3 semi-private sessies",
+          "item2": "Persoonlijk trainingsplan",
+          "item3": "Vaste plek",
+          "item4": "Inclusief alles uit Base"
+        },
+        "tier2": {
+          "title": "2x per week",
+          "price": "€400",
+          "period": "per maand",
+          "item1": "2 semi-private sessies",
+          "item2": "Persoonlijk plan",
+          "item3": "Inclusief 2 groepslessen per week"
+        },
+        "note": "Onze meest resultaatgerichte vorm van coaching."
+      },
+      "unlock": {
+        "title": "Unlock Motion",
+        "subtitle": "Small Group / Semi-Private (UnlockMotion)",
+        "price": "€1575",
+        "period": "12 weken",
+        "description": "Voor mensen met terugkerende pijn of fysieke beperkingen. Je traint 12 weken in een kleine groep aan mobiliteit, kracht en bewegingskwaliteit, met een plan dat helemaal op jouw lichaam is afgestemd."
+      },
+      "bodyApk": {
+        "title": "Body APK",
+        "subtitle": "intake voor UnlockMotion — inbegrepen bij UnlockMotion",
+        "price": "€220",
+        "description": "Een volledige check van je houding, mobiliteit en bewegingen. Je ontdekt waarom je klachten hebt (of krijgt) en krijgt een duidelijk actieplan."
+      },
+      "pt": {
+        "title": "Personal Training",
+        "subtitle": "Punchcards • 1-op-1 coaching",
+        "description": "Voor wie 1-op-1 wil werken aan techniek, blessureherstel of specifieke doelen. Helemaal afgestemd op jou, flexibel in te plannen en ideaal voor snelle progressie.",
+        "pt60": {
+          "title": "60 minuten PT",
+          "tier1": "5 sessies",
+          "price1": "€450",
+          "tier2": "10 sessies",
+          "price2": "€800"
+        },
+        "pt30": {
+          "title": "30 minuten PT",
+          "tier1": "5 sessies",
+          "price1": "€225",
+          "tier2": "10 sessies",
+          "price2": "€400"
+        }
+      },
+      "skill": {
+        "title": "Monthly Private Coaching",
+        "subtitle": "Skill development • maandelijks",
+        "description": "Elke maand een privé coachmoment waarin je werkt aan techniek, kracht, mobiliteit of herstel. Simpel, duidelijk en super effectief om gericht stappen te zetten.",
+        "skill1": "Skill 1",
+        "price1": "€90 p/m",
+        "skill2": "Skill 2",
+        "price2": "€175 p/m",
+        "skill4": "Skill 4",
+        "price4": "€370 p/m"
+      },
+      "nutritionKickstart": {
+        "title": "Nutrition Kickstart",
+        "subtitle": "4 weken programma",
+        "price": "€200",
+        "period": "4 weken",
+        "description": "Samen met je coach werk je vier weken aan simpele, haalbare voedingsgewoontes. Geen ingewikkelde regels, maar duidelijke begeleiding en dagelijks contact.",
+        "included": "Inclusief:",
+        "item1": "Persoonlijke targets",
+        "item2": "Dagelijkse accountability",
+        "item3": "InBody scan",
+        "item4": "Groepssupport"
+      },
+      "nutrition": {
+        "title": "Nutrition Membership",
+        "subtitle": "Langdurige begeleiding",
+        "price": "€350",
+        "period": "per maand",
+        "description": "Voor wie langdurig structuur wil op voeding en leefstijl."
+      },
+      "teens": {
+        "title": "Teens Membership",
+        "subtitle": "Voor tieners",
+        "description": "Veilige en leuke trainingen die tieners sterker, fitter en zelfverzekerder laten worden.",
+        "tier1": "1x per week",
+        "price1": "€42,50 p/m",
+        "tier2": "2x per week",
+        "price2": "€80 p/m"
+      },
+      "baseWeekend": {
+        "title": "Base Weekend",
+        "subtitle": "2-daags trainingsweekend",
+        "price": "€599",
+        "description": "Een 2-daags trainingsweekend waarin je leert bewegen zoals onze coaches trainen. Praktisch, leerzaam en perfect voor sportliefhebbers die dieper willen begrijpen hoe het lichaam werkt."
+      },
+      "flex": {
+        "title": "Flex Friday",
+        "subtitle": "Vriend meenemen",
+        "time": "Elke vrijdag",
+        "schedule": "12:00 en 20:00",
+        "description": "Leden mogen tijdens deze les een vriend meenemen. Ontspannen, sociaal en de perfecte manier om iemand kennis te laten maken met CFL."
+      }
+    },
+    "reviews": {
+      "title": "Wat zeggen onze leden?"
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "q1": "Moet ik fit zijn om te starten?",
+      "a1": "Nee, je begint op jouw niveau. Wij begeleiden je stap voor stap.",
+      "q2": "Kan ik pauzeren bij vakantie of drukte?",
+      "a2": "Ja, gewoon even laten weten en we regelen het.",
+      "q3": "Hoe werkt betalen?",
+      "a3": "Automatische incasso. Geen inschrijfkosten. Geen kleine lettertjes.",
+      "q4": "Wat maakt CrossFit Leiden anders dan een normale sportschool?",
+      "a4": "Kleine groepen, persoonlijke coaching, warme community. Bij ons hoef je het niet alleen te doen."
+    },
+    "cta": {
+      "title": "Klaar om in jezelf te investeren?",
+      "subtitle": "Plan je gratis intro en kom kennismaken. Geen verplichtingen, gewoon ontdekken of CrossFit Leiden bij jou past.",
+      "button": "Plan Gratis Intro"
+    }
+  },
   "location": {
     "hero": {
       "title": "Onze Locatie",
