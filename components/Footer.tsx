@@ -1,9 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import CTAButton from "./CTAButton";
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const locale = useLocale();
+  const t = useTranslations('footer');
+  const tNav = useTranslations('header');
+  const tCommon = useTranslations('common');
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container-custom py-12">
@@ -21,32 +26,32 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-sm text-gray-400 italic">
-              Everyday people, exceptionally strong
+              {t('tagline')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Navigatie</h4>
+            <h4 className="text-white font-semibold mb-4">{t('navigation')}</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="hover:text-cinnabar transition-colors">
-                  Home
+                <Link href={`/${locale}`} className="hover:text-cinnabar transition-colors">
+                  {tNav('home')}
                 </Link>
               </li>
               <li>
-                <Link href="/over-ons" className="hover:text-cinnabar transition-colors">
-                  Over ons
+                <Link href={`/${locale}/over-ons`} className="hover:text-cinnabar transition-colors">
+                  {tNav('about')}
                 </Link>
               </li>
               <li>
-                <Link href="/aanbod" className="hover:text-cinnabar transition-colors">
-                  Aanbod
+                <Link href={`/${locale}/aanbod`} className="hover:text-cinnabar transition-colors">
+                  {tNav('programs')}
                 </Link>
               </li>
               <li>
-                <Link href="/rooster" className="hover:text-cinnabar transition-colors">
-                  Rooster
+                <Link href={`/${locale}/rooster`} className="hover:text-cinnabar transition-colors">
+                  {tNav('schedule')}
                 </Link>
               </li>
             </ul>
@@ -54,41 +59,41 @@ export default function Footer() {
 
           {/* More Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Info</h4>
+            <h4 className="text-white font-semibold mb-4">{t('info')}</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/info/drop-in" className="hover:text-cinnabar transition-colors">
-                  Drop-in
+                <Link href={`/${locale}/info/drop-in`} className="hover:text-cinnabar transition-colors">
+                  {t('dropIn')}
                 </Link>
               </li>
               <li>
-                <Link href="/ervaringen" className="hover:text-cinnabar transition-colors">
-                  Ervaringen
+                <Link href={`/${locale}/ervaringen`} className="hover:text-cinnabar transition-colors">
+                  {tNav('testimonials')}
                 </Link>
               </li>
               <li>
-                <Link href="/tarieven" className="hover:text-cinnabar transition-colors">
-                  Tarieven
+                <Link href={`/${locale}/tarieven`} className="hover:text-cinnabar transition-colors">
+                  {tNav('pricing')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-cinnabar transition-colors">
-                  Contact
+                <Link href={`/${locale}/contact`} className="hover:text-cinnabar transition-colors">
+                  {tNav('contact')}
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="hover:text-cinnabar transition-colors">
-                  Privacy Policy
+                <Link href={`/${locale}/privacy`} className="hover:text-cinnabar transition-colors">
+                  {t('privacyPolicy')}
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-cinnabar transition-colors">
-                  Terms & Conditions
+                <Link href={`/${locale}/terms`} className="hover:text-cinnabar transition-colors">
+                  {t('termsConditions')}
                 </Link>
               </li>
               <li>
-                <Link href="/opzeggen" className="hover:text-cinnabar transition-colors">
-                  Abonnement opzeggen
+                <Link href={`/${locale}/opzeggen`} className="hover:text-cinnabar transition-colors">
+                  {t('cancelMembership')}
                 </Link>
               </li>
             </ul>
@@ -96,7 +101,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <h4 className="text-white font-semibold mb-4">{tNav('contact')}</h4>
             <ul className="space-y-2 text-sm">
               <li>Marie Diebenplaats 108</li>
               <li>2324 NG Leiden</li>
@@ -142,7 +147,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} CrossFit Leiden. Alle rechten voorbehouden.</p>
+          <p>&copy; {new Date().getFullYear()} CrossFit Leiden. {tCommon('allRightsReserved')}.</p>
         </div>
       </div>
     </footer>

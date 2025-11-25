@@ -2,55 +2,68 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useLocale, useTranslations } from 'next-intl';
+import { usePathname, useRouter } from 'next/navigation';
 import CTAButton from "./CTAButton";
 import HighLevelPopup from "./HighLevelPopup";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const t = useTranslations('header');
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navigation = [
-    { name: "Home", href: "/" },
+    { name: t('home'), href: `/${locale}` },
     {
-      name: "Over ons",
+      name: t('about'),
       href: "#",
       dropdown: [
-        { name: "Over CrossFit Leiden", href: "/over-ons" },
-        { name: "Het Team", href: "/over-ons/team" },
-        { name: "Onze Locatie", href: "/over-ons/locatie" },
-        { name: "Tarieven", href: "/tarieven" },
+        { name: t('aboutCFL'), href: `/${locale}/over-ons` },
+        { name: t('theTeam'), href: `/${locale}/over-ons/team` },
+        { name: t('ourLocation'), href: `/${locale}/over-ons/locatie` },
+        { name: t('pricing'), href: `/${locale}/tarieven` },
       ],
     },
     {
-      name: "Aanbod",
+      name: t('programs'),
       href: "#",
       dropdown: [
-        { name: "Kickstart Programma", href: "/kickstart" },
-        { name: "Groepstraining", href: "/aanbod/groepslessen" },
-        { name: "Small Group Training", href: "/aanbod/small-group" },
-        { name: "Personal Training", href: "/aanbod/private-coaching" },
-        { name: "HYROX", href: "/aanbod/hyrox" },
-        { name: "Fysiofabriek", href: "/aanbod/fysiofabriek" },
-        { name: "Sport & Performance", href: "/aanbod/sport-performance" },
-        { name: "Voeding", href: "/nutrition" },
-        { name: "Teens", href: "/aanbod/teens" },
-        { name: "Pre Teens", href: "/aanbod/pre-teens" },
+        { name: t('kickstart'), href: `/${locale}/kickstart` },
+        { name: t('groupTraining'), href: `/${locale}/aanbod/groepslessen` },
+        { name: t('smallGroup'), href: `/${locale}/aanbod/small-group` },
+        { name: t('personalTraining'), href: `/${locale}/aanbod/private-coaching` },
+        { name: t('hyrox'), href: `/${locale}/aanbod/hyrox` },
+        { name: t('fysiofabriek'), href: `/${locale}/aanbod/fysiofabriek` },
+        { name: t('sportPerformance'), href: `/${locale}/aanbod/sport-performance` },
+        { name: t('nutrition'), href: `/${locale}/nutrition` },
+        { name: t('teens'), href: `/${locale}/aanbod/teens` },
+        { name: t('preTeens'), href: `/${locale}/aanbod/pre-teens` },
       ],
     },
-    { name: "Rooster", href: "/rooster" },
+    { name: t('schedule'), href: `/${locale}/rooster` },
     {
-      name: "Events",
+      name: t('events'),
       href: "#",
       dropdown: [
-        { name: "HYROX Simulation", href: "/events/hyrox-simulation" },
+        { name: t('hyroxSimulation'), href: `/${locale}/events/hyrox-simulation` },
       ],
     },
-    { name: "Ervaringen", href: "/ervaringen" },
-    { name: "Contact", href: "/contact" },
+    { name: t('testimonials'), href: `/${locale}/ervaringen` },
+    { name: t('contact'), href: `/${locale}/contact` },
   ];
 
   const toggleDropdown = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
+  };
+
+  const switchLocale = (newLocale: string) => {
+    // Get the path without the current locale
+    const pathWithoutLocale = pathname.replace(`/${locale}`, '');
+    // Navigate to the same path with the new locale
+    router.push(`/${newLocale}${pathWithoutLocale}`);
   };
 
   return (
@@ -58,7 +71,7 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href={`/${locale}`} className="flex items-center">
             <img
               src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/cfl%20logo.png"
               alt="CrossFit Leiden Logo"
@@ -122,16 +135,32 @@ export default function Header() {
 
             {/* Language Toggle */}
             <div className="flex items-center space-x-2 text-sm">
-              <button className="text-gray-700 hover:text-[#E4572E] font-medium">
+              <button
+                onClick={() => switchLocale('nl')}
+                className={`font-medium transition-colors ${
+                  locale === 'nl'
+                    ? 'text-gray-700'
+                    : 'text-gray-400 hover:text-[#E4572E]'
+                }`}
+              >
                 NL
               </button>
               <span className="text-gray-300">|</span>
-              <button className="text-gray-400 hover:text-[#E4572E]">EN</button>
+              <button
+                onClick={() => switchLocale('en')}
+                className={`transition-colors ${
+                  locale === 'en'
+                    ? 'text-gray-700 font-medium'
+                    : 'text-gray-400 hover:text-[#E4572E]'
+                }`}
+              >
+                EN
+              </button>
             </div>
 
             {/* CTA Button */}
             <CTAButton variant="header" className="whitespace-nowrap">
-              Plan een Gratis Intro
+              {t('planFreeIntro')}
             </CTAButton>
           </div>
 
@@ -215,15 +244,33 @@ export default function Header() {
               ))}
               <div className="mx-4 mt-4">
                 <CTAButton variant="header" className="w-full text-center">
-                  Plan een Gratis Intro
+                  {t('planFreeIntro')}
                 </CTAButton>
               </div>
 
               {/* Language Toggle Mobile */}
               <div className="flex items-center justify-center space-x-2 text-sm mt-4">
-                <button className="text-gray-700 hover:text-[#E4572E] font-medium">NL</button>
+                <button
+                  onClick={() => switchLocale('nl')}
+                  className={`font-medium transition-colors ${
+                    locale === 'nl'
+                      ? 'text-gray-700'
+                      : 'text-gray-400 hover:text-[#E4572E]'
+                  }`}
+                >
+                  NL
+                </button>
                 <span className="text-gray-300">|</span>
-                <button className="text-gray-400 hover:text-[#E4572E]">EN</button>
+                <button
+                  onClick={() => switchLocale('en')}
+                  className={`transition-colors ${
+                    locale === 'en'
+                      ? 'text-gray-700 font-medium'
+                      : 'text-gray-400 hover:text-[#E4572E]'
+                  }`}
+                >
+                  EN
+                </button>
               </div>
             </div>
           </div>

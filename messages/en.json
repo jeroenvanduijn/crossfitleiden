@@ -1,0 +1,53 @@
+{
+  "common": {
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "bookNow": "Book now",
+    "getStarted": "Get started",
+    "allRightsReserved": "All rights reserved"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "aboutCFL": "About CrossFit Leiden",
+    "theTeam": "The Team",
+    "ourLocation": "Our Location",
+    "pricing": "Pricing",
+    "programs": "Programs",
+    "kickstart": "Kickstart Program",
+    "groupTraining": "Group Training",
+    "smallGroup": "Small Group Training",
+    "personalTraining": "Personal Training",
+    "hyrox": "HYROX",
+    "fysiofabriek": "Fysiofabriek",
+    "sportPerformance": "Sport & Performance",
+    "nutrition": "Nutrition",
+    "teens": "Teens",
+    "preTeens": "Pre Teens",
+    "schedule": "Schedule",
+    "events": "Events",
+    "hyroxSimulation": "HYROX Simulation",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "planFreeIntro": "Schedule a Free Intro"
+  },
+  "footer": {
+    "tagline": "Everyday people, exceptionally strong",
+    "navigation": "Navigation",
+    "info": "Info",
+    "dropIn": "Drop-in",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "cancelMembership": "Cancel Membership"
+  },
+  "navigation": {
+    "home": "Home",
+    "aboutUs": "About us",
+    "programs": "Programs",
+    "schedule": "Schedule",
+    "testimonials": "Testimonials",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  }
+}
