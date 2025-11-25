@@ -255,6 +255,216 @@
       "button": "Schedule a Free Intro"
     }
   },
+  "pricing": {
+    "hero": {
+      "title": "Invest in your health for just €4.50 per day",
+      "subtitle": "Personal coaching in small groups, a warm community and month-to-month memberships. No hidden costs.",
+      "button": "Schedule Free Intro",
+      "imageAlt": "CrossFit Leiden gym"
+    },
+    "comparison": {
+      "title": "What do you spend on?",
+      "coffee": {
+        "emoji": "☕",
+        "title": "Daily flat white",
+        "price": "€100",
+        "period": "per month"
+      },
+      "dining": {
+        "emoji": "🍽️",
+        "title": "Dining out once a week",
+        "price": "€320",
+        "period": "per month"
+      },
+      "streaming": {
+        "emoji": "📺",
+        "title": "Streaming",
+        "price": "€50",
+        "period": "per month"
+      },
+      "crossfit": {
+        "emoji": "💪",
+        "title": "CrossFit Leiden",
+        "price": "€135",
+        "period": "per month"
+      },
+      "message": "You either pay for your health now, or later for complaints, low energy and healthcare costs. With us, you build towards a fitter life safely and steadily."
+    },
+    "programs": {
+      "title": "Our Programs",
+      "subtitle": "Click on a program for more information and pricing",
+      "kickstart": {
+        "title": "28-Day Kickstart",
+        "subtitle": "Perfect for beginners",
+        "price": "€600",
+        "period": "one-time",
+        "description": "For beginners or people who want to build up safely. You train in small groups, learn the basics and get guidance from multiple coaches. We build up gradually so your confidence grows.",
+        "included": "Included:",
+        "item1": "2 small group sessions per week",
+        "item2": "1 group class per week",
+        "item3": "InBody scan",
+        "item4": "Personal coaching and nutrition goals",
+        "item5": "Group support"
+      },
+      "group": {
+        "title": "Group Coaching",
+        "subtitle": "max 14 people • coached every class",
+        "description": "With us, you never train alone. Our coaches know your name, help you move safely and ensure each class fits your level. The atmosphere is warm, personal and without egos. You build strength, energy and confidence step by step.",
+        "base": {
+          "title": "Base Membership",
+          "price": "€135",
+          "period": "per month",
+          "item1": "3 group classes per week",
+          "item2": "Goal Review every 90 days",
+          "item3": "Access to workshops & community events",
+          "item4": "Free 10-min physio check",
+          "item5": "Coffee, fruit & showers included"
+        },
+        "pro": {
+          "title": "Pro Membership",
+          "price": "€159",
+          "period": "per month",
+          "item1": "4 group classes per week",
+          "item2": "Includes everything from Base"
+        },
+        "elite": {
+          "title": "Elite Membership",
+          "price": "€169",
+          "period": "per month",
+          "item1": "6 group classes per week",
+          "item2": "Includes everything from Base"
+        },
+        "note": "New with us? During a free Intro we'll see which option suits you."
+      },
+      "small": {
+        "title": "GetShredded",
+        "subtitle": "Small Group / Semi-Private",
+        "description": "Small Group feels like personal training with the energy of a small group. You train at set times with a coach who knows exactly what you need. Perfect for those who want faster results and more personal guidance.",
+        "tier3": {
+          "title": "3x per week",
+          "price": "€450",
+          "period": "per month",
+          "period2": "or €400 (6 months)",
+          "item1": "3 semi-private sessions",
+          "item2": "Personal training plan",
+          "item3": "Fixed spot",
+          "item4": "Includes everything from Base"
+        },
+        "tier2": {
+          "title": "2x per week",
+          "price": "€400",
+          "period": "per month",
+          "item1": "2 semi-private sessions",
+          "item2": "Personal plan",
+          "item3": "Includes 2 group classes per week"
+        },
+        "note": "Our most results-oriented form of coaching."
+      },
+      "unlock": {
+        "title": "Unlock Motion",
+        "subtitle": "Small Group / Semi-Private (UnlockMotion)",
+        "price": "€1575",
+        "period": "12 weeks",
+        "description": "For people with recurring pain or physical limitations. You train for 12 weeks in a small group on mobility, strength and movement quality, with a plan completely tailored to your body."
+      },
+      "bodyApk": {
+        "title": "Body APK",
+        "subtitle": "intake for UnlockMotion — included with UnlockMotion",
+        "price": "€220",
+        "description": "A complete check of your posture, mobility and movements. You discover why you have (or get) complaints and receive a clear action plan."
+      },
+      "pt": {
+        "title": "Personal Training",
+        "subtitle": "Punchcards • 1-on-1 coaching",
+        "description": "For those who want to work 1-on-1 on technique, injury recovery or specific goals. Completely tailored to you, flexible to schedule and ideal for quick progress.",
+        "pt60": {
+          "title": "60 minute PT",
+          "tier1": "5 sessions",
+          "price1": "€450",
+          "tier2": "10 sessions",
+          "price2": "€800"
+        },
+        "pt30": {
+          "title": "30 minute PT",
+          "tier1": "5 sessions",
+          "price1": "€225",
+          "tier2": "10 sessions",
+          "price2": "€400"
+        }
+      },
+      "skill": {
+        "title": "Monthly Private Coaching",
+        "subtitle": "Skill development • monthly",
+        "description": "Each month a private coaching session where you work on technique, strength, mobility or recovery. Simple, clear and super effective for making targeted progress.",
+        "skill1": "Skill 1",
+        "price1": "€90 p/m",
+        "skill2": "Skill 2",
+        "price2": "€175 p/m",
+        "skill4": "Skill 4",
+        "price4": "€370 p/m"
+      },
+      "nutritionKickstart": {
+        "title": "Nutrition Kickstart",
+        "subtitle": "4-week program",
+        "price": "€200",
+        "period": "4 weeks",
+        "description": "Together with your coach, you work for four weeks on simple, achievable nutrition habits. No complicated rules, but clear guidance and daily contact.",
+        "included": "Included:",
+        "item1": "Personal targets",
+        "item2": "Daily accountability",
+        "item3": "InBody scan",
+        "item4": "Group support"
+      },
+      "nutrition": {
+        "title": "Nutrition Membership",
+        "subtitle": "Long-term guidance",
+        "price": "€350",
+        "period": "per month",
+        "description": "For those who want long-term structure on nutrition and lifestyle."
+      },
+      "teens": {
+        "title": "Teens Membership",
+        "subtitle": "For teenagers",
+        "description": "Safe and fun workouts that make teenagers stronger, fitter and more confident.",
+        "tier1": "1x per week",
+        "price1": "€42.50 p/m",
+        "tier2": "2x per week",
+        "price2": "€80 p/m"
+      },
+      "baseWeekend": {
+        "title": "Base Weekend",
+        "subtitle": "2-day training weekend",
+        "price": "€599",
+        "description": "A 2-day training weekend where you learn to move like our coaches train. Practical, educational and perfect for fitness enthusiasts who want to understand more deeply how the body works."
+      },
+      "flex": {
+        "title": "Flex Friday",
+        "subtitle": "Bring a friend",
+        "time": "Every Friday",
+        "schedule": "12:00 and 20:00",
+        "description": "Members may bring a friend during this class. Relaxed, social and the perfect way to introduce someone to CFL."
+      }
+    },
+    "reviews": {
+      "title": "What do our members say?"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Do I need to be fit to start?",
+      "a1": "No, you start at your level. We guide you step by step.",
+      "q2": "Can I pause for vacation or busy times?",
+      "a2": "Yes, just let us know and we'll arrange it.",
+      "q3": "How does payment work?",
+      "a3": "Automatic direct debit. No registration fees. No fine print.",
+      "q4": "What makes CrossFit Leiden different from a regular gym?",
+      "a4": "Small groups, personal coaching, warm community. With us, you don't have to do it alone."
+    },
+    "cta": {
+      "title": "Ready to invest in yourself?",
+      "subtitle": "Schedule your free intro and come meet us. No commitments, just discover if CrossFit Leiden is right for you.",
+      "button": "Schedule Free Intro"
+    }
+  },
   "location": {
     "hero": {
       "title": "Our Location",
