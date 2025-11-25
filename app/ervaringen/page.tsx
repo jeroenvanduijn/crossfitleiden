@@ -35,87 +35,87 @@ export default function Ervaringen() {
   const communityPhotos = [
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-33.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Een moment van rust midden in het avontuur. Coach Sem peddelt over de Lesse tijdens ons jaarlijkse Ardennen-weekend. Buitenlucht, lachen en samen iets nieuws proberen."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-34.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Onze community gaat verder dan de box. Tijdens dit klettersteigweekend in Oostenrijk nam lid Richard ons mee de bergen in. Spannend, veilig en vooral heel mooi."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-35.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Kamp Stoof. Bijna 20 uur samen doorzetten, lachen, vloeken en groeien. Jeffrey nam tien CFL'ers mee op een mentale én fysieke reis die niemand ooit vergeet."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-36.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Coach Rochelle geeft tieners het vertrouwen om te bewegen, te leren en plezier te hebben. Hier nog op onze oude locatie, maar de energie is altijd hetzelfde."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-37.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Coach Sem laat zien dat goed tillen niet moeilijk hoeft te zijn. Stap voor stap, veilig en helder. Zo bouw je kracht waar je de rest van je leven iets aan hebt."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-38.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Trainen bij ons is hard werken, maar vooral veel plezier. Coach Sem lacht vaker dan hij squat, en dat zegt genoeg."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-39.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "In het GetShredded small group programma helpt coach Jeffrey je sterker te squatten dan je ooit dacht. Techniek eerst, gewicht komt daarna."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-40.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Een warm afscheid voor coach Wouter. Onze community viert niet alleen trainingen, maar vooral mensen."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-41.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Coach Jari traint elke week met Brandweer Leiden Zuid zodat zij de stad veilig kunnen houden. Functioneel trainen in het echt."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-42.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Elke les minstens één high five. Vaak meer. Want samen sporten voelt beter dan alleen."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-43.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Tijdens de wallballs staat coach Jeffrey achter je. Voor techniek, voor tempo, maar vooral voor mentale steun."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-44.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Ons coachteam tijdens het jaarlijkse gala. Geen sportkleren, wel dezelfde gezelligheid."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-45.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "High fives verzamelen na elke les. Simpel ritueel, groot effect. Je gaat altijd met een glimlach naar huis."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-46.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Hyrox simulaties zijn het leukste met een buddy. Zweten, lachen en je grenzen verkennen."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-47.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "In 2025 kwalificeerden we ons voor het NK Drakenboot. Een team dat nog nooit gevaren had, maar wel samen alles gaf."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-48.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Je traint nooit alleen. Er is altijd iemand naast je die meedoet, helpt of lacht."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-49.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Coach Max wijst je de weg. Heldere uitleg, rustige energie en altijd aandacht voor jou."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-50.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Moeder en dochter die samen een Hyrox simulatie doen. Zo mooi om te zien wat samen sporten kan doen."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-51.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "De moeder van onze GM Saskia bewijst dat plezier in bewegen geen leeftijd kent. Vooral als er een roeier bij is."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-52.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Samen met je dochter rennen. Kleine momentjes, grote herinneringen. Dit is waar we het voor doen."
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-53.jpg",
-      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+      story: "Huub laat zien hoe je fit en vrolijk ouder wordt. Sterk, nuchter en elke week trouw op de vloer."
     }
   ];
 
