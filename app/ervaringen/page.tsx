@@ -31,7 +31,7 @@ export default function Ervaringen() {
     }
   ];
 
-  // Community photos with stories - All 15 photos
+  // Community photos with stories - All 21 photos
   const communityPhotos = [
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-33.jpg",
@@ -91,6 +91,30 @@ export default function Ervaringen() {
     },
     {
       url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-47.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-48.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-49.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-50.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-51.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-52.jpg",
+      story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
+    },
+    {
+      url: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/ervaringen/hero-background-53.jpg",
       story: "Add a short story here about this moment. 3-5 sentences that capture the energy and spirit of our community."
     }
   ];
