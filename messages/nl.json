@@ -959,5 +959,20 @@
       "title": "Klaar voor jouw eigen verhaal?",
       "button": "Plan een gratis intro"
     }
+  },
+  "popups": {
+    "whatsapp": {
+      "close": "Sluit popup",
+      "title": "Chat met CrossFit Leiden",
+      "description": "Hoi! Leuk dat je contact wilt opnemen. Klik op de knop hieronder om een gesprek te starten via WhatsApp. We helpen je graag verder! 💪",
+      "messageLabel": "Je bericht:",
+      "openButton": "Open WhatsApp",
+      "cancelButton": "Annuleren"
+    },
+    "cta": {
+      "close": "Sluit popup",
+      "title": "Plan je gratis No Sweat Intro",
+      "subtitle": "Het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten.<br/>Na het invullen kun je direct zelf een tijd kiezen die jou past.<br/><strong>Gewoon kennismaken met een kop koffie.</strong>"
+    }
   }
 }

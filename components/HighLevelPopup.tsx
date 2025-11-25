@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function HighLevelPopup() {
+  const t = useTranslations('popups.cta');
+
   useEffect(() => {
     // Load the HighLevel script
     const script = document.createElement('script');
@@ -72,19 +75,18 @@ export default function HighLevelPopup() {
           <button
             className="cfl-popup-close"
             onClick={() => (window as any).closeCFLPopup()}
-            aria-label="Sluit popup"
+            aria-label={t('close')}
           >
             ×
           </button>
 
           {/* Header Section - Improved */}
           <div className="cfl-popup-header">
-            <h3>Plan je gratis No Sweat Intro</h3>
-            <p className="cfl-popup-subtitle">
-              Het is vrijblijvend, duurt 20 minuten en je hoeft niet te sporten.<br/>
-              Na het invullen kun je direct zelf een tijd kiezen die jou past.<br/>
-              <strong>Gewoon kennismaken met een kop koffie.</strong>
-            </p>
+            <h3>{t('title')}</h3>
+            <p
+              className="cfl-popup-subtitle"
+              dangerouslySetInnerHTML={{ __html: t('subtitle') }}
+            />
           </div>
 
           {/* HighLevel Form Iframe */}
