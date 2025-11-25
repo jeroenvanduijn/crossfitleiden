@@ -34,52 +34,56 @@ export default function BlogPost() {
           {/* Title */}
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Why 80% of Our Members Start as Complete Beginners</h1>
 
-          {/* Placeholder for image - user will add later */}
-          <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mb-8 flex items-center justify-center">
-            <span className="text-gray-400 text-lg">Image placeholder</span>
+          {/* Image */}
+          <div className="aspect-video rounded-xl mb-8 overflow-hidden">
+            <img
+              src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-64.jpg"
+              alt="Beginners training at CrossFit Leiden"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none">
-            <p>There's a common myth about CrossFit: that it's only for athletes or people who are already super fit.</p>
+          <div className="prose prose-lg max-w-none space-y-6">
+            <p className="text-lg leading-relaxed">There's a common myth about CrossFit: that it's only for athletes or people who are already super fit.</p>
 
-            <p>Let's clear that up right now. Most people who walk through our doors have never done CrossFit before. Many have never lifted weights. Some haven't exercised in years.</p>
+            <p className="text-lg leading-relaxed">Let's clear that up right now. Most people who walk through our doors have never done CrossFit before. Many have never lifted weights. Some haven't exercised in years.</p>
 
-            <p>And that's completely normal.</p>
+            <p className="text-lg leading-relaxed">And that's completely normal.</p>
 
-            <h2>Our Typical Member</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Our Typical Member</h2>
 
-            <p>The average CrossFit Leiden member is between 35 and 55 years old. They have a job. Many have kids. They're not professional athletes. They're just people who want to feel stronger, healthier, and more confident.</p>
+            <p className="text-lg leading-relaxed">The average CrossFit Leiden member is between 35 and 55 years old. They have a job. Many have kids. They're not professional athletes. They're just people who want to feel stronger, healthier, and more confident.</p>
 
-            <p>They come to us because they're tired of feeling tired. They want more energy. They want to feel good in their body again.</p>
+            <p className="text-lg leading-relaxed">They come to us because they're tired of feeling tired. They want more energy. They want to feel good in their body again.</p>
 
-            <h2>We Scale Every Workout for Your Level</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">We Scale Every Workout for Your Level</h2>
 
-            <p>Here's how it works: every workout can be adjusted to match your fitness level. We call this "scaling."</p>
+            <p className="text-lg leading-relaxed">Here's how it works: every workout can be adjusted to match your fitness level. We call this "scaling."</p>
 
-            <p>If the workout says 20 push-ups and you can't do 20 yet, you do them on your knees. Or you do 10 instead of 20. Or you do them against a box.</p>
+            <p className="text-lg leading-relaxed">If the workout says 20 push-ups and you can't do 20 yet, you do them on your knees. Or you do 10 instead of 20. Or you do them against a box.</p>
 
-            <p>If the workout includes pull-ups and you've never done one, you use a resistance band to help you. Or you do ring rows instead.</p>
+            <p className="text-lg leading-relaxed">If the workout includes pull-ups and you've never done one, you use a resistance band to help you. Or you do ring rows instead.</p>
 
-            <p>Your coach will show you the right version for you. You're never expected to do something you're not ready for.</p>
+            <p className="text-lg leading-relaxed">Your coach will show you the right version for you. You're never expected to do something you're not ready for.</p>
 
-            <h2>Small Wins Add Up</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Small Wins Add Up</h2>
 
-            <p>In your first month, you might learn how to squat properly. That's a win.</p>
+            <p className="text-lg leading-relaxed">In your first month, you might learn how to squat properly. That's a win.</p>
 
-            <p>In month two, you might do your first push-up without using your knees. Another win.</p>
+            <p className="text-lg leading-relaxed">In month two, you might do your first push-up without using your knees. Another win.</p>
 
-            <p>In month three, you might lift a barbell for the first time. These small steps build your strength and confidence over time.</p>
+            <p className="text-lg leading-relaxed">In month three, you might lift a barbell for the first time. These small steps build your strength and confidence over time.</p>
 
-            <p>You don't need to be the strongest person in the room. You just need to show up and do your best.</p>
+            <p className="text-lg leading-relaxed">You don't need to be the strongest person in the room. You just need to show up and do your best.</p>
 
-            <h2>You Don't Need to Be Fit to Start</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">You Don't Need to Be Fit to Start</h2>
 
-            <p>Here's the truth: you don't need to be fit to start CrossFit. You get fit by starting.</p>
+            <p className="text-lg leading-relaxed">Here's the truth: you don't need to be fit to start CrossFit. You get fit by starting.</p>
 
-            <p>Every single person who is strong and confident now was once a beginner. They started exactly where you are. And they got better by showing up, learning, and taking it step by step.</p>
+            <p className="text-lg leading-relaxed">Every single person who is strong and confident now was once a beginner. They started exactly where you are. And they got better by showing up, learning, and taking it step by step.</p>
 
-            <p><strong>Ready to take your first step? Schedule a free intro and see how we help beginners build strength safely.</strong></p>
+            <p className="text-lg leading-relaxed"><strong>Ready to take your first step? Schedule a free intro and see how we help beginners build strength safely.</strong></p>
           </div>
 
           {/* CTA */}

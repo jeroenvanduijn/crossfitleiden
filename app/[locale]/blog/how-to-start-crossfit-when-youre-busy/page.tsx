@@ -34,42 +34,46 @@ export default function BlogPost() {
           {/* Title */}
           <h1 className="text-4xl md:text-5xl font-bold mb-6">How to Start CrossFit When You're Busy With Work and Kids</h1>
 
-          {/* Placeholder for image - user will add later */}
-          <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mb-8 flex items-center justify-center">
-            <span className="text-gray-400 text-lg">Image placeholder</span>
+          {/* Image */}
+          <div className="aspect-video rounded-xl mb-8 overflow-hidden">
+            <img
+              src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-61.jpg"
+              alt="Busy parent training at CrossFit Leiden"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none">
-            <p>If you have a full-time job and kids at home, you probably feel like there's no time for the gym. We hear this a lot. Many parents think they're too busy or too tired to start training.</p>
+          <div className="prose prose-lg max-w-none space-y-6">
+            <p className="text-lg leading-relaxed">If you have a full-time job and kids at home, you probably feel like there's no time for the gym. We hear this a lot. Many parents think they're too busy or too tired to start training.</p>
 
-            <p>But here's the truth: you don't need hours of free time to get stronger and healthier. You just need one hour, two or three times a week.</p>
+            <p className="text-lg leading-relaxed">But here's the truth: you don't need hours of free time to get stronger and healthier. You just need one hour, two or three times a week.</p>
 
-            <h2>Classes Are Only 60 Minutes</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Classes Are Only 60 Minutes</h2>
 
-            <p>Every class at CrossFit Leiden takes exactly one hour. You come in, warm up, learn the movements, do the workout, and you're done. No long gym sessions. No wandering around wondering what to do next.</p>
+            <p className="text-lg leading-relaxed">Every class at CrossFit Leiden takes exactly one hour. You come in, warm up, learn the movements, do the workout, and you're done. No long gym sessions. No wandering around wondering what to do next.</p>
 
-            <p>We also offer early morning classes (6:00 AM) and evening classes (up to 8:00 PM), so you can train before the kids wake up or after bedtime.</p>
+            <p className="text-lg leading-relaxed">We also offer early morning classes (6:00 AM) and evening classes (up to 8:00 PM), so you can train before the kids wake up or after bedtime.</p>
 
-            <h2>You're Not Alone</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">You're Not Alone</h2>
 
-            <p>Most of our members are between 35 and 45 years old. They have jobs. They have families. They understand what it's like to juggle everything.</p>
+            <p className="text-lg leading-relaxed">Most of our members are between 35 and 45 years old. They have jobs. They have families. They understand what it's like to juggle everything.</p>
 
-            <p>You'll be training next to other parents and professionals who are in the same phase of life. That makes it easier to stay motivated and keep going.</p>
+            <p className="text-lg leading-relaxed">You'll be training next to other parents and professionals who are in the same phase of life. That makes it easier to stay motivated and keep going.</p>
 
-            <h2>More Energy for Your Family</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">More Energy for Your Family</h2>
 
-            <p>Here's what happens when you start training regularly: you get more energy, not less. You sleep better. Your mood improves. You feel stronger when you play with your kids or carry groceries.</p>
+            <p className="text-lg leading-relaxed">Here's what happens when you start training regularly: you get more energy, not less. You sleep better. Your mood improves. You feel stronger when you play with your kids or carry groceries.</p>
 
-            <p>Training doesn't take time away from your family. It gives you more energy to enjoy your time with them.</p>
+            <p className="text-lg leading-relaxed">Training doesn't take time away from your family. It gives you more energy to enjoy your time with them.</p>
 
-            <h2>Personal Coaching in Every Class</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Personal Coaching in Every Class</h2>
 
-            <p>You never train alone. Every class has a coach who watches you, helps you with technique, and makes sure the workout fits your level. If you need to go lighter or take a break, that's totally fine.</p>
+            <p className="text-lg leading-relaxed">You never train alone. Every class has a coach who watches you, helps you with technique, and makes sure the workout fits your level. If you need to go lighter or take a break, that's totally fine.</p>
 
-            <p>We know you're busy. We know you're tired. That's exactly why we're here to help you take that first step.</p>
+            <p className="text-lg leading-relaxed">We know you're busy. We know you're tired. That's exactly why we're here to help you take that first step.</p>
 
-            <p><strong>Ready to start? Schedule a free intro and see how we can help you get stronger, even with a busy life.</strong></p>
+            <p className="text-lg leading-relaxed mt-6"><strong>Ready to start? Schedule a free intro and see how we can help you get stronger, even with a busy life.</strong></p>
           </div>
 
           {/* CTA */}

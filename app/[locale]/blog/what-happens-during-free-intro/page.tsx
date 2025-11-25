@@ -34,54 +34,58 @@ export default function BlogPost() {
           {/* Title */}
           <h1 className="text-4xl md:text-5xl font-bold mb-6">What Really Happens During a Free Intro (Step-by-Step)</h1>
 
-          {/* Placeholder for image - user will add later */}
-          <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mb-8 flex items-center justify-center">
-            <span className="text-gray-400 text-lg">Image placeholder</span>
+          {/* Image */}
+          <div className="aspect-video rounded-xl mb-8 overflow-hidden">
+            <img
+              src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-63.jpg"
+              alt="Free intro at CrossFit Leiden"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none">
-            <p>Thinking about visiting CrossFit Leiden for the first time? Not sure what to expect?</p>
+          <div className="prose prose-lg max-w-none space-y-6">
+            <p className="text-lg leading-relaxed">Thinking about visiting CrossFit Leiden for the first time? Not sure what to expect?</p>
 
-            <p>Let's walk through exactly what happens during your free intro, so you know there are no surprises.</p>
+            <p className="text-lg leading-relaxed">Let's walk through exactly what happens during your free intro, so you know there are no surprises.</p>
 
-            <h2>First Things First: No Workout</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">First Things First: No Workout</h2>
 
-            <p>You won't do a workout during your intro. This is not a test. We're not here to see how fit you are. We just want to meet you, show you around, and answer your questions.</p>
+            <p className="text-lg leading-relaxed">You won't do a workout during your intro. This is not a test. We're not here to see how fit you are. We just want to meet you, show you around, and answer your questions.</p>
 
-            <p>The intro takes about 20 to 30 minutes. You can wear normal clothes. No need for workout gear.</p>
+            <p className="text-lg leading-relaxed">The intro takes about 20 to 30 minutes. You can wear normal clothes. No need for workout gear.</p>
 
-            <h2>Step 1: Coffee and a Warm Welcome</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Step 1: Coffee and a Warm Welcome</h2>
 
-            <p>When you arrive, we'll offer you a coffee or tea. We'll sit down together and have a relaxed chat.</p>
+            <p className="text-lg leading-relaxed">When you arrive, we'll offer you a coffee or tea. We'll sit down together and have a relaxed chat.</p>
 
-            <p>This is your chance to tell us a bit about yourself. Why are you interested in CrossFit? What are your goals? Do you have any concerns or past injuries we should know about?</p>
+            <p className="text-lg leading-relaxed">This is your chance to tell us a bit about yourself. Why are you interested in CrossFit? What are your goals? Do you have any concerns or past injuries we should know about?</p>
 
-            <p>We listen. We don't push. We just want to understand what you're looking for.</p>
+            <p className="text-lg leading-relaxed">We listen. We don't push. We just want to understand what you're looking for.</p>
 
-            <h2>Step 2: We Show You the Gym</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Step 2: We Show You the Gym</h2>
 
-            <p>Next, we'll walk you through the gym. You'll see where we train, what equipment we use, and how a typical class works.</p>
+            <p className="text-lg leading-relaxed">Next, we'll walk you through the gym. You'll see where we train, what equipment we use, and how a typical class works.</p>
 
-            <p>If there's a class happening, you can watch for a few minutes and see how it feels. You'll notice that people of all ages and fitness levels train together.</p>
+            <p className="text-lg leading-relaxed">If there's a class happening, you can watch for a few minutes and see how it feels. You'll notice that people of all ages and fitness levels train together.</p>
 
-            <h2>Step 3: We Explain Kickstart</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Step 3: We Explain Kickstart</h2>
 
-            <p>Kickstart is our beginner program. It's a series of small group classes where you learn all the basic movements step by step.</p>
+            <p className="text-lg leading-relaxed">Kickstart is our beginner program. It's a series of small group classes where you learn all the basic movements step by step.</p>
 
-            <p>We'll explain how it works, how long it takes, and what you'll learn. If you have questions, we'll answer them.</p>
+            <p className="text-lg leading-relaxed">We'll explain how it works, how long it takes, and what you'll learn. If you have questions, we'll answer them.</p>
 
-            <h2>Step 4: No Pressure, No Contract</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Step 4: No Pressure, No Contract</h2>
 
-            <p>At the end of the intro, there's no pressure to sign up right away. You can go home, think about it, talk to your partner, and decide when you're ready.</p>
+            <p className="text-lg leading-relaxed">At the end of the intro, there's no pressure to sign up right away. You can go home, think about it, talk to your partner, and decide when you're ready.</p>
 
-            <p>If you want to start, great. If you need more time, that's fine too. We're here when you're ready.</p>
+            <p className="text-lg leading-relaxed">If you want to start, great. If you need more time, that's fine too. We're here when you're ready.</p>
 
-            <h2>That's It</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">That's It</h2>
 
-            <p>The intro is calm, friendly, and stress-free. It's just a conversation and a tour. No workout. No pressure. Just information and a chance to see if CrossFit Leiden feels right for you.</p>
+            <p className="text-lg leading-relaxed">The intro is calm, friendly, and stress-free. It's just a conversation and a tour. No workout. No pressure. Just information and a chance to see if CrossFit Leiden feels right for you.</p>
 
-            <p><strong>Curious? Book your free intro and come meet us. We'd love to show you around.</strong></p>
+            <p className="text-lg leading-relaxed"><strong>Curious? Book your free intro and come meet us. We'd love to show you around.</strong></p>
           </div>
 
           {/* CTA */}

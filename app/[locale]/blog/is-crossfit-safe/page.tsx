@@ -34,48 +34,52 @@ export default function BlogPost() {
           {/* Title */}
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Is CrossFit Safe? Here's How We Make It Safe at CrossFit Leiden</h1>
 
-          {/* Placeholder for image - user will add later */}
-          <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mb-8 flex items-center justify-center">
-            <span className="text-gray-400 text-lg">Image placeholder</span>
+          {/* Image */}
+          <div className="aspect-video rounded-xl mb-8 overflow-hidden">
+            <img
+              src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-62.jpg"
+              alt="Safe training with coaching at CrossFit Leiden"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none">
-            <p>One of the biggest worries people have before starting CrossFit is: "Will I get injured?"</p>
+          <div className="prose prose-lg max-w-none space-y-6">
+            <p className="text-lg leading-relaxed">One of the biggest worries people have before starting CrossFit is: "Will I get injured?"</p>
 
-            <p>It's a fair question. You've probably seen videos of people lifting heavy weights or doing complicated movements. And if you've never done this before, it can look a bit scary.</p>
+            <p className="text-lg leading-relaxed">It's a fair question. You've probably seen videos of people lifting heavy weights or doing complicated movements. And if you've never done this before, it can look a bit scary.</p>
 
-            <p>So let's talk about how we keep you safe at CrossFit Leiden.</p>
+            <p className="text-lg leading-relaxed">So let's talk about how we keep you safe at CrossFit Leiden.</p>
 
-            <h2>Technique Comes First, Always</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Technique Comes First, Always</h2>
 
-            <p>Before you add any weight, you learn the movement. We start with a PVC pipe or an empty barbell. We teach you the right technique step by step.</p>
+            <p className="text-lg leading-relaxed">Before you add any weight, you learn the movement. We start with a PVC pipe or an empty barbell. We teach you the right technique step by step.</p>
 
-            <p>Only when your coach sees that you can do the movement safely, we add a little bit of weight. And we do this slowly, over weeks and months.</p>
+            <p className="text-lg leading-relaxed">Only when your coach sees that you can do the movement safely, we add a little bit of weight. And we do this slowly, over weeks and months.</p>
 
-            <h2>Coaches Are Always Watching You</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Coaches Are Always Watching You</h2>
 
-            <p>Every class has a professional coach. They don't just explain the workout and walk away. They stay with you during the entire class.</p>
+            <p className="text-lg leading-relaxed">Every class has a professional coach. They don't just explain the workout and walk away. They stay with you during the entire class.</p>
 
-            <p>They watch your form. They correct small mistakes before they become big problems. They make sure you're using the right weight for your level.</p>
+            <p className="text-lg leading-relaxed">They watch your form. They correct small mistakes before they become big problems. They make sure you're using the right weight for your level.</p>
 
-            <h2>Most Members Start With Zero Experience</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Most Members Start With Zero Experience</h2>
 
-            <p>About 80% of our members had no CrossFit or weightlifting experience when they started. Some had never been to a gym before.</p>
+            <p className="text-lg leading-relaxed">About 80% of our members had no CrossFit or weightlifting experience when they started. Some had never been to a gym before.</p>
 
-            <p>They all started light, learned the basics, and built strength over time. That's the normal path. You don't need to be fit or strong to start. You get fit and strong by starting.</p>
+            <p className="text-lg leading-relaxed">They all started light, learned the basics, and built strength over time. That's the normal path. You don't need to be fit or strong to start. You get fit and strong by starting.</p>
 
-            <h2>We Have a Physio in the Gym</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">We Have a Physio in the Gym</h2>
 
-            <p>CrossFit Leiden works closely with Fysiofabriek, a professional physiotherapy practice with a treatment room inside our gym.</p>
+            <p className="text-lg leading-relaxed">CrossFit Leiden works closely with Fysiofabriek, a professional physiotherapy practice with a treatment room inside our gym.</p>
 
-            <p>If you ever have a small injury or discomfort, you can get quick help without going to another location. Our coaches and physio work together to keep you safe and healthy.</p>
+            <p className="text-lg leading-relaxed">If you ever have a small injury or discomfort, you can get quick help without going to another location. Our coaches and physio work together to keep you safe and healthy.</p>
 
-            <h2>Your Safety Is Our Priority</h2>
+            <h2 className="text-3xl font-bold mt-8 mb-4">Your Safety Is Our Priority</h2>
 
-            <p>We don't push you to do things you're not ready for. We don't care about how much weight you lift on day one. We care about keeping you healthy, strong, and injury-free for years to come.</p>
+            <p className="text-lg leading-relaxed">We don't push you to do things you're not ready for. We don't care about how much weight you lift on day one. We care about keeping you healthy, strong, and injury-free for years to come.</p>
 
-            <p><strong>Want to see how we work? Schedule a free intro and ask us all your questions about safety and training.</strong></p>
+            <p className="text-lg leading-relaxed mt-6"><strong>Want to see how we work? Schedule a free intro and ask us all your questions about safety and training.</strong></p>
           </div>
 
           {/* CTA */}
