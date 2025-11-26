@@ -9,7 +9,11 @@ export default createMiddleware({
   defaultLocale,
 
   // Always use locale prefix (e.g., /nl, /en)
-  localePrefix: 'always'
+  localePrefix: 'always',
+
+  // Enable automatic locale detection based on browser language
+  // Dutch visitors will see /nl, others (with English browser) see /en
+  localeDetection: true
 });
 
 export const config = {
