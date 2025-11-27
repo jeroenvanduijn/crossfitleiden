@@ -197,7 +197,7 @@ export default async function Teens() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">📅 Wanneer?</h3>
-                <p className="text-gray-700 mb-2">Woensdag<br/>Zaterdag 11:00</p>
+                <p className="text-gray-700 mb-2">Woensdag 17:00<br/>Zaterdag 10:00</p>
                 <p className="text-sm text-gray-600">
                   Kies zelf hoe vaak je komt (1x of 2x per week)
                 </p>

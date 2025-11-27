@@ -303,7 +303,6 @@
         "included": "Inclusief:",
         "item1": "2 small group sessies per week",
         "item2": "1 groepsles per week",
-        "item3": "InBody scan",
         "item4": "Persoonlijke coaching en voedingsdoelen",
         "item5": "Groepssupport"
       },
@@ -413,7 +412,6 @@
         "included": "Inclusief:",
         "item1": "Persoonlijke targets",
         "item2": "Dagelijkse accountability",
-        "item3": "InBody scan",
         "item4": "Groepssupport"
       },
       "nutrition": {
@@ -698,7 +696,7 @@
       "title": "CrossFit Groepslessen",
       "description": "De basis en favoriet van 90% van onze leden. Train samen in een groep waar iedereen elkaar aanmoedigt. Perfect voor beginners én gevorderden!",
       "feature1": "60 minuten per les, alles inbegrepen",
-      "feature2": "Max 12 personen - persoonlijke aandacht",
+      "feature2": "Max 14 personen - persoonlijke aandacht",
       "feature3": "Volledig aangepast op jouw niveau",
       "feature4": "Elke dag meerdere tijden beschikbaar",
       "link": "Meer over Groepslessen",
@@ -763,7 +761,7 @@
     "whyUs": {
       "title": "Waarom CrossFit Leiden?",
       "subtitle": "Wat maakt onze trainingen anders dan een reguliere sportschool?",
-      "feature1": "<strong>Kleine groepen (max 12 personen)</strong> – Geen massale gyms waar je op jezelf bent. Hier krijg je persoonlijke aandacht.",
+      "feature1": "<strong>Kleine groepen (max 14 personen)</strong> – Geen massale gyms waar je op jezelf bent. Hier krijg je persoonlijke aandacht.",
       "feature2": "<strong>Professionele coaching</strong> – Elke les wordt begeleid door gecertificeerde coaches die je techniek verbeteren en motiveren.",
       "feature3": "<strong>Functionele bewegingen</strong> – We trainen bewegingen die je ook in het dagelijks leven helpen (tillen, bukken, dragen, rennen).",
       "feature4": "<strong>Variatie</strong> – Elke dag is anders. Je verveelt je nooit en je lichaam blijft verrast.",
@@ -863,12 +861,12 @@
     "selector": {
       "groupClasses": {
         "title": "Groepslessen",
-        "subtitle": "Alle niveaus • Max 12 personen • 60 minuten",
+        "subtitle": "Alle niveaus • Max 14 personen • 60 minuten",
         "badge": "Actief rooster ✓"
       },
       "smallGroup": {
         "title": "Small Group",
-        "subtitle": "2-4 personen • Persoonlijke aandacht • Op maat",
+        "subtitle": "Max 5 personen • Persoonlijke aandacht • Op maat",
         "badge": "Actief rooster ✓"
       }
     },
@@ -880,7 +878,7 @@
       },
       "tip2": {
         "title": "📱 Moet ik me aanmelden?",
-        "text": "Ja, via onze app of website. Zo kunnen we zorgen dat de groep niet te groot wordt (max 12 personen)."
+        "text": "Ja, via onze app of website. Zo kunnen we zorgen dat de groep niet te groot wordt (max 14 personen)."
       },
       "tip3": {
         "title": "❓ Welke les is het beste voor beginners?",

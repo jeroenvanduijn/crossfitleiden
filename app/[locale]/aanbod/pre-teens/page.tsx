@@ -290,7 +290,7 @@ export default async function PreTeens() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-verdigris/10 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">📅 Wanneer?</h3>
-                <p className="text-gray-700 mb-2">Woensdag 16:00</p>
+                <p className="text-gray-700 mb-2">Woensdag 15:00</p>
                 <p className="text-sm text-gray-600">
                   1 training per week
                 </p>

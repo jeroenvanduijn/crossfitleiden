@@ -303,7 +303,6 @@
         "included": "Included:",
         "item1": "2 small group sessions per week",
         "item2": "1 group class per week",
-        "item3": "InBody scan",
         "item4": "Personal coaching and nutrition goals",
         "item5": "Group support"
       },
@@ -413,7 +412,6 @@
         "included": "Included:",
         "item1": "Personal targets",
         "item2": "Daily accountability",
-        "item3": "InBody scan",
         "item4": "Group support"
       },
       "nutrition": {
@@ -698,7 +696,7 @@
       "title": "CrossFit Group Classes",
       "description": "The foundation and favorite of 90% of our members. Train together in a group where everyone encourages each other. Perfect for beginners and advanced!",
       "feature1": "60 minutes per class, everything included",
-      "feature2": "Max 12 people - personal attention",
+      "feature2": "Max 14 people - personal attention",
       "feature3": "Fully adapted to your level",
       "feature4": "Multiple times available every day",
       "link": "More about Group Classes",
@@ -763,7 +761,7 @@
     "whyUs": {
       "title": "Why CrossFit Leiden?",
       "subtitle": "What makes our training different from a regular gym?",
-      "feature1": "<strong>Small groups (max 12 people)</strong> – No massive gyms where you're on your own. Here you get personal attention.",
+      "feature1": "<strong>Small groups (max 14 people)</strong> – No massive gyms where you're on your own. Here you get personal attention.",
       "feature2": "<strong>Professional coaching</strong> – Every class is led by certified coaches who improve your technique and motivate you.",
       "feature3": "<strong>Functional movements</strong> – We train movements that also help you in daily life (lifting, bending, carrying, running).",
       "feature4": "<strong>Variety</strong> – Every day is different. You never get bored and your body stays challenged.",
@@ -863,7 +861,7 @@
     "selector": {
       "groupClasses": {
         "title": "Group Classes",
-        "subtitle": "All levels • Max 12 people • 60 minutes",
+        "subtitle": "All levels • Max 14 people • 60 minutes",
         "badge": "Active schedule ✓"
       },
       "smallGroup": {
@@ -880,7 +878,7 @@
       },
       "tip2": {
         "title": "📱 Do I need to sign up?",
-        "text": "Yes, via our app or website. This way we can ensure the group doesn't get too big (max 12 people)."
+        "text": "Yes, via our app or website. This way we can ensure the group doesn't get too big (max 14 people)."
       },
       "tip3": {
         "title": "❓ Which class is best for beginners?",
