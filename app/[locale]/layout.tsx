@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { Analytics } from '@vercel/analytics/next';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
@@ -55,6 +56,7 @@ export default async function LocaleLayout({
           <CookieConsent />
         </NextIntlClientProvider>
         <GoogleAnalytics gaId="G-JPD4QBBYZ3" />
+        <Analytics />
       </body>
     </html>
   );
