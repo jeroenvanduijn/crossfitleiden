@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import { useLocale } from 'next-intl';
+import { track } from '@vercel/analytics';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 export default function Kickstart() {
   const locale = useLocale();
   // Handler for opening the intro popup
   const handlePopupClick = () => {
+    track('Kickstart Page CTA Click');
     if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
       (window as any).openCFLPopup();
     }

@@ -1,12 +1,14 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
+import { track } from '@vercel/analytics';
 
 export default function Contact() {
   const t = useTranslations('contact');
 
   const handlePopupClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    track('Contact Page CTA Click');
     if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
       (window as any).openCFLPopup();
     }

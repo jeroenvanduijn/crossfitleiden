@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
+import { track } from '@vercel/analytics';
 
 export default function KickstartPromoPopup() {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,6 +36,7 @@ export default function KickstartPromoPopup() {
   };
 
   const handleCTA = () => {
+    track('Kickstart Promo Popup CTA', { locale });
     setIsVisible(false);
     // Trigger the intro booking popup
     if (typeof window !== 'undefined' && (window as any).openCFLPopup) {

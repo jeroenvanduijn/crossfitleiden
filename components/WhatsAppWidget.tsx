@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from '@vercel/analytics';
 import WhatsAppPopup from "./WhatsAppPopup";
 
 export default function WhatsAppWidget() {
@@ -8,10 +9,15 @@ export default function WhatsAppWidget() {
   const phoneNumber = "3197010258140"; // WhatsApp format: country code + number
   const message = "Hallo! Ik heb een vraag over CrossFit Leiden.";
 
+  const handleClick = () => {
+    track('WhatsApp Widget Click');
+    setIsPopupOpen(true);
+  };
+
   return (
     <>
       <button
-        onClick={() => setIsPopupOpen(true)}
+        onClick={handleClick}
         className="fixed bottom-6 right-6 z-50 group"
         aria-label="Chat via WhatsApp"
       >

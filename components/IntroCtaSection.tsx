@@ -1,5 +1,7 @@
 "use client";
 
+import { track } from '@vercel/analytics';
+
 /**
  * IntroCtaSection - Herbruikbare CTA sectie voor gratis intro
  *
@@ -27,6 +29,7 @@ export default function IntroCtaSection({
   // Handler voor opening van de intro popup
   // De popup wordt gedefinieerd in HighLevelPopup component
   const handleClick = () => {
+    track('Intro CTA Section Click', { title, buttonLabel });
     if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
       (window as any).openCFLPopup();
     }

@@ -1,5 +1,7 @@
 "use client";
 
+import { track } from '@vercel/analytics';
+
 interface CTAButtonProps {
   children: React.ReactNode;
   className?: string;
@@ -9,6 +11,7 @@ interface CTAButtonProps {
 export default function CTAButton({ children, className = '', variant = 'white-bg' }: CTAButtonProps) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    track('CTA Button Click', { variant, location: 'CTAButton Component' });
     if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
       (window as any).openCFLPopup();
     }
