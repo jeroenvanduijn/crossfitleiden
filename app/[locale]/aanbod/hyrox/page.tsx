@@ -174,13 +174,13 @@ export default async function HYROXPage() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">HYROX in Actie</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78].map((num) => (
               <div key={num} className="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                 <img
                   src={`https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/hyrox/hero-background-${num}.jpg`}
                   alt={`HYROX training bij CrossFit Leiden ${num - 66}`}
-                  className="w-full h-64 object-cover"
+                  className="w-full aspect-[9/16] object-cover"
                   loading="lazy"
                 />
               </div>
