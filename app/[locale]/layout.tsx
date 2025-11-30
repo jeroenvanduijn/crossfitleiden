@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import CookieConsent from "@/components/CookieConsent";
+import KickstartPromoPopup from "@/components/KickstartPromoPopup";
 
 export const metadata: Metadata = {
   title: "CrossFit Leiden - Everyday people, exceptionally strong",
@@ -54,6 +55,7 @@ export default async function LocaleLayout({
           <Footer />
           <WhatsAppWidget />
           <CookieConsent />
+          <KickstartPromoPopup />
         </NextIntlClientProvider>
         <GoogleAnalytics gaId="G-JPD4QBBYZ3" />
         <Analytics />
