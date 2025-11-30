@@ -10,14 +10,14 @@ export default function LocatiePage() {
   const t = useTranslations('location');
   const locale = useLocale();
 
-  // Genereer foto URLs van hero-background-07.jpg t/m hero-background-28.jpg (29 uitgesloten)
+  // Genereer foto URLs van hero-background-28.jpg t/m hero-background-07.jpg (omgekeerde volgorde)
   const galleryImages = Array.from({ length: 22 }, (_, i) => {
     const number = i + 7;
     return {
       url: `https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/faciliteit/hero-background-${String(number).padStart(2, '0')}.jpg`,
       number: number
     };
-  });
+  }).reverse();
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
