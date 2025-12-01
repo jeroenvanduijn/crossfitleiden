@@ -9,6 +9,14 @@ export default function Blog() {
   // Blog posts
   const blogPosts = [
     {
+      slug: "more-training-is-not-always-better",
+      title: "More training is not always better: supercompensation explained",
+      excerpt: "Training 6-7 days per week? Learn why more is not always better and how supercompensation works.",
+      date: "1 Dec 2025",
+      category: "Training Tips",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-79.jpg",
+    },
+    {
       slug: "how-to-start-crossfit-when-youre-busy",
       title: "How to Start CrossFit When You're Busy With Work and Kids",
       excerpt: "You don't need hours of free time to get stronger. Just one hour, two or three times a week.",
