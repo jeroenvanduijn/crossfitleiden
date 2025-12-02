@@ -208,7 +208,7 @@ export default function LeidsWintertriatlon() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-cinnabar mt-1">✓</span>
-                    <span><strong>Bike &amp; Row:</strong> Extra cardio en beenkracht voor het fietsonderdeel</span>
+                    <span><strong>Running Classes:</strong> Extra techniek, loopscholing en duurvermogen voor het hardlooponderdeel</span>
                   </li>
                 </ul>
               </div>
@@ -246,54 +246,6 @@ export default function LeidsWintertriatlon() {
         </div>
       </section>
 
-      {/* Community Quotes */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Wat zeggen leden?</h2>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="flex items-center mb-4">
-                <div className="text-4xl mr-3">👨</div>
-                <div>
-                  <p className="font-bold">Lars, 34</p>
-                  <p className="text-sm text-gray-600">Member sinds 2023</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "De wintertriatlon was mijn eerste 'echte' evenement buiten CrossFit. Het voelde zo goed om te zien dat al die training zich uitbetaalt in het echte leven. Aanrader!"
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="flex items-center mb-4">
-                <div className="text-4xl mr-3">👩</div>
-                <div>
-                  <p className="font-bold">Sophie, 42</p>
-                  <p className="text-sm text-gray-600">Mother of two</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "Ik had nog nooit geschaatst, maar durfde het toch aan. De sfeer was super relaxed. Niet iedereen is daar om te winnen. Gewoon finish en geniet."
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="flex items-center mb-4">
-                <div className="text-4xl mr-3">👨</div>
-                <div>
-                  <p className="font-bold">Tom, 38</p>
-                  <p className="text-sm text-gray-600">HYROX athlete</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "Als je HYROX leuk vindt, moet je dit echt proberen. Het is een totaal andere uitdaging. Schaatsen is echt killer voor je benen!"
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="section-padding bg-white">
         <div className="container-custom">
@@ -307,8 +259,7 @@ export default function LeidsWintertriatlon() {
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
                 </summary>
                 <p className="text-gray-700 mt-4">
-                  Nee, maar het helpt wel. Als je nog nooit geschaatst hebt, ga dan een paar keer oefenen voor het evenement.
-                  De schaatshal in Leiden is open voor publiek, dus je kunt er alvast wennen.
+                  Je hoeft geen ervaren schaatser te zijn om mee te doen, zeker niet op de kortere afstanden. Maar een beetje kunnen schaatsen helpt wel. De Schaatshal De Vliet is open voor publiek, dus je kunt daar alvast oefenen. Ze bieden ook schaatslessen aan. CrossFit Leiden geeft geen schaatslessen.
                 </p>
               </details>
 
