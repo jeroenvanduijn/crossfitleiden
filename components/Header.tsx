@@ -49,6 +49,7 @@ export default function Header() {
       name: t('events'),
       href: "#",
       dropdown: [
+        { name: t('wintertriatlon'), href: `/${locale}/events/leidse-wintertriatlon` },
         { name: t('hyroxSimulation'), href: `/${locale}/events/hyrox-simulation` },
       ],
     },
