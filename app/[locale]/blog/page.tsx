@@ -9,6 +9,14 @@ export default function Blog() {
   // Blog posts
   const blogPosts = [
     {
+      slug: "no-sleeping-members",
+      title: "No Sleeping Members: Why Your Membership Should Work For You",
+      excerpt: "We're not here to collect monthly fees from people who don't show up. Our goal is to help you actually use your membership.",
+      date: "3 Dec 2025",
+      category: "Gym Philosophy",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-80.jpg",
+    },
+    {
       slug: "more-training-is-not-always-better",
       title: "More training is not always better: supercompensation explained",
       excerpt: "Training 6-7 days per week? Learn why more is not always better and how supercompensation works.",
@@ -58,7 +66,7 @@ export default function Blog() {
     },
   ];
 
-  const categories = ["All", "Training Tips", "Community", "Getting Started"];
+  const categories = ["All", "Training Tips", "Community", "Getting Started", "Gym Philosophy"];
 
   return (
     <>
