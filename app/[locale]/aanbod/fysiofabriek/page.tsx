@@ -152,28 +152,63 @@ export default async function FysiofabriekPage() {
 
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Afspraak maken</h3>
-              <p className="text-gray-700 mb-6">
-                Je kunt eenvoudig een afspraak maken via de website van Fysiofabriek.
-              </p>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-verdigris text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  1
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Afspraak maken</h3>
+                  <p className="text-gray-700 mb-6">
+                    Je kunt eenvoudig een afspraak maken via de website van Fysiofabriek.
+                  </p>
 
-              <a
-                href="https://fysiofabriek.nl/fysiotherapie-leiden/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-verdigris text-white px-6 py-3 rounded-lg font-bold hover:bg-verdigris/90 transition-all shadow-md"
-              >
-                Maak een afspraak
-              </a>
+                  <a
+                    href="https://fysiofabriek.nl/fysiotherapie-leiden/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-verdigris text-white px-6 py-3 rounded-lg font-bold hover:bg-verdigris/90 transition-all shadow-md"
+                  >
+                    Maak een afspraak
+                  </a>
 
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-gray-700 mb-2">
-                  <strong>Wil je mailen?</strong><br />
-                  Dat kan via: <a href="mailto:leiden@fysiofabriek.nl" className="text-verdigris hover:underline">leiden@fysiofabriek.nl</a>
-                </p>
-                <p className="text-gray-700">
-                  <strong>Bellen kan op:</strong> <a href="tel:0647679822" className="text-verdigris hover:underline">06 47 67 98 22</a>
-                </p>
+                  <div className="mt-6 pt-6 border-t border-gray-200">
+                    <p className="text-gray-700 mb-2">
+                      <strong>Wil je mailen?</strong><br />
+                      Dat kan via: <a href="mailto:leiden@fysiofabriek.nl" className="text-verdigris hover:underline">leiden@fysiofabriek.nl</a>
+                    </p>
+                    <p className="text-gray-700">
+                      <strong>Bellen kan op:</strong> <a href="tel:0647679822" className="text-verdigris hover:underline">06 47 67 98 22</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-verdigris text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  2
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Intake & Behandeling</h3>
+                  <p className="text-gray-700">
+                    Uitgebreide intake, behandeling en advies in de praktijk binnen CrossFit Leiden. Persoonlijk behandelplan afgestemd op jouw situatie.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-verdigris text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  3
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Afstemming met Coaches</h3>
+                  <p className="text-gray-700">
+                    Fysio en coaches stemmen af over je training. Je blijft veilig in beweging terwijl je herstelt.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
