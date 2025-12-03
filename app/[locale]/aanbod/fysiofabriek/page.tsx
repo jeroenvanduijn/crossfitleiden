@@ -27,14 +27,16 @@ export default async function FysiofabriekPage() {
           <h2 className="text-3xl font-bold mb-6">Wat is Fysiofabriek?</h2>
           <div className="space-y-6 text-lg text-gray-700">
             <p>
-              <strong>Fysiofabriek is een professionele fysiopraktijk met een eigen behandelruimte in onze gym.</strong>
-              Dit betekent dat je direct ter plaatse geholpen kunt worden bij pijntjes, blessures of revalidatie –
-              zonder dat je naar een andere praktijk hoeft.
+              Wij werken samen met Fysiofabriek, een gespecialiseerde sportfysiopraktijk met een eigen behandelruimte in onze gym. Dat betekent dat je direct op locatie geholpen kunt worden. Of je nu vragen hebt over pijntjes, techniek of revalidatie, je kunt snel terecht voor persoonlijk advies.
             </p>
-            <p>
-              Door de fysio in huis te hebben kunnen we als coaches en fysiotherapeuten nauw samenwerken.
-              Dit zorgt voor snelle en gerichte hulp wanneer je die nodig hebt.
-            </p>
+
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img
+                src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/fysiofabriek/WhatsApp%20Image%202025-12-03%20at%2012.20.28.jpeg"
+                alt="Fysiofabriek behandelruimte bij CrossFit Leiden"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -150,47 +152,28 @@ export default async function FysiofabriekPage() {
 
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
-                  1
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Afspraak maken</h3>
-                  <p className="text-gray-700">
-                    Maak een afspraak via de website van Fysiofabriek of bel direct.
-                    Voor leden vaak snelle afspraakmogelijkheden beschikbaar.
-                  </p>
-                </div>
-              </div>
-            </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Afspraak maken</h3>
+              <p className="text-gray-700 mb-6">
+                Je kunt eenvoudig een afspraak maken via de website van Fysiofabriek.
+              </p>
 
-            <div className="bg-white rounded-xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Intake & Behandeling</h3>
-                  <p className="text-gray-700">
-                    Uitgebreide intake, behandeling en advies in de praktijk binnen CrossFit Leiden.
-                    Persoonlijk behandelplan afgestemd op jouw situatie.
-                  </p>
-                </div>
-              </div>
-            </div>
+              <a
+                href="https://fysiofabriek.nl/fysiotherapie-leiden/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-verdigris text-white px-6 py-3 rounded-lg font-bold hover:bg-verdigris/90 transition-all shadow-md"
+              >
+                Maak een afspraak
+              </a>
 
-            <div className="bg-white rounded-xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Afstemming met Coaches</h3>
-                  <p className="text-gray-700">
-                    Fysio en coaches stemmen af over je training.
-                    Je blijft veilig in beweging terwijl je herstelt.
-                  </p>
-                </div>
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <p className="text-gray-700 mb-2">
+                  <strong>Wil je mailen?</strong><br />
+                  Dat kan via: <a href="mailto:leiden@fysiofabriek.nl" className="text-verdigris hover:underline">leiden@fysiofabriek.nl</a>
+                </p>
+                <p className="text-gray-700">
+                  <strong>Bellen kan op:</strong> <a href="tel:0647679822" className="text-verdigris hover:underline">06 47 67 98 22</a>
+                </p>
               </div>
             </div>
           </div>
@@ -206,7 +189,7 @@ export default async function FysiofabriekPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.fysiofabriek.nl"
+              href="https://fysiofabriek.nl/fysiotherapie-leiden/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-verdigris text-white px-8 py-4 rounded-lg font-bold hover:bg-verdigris/90 transition-all shadow-md"
