@@ -71,7 +71,7 @@ export default function KickstartPromoPopup() {
       badge: "Laatste plekken!",
       title: "December Kickstart is VOL",
       subtitle: "Januari Kickstart (start 5 januari)",
-      spotsLeft: "Nog maar 6 plekken beschikbaar",
+      spotsLeft: "Nog maar 4 plekken beschikbaar",
       description: "Ons populaire 28-Day Kickstart programma voor beginners start begin januari. Kleine groepen, persoonlijke begeleiding.",
       cta: "Reserveer je plek →",
       close: "Sluiten"
@@ -80,7 +80,7 @@ export default function KickstartPromoPopup() {
       badge: "Last spots!",
       title: "December Kickstart is FULL",
       subtitle: "January Kickstart (starts January 5th)",
-      spotsLeft: "Only 6 spots left",
+      spotsLeft: "Only 4 spots left",
       description: "Our popular 28-Day Kickstart program for beginners starts early January. Small groups, personal coaching.",
       cta: "Reserve your spot →",
       close: "Close"

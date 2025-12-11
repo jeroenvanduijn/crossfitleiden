@@ -1,10 +1,8 @@
-"use client";
-
 import Link from "next/link";
-import { useLocale } from 'next-intl';
+import { getLocale } from 'next-intl/server';
 
-export default function BlogPost() {
-  const locale = useLocale();
+export default async function BlogPost() {
+  const locale = await getLocale();
 
   return (
     <>
