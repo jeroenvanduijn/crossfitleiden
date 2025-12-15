@@ -7,6 +7,11 @@ export default async function Ervaringen() {
   // Member video testimonials
   const memberVideos = [
     {
+      vimeoId: "1146696737",
+      name: "Janneke",
+      title: "3 years of progress"
+    },
+    {
       vimeoId: "1140347883",
       name: "Raul",
       title: "4 years of CrossFit"
