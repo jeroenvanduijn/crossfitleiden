@@ -190,7 +190,7 @@ export default function Home() {
       <KickstartBlock />
 
       {/* 5. SOCIAL PROOF - Google Review Widget */}
-      <section className="section-padding bg-white py-8 md:py-12">
+      <section className="section-padding bg-white py-8 md:py-12 pb-8">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">{t('socialProof.title')}</h2>
 
@@ -216,38 +216,87 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. MEMBER STORY - Featured Video */}
-      <section className="section-padding bg-white">
+      {/* 6. MEMBER STORY - Featured Videos */}
+      <section className="bg-white pt-8 pb-16">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               {t('memberStory.title')}
             </h2>
-            <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 mb-10 text-center max-w-2xl mx-auto">
               {t('memberStory.subtitle')}
             </p>
 
-            {/* Video Container */}
-            <div className="max-w-md mx-auto mb-8">
-              <div className="bg-gray-50 rounded-xl overflow-hidden">
-                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/1146696737?badge=0&autopause=0&player_id=0&app_id=58479"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%"
-                    }}
-                    title="Janneke - 3 years of progress"
-                  />
+            {/* Video Grid - 3 videos */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              {/* Janneke */}
+              <div className="flex flex-col gap-3">
+                <div className="bg-gray-50 rounded-xl overflow-hidden">
+                  <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
+                    <iframe
+                      src="https://player.vimeo.com/video/1146696737?badge=0&autopause=0&player_id=0&app_id=58479"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%"
+                      }}
+                      title="Janneke - 3 years of progress"
+                    />
+                  </div>
                 </div>
+                <p className="text-center font-semibold text-gray-900">Janneke</p>
               </div>
-              <p className="text-center font-semibold text-gray-900 mt-4">Janneke - 3 years of progress</p>
+
+              {/* Raul */}
+              <div className="flex flex-col gap-3">
+                <div className="bg-gray-50 rounded-xl overflow-hidden">
+                  <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
+                    <iframe
+                      src="https://player.vimeo.com/video/1140347883?badge=0&autopause=0&player_id=0&app_id=58479"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%"
+                      }}
+                      title="Raul - 4 years of CrossFit"
+                    />
+                  </div>
+                </div>
+                <p className="text-center font-semibold text-gray-900">Raul</p>
+              </div>
+
+              {/* Daan */}
+              <div className="flex flex-col gap-3">
+                <div className="bg-gray-50 rounded-xl overflow-hidden">
+                  <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
+                    <iframe
+                      src="https://player.vimeo.com/video/1139251716?badge=0&autopause=0&player_id=0&app_id=58479"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%"
+                      }}
+                      title="Daan - From Leiden to Chicago"
+                    />
+                  </div>
+                </div>
+                <p className="text-center font-semibold text-gray-900">Daan</p>
+              </div>
             </div>
 
             {/* Link to all stories */}
