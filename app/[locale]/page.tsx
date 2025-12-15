@@ -216,7 +216,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. FAQ - 6 Common Beginner Questions */}
+      {/* 6. MEMBER STORY - Featured Video */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+              {t('memberStory.title')}
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+              {t('memberStory.subtitle')}
+            </p>
+
+            {/* Video Container */}
+            <div className="max-w-md mx-auto mb-8">
+              <div className="bg-gray-50 rounded-xl overflow-hidden">
+                <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
+                  <iframe
+                    src="https://player.vimeo.com/video/1146696737?badge=0&autopause=0&player_id=0&app_id=58479"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%"
+                    }}
+                    title="Janneke - 3 years of progress"
+                  />
+                </div>
+              </div>
+              <p className="text-center font-semibold text-gray-900 mt-4">Janneke - 3 years of progress</p>
+            </div>
+
+            {/* Link to all stories */}
+            <div className="text-center">
+              <Link
+                href={`/${t('memberStory.locale')}/ervaringen`}
+                className="inline-flex items-center gap-2 text-cinnabar font-semibold hover:underline text-lg"
+              >
+                {t('memberStory.link')}
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. FAQ - 6 Common Beginner Questions */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('faq.title')}</h2>
@@ -310,7 +360,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. FOOTER CTA - Warm Final Push */}
+      {/* 8. FOOTER CTA - Warm Final Push */}
       <IntroCtaSection
         title={t('footerCta.title')}
         subtitle={t('footerCta.subtitle')}
