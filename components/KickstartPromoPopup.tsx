@@ -69,19 +69,23 @@ export default function KickstartPromoPopup() {
   const content = {
     nl: {
       badge: "Laatste plekken!",
-      title: "December Kickstart is VOL",
+      title: "Kickstart Januari & Februari",
       subtitle: "Januari Kickstart (start 5 januari)",
-      spotsLeft: "Nog maar 3 plekken beschikbaar",
-      description: "Ons populaire 28-Day Kickstart programma voor beginners start begin januari. Kleine groepen, persoonlijke begeleiding.",
+      spotsLeft: "Nog maar 1 plek beschikbaar",
+      subtitle2: "Februari Kickstart (start 2 februari)",
+      spotsLeft2: "Nog 7 plekken beschikbaar",
+      description: "Ons populaire 28-Day Kickstart programma voor beginners. Kleine groepen, persoonlijke begeleiding.",
       cta: "Reserveer je plek →",
       close: "Sluiten"
     },
     en: {
       badge: "Last spots!",
-      title: "December Kickstart is FULL",
+      title: "Kickstart January & February",
       subtitle: "January Kickstart (starts January 5th)",
-      spotsLeft: "Only 3 spots left",
-      description: "Our popular 28-Day Kickstart program for beginners starts early January. Small groups, personal coaching.",
+      spotsLeft: "Only 1 spot left",
+      subtitle2: "February Kickstart (starts February 2nd)",
+      spotsLeft2: "7 spots available",
+      description: "Our popular 28-Day Kickstart program for beginners. Small groups, personal coaching.",
       cta: "Reserve your spot →",
       close: "Close"
     }
@@ -121,16 +125,27 @@ export default function KickstartPromoPopup() {
 
           {/* Content */}
           <div className="mb-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
               {t.title}
             </h2>
 
-            <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-4">
-              <h3 className="text-xl font-bold text-gray-900 mb-1">
+            {/* January Kickstart */}
+            <div className="bg-cinnabar/10 border-2 border-cinnabar rounded-xl p-4 mb-3">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
                 {t.subtitle}
               </h3>
-              <p className="text-lg font-semibold text-cinnabar">
-                ✨ {t.spotsLeft}
+              <p className="text-base font-semibold text-cinnabar">
+                🔥 {t.spotsLeft}
+              </p>
+            </div>
+
+            {/* February Kickstart */}
+            <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
+                {t.subtitle2}
+              </h3>
+              <p className="text-base font-semibold text-verdigris">
+                ✨ {t.spotsLeft2}
               </p>
             </div>
 
