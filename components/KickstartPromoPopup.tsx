@@ -69,24 +69,24 @@ export default function KickstartPromoPopup() {
   const content = {
     nl: {
       badge: "Laatste plekken!",
-      title: "Kickstart Januari & Februari",
-      subtitle: "Januari Kickstart (start 5 januari)",
-      spotsLeft: "Nog maar 1 plek beschikbaar",
+      title: "Kickstart Februari",
+      subtitle: "Januari Kickstart is VOL",
+      spotsLeft: "✓ Alle plekken gevuld",
       subtitle2: "Februari Kickstart (start 2 februari)",
       spotsLeft2: "Nog 7 plekken beschikbaar",
       description: "Ons populaire 28-Day Kickstart programma voor beginners. Kleine groepen, persoonlijke begeleiding.",
-      cta: "Reserveer je plek →",
+      cta: "Reserveer je plek voor februari →",
       close: "Sluiten"
     },
     en: {
       badge: "Last spots!",
-      title: "Kickstart January & February",
-      subtitle: "January Kickstart (starts January 5th)",
-      spotsLeft: "Only 1 spot left",
+      title: "Kickstart February",
+      subtitle: "January Kickstart is FULL",
+      spotsLeft: "✓ All spots filled",
       subtitle2: "February Kickstart (starts February 2nd)",
       spotsLeft2: "7 spots available",
       description: "Our popular 28-Day Kickstart program for beginners. Small groups, personal coaching.",
-      cta: "Reserve your spot →",
+      cta: "Reserve your spot for February →",
       close: "Close"
     }
   };
@@ -129,13 +129,13 @@ export default function KickstartPromoPopup() {
               {t.title}
             </h2>
 
-            {/* January Kickstart */}
-            <div className="bg-cinnabar/10 border-2 border-cinnabar rounded-xl p-4 mb-3">
+            {/* January Kickstart - FULL */}
+            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
                 {t.subtitle}
               </h3>
-              <p className="text-base font-semibold text-cinnabar">
-                🔥 {t.spotsLeft}
+              <p className="text-base font-semibold text-gray-600">
+                {t.spotsLeft}
               </p>
             </div>
 
