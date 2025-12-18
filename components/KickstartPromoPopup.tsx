@@ -36,7 +36,26 @@ export default function KickstartPromoPopup() {
   };
 
   const handleCTA = () => {
-    track('Kickstart Promo Popup CTA', { locale });
+    // Track the click event with campaign info
+    track('Kickstart Promo Popup CTA', {
+      locale,
+      campaign: 'kickstart-full-popup',
+      source: 'kickstart-popup'
+    });
+
+    // Store traffic source in sessionStorage for GHL to pick up
+    sessionStorage.setItem('traffic_source', 'kickstart-popup');
+    sessionStorage.setItem('utm_source', 'website');
+    sessionStorage.setItem('utm_medium', 'popup');
+    sessionStorage.setItem('utm_campaign', 'kickstart-full');
+
+    // Add UTM parameters to current URL for tracking
+    const url = new URL(window.location.href);
+    url.searchParams.set('utm_source', 'website');
+    url.searchParams.set('utm_medium', 'popup');
+    url.searchParams.set('utm_campaign', 'kickstart-full');
+    window.history.replaceState({}, '', url.toString());
+
     setIsVisible(false);
     // Trigger the intro booking popup
     if (typeof window !== 'undefined' && (window as any).openCFLPopup) {
