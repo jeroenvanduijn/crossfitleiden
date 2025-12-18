@@ -79,7 +79,7 @@ export default function Tarieven() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-center">Waar ga je het aan uit?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center">Waar geef je het aan uit?</h2>
             <p className="text-lg text-gray-600 mb-8 text-center">
               Gezondheid is de beste investering die je kunt doen. Ter vergelijking:
             </p>
