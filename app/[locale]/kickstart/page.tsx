@@ -5,8 +5,285 @@ import { useLocale } from 'next-intl';
 import { track } from '@vercel/analytics';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
+const content = {
+  nl: {
+    hero: {
+      title: "Start veilig en sterk met onze Kickstart",
+      description: "Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.",
+      cta: "Plan een Gratis Intro"
+    },
+    whatIs: {
+      title: "Wat is de Kickstart?",
+      intro: "Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.",
+      important: "<strong>Belangrijk:</strong> Je begint altijd met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.",
+      description: "Gedurende <strong>28 dagen</strong> werk je aan je energie, routine en krijg je alle basis-bewegingen onder de knie – volledig op jouw tempo, met persoonlijke begeleiding van onze coaches.",
+      focusTitle: "Waar focussen we op?",
+      focus: [
+        { title: "Veilig starten", description: "Geen high-skill bewegingen, wel veel aandacht voor goede techniek" },
+        { title: "Meer energie", description: "Bouw conditie en kracht op zonder te overtrainen" },
+        { title: "Een routine creëren", description: "Leer hoe je training inpast in je drukke leven" },
+        { title: "Vertrouwen opbouwen", description: "Ontdek wat je lichaam kan, stap voor stap" }
+      ]
+    },
+    forWho: {
+      title: "Voor Wie is de Kickstart?",
+      cards: [
+        { emoji: "👋", title: "Complete Beginners", description: "Nog nooit CrossFit gedaan? Perfect. De Kickstart is speciaal gemaakt voor jou." },
+        { emoji: "👨‍👩‍👧‍👦", title: "Drukke Ouders", description: "Heb je structuur en een duidelijk plan nodig? De Kickstart geeft je houvast." },
+        { emoji: "⏸️", title: "Lang Niet Gesport", description: "Is het jaren geleden? Geen probleem. We bouwen rustig op vanaf jouw niveau." },
+        { emoji: "🩹", title: "Onzekerheid of Blessures", description: "Heb je een oude blessure of ben je onzeker? We passen alles aan op jouw situatie." }
+      ]
+    },
+    whatsIncluded: {
+      title: "Wat Zit Er in de Kickstart?",
+      items: [
+        { emoji: "🏋️", title: "2-3 keer per week trainen", description: "In groepslessen of semi-private, afhankelijk van wat bij jou past. Flexibel in te plannen." },
+        { emoji: "👨‍🏫", title: "Persoonlijke coachbegeleiding", description: "Onze coaches kennen jouw naam, jouw doel en jouw situatie. Elke les krijg je persoonlijke feedback." },
+        { emoji: "📐", title: "Techniektraining op jouw niveau", description: "Leer de basis-bewegingen (squats, push-ups, deadlifts) op een veilige manier die past bij jouw lichaam." },
+        { emoji: "🍎", title: "Voeding & leefstijl basics", description: "Simpele, haalbare tips over voeding, slaap en herstel – geen ingewikkelde diëten." },
+        { emoji: "📊", title: "Een progressieplan", description: "Veilige opbouw die past bij jouw niveau. Niet te snel, niet te langzaam – precies goed." },
+        { emoji: "👥", title: "Community onboarding", description: "Je leert andere leden kennen, voelt je welkom en wordt onderdeel van de CFL familie." },
+        { emoji: "🔄", title: "Mini check-in halverwege", description: "Na 2 weken evalueren we samen hoe het gaat en passen we waar nodig aan." },
+        { emoji: "🎯", title: "Evaluatie aan het einde", description: "Na 28 dagen bespreken we jouw vooruitgang en geven we persoonlijk advies voor je vervolg." }
+      ]
+    },
+    howItWorks: {
+      title: "Hoe Werkt Het Starten?",
+      intro: "Beginnen bij CrossFit Leiden is makkelijk. We leiden je door 3 eenvoudige stappen:",
+      steps: [
+        {
+          title: "Plan een Gratis Intro",
+          description: "Dit is een rustig gesprek van 30 minuten. <strong>Geen workout</strong>, geen verplichtingen. We maken kennis, geven je een rondleiding en luisteren naar jouw doelen en situatie.",
+          note: "Je krijgt ook antwoord op al je vragen over de Kickstart, planning en tarieven."
+        },
+        {
+          title: "Maak Kennis met de Kickstart",
+          description: "Tijdens de intro leggen we het hele Kickstart-programma uit. Je hoort precies wat je kunt verwachten, hoe de begeleiding werkt en hoe we jou helpen veilig te starten.",
+          note: "Past het bij je? Dan plannen we meteen je eerste les in."
+        },
+        {
+          title: "Start Jouw 28-Dagen Traject",
+          description: "Je start met je eerste les in een kleine, veilige groep. Onze coaches begeleiden je elke stap van de weg. Vragen? Die kun je altijd stellen.",
+          note: "Na 28 dagen ben je klaar om door te gaan met onze reguliere lessen – of je kiest voor een ander programma."
+        }
+      ],
+      cta: "Plan een Gratis Intro",
+      ctaNote: "Het gesprek is gratis en vrijblijvend. Geen verplichtingen!"
+    },
+    coaches: {
+      title: "Guided by certified coaches",
+      max: {
+        name: "Coach Max",
+        role: "Kickstart Lead Coach",
+        description: "Max is de coach die zelfs tijdens burpees blijft glimlachen. Rustig, duidelijk en positief – en hij zorgt dat jij je meteen thuis voelt."
+      },
+      annie: {
+        name: "Coach Annie",
+        role: "Nutrition Coach",
+        description: "Annie is onze rustige kracht. Geen gedoe, geen drama – gewoon praktische tips die passen in je drukke leven."
+      }
+    },
+    testimonials: {
+      title: "Wat Zeggen Leden Over de Kickstart?",
+      items: [
+        {
+          emoji: "👨",
+          name: "Matthew, 43",
+          subtitle: "Father of 4 kids",
+          text: '"Just completed the intake month – what a great experience. Max explained everything so clearly and kept it fun. If you\'re thinking about it, just book. The environment is incredibly welcoming."'
+        },
+        {
+          emoji: "👩",
+          name: "Liselotte, 42",
+          subtitle: "Mother of a young child",
+          text: '"I\'m so glad I started training here. After one month of small-group training and nutrition guidance, I already feel fitter and have more energy. The coaches are professional and relaxed."'
+        },
+        {
+          emoji: "👩",
+          name: "Julia, 44",
+          subtitle: "Mom with low energy",
+          text: '"If you\'re hesitating: DO IT. I started the Kickstart at the end of October and it changed everything. After four weeks of coaching and community, I feel fitter, stronger and honestly happier."'
+        }
+      ]
+    },
+    faq: {
+      title: "Veelgestelde Vragen",
+      items: [
+        {
+          question: "Moet ik fit zijn om de Kickstart te doen?",
+          answer: "Absoluut niet! De Kickstart is speciaal gemaakt voor beginners die nog niet fit zijn. We passen alles aan op jouw niveau en bouwen rustig op."
+        },
+        {
+          question: "Hoe vaak train ik tijdens de Kickstart?",
+          answer: "We raden 2-3 keer per week aan voor de beste resultaten. Dat is haalbaar naast werk en gezin, en geeft je lichaam genoeg tijd om te herstellen."
+        },
+        {
+          question: "Is de Kickstart verplicht?",
+          answer: "Nee, maar we raden het sterk aan! 95% van onze nieuwe leden kiest voor de Kickstart omdat het rust, structuur en vertrouwen geeft. Het is de beste manier om veilig te starten."
+        },
+        {
+          question: "Kan ik na de Kickstart stoppen?",
+          answer: "Ja, je kunt maandelijks opzeggen. Maar de meeste mensen gaan graag door omdat ze merken hoeveel verschil het maakt in hun energie en welzijn!"
+        },
+        {
+          question: "Train ik alleen of in een groep?",
+          answer: "Nee, je traint in een kleine groep van max 5 personen."
+        }
+      ]
+    },
+    finalCta: {
+      title: "Benieuwd of de Kickstart bij jou past?",
+      subtitle: "Plan een gratis intro – geen workout, alleen een rustig gesprek en een rondleiding. We leggen je graag alles uit en beantwoorden al je vragen. Volledig vrijblijvend!",
+      button: "Plan een Gratis Intro"
+    },
+    footer: {
+      text: "Heb je vragen over de Kickstart of wil je meer weten?",
+      linkText: "Neem contact met ons op",
+      suffix: "– we helpen je graag!"
+    }
+  },
+  en: {
+    hero: {
+      title: "Start Safe and Strong with our Kickstart",
+      description: "Our 28-day beginner program for people with no experience. Personal guidance, safe progression, at your own pace.",
+      cta: "Schedule a Free Intro"
+    },
+    whatIs: {
+      title: "What is the Kickstart?",
+      intro: "Our 28-day beginner program for people with no experience. Personal guidance, safe progression, at your own pace.",
+      important: "<strong>Important:</strong> You always start with a free intro. In that conversation we'll determine together if the Kickstart is the best start for you.",
+      description: "During <strong>28 days</strong> you'll build energy, create a routine, and master all fundamental movements – completely at your own pace, with personal guidance from our coaches.",
+      focusTitle: "What do we focus on?",
+      focus: [
+        { title: "Safe start", description: "No high-skill movements, lots of attention to proper technique" },
+        { title: "More energy", description: "Build conditioning and strength without overtraining" },
+        { title: "Creating a routine", description: "Learn how to fit training into your busy life" },
+        { title: "Building confidence", description: "Discover what your body can do, step by step" }
+      ]
+    },
+    forWho: {
+      title: "Who is the Kickstart For?",
+      cards: [
+        { emoji: "👋", title: "Complete Beginners", description: "Never done CrossFit before? Perfect. The Kickstart is specially designed for you." },
+        { emoji: "👨‍👩‍👧‍👦", title: "Busy Parents", description: "Need structure and a clear plan? The Kickstart provides guidance." },
+        { emoji: "⏸️", title: "Haven't Exercised in Years", description: "Been years since you exercised? No problem. We build up gradually from your level." },
+        { emoji: "🩹", title: "Uncertainty or Injuries", description: "Have an old injury or feel uncertain? We adapt everything to your situation." }
+      ]
+    },
+    whatsIncluded: {
+      title: "What's Included in the Kickstart?",
+      items: [
+        { emoji: "🏋️", title: "Train 2-3 times per week", description: "In group classes or semi-private, depending on what suits you. Flexible scheduling." },
+        { emoji: "👨‍🏫", title: "Personal coach guidance", description: "Our coaches know your name, your goal, and your situation. Every class you get personal feedback." },
+        { emoji: "📐", title: "Technique training at your level", description: "Learn the basic movements (squats, push-ups, deadlifts) in a safe way that fits your body." },
+        { emoji: "🍎", title: "Nutrition & lifestyle basics", description: "Simple, achievable tips about nutrition, sleep, and recovery – no complicated diets." },
+        { emoji: "📊", title: "A progression plan", description: "Safe progression that fits your level. Not too fast, not too slow – just right." },
+        { emoji: "👥", title: "Community onboarding", description: "You'll meet other members, feel welcome, and become part of the CFL family." },
+        { emoji: "🔄", title: "Mini check-in halfway", description: "After 2 weeks we evaluate together how things are going and adjust where needed." },
+        { emoji: "🎯", title: "Evaluation at the end", description: "After 28 days we discuss your progress and give personal advice for your continuation." }
+      ]
+    },
+    howItWorks: {
+      title: "How Does Starting Work?",
+      intro: "Starting at CrossFit Leiden is easy. We guide you through 3 simple steps:",
+      steps: [
+        {
+          title: "Schedule a Free Intro",
+          description: "This is a relaxed 30-minute conversation. <strong>No workout</strong>, no obligations. We meet, give you a tour, and listen to your goals and situation.",
+          note: "You'll also get answers to all your questions about the Kickstart, scheduling, and pricing."
+        },
+        {
+          title: "Get to Know the Kickstart",
+          description: "During the intro we explain the entire Kickstart program. You'll hear exactly what to expect, how the guidance works, and how we help you start safely.",
+          note: "Does it fit? Then we'll schedule your first class right away."
+        },
+        {
+          title: "Start Your 28-Day Journey",
+          description: "You start with your first class in a small, safe group. Our coaches guide you every step of the way. Questions? You can always ask.",
+          note: "After 28 days you're ready to continue with our regular classes – or choose another program."
+        }
+      ],
+      cta: "Schedule a Free Intro",
+      ctaNote: "The conversation is free and non-binding. No obligations!"
+    },
+    coaches: {
+      title: "Guided by certified coaches",
+      max: {
+        name: "Coach Max",
+        role: "Kickstart Lead Coach",
+        description: "Max is the coach who keeps smiling even during burpees. Calm, clear, and positive – and he makes sure you feel at home right away."
+      },
+      annie: {
+        name: "Coach Annie",
+        role: "Nutrition Coach",
+        description: "Annie is our quiet strength. No fuss, no drama – just practical tips that fit into your busy life."
+      }
+    },
+    testimonials: {
+      title: "What Do Members Say About the Kickstart?",
+      items: [
+        {
+          emoji: "👨",
+          name: "Matthew, 43",
+          subtitle: "Father of 4 kids",
+          text: '"Just completed the intake month – what a great experience. Max explained everything so clearly and kept it fun. If you\'re thinking about it, just book. The environment is incredibly welcoming."'
+        },
+        {
+          emoji: "👩",
+          name: "Liselotte, 42",
+          subtitle: "Mother of a young child",
+          text: '"I\'m so glad I started training here. After one month of small-group training and nutrition guidance, I already feel fitter and have more energy. The coaches are professional and relaxed."'
+        },
+        {
+          emoji: "👩",
+          name: "Julia, 44",
+          subtitle: "Mom with low energy",
+          text: '"If you\'re hesitating: DO IT. I started the Kickstart at the end of October and it changed everything. After four weeks of coaching and community, I feel fitter, stronger and honestly happier."'
+        }
+      ]
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      items: [
+        {
+          question: "Do I need to be fit to do the Kickstart?",
+          answer: "Absolutely not! The Kickstart is specially designed for beginners who aren't fit yet. We adapt everything to your level and build up gradually."
+        },
+        {
+          question: "How often do I train during the Kickstart?",
+          answer: "We recommend 2-3 times per week for best results. That's manageable alongside work and family, and gives your body enough time to recover."
+        },
+        {
+          question: "Is the Kickstart mandatory?",
+          answer: "No, but we strongly recommend it! 95% of our new members choose the Kickstart because it provides peace, structure, and confidence. It's the best way to start safely."
+        },
+        {
+          question: "Can I quit after the Kickstart?",
+          answer: "Yes, you can cancel monthly. But most people happily continue because they notice how much difference it makes in their energy and well-being!"
+        },
+        {
+          question: "Do I train alone or in a group?",
+          answer: "No, you train in a small group of max 5 people."
+        }
+      ]
+    },
+    finalCta: {
+      title: "Curious if the Kickstart suits you?",
+      subtitle: "Schedule a free intro – no workout, just a relaxed conversation and a tour. We're happy to explain everything and answer all your questions. Completely non-binding!",
+      button: "Schedule a Free Intro"
+    },
+    footer: {
+      text: "Have questions about the Kickstart or want to know more?",
+      linkText: "Contact us",
+      suffix: "– we're happy to help!"
+    }
+  }
+};
+
 export default function Kickstart() {
   const locale = useLocale();
+  const t = content[locale as keyof typeof content] || content.nl;
+
   // Handler for opening the intro popup
   const handlePopupClick = () => {
     track('Kickstart Page CTA Click');
@@ -14,6 +291,7 @@ export default function Kickstart() {
       (window as any).openCFLPopup();
     }
   };
+
   return (
     <>
       {/* Hero sectie */}
@@ -21,16 +299,16 @@ export default function Kickstart() {
         <div className="container-custom">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Start veilig en sterk met onze Kickstart
+              {t.hero.title}
             </h1>
             <p className="text-xl mb-8 text-gray-800">
-              Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.
+              {t.hero.description}
             </p>
             <button
               onClick={handlePopupClick}
               className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all shadow-lg text-lg cursor-pointer"
             >
-              Plan een Gratis Intro
+              {t.hero.cta}
             </button>
           </div>
         </div>
@@ -40,39 +318,24 @@ export default function Kickstart() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Wat is de Kickstart?</h2>
+            <h2 className="text-3xl font-bold mb-6">{t.whatIs.title}</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.
+              {t.whatIs.intro}
             </p>
             <div className="bg-jonquil/10 rounded-lg p-5 mb-6">
-              <p className="text-gray-800">
-                <strong>Belangrijk:</strong> Je begint altijd met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.
-              </p>
+              <p className="text-gray-800" dangerouslySetInnerHTML={{ __html: t.whatIs.important }} />
             </div>
-            <p className="text-lg text-gray-700 mb-4">
-              Gedurende <strong>28 dagen</strong> werk je aan je energie, routine en krijg je alle basis-bewegingen
-              onder de knie – volledig op jouw tempo, met persoonlijke begeleiding van onze coaches.
-            </p>
+            <p className="text-lg text-gray-700 mb-4" dangerouslySetInnerHTML={{ __html: t.whatIs.description }} />
 
             <div className="bg-jonquil/20 rounded-xl p-6 mt-6">
-              <h3 className="font-bold text-lg mb-3">Waar focussen we op?</h3>
+              <h3 className="font-bold text-lg mb-3">{t.whatIs.focusTitle}</h3>
               <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-2">✓</span>
-                  <span><strong>Veilig starten</strong> – Geen high-skill bewegingen, wel veel aandacht voor goede techniek</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-2">✓</span>
-                  <span><strong>Meer energie</strong> – Bouw conditie en kracht op zonder te overtrainen</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-2">✓</span>
-                  <span><strong>Een routine creëren</strong> – Leer hoe je training inpast in je drukke leven</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cinnabar mr-2">✓</span>
-                  <span><strong>Vertrouwen opbouwen</strong> – Ontdek wat je lichaam kan, stap voor stap</span>
-                </li>
+                {t.whatIs.focus.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-cinnabar mr-2">✓</span>
+                    <span><strong>{item.title}</strong> – {item.description}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -83,39 +346,15 @@ export default function Kickstart() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Voor Wie is de Kickstart?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">{t.forWho.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="text-4xl mb-3">👋</div>
-                <h3 className="font-bold text-lg mb-2">Complete Beginners</h3>
-                <p className="text-gray-700">
-                  Nog nooit CrossFit gedaan? Perfect. De Kickstart is speciaal gemaakt voor jou.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="text-4xl mb-3">👨‍👩‍👧‍👦</div>
-                <h3 className="font-bold text-lg mb-2">Drukke Ouders</h3>
-                <p className="text-gray-700">
-                  Heb je structuur en een duidelijk plan nodig? De Kickstart geeft je houvast.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="text-4xl mb-3">⏸️</div>
-                <h3 className="font-bold text-lg mb-2">Lang Niet Gesport</h3>
-                <p className="text-gray-700">
-                  Is het jaren geleden? Geen probleem. We bouwen rustig op vanaf jouw niveau.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="text-4xl mb-3">🩹</div>
-                <h3 className="font-bold text-lg mb-2">Onzekerheid of Blessures</h3>
-                <p className="text-gray-700">
-                  Heb je een oude blessure of ben je onzeker? We passen alles aan op jouw situatie.
-                </p>
-              </div>
+              {t.forWho.cards.map((card, index) => (
+                <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
+                  <div className="text-4xl mb-3">{card.emoji}</div>
+                  <h3 className="font-bold text-lg mb-2">{card.title}</h3>
+                  <p className="text-gray-700">{card.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -125,87 +364,17 @@ export default function Kickstart() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Wat Zit Er in de Kickstart?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">{t.whatsIncluded.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">🏋️</span>
-                  2-3 keer per week trainen
-                </h3>
-                <p className="text-gray-700">
-                  In groepslessen of semi-private, afhankelijk van wat bij jou past. Flexibel in te plannen.
-                </p>
-              </div>
-
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">👨‍🏫</span>
-                  Persoonlijke coachbegeleiding
-                </h3>
-                <p className="text-gray-700">
-                  Onze coaches kennen jouw naam, jouw doel en jouw situatie. Elke les krijg je persoonlijke feedback.
-                </p>
-              </div>
-
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">📐</span>
-                  Techniektraining op jouw niveau
-                </h3>
-                <p className="text-gray-700">
-                  Leer de basis-bewegingen (squats, push-ups, deadlifts) op een veilige manier die past bij jouw lichaam.
-                </p>
-              </div>
-
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">🍎</span>
-                  Voeding & leefstijl basics
-                </h3>
-                <p className="text-gray-700">
-                  Simpele, haalbare tips over voeding, slaap en herstel – geen ingewikkelde diëten.
-                </p>
-              </div>
-
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">📊</span>
-                  Een progressieplan
-                </h3>
-                <p className="text-gray-700">
-                  Veilige opbouw die past bij jouw niveau. Niet te snel, niet te langzaam – precies goed.
-                </p>
-              </div>
-
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">👥</span>
-                  Community onboarding
-                </h3>
-                <p className="text-gray-700">
-                  Je leert andere leden kennen, voelt je welkom en wordt onderdeel van de CFL familie.
-                </p>
-              </div>
-
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">🔄</span>
-                  Mini check-in halverwege
-                </h3>
-                <p className="text-gray-700">
-                  Na 2 weken evalueren we samen hoe het gaat en passen we waar nodig aan.
-                </p>
-              </div>
-
-              <div className="bg-verdigris/5 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 flex items-center">
-                  <span className="text-2xl mr-3">🎯</span>
-                  Evaluatie aan het einde
-                </h3>
-                <p className="text-gray-700">
-                  Na 28 dagen bespreken we jouw vooruitgang en geven we persoonlijk advies voor je vervolg.
-                </p>
-              </div>
+              {t.whatsIncluded.items.map((item, index) => (
+                <div key={index} className="bg-verdigris/5 rounded-xl p-6">
+                  <h3 className="font-bold text-lg mb-3 flex items-center">
+                    <span className="text-2xl mr-3">{item.emoji}</span>
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-700">{item.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -215,62 +384,24 @@ export default function Kickstart() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Hoe Werkt Het Starten?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">{t.howItWorks.title}</h2>
             <p className="text-center text-gray-700 mb-12 text-lg">
-              Beginnen bij CrossFit Leiden is makkelijk. We leiden je door 3 eenvoudige stappen:
+              {t.howItWorks.intro}
             </p>
 
             <div className="space-y-8">
-              {/* Stap 1 */}
-              <div className="bg-white rounded-xl p-8 shadow-sm flex items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-jonquil rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 mr-6">
-                  1
+              {t.howItWorks.steps.map((step, index) => (
+                <div key={index} className="bg-white rounded-xl p-8 shadow-sm flex items-start">
+                  <div className="flex-shrink-0 w-16 h-16 bg-jonquil rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 mr-6">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                    <p className="text-gray-700 mb-3" dangerouslySetInnerHTML={{ __html: step.description }} />
+                    <p className="text-gray-600 text-sm">{step.note}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-3">Plan een Gratis Intro</h3>
-                  <p className="text-gray-700 mb-3">
-                    Dit is een rustig gesprek van 30 minuten. <strong>Geen workout</strong>, geen verplichtingen.
-                    We maken kennis, geven je een rondleiding en luisteren naar jouw doelen en situatie.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    Je krijgt ook antwoord op al je vragen over de Kickstart, planning en tarieven.
-                  </p>
-                </div>
-              </div>
-
-              {/* Stap 2 */}
-              <div className="bg-white rounded-xl p-8 shadow-sm flex items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-jonquil rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 mr-6">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-3">Maak Kennis met de Kickstart</h3>
-                  <p className="text-gray-700 mb-3">
-                    Tijdens de intro leggen we het hele Kickstart-programma uit. Je hoort precies wat je kunt verwachten,
-                    hoe de begeleiding werkt en hoe we jou helpen veilig te starten.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    Past het bij je? Dan plannen we meteen je eerste les in.
-                  </p>
-                </div>
-              </div>
-
-              {/* Stap 3 */}
-              <div className="bg-white rounded-xl p-8 shadow-sm flex items-start">
-                <div className="flex-shrink-0 w-16 h-16 bg-jonquil rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 mr-6">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-3">Start Jouw 28-Dagen Traject</h3>
-                  <p className="text-gray-700 mb-3">
-                    Je start met je eerste les in een kleine, veilige groep. Onze coaches begeleiden je elke stap van de weg.
-                    Vragen? Die kun je altijd stellen.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    Na 28 dagen ben je klaar om door te gaan met onze reguliere lessen – of je kiest voor een ander programma.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="mt-12 text-center">
@@ -278,10 +409,10 @@ export default function Kickstart() {
                 onClick={handlePopupClick}
                 className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-semibold hover:bg-cinnabar/90 transition-all shadow-lg text-lg cursor-pointer"
               >
-                Plan een Gratis Intro
+                {t.howItWorks.cta}
               </button>
               <p className="text-gray-600 text-sm mt-4">
-                Het gesprek is gratis en vrijblijvend. Geen verplichtingen!
+                {t.howItWorks.ctaNote}
               </p>
             </div>
           </div>
@@ -291,7 +422,7 @@ export default function Kickstart() {
       {/* Guided by certified coaches */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">{t.coaches.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Coach Max */}
             <div className="bg-white rounded-xl p-8 shadow-sm">
@@ -302,12 +433,12 @@ export default function Kickstart() {
                   className="w-20 h-20 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h3 className="font-bold text-xl">Coach Max</h3>
-                  <p className="text-cinnabar font-semibold">Kickstart Lead Coach</p>
+                  <h3 className="font-bold text-xl">{t.coaches.max.name}</h3>
+                  <p className="text-cinnabar font-semibold">{t.coaches.max.role}</p>
                 </div>
               </div>
               <p className="text-gray-700">
-                Max is de coach die zelfs tijdens burpees blijft glimlachen. Rustig, duidelijk en positief – en hij zorgt dat jij je meteen thuis voelt.
+                {t.coaches.max.description}
               </p>
             </div>
 
@@ -320,12 +451,12 @@ export default function Kickstart() {
                   className="w-20 h-20 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h3 className="font-bold text-xl">Coach Annie</h3>
-                  <p className="text-cinnabar font-semibold">Nutrition Coach</p>
+                  <h3 className="font-bold text-xl">{t.coaches.annie.name}</h3>
+                  <p className="text-cinnabar font-semibold">{t.coaches.annie.role}</p>
                 </div>
               </div>
               <p className="text-gray-700">
-                Annie is onze rustige kracht. Geen gedoe, geen drama – gewoon praktische tips die passen in je drukke leven.
+                {t.coaches.annie.description}
               </p>
             </div>
           </div>
@@ -335,46 +466,20 @@ export default function Kickstart() {
       {/* Resultaten van leden - Social proof */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-12 text-center">Wat Zeggen Leden Over de Kickstart?</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">{t.testimonials.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center mb-4">
-                <div className="text-3xl mr-3">👨</div>
-                <div>
-                  <p className="font-bold">Matthew, 43</p>
-                  <p className="text-sm text-gray-600">Father of 4 kids</p>
+            {t.testimonials.items.map((testimonial, index) => (
+              <div key={index} className="bg-gray-50 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="text-3xl mr-3">{testimonial.emoji}</div>
+                  <div>
+                    <p className="font-bold">{testimonial.name}</p>
+                    <p className="text-sm text-gray-600">{testimonial.subtitle}</p>
+                  </div>
                 </div>
+                <p className="text-gray-700 italic">{testimonial.text}</p>
               </div>
-              <p className="text-gray-700 italic">
-                "Just completed the intake month – what a great experience. Max explained everything so clearly and kept it fun. If you're thinking about it, just book. The environment is incredibly welcoming."
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center mb-4">
-                <div className="text-3xl mr-3">👩</div>
-                <div>
-                  <p className="font-bold">Liselotte, 42</p>
-                  <p className="text-sm text-gray-600">Mother of a young child</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "I'm so glad I started training here. After one month of small-group training and nutrition guidance, I already feel fitter and have more energy. The coaches are professional and relaxed."
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6">
-              <div className="flex items-center mb-4">
-                <div className="text-3xl mr-3">👩</div>
-                <div>
-                  <p className="font-bold">Julia, 44</p>
-                  <p className="text-sm text-gray-600">Mom with low energy</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "If you're hesitating: DO IT. I started the Kickstart at the end of October and it changed everything. After four weeks of coaching and community, I feel fitter, stronger and honestly happier."
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -383,61 +488,17 @@ export default function Kickstart() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">{t.faq.title}</h2>
             <div className="space-y-4">
-              <details className="bg-white rounded-xl p-6 group">
-                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
-                  Moet ik fit zijn om de Kickstart te doen?
-                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="text-gray-700 mt-4">
-                  Absoluut niet! De Kickstart is speciaal gemaakt voor beginners die nog niet fit zijn.
-                  We passen alles aan op jouw niveau en bouwen rustig op.
-                </p>
-              </details>
-
-              <details className="bg-white rounded-xl p-6 group">
-                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
-                  Hoe vaak train ik tijdens de Kickstart?
-                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="text-gray-700 mt-4">
-                  We raden 2-3 keer per week aan voor de beste resultaten. Dat is haalbaar naast werk en gezin,
-                  en geeft je lichaam genoeg tijd om te herstellen.
-                </p>
-              </details>
-
-              <details className="bg-white rounded-xl p-6 group">
-                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
-                  Is de Kickstart verplicht?
-                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="text-gray-700 mt-4">
-                  Nee, maar we raden het sterk aan! 95% van onze nieuwe leden kiest voor de Kickstart omdat het rust,
-                  structuur en vertrouwen geeft. Het is de beste manier om veilig te starten.
-                </p>
-              </details>
-
-              <details className="bg-white rounded-xl p-6 group">
-                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
-                  Kan ik na de Kickstart stoppen?
-                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="text-gray-700 mt-4">
-                  Ja, je kunt maandelijks opzeggen. Maar de meeste mensen gaan graag door omdat ze merken
-                  hoeveel verschil het maakt in hun energie en welzijn!
-                </p>
-              </details>
-
-              <details className="bg-white rounded-xl p-6 group">
-                <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
-                  Train ik alleen of in een groep?
-                  <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="text-gray-700 mt-4">
-                  Nee, je traint in een kleine groep van max 5 personen.
-                </p>
-              </details>
+              {t.faq.items.map((item, index) => (
+                <details key={index} className="bg-white rounded-xl p-6 group">
+                  <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                    {item.question}
+                    <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
+                  </summary>
+                  <p className="text-gray-700 mt-4">{item.answer}</p>
+                </details>
+              ))}
             </div>
           </div>
         </div>
@@ -445,9 +506,9 @@ export default function Kickstart() {
 
       {/* Afsluitende CTA */}
       <IntroCtaSection
-        title="Benieuwd of de Kickstart bij jou past?"
-        subtitle="Plan een gratis intro – geen workout, alleen een rustig gesprek en een rondleiding. We leggen je graag alles uit en beantwoorden al je vragen. Volledig vrijblijvend!"
-        buttonLabel="Plan een Gratis Intro"
+        title={t.finalCta.title}
+        subtitle={t.finalCta.subtitle}
+        buttonLabel={t.finalCta.button}
       />
 
       {/* Final note */}
@@ -455,11 +516,11 @@ export default function Kickstart() {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">
-              Heb je vragen over de Kickstart of wil je meer weten?{" "}
+              {t.footer.text}{" "}
               <Link href={`/${locale}/contact`} className="text-cinnabar font-semibold hover:underline">
-                Neem contact met ons op
+                {t.footer.linkText}
               </Link>
-              {" "}– we helpen je graag!
+              {" "}{t.footer.suffix}
             </p>
           </div>
         </div>
