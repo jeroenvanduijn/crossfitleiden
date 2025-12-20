@@ -9,6 +9,14 @@ export default function Blog() {
   // Blog posts
   const blogPosts = [
     {
+      slug: "nervous-to-start-one-small-step",
+      title: "Nervous to Start? You're Not Alone. Here's How One Small Step Changed Everything.",
+      excerpt: "If you've been waiting to feel fit before you start—here's the truth: you don't need to be fit to begin. You begin to get fit.",
+      date: "20 Dec 2025",
+      category: "Getting Started",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/IMG_6758.webp",
+    },
+    {
       slug: "no-sleeping-members",
       title: "No Sleeping Members: Why Your Membership Should Work For You",
       excerpt: "We're not here to collect monthly fees from people who don't show up. Our goal is to help you actually use your membership.",
