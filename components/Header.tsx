@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import CTAButton from "./CTAButton";
 import HighLevelPopup from "./HighLevelPopup";
+import KickstartPromoPopup from "./KickstartPromoPopup";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -225,6 +226,7 @@ export default function Header() {
         )}
       </nav>
       <HighLevelPopup />
+      <KickstartPromoPopup />
     </header>
   );
 }
