@@ -6,11 +6,7 @@ import { locales } from '@/i18n';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import WhatsAppWidget from "@/components/WhatsAppWidget";
-import CookieConsent from "@/components/CookieConsent";
-import KickstartPromoPopup from "@/components/KickstartPromoPopup";
+import LayoutWrapper from "@/components/LayoutWrapper";
 
 export const metadata: Metadata = {
   title: "CrossFit Leiden - Everyday people, exceptionally strong",
@@ -51,12 +47,7 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <WhatsAppWidget />
-          <CookieConsent />
-          <KickstartPromoPopup />
+          <LayoutWrapper>{children}</LayoutWrapper>
         </NextIntlClientProvider>
         <GoogleAnalytics gaId="G-JPD4QBBYZ3" />
         <Analytics />
