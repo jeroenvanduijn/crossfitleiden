@@ -173,7 +173,7 @@ export default function LinksPage() {
       <div className="container">
         <header className="profile">
           <img
-            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/Logo-Volledig-Zwart-VEBRe74m3pqS5qiObZiDT5x28lMkqE.png"
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/logo/Untitled%20design.png"
             alt="CrossFit Leiden Logo"
             className="logo"
           />
@@ -281,7 +281,6 @@ export default function LinksPage() {
           height: auto;
           margin: 0 auto 1.5rem;
           display: block;
-          filter: brightness(0) invert(1);
         }
 
         .profile h1 {
