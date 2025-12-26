@@ -23,7 +23,7 @@ export default function LinksPage() {
     nl: {
       title: "CrossFit Leiden",
       tagline: "Everyday People, Exceptionally Strong 💪",
-      stats: "400+ leden · ⭐ 4.9 Google Reviews · 📍 Leiden",
+      stats: "260+ ⭐⭐⭐⭐⭐ Google Reviews · 📍 Leiden",
       eventSection: "EVENT",
       startSection: "START HIER",
       contactSection: "CONTACT & MEER",
@@ -95,7 +95,7 @@ export default function LinksPage() {
     en: {
       title: "CrossFit Leiden",
       tagline: "Everyday People, Exceptionally Strong 💪",
-      stats: "400+ members · ⭐ 4.9 Google Reviews · 📍 Leiden",
+      stats: "260+ ⭐⭐⭐⭐⭐ Google Reviews · 📍 Leiden",
       eventSection: "EVENT",
       startSection: "START HERE",
       contactSection: "CONTACT & MORE",
@@ -172,6 +172,11 @@ export default function LinksPage() {
     <div className="links-page">
       <div className="container">
         <header className="profile">
+          <img
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/Logo-Volledig-Zwart-VEBRe74m3pqS5qiObZiDT5x28lMkqE.png"
+            alt="CrossFit Leiden Logo"
+            className="logo"
+          />
           <h1>{t.title}</h1>
           <p className="tagline">{t.tagline}</p>
           <p className="stats">{t.stats}</p>
@@ -271,6 +276,14 @@ export default function LinksPage() {
           color: white;
         }
 
+        .logo {
+          width: 120px;
+          height: auto;
+          margin: 0 auto 1.5rem;
+          display: block;
+          filter: brightness(0) invert(1);
+        }
+
         .profile h1 {
           font-size: 2rem;
           font-weight: 700;
@@ -305,6 +318,10 @@ export default function LinksPage() {
           gap: 0.75rem;
           padding: 0 1rem;
           margin-bottom: 1rem;
+        }
+
+        .link-section:last-of-type {
+          padding-bottom: 3rem;
         }
 
         .link-item {
