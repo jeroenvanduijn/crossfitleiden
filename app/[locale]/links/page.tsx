@@ -60,7 +60,7 @@ export default function LinksPage() {
             bgColor: "#5B6B8E",
             title: "Drop-In Boeken",
             subtitle: "Op reis? Train met ons mee",
-            url: "https://kilo.gymleadmachine.com/widget/bookings/crossfitleidendropin",
+            url: `https://www.crossfitleiden.com/${locale}/info/drop-in`,
             highlight: false
           }
         ],
@@ -70,7 +70,7 @@ export default function LinksPage() {
             bgColor: "#25D366",
             title: "WhatsApp Ons",
             subtitle: "Direct contact via WhatsApp",
-            url: "https://wa.me/31640876761",
+            url: "https://wa.me/31712340477",
             highlight: false
           },
           {
@@ -132,7 +132,7 @@ export default function LinksPage() {
             bgColor: "#5B6B8E",
             title: "Book a Drop-In",
             subtitle: "Traveling? Train with us",
-            url: "https://kilo.gymleadmachine.com/widget/bookings/crossfitleidendropin",
+            url: `https://www.crossfitleiden.com/${locale}/info/drop-in`,
             highlight: false
           }
         ],
@@ -142,7 +142,7 @@ export default function LinksPage() {
             bgColor: "#25D366",
             title: "WhatsApp Us",
             subtitle: "Direct contact via WhatsApp",
-            url: "https://wa.me/31640876761",
+            url: "https://wa.me/31712340477",
             highlight: false
           },
           {
