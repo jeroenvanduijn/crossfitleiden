@@ -16,13 +16,22 @@ export default function Home() {
     <>
       {/* 1. HERO - Result-focused, beginner-reassuring */}
       <section className="relative bg-gray-900 text-white section-padding">
-        {/* Background image */}
+        {/* Background images - responsive */}
         <div className="absolute inset-0 z-0">
+          {/* Desktop image */}
           <Image
-            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/hero-background-5.jpg"
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/homepage/IMG_6885.png"
             alt="CrossFit Leiden"
             fill
-            className="object-cover"
+            className="object-cover hidden md:block"
+            priority
+          />
+          {/* Mobile image */}
+          <Image
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/homepage/IMG_6888.png"
+            alt="CrossFit Leiden"
+            fill
+            className="object-cover md:hidden"
             priority
           />
         </div>
