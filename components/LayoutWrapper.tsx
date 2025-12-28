@@ -10,8 +10,9 @@ import KickstartPromoPopup from "@/components/KickstartPromoPopup";
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const isLinksPage = pathname?.includes('/links');
+  const isFitnessTestPage = pathname?.includes('/fitness-test');
 
-  if (isLinksPage) {
+  if (isLinksPage || isFitnessTestPage) {
     return <>{children}</>;
   }
 
