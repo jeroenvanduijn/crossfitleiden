@@ -7,6 +7,7 @@ import CTAButton from "@/components/CTAButton";
 import HighLevelPopup from "@/components/HighLevelPopup";
 import KickstartBlock from "@/components/KickstartBlock";
 import IntroCtaSection from "@/components/IntroCtaSection";
+import FitnessCheckTeaser from "@/components/FitnessCheckTeaser";
 
 export default function Home() {
   const t = useTranslations('home');
@@ -50,6 +51,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Fitness Check Teaser */}
+      <FitnessCheckTeaser />
 
       {/* 2. WHY CROSSFIT LEIDEN - 5 USPs for busy parents & beginners */}
       <section className="section-padding bg-white">
