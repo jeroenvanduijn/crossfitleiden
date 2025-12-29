@@ -88,7 +88,9 @@ export default function KickstartPromoPopup() {
   const content = {
     nl: {
       badge: "Laatste plekken!",
-      title: "Kickstart Februari & Maart",
+      title: "Kickstart Programma",
+      januaryTitle: "Januari Kickstart",
+      januarySpots: "✓ Alle plekken gevuld",
       subtitle: "Februari Kickstart (start 2 februari)",
       spotsLeft: "Nog 6 plekken beschikbaar",
       subtitle2: "Maart Kickstart (start 2 maart)",
@@ -99,7 +101,9 @@ export default function KickstartPromoPopup() {
     },
     en: {
       badge: "Last spots!",
-      title: "Kickstart February & March",
+      title: "Kickstart Program",
+      januaryTitle: "January Kickstart",
+      januarySpots: "✓ All spots filled",
       subtitle: "February Kickstart (starts February 2nd)",
       spotsLeft: "6 spots available",
       subtitle2: "March Kickstart (starts March 2nd)",
@@ -147,6 +151,16 @@ export default function KickstartPromoPopup() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
               {t.title}
             </h2>
+
+            {/* January Kickstart - FULL */}
+            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
+                {t.januaryTitle}
+              </h3>
+              <p className="text-base font-semibold text-gray-600">
+                {t.januarySpots}
+              </p>
+            </div>
 
             {/* February Kickstart */}
             <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-3">
