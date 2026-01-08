@@ -303,15 +303,16 @@
       "subtitle": "Klik op een programma voor meer informatie en prijzen",
       "kickstart": {
         "title": "28-Day Kickstart",
-        "subtitle": "Perfect voor beginners",
+        "subtitle": "De standaard start voor iedereen",
         "price": "€600",
         "period": "eenmalig",
-        "description": "Voor beginners of mensen die veilig willen opbouwen. Je traint in kleine groepen, leert de basis en krijgt begeleiding van meerdere coaches. We bouwen rustig op zodat je vertrouwen groeit.",
+        "description": "De **Kickstart is de standaard start voor iedereen die begint bij CrossFit Leiden**. Of je nu al sportervaring hebt of niet.\n\nIn dit traject leggen we samen een sterke basis. Je leert hoe wij trainen, hoe we bewegen en hoe je veilig en duurzaam progressie maakt binnen onze groepslessen. Je traint in kleine groepen met veel persoonlijke aandacht van meerdere coaches.\n\nWe nemen de tijd om jou goed te leren kennen, zodat je daarna met vertrouwen en plezier kunt instromen in onze reguliere trainingen.",
         "included": "Inclusief:",
         "item1": "2 small group sessies per week",
         "item2": "1 groepsles per week",
+        "item3": "Focus op techniek, kracht en conditie",
         "item4": "Persoonlijke coaching en voedingsdoelen",
-        "item5": "Groepssupport"
+        "item5": "Support van coaches en groep"
       },
       "group": {
         "title": "Group Coaching",

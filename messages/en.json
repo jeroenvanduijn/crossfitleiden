@@ -303,15 +303,16 @@
       "subtitle": "Click on a program for more information and pricing",
       "kickstart": {
         "title": "28-Day Kickstart",
-        "subtitle": "Perfect for beginners",
+        "subtitle": "The standard start for everyone",
         "price": "€600",
         "period": "one-time",
-        "description": "For beginners or people who want to build up safely. You train in small groups, learn the basics and get guidance from multiple coaches. We build up gradually so your confidence grows.",
+        "description": "The **Kickstart is the standard starting program for everyone who joins CrossFit Leiden**. Whether you have sports experience or not.\n\nIn this program, we build a strong foundation together. You learn how we train, how we move, and how to make safe and sustainable progress within our group classes. You train in small groups with lots of personal attention from multiple coaches.\n\nWe take the time to get to know you well, so you can then join our regular classes with confidence and joy.",
         "included": "Included:",
         "item1": "2 small group sessions per week",
         "item2": "1 group class per week",
+        "item3": "Focus on technique, strength and conditioning",
         "item4": "Personal coaching and nutrition goals",
-        "item5": "Group support"
+        "item5": "Support from coaches and group"
       },
       "group": {
         "title": "Group Coaching",
