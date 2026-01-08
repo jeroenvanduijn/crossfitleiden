@@ -9,17 +9,17 @@ const content = {
   nl: {
     hero: {
       title: "Start veilig en sterk met onze Kickstart",
-      description: "Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.",
+      description: "Ons 28-dagen programma voor iedereen die veilig wil opbouwen. Persoonlijke begeleiding, gestructureerde aanpak, op jouw tempo.",
       cta: "Plan een Gratis Intro"
     },
     whatIs: {
       title: "Wat is de Kickstart?",
-      intro: "Ons 28-dagen beginnersprogramma voor mensen zonder ervaring. Persoonlijke begeleiding, veilige opbouw, op jouw tempo.",
+      intro: "Ons 28-dagen programma voor iedereen die veilig wil opbouwen. Of je nu helemaal nieuw bent, lang niet hebt gesport, of gewoon een solide basis wilt leggen – we starten op jouw niveau.",
       important: "<strong>Belangrijk:</strong> Je begint altijd met een gratis intro. In dat gesprek kijken we samen of de Kickstart de beste start voor jou is.",
       description: "Gedurende <strong>28 dagen</strong> werk je aan je energie, routine en krijg je alle basis-bewegingen onder de knie – volledig op jouw tempo, met persoonlijke begeleiding van onze coaches.",
       focusTitle: "Waar focussen we op?",
       focus: [
-        { title: "Veilig starten", description: "Geen high-skill bewegingen, wel veel aandacht voor goede techniek" },
+        { title: "Veilig opbouwen", description: "Starten op jouw niveau met veel aandacht voor goede techniek" },
         { title: "Meer energie", description: "Bouw conditie en kracht op zonder te overtrainen" },
         { title: "Een routine creëren", description: "Leer hoe je training inpast in je drukke leven" },
         { title: "Vertrouwen opbouwen", description: "Ontdek wat je lichaam kan, stap voor stap" }
@@ -28,10 +28,10 @@ const content = {
     forWho: {
       title: "Voor Wie is de Kickstart?",
       cards: [
-        { emoji: "👋", title: "Complete Beginners", description: "Nog nooit CrossFit gedaan? Perfect. De Kickstart is speciaal gemaakt voor jou." },
+        { emoji: "👋", title: "Nieuwe Start", description: "Nog nooit CrossFit gedaan of lang niet gesport? We starten op jouw niveau." },
         { emoji: "👨‍👩‍👧‍👦", title: "Drukke Ouders", description: "Heb je structuur en een duidelijk plan nodig? De Kickstart geeft je houvast." },
-        { emoji: "⏸️", title: "Lang Niet Gesport", description: "Is het jaren geleden? Geen probleem. We bouwen rustig op vanaf jouw niveau." },
-        { emoji: "🩹", title: "Onzekerheid of Blessures", description: "Heb je een oude blessure of ben je onzeker? We passen alles aan op jouw situatie." }
+        { emoji: "⏸️", title: "Weer Beginnen", description: "Wil je (opnieuw) starten of heropbouwen? We pakken rustig op vanaf waar jij staat." },
+        { emoji: "🩹", title: "Veilig Trainen", description: "Onzeker of oude blessure? We passen alles aan op jouw situatie en bouwen veilig op." }
       ]
     },
     whatsIncluded: {
@@ -111,7 +111,7 @@ const content = {
       items: [
         {
           question: "Moet ik fit zijn om de Kickstart te doen?",
-          answer: "Absoluut niet! De Kickstart is speciaal gemaakt voor beginners die nog niet fit zijn. We passen alles aan op jouw niveau en bouwen rustig op."
+          answer: "Absoluut niet! De Kickstart is er juist voor om veilig op te bouwen, waar je ook begint. We passen alles aan op jouw niveau en bouwen rustig op."
         },
         {
           question: "Hoe vaak train ik tijdens de Kickstart?",
@@ -145,17 +145,17 @@ const content = {
   en: {
     hero: {
       title: "Start Safe and Strong with our Kickstart",
-      description: "Our 28-day beginner program for people with no experience. Personal guidance, safe progression, at your own pace.",
+      description: "Our 28-day program for everyone who wants to build safely. Personal guidance, structured approach, at your own pace.",
       cta: "Schedule a Free Intro"
     },
     whatIs: {
       title: "What is the Kickstart?",
-      intro: "Our 28-day beginner program for people with no experience. Personal guidance, safe progression, at your own pace.",
+      intro: "Our 28-day program for everyone who wants to build safely. Whether you're completely new, haven't exercised in years, or simply want to build a solid foundation – we start at your level.",
       important: "<strong>Important:</strong> You always start with a free intro. In that conversation we'll determine together if the Kickstart is the best start for you.",
       description: "During <strong>28 days</strong> you'll build energy, create a routine, and master all fundamental movements – completely at your own pace, with personal guidance from our coaches.",
       focusTitle: "What do we focus on?",
       focus: [
-        { title: "Safe start", description: "No high-skill movements, lots of attention to proper technique" },
+        { title: "Safe progression", description: "Starting at your level with lots of attention to proper technique" },
         { title: "More energy", description: "Build conditioning and strength without overtraining" },
         { title: "Creating a routine", description: "Learn how to fit training into your busy life" },
         { title: "Building confidence", description: "Discover what your body can do, step by step" }
@@ -164,10 +164,10 @@ const content = {
     forWho: {
       title: "Who is the Kickstart For?",
       cards: [
-        { emoji: "👋", title: "Complete Beginners", description: "Never done CrossFit before? Perfect. The Kickstart is specially designed for you." },
+        { emoji: "👋", title: "Fresh Start", description: "Never done CrossFit or haven't exercised in a while? We start at your level." },
         { emoji: "👨‍👩‍👧‍👦", title: "Busy Parents", description: "Need structure and a clear plan? The Kickstart provides guidance." },
-        { emoji: "⏸️", title: "Haven't Exercised in Years", description: "Been years since you exercised? No problem. We build up gradually from your level." },
-        { emoji: "🩹", title: "Uncertainty or Injuries", description: "Have an old injury or feel uncertain? We adapt everything to your situation." }
+        { emoji: "⏸️", title: "Starting Again", description: "Want to (re)start or rebuild? We'll pick up calmly from where you are." },
+        { emoji: "🩹", title: "Training Safely", description: "Uncertain or old injury? We adapt everything to your situation and build safely." }
       ]
     },
     whatsIncluded: {
@@ -247,7 +247,7 @@ const content = {
       items: [
         {
           question: "Do I need to be fit to do the Kickstart?",
-          answer: "Absolutely not! The Kickstart is specially designed for beginners who aren't fit yet. We adapt everything to your level and build up gradually."
+          answer: "Absolutely not! The Kickstart is designed to help you build safely, wherever you're starting from. We adapt everything to your level and build up gradually."
         },
         {
           question: "How often do I train during the Kickstart?",
