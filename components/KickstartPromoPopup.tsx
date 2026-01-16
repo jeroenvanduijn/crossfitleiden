@@ -39,7 +39,7 @@ export default function KickstartPromoPopup() {
     // Track the click event with campaign info
     track('Kickstart Promo Popup CTA', {
       locale,
-      campaign: 'kickstart-feb-march-popup',
+      campaign: 'kickstart-march-popup',
       source: 'kickstart-popup'
     });
 
@@ -47,13 +47,13 @@ export default function KickstartPromoPopup() {
     sessionStorage.setItem('traffic_source', 'kickstart-popup');
     sessionStorage.setItem('utm_source', 'website');
     sessionStorage.setItem('utm_medium', 'popup');
-    sessionStorage.setItem('utm_campaign', 'kickstart-feb-march');
+    sessionStorage.setItem('utm_campaign', 'kickstart-march');
 
     // Add UTM parameters to current URL for tracking
     const url = new URL(window.location.href);
     url.searchParams.set('utm_source', 'website');
     url.searchParams.set('utm_medium', 'popup');
-    url.searchParams.set('utm_campaign', 'kickstart-feb-march');
+    url.searchParams.set('utm_campaign', 'kickstart-march');
     window.history.replaceState({}, '', url.toString());
 
     setIsVisible(false);
@@ -91,10 +91,10 @@ export default function KickstartPromoPopup() {
       title: "Kickstart Programma",
       januaryTitle: "Januari Kickstart",
       januarySpots: "✓ Alle plekken gevuld",
-      subtitle: "Februari Kickstart (start 2 februari)",
-      spotsLeft: "Nog 4 plekken beschikbaar",
-      subtitle2: "Maart Kickstart (start 2 maart)",
-      spotsLeft2: "Nog 9 plekken beschikbaar",
+      februaryTitle: "Februari Kickstart",
+      februarySpots: "✓ Alle plekken gevuld",
+      subtitle: "Maart Kickstart (start 2 maart)",
+      spotsLeft: "Nog 3 plekken beschikbaar",
       description: "Ons populaire 28-Day Kickstart programma voor beginners. Kleine groepen, persoonlijke begeleiding.",
       cta: "Reserveer je plek →",
       close: "Sluiten"
@@ -104,10 +104,10 @@ export default function KickstartPromoPopup() {
       title: "Kickstart Program",
       januaryTitle: "January Kickstart",
       januarySpots: "✓ All spots filled",
-      subtitle: "February Kickstart (starts February 2nd)",
-      spotsLeft: "4 spots available",
-      subtitle2: "March Kickstart (starts March 2nd)",
-      spotsLeft2: "9 spots available",
+      februaryTitle: "February Kickstart",
+      februarySpots: "✓ All spots filled",
+      subtitle: "March Kickstart (starts March 2nd)",
+      spotsLeft: "3 spots available",
       description: "Our popular 28-Day Kickstart program for beginners. Small groups, personal coaching.",
       cta: "Reserve your spot →",
       close: "Close"
@@ -162,23 +162,23 @@ export default function KickstartPromoPopup() {
               </p>
             </div>
 
-            {/* February Kickstart */}
-            <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-3">
+            {/* February Kickstart - FULL */}
+            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
-                {t.subtitle}
+                {t.februaryTitle}
               </h3>
-              <p className="text-base font-semibold text-verdigris">
-                ✨ {t.spotsLeft}
+              <p className="text-base font-semibold text-gray-600">
+                {t.februarySpots}
               </p>
             </div>
 
             {/* March Kickstart */}
             <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-4">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
-                {t.subtitle2}
+                {t.subtitle}
               </h3>
               <p className="text-base font-semibold text-verdigris">
-                ✨ {t.spotsLeft2}
+                ✨ {t.spotsLeft}
               </p>
             </div>
 
