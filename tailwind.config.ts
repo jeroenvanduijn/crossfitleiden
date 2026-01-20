@@ -14,6 +14,13 @@ const config: Config = {
         'verdigris': '#0CBABA',     // Secondary - turquoise
         'jonquil': '#F7CB15',       // Tertiary - yellow
         'chinese-violet': '#7B6D8D', // Tertiary - purple
+        'organic-bg': '#fdfbf7',    // Organic - off-white
+        'organic-text': '#2c2825',  // Organic - soft charcoal
+        'organic-secondary': '#d4b483', // Organic - beige accent
+      },
+      borderRadius: {
+        'xl': '12px',
+        '2xl': '16px',
       },
       fontFamily: {
         'heading': ['var(--font-heading)', 'sans-serif'],

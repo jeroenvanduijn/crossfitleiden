@@ -192,7 +192,25 @@
       "byPublicTransport": "<strong>Met openbaar vervoer:</strong> Bushalte op 800 meter afstand."
     },
     "form": {
-      "title": "Stuur ons een bericht"
+      "title": "Stuur ons een bericht",
+      "nameLabel": "Naam",
+      "namePlaceholder": "Jouw naam",
+      "emailLabel": "Email",
+      "emailPlaceholder": "jouw@email.nl",
+      "subjectLabel": "Onderwerp",
+      "subjects": {
+        "general": "Algemene vraag",
+        "intro": "Gratis Intro plannen",
+        "membership": "Lidmaatschap",
+        "pricing": "Tarieven",
+        "other": "Iets anders"
+      },
+      "messageLabel": "Bericht",
+      "messagePlaceholder": "Typ hier je bericht...",
+      "submitButton": "Verstuur Bericht",
+      "sending": "Versturen...",
+      "successMessage": "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.",
+      "errorMessage": "Er ging iets mis. Probeer het later opnieuw."
     },
     "map": {
       "title": "Vind ons op de kaart"

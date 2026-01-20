@@ -192,7 +192,25 @@
       "byPublicTransport": "<strong>By public transport:</strong> Bus stop 800 meters away."
     },
     "form": {
-      "title": "Send us a message"
+      "title": "Send us a message",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "Subject",
+      "subjects": {
+        "general": "General Question",
+        "intro": "Schedule Free Intro",
+        "membership": "Membership",
+        "pricing": "Pricing",
+        "other": "Something else"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "Type your message here...",
+      "submitButton": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Thanks for your message! We'll get back to you as soon as possible.",
+      "errorMessage": "Something went wrong. Please try again later."
     },
     "map": {
       "title": "Find us on the map"

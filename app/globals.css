@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply text-gray-900 bg-white;
+    @apply text-organic-text bg-organic-bg;
+    background-image: url('/assets/noise.png');
+    background-blend-mode: overlay; /* Soft blend */
+    background-attachment: fixed;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   }
 
