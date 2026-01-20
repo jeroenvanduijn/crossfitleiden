@@ -23,7 +23,7 @@ const config: Config = {
         '2xl': '16px',
       },
       fontFamily: {
-        'heading': ['"Young Serif"', 'serif'],
+        'heading': ['"Inter"', 'sans-serif'],
         'body': ['"Inter"', 'sans-serif'],
       },
     },
