@@ -42,7 +42,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Info & Form */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
@@ -150,7 +150,7 @@ export default function Contact() {
               </div>
 
               {/* Parking & Route */}
-              <div className="mt-8 bg-gray-50 rounded-lg p-6">
+              <div className="mt-8 bg-stone-50 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3">{t('route.title')}</h3>
                 <p className="text-gray-700 mb-2" dangerouslySetInnerHTML={{ __html: t('route.byCar') }} />
                 <p className="text-gray-700 mb-2" dangerouslySetInnerHTML={{ __html: t('route.byBike') }} />
@@ -162,7 +162,7 @@ export default function Contact() {
             <div>
               <h2 className="text-3xl font-bold mb-8">{t('form.title')}</h2>
 
-              <div className="w-full bg-white rounded-lg overflow-hidden shadow-sm">
+              <div className="w-full bg-organic-bg rounded-lg overflow-hidden shadow-sm">
                 <iframe
                   src="https://kilo.gymleadmachine.com/widget/form/nGDExYgYZcuHjGNwCsue"
                   style={{
@@ -193,7 +193,7 @@ export default function Contact() {
       </section>
 
       {/* Map */}
-      <section className="bg-gray-50">
+      <section className="bg-stone-50">
         <div className="container-custom py-12">
           <h2 className="text-3xl font-bold mb-8 text-center">{t('map.title')}</h2>
           <div className="rounded-xl overflow-hidden">
@@ -212,7 +212,7 @@ export default function Contact() {
       </section>
 
       {/* Visit Us */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Photo */}

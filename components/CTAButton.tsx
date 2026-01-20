@@ -20,9 +20,9 @@ export default function CTAButton({ children, className = '', variant = 'white-b
   const baseClasses = 'inline-block font-bold transition-all cursor-pointer';
 
   const variantClasses = {
-    header: 'bg-white text-[#E25C2A] px-8 py-3 rounded-lg hover:bg-[#E25C2A]/10 shadow-md hover:shadow-lg border-2 border-[#E25C2A]',
-    'white-bg': 'bg-white text-[#E25C2A] px-8 py-3 rounded-lg hover:bg-[#E25C2A]/10 shadow-md hover:shadow-lg border-2 border-[#E25C2A]',
-    hero: 'bg-white text-[#E25C2A] px-8 py-4 rounded-lg hover:bg-[#E25C2A]/10 shadow-lg text-lg border-2 border-[#E25C2A]'
+    header: 'bg-organic-bg text-cinnabar px-8 py-3 rounded-2xl hover:bg-orange-50 shadow-md hover:shadow-lg border-2 border-cinnabar font-heading',
+    'white-bg': 'bg-organic-bg text-cinnabar px-8 py-3 rounded-2xl hover:bg-orange-50 shadow-md hover:shadow-lg border-2 border-cinnabar font-heading',
+    hero: 'bg-organic-bg text-cinnabar px-8 py-4 rounded-2xl hover:bg-orange-50 shadow-lg text-lg border-2 border-cinnabar font-heading'
   };
 
   return (

@@ -40,7 +40,7 @@ export default function Nutrition() {
       </section>
 
       {/* How It Works */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Hoe het werkt</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -92,7 +92,7 @@ export default function Nutrition() {
       </section>
 
       {/* Meet Coach Annie */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
@@ -121,7 +121,7 @@ export default function Nutrition() {
       </section>
 
       {/* Program 1: 1-on-1 Coaching */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Onze Programma's</h2>
 
@@ -135,7 +135,7 @@ export default function Nutrition() {
                 (met tracking) of principes-gebaseerd (zonder tracking). Maximale ondersteuning en duidelijke resultaten.
               </p>
 
-              <div className="bg-white/70 rounded-xl p-6 mb-6">
+              <div className="bg-organic-bg/70 rounded-xl p-6 mb-6">
                 <h4 className="font-bold mb-4">Dit krijg je:</h4>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
@@ -191,7 +191,7 @@ export default function Nutrition() {
                 haalbare stappen die je direct kunt toepassen.
               </p>
 
-              <div className="bg-white/70 rounded-xl p-6 mb-6">
+              <div className="bg-organic-bg/70 rounded-xl p-6 mb-6">
                 <h4 className="font-bold mb-4">Dit krijg je:</h4>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
@@ -238,7 +238,7 @@ export default function Nutrition() {
       </section>
 
       {/* Comparison Table */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Welk programma past bij jou?</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -246,7 +246,7 @@ export default function Nutrition() {
           </p>
 
           {/* Desktop Table */}
-          <div className="hidden md:block max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div className="hidden md:block max-w-5xl mx-auto bg-organic-bg rounded-2xl shadow-lg overflow-hidden">
             <table className="w-full">
               <thead>
                 <tr className="bg-gray-100">
@@ -336,11 +336,11 @@ export default function Nutrition() {
       </section>
 
       {/* Testimonials */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Wat zeggen anderen?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gray-50 rounded-xl p-8 relative">
+            <div className="bg-stone-50 rounded-xl p-8 relative">
               <div className="text-4xl text-cinnabar/20 mb-4">"</div>
               <p className="text-gray-700 mb-6">
                 Ik stopte eindelijk met teveel nadenken over eten. Annie hielp me simpele gewoontes te bouwen
@@ -350,7 +350,7 @@ export default function Nutrition() {
               <p className="text-sm text-gray-600">Moeder van 3 kinderen</p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8 relative">
+            <div className="bg-stone-50 rounded-xl p-8 relative">
               <div className="text-4xl text-cinnabar/20 mb-4">"</div>
               <p className="text-gray-700 mb-6">
                 Ik voelde me de hele weg ondersteund. Geen oordeel, alleen praktisch advies.
@@ -360,7 +360,7 @@ export default function Nutrition() {
               <p className="text-sm text-gray-600">Drukke ondernemer</p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8 relative">
+            <div className="bg-stone-50 rounded-xl p-8 relative">
               <div className="text-4xl text-cinnabar/20 mb-4">"</div>
               <p className="text-gray-700 mb-6">
                 Annie hielp me begrijpen wat werkt voor mij. Niet een standaard plan, maar advies dat
@@ -374,12 +374,12 @@ export default function Nutrition() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
             <div className="space-y-4">
-              <details className="bg-white rounded-lg p-6 group">
+              <details className="bg-organic-bg rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Moet ik lid zijn van CrossFit Leiden?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -392,7 +392,7 @@ export default function Nutrition() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-lg p-6 group">
+              <details className="bg-organic-bg rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Welk programma is beter voor mij?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -406,7 +406,7 @@ export default function Nutrition() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-lg p-6 group">
+              <details className="bg-organic-bg rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Moet ik calorieën tellen of eten wegen?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -420,7 +420,7 @@ export default function Nutrition() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-lg p-6 group">
+              <details className="bg-organic-bg rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Ga ik op een streng dieet?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -434,7 +434,7 @@ export default function Nutrition() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-lg p-6 group">
+              <details className="bg-organic-bg rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Past dit bij mijn drukke leven?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -448,7 +448,7 @@ export default function Nutrition() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-lg p-6 group">
+              <details className="bg-organic-bg rounded-lg p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Is de Voeding Kickstart hetzelfde als het Kickstart programma?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

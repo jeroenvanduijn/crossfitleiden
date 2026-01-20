@@ -16,7 +16,7 @@ export default function Tarieven() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white overflow-hidden">
+      <section className="relative bg-organic-text text-white overflow-hidden">
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -43,7 +43,7 @@ export default function Tarieven() {
                   (window as any).openCFLPopup();
                 }
               }}
-              className="inline-block bg-white text-[#E25C2A] px-10 py-4 rounded-lg font-bold text-lg hover:bg-[#E25C2A]/10 transition-all shadow-lg hover:shadow-xl border-2 border-[#E25C2A]"
+              className="inline-block bg-organic-bg text-[#E25C2A] px-10 py-4 rounded-lg font-bold text-lg hover:bg-[#E25C2A]/10 transition-all shadow-lg hover:shadow-xl border-2 border-[#E25C2A]"
             >
               {t('hero.button')}
             </button>
@@ -52,27 +52,27 @@ export default function Tarieven() {
       </section>
 
       {/* Kostenvergelijking */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">{t('comparison.title')}</h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-              <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="bg-stone-50 rounded-xl p-6 text-center">
                 <div className="text-4xl mb-3">{t('comparison.coffee.emoji')}</div>
                 <p className="font-semibold mb-2">{t('comparison.coffee.title')}</p>
                 <p className="text-2xl font-bold text-gray-900">{t('comparison.coffee.price')}</p>
                 <p className="text-sm text-gray-600">{t('comparison.coffee.period')}</p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="bg-stone-50 rounded-xl p-6 text-center">
                 <div className="text-4xl mb-3">{t('comparison.dining.emoji')}</div>
                 <p className="font-semibold mb-2">{t('comparison.dining.title')}</p>
                 <p className="text-2xl font-bold text-gray-900">{t('comparison.dining.price')}</p>
                 <p className="text-sm text-gray-600">{t('comparison.dining.period')}</p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="bg-stone-50 rounded-xl p-6 text-center">
                 <div className="text-4xl mb-3">{t('comparison.streaming.emoji')}</div>
                 <p className="font-semibold mb-2">{t('comparison.streaming.title')}</p>
                 <p className="text-2xl font-bold text-gray-900">{t('comparison.streaming.price')}</p>
@@ -87,7 +87,7 @@ export default function Tarieven() {
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8 text-center max-w-3xl mx-auto">
+            <div className="bg-stone-50 rounded-xl p-8 text-center max-w-3xl mx-auto">
               <p className="text-lg text-gray-700">
                 {t('comparison.message')}
               </p>
@@ -97,7 +97,7 @@ export default function Tarieven() {
       </section>
 
       {/* Programma's met accordions */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('programs.title')}</h2>
@@ -107,10 +107,10 @@ export default function Tarieven() {
 
             <div className="space-y-4">
               {/* Kickstart */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('kickstart')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#F4D35E]/10 rounded-full flex items-center justify-center">
@@ -143,7 +143,7 @@ export default function Tarieven() {
                         {t('programs.kickstart.description')}
                       </p>
 
-                      <div className="bg-gray-50 rounded-lg p-5">
+                      <div className="bg-stone-50 rounded-lg p-5">
                         <h4 className="font-bold text-gray-900 mb-3">{t('programs.kickstart.included')}</h4>
                         <ul className="space-y-2 text-sm text-gray-700">
                           <li className="flex items-start gap-2">
@@ -174,10 +174,10 @@ export default function Tarieven() {
               </div>
 
               {/* Group Coaching */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('group')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#E25C2A]/10 rounded-full flex items-center justify-center">
@@ -206,7 +206,7 @@ export default function Tarieven() {
                       </p>
 
                       <div className="space-y-4">
-                        <div className="bg-gray-50 rounded-lg p-5">
+                        <div className="bg-stone-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
                             <h4 className="text-lg font-bold text-gray-900">{t('programs.group.base.title')}</h4>
                             <div className="text-right">
@@ -238,7 +238,7 @@ export default function Tarieven() {
                           </ul>
                         </div>
 
-                        <div className="bg-gray-50 rounded-lg p-5">
+                        <div className="bg-stone-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
                             <h4 className="text-lg font-bold text-gray-900">{t('programs.group.pro.title')}</h4>
                             <div className="text-right">
@@ -258,7 +258,7 @@ export default function Tarieven() {
                           </ul>
                         </div>
 
-                        <div className="bg-gray-50 rounded-lg p-5">
+                        <div className="bg-stone-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
                             <h4 className="text-lg font-bold text-gray-900">{t('programs.group.elite.title')}</h4>
                             <div className="text-right">
@@ -288,10 +288,10 @@ export default function Tarieven() {
               </div>
 
               {/* Small Group / Semi-Private */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('small')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#17BEBB]/10 rounded-full flex items-center justify-center">
@@ -320,7 +320,7 @@ export default function Tarieven() {
                       </p>
 
                       <div className="space-y-4">
-                        <div className="bg-gray-50 rounded-lg p-5">
+                        <div className="bg-stone-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
                             <h4 className="text-lg font-bold text-gray-900">{t('programs.small.tier3.title')}</h4>
                             <div className="text-right">
@@ -349,7 +349,7 @@ export default function Tarieven() {
                           </ul>
                         </div>
 
-                        <div className="bg-gray-50 rounded-lg p-5">
+                        <div className="bg-stone-50 rounded-lg p-5">
                           <div className="flex items-start justify-between mb-3">
                             <h4 className="text-lg font-bold text-gray-900">{t('programs.small.tier2.title')}</h4>
                             <div className="text-right">
@@ -383,10 +383,10 @@ export default function Tarieven() {
               </div>
 
               {/* Unlock Motion */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('unlock')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#17BEBB]/10 rounded-full flex items-center justify-center">
@@ -424,10 +424,10 @@ export default function Tarieven() {
               </div>
 
               {/* Body APK */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('body-apk')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#E25C2A]/10 rounded-full flex items-center justify-center">
@@ -464,10 +464,10 @@ export default function Tarieven() {
               </div>
 
               {/* Personal Training */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('pt')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#F4D35E]/10 rounded-full flex items-center justify-center">
@@ -496,7 +496,7 @@ export default function Tarieven() {
                       </p>
 
                       <div className="grid md:grid-cols-2 gap-4">
-                        <div className="bg-gray-50 rounded-lg p-5">
+                        <div className="bg-stone-50 rounded-lg p-5">
                           <h4 className="text-lg font-bold text-gray-900 mb-4">{t('programs.pt.pt60.title')}</h4>
                           <div className="space-y-3">
                             <div className="flex justify-between items-center">
@@ -510,7 +510,7 @@ export default function Tarieven() {
                           </div>
                         </div>
 
-                        <div className="bg-gray-50 rounded-lg p-5">
+                        <div className="bg-stone-50 rounded-lg p-5">
                           <h4 className="text-lg font-bold text-gray-900 mb-4">{t('programs.pt.pt30.title')}</h4>
                           <div className="space-y-3">
                             <div className="flex justify-between items-center">
@@ -530,10 +530,10 @@ export default function Tarieven() {
               </div>
 
               {/* Monthly Private Coaching */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('skill')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#E25C2A]/10 rounded-full flex items-center justify-center">
@@ -562,15 +562,15 @@ export default function Tarieven() {
                       </p>
 
                       <div className="space-y-3">
-                        <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                        <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                           <span className="font-semibold text-gray-900">{t('programs.skill.skill1')}</span>
                           <span className="text-xl font-bold text-[#E25C2A]">{t('programs.skill.price1')}</span>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                        <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                           <span className="font-semibold text-gray-900">{t('programs.skill.skill2')}</span>
                           <span className="text-xl font-bold text-[#E25C2A]">{t('programs.skill.price2')}</span>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                        <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                           <span className="font-semibold text-gray-900">{t('programs.skill.skill4')}</span>
                           <span className="text-xl font-bold text-[#E25C2A]">{t('programs.skill.price4')}</span>
                         </div>
@@ -581,10 +581,10 @@ export default function Tarieven() {
               </div>
 
               {/* Nutrition Kickstart */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('nutrition-kickstart')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#17BEBB]/10 rounded-full flex items-center justify-center">
@@ -617,7 +617,7 @@ export default function Tarieven() {
                         {t('programs.nutritionKickstart.description')}
                       </p>
 
-                      <div className="bg-gray-50 rounded-lg p-5">
+                      <div className="bg-stone-50 rounded-lg p-5">
                         <h4 className="font-bold text-gray-900 mb-3">{t('programs.nutritionKickstart.included')}</h4>
                         <ul className="space-y-2 text-sm text-gray-700">
                           <li className="flex items-start gap-2">
@@ -644,10 +644,10 @@ export default function Tarieven() {
               </div>
 
               {/* Nutrition Membership */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('nutrition')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#17BEBB]/10 rounded-full flex items-center justify-center">
@@ -685,10 +685,10 @@ export default function Tarieven() {
               </div>
 
               {/* Teens */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('teens')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#F4D35E]/10 rounded-full flex items-center justify-center">
@@ -717,11 +717,11 @@ export default function Tarieven() {
                       </p>
 
                       <div className="space-y-3">
-                        <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                        <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                           <span className="font-semibold text-gray-900">{t('programs.teens.tier1')}</span>
                           <span className="text-xl font-bold text-[#E25C2A]">{t('programs.teens.price1')}</span>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                        <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                           <span className="font-semibold text-gray-900">{t('programs.teens.tier2')}</span>
                           <span className="text-xl font-bold text-[#E25C2A]">{t('programs.teens.price2')}</span>
                         </div>
@@ -732,10 +732,10 @@ export default function Tarieven() {
               </div>
 
               {/* Base Weekend */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('base-weekend')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#F4D35E]/10 rounded-full flex items-center justify-center">
@@ -772,10 +772,10 @@ export default function Tarieven() {
               </div>
 
               {/* Flex Friday */}
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="bg-organic-bg rounded-xl shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleSection('flex')}
-                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-stone-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-[#F4D35E]/10 rounded-full flex items-center justify-center">
@@ -817,7 +817,7 @@ export default function Tarieven() {
       </section>
 
       {/* Google Review Widget */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">{t('reviews.title')}</h2>
 
@@ -844,13 +844,13 @@ export default function Tarieven() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">{t('faq.title')}</h2>
 
             <div className="space-y-4">
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>{t('faq.q1')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -862,7 +862,7 @@ export default function Tarieven() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>{t('faq.q2')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -874,7 +874,7 @@ export default function Tarieven() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>{t('faq.q3')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -886,7 +886,7 @@ export default function Tarieven() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>{t('faq.q4')}</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

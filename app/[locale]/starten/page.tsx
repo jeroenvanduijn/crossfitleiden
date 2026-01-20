@@ -42,11 +42,11 @@ export default function StartenPage() {
       </section>
 
       {/* Two Booking Options */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Option A - Fysieke Intro */}
-            <div className="bg-gray-50 rounded-xl p-6 md:p-8">
+            <div className="bg-stone-50 rounded-xl p-6 md:p-8">
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-12 h-12 bg-cinnabar rounded-full flex items-center justify-center flex-shrink-0">
@@ -86,7 +86,7 @@ export default function StartenPage() {
               </div>
 
               {/* Booking Calendar Iframe */}
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <div className="bg-organic-bg rounded-lg overflow-hidden shadow-sm">
                 <iframe
                   src="https://kilo.gymleadmachine.com/widget/booking/rcNXO9PBrW3gx8CtKZhO"
                   style={{
@@ -113,7 +113,7 @@ export default function StartenPage() {
             </div>
 
             {/* Option B - Online Intro */}
-            <div className="bg-gray-50 rounded-xl p-6 md:p-8">
+            <div className="bg-stone-50 rounded-xl p-6 md:p-8">
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-12 h-12 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0">
@@ -153,7 +153,7 @@ export default function StartenPage() {
               </div>
 
               {/* Booking Calendar Iframe */}
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <div className="bg-organic-bg rounded-lg overflow-hidden shadow-sm">
                 <iframe
                   src="https://kilo.gymleadmachine.com/widget/booking/rwOfSnWorZvegIJBRtHq"
                   style={{
@@ -193,7 +193,7 @@ export default function StartenPage() {
       </section>
 
       {/* What Happens Next Section */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
@@ -202,7 +202,7 @@ export default function StartenPage() {
 
             <div className="space-y-8">
               {/* Step 1 */}
-              <div className="flex gap-6 bg-white rounded-xl p-6 md:p-8 shadow-sm">
+              <div className="flex gap-6 bg-organic-bg rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 bg-[#E4572E] rounded-full flex items-center justify-center">
                     <span className="text-white text-2xl font-bold">1</span>
@@ -217,7 +217,7 @@ export default function StartenPage() {
               </div>
 
               {/* Step 2 */}
-              <div className="flex gap-6 bg-white rounded-xl p-6 md:p-8 shadow-sm">
+              <div className="flex gap-6 bg-organic-bg rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 bg-[#17BEBB] rounded-full flex items-center justify-center">
                     <span className="text-white text-2xl font-bold">2</span>
@@ -232,7 +232,7 @@ export default function StartenPage() {
               </div>
 
               {/* Step 3 */}
-              <div className="flex gap-6 bg-white rounded-xl p-6 md:p-8 shadow-sm">
+              <div className="flex gap-6 bg-organic-bg rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 bg-[#6A4C93] rounded-full flex items-center justify-center">
                     <span className="text-white text-2xl font-bold">3</span>

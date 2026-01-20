@@ -315,7 +315,7 @@ export default function Kickstart() {
       </section>
 
       {/* Wat is de Kickstart */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">{t.whatIs.title}</h2>
@@ -343,13 +343,13 @@ export default function Kickstart() {
       </section>
 
       {/* Voor wie is het */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">{t.forWho.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {t.forWho.cards.map((card, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
+                <div key={index} className="bg-organic-bg rounded-xl p-6 shadow-sm">
                   <div className="text-4xl mb-3">{card.emoji}</div>
                   <h3 className="font-bold text-lg mb-2">{card.title}</h3>
                   <p className="text-gray-700">{card.description}</p>
@@ -361,7 +361,7 @@ export default function Kickstart() {
       </section>
 
       {/* Wat zit er in de Kickstart */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">{t.whatsIncluded.title}</h2>
@@ -381,7 +381,7 @@ export default function Kickstart() {
       </section>
 
       {/* Hoe werkt het starten - 3 stappen */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">{t.howItWorks.title}</h2>
@@ -391,7 +391,7 @@ export default function Kickstart() {
 
             <div className="space-y-8">
               {t.howItWorks.steps.map((step, index) => (
-                <div key={index} className="bg-white rounded-xl p-8 shadow-sm flex items-start">
+                <div key={index} className="bg-organic-bg rounded-xl p-8 shadow-sm flex items-start">
                   <div className="flex-shrink-0 w-16 h-16 bg-jonquil rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 mr-6">
                     {index + 1}
                   </div>
@@ -420,12 +420,12 @@ export default function Kickstart() {
       </section>
 
       {/* Guided by certified coaches */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">{t.coaches.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Coach Max */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png"
@@ -443,7 +443,7 @@ export default function Kickstart() {
             </div>
 
             {/* Coach Annie */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png"
@@ -464,12 +464,12 @@ export default function Kickstart() {
       </section>
 
       {/* Resultaten van leden - Social proof */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">{t.testimonials.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {t.testimonials.items.map((testimonial, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-6">
+              <div key={index} className="bg-stone-50 rounded-xl p-6">
                 <div className="flex items-center mb-4">
                   <div className="text-3xl mr-3">{testimonial.emoji}</div>
                   <div>
@@ -485,13 +485,13 @@ export default function Kickstart() {
       </section>
 
       {/* Mini FAQ */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">{t.faq.title}</h2>
             <div className="space-y-4">
               {t.faq.items.map((item, index) => (
-                <details key={index} className="bg-white rounded-xl p-6 group">
+                <details key={index} className="bg-organic-bg rounded-xl p-6 group">
                   <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                     {item.question}
                     <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -512,7 +512,7 @@ export default function Kickstart() {
       />
 
       {/* Final note */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">

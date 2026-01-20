@@ -34,11 +34,11 @@ export default function OpzeggenPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-3xl mx-auto">
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Belangrijke informatie</h2>
-            <div className="bg-gray-50 rounded-xl p-6 space-y-3 text-gray-700">
+            <div className="bg-stone-50 rounded-xl p-6 space-y-3 text-gray-700">
               <p>
                 <strong>Opzegtermijn:</strong> We hanteren minimaal 1 kalendermaand opzegtermijn (tenzij jouw abonnement hierop afwijkt, zoals GetShredded met 2 maanden).
               </p>
@@ -55,10 +55,10 @@ export default function OpzeggenPage() {
           </div>
 
           {/* HighLevel Cancellation Form */}
-          <div className="bg-gray-50 rounded-xl p-8">
+          <div className="bg-stone-50 rounded-xl p-8">
             <h3 className="text-xl font-bold mb-6 text-center">Opzegformulier</h3>
 
-            <div className="bg-white rounded-lg overflow-hidden">
+            <div className="bg-organic-bg rounded-lg overflow-hidden">
               <iframe
                 src="https://kilo.gymleadmachine.com/widget/form/w5EXGx4kP2dLSKIsFarq"
                 style={{
@@ -116,7 +116,7 @@ export default function OpzeggenPage() {
       </section>
 
       {/* Maybe Reconsider */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom max-w-2xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Twijfel je nog?</h2>
           <p className="text-gray-700 mb-6">

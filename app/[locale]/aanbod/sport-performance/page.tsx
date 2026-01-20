@@ -21,7 +21,7 @@ export default async function SportPerformancePage() {
       </section>
 
       {/* Intro */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">Voor wie?</h2>
           <div className="space-y-6 text-lg text-gray-700">
@@ -38,13 +38,13 @@ export default async function SportPerformancePage() {
       </section>
 
       {/* Target Groups */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Voor wie is dit programma?</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Rugby */}
-            <div className="bg-white rounded-xl p-6 text-center">
+            <div className="bg-organic-bg rounded-xl p-6 text-center">
               <div className="text-4xl mb-4">🏉</div>
               <h3 className="text-xl font-bold mb-3">Rugby Selecties</h3>
               <p className="text-gray-700">
@@ -53,7 +53,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Brandweer */}
-            <div className="bg-white rounded-xl p-6 text-center">
+            <div className="bg-organic-bg rounded-xl p-6 text-center">
               <div className="text-4xl mb-4">🚒</div>
               <h3 className="text-xl font-bold mb-3">Brandweer</h3>
               <p className="text-gray-700">
@@ -62,7 +62,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Politie */}
-            <div className="bg-white rounded-xl p-6 text-center">
+            <div className="bg-organic-bg rounded-xl p-6 text-center">
               <div className="text-4xl mb-4">👮</div>
               <h3 className="text-xl font-bold mb-3">Politie</h3>
               <p className="text-gray-700">
@@ -71,7 +71,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Teams */}
-            <div className="bg-white rounded-xl p-6 text-center">
+            <div className="bg-organic-bg rounded-xl p-6 text-center">
               <div className="text-4xl mb-4">⚽</div>
               <h3 className="text-xl font-bold mb-3">Sportteams</h3>
               <p className="text-gray-700">
@@ -80,7 +80,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Bedrijven */}
-            <div className="bg-white rounded-xl p-6 text-center">
+            <div className="bg-organic-bg rounded-xl p-6 text-center">
               <div className="text-4xl mb-4">💼</div>
               <h3 className="text-xl font-bold mb-3">Bedrijven</h3>
               <p className="text-gray-700">
@@ -89,7 +89,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Custom */}
-            <div className="bg-white rounded-xl p-6 text-center">
+            <div className="bg-organic-bg rounded-xl p-6 text-center">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-bold mb-3">Maatwerk</h3>
               <p className="text-gray-700">
@@ -101,13 +101,13 @@ export default async function SportPerformancePage() {
       </section>
 
       {/* What We Offer */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">Wat bieden wij?</h2>
 
           <div className="space-y-8">
             {/* Strength & Conditioning */}
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-stone-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Strength & Conditioning</h3>
               <p className="text-gray-700 mb-4">
                 Gestructureerde kracht- en conditietraining gericht op verbetering van:
@@ -141,7 +141,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Performance Testing */}
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-stone-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Performance Testing</h3>
               <p className="text-gray-700 mb-4">
                 Objectieve metingen om voortgang te monitoren en training bij te sturen:
@@ -175,7 +175,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Periodisering */}
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-stone-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Periodisering & Planning</h3>
               <p className="text-gray-700">
                 Trainingsprogramma's op maat, afgestemd op jullie seizoen, wedstrijdkalender of operationele eisen.
@@ -184,7 +184,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Team Training */}
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-stone-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Teamtraining & Coaching</h3>
               <p className="text-gray-700">
                 Professionele coaching tijdens sessies. We zorgen voor de juiste motivatie, techniek en intensiteit.
@@ -196,12 +196,12 @@ export default async function SportPerformancePage() {
       </section>
 
       {/* Guided by certified coaches */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Jari */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jari.png"
@@ -219,7 +219,7 @@ export default async function SportPerformancePage() {
             </div>
 
             {/* Hoite */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/hoite.png"
@@ -240,12 +240,12 @@ export default async function SportPerformancePage() {
       </section>
 
       {/* How it Works */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Hoe werkt het?</h2>
 
           <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-cinnabar rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
                   1
@@ -259,7 +259,7 @@ export default async function SportPerformancePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-cinnabar rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
                   2
@@ -273,7 +273,7 @@ export default async function SportPerformancePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-cinnabar rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
                   3
@@ -291,7 +291,7 @@ export default async function SportPerformancePage() {
       </section>
 
       {/* CTA Contact */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Interesse in een teamtraining?</h2>
           <p className="text-lg text-gray-700 mb-8">

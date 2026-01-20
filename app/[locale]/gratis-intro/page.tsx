@@ -33,7 +33,7 @@ export default function GratisIntroPage() {
       </section>
 
       {/* What is a No Sweat Intro */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Wat is een No Sweat Intro?</h2>
 
@@ -43,28 +43,28 @@ export default function GratisIntroPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">1-op-1 kennismaking</h3>
                 <p className="text-gray-700">
                   Je praat met één van onze coaches. Rustig, zonder druk. We luisteren naar wat jij wilt bereiken.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">Jouw doelen centraal</h3>
                 <p className="text-gray-700">
                   We bespreken wat je wilt en wat je tegenhoudt. Daarna kijken we samen hoe wij je kunnen helpen.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">Vrijblijvend</h3>
                 <p className="text-gray-700">
                   Je hoeft niks. Geen verkoop. Geen druk. Je besluit zelf of het bij je past.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="text-xl font-bold mb-3">Persoonlijk advies</h3>
                 <p className="text-gray-700">
                   Na het gesprek weet je precies welke opties je hebt en wat het beste bij jou past.
@@ -76,12 +76,12 @@ export default function GratisIntroPage() {
       </section>
 
       {/* For Who */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Voor wie is dit?</h2>
 
           <div className="space-y-4 max-w-2xl mx-auto">
-            <div className="bg-white rounded-xl p-6 flex items-start gap-4">
+            <div className="bg-organic-bg rounded-xl p-6 flex items-start gap-4">
               <span className="text-verdigris text-2xl font-bold">✓</span>
               <div>
                 <h3 className="font-bold mb-2">Je bent helemaal nieuw met sporten</h3>
@@ -89,7 +89,7 @@ export default function GratisIntroPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 flex items-start gap-4">
+            <div className="bg-organic-bg rounded-xl p-6 flex items-start gap-4">
               <span className="text-verdigris text-2xl font-bold">✓</span>
               <div>
                 <h3 className="font-bold mb-2">Je sport al, maar zoekt iets anders</h3>
@@ -97,7 +97,7 @@ export default function GratisIntroPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 flex items-start gap-4">
+            <div className="bg-organic-bg rounded-xl p-6 flex items-start gap-4">
               <span className="text-verdigris text-2xl font-bold">✓</span>
               <div>
                 <h3 className="font-bold mb-2">Je hebt weinig tijd door werk of gezin</h3>
@@ -105,7 +105,7 @@ export default function GratisIntroPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 flex items-start gap-4">
+            <div className="bg-organic-bg rounded-xl p-6 flex items-start gap-4">
               <span className="text-verdigris text-2xl font-bold">✓</span>
               <div>
                 <h3 className="font-bold mb-2">Je twijfelt of CrossFit of HYROX bij je past</h3>
@@ -113,7 +113,7 @@ export default function GratisIntroPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 flex items-start gap-4">
+            <div className="bg-organic-bg rounded-xl p-6 flex items-start gap-4">
               <span className="text-verdigris text-2xl font-bold">✓</span>
               <div>
                 <h3 className="font-bold mb-2">Je bent al jaren niet meer actief geweest</h3>
@@ -121,7 +121,7 @@ export default function GratisIntroPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 flex items-start gap-4">
+            <div className="bg-organic-bg rounded-xl p-6 flex items-start gap-4">
               <span className="text-verdigris text-2xl font-bold">✓</span>
               <div>
                 <h3 className="font-bold mb-2">Je wilt sterker en fitter worden voor het echte leven</h3>
@@ -142,7 +142,7 @@ export default function GratisIntroPage() {
       </section>
 
       {/* What Happens */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Wat gebeurt er tijdens de afspraak?</h2>
 
@@ -212,47 +212,47 @@ export default function GratisIntroPage() {
       </section>
 
       {/* Why CrossFit Leiden */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Waarom CrossFit Leiden?</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3 text-verdigris">Persoonlijke aandacht</h3>
               <p className="text-gray-700">
                 Onze coaches kennen je naam. Ze weten wat je doelen zijn. Ze letten op je techniek en zorgen dat je veilig traint.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3 text-verdigris">Warme community</h3>
               <p className="text-gray-700">
                 Je traint naast mensen die jou snappen. Geen ego's. Geen oordelen. Gewoon goede mensen die sterker willen worden.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3 text-verdigris">Trainen voor het echte leven</h3>
               <p className="text-gray-700">
                 We trainen bewegingen die je elke dag gebruikt. Optillen. Duwen. Trekken. Springen. Sterk zijn in het dagelijks leven.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3 text-verdigris">Geen spiegels, geen ego's</h3>
               <p className="text-gray-700">
                 We schreeuwen niet. We vergelijken niet. We helpen je gewoon om elke keer een beetje beter te worden dan gisteren.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3 text-verdigris">Alle leeftijden en levels</h3>
               <p className="text-gray-700">
                 Van complete beginners tot ervaren sporters. Van 18 tot 65 jaar. Iedereen traint samen, iedereen op zijn eigen niveau.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3 text-verdigris">Professional backup</h3>
               <p className="text-gray-700">
                 Fysiofabriek zit in ons pand. Pijntje? Blessure? Je kunt direct op locatie geholpen worden.
@@ -263,61 +263,61 @@ export default function GratisIntroPage() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">Veelgestelde vragen</h2>
 
           <div className="space-y-6">
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Moet ik sporten tijdens de intro?</h3>
               <p className="text-gray-700">
                 Nee. Een No Sweat Intro is letterlijk: geen zweten. We praten alleen. Je hoeft geen sportkleding mee te nemen.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Is het echt gratis?</h3>
               <p className="text-gray-700">
                 Ja. Echt gratis. Geen kleine lettertjes. Geen verborgen kosten. We willen gewoon graag kennismaken.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Voor wie is dit bedoeld?</h3>
               <p className="text-gray-700">
                 Voor iedereen die overweegt om te starten met CrossFit, HYROX of group fitness. Of je nu complete beginner bent of al jaren sport, we helpen je graag verder.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Wat moet ik meenemen?</h3>
               <p className="text-gray-700">
                 Niets. Gewoon jezelf. Als je vragen hebt opgeschreven, neem die dan mee. Maar verder hoef je niks.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Kan dit ook als ik interesse heb in HYROX?</h3>
               <p className="text-gray-700">
                 Ja, absoluut. We bespreken dan specifiek hoe ons HYROX programma werkt en hoe wij je kunnen helpen met jouw race voorbereiding.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Wat gebeurt er na de intro?</h3>
               <p className="text-gray-700">
                 Niks, als je dat wilt. We sturen geen pusherige emails. Als je wilt starten, helpen we je graag. Zo niet, ook goed.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Hoe lang duurt het?</h3>
               <p className="text-gray-700">
                 Ongeveer 20 minuten. Heb je meer tijd nodig? Geen probleem. We jagen je niet weg.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-xl font-bold mb-3">Ik ben al lang niet meer actief geweest. Kan ik dan wel starten?</h3>
               <p className="text-gray-700">
                 Ja. De meeste mensen die bij ons starten zijn al jaren gestopt met sporten. Dat is precies waarom we zo goed zijn in beginners begeleiden.

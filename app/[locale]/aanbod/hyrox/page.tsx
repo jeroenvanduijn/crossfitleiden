@@ -17,7 +17,7 @@ export default async function HYROXPage() {
       </section>
 
       {/* What is HYROX */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Wat is HYROX?</h2>
@@ -34,12 +34,12 @@ export default async function HYROXPage() {
       </section>
 
       {/* Program Details */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Wekelijks HYROX Programma</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-organic-bg rounded-xl p-8">
               <h3 className="text-xl font-bold mb-4 text-[#E4572E]">Voor wie?</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-2">
@@ -63,7 +63,7 @@ export default async function HYROXPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-organic-bg rounded-xl p-8">
               <h3 className="text-xl font-bold mb-4 text-[#E4572E]">Wat train je?</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-2">
@@ -91,12 +91,12 @@ export default async function HYROXPage() {
       </section>
 
       {/* Guided by certified coaches */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {/* Natália */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
@@ -114,7 +114,7 @@ export default async function HYROXPage() {
             </div>
 
             {/* Hoite */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/hoite.png"
@@ -132,7 +132,7 @@ export default async function HYROXPage() {
             </div>
 
             {/* Max */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png"
@@ -150,7 +150,7 @@ export default async function HYROXPage() {
             </div>
 
             {/* Jeffrey */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png"
@@ -171,7 +171,7 @@ export default async function HYROXPage() {
       </section>
 
       {/* Photo Gallery */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">HYROX in Actie</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -190,23 +190,23 @@ export default async function HYROXPage() {
       </section>
 
       {/* Schedule */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Lessenrooster</h2>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Maandag</h3>
               <p className="text-gray-700">2 Hyrox lessen</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Woensdag</h3>
               <p className="text-gray-700">2 Hyrox lessen</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Vrijdag</h3>
               <p className="text-gray-700">2 Hyrox lessen (90 minuten)</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <h3 className="text-lg font-bold mb-4 text-[#E4572E]">Zaterdag</h3>
               <p className="text-gray-700">1 Hyrox les</p>
             </div>
@@ -220,7 +220,7 @@ export default async function HYROXPage() {
       </section>
 
       {/* Hyrox Simulations */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-center">HYROX Simulaties</h2>
           <p className="text-lg text-gray-700 mb-8 text-center">
@@ -228,14 +228,14 @@ export default async function HYROXPage() {
             Perfect voor je race voorbereiding!
           </p>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-4">Volledige Race</h3>
               <p className="text-gray-700 mb-4">
                 8 rondes van 1 km rennen + alle 8 stations. Ervaar de echte HYROX race in een veilige,
                 ondersteunende omgeving met coaches die je door de race heen helpen.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-4">Halve Race & Divisions</h3>
               <p className="text-gray-700 mb-4">
                 Ook halve races beschikbaar. Kies tussen Solo of Doubles divisions.

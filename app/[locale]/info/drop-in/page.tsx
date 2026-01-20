@@ -19,7 +19,7 @@ export default function DropIn() {
             href={sportbitUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 bg-white text-cinnabar border-2 border-cinnabar hover:bg-gray-50"
+            className="inline-block px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 bg-organic-bg text-cinnabar border-2 border-cinnabar hover:bg-stone-50"
           >
             {t('hero.cta')}
           </a>
@@ -27,12 +27,12 @@ export default function DropIn() {
       </section>
 
       {/* Hoe werkt het? */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">{t('howItWorks.title')}</h2>
             <div className="space-y-6">
-              <div className="flex items-start gap-4 bg-gray-50 rounded-xl p-6">
+              <div className="flex items-start gap-4 bg-stone-50 rounded-xl p-6">
                 <div className="w-12 h-12 bg-jonquil rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">1</div>
                 <div>
                   <h3 className="font-bold text-xl mb-3">{t('howItWorks.step1Title')}</h3>
@@ -45,7 +45,7 @@ export default function DropIn() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-gray-50 rounded-xl p-6">
+              <div className="flex items-start gap-4 bg-stone-50 rounded-xl p-6">
                 <div className="w-12 h-12 bg-jonquil rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">2</div>
                 <div>
                   <h3 className="font-bold text-xl mb-3">{t('howItWorks.step2Title')}</h3>
@@ -55,7 +55,7 @@ export default function DropIn() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-gray-50 rounded-xl p-6">
+              <div className="flex items-start gap-4 bg-stone-50 rounded-xl p-6">
                 <div className="w-12 h-12 bg-jonquil rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">3</div>
                 <div>
                   <h3 className="font-bold text-xl mb-3">{t('howItWorks.step3Title')}</h3>
@@ -70,11 +70,11 @@ export default function DropIn() {
       </section>
 
       {/* Praktische Info */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">{t('practicalInfo.title')}</h2>
-            <div className="bg-white rounded-xl p-8 space-y-6 shadow-lg">
+            <div className="bg-organic-bg rounded-xl p-8 space-y-6 shadow-lg">
               <div>
                 <h3 className="font-bold text-lg mb-3">{t('practicalInfo.priceTitle')}</h3>
                 <ul className="text-gray-700 space-y-1 mb-3">
@@ -99,12 +99,12 @@ export default function DropIn() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">{t('faq.title')}</h2>
             <div className="space-y-4">
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   {t('faq.q1')}
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -114,7 +114,7 @@ export default function DropIn() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   {t('faq.q2')}
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -124,7 +124,7 @@ export default function DropIn() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   {t('faq.q3')}
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -134,7 +134,7 @@ export default function DropIn() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   {t('faq.q4')}
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -159,7 +159,7 @@ export default function DropIn() {
             href={sportbitUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 bg-white text-cinnabar border-2 border-cinnabar hover:bg-gray-50"
+            className="inline-block px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 bg-organic-bg text-cinnabar border-2 border-cinnabar hover:bg-stone-50"
           >
             {t('cta.button')}
           </a>

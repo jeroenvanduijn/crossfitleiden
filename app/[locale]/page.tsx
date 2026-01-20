@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       {/* 1. HERO - Result-focused, beginner-reassuring */}
-      <section className="relative bg-gray-900 text-white section-padding">
+      <section className="relative bg-organic-text text-white section-padding">
         {/* Background images - responsive */}
         <div className="absolute inset-0 z-0">
           {/* Desktop image */}
@@ -65,7 +65,7 @@ export default function Home() {
       <FitnessCheckTeaser />
 
       {/* 2. WHY CROSSFIT LEIDEN - 5 USPs for busy parents & beginners */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('why.title')}</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* 3. HOW IT WORKS - 3 Simple Steps */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('howItWorks.title')}</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -149,7 +149,7 @@ export default function Home() {
           </p>
           <div className="max-w-4xl mx-auto space-y-6">
             {/* Step 1 */}
-            <div className="flex items-start gap-6 bg-white rounded-xl p-8 shadow-sm">
+            <div className="flex items-start gap-6 bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="w-14 h-14 bg-cinnabar rounded-full flex items-center justify-center flex-shrink-0 text-white text-2xl font-bold">
                 1
               </div>
@@ -162,7 +162,7 @@ export default function Home() {
             </div>
 
             {/* Step 2 */}
-            <div className="flex items-start gap-6 bg-white rounded-xl p-8 shadow-sm">
+            <div className="flex items-start gap-6 bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="w-14 h-14 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 text-white text-2xl font-bold">
                 2
               </div>
@@ -178,7 +178,7 @@ export default function Home() {
             </div>
 
             {/* Step 3 */}
-            <div className="flex items-start gap-6 bg-white rounded-xl p-8 shadow-sm">
+            <div className="flex items-start gap-6 bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="w-14 h-14 bg-jonquil rounded-full flex items-center justify-center flex-shrink-0 text-gray-900 text-2xl font-bold">
                 3
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
       <KickstartBlock />
 
       {/* 5. SOCIAL PROOF - Google Review Widget */}
-      <section className="section-padding bg-white py-8 md:py-12 pb-8">
+      <section className="section-padding bg-organic-bg py-8 md:py-12 pb-8">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">{t('socialProof.title')}</h2>
 
@@ -230,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* 6. MEMBER STORY - Featured Videos */}
-      <section className="bg-white pt-8 pb-16">
+      <section className="bg-organic-bg pt-8 pb-16">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
@@ -244,7 +244,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               {/* Janneke */}
               <div className="flex flex-col gap-3">
-                <div className="bg-gray-50 rounded-xl overflow-hidden">
+                <div className="bg-stone-50 rounded-xl overflow-hidden">
                   <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
                     <iframe
                       src="https://player.vimeo.com/video/1146696737?badge=0&autopause=0&player_id=0&app_id=58479"
@@ -267,7 +267,7 @@ export default function Home() {
 
               {/* Raul */}
               <div className="flex flex-col gap-3">
-                <div className="bg-gray-50 rounded-xl overflow-hidden">
+                <div className="bg-stone-50 rounded-xl overflow-hidden">
                   <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
                     <iframe
                       src="https://player.vimeo.com/video/1140347883?badge=0&autopause=0&player_id=0&app_id=58479"
@@ -290,7 +290,7 @@ export default function Home() {
 
               {/* Daan */}
               <div className="flex flex-col gap-3">
-                <div className="bg-gray-50 rounded-xl overflow-hidden">
+                <div className="bg-stone-50 rounded-xl overflow-hidden">
                   <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
                     <iframe
                       src="https://player.vimeo.com/video/1139251716?badge=0&autopause=0&player_id=0&app_id=58479"
@@ -329,7 +329,7 @@ export default function Home() {
       </section>
 
       {/* 7. FAQ - 6 Common Beginner Questions */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('faq.title')}</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -337,7 +337,7 @@ export default function Home() {
           </p>
           <div className="max-w-3xl mx-auto space-y-4">
             {/* FAQ 1 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm group">
+            <details className="bg-organic-bg rounded-lg p-6 shadow-sm group">
               <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                 <span>{t('faq.q1')}</span>
                 <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -350,7 +350,7 @@ export default function Home() {
             </details>
 
             {/* FAQ 2 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm group">
+            <details className="bg-organic-bg rounded-lg p-6 shadow-sm group">
               <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                 <span>{t('faq.q2')}</span>
                 <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -363,7 +363,7 @@ export default function Home() {
             </details>
 
             {/* FAQ 3 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm group">
+            <details className="bg-organic-bg rounded-lg p-6 shadow-sm group">
               <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                 <span>{t('faq.q3')}</span>
                 <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -381,7 +381,7 @@ export default function Home() {
             </details>
 
             {/* FAQ 4 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm group">
+            <details className="bg-organic-bg rounded-lg p-6 shadow-sm group">
               <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                 <span>{t('faq.q4')}</span>
                 <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -394,7 +394,7 @@ export default function Home() {
             </details>
 
             {/* FAQ 5 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm group">
+            <details className="bg-organic-bg rounded-lg p-6 shadow-sm group">
               <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                 <span>{t('faq.q5')}</span>
                 <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -407,7 +407,7 @@ export default function Home() {
             </details>
 
             {/* FAQ 6 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm group">
+            <details className="bg-organic-bg rounded-lg p-6 shadow-sm group">
               <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
                 <span>{t('faq.q6')}</span>
                 <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

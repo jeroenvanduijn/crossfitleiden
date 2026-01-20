@@ -16,7 +16,7 @@ export default async function PrivateCoaching() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Wat is Private Coaching?</h2>
@@ -41,11 +41,11 @@ export default async function PrivateCoaching() {
       </section>
 
       {/* Voordelen */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Voordelen van 1-op-1 Coaching</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-bold mb-3">Volledig Persoonlijk Programma</h3>
               <p className="text-gray-700 mb-3">
@@ -56,7 +56,7 @@ export default async function PrivateCoaching() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">👁️</div>
               <h3 className="text-xl font-bold mb-3">Volledige Aandacht</h3>
               <p className="text-gray-700 mb-3">
@@ -67,7 +67,7 @@ export default async function PrivateCoaching() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">⏰</div>
               <h3 className="text-xl font-bold mb-3">Flexibele Planning</h3>
               <p className="text-gray-700 mb-3">
@@ -78,7 +78,7 @@ export default async function PrivateCoaching() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🚀</div>
               <h3 className="text-xl font-bold mb-3">Sneller Resultaat</h3>
               <p className="text-gray-700 mb-3">
@@ -89,7 +89,7 @@ export default async function PrivateCoaching() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🤫</div>
               <h3 className="text-xl font-bold mb-3">Geen Groepsdruk</h3>
               <p className="text-gray-700 mb-3">
@@ -100,7 +100,7 @@ export default async function PrivateCoaching() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🔧</div>
               <h3 className="text-xl font-bold mb-3">Techniek Perfectie</h3>
               <p className="text-gray-700 mb-3">
@@ -115,7 +115,7 @@ export default async function PrivateCoaching() {
       </section>
 
       {/* Voor wie */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Is Private Coaching iets voor jou?</h2>
@@ -123,22 +123,22 @@ export default async function PrivateCoaching() {
               Private coaching is perfect als je jezelf herkent in een van deze situaties:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="bg-organic-bg rounded-lg p-6 shadow-sm">
                 <p className="text-gray-700">✅ Herstel van een blessure met specifieke beperkingen</p>
               </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="bg-organic-bg rounded-lg p-6 shadow-sm">
                 <p className="text-gray-700">✅ Onzeker of nerveus om in een groep te trainen</p>
               </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="bg-organic-bg rounded-lg p-6 shadow-sm">
                 <p className="text-gray-700">✅ Onregelmatig werkschema waardoor groepslessen niet passen</p>
               </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="bg-organic-bg rounded-lg p-6 shadow-sm">
                 <p className="text-gray-700">✅ Specifiek doel (afvallen, sterker, wedstrijd) met tijdslimiet</p>
               </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="bg-organic-bg rounded-lg p-6 shadow-sm">
                 <p className="text-gray-700">✅ Complete beginner die techniek perfect wil leren</p>
               </div>
-              <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="bg-organic-bg rounded-lg p-6 shadow-sm">
                 <p className="text-gray-700">✅ Extra aandacht nodig voor specifieke bewegingen</p>
               </div>
             </div>
@@ -147,12 +147,12 @@ export default async function PrivateCoaching() {
       </section>
 
       {/* Guided by certified coaches */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Natália */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
@@ -170,7 +170,7 @@ export default async function PrivateCoaching() {
             </div>
 
             {/* Rochelle */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png"
@@ -188,7 +188,7 @@ export default async function PrivateCoaching() {
             </div>
 
             {/* Jari */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jari.png"
@@ -206,7 +206,7 @@ export default async function PrivateCoaching() {
             </div>
 
             {/* Jeffrey */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png"
@@ -224,7 +224,7 @@ export default async function PrivateCoaching() {
             </div>
 
             {/* Annie */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Annie%20%20%283%29.png"
@@ -245,7 +245,7 @@ export default async function PrivateCoaching() {
       </section>
 
       {/* Pakketten & Tarieven */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Pakketten & Tarieven</h2>
@@ -255,7 +255,7 @@ export default async function PrivateCoaching() {
               <h3 className="text-2xl font-bold mb-6">Personal Training Punchcards</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {/* 60 min */}
-                <div className="bg-gray-50 rounded-xl p-6">
+                <div className="bg-stone-50 rounded-xl p-6">
                   <h4 className="text-lg font-bold text-gray-900 mb-4">60 minuten PT</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
@@ -270,7 +270,7 @@ export default async function PrivateCoaching() {
                 </div>
 
                 {/* 30 min */}
-                <div className="bg-gray-50 rounded-xl p-6">
+                <div className="bg-stone-50 rounded-xl p-6">
                   <h4 className="text-lg font-bold text-gray-900 mb-4">30 minuten PT</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
@@ -293,15 +293,15 @@ export default async function PrivateCoaching() {
                 Elke maand een privé coachmoment waarin je werkt aan techniek, kracht, mobiliteit of herstel.
               </p>
               <div className="space-y-3">
-                <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                   <span className="font-semibold text-gray-900">Skill 1</span>
                   <span className="text-xl font-bold text-[#E25C2A]">€90 p/m</span>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                   <span className="font-semibold text-gray-900">Skill 2</span>
                   <span className="text-xl font-bold text-[#E25C2A]">€175 p/m</span>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
+                <div className="bg-stone-50 rounded-lg p-4 flex justify-between items-center">
                   <span className="font-semibold text-gray-900">Skill 4</span>
                   <span className="text-xl font-bold text-[#E25C2A]">€370 p/m</span>
                 </div>
@@ -312,12 +312,12 @@ export default async function PrivateCoaching() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
             <div className="space-y-4">
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Hoe vaak moet ik trainen voor resultaat?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -331,7 +331,7 @@ export default async function PrivateCoaching() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Welke coach krijg ik?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -344,7 +344,7 @@ export default async function PrivateCoaching() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Kan ik later overstappen naar groepslessen?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -357,7 +357,7 @@ export default async function PrivateCoaching() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Hoe flexibel is het plannen?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -370,7 +370,7 @@ export default async function PrivateCoaching() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Wat als ik niet tevreden ben?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -383,7 +383,7 @@ export default async function PrivateCoaching() {
                 </p>
               </details>
 
-              <details className="bg-white rounded-xl p-6 group">
+              <details className="bg-organic-bg rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
                   <span>Krijg ik ook een voedingsplan?</span>
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -408,7 +408,7 @@ export default async function PrivateCoaching() {
       />
 
       {/* Final note */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">

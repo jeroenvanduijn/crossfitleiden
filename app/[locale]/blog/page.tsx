@@ -89,7 +89,7 @@ export default function Blog() {
       </section>
 
       {/* Categories */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="flex flex-wrap gap-3 justify-center mb-12">
             {categories.map((cat) => (
@@ -109,7 +109,7 @@ export default function Blog() {
           {/* Blog Posts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {blogPosts.map((post) => (
-              <article key={post.slug} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <article key={post.slug} className="bg-organic-bg rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
                 <Link href={`/${locale}/blog/${post.slug}`}>
                   <div className="aspect-video overflow-hidden">
                     <img

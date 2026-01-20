@@ -41,7 +41,7 @@ export default function LocatiePage() {
   return (
     <>
       {/* Hero Section met foto 32 */}
-      <section className="relative bg-gray-900 text-white overflow-hidden">
+      <section className="relative bg-organic-text text-white overflow-hidden">
         {/* Hero Background Image - foto 32 */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -68,7 +68,7 @@ export default function LocatiePage() {
       </section>
 
       {/* Adres & Contact - Twee kolommen */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-8 text-center">{t('addressContact.title')}</h2>
 
@@ -116,7 +116,7 @@ export default function LocatiePage() {
             {/* Rechts: Openingstijden */}
             <div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">{t('addressContact.hoursTitle')}</h3>
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex justify-between">
                     <span className="font-medium">{t('addressContact.monFri')}</span>
@@ -143,13 +143,13 @@ export default function LocatiePage() {
       </section>
 
       {/* Praktische Info - 3 Cards */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-10 text-center">{t('practicalInfo.title')}</h2>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Card 1: Parkeren */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-cinnabar/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-cinnabar" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -168,7 +168,7 @@ export default function LocatiePage() {
             </div>
 
             {/* Card 2: Fysiofabriek */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-verdigris/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-verdigris" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -192,7 +192,7 @@ export default function LocatiePage() {
             </div>
 
             {/* Card 3: Faciliteiten */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-jonquil/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-jonquil" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -219,7 +219,7 @@ export default function LocatiePage() {
       </section>
 
       {/* Fotosectie - Horizontale rij met navigatieknoppen */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-3 text-center">{t('gallery.title')}</h2>
           <p className="text-center text-gray-600 mb-8">
@@ -231,7 +231,7 @@ export default function LocatiePage() {
             {/* Linker navigatieknop */}
             <button
               onClick={() => scroll('left')}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all hover:scale-110"
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-organic-bg/90 hover:bg-organic-bg shadow-lg rounded-full p-3 transition-all hover:scale-110"
               aria-label={t('gallery.prevButton')}
             >
               <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -267,7 +267,7 @@ export default function LocatiePage() {
             {/* Rechter navigatieknop */}
             <button
               onClick={() => scroll('right')}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all hover:scale-110"
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-organic-bg/90 hover:bg-organic-bg shadow-lg rounded-full p-3 transition-all hover:scale-110"
               aria-label={t('gallery.nextButton')}
             >
               <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -308,14 +308,14 @@ export default function LocatiePage() {
       )}
 
       {/* Google Maps */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-8 text-center">{t('map.title')}</h2>
           <p className="text-center text-gray-600 text-lg mb-8">
             {t('map.address')}
           </p>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+            <div className="bg-organic-bg rounded-2xl overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.775976603252!2d4.477064777311962!3d52.13839647196366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c659350263d7%3A0x1da63fc16f0b0158!2sCrossFit%20Leiden!5e0!3m2!1sen!2snl!4v1763899362690!5m2!1sen!2snl"
                 width="100%"

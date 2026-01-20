@@ -18,7 +18,7 @@ export default async function Groepslessen() {
       </section>
 
       {/* Wat zijn groepslessen - Beginner-friendly */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Hoe werken onze groepslessen?</h2>
@@ -42,7 +42,7 @@ export default async function Groepslessen() {
       </section>
 
       {/* Lesopbouw - Simplified & Clear */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-6 text-center">Hoe ziet een les eruit?</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ export default async function Groepslessen() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {/* Part 1 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="w-16 h-16 bg-verdigris/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🔥</span>
               </div>
@@ -62,7 +62,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Part 2 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="w-16 h-16 bg-jonquil/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🎯</span>
               </div>
@@ -75,7 +75,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Part 3 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="w-16 h-16 bg-cinnabar/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">💪</span>
               </div>
@@ -88,7 +88,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Part 4 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="w-16 h-16 bg-chinese-violet/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🧘</span>
               </div>
@@ -103,7 +103,7 @@ export default async function Groepslessen() {
       </section>
 
       {/* Voor wie - More Personal & Reassuring */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Is dit iets voor mij?</h2>
@@ -111,7 +111,7 @@ export default async function Groepslessen() {
               Kort antwoord: ja! Groepslessen zijn voor iedereen. Hier zijn een paar voorbeelden:
             </p>
             <div className="space-y-6">
-              <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6">
+              <div className="flex items-start gap-4 bg-stone-50 rounded-lg p-6">
                 <div className="w-10 h-10 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -126,7 +126,7 @@ export default async function Groepslessen() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6">
+              <div className="flex items-start gap-4 bg-stone-50 rounded-lg p-6">
                 <div className="w-10 h-10 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -141,7 +141,7 @@ export default async function Groepslessen() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6">
+              <div className="flex items-start gap-4 bg-stone-50 rounded-lg p-6">
                 <div className="w-10 h-10 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -156,7 +156,7 @@ export default async function Groepslessen() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6">
+              <div className="flex items-start gap-4 bg-stone-50 rounded-lg p-6">
                 <div className="w-10 h-10 bg-verdigris rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -184,19 +184,19 @@ export default async function Groepslessen() {
               We hebben dagelijks meerdere lessen, van vroege ochtend tot late avond. Kies wat jou past!
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-xl p-8 text-center">
+              <div className="bg-organic-bg rounded-xl p-8 text-center">
                 <div className="text-5xl mb-4">🌅</div>
                 <h4 className="font-bold text-xl mb-2">Ochtend</h4>
                 <p className="text-gray-600 mb-3">6 tot 11 uur</p>
                 <p className="text-sm text-gray-600">Perfect voor de werk, fris en energiek de dag in!</p>
               </div>
-              <div className="bg-white rounded-xl p-8 text-center">
+              <div className="bg-organic-bg rounded-xl p-8 text-center">
                 <div className="text-5xl mb-4">☀️</div>
                 <h4 className="font-bold text-xl mb-2">Middag</h4>
                 <p className="text-gray-600 mb-3">12 tot 13 uur</p>
                 <p className="text-sm text-gray-600">Lunchbreak? Trainingsbreak! Perfecte pauze van je werkdag.</p>
               </div>
-              <div className="bg-white rounded-xl p-8 text-center">
+              <div className="bg-organic-bg rounded-xl p-8 text-center">
                 <div className="text-5xl mb-4">🌙</div>
                 <h4 className="font-bold text-xl mb-2">Avond</h4>
                 <p className="text-gray-600 mb-3">16 tot 22 uur</p>
@@ -205,13 +205,13 @@ export default async function Groepslessen() {
             </div>
 
             {/* Frequency Recommendation */}
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-organic-bg rounded-xl p-8">
               <h3 className="font-bold text-xl mb-4 text-center">Hoe vaak moet ik komen?</h3>
               <p className="text-gray-700 mb-4 text-center">
                 We raden <strong>2-3x per week</strong> aan voor goede resultaten, maar je mag zo vaak komen als je wilt met je lidmaatschap.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                <div className="text-center p-4 bg-stone-50 rounded-lg">
                   <p className="font-bold text-lg mb-1">1x per week</p>
                   <p className="text-sm text-gray-600">Goed begin, fitness onderhouden</p>
                 </div>
@@ -219,7 +219,7 @@ export default async function Groepslessen() {
                   <p className="font-bold text-lg mb-1">2-3x per week</p>
                   <p className="text-sm text-gray-600">Aanbevolen! Echt resultaat zien</p>
                 </div>
-                <div className="text-center p-4 bg-gray-50 rounded-lg">
+                <div className="text-center p-4 bg-stone-50 rounded-lg">
                   <p className="font-bold text-lg mb-1">4-5x per week</p>
                   <p className="text-sm text-gray-600">Voor de fanatiekelingen!</p>
                 </div>
@@ -236,11 +236,11 @@ export default async function Groepslessen() {
       </section>
 
       {/* Wat neem je mee - Practical & Friendly */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Wat neem je mee naar de les?</h2>
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-stone-50 rounded-xl p-8">
               <ul className="space-y-4">
                 <li className="flex items-start gap-4">
                   <span className="text-3xl flex-shrink-0">👕</span>
@@ -283,12 +283,12 @@ export default async function Groepslessen() {
       </section>
 
       {/* Guided by certified coaches */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Rochelle */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png"
@@ -306,7 +306,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Natália */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
@@ -324,7 +324,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Sem */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20sem.png"
@@ -342,7 +342,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Max */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20max.png"
@@ -360,7 +360,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Jeffrey */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20jef.png"
@@ -378,7 +378,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Erin */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Erin.png"
@@ -396,7 +396,7 @@ export default async function Groepslessen() {
             </div>
 
             {/* Hoite */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/hoite.png"

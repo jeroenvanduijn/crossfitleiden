@@ -16,7 +16,7 @@ export default async function PreTeens() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Waarom Onze Kinderlessen?</h2>
@@ -40,11 +40,11 @@ export default async function PreTeens() {
       </section>
 
       {/* Voordelen */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Wat Leert Je Kind?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">💪</div>
               <h3 className="text-xl font-bold mb-3">Sterker & Fitter Worden</h3>
               <p className="text-gray-700 mb-2">
@@ -55,7 +55,7 @@ export default async function PreTeens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">😊</div>
               <h3 className="text-xl font-bold mb-3">Zelfvertrouwen Opbouwen</h3>
               <p className="text-gray-700 mb-2">
@@ -66,7 +66,7 @@ export default async function PreTeens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🎮</div>
               <h3 className="text-xl font-bold mb-3">Gezonde Gewoontes</h3>
               <p className="text-gray-700 mb-2">
@@ -77,7 +77,7 @@ export default async function PreTeens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">👥</div>
               <h3 className="text-xl font-bold mb-3">Sociale Vaardigheden</h3>
               <p className="text-gray-700 mb-2">
@@ -88,7 +88,7 @@ export default async function PreTeens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🧠</div>
               <h3 className="text-xl font-bold mb-3">Focus & Discipline</h3>
               <p className="text-gray-700 mb-2">
@@ -99,7 +99,7 @@ export default async function PreTeens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">📵</div>
               <h3 className="text-xl font-bold mb-3">Minder Schermtijd</h3>
               <p className="text-gray-700 mb-2">
@@ -114,7 +114,7 @@ export default async function PreTeens() {
       </section>
 
       {/* Hoe ziet een les eruit */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Hoe Ziet een Les Eruit?</h2>
@@ -187,11 +187,11 @@ export default async function PreTeens() {
       </section>
 
       {/* Testimonials van ouders */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Wat Ouders Zeggen</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <p className="text-gray-700 mb-4 italic">
                 "Mijn zoon van 9 is nooit sportief geweest en werd altijd als laatste gekozen bij gym. Bij CrossFit Kids
                 bloeit hij helemaal op! Hij is zoveel zelfverzekerder geworden."
@@ -202,7 +202,7 @@ export default async function PreTeens() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <p className="text-gray-700 mb-4 italic">
                 "Onze dochter is super energiek en zat voorheen alleen maar achter de iPad. Nu vraagt ze ons drie keer per week
                 of ze naar CrossFit mag. Ze kan haar energie kwijt én maakt vriendjes!"
@@ -213,7 +213,7 @@ export default async function PreTeens() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <p className="text-gray-700 mb-4 italic">
                 "Als ouder vond ik het eerst spannend – is het niet te zwaar? Maar ik zag al snel dat de coaches precies weten
                 hoe je met kinderen werkt. Veilig, leuk, en Mees wordt elke week sterker!"
@@ -224,7 +224,7 @@ export default async function PreTeens() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <p className="text-gray-700 mb-4 italic">
                 "Het mooiste? Dat de kinderen niet met elkaar concurreren, maar elkaar aanmoedigen. Mijn dochter heeft er twee
                 vriendinnen gemaakt waar ze ook buiten CrossFit mee afspreekt!"
@@ -239,12 +239,12 @@ export default async function PreTeens() {
       </section>
 
       {/* Guided by certified coaches */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Rochelle */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png"
@@ -262,7 +262,7 @@ export default async function PreTeens() {
             </div>
 
             {/* Natália */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
@@ -283,7 +283,7 @@ export default async function PreTeens() {
       </section>
 
       {/* Praktische info */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Praktische Informatie</h2>
@@ -325,12 +325,12 @@ export default async function PreTeens() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Is CrossFit niet te zwaar voor kinderen?</h3>
                 <p className="text-gray-700">
                   Nee! Onze kinderlessen gebruiken NOOIT zware gewichten en alles is aangepast op hun leeftijd en ontwikkeling.
@@ -338,7 +338,7 @@ export default async function PreTeens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Moet mijn kind al sportief zijn om mee te doen?</h3>
                 <p className="text-gray-700">
                   Absoluut niet! We hebben kinderen die super sportief zijn, maar ook kinderen die nog nooit gesport hebben.
@@ -346,7 +346,7 @@ export default async function PreTeens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Wat als mijn kind verlegen is of niet durft?</h3>
                 <p className="text-gray-700">
                   Dat zien we regelmatig! Onze coaches zijn hier ervaren in. De eerste les mag je als ouder meekijken,
@@ -354,7 +354,7 @@ export default async function PreTeens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Zijn de coaches gecertificeerd?</h3>
                 <p className="text-gray-700">
                   Ja! Alle coaches hebben certificeringen in kindercoaching én zijn EHBO gecertificeerd.
@@ -362,7 +362,7 @@ export default async function PreTeens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Hoeveel keer per week moet mijn kind komen?</h3>
                 <p className="text-gray-700">
                   Dat bepaal je zelf! Sommige kinderen komen 1x per week, anderen 3x. We raden 2x per week aan voor
@@ -370,7 +370,7 @@ export default async function PreTeens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Wat moet mijn kind meenemen?</h3>
                 <p className="text-gray-700">
                   Gewoon comfortabele sportkleding (bijv. wat ze ook bij gym dragen), sportschoenen en een waterfles.
@@ -390,7 +390,7 @@ export default async function PreTeens() {
       />
 
       {/* Final note */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">

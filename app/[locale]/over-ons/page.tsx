@@ -25,7 +25,7 @@ export default function OverOns() {
       </section>
 
       {/* Waarom CrossFit Leiden anders is */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">{t('whyDifferent.title')}</h2>
@@ -40,7 +40,7 @@ export default function OverOns() {
       </section>
 
       {/* Het verhaal achter CrossFit Leiden */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">{t('story.title')}</h2>
@@ -60,7 +60,7 @@ export default function OverOns() {
       </section>
 
       {/* Onze missie voor Leiden */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">{t('mission.title')}</h2>
@@ -74,11 +74,11 @@ export default function OverOns() {
       </section>
 
       {/* Waar we voor staan */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">{t('values.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-xl p-8 text-center">
+            <div className="bg-organic-bg rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-cinnabar/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">🤝</span>
               </div>
@@ -88,7 +88,7 @@ export default function OverOns() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 text-center">
+            <div className="bg-organic-bg rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-verdigris/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">👥</span>
               </div>
@@ -105,7 +105,7 @@ export default function OverOns() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 text-center">
+            <div className="bg-organic-bg rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-jonquil/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">💪</span>
               </div>

@@ -16,7 +16,7 @@ export default async function SemiPrivate() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Wat is Small Group Training?</h2>
@@ -41,7 +41,7 @@ export default async function SemiPrivate() {
       </section>
 
       {/* Specialized Programs */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-8 text-center">Gespecialiseerde Small Group Programma's</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ export default async function SemiPrivate() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* GetShredded */}
-            <div className="bg-white rounded-xl p-8 border-2 border-cinnabar/20">
+            <div className="bg-organic-bg rounded-xl p-8 border-2 border-cinnabar/20">
               <div className="text-4xl mb-4">🔥</div>
               <h3 className="text-2xl font-bold mb-3">GetShredded</h3>
               <p className="text-gray-700 mb-4">
@@ -88,7 +88,7 @@ export default async function SemiPrivate() {
             </div>
 
             {/* Unlock Motion */}
-            <div className="bg-white rounded-xl p-8 border-2 border-verdigris/20">
+            <div className="bg-organic-bg rounded-xl p-8 border-2 border-verdigris/20">
               <div className="text-4xl mb-4">🧘</div>
               <h3 className="text-2xl font-bold mb-3">Unlock Motion</h3>
               <p className="text-gray-700 mb-4">
@@ -128,11 +128,11 @@ export default async function SemiPrivate() {
         </div>
       </section>
 
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Voordelen van Small Group</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">👥</div>
               <h3 className="text-xl font-bold mb-3">Persoonlijke Aandacht</h3>
               <p className="text-gray-700">
@@ -140,7 +140,7 @@ export default async function SemiPrivate() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-bold mb-3">Programma Op Maat</h3>
               <p className="text-gray-700">
@@ -148,7 +148,7 @@ export default async function SemiPrivate() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">💰</div>
               <h3 className="text-xl font-bold mb-3">Betere Prijs Dan 1-op-1</h3>
               <p className="text-gray-700">
@@ -156,7 +156,7 @@ export default async function SemiPrivate() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🔥</div>
               <h3 className="text-xl font-bold mb-3">Motivatie van Groep</h3>
               <p className="text-gray-700">
@@ -173,7 +173,7 @@ export default async function SemiPrivate() {
         buttonLabel="Plan een Gratis Intro"
       />
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">

@@ -374,7 +374,7 @@ export default function BlogPost() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4">
+      <div className="bg-stone-50 py-4">
         <div className="container-custom">
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <Link href={`/${locale}`} className="hover:text-cinnabar">Home</Link>
@@ -387,7 +387,7 @@ export default function BlogPost() {
       </div>
 
       {/* Article */}
-      <article className="section-padding bg-white">
+      <article className="section-padding bg-organic-bg">
         <div className="container-custom max-w-3xl mx-auto">
           {/* Meta */}
           <div className="flex items-center gap-4 mb-6 text-sm">

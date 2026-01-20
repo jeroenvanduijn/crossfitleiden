@@ -15,7 +15,7 @@ export default function DeVolgendeRondePage() {
       </section>
 
       {/* Event Details */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Over Het Event</h2>
@@ -24,7 +24,7 @@ export default function DeVolgendeRondePage() {
               workouts die je conditie, kracht en teamwork testen.
             </p>
 
-            <div className="bg-gray-50 rounded-xl p-8 mb-8">
+            <div className="bg-stone-50 rounded-xl p-8 mb-8">
               <h3 className="text-2xl font-bold mb-4">Event Details</h3>
               <div className="space-y-4 text-gray-700">
                 <div className="flex gap-4">

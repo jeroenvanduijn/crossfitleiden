@@ -66,14 +66,14 @@ export default function TeamPage() {
       </section>
 
       {/* Owners Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-700 mb-8 text-center">
               {t('owners.intro')}
             </p>
 
-            <div className="bg-gray-50 rounded-2xl overflow-hidden mb-8">
+            <div className="bg-stone-50 rounded-2xl overflow-hidden mb-8">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="aspect-square bg-gray-200 flex items-center justify-center overflow-hidden">
                   <img
@@ -104,7 +104,7 @@ export default function TeamPage() {
               </div>
 
               <div className="px-8 pb-8">
-                <div className="bg-white rounded-xl p-6">
+                <div className="bg-organic-bg rounded-xl p-6">
                   <p className="text-gray-700 leading-relaxed">
                     {t('owners.story')}
                   </p>
@@ -122,12 +122,12 @@ export default function TeamPage() {
       </section>
 
       {/* Coaches Grid */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">{t('coaches.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {coaches.map((coach) => (
-              <div key={coach.key} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div key={coach.key} className="bg-organic-bg rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <div className="aspect-square bg-gray-200 flex items-center justify-center overflow-hidden">
                   {coach.image ? (
                     <img
@@ -151,7 +151,7 @@ export default function TeamPage() {
       </section>
 
       {/* Why Our Coaches Matter */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">{t('whyMatters.title')}</h2>
           <div className="space-y-6 text-lg text-gray-700">

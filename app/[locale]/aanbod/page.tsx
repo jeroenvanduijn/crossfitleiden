@@ -19,7 +19,7 @@ export default async function Aanbod() {
       </section>
 
       {/* Intro - Beginner Reassurance */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6">{t('intro.title')}</h2>
@@ -114,7 +114,7 @@ export default async function Aanbod() {
             </div>
 
             {/* Private Coaching */}
-            <div className="bg-gray-50 rounded-2xl p-8">
+            <div className="bg-stone-50 rounded-2xl p-8">
               <div className="text-6xl mb-4">👤</div>
               <h3 className="text-2xl font-bold mb-3">{t('personal.title')}</h3>
               <p className="text-gray-700 mb-6">
@@ -155,7 +155,7 @@ export default async function Aanbod() {
       </section>
 
       {/* Special Programs */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-4 text-center">{t('special.title')}</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -164,7 +164,7 @@ export default async function Aanbod() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* Small Group Training */}
-            <Link href={`/${locale}/aanbod/small-group`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/aanbod/small-group`} className="bg-organic-bg rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">👥</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.smallGroup.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -174,7 +174,7 @@ export default async function Aanbod() {
             </Link>
 
             {/* Hyrox */}
-            <Link href={`/${locale}/aanbod/hyrox`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/aanbod/hyrox`} className="bg-organic-bg rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🏃</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.hyrox.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -184,7 +184,7 @@ export default async function Aanbod() {
             </Link>
 
             {/* Fysiofabriek */}
-            <Link href={`/${locale}/aanbod/fysiofabriek`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/aanbod/fysiofabriek`} className="bg-organic-bg rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🩺</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.fysiofabriek.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -194,7 +194,7 @@ export default async function Aanbod() {
             </Link>
 
             {/* Nutrition */}
-            <Link href={`/${locale}/contact`} className="bg-white rounded-xl p-6 hover:shadow-lg transition-all group">
+            <Link href={`/${locale}/contact`} className="bg-organic-bg rounded-xl p-6 hover:shadow-lg transition-all group">
               <div className="text-4xl mb-3">🍎</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">{t('special.nutrition.title')}</h3>
               <p className="text-sm text-gray-700 mb-3">
@@ -207,7 +207,7 @@ export default async function Aanbod() {
       </section>
 
       {/* Youth Programs */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-4 text-center">{t('youth.title')}</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
@@ -215,7 +215,7 @@ export default async function Aanbod() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Link href={`/${locale}/aanbod/pre-teens`} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
+            <Link href={`/${locale}/aanbod/pre-teens`} className="bg-stone-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">👧👦</div>
               <h3 className="text-xl font-bold mb-2 text-center">{t('youth.preTeens.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
@@ -223,7 +223,7 @@ export default async function Aanbod() {
               </p>
             </Link>
 
-            <Link href={`/${locale}/aanbod/teens`} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
+            <Link href={`/${locale}/aanbod/teens`} className="bg-stone-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">🧑‍🎓</div>
               <h3 className="text-xl font-bold mb-2 text-center">{t('youth.teens.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
@@ -231,7 +231,7 @@ export default async function Aanbod() {
               </p>
             </Link>
 
-            <Link href={`/${locale}/aanbod/sport-performance`} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all">
+            <Link href={`/${locale}/aanbod/sport-performance`} className="bg-stone-50 rounded-xl p-6 hover:shadow-lg transition-all">
               <div className="text-5xl mb-4 text-center">⚽</div>
               <h3 className="text-xl font-bold mb-2 text-center">{t('youth.sportPerformance.title')}</h3>
               <p className="text-gray-700 text-center text-sm">
@@ -251,17 +251,17 @@ export default async function Aanbod() {
               {t('schedule.subtitle')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-lg p-6">
+              <div className="bg-organic-bg rounded-lg p-6">
                 <div className="text-3xl mb-2">🌅</div>
                 <h4 className="font-semibold mb-1">{t('schedule.morning')}</h4>
                 <p className="text-gray-600">{t('schedule.morningTime')}</p>
               </div>
-              <div className="bg-white rounded-lg p-6">
+              <div className="bg-organic-bg rounded-lg p-6">
                 <div className="text-3xl mb-2">☀️</div>
                 <h4 className="font-semibold mb-1">{t('schedule.afternoon')}</h4>
                 <p className="text-gray-600">{t('schedule.afternoonTime')}</p>
               </div>
-              <div className="bg-white rounded-lg p-6">
+              <div className="bg-organic-bg rounded-lg p-6">
                 <div className="text-3xl mb-2">🌙</div>
                 <h4 className="font-semibold mb-1">{t('schedule.evening')}</h4>
                 <p className="text-gray-600">{t('schedule.eveningTime')}</p>
@@ -275,14 +275,14 @@ export default async function Aanbod() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">{t('whyUs.title')}</h2>
             <p className="text-lg text-gray-700 text-center mb-8">
               {t('whyUs.subtitle')}
             </p>
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-stone-50 rounded-xl p-8">
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-cinnabar mr-3 text-2xl flex-shrink-0">✓</span>

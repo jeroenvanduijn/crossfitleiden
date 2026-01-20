@@ -14,7 +14,7 @@ export default async function Faciliteit() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Welkom in onze Box</h2>
@@ -26,11 +26,11 @@ export default async function Faciliteit() {
         </div>
       </section>
 
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Equipment & Faciliteiten</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-4">💪 Kracht Equipment</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• 12 Power racks met pull-up bars</li>
@@ -41,7 +41,7 @@ export default async function Faciliteit() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-4">🏃 Cardio Equipment</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• 10 Concept2 rowers</li>
@@ -52,7 +52,7 @@ export default async function Faciliteit() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <h3 className="text-xl font-bold mb-4">🎯 Overige Equipment</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• GHD machines</li>
@@ -66,7 +66,7 @@ export default async function Faciliteit() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Amenities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -102,11 +102,11 @@ export default async function Faciliteit() {
         </div>
       </section>
 
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Locatie & Bereikbaarheid</h2>
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-organic-bg rounded-xl p-8">
               <div className="space-y-4">
                 <div>
                   <h3 className="font-bold text-lg mb-2">📍 Adres</h3>
@@ -135,7 +135,7 @@ export default async function Faciliteit() {
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Kom langs!</h2>
           <p className="text-xl mb-8">Loop gerust eens binnen om de box te zien - de koffie staat klaar.</p>
-          <Link href={`/${locale}/contact`} className="bg-white text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
+          <Link href={`/${locale}/contact`} className="bg-organic-bg text-cinnabar px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block">
             Plan een Rondleiding
           </Link>
         </div>

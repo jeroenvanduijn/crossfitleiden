@@ -21,7 +21,7 @@ export default function LeidsWintertriatlon() {
 
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+            <div className="inline-block bg-organic-bg/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
               <p className="text-sm font-semibold">Proud sponsor • 1 maart 2026</p>
             </div>
 
@@ -48,7 +48,7 @@ export default function LeidsWintertriatlon() {
                 href="https://www.zvl-1886.nl/leidse-wintertriathlon/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold hover:bg-white/30 transition-all text-lg border-2 border-white/40 text-center"
+                className="inline-block bg-organic-bg/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold hover:bg-organic-bg/30 transition-all text-lg border-2 border-white/40 text-center"
               >
                 Meer info
               </a>
@@ -74,7 +74,7 @@ export default function LeidsWintertriatlon() {
       </section>
 
       {/* What is it */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Wat is de Leidse Wintertriatlon?</h2>
@@ -119,12 +119,12 @@ export default function LeidsWintertriatlon() {
       </section>
 
       {/* Practical Info */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Praktische Informatie</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <h3 className="text-xl font-bold mb-4 text-cinnabar">Wanneer & Waar</h3>
               <ul className="space-y-3 text-gray-700">
                 <li><strong>Datum:</strong> 1 maart 2026</li>
@@ -134,7 +134,7 @@ export default function LeidsWintertriatlon() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <h3 className="text-xl font-bold mb-4 text-cinnabar">Registratie</h3>
               <ul className="space-y-3 text-gray-700">
                 <li><strong>Inschrijven:</strong> Via inschrijven.nl</li>
@@ -146,7 +146,7 @@ export default function LeidsWintertriatlon() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-sm">
+            <div className="bg-organic-bg rounded-xl p-8 shadow-sm">
               <h3 className="text-2xl font-bold mb-6">Afstanden & Categorieën</h3>
 
               <div className="space-y-6">
@@ -185,7 +185,7 @@ export default function LeidsWintertriatlon() {
       </section>
 
       {/* Preparation */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Hoe kun je je voorbereiden?</h2>
@@ -247,13 +247,13 @@ export default function LeidsWintertriatlon() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
 
             <div className="space-y-4">
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Moet ik kunnen schaatsen?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -263,7 +263,7 @@ export default function LeidsWintertriatlon() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Moet ik fit zijn om mee te doen?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -274,7 +274,7 @@ export default function LeidsWintertriatlon() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Heb ik een speciale fiets nodig?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -285,7 +285,7 @@ export default function LeidsWintertriatlon() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Wat moet ik meenemen?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -296,7 +296,7 @@ export default function LeidsWintertriatlon() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Kan ik in teams deelnemen?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -307,7 +307,7 @@ export default function LeidsWintertriatlon() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Hoe lang duurt het evenement?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -318,7 +318,7 @@ export default function LeidsWintertriatlon() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Zijn er CrossFit Leiden leden die meedoen?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -329,7 +329,7 @@ export default function LeidsWintertriatlon() {
                 </p>
               </details>
 
-              <details className="bg-gray-50 rounded-xl p-6 group">
+              <details className="bg-stone-50 rounded-xl p-6 group">
                 <summary className="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
                   Wat als het weer slecht is?
                   <span className="text-cinnabar text-2xl group-open:rotate-45 transition-transform">+</span>
@@ -357,7 +357,7 @@ export default function LeidsWintertriatlon() {
             </p>
             <button
               onClick={handleRegistration}
-              className="inline-block bg-white text-cinnabar px-10 py-5 rounded-lg font-bold hover:bg-white/90 transition-all shadow-xl text-lg cursor-pointer"
+              className="inline-block bg-organic-bg text-cinnabar px-10 py-5 rounded-lg font-bold hover:bg-organic-bg/90 transition-all shadow-xl text-lg cursor-pointer"
             >
               Schrijf je nu in voor de Wintertriatlon
             </button>
@@ -369,7 +369,7 @@ export default function LeidsWintertriatlon() {
       </section>
 
       {/* Footer Note */}
-      <section className="py-8 bg-gray-900 text-gray-400 text-center text-sm">
+      <section className="py-8 bg-organic-text text-gray-400 text-center text-sm">
         <div className="container-custom">
           <p>
             CrossFit Leiden is trotse sponsor van de Leidse Wintertriatlon •

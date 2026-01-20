@@ -15,7 +15,7 @@ export default async function Workshops() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Wat Zijn Onze Workshops?</h2>
@@ -38,11 +38,11 @@ export default async function Workshops() {
         </div>
       </section>
 
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Voorbeelden van Workshops</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🏋️</div>
               <h3 className="text-xl font-bold mb-3">Gewichtheffen Basis</h3>
               <p className="text-gray-700 mb-3">
@@ -53,7 +53,7 @@ export default async function Workshops() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🤸</div>
               <h3 className="text-xl font-bold mb-3">Gymnastics Skills</h3>
               <p className="text-gray-700 mb-3">
@@ -64,7 +64,7 @@ export default async function Workshops() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🧘</div>
               <h3 className="text-xl font-bold mb-3">Mobility & Bewegelijkheid</h3>
               <p className="text-gray-700 mb-3">
@@ -75,7 +75,7 @@ export default async function Workshops() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🍎</div>
               <h3 className="text-xl font-bold mb-3">Voeding & Lifestyle</h3>
               <p className="text-gray-700 mb-3">
@@ -86,7 +86,7 @@ export default async function Workshops() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🏃</div>
               <h3 className="text-xl font-bold mb-3">Running & Endurance</h3>
               <p className="text-gray-700 mb-3">
@@ -97,7 +97,7 @@ export default async function Workshops() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">💪</div>
               <h3 className="text-xl font-bold mb-3">Kracht Fundamenten</h3>
               <p className="text-gray-700 mb-3">
@@ -111,12 +111,12 @@ export default async function Workshops() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Praktische Informatie</h2>
             <div className="space-y-6">
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">📅 Wanneer zijn workshops?</h3>
                 <p className="text-gray-700">
                   We organiseren regelmatig workshops in het weekend of op doordeweekse avonden.
@@ -124,7 +124,7 @@ export default async function Workshops() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">💰 Wat kosten workshops?</h3>
                 <p className="text-gray-700">
                   Voor leden zijn de meeste workshops gratis of tegen gereduceerd tarief (€10-€25).
@@ -132,7 +132,7 @@ export default async function Workshops() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">👥 Hoe meld ik me aan?</h3>
                 <p className="text-gray-700">
                   Aanmelden gaat via onze WhatsApp groep, Instagram of email. Plekken zijn beperkt (meestal 8-15 personen)
@@ -140,7 +140,7 @@ export default async function Workshops() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">🎯 Moet ik lid zijn?</h3>
                 <p className="text-gray-700">
                   Nee, ook niet-leden kunnen deelnemen aan workshops. Wel zijn de kosten hoger voor niet-leden en hebben
@@ -152,11 +152,11 @@ export default async function Workshops() {
         </div>
       </section>
 
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Aankomende Workshops</h2>
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-organic-bg rounded-xl p-8">
               <p className="text-lg text-gray-700 mb-4">
                 We updaten ons workshop-schema maandelijks. Wil je op de hoogte blijven?
               </p>
@@ -178,7 +178,7 @@ export default async function Workshops() {
         buttonLabel="Plan een Gratis Intro"
       />
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">

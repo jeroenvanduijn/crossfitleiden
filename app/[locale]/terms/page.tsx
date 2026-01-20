@@ -220,7 +220,7 @@ export default function TermsPage() {
           Drawn up on April 1 2023
         </p>
 
-        <div className="bg-gray-50 rounded-xl p-8 mt-12">
+        <div className="bg-stone-50 rounded-xl p-8 mt-12">
           <h2 className="text-2xl font-bold mb-6">Appendix 1 – Model withdrawal form</h2>
 
           <p className="text-gray-700 mb-4 italic">

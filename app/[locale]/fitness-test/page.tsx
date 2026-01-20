@@ -578,7 +578,7 @@ export default function FitnessRealityCheck() {
   // Start Screen
   if (!started) {
     return (
-      <div className="min-h-screen bg-white relative overflow-hidden">
+      <div className="min-h-screen bg-organic-bg relative overflow-hidden">
         <Diamond
           className="absolute -top-20 -right-20 w-80 h-80 text-[#EF4C37] opacity-10 rotate-12"
         />
@@ -614,13 +614,13 @@ export default function FitnessRealityCheck() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm">
-              <div className="flex items-center gap-2 text-gray-600 bg-gray-50 px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 text-gray-600 bg-stone-50 px-4 py-2 rounded-full">
                 <span className="text-[#0CBABA]">⏱</span> {t.startScreen.duration}
               </div>
-              <div className="flex items-center gap-2 text-gray-600 bg-gray-50 px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 text-gray-600 bg-stone-50 px-4 py-2 rounded-full">
                 <span className="text-[#F7CB15]">📊</span> {t.startScreen.questionCount}
               </div>
-              <div className="flex items-center gap-2 text-gray-600 bg-gray-50 px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 text-gray-600 bg-stone-50 px-4 py-2 rounded-full">
                 <span className="text-[#EF4C37]">🎯</span> {t.startScreen.personalProfile}
               </div>
             </div>
@@ -651,7 +651,7 @@ export default function FitnessRealityCheck() {
     const percentage = Math.round((score / 72) * 100);
 
     return (
-      <div className="min-h-screen bg-white relative overflow-hidden">
+      <div className="min-h-screen bg-organic-bg relative overflow-hidden">
         <Diamond
           className="absolute -top-20 -right-20 w-80 h-80 opacity-10 rotate-12"
           style={{ color: result.color }}
@@ -733,7 +733,7 @@ export default function FitnessRealityCheck() {
 
               <a
                 href={`https://www.crossfitleiden.com/${locale}/gratis-intro`}
-                className="inline-flex items-center gap-3 bg-white text-[#EF4C37] font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 mb-4"
+                className="inline-flex items-center gap-3 bg-organic-bg text-[#EF4C37] font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 mb-4"
                 onClick={() => track('Fitness Test CTA Click', { score, level: result.level, locale })}
               >
                 {t.resultScreen.ctaButton}
@@ -767,7 +767,7 @@ export default function FitnessRealityCheck() {
   const questionNumber = getCurrentQuestionIndex() + 1;
 
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden">
+    <div className="min-h-screen bg-organic-bg relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-gray-100">
         <div
           className="h-full bg-[#EF4C37] transition-all duration-500 ease-out"
@@ -777,7 +777,7 @@ export default function FitnessRealityCheck() {
 
       <div className="absolute top-6 left-6 right-6 flex justify-between items-center text-sm">
         <span className="text-gray-400 font-medium">{questionNumber} {t.questionScreen.of} {totalQuestions}</span>
-        <span className="flex items-center gap-2 text-gray-600 bg-gray-50 px-3 py-1.5 rounded-full">
+        <span className="flex items-center gap-2 text-gray-600 bg-stone-50 px-3 py-1.5 rounded-full">
           <span>{section.icon}</span>
           {section.section}
         </span>
@@ -801,7 +801,7 @@ export default function FitnessRealityCheck() {
                   className={`w-full text-left p-5 rounded-2xl border-2 transition-all duration-200 group
                     ${selectedOption === index
                       ? 'bg-[#EF4C37] border-[#EF4C37] text-white scale-[0.98]'
-                      : 'bg-white border-gray-200 hover:border-[#EF4C37] hover:bg-[#EF4C37]/5'
+                      : 'bg-organic-bg border-gray-200 hover:border-[#EF4C37] hover:bg-[#EF4C37]/5'
                     }
                     ${isAnimating && selectedOption !== index ? 'opacity-50' : ''}
                   `}
@@ -809,7 +809,7 @@ export default function FitnessRealityCheck() {
                   <div className="flex items-center gap-4">
                     <span className={`w-8 h-8 rounded-full border-2 flex items-center justify-center text-sm font-bold transition-all
                       ${selectedOption === index
-                        ? 'border-white bg-white text-[#EF4C37]'
+                        ? 'border-white bg-organic-bg text-[#EF4C37]'
                         : 'border-gray-300 text-gray-400 group-hover:border-[#EF4C37] group-hover:text-[#EF4C37]'
                       }
                     `}>

@@ -49,7 +49,7 @@ export default function Rooster() {
       </section>
 
       {/* Lesson Overview Section */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('ourClasses.title')}</h2>
@@ -63,7 +63,7 @@ export default function Rooster() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 {/* Training */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-verdigris to-teal-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">💪</span>
                   </div>
@@ -77,7 +77,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Hyrox */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-cinnabar to-red-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🏃</span>
                   </div>
@@ -91,7 +91,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Flex Friday */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-jonquil to-yellow-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🎉</span>
                   </div>
@@ -105,7 +105,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Running */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🏃‍♂️</span>
                   </div>
@@ -119,7 +119,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Olympic Lifting */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🏋️</span>
                   </div>
@@ -133,7 +133,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Teens */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">👦</span>
                   </div>
@@ -147,7 +147,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Pre Teens */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🧒</span>
                   </div>
@@ -161,7 +161,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Urban Training */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🌆</span>
                   </div>
@@ -175,7 +175,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Mobility */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🧘</span>
                   </div>
@@ -189,7 +189,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Gymnastics */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg mb-4 flex items-center justify-center">
                     <span className="text-6xl">🤸</span>
                   </div>
@@ -211,7 +211,7 @@ export default function Rooster() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
                 {/* GetShredded */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
                   <div className="flex items-center justify-between mb-2">
                     <h4 className="text-xl font-bold">{t('smallGroup.getShredded.title')}</h4>
                     <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
@@ -228,7 +228,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Unlock Motion */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
                   <div className="flex items-center justify-between mb-2">
                     <h4 className="text-xl font-bold">{t('smallGroup.unlockMotion.title')}</h4>
                     <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
@@ -245,7 +245,7 @@ export default function Rooster() {
                 </div>
 
                 {/* Kickstart */}
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
+                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-cinnabar">
                   <div className="flex items-center justify-between mb-2">
                     <h4 className="text-xl font-bold">{t('smallGroup.kickstart.title')}</h4>
                     <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
@@ -268,7 +268,7 @@ export default function Rooster() {
       </section>
 
       {/* Schedule Info */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto mb-12 text-center">
             <p className="text-lg text-gray-700 mb-4">
@@ -287,7 +287,7 @@ export default function Rooster() {
                 className={`flex-1 p-6 rounded-xl border-2 transition-all ${
                   activeRooster === 'groepslessen'
                     ? 'border-verdigris bg-verdigris/10 shadow-lg'
-                    : 'border-gray-200 bg-white hover:border-verdigris/50'
+                    : 'border-gray-200 bg-organic-bg hover:border-verdigris/50'
                 }`}
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
@@ -311,7 +311,7 @@ export default function Rooster() {
                 className={`flex-1 p-6 rounded-xl border-2 transition-all ${
                   activeRooster === 'small-group'
                     ? 'border-cinnabar bg-cinnabar/10 shadow-lg'
-                    : 'border-gray-200 bg-white hover:border-cinnabar/50'
+                    : 'border-gray-200 bg-organic-bg hover:border-cinnabar/50'
                 }`}
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
@@ -333,8 +333,8 @@ export default function Rooster() {
           </div>
 
           {/* Sportbit Schedule Embed */}
-          <div className="bg-gray-50 rounded-xl p-4 md:p-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm min-h-[600px]">
+          <div className="bg-stone-50 rounded-xl p-4 md:p-8">
+            <div className="bg-organic-bg rounded-lg overflow-hidden shadow-sm min-h-[600px]">
               <link rel="stylesheet" href="https://crossfitleiden.sportbitapp.nl/cbm/css/embed/rooster/rooster.css" type="text/css" />
               <Script
                 src="https://crossfitleiden.sportbitapp.nl/cbm/embed/rooster/cdn/"
@@ -347,33 +347,33 @@ export default function Rooster() {
       </section>
 
       {/* Quick tips */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-center">{t('tips.title')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-lg p-6">
+              <div className="bg-organic-bg rounded-lg p-6">
                 <h4 className="font-semibold mb-2">{t('tips.tip1.title')}</h4>
                 <p className="text-gray-700 text-sm">
                   {t('tips.tip1.text')}
                 </p>
               </div>
 
-              <div className="bg-white rounded-lg p-6">
+              <div className="bg-organic-bg rounded-lg p-6">
                 <h4 className="font-semibold mb-2">{t('tips.tip2.title')}</h4>
                 <p className="text-gray-700 text-sm">
                   {t('tips.tip2.text')}
                 </p>
               </div>
 
-              <div className="bg-white rounded-lg p-6">
+              <div className="bg-organic-bg rounded-lg p-6">
                 <h4 className="font-semibold mb-2">{t('tips.tip3.title')}</h4>
                 <p className="text-gray-700 text-sm">
                   {t('tips.tip3.text')}
                 </p>
               </div>
 
-              <div className="bg-white rounded-lg p-6">
+              <div className="bg-organic-bg rounded-lg p-6">
                 <h4 className="font-semibold mb-2">{t('tips.tip4.title')}</h4>
                 <p className="text-gray-700 text-sm">
                   {t('tips.tip4.text')}
@@ -392,7 +392,7 @@ export default function Rooster() {
       />
 
       {/* Questions */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">

@@ -15,7 +15,7 @@ export default async function Teens() {
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Waarom Onze Teens Lessen?</h2>
@@ -40,11 +40,11 @@ export default async function Teens() {
       </section>
 
       {/* Voordelen */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Wat Leer Je?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">💪</div>
               <h3 className="text-xl font-bold mb-3">Kracht & Atletiek</h3>
               <p className="text-gray-700 mb-2">
@@ -55,7 +55,7 @@ export default async function Teens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🏆</div>
               <h3 className="text-xl font-bold mb-3">Zelfvertrouwen</h3>
               <p className="text-gray-700 mb-2">
@@ -66,7 +66,7 @@ export default async function Teens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">🧠</div>
               <h3 className="text-xl font-bold mb-3">Discipline & Focus</h3>
               <p className="text-gray-700 mb-2">
@@ -77,7 +77,7 @@ export default async function Teens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">👥</div>
               <h3 className="text-xl font-bold mb-3">Positieve Community</h3>
               <p className="text-gray-700 mb-2">
@@ -88,7 +88,7 @@ export default async function Teens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">📵</div>
               <h3 className="text-xl font-bold mb-3">Gezonde Afleiding</h3>
               <p className="text-gray-700 mb-2">
@@ -99,7 +99,7 @@ export default async function Teens() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-organic-bg rounded-xl p-6">
               <div className="text-4xl mb-4">⚽</div>
               <h3 className="text-xl font-bold mb-3">Voor Elke Sport</h3>
               <p className="text-gray-700 mb-2">
@@ -114,7 +114,7 @@ export default async function Teens() {
       </section>
 
       {/* Voor wie */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Is Dit Iets Voor Jou?</h2>
@@ -122,22 +122,22 @@ export default async function Teens() {
               Onze teens lessen zijn perfect als je jezelf herkent in een van deze situaties:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="bg-stone-50 rounded-lg p-6">
                 <p className="text-gray-700">✅ Je wilt sterker en fitter worden</p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="bg-stone-50 rounded-lg p-6">
                 <p className="text-gray-700">✅ Je doet een sport en wilt beter worden</p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="bg-stone-50 rounded-lg p-6">
                 <p className="text-gray-700">✅ Je hebt nog nooit gesport (ook oké!)</p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="bg-stone-50 rounded-lg p-6">
                 <p className="text-gray-700">✅ Je zoekt een uitdaging naast school</p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="bg-stone-50 rounded-lg p-6">
                 <p className="text-gray-700">✅ Je wilt trainen met leeftijdsgenoten</p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="bg-stone-50 rounded-lg p-6">
                 <p className="text-gray-700">✅ Je wilt leren hoe je veilig met gewichten traint</p>
               </div>
             </div>
@@ -146,12 +146,12 @@ export default async function Teens() {
       </section>
 
       {/* Guided by certified coaches */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-12 text-center">Guided by certified coaches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Rochelle */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/coach%20rochelle.png"
@@ -169,7 +169,7 @@ export default async function Teens() {
             </div>
 
             {/* Natália */}
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-stone-50 rounded-xl p-6">
               <div className="flex items-center mb-4">
                 <img
                   src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/coaches/Coach%20Natalia.png"
@@ -190,12 +190,12 @@ export default async function Teens() {
       </section>
 
       {/* Praktische info */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Praktische Informatie</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">📅 Wanneer?</h3>
                 <p className="text-gray-700 mb-2">Woensdag 17:00<br/>Zaterdag 10:00</p>
                 <p className="text-sm text-gray-600">
@@ -203,7 +203,7 @@ export default async function Teens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">⏱️ Lesduur</h3>
                 <p className="text-gray-700 mb-2">60 minuten per les</p>
                 <p className="text-sm text-gray-600">
@@ -211,7 +211,7 @@ export default async function Teens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">💰 Prijs</h3>
                 <p className="text-gray-700 mb-2">€42,50/maand (1x per week)<br/>€80/maand (2x per week)</p>
                 <p className="text-sm text-gray-600">
@@ -219,7 +219,7 @@ export default async function Teens() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6">
+              <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">👥 Groepsgrootte</h3>
                 <p className="text-gray-700 mb-2">Max 15 teens per les</p>
                 <p className="text-sm text-gray-600">
@@ -232,33 +232,33 @@ export default async function Teens() {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Veelgestelde Vragen</h2>
             <div className="space-y-6">
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Moet ik al ervaring hebben?</h3>
                 <p className="text-gray-700">
                   Nee! We hebben zowel complete beginners als ervaren sporters. Alles wordt uitgelegd en aangepast op jouw niveau.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Is het niet te zwaar?</h3>
                 <p className="text-gray-700">
                   We bouwen langzaam op en coaches zorgen dat je veilig traint. Sommigen tillen meer, anderen minder – iedereen op eigen niveau.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Kan ik komen als ik een andere sport doe?</h3>
                 <p className="text-gray-700">
                   Zeker! Veel tieners combineren CrossFit met hun hoofdsport (voetbal, hockey, etc.). Het maakt je sterker en sneller in je sport.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-stone-50 rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">Kan ik een gratis intro doen?</h3>
                 <p className="text-gray-700">
                   Ja, absoluut! We beginnen altijd met een gratis intro. Zo kun je kennismaken en kijken of het bij je past zonder verplichtingen.
@@ -277,7 +277,7 @@ export default async function Teens() {
       />
 
       {/* Final note */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg text-gray-700">

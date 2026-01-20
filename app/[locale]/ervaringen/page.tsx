@@ -143,7 +143,7 @@ export default async function Ervaringen() {
       </section>
 
       {/* Video Stories Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
@@ -157,7 +157,7 @@ export default async function Ervaringen() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {memberVideos.map((video, index) => (
                 <div key={index} className="flex flex-col gap-3">
-                  <div className="bg-gray-50 rounded-xl overflow-hidden">
+                  <div className="bg-stone-50 rounded-xl overflow-hidden">
                     <div className="relative" style={{ padding: "177.78% 0 0 0" }}>
                       <iframe
                         src={`https://player.vimeo.com/video/${video.vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479`}
@@ -184,7 +184,7 @@ export default async function Ervaringen() {
       </section>
 
       {/* Word Cloud Section */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-stone-50">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
@@ -195,7 +195,7 @@ export default async function Ervaringen() {
             </p>
 
             {/* Word Cloud */}
-            <div className="bg-white rounded-2xl p-8 md:p-12">
+            <div className="bg-organic-bg rounded-2xl p-8 md:p-12">
               <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 <span className="text-3xl md:text-5xl font-bold text-cinnabar">{t('wordCloud.words.coaches')}</span>
                 <span className="text-2xl md:text-4xl font-semibold text-verdigris">{t('wordCloud.words.community')}</span>
@@ -231,7 +231,7 @@ export default async function Ervaringen() {
       </section>
 
       {/* Community Gallery */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-organic-bg">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -268,7 +268,7 @@ export default async function Ervaringen() {
             </h2>
             <Link
               href="https://crossfitleiden.referralrock.com/l/1CROSSFITLEIDEN95/"
-              className="inline-block bg-white text-cinnabar px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-50 transition-all shadow-lg"
+              className="inline-block bg-organic-bg text-cinnabar px-10 py-4 rounded-lg font-bold text-lg hover:bg-stone-50 transition-all shadow-lg"
             >
               {t('cta.button')}
             </Link>
