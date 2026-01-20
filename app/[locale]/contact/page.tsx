@@ -1,11 +1,25 @@
 "use client";
 
+import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { track } from '@vercel/analytics';
-import ContactForm from '@/components/ContactForm';
 
 export default function Contact() {
   const t = useTranslations('contact');
+
+  useEffect(() => {
+    // Load the HighLevel script
+    const script = document.createElement('script');
+    script.src = 'https://kilo.gymleadmachine.com/js/form_embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
 
   const handlePopupClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -148,8 +162,30 @@ export default function Contact() {
             <div>
               <h2 className="text-3xl font-bold mb-8">{t('form.title')}</h2>
 
-              <div className="w-full">
-                <ContactForm />
+              <div className="w-full bg-white rounded-lg overflow-hidden shadow-sm">
+                <iframe
+                  src="https://kilo.gymleadmachine.com/widget/form/nGDExYgYZcuHjGNwCsue"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    minHeight: '600px',
+                    border: 'none',
+                    borderRadius: '8px'
+                  }}
+                  id="inline-nGDExYgYZcuHjGNwCsue"
+                  data-layout='{"id":"INLINE"}'
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Website Form"
+                  data-height="600"
+                  data-layout-iframe-id="inline-nGDExYgYZcuHjGNwCsue"
+                  data-form-id="nGDExYgYZcuHjGNwCsue"
+                  title="Contact Form"
+                />
               </div>
             </div>
           </div>
