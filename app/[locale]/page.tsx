@@ -8,9 +8,17 @@ import HighLevelPopup from "@/components/HighLevelPopup";
 import KickstartBlock from "@/components/KickstartBlock";
 import IntroCtaSection from "@/components/IntroCtaSection";
 import FitnessCheckTeaser from "@/components/FitnessCheckTeaser";
+import { useInView } from "@/hooks/useInView";
 
 export default function Home() {
   const t = useTranslations('home');
+
+  // Scroll-triggered animation hooks for each section
+  const { ref: whyRef, isInView: whyInView } = useInView();
+  const { ref: howRef, isInView: howInView } = useInView();
+  const { ref: socialRef, isInView: socialInView } = useInView();
+  const { ref: memberRef, isInView: memberInView } = useInView();
+  const { ref: faqRef, isInView: faqInView } = useInView();
 
   return (
     <>
@@ -40,21 +48,23 @@ export default function Home() {
         <div className="relative z-20 container-custom">
           <div className="max-w-3xl">
             {/* Google Review Stars */}
-            <div className="mb-6">
+            <div className="mb-6 animate-fadeInUp">
               <p className="text-yellow-400 text-lg">
                 ⭐ ⭐ ⭐ ⭐ ⭐ <span className="text-white ml-2">{t('hero.googleReviews')}</span>
               </p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fadeInUp animate-delay-150">
               {t('hero.title')}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200">
+            <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-fadeInUp animate-delay-300">
               {t('hero.subtitle')}
             </p>
-            <CTAButton variant="hero" className="inline-block">
-              {t('hero.cta')}
-            </CTAButton>
-            <p className="text-sm text-gray-300 mt-4">
+            <div className="animate-scaleIn animate-delay-500">
+              <CTAButton variant="hero" className="inline-block">
+                {t('hero.cta')}
+              </CTAButton>
+            </div>
+            <p className="text-sm text-gray-300 mt-4 animate-fadeInUp animate-delay-650">
               {t('hero.ctaNote')}
             </p>
           </div>
@@ -67,8 +77,13 @@ export default function Home() {
       {/* 2. WHY CROSSFIT LEIDEN - 5 USPs for busy parents & beginners */}
       <section className="section-padding bg-organic-bg">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('why.title')}</h2>
-          <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+          <h2
+            ref={whyRef as React.RefObject<HTMLHeadingElement>}
+            className={`text-3xl md:text-4xl font-bold mb-4 text-center ${whyInView ? 'animate-fadeInUp' : 'opacity-0'}`}
+          >
+            {t('why.title')}
+          </h2>
+          <p className={`text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto ${whyInView ? 'animate-fadeInUp animate-delay-150' : 'opacity-0'}`}>
             {t('why.subtitle')}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -143,8 +158,13 @@ export default function Home() {
       {/* 3. HOW IT WORKS - 3 Simple Steps */}
       <section className="section-padding bg-stone-50">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('howItWorks.title')}</h2>
-          <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+          <h2
+            ref={howRef as React.RefObject<HTMLHeadingElement>}
+            className={`text-3xl md:text-4xl font-bold mb-4 text-center ${howInView ? 'animate-fadeInUp' : 'opacity-0'}`}
+          >
+            {t('howItWorks.title')}
+          </h2>
+          <p className={`text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto ${howInView ? 'animate-fadeInUp animate-delay-150' : 'opacity-0'}`}>
             {t('howItWorks.subtitle')}
           </p>
           <div className="max-w-4xl mx-auto space-y-6">
@@ -205,7 +225,12 @@ export default function Home() {
       {/* 5. SOCIAL PROOF - Google Review Widget */}
       <section className="section-padding bg-organic-bg py-8 md:py-12 pb-8">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">{t('socialProof.title')}</h2>
+          <h2
+            ref={socialRef as React.RefObject<HTMLHeadingElement>}
+            className={`text-3xl md:text-4xl font-bold mb-12 text-center ${socialInView ? 'animate-fadeInUp' : 'opacity-0'}`}
+          >
+            {t('socialProof.title')}
+          </h2>
 
           {/* Google Review Widget - Fixed Container */}
           <div className="max-w-6xl mx-auto">
@@ -233,10 +258,13 @@ export default function Home() {
       <section className="bg-organic-bg pt-8 pb-16">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+            <h2
+              ref={memberRef as React.RefObject<HTMLHeadingElement>}
+              className={`text-3xl md:text-4xl font-bold mb-4 text-center ${memberInView ? 'animate-fadeInUp' : 'opacity-0'}`}
+            >
               {t('memberStory.title')}
             </h2>
-            <p className="text-lg text-gray-600 mb-10 text-center max-w-2xl mx-auto">
+            <p className={`text-lg text-gray-600 mb-10 text-center max-w-2xl mx-auto ${memberInView ? 'animate-fadeInUp animate-delay-150' : 'opacity-0'}`}>
               {t('memberStory.subtitle')}
             </p>
 
@@ -331,8 +359,13 @@ export default function Home() {
       {/* 7. FAQ - 6 Common Beginner Questions */}
       <section className="section-padding bg-stone-50">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">{t('faq.title')}</h2>
-          <p className="text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+          <h2
+            ref={faqRef as React.RefObject<HTMLHeadingElement>}
+            className={`text-3xl md:text-4xl font-bold mb-4 text-center ${faqInView ? 'animate-fadeInUp' : 'opacity-0'}`}
+          >
+            {t('faq.title')}
+          </h2>
+          <p className={`text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto ${faqInView ? 'animate-fadeInUp animate-delay-150' : 'opacity-0'}`}>
             {t('faq.subtitle')}
           </p>
           <div className="max-w-3xl mx-auto space-y-4">
