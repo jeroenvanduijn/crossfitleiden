@@ -89,12 +89,12 @@ export default function KickstartPromoPopup() {
     nl: {
       badge: "Laatste plekken!",
       title: "Kickstart Programma",
-      januaryTitle: "Januari Kickstart",
-      januarySpots: "✓ Alle plekken gevuld",
       februaryTitle: "Februari Kickstart",
       februarySpots: "✓ Alle plekken gevuld",
-      subtitle: "Maart Kickstart (start 2 maart)",
-      spotsLeft: "Nog 3 plekken beschikbaar",
+      marchTitle: "Maart Kickstart",
+      marchSpots: "✓ Alle plekken gevuld",
+      subtitle: "April Kickstart",
+      spotsLeft: "Nog 9 plekken beschikbaar",
       description: "Ons populaire 28-Day Kickstart programma voor beginners. Kleine groepen, persoonlijke begeleiding.",
       cta: "Reserveer je plek →",
       close: "Sluiten"
@@ -102,12 +102,12 @@ export default function KickstartPromoPopup() {
     en: {
       badge: "Last spots!",
       title: "Kickstart Program",
-      januaryTitle: "January Kickstart",
-      januarySpots: "✓ All spots filled",
       februaryTitle: "February Kickstart",
       februarySpots: "✓ All spots filled",
-      subtitle: "March Kickstart (starts March 2nd)",
-      spotsLeft: "3 spots available",
+      marchTitle: "March Kickstart",
+      marchSpots: "✓ All spots filled",
+      subtitle: "April Kickstart",
+      spotsLeft: "9 spots available",
       description: "Our popular 28-Day Kickstart program for beginners. Small groups, personal coaching.",
       cta: "Reserve your spot →",
       close: "Close"
@@ -152,16 +152,6 @@ export default function KickstartPromoPopup() {
               {t.title}
             </h2>
 
-            {/* January Kickstart - FULL */}
-            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
-              <h3 className="text-lg font-bold text-gray-900 mb-1">
-                {t.januaryTitle}
-              </h3>
-              <p className="text-base font-semibold text-gray-600">
-                {t.januarySpots}
-              </p>
-            </div>
-
             {/* February Kickstart - FULL */}
             <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
@@ -172,7 +162,17 @@ export default function KickstartPromoPopup() {
               </p>
             </div>
 
-            {/* March Kickstart */}
+            {/* March Kickstart - FULL */}
+            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
+                {t.marchTitle}
+              </h3>
+              <p className="text-base font-semibold text-gray-600">
+                {t.marchSpots}
+              </p>
+            </div>
+
+            {/* April Kickstart */}
             <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-4">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
                 {t.subtitle}
