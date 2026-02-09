@@ -311,7 +311,7 @@
       "crossfit": {
         "emoji": "💪",
         "title": "CrossFit Leiden",
-        "price": "€135",
+        "price": "€139",
         "period": "per maand"
       },
       "message": "Je betaalt óf nu aan je gezondheid, óf later aan klachten, weinig energie en zorgkosten. Bij ons bouw je rustig en veilig aan een fitter leven."
@@ -338,7 +338,7 @@
         "description": "Bij ons train je nooit alleen. Onze coaches kennen je naam, helpen je veilig te bewegen en zorgen dat elke les past bij jouw niveau. De sfeer is warm, persoonlijk en zonder ego's. Je bouwt stap voor stap aan kracht, energie en vertrouwen.",
         "base": {
           "title": "Base Membership",
-          "price": "€135",
+          "price": "€139",
           "period": "per maand",
           "item1": "3 groepslessen per week",
           "item2": "Elke 90 dagen Goal Review",
@@ -348,14 +348,14 @@
         },
         "pro": {
           "title": "Pro Membership",
-          "price": "€159",
+          "price": "€154",
           "period": "per maand",
           "item1": "4 groepslessen per week",
           "item2": "Inclusief alles uit Base"
         },
         "elite": {
           "title": "Elite Membership",
-          "price": "€169",
+          "price": "€174",
           "period": "per maand",
           "item1": "6 groepslessen per week",
           "item2": "Inclusief alles uit Base"
@@ -368,9 +368,9 @@
         "description": "Small Group voelt als personal training met de energie van een kleine groep. Je traint op vaste tijden met een coach die precies weet wat jij nodig hebt. Perfect voor wie sneller resultaat wil en meer persoonlijke begeleiding zoekt.",
         "tier3": {
           "title": "3x per week",
-          "price": "€450",
+          "price": "€465",
           "period": "per maand",
-          "period2": "of €400 (6 maanden)",
+          "period2": "of €414 (6 maanden)",
           "item1": "3 semi-private sessies",
           "item2": "Persoonlijk trainingsplan",
           "item3": "Vaste plek",
@@ -378,7 +378,7 @@
         },
         "tier2": {
           "title": "2x per week",
-          "price": "€400",
+          "price": "€414",
           "period": "per maand",
           "item1": "2 semi-private sessies",
           "item2": "Persoonlijk plan",
@@ -406,16 +406,16 @@
         "pt60": {
           "title": "60 minuten PT",
           "tier1": "5 sessies",
-          "price1": "€450",
+          "price1": "€465",
           "tier2": "10 sessies",
-          "price2": "€800"
+          "price2": "€830"
         },
         "pt30": {
           "title": "30 minuten PT",
           "tier1": "5 sessies",
-          "price1": "€225",
+          "price1": "€230",
           "tier2": "10 sessies",
-          "price2": "€400"
+          "price2": "€410"
         }
       },
       "skill": {
@@ -423,16 +423,16 @@
         "subtitle": "Skill development • maandelijks",
         "description": "Elke maand een privé coachmoment waarin je werkt aan techniek, kracht, mobiliteit of herstel. Simpel, duidelijk en super effectief om gericht stappen te zetten.",
         "skill1": "Skill 1",
-        "price1": "€90 p/m",
+        "price1": "€95 p/m",
         "skill2": "Skill 2",
-        "price2": "€175 p/m",
+        "price2": "€181 p/m",
         "skill4": "Skill 4",
-        "price4": "€370 p/m"
+        "price4": "€382 p/m"
       },
       "nutritionKickstart": {
         "title": "Nutrition Kickstart",
         "subtitle": "4 weken programma",
-        "price": "€200",
+        "price": "€220",
         "period": "4 weken",
         "description": "Samen met je coach werk je vier weken aan simpele, haalbare voedingsgewoontes. Geen ingewikkelde regels, maar duidelijke begeleiding en dagelijks contact.",
         "included": "Inclusief:",
@@ -452,9 +452,9 @@
         "subtitle": "Voor tieners",
         "description": "Veilige en leuke trainingen die tieners sterker, fitter en zelfverzekerder laten worden.",
         "tier1": "1x per week",
-        "price1": "€42,50 p/m",
+        "price1": "€44 p/m",
         "tier2": "2x per week",
-        "price2": "€80 p/m"
+        "price2": "€84 p/m"
       },
       "baseWeekend": {
         "title": "Base Weekend",

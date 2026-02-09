@@ -311,7 +311,7 @@
       "crossfit": {
         "emoji": "💪",
         "title": "CrossFit Leiden",
-        "price": "€135",
+        "price": "€139",
         "period": "per month"
       },
       "message": "You either pay for your health now, or later for complaints, low energy and healthcare costs. With us, you build towards a fitter life safely and steadily."
@@ -338,7 +338,7 @@
         "description": "With us, you never train alone. Our coaches know your name, help you move safely and ensure each class fits your level. The atmosphere is warm, personal and without egos. You build strength, energy and confidence step by step.",
         "base": {
           "title": "Base Membership",
-          "price": "€135",
+          "price": "€139",
           "period": "per month",
           "item1": "3 group classes per week",
           "item2": "Goal Review every 90 days",
@@ -348,14 +348,14 @@
         },
         "pro": {
           "title": "Pro Membership",
-          "price": "€159",
+          "price": "€154",
           "period": "per month",
           "item1": "4 group classes per week",
           "item2": "Includes everything from Base"
         },
         "elite": {
           "title": "Elite Membership",
-          "price": "€169",
+          "price": "€174",
           "period": "per month",
           "item1": "6 group classes per week",
           "item2": "Includes everything from Base"
@@ -368,9 +368,9 @@
         "description": "Small Group feels like personal training with the energy of a small group. You train at set times with a coach who knows exactly what you need. Perfect for those who want faster results and more personal guidance.",
         "tier3": {
           "title": "3x per week",
-          "price": "€450",
+          "price": "€465",
           "period": "per month",
-          "period2": "or €400 (6 months)",
+          "period2": "or €414 (6 months)",
           "item1": "3 semi-private sessions",
           "item2": "Personal training plan",
           "item3": "Fixed spot",
@@ -378,7 +378,7 @@
         },
         "tier2": {
           "title": "2x per week",
-          "price": "€400",
+          "price": "€414",
           "period": "per month",
           "item1": "2 semi-private sessions",
           "item2": "Personal plan",
@@ -406,16 +406,16 @@
         "pt60": {
           "title": "60 minute PT",
           "tier1": "5 sessions",
-          "price1": "€450",
+          "price1": "€465",
           "tier2": "10 sessions",
-          "price2": "€800"
+          "price2": "€830"
         },
         "pt30": {
           "title": "30 minute PT",
           "tier1": "5 sessions",
-          "price1": "€225",
+          "price1": "€230",
           "tier2": "10 sessions",
-          "price2": "€400"
+          "price2": "€410"
         }
       },
       "skill": {
@@ -423,16 +423,16 @@
         "subtitle": "Skill development • monthly",
         "description": "Each month a private coaching session where you work on technique, strength, mobility or recovery. Simple, clear and super effective for making targeted progress.",
         "skill1": "Skill 1",
-        "price1": "€90 p/m",
+        "price1": "€95 p/m",
         "skill2": "Skill 2",
-        "price2": "€175 p/m",
+        "price2": "€181 p/m",
         "skill4": "Skill 4",
-        "price4": "€370 p/m"
+        "price4": "€382 p/m"
       },
       "nutritionKickstart": {
         "title": "Nutrition Kickstart",
         "subtitle": "4-week program",
-        "price": "€200",
+        "price": "€220",
         "period": "4 weeks",
         "description": "Together with your coach, you work for four weeks on simple, achievable nutrition habits. No complicated rules, but clear guidance and daily contact.",
         "included": "Included:",
@@ -452,9 +452,9 @@
         "subtitle": "For teenagers",
         "description": "Safe and fun workouts that make teenagers stronger, fitter and more confident.",
         "tier1": "1x per week",
-        "price1": "€42.50 p/m",
+        "price1": "€44 p/m",
         "tier2": "2x per week",
-        "price2": "€80 p/m"
+        "price2": "€84 p/m"
       },
       "baseWeekend": {
         "title": "Base Weekend",
