@@ -1,1 +1,0 @@
-/Users/jeroenvanduijn/Documents/antigravity/.shared-skills/AGENTS.md
