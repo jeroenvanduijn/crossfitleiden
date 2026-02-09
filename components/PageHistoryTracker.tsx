@@ -34,49 +34,70 @@ export default function PageHistoryTracker() {
     }, [pathname]);
 
     useEffect(() => {
-        // 3. Populate Hidden Field
+        // 3. Populate Hidden Field & URL
         function populate() {
             try {
-                // Find input by name (GHL usually uses "page_history")
-                const inputs = document.querySelectorAll(
-                    'input[name="page_history"], input[data-q="page_history"]'
+                const hist = JSON.parse(
+                    sessionStorage.getItem("gymops_history") || "[]"
                 );
+                const historyString = hist.join(" -> ");
+
+                // A. Set URL Parameter (GHL often reads this)
+                const url = new URL(window.location.href);
+                if (url.searchParams.get("page_history") !== historyString) {
+                    url.searchParams.set("page_history", historyString);
+                    window.history.replaceState({}, "", url.toString());
+                    // console.log("GHL Tracker: Updated URL param page_history");
+                }
+
+                // B. Populate Hidden Inputs
+                // Common GHL selector patterns
+                const selector = [
+                    'input[name="page_history"]',
+                    'input[name="contact.page_history"]',
+                    'input[data-q="page_history"]',
+                    'input[class*="page_history"]', // messy but sometimes needed
+                ].join(", ");
+
+                const inputs = document.querySelectorAll(selector);
 
                 if (inputs.length > 0) {
-                    const hist = JSON.parse(
-                        sessionStorage.getItem("gymops_history") || "[]"
-                    );
-                    const historyString = hist.join(" -> ");
-
                     inputs.forEach((input) => {
                         const inputEl = input as HTMLInputElement;
-                        // Only update if value is different to avoid loops
                         if (inputEl.value !== historyString) {
                             inputEl.value = historyString;
-                            // Dispatch input event so GHL/frameworks detect the change
                             inputEl.dispatchEvent(new Event("input", { bubbles: true }));
                             inputEl.dispatchEvent(new Event("change", { bubbles: true }));
+                            // console.log("GHL Tracker: Populated input", inputEl);
                         }
                     });
                 }
             } catch (e) {
-                console.error("Error populating page history field:", e);
+                console.error("Error populating page history:", e);
             }
         }
 
-        // Run on mount
+        // Run immediately
         populate();
 
-        // Re-run for clicks (to catch popups opening)
-        const handleClick = () => setTimeout(populate, 500);
-        document.addEventListener("click", handleClick);
+        // Run on invalidation events
+        const handleEvents = () => setTimeout(populate, 500);
+        document.addEventListener("click", handleEvents);
+        document.addEventListener("focus", handleEvents); // Tab switch might trigger re-render
 
-        // Initial check for forms that might already be there
-        const interval = setInterval(populate, 1000);
+        // Use MutationObserver for dynamic popups
+        const observer = new MutationObserver((mutations) => {
+            // Check if nodes were added
+            const hasAddedNodes = mutations.some((m) => m.addedNodes.length > 0);
+            if (hasAddedNodes) populate();
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
 
         return () => {
-            document.removeEventListener("click", handleClick);
-            clearInterval(interval);
+            document.removeEventListener("click", handleEvents);
+            document.removeEventListener("focus", handleEvents);
+            observer.disconnect();
         };
     }, []);
 
