@@ -39,7 +39,7 @@ export default function KickstartPromoPopup() {
     // Track the click event with campaign info
     track('Kickstart Promo Popup CTA', {
       locale,
-      campaign: 'kickstart-march-popup',
+      campaign: 'kickstart-april-may-popup',
       source: 'kickstart-popup'
     });
 
@@ -47,13 +47,13 @@ export default function KickstartPromoPopup() {
     sessionStorage.setItem('traffic_source', 'kickstart-popup');
     sessionStorage.setItem('utm_source', 'website');
     sessionStorage.setItem('utm_medium', 'popup');
-    sessionStorage.setItem('utm_campaign', 'kickstart-march');
+    sessionStorage.setItem('utm_campaign', 'kickstart-april-may');
 
     // Add UTM parameters to current URL for tracking
     const url = new URL(window.location.href);
     url.searchParams.set('utm_source', 'website');
     url.searchParams.set('utm_medium', 'popup');
-    url.searchParams.set('utm_campaign', 'kickstart-march');
+    url.searchParams.set('utm_campaign', 'kickstart-april-may');
     window.history.replaceState({}, '', url.toString());
 
     setIsVisible(false);
@@ -89,12 +89,12 @@ export default function KickstartPromoPopup() {
     nl: {
       badge: "Laatste plekken!",
       title: "Kickstart Programma",
-      februaryTitle: "Februari Kickstart",
-      februarySpots: "✓ Alle plekken gevuld",
       marchTitle: "Maart Kickstart",
       marchSpots: "✓ Alle plekken gevuld",
-      subtitle: "April Kickstart",
-      spotsLeft: "Nog 9 plekken beschikbaar",
+      aprilTitle: "April Kickstart",
+      aprilSpots: "Nog 3 plekken beschikbaar",
+      mayTitle: "Mei Kickstart",
+      maySpots: "Nog 5 plekken beschikbaar",
       description: "Ons populaire 28-Day Kickstart programma voor beginners. Kleine groepen, persoonlijke begeleiding.",
       cta: "Reserveer je plek →",
       close: "Sluiten"
@@ -102,12 +102,12 @@ export default function KickstartPromoPopup() {
     en: {
       badge: "Last spots!",
       title: "Kickstart Program",
-      februaryTitle: "February Kickstart",
-      februarySpots: "✓ All spots filled",
       marchTitle: "March Kickstart",
       marchSpots: "✓ All spots filled",
-      subtitle: "April Kickstart",
-      spotsLeft: "9 spots available",
+      aprilTitle: "April Kickstart",
+      aprilSpots: "3 spots available",
+      mayTitle: "May Kickstart",
+      maySpots: "5 spots available",
       description: "Our popular 28-Day Kickstart program for beginners. Small groups, personal coaching.",
       cta: "Reserve your spot →",
       close: "Close"
@@ -152,16 +152,6 @@ export default function KickstartPromoPopup() {
               {t.title}
             </h2>
 
-            {/* February Kickstart - FULL */}
-            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
-              <h3 className="text-lg font-bold text-gray-900 mb-1">
-                {t.februaryTitle}
-              </h3>
-              <p className="text-base font-semibold text-gray-600">
-                {t.februarySpots}
-              </p>
-            </div>
-
             {/* March Kickstart - FULL */}
             <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
@@ -172,13 +162,23 @@ export default function KickstartPromoPopup() {
               </p>
             </div>
 
-            {/* April Kickstart */}
+            {/* April Kickstart - 3 spots */}
+            <div className="bg-cinnabar/10 border-2 border-cinnabar rounded-xl p-4 mb-3">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
+                {t.aprilTitle}
+              </h3>
+              <p className="text-base font-semibold text-cinnabar">
+                🔥 {t.aprilSpots}
+              </p>
+            </div>
+
+            {/* May Kickstart - 5 spots */}
             <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-4">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
-                {t.subtitle}
+                {t.mayTitle}
               </h3>
               <p className="text-base font-semibold text-verdigris">
-                ✨ {t.spotsLeft}
+                ✨ {t.maySpots}
               </p>
             </div>
 
