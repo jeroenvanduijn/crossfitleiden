@@ -1,4 +1,15 @@
 import Link from "next/link";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'HYROX Simulation Event',
+    titleEn: 'HYROX Simulation Event',
+    descriptionNl: 'Volledige HYROX race simulatie bij CrossFit Leiden. 8 stations, professionele timing, medal. Solo of doubles. Bereid je voor op de echte wedstrijd!',
+    descriptionEn: 'Full HYROX race simulation at CrossFit Leiden. 8 stations, professional timing, medal. Solo or doubles. Prepare for the real race!',
+    path: '/events/hyrox-simulation',
+  });
+}
 
 export default function HyroxSimulation() {
   return (

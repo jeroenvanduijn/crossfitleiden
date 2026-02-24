@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Sport & Performance - Strength & Conditioning',
+    titleEn: 'Sport & Performance - Strength & Conditioning',
+    descriptionNl: 'Professionele Strength & Conditioning voor teams en organisaties bij CrossFit Leiden. Rugby, brandweer, politie en sportteams. Op maat gemaakte programma\'s.',
+    descriptionEn: 'Professional Strength & Conditioning for teams and organizations at CrossFit Leiden. Rugby, fire department, police and sports teams. Custom programs.',
+    path: '/aanbod/sport-performance',
+  });
+}
 
 export default async function SportPerformancePage() {
   const locale = await getLocale();

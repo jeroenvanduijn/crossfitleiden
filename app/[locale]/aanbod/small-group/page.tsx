@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Small Group Training - Max 5 Personen',
+    titleEn: 'Small Group Training - Max 5 People',
+    descriptionNl: 'Small group training bij CrossFit Leiden. Train met maximaal 5 personen met een persoonlijk programma. GetShredded en Unlock Motion programma\'s.',
+    descriptionEn: 'Small group training at CrossFit Leiden. Train with max 5 people with a personalized program. GetShredded and Unlock Motion programs.',
+    path: '/aanbod/small-group',
+  });
+}
 
 export default async function SemiPrivate() {
   const locale = await getLocale();

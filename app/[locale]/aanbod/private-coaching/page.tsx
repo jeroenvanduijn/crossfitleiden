@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Private Coaching - 1-op-1 Begeleiding',
+    titleEn: 'Private Coaching - One-on-One Training',
+    descriptionNl: 'Private coaching bij CrossFit Leiden. 1-op-1 training afgestemd op jouw doelen. Flexibele planning, persoonlijk programma, sneller resultaat.',
+    descriptionEn: 'Private coaching at CrossFit Leiden. One-on-one training tailored to your goals. Flexible scheduling, personal program, faster results.',
+    path: '/aanbod/private-coaching',
+  });
+}
 
 export default async function PrivateCoaching() {
   const locale = await getLocale();

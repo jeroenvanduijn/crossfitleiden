@@ -1,5 +1,16 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'De Faciliteit - Equipment & Voorzieningen',
+    titleEn: 'The Facility - Equipment & Amenities',
+    descriptionNl: 'Ontdek de faciliteiten van CrossFit Leiden. 400m² ruimte, 12 racks, rowers, bikes, SkiErgs. Gratis parkeren, douches en lounge.',
+    descriptionEn: 'Discover CrossFit Leiden\'s facilities. 400m² space, 12 racks, rowers, bikes, SkiErgs. Free parking, showers and lounge.',
+    path: '/info/faciliteit',
+  });
+}
 
 export default async function Faciliteit() {
   const locale = await getLocale();

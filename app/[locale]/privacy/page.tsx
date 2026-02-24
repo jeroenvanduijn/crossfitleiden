@@ -1,3 +1,15 @@
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Privacy & Cookie Policy',
+    titleEn: 'Privacy & Cookie Policy',
+    descriptionNl: 'Privacy & Cookie Policy van CrossFit Leiden (Creative Sports Company). Hoe wij omgaan met je persoonlijke gegevens en cookies.',
+    descriptionEn: 'Privacy & Cookie Policy of CrossFit Leiden (Creative Sports Company). How we handle your personal data and cookies.',
+    path: '/privacy',
+  });
+}
+
 export default function PrivacyPage() {
   return (
     <div className="container-custom section-padding max-w-4xl mx-auto">

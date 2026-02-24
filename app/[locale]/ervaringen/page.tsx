@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Ervaringen - Wat Leden Zeggen',
+    titleEn: 'Testimonials - What Members Say',
+    descriptionNl: 'Lees en bekijk ervaringen van CrossFit Leiden leden. Video testimonials, foto\'s en verhalen van onze community. Ontdek waarom 80% begint als beginner.',
+    descriptionEn: 'Read and watch testimonials from CrossFit Leiden members. Video testimonials, photos and stories from our community. Discover why 80% start as beginners.',
+    path: '/ervaringen',
+  });
+}
 
 export default async function Ervaringen() {
   const t = await getTranslations('testimonials');

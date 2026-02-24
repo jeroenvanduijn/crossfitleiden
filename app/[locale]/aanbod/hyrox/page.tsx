@@ -1,7 +1,18 @@
 import { getLocale } from 'next-intl/server';
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
+import Image from "next/image";
+import { createPageMetadata } from '@/lib/metadata';
 
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'HYROX Training in Leiden',
+    titleEn: 'HYROX Training in Leiden',
+    descriptionNl: 'Train voor HYROX bij CrossFit Leiden. Gerichte voorbereiding op de HYROX wedstrijd met ervaren coaches. Hardlopen, roeien, sled push en meer.',
+    descriptionEn: 'Train for HYROX at CrossFit Leiden. Targeted race preparation with experienced coaches. Running, rowing, sled push and more.',
+    path: '/aanbod/hyrox',
+  });
+}
 export default async function HYROXPage() {
   const locale = await getLocale();
   return (

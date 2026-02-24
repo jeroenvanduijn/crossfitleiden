@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'CrossFit voor Tieners (13-17 jaar)',
+    titleEn: 'CrossFit for Teens (13-17 years)',
+    descriptionNl: 'CrossFit voor tieners bij CrossFit Leiden. Word sterker, fitter en zelfverzekerder. Veilige training met gecertificeerde coaches. Vanaf €42,50/maand.',
+    descriptionEn: 'CrossFit for teens at CrossFit Leiden. Get stronger, fitter and more confident. Safe training with certified coaches. From €42.50/month.',
+    path: '/aanbod/teens',
+  });
+}
 
 export default async function Teens() {
   const locale = await getLocale();
@@ -197,7 +208,7 @@ export default async function Teens() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">📅 Wanneer?</h3>
-                <p className="text-gray-700 mb-2">Woensdag 17:00<br/>Zaterdag 10:00</p>
+                <p className="text-gray-700 mb-2">Woensdag 17:00<br />Zaterdag 10:00</p>
                 <p className="text-sm text-gray-600">
                   Kies zelf hoe vaak je komt (1x of 2x per week)
                 </p>
@@ -213,7 +224,7 @@ export default async function Teens() {
 
               <div className="bg-organic-bg rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-3">💰 Prijs</h3>
-                <p className="text-gray-700 mb-2">€42,50/maand (1x per week)<br/>€80/maand (2x per week)</p>
+                <p className="text-gray-700 mb-2">€42,50/maand (1x per week)<br />€80/maand (2x per week)</p>
                 <p className="text-sm text-gray-600">
                   Maandelijks opzegbaar
                 </p>

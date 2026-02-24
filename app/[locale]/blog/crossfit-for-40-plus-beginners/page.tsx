@@ -1,5 +1,16 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'CrossFit voor 40+: Sterker Worden Zonder Blessures',
+    titleEn: 'CrossFit for 40+ Beginners: Getting Stronger Without Injuries',
+    descriptionNl: 'Ben je 40+ en wil je beginnen met CrossFit? Ontdek hoe we veilig, persoonlijk en stap voor stap sterker worden.',
+    descriptionEn: 'Over 40 and thinking about starting CrossFit? Discover how we safely build strength step by step with professional coaching.',
+    path: '/blog/crossfit-for-40-plus-beginners',
+  });
+}
 
 export default async function BlogPost() {
   const locale = await getLocale();

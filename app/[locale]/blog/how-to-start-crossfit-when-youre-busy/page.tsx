@@ -1,5 +1,16 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'CrossFit Beginnen met een Druk Leven: Werk en Kinderen',
+    titleEn: 'How to Start CrossFit When You\'re Busy With Work and Kids',
+    descriptionNl: 'Hoe begin je met CrossFit als je druk bent met werk en kinderen? 1 uur, 2-3x per week. Lessen van 06:00-22:00. Ontdek hoe het past.',
+    descriptionEn: 'How to start CrossFit when you\'re busy with work and kids? 1 hour, 2-3x a week. Classes from 06:00-22:00. Discover how it fits.',
+    path: '/blog/how-to-start-crossfit-when-youre-busy',
+  });
+}
 
 export default async function BlogPost() {
   const locale = await getLocale();

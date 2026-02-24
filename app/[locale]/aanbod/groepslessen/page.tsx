@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'CrossFit Groepslessen - Train Samen, Word Sterker',
+    titleEn: 'CrossFit Group Classes - Train Together, Get Stronger',
+    descriptionNl: 'CrossFit groepslessen bij CrossFit Leiden. Elke les anders, altijd uitdagend, aangepast aan jouw niveau. Van 06:00 tot 22:00, 7 dagen per week.',
+    descriptionEn: 'CrossFit group classes at CrossFit Leiden. Every class is different, always challenging, adapted to your level. From 06:00 to 22:00, 7 days a week.',
+    path: '/aanbod/groepslessen',
+  });
+}
 
 export default async function Groepslessen() {
   const locale = await getLocale();

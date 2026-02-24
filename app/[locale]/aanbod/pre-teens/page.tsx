@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'CrossFit Kids (9-12 jaar) - Sporten voor Kinderen',
+    titleEn: 'CrossFit Kids (9-12 years) - Sports for Children',
+    descriptionNl: 'CrossFit voor kinderen van 9-12 jaar bij CrossFit Leiden. Leuke, veilige lessen met gecertificeerde coaches. Kleine groepen, veel aandacht. €42,50/maand.',
+    descriptionEn: 'CrossFit for kids aged 9-12 at CrossFit Leiden. Fun, safe classes with certified coaches. Small groups, lots of attention. €42.50/month.',
+    path: '/aanbod/pre-teens',
+  });
+}
 
 export default async function PreTeens() {
   const locale = await getLocale();

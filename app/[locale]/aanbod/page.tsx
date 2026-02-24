@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getTranslations, getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Ons Aanbod - Programma\'s voor Iedereen',
+    titleEn: 'Our Programs - Something for Everyone',
+    descriptionNl: 'Ontdek het aanbod van CrossFit Leiden: groepslessen, personal training, HYROX, teens, kids en meer. Voor elk niveau en elke leeftijd.',
+    descriptionEn: 'Discover CrossFit Leiden\'s programs: group classes, personal training, HYROX, teens, kids and more. For every level and every age.',
+    path: '/aanbod',
+  });
+}
 
 export default async function Aanbod() {
   const t = await getTranslations('programs');

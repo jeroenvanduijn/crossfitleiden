@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Fysiofabriek - Sportfysiotherapie in-house',
+    titleEn: 'Fysiofabriek - In-house Sports Physiotherapy',
+    descriptionNl: 'Fysiofabriek bij CrossFit Leiden: sportfysiotherapie in-house. Snelle hulp bij blessures, revalidatie en preventie. Korte lijnen met coaches.',
+    descriptionEn: 'Fysiofabriek at CrossFit Leiden: in-house sports physiotherapy. Quick help with injuries, rehabilitation and prevention. Short lines with coaches.',
+    path: '/aanbod/fysiofabriek',
+  });
+}
 
 export default async function FysiofabriekPage() {
   const locale = await getLocale();

@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { getLocale } from 'next-intl/server';
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Workshops & Speciale Trainingen',
+    titleEn: 'Workshops & Special Training Sessions',
+    descriptionNl: 'Workshops bij CrossFit Leiden: gewichtheffen, gymnastics, mobility, voeding en meer. Voor alle niveaus. Gratis of gereduceerd tarief voor leden.',
+    descriptionEn: 'Workshops at CrossFit Leiden: weightlifting, gymnastics, mobility, nutrition and more. For all levels. Free or reduced rate for members.',
+    path: '/aanbod/workshops',
+  });
+}
 
 export default async function Workshops() {
   const locale = await getLocale();

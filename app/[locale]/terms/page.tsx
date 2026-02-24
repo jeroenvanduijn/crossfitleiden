@@ -1,3 +1,15 @@
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'Algemene Voorwaarden',
+    titleEn: 'General Terms and Conditions',
+    descriptionNl: 'Algemene voorwaarden van CrossFit Leiden. Lidmaatschap, betalingsvoorwaarden, opzegregels en meer.',
+    descriptionEn: 'General terms and conditions of CrossFit Leiden. Membership, payment terms, cancellation rules and more.',
+    path: '/terms',
+  });
+}
+
 export default function TermsPage() {
   return (
     <div className="container-custom section-padding max-w-4xl mx-auto">

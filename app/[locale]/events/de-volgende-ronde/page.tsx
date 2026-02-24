@@ -1,5 +1,16 @@
 import Link from "next/link";
 import IntroCtaSection from "@/components/IntroCtaSection";
+import { createPageMetadata } from '@/lib/metadata';
+
+export async function generateMetadata() {
+  return createPageMetadata({
+    titleNl: 'De Volgende Ronde - Community Event',
+    titleEn: 'De Volgende Ronde - Community Event',
+    descriptionNl: 'De Volgende Ronde: het jaarlijkse interne competitie-event van CrossFit Leiden. Teams, workouts, BBQ en community spirit.',
+    descriptionEn: 'De Volgende Ronde: the annual internal competition event at CrossFit Leiden. Teams, workouts, BBQ and community spirit.',
+    path: '/events/de-volgende-ronde',
+  });
+}
 
 export default function DeVolgendeRondePage() {
   return (
