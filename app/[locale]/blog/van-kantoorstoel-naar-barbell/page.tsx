@@ -1,19 +1,10 @@
+"use client";
+
 import Link from "next/link";
-import { getLocale } from 'next-intl/server';
-import { createPageMetadata } from '@/lib/metadata';
+import { useLocale } from 'next-intl';
 
-export async function generateMetadata() {
-    return createPageMetadata({
-        titleNl: 'Van kantoorstoel naar barbell: training als tegenwicht voor je werkdag',
-        titleEn: 'From Office Chair to Barbell: Training as a Counterweight to Your Workday',
-        descriptionNl: '8 uur zitten en toch moe thuis? Ontdek hoe functionele krachttraining jouw reset-knop wordt na een dag achter het bureau.',
-        descriptionEn: 'Sitting 8 hours and still exhausted? Discover how functional strength training becomes your reset button after a day at the desk.',
-        path: '/blog/van-kantoorstoel-naar-barbell',
-    });
-}
-
-export default async function BlogPost() {
-    const locale = await getLocale();
+export default function BlogPost() {
+    const locale = useLocale();
 
     return (
         <>

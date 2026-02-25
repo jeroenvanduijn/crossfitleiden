@@ -1,19 +1,10 @@
+"use client";
+
 import Link from "next/link";
-import { getLocale } from 'next-intl/server';
-import { createPageMetadata } from '@/lib/metadata';
+import { useLocale } from 'next-intl';
 
-export async function generateMetadata() {
-    return createPageMetadata({
-        titleNl: 'Trainen met een blessureverleden: hoe wij schalen en aanpassen',
-        titleEn: 'Training With a History of Injury: How We Scale and Adapt',
-        descriptionNl: 'Knie-, schouder- of rugblessure gehad? Bij CrossFit Leiden beginnen we met een gesprek en bouwen we veilig op. Schalen is geen zwakte, het is strategie.',
-        descriptionEn: 'Had a knee, shoulder or back injury? At CrossFit Leiden we start with a conversation and build safely. Scaling is not weakness, it\'s strategy.',
-        path: '/blog/trainen-met-een-blessureverleden',
-    });
-}
-
-export default async function BlogPost() {
-    const locale = await getLocale();
+export default function BlogPost() {
+    const locale = useLocale();
 
     return (
         <>

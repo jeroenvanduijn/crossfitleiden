@@ -1,19 +1,10 @@
+"use client";
+
 import Link from "next/link";
-import { getLocale } from 'next-intl/server';
-import { createPageMetadata } from '@/lib/metadata';
+import { useLocale } from 'next-intl';
 
-export async function generateMetadata() {
-    return createPageMetadata({
-        titleNl: 'CrossFit na je 40e: wat verandert er – en wat niet',
-        titleEn: 'CrossFit After 40: What Changes – And What Doesn\'t',
-        descriptionNl: 'Ben je 40, 47 of 55? Juist nu is het het perfecte moment om te starten. Leer hoe je slim traint na je 40e bij CrossFit Leiden.',
-        descriptionEn: 'Are you 40, 47 or 55? Now is exactly the right time to start. Learn how to train smart after 40 at CrossFit Leiden.',
-        path: '/blog/crossfit-na-je-40e',
-    });
-}
-
-export default async function BlogPost() {
-    const locale = await getLocale();
+export default function BlogPost() {
+    const locale = useLocale();
 
     return (
         <>

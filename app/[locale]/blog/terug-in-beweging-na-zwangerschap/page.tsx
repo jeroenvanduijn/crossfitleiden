@@ -1,19 +1,10 @@
+"use client";
+
 import Link from "next/link";
-import { getLocale } from 'next-intl/server';
-import { createPageMetadata } from '@/lib/metadata';
+import { useLocale } from 'next-intl';
 
-export async function generateMetadata() {
-    return createPageMetadata({
-        titleNl: 'Terug in beweging na je zwangerschap',
-        titleEn: 'Getting Back in Shape After Pregnancy',
-        descriptionNl: 'Ben je moeder geworden en wil je weer beginnen met sporten? Ontdek hoe je veilig en stap voor stap terugkomt bij CrossFit Leiden.',
-        descriptionEn: 'Have you become a mother and want to start exercising again? Discover how to safely return to fitness step by step at CrossFit Leiden.',
-        path: '/blog/terug-in-beweging-na-zwangerschap',
-    });
-}
-
-export default async function BlogPost() {
-    const locale = await getLocale();
+export default function BlogPost() {
+    const locale = useLocale();
 
     return (
         <>
