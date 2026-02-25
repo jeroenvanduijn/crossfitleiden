@@ -9,6 +9,38 @@ export default function Blog() {
   // Blog posts
   const blogPosts = [
     {
+      slug: "crossfit-na-je-40e",
+      title: "CrossFit na je 40e: wat verandert er – en wat niet",
+      excerpt: "Je bent 42, 47 of 55. En je denkt: is dit nog wel het moment? Goed nieuws. Juist nu. Leer hoe je slim traint na je 40e.",
+      date: "25 Feb 2026",
+      category: "Trainen & Herstel",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-65.jpg",
+    },
+    {
+      slug: "terug-in-beweging-na-zwangerschap",
+      title: "Terug in beweging na je zwangerschap",
+      excerpt: "Je bent moeder geworden. Alles is veranderd. Maar wanneer begin je weer met sporten – en hoe? Niet terug naar je oude lichaam, wel terug naar je energie.",
+      date: "25 Feb 2026",
+      category: "Voor Moeders",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-80.jpg",
+    },
+    {
+      slug: "van-kantoorstoel-naar-barbell",
+      title: "Van kantoorstoel naar barbell: training als tegenwicht voor je werkdag",
+      excerpt: "8 uur zitten en toch moe. Dat is geen conditieprobleem, dat is een bewegingsprobleem. Ontdek hoe training jouw reset-knop wordt.",
+      date: "25 Feb 2026",
+      category: "Trainen & Leven",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-61.jpg",
+    },
+    {
+      slug: "trainen-met-een-blessureverleden",
+      title: "Trainen met een blessureverleden: hoe wij schalen en aanpassen",
+      excerpt: "Knie, schouder, hernia? We horen dit elke week. En bijna altijd volgt: 'Dus CrossFit is niets voor mij.' Maar hier komt het verschil.",
+      date: "25 Feb 2026",
+      category: "Blessures & Schalen",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-62.jpg",
+    },
+    {
       slug: "nervous-to-start-one-small-step",
       title: "Nervous to Start? You're Not Alone. Here's How One Small Step Changed Everything.",
       excerpt: "If you've been waiting to feel fit before you start—here's the truth: you don't need to be fit to begin. You begin to get fit.",
@@ -74,7 +106,7 @@ export default function Blog() {
     },
   ];
 
-  const categories = ["All", "Training Tips", "Community", "Getting Started", "Gym Philosophy"];
+  const categories = ["All", "Training Tips", "Community", "Getting Started", "Gym Philosophy", "Trainen & Herstel", "Voor Moeders", "Trainen & Leven", "Blessures & Schalen"];
 
   return (
     <>
@@ -95,11 +127,10 @@ export default function Blog() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                className={`px-6 py-2 rounded-full font-medium transition-all ${
-                  cat === "All"
-                    ? "bg-cinnabar text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                className={`px-6 py-2 rounded-full font-medium transition-all ${cat === "All"
+                  ? "bg-cinnabar text-white"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }`}
               >
                 {cat}
               </button>
