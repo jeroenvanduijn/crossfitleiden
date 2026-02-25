@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouw Eerste 28 Dagen - CrossFit Leiden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #EF4C37;
+            --primary-hover: #D83B26;
+            --accent: #F7CB15;
+            --bg-light: #FFFFFF;
+            --bg-gray: #F9FAFB;
+            --bg-dark: #111827;
+            --text-main: #1A1A1A;
+            --text-body: #4B5563;
+            --text-muted: #6B7280;
+            --teal: #0CBABA;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text-body);
+            background-color: var(--bg-light);
+            line-height: 1.7;
+            font-size: 17px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--text-main);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 48px);
+        }
+
+        h2 {
+            font-size: clamp(28px, 4vw, 36px);
+        }
+
+        h3 {
+            font-size: clamp(20px, 3vw, 24px);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 17px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            border: 2px solid var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: #FFFFFF;
+        }
+
+        /* Nav */
+        .navbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #E5E7EB;
+            z-index: 100;
+            padding: 16px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--text-main);
+        }
+
+        .nav-links {
+            display: none;
+            align-items: center;
+            gap: 24px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        @media (min-width: 1024px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-color: var(--bg-dark);
+            color: #FFFFFF;
+            padding: 120px 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #E5E7EB;
+            /* Placeholder */
+            z-index: 1;
+            /* Placeholder pseudo-element for context */
+        }
+
+        .hero-bg::after {
+            content: 'FOTO (Groepsfoto van lachende Kickstart-deelnemers in de box)';
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-weight: 700;
+            font-size: 14px;
+            background-color: #E5E7EB;
+            /* to hide real bg if not loaded */
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.7));
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 700px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(239, 76, 55, 0.15);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            border: 1px solid rgba(239, 76, 55, 0.3);
+        }
+
+        .hero h1 {
+            color: #FFFFFF;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: clamp(18px, 2.5vw, 22px);
+            margin-bottom: 40px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .scroll-link {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .scroll-link:hover {
+            color: #FFFFFF;
+        }
+
+        /* Overview Section */
+        .overview {
+            background-color: var(--bg-light);
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-cards {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #F3F4F6;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background-color: rgba(239, 76, 55, 0.1);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 15px;
+            margin-bottom: 0;
+            color: var(--text-muted);
+        }
+
+        .overview-cols {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            background-color: var(--bg-gray);
+            border-radius: 12px;
+            padding: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .overview-cols {
+                grid-template-columns: 1fr 1fr;
+                gap: 48px;
+            }
+        }
+
+        .col h3 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            background-color: var(--bg-gray);
+            overflow: hidden;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 60px auto 0;
+            padding-bottom: 40px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: rgba(239, 76, 55, 0.3);
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin-left: -1px;
+        }
+
+        @media (min-width: 768px) {
+            .timeline::after {
+                left: 50%;
+            }
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 100%;
+            padding-left: 56px;
+            padding-right: 0;
+            margin-bottom: 60px;
+            box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            left: 0;
+            top: 24px;
+            z-index: 10;
+            box-shadow: 0 0 0 4px var(--bg-gray);
+        }
+
+        @media (min-width: 768px) {
+            .timeline-item {
+                width: 50%;
+                padding-left: 0;
+                padding-right: 48px;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 50%;
+                padding-left: 48px;
+                padding-right: 0;
+            }
+
+            .timeline-marker {
+                left: auto;
+                right: -20px;
+            }
+
+            .timeline-item:nth-child(even) .timeline-marker {
+                left: -20px;
+                right: auto;
+            }
+        }
+
+        .timeline-content {
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-photo {
+            width: 100%;
+            height: 200px;
+            background-color: #E5E7EB;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .timeline-body {
+            padding: 32px;
+        }
+
+        .highlight-box {
+            background-color: rgba(239, 76, 55, 0.05);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            padding: 20px;
+            margin-top: 24px;
+        }
+
+        .highlight-box h4 {
+            color: var(--primary);
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        /* Personas Section */
+        .personas-section {
+            background-color: var(--bg-light);
+            padding-bottom: 40px;
+        }
+
+        .personas-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .personas-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .personas-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .persona-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .persona-avatar {
+            width: 80px;
+            height: 80px;
+            background-color: #E5E7EB;
+            color: var(--text-muted);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 auto 16px;
+        }
+
+        .persona-card h4 {
+            font-size: 18px;
+            margin-bottom: 4px;
+            color: var(--text-main);
+        }
+
+        .persona-label {
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .persona-card p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        /* Quotes */
+        .quotes-container {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-top: 1px solid #F3F4F6;
+            padding-top: 24px;
+        }
+
+        .quote-card {
+            background-color: var(--bg-gray);
+            border-left: 3px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 15px;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .quote-author {
+            font-weight: 700;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* For results section quotes */
+        .results-quotes {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+
+        @media (min-width: 768px) {
+            .results-quotes {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Results Section */
+        .results {
+            background-color: var(--bg-light);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 48px;
+        }
+
+        @media (min-width: 768px) {
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .results-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .result-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background-color: #FFFFFF;
+            border: 1px solid #F3F4F6;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .check-icon {
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .results-conclusion {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-main);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Why it works */
+        .why-works {
+            background-color: var(--bg-gray);
+        }
+
+        .why-works h2 {
+            text-align: center;
+        }
+
+        .why-works>p {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 48px;
+        }
+
+        .features-horizontal {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        @media (min-width: 768px) {
+            .features-horizontal {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) {
+            .feature-item {
+                width: calc(50% - 12px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .feature-item {
+                width: calc(25% - 18px);
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .feature-icon {
+                margin-bottom: 8px;
+            }
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            flex-shrink: 0;
+        }
+
+        .why-conclusion {
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--primary);
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background-color: var(--bg-dark);
+            color: #FFFFFF;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta h2 {
+            color: #FFFFFF;
+        }
+
+        .final-cta p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .cta-subtext {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .diamond {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: var(--primary);
+            opacity: 0.1;
+            transform: rotate(45deg);
+            z-index: 0;
+        }
+
+        .diamond-1 {
+            top: -50px;
+            left: -50px;
+        }
+
+        .diamond-2 {
+            bottom: -50px;
+            right: 10%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0A0F1A;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 80px 0 40px;
+            font-size: 15px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1.5fr 1fr 1fr;
+            }
+        }
+
+        .footer-brand {
+            margin-bottom: 24px;
+        }
+
+        .footer-logo {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .footer h4 {
+            color: #FFFFFF;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer li {
+            margin-bottom: 12px;
+        }
+
+        .footer a {
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-bottom {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            transition: background-color 0.2s;
+        }
+
+        .social-link:hover {
+            background-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigatie -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                CrossFit Leiden
+            </a>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Over ons</a>
+                <a href="#">Aanbod</a>
+                <a href="#">Blog</a>
+                <a href="#">Events</a>
+                <a href="#">Ervaringen</a>
+                <a href="#">Contact</a>
+                <span style="color: #E5E7EB;">|</span>
+                <a href="#">NL</a>
+                <a href="#" class="btn btn-outline" style="padding: 10px 20px; margin-left: 12px;">Plan een Gratis
+                    Intro</a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Sectie -->
+    <section class="hero">
+        <div class="hero-bg" data-photo="Groepsfoto van lachende Kickstart-deelnemers in de box"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">28 Day Kickstart</span>
+            <h1>Je eerste maand bij CrossFit Leiden</h1>
+            <p>Je start niet 'gewoon met lessen'. Je start met een plan. Met een vaste groep. Met coaches die je kennen
+                bij naam.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">Plan een Gratis Intro</a>
+                <a href="#uitleg" class="scroll-link">Of scroll en ontdek hoe het werkt &#8595;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kickstart Overzicht -->
+    <section id="uitleg" class="section-padding overview">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 48px;">Zo ziet de Kickstart eruit</h2>
+
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3>4 weken</h3>
+                    <p>Vaste structuur, duidelijk ritme</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                    </div>
+                    <h3>3x per week</h3>
+                    <p>Maandag, woensdag, vrijdag</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Max 5 per groep</h3>
+                    <p>Persoonlijke aandacht van je coach</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Dagelijkse begeleiding</h3>
+                    <p>Voeding & accountability met coach Annie</p>
+                </div>
+            </div>
+
+            <div class="overview-cols">
+                <div class="col">
+                    <h3>Maandag & woensdag</h3>
+                    <p>Small Group met coach Max. Veel persoonlijke aandacht, techniek, en opbouw.</p>
+                </div>
+                <div class="col">
+                    <h3>Vrijdag</h3>
+                    <p>Flex Friday met coach Jeff of Rochelle. Community, gezelligheid, en je vrienden mogen mee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Persoonlijke Verhalen (Nieuw) -->
+    <section class="section-padding personas-section">
+        <div class="container">
+            <div class="personas-header">
+                <h3>Drie mensen, één Kickstart</h3>
+                <p>Iedereen start met een ander verhaal. Dit is hoe Lisa, Martin en Sophie hun eerste 28 dagen
+                    beleefden.</p>
+            </div>
+
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <div class="persona-avatar">L</div>
+                    <h4>Lisa, 38</h4>
+                    <div class="persona-label">Totale beginner</div>
+                    <p>Heeft in geen tien jaar gesport. Druk met werk en twee kinderen. Dacht dat CrossFit niet voor
+                        haar was.</p>
+                </div>
+
+                <div class="persona-card">
+                    <div class="persona-avatar">M</div>
+                    <h4>Martin, 52</h4>
+                    <div class="persona-label">Blessureverleden</div>
+                    <p>Heeft al jaren last van zijn rug en schouder. Zijn fysio zei: je moet meer bewegen. Maar hij was
+                        bang om het erger te maken.</p>
+                </div>
+
+                <div class="persona-card">
+                    <div class="persona-avatar">S</div>
+                    <h4>Sophie, 34</h4>
+                    <div class="persona-label">Sportervaring</div>
+                    <p>Heeft jarenlang hardgelopen en in een sportschool getraind. Miste persoonlijke aandacht en een
+                        groep om bij te horen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tijdlijn Sectie -->
+    <section class="section-padding timeline-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 24px;">Jouw eerste maand, week voor week</h2>
+
+            <div class="timeline">
+                <!-- Week 1 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <div class="timeline-photo"
+                            data-photo="Coach Max legt een squat uit aan een kleine groep beginners">
+                            FOTO: Coach Max legt een squat uit aan een kleine groep beginners
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Week 1 - Je landt</h3>
+                            <p>Maandag stap je binnen. Je groep bestaat uit maximaal vijf mensen. Iedereen is nieuw.
+                                Iedereen vindt het spannend.</p>
+                            <p>Coach Max neemt je mee in de basis: hoe beweeg je veilig, wat is een squat, hoe pak je
+                                een barbell vast, hoe werkt een training. Geen haast. Geen druk.</p>
+                            <p>Woensdag herhaal je en bouw je iets uit. Vrijdag doe je mee met Flex Friday. Vrienden
+                                mogen mee. De sfeer is relaxed en gezellig. Je merkt meteen: dit is geen koude
+                                fitnesszaal. Dit voelt warm.</p>
+
+                            <div class="highlight-box">
+                                <h4>Voeding start ook meteen</h4>
+                                <p>Coach Annie begeleidt je dagelijks via een simpele check-in: hoeveel stappen heb je
+                                    gezet, heb je je voedingstarget gehaald, wat ging goed vandaag. Geen essays. Geen
+                                    ingewikkelde schema's. Een kind van 11 kan dit invullen.</p>
+                            </div>
+
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <div class="quote-text">"Ik was zo zenuwachtig dat ik drie keer heb overwogen om
+                                        niet te gaan. Maar Max stelde me meteen op m'n gemak. Hij legde alles uit alsof
+                                        het de normaalste zaak van de wereld was. Na de eerste les dacht ik: waarom heb
+                                        ik dit niet eerder gedaan?"</div>
+                                    <div class="quote-author">Lisa, 38</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"Max vroeg meteen naar mijn schouder en rug. Bij elke
+                                        oefening kreeg ik een aangepaste variant. Ik hoefde niks over te slaan. Dat was
+                                        precies de geruststelling die ik nodig had."</div>
+                                    <div class="quote-author">Martin, 52</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"Ik verwachtte een standaard groepsles, maar de aandacht
+                                        voor techniek was veel dieper dan ik gewend was. Max corrigeerde dingen waar ik
+                                        al jaren mee rondliep. Dit is geen afvindsportschool."</div>
+                                    <div class="quote-author">Sophie, 34</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <div class="timeline-photo" data-photo="Leden lachen samen na een training, high fives">
+                            FOTO: Leden lachen samen na een training, high fives
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Week 2 - Je voelt vertrouwen</h3>
+                            <p>Je ziet dezelfde mensen weer. Je kent hun namen al. In de small group krijg je veel
+                                persoonlijke feedback, wordt techniek steeds beter, en durf je vragen te stellen.</p>
+                            <p>In de groepsapp help je elkaar: receptideeën, motivatie, kleine overwinningen. En Annie
+                                houdt je accountable. Niet streng. Niet bovenop je. Ze is ondersteunend. Ze helpt je
+                                reflecteren. Ze viert je successen.</p>
+                            <p>Vrijdag voelt minder spannend dan vorige week. Je herkent gezichten. Je voelt je al
+                                onderdeel van iets.</p>
+
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <div class="quote-text">"Ik kende iedereen al bij naam. We hadden een groepsapp en
+                                        deelden recepten. Het voelde niet meer als 'naar de sportschool gaan'. Het
+                                        voelde als afspreken met mensen die hetzelfde meemaken als jij."</div>
+                                    <div class="quote-author">Lisa, 38</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"Mijn rug voelde na de eerste week al anders. Niet pijnvrij,
+                                        maar losser. En Annie stuurde me een berichtje over hoe ik thuis kon stretchen.
+                                        Dat verwacht je niet."</div>
+                                    <div class="quote-author">Martin, 52</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"De voedingsbegeleiding verraste me het meest. Ik dacht dat
+                                        ik gezond at, maar Annie liet me zien dat ik structureel te weinig eiwitten
+                                        binnenkreeg. Simpele aanpassing, groot verschil."</div>
+                                    <div class="quote-author">Sophie, 34</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <div class="timeline-photo"
+                            data-photo="Close-up van iemand die zelfverzekerd een barbell optilt">
+                            FOTO: Close-up van iemand die zelfverzekerd een barbell optilt
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Week 3 - Je merkt verschil</h3>
+                            <p>Je beweegt zekerder. Je techniek is beter. Je weet hoe je moet schalen. Je kiest bewuster
+                                je gewicht. Je begrijpt hoe een workout is opgebouwd. Je voelt dat je sterker wordt.</p>
+                            <p>Voeding begint automatisch te gaan. Meer eiwitten. Meer stappen. Meer structuur.</p>
+                            <p>Je 1-op-1 moment met Annie helpt je bijsturen. Wat werkt? Wat kan beter? Je leert keuzes
+                                maken die blijven hangen.</p>
+
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <div class="quote-text">"Ik merkte dat ik automatisch beter ging eten. Niet omdat
+                                        het moest, maar omdat ik voelde dat het werkte. En in de training schaal ik nog
+                                        steeds, maar ik weet nu wat ik doe. Dat gevoel is onbetaalbaar."</div>
+                                    <div class="quote-author">Lisa, 38</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"Ik koos voor het eerst zelf mijn gewicht zonder het aan Max
+                                        te vragen. Ik ken mijn lichaam weer. En het mooiste: ik heb deze week geen
+                                        pijnstillers genomen."</div>
+                                    <div class="quote-author">Martin, 52</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"In een normale sportschool was ik na drie weken alweer
+                                        verveeld. Hier is elke training anders en de coaching wordt steeds specifieker.
+                                        Ze zien echt waar jij aan moet werken."</div>
+                                    <div class="quote-author">Sophie, 34</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <div class="timeline-photo"
+                            data-photo="Breed shot van de community, druk en gezellig in de box">
+                            FOTO: Breed shot van de community, druk en gezellig in de box
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Week 4 - Je hoort erbij</h3>
+                            <p>Nu gebeurt er iets moois. Je kent meerdere coaches. Je kent mensen buiten je eigen groep.
+                                Je snapt hoe de gym werkt. Je weet waar alles ligt.</p>
+                            <p>Je energie is hoger. Je houding verandert. Traplopen voelt makkelijker.</p>
+                            <p>En misschien wel het belangrijkste: je voelt je thuis.</p>
+
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <div class="quote-text">"Mijn man zei: je bent een ander mens. Meer energie, beter
+                                        humeur, en ik slaap als een blok. Ik heb me aangemeld voor een volledig
+                                        abonnement. Dit is nu van mij."</div>
+                                    <div class="quote-author">Lisa, 38</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"Ik heb mijn fysio verteld wat ik doe. Ze was positief
+                                        verrast. Mijn schouder is niet genezen, maar ik beweeg beter, sta steviger, en
+                                        heb weer vertrouwen in mijn lichaam."</div>
+                                    <div class="quote-author">Martin, 52</div>
+                                </div>
+                                <div class="quote-card">
+                                    <div class="quote-text">"Ik ken nu de helft van de box bij naam. Niet alleen mijn
+                                        Kickstart-groep, maar ook mensen uit de reguliere lessen. Dit is de community
+                                        die ik miste. Ik ga nergens meer heen."</div>
+                                    <div class="quote-author">Sophie, 34</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultaten Sectie -->
+    <section class="section-padding results">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 48px;">Wat je na 28 dagen hebt</h2>
+
+            <div class="results-grid">
+                <div class="result-item">
+                    <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Je kent meerdere coaches
+                </div>
+                <div class="result-item">
+                    <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Je hebt een vaste groep waar je mee begon
+                </div>
+                <div class="result-item">
+                    <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Je hebt al veel community ervaren
+                </div>
+                <div class="result-item">
+                    <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Je voeding is verbeterd
+                </div>
+                <div class="result-item">
+                    <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Je bent sterker
+                </div>
+                <div class="result-item">
+                    <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Je bent consistenter
+                </div>
+            </div>
+
+            <div class="results-quotes">
+                <div class="quote-card">
+                    <div class="quote-text">"Ik kwam binnen als iemand die dacht dat ze niet sportief was. Ik ga weg als
+                        iemand die drie keer per week traint en het niet meer wil missen."</div>
+                    <div class="quote-author">Lisa, 38</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Ik kwam binnen met pijn en twijfel. Ik ga weg met minder pijn, meer
+                        vertrouwen, en een groep mensen die me kent."</div>
+                    <div class="quote-author">Martin, 52</div>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-text">"Ik kwam binnen als iemand die wist hoe je moest trainen. Ik ga weg als
+                        iemand die weet hoe je onderdeel wordt van iets."</div>
+                    <div class="quote-author">Sophie, 34</div>
+                </div>
+            </div>
+
+            <p class="results-conclusion">Maar eerlijk is eerlijk. Het is nog maar het begin. De Kickstart is niet het
+                eindpunt. Het is de start van iets dat blijft.</p>
+        </div>
+    </section>
+
+    <!-- Waarom dit werkt -->
+    <section class="section-padding why-works">
+        <div class="container">
+            <h2>Waarom dit werkt</h2>
+            <p>Je begint niet alleen. Je begint samen.</p>
+
+            <div class="features-horizontal">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                    </div>
+                    Structuur
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    Persoonlijke aandacht
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    Community
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    Dagelijkse begeleiding
+                </div>
+            </div>
+
+            <p class="why-conclusion">Dat is het verschil tussen 'een proefles doen' en echt een nieuwe gewoonte bouwen.
+            </p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section-padding final-cta">
+        <div class="diamond diamond-1"></div>
+        <div class="diamond diamond-2"></div>
+        <div class="container cta-content">
+            <h2>Wil je weten of dit bij je past?</h2>
+            <p>Boek een kennismaking. Kom binnen. Voel de sfeer. Dan praten we verder.</p>
+            <a href="#" class="btn btn-primary" style="font-size: 18px; padding: 16px 36px;">Plan een Gratis Intro</a>
+            <div class="cta-subtext">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                </svg>
+                Geen workout. Gewoon een gesprek. We kijken ernaar uit!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                        CrossFit Leiden
+                    </div>
+                    <p>Everyday people, exceptionally strong</p>
+                </div>
+
+                <div>
+                    <h4>Navigatie</h4>
+                    <ul>
+                        <li><a href="#">Drop-in</a></li>
+                        <li><a href="#">Ervaringen</a></li>
+                        <li><a href="#">Tarieven</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Marie Diebenplaats 108</li>
+                        <li>2324 NG Leiden</li>
+                        <li><a href="mailto:welcome@crossfitleiden.com">welcome@crossfitleiden.com</a></li>
+                        <li><a href="tel:0712340477">071-234 0477</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 CrossFit Leiden. Alle rechten voorbehouden.</div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optional: stop observing once animation is triggered
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
