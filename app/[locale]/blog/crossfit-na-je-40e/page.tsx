@@ -46,7 +46,7 @@ export default async function BlogPost() {
                     {/* Image */}
                     <div className="aspect-video rounded-xl mb-8 overflow-hidden">
                         <img
-                            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-65.jpg"
+                            src="/images/blog/crossfit-na-je-40e.jpg"
                             alt="CrossFit training na je 40e bij CrossFit Leiden"
                             className="w-full h-full object-cover"
                         />

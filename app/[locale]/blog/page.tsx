@@ -14,7 +14,7 @@ export default function Blog() {
       excerpt: "Je bent 42, 47 of 55. En je denkt: is dit nog wel het moment? Goed nieuws. Juist nu. Leer hoe je slim traint na je 40e.",
       date: "25 Feb 2026",
       category: "Trainen & Herstel",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-65.jpg",
+      image: "/images/blog/crossfit-na-je-40e.jpg",
     },
     {
       slug: "terug-in-beweging-na-zwangerschap",
@@ -22,7 +22,7 @@ export default function Blog() {
       excerpt: "Je bent moeder geworden. Alles is veranderd. Maar wanneer begin je weer met sporten – en hoe? Niet terug naar je oude lichaam, wel terug naar je energie.",
       date: "25 Feb 2026",
       category: "Voor Moeders",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-80.jpg",
+      image: "/images/blog/terug-in-beweging-zwangerschap.jpg",
     },
     {
       slug: "van-kantoorstoel-naar-barbell",
@@ -30,7 +30,7 @@ export default function Blog() {
       excerpt: "8 uur zitten en toch moe. Dat is geen conditieprobleem, dat is een bewegingsprobleem. Ontdek hoe training jouw reset-knop wordt.",
       date: "25 Feb 2026",
       category: "Trainen & Leven",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-61.jpg",
+      image: "/images/blog/van-kantoorstoel-naar-barbell.jpg",
     },
     {
       slug: "trainen-met-een-blessureverleden",
@@ -38,7 +38,7 @@ export default function Blog() {
       excerpt: "Knie, schouder, hernia? We horen dit elke week. En bijna altijd volgt: 'Dus CrossFit is niets voor mij.' Maar hier komt het verschil.",
       date: "25 Feb 2026",
       category: "Blessures & Schalen",
-      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-62.jpg",
+      image: "/images/blog/trainen-met-blessureverleden.jpg",
     },
     {
       slug: "nervous-to-start-one-small-step",
