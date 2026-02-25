@@ -33,6 +33,7 @@ export default function Header() {
       href: "#",
       dropdown: [
         { name: t('kickstart'), href: `/${locale}/kickstart` },
+        { name: t('kickstartJourney'), href: `/${locale}/kickstart/jouw-eerste-28-dagen` },
         { name: t('groupTraining'), href: `/${locale}/aanbod/groepslessen` },
         { name: t('smallGroup'), href: `/${locale}/aanbod/small-group` },
         { name: t('personalTraining'), href: `/${locale}/aanbod/private-coaching` },
@@ -111,15 +112,15 @@ export default function Header() {
                     {openDropdown === item.name && (
                       <div className="absolute top-full left-0 pt-2 w-64 z-50">
                         <div className="bg-white rounded-lg shadow-xl py-2">
-                        {item.dropdown.map((subItem) => (
-                          <Link
-                            key={subItem.name}
-                            href={subItem.href}
-                            className="block px-4 py-2 text-gray-700 hover:bg-[#E4572E]/5 hover:text-[#E4572E] transition-colors"
-                          >
-                            {subItem.name}
-                          </Link>
-                        ))}
+                          {item.dropdown.map((subItem) => (
+                            <Link
+                              key={subItem.name}
+                              href={subItem.href}
+                              className="block px-4 py-2 text-gray-700 hover:bg-[#E4572E]/5 hover:text-[#E4572E] transition-colors"
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
                         </div>
                       </div>
                     )}
@@ -139,22 +140,20 @@ export default function Header() {
             <div className="flex items-center space-x-2 text-sm">
               <button
                 onClick={() => switchLocale('nl')}
-                className={`font-medium transition-colors ${
-                  locale === 'nl'
+                className={`font-medium transition-colors ${locale === 'nl'
                     ? 'text-gray-700'
                     : 'text-gray-400 hover:text-[#E4572E]'
-                }`}
+                  }`}
               >
                 NL
               </button>
               <span className="text-gray-300">|</span>
               <button
                 onClick={() => switchLocale('en')}
-                className={`transition-colors ${
-                  locale === 'en'
+                className={`transition-colors ${locale === 'en'
                     ? 'text-gray-700 font-medium'
                     : 'text-gray-400 hover:text-[#E4572E]'
-                }`}
+                  }`}
               >
                 EN
               </button>
@@ -203,9 +202,8 @@ export default function Header() {
                       >
                         {item.name}
                         <svg
-                          className={`w-4 h-4 transition-transform ${
-                            openDropdown === item.name ? "rotate-180" : ""
-                          }`}
+                          className={`w-4 h-4 transition-transform ${openDropdown === item.name ? "rotate-180" : ""
+                            }`}
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -254,22 +252,20 @@ export default function Header() {
               <div className="flex items-center justify-center space-x-2 text-sm mt-4">
                 <button
                   onClick={() => switchLocale('nl')}
-                  className={`font-medium transition-colors ${
-                    locale === 'nl'
+                  className={`font-medium transition-colors ${locale === 'nl'
                       ? 'text-gray-700'
                       : 'text-gray-400 hover:text-[#E4572E]'
-                  }`}
+                    }`}
                 >
                   NL
                 </button>
                 <span className="text-gray-300">|</span>
                 <button
                   onClick={() => switchLocale('en')}
-                  className={`transition-colors ${
-                    locale === 'en'
+                  className={`transition-colors ${locale === 'en'
                       ? 'text-gray-700 font-medium'
                       : 'text-gray-400 hover:text-[#E4572E]'
-                  }`}
+                    }`}
                 >
                   EN
                 </button>
