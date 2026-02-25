@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Key conversion pages
     { path: '/starten', priority: 0.9, changeFrequency: 'weekly' },
     { path: '/kickstart', priority: 0.9, changeFrequency: 'weekly' },
+    { path: '/kickstart/jouw-eerste-28-dagen', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/tarieven', priority: 0.9, changeFrequency: 'weekly' },
     { path: '/gratis-intro', priority: 0.9, changeFrequency: 'weekly' },
 

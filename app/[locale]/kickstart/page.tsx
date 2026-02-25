@@ -624,6 +624,32 @@ export default function Kickstart() {
           </div>
         </div>
       </section>
+      {/* Journey page teaser */}
+      <section className="section-padding bg-jonquil/10 border-y border-jonquil/30">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-cinnabar font-semibold text-sm uppercase tracking-wide mb-3">
+              {locale === 'nl' ? 'Wil je weten hoe het echt voelt?' : 'Want to know how it really feels?'}
+            </p>
+            <h2 className="text-3xl font-bold mb-4">
+              {locale === 'nl'
+                ? 'Lees het verhaal van Lisa, Martin en Sophie'
+                : 'Read the story of Lisa, Martin and Sophie'}
+            </h2>
+            <p className="text-lg text-gray-700 mb-8">
+              {locale === 'nl'
+                ? 'Drie mensen. Drie totaal andere startpunten. Week voor week lees je hoe zij hun eerste 28 dagen beleefden — van nerveus op dag 1 tot "ik ga nergens meer heen" op dag 28.'
+                : 'Three people. Three completely different starting points. Week by week you read how they experienced their first 28 days — from nervous on day 1 to "I\'m not going anywhere" on day 28.'}
+            </p>
+            <Link
+              href={`/${locale}/kickstart/jouw-eerste-28-dagen`}
+              className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-all shadow-lg text-lg"
+            >
+              {locale === 'nl' ? 'Lees de volledige reis →' : 'Read the full journey →'}
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Mini FAQ */}
       <section className="section-padding bg-stone-50">
