@@ -10,7 +10,7 @@ export default function Contact() {
   useEffect(() => {
     // Load the HighLevel script
     const script = document.createElement('script');
-    script.src = 'https://kilo.gymleadmachine.com/js/form_embed.js';
+    script.src = 'https://links.gymops.nl/js/form_embed.js';
     script.async = true;
     document.body.appendChild(script);
 
@@ -164,15 +164,15 @@ export default function Contact() {
 
               <div className="w-full bg-organic-bg rounded-lg overflow-hidden shadow-sm">
                 <iframe
-                  src="https://kilo.gymleadmachine.com/widget/form/nGDExYgYZcuHjGNwCsue"
+                  src="https://links.gymops.nl/widget/form/b4Qn1S6E0UFidH567ZY6"
                   style={{
                     width: '100%',
                     height: '100%',
-                    minHeight: '600px',
+                    minHeight: '511px',
                     border: 'none',
-                    borderRadius: '8px'
+                    borderRadius: '3px'
                   }}
-                  id="inline-nGDExYgYZcuHjGNwCsue"
+                  id="inline-b4Qn1S6E0UFidH567ZY6"
                   data-layout='{"id":"INLINE"}'
                   data-trigger-type="alwaysShow"
                   data-trigger-value=""
@@ -180,11 +180,11 @@ export default function Contact() {
                   data-activation-value=""
                   data-deactivation-type="neverDeactivate"
                   data-deactivation-value=""
-                  data-form-name="Website Form"
-                  data-height="600"
-                  data-layout-iframe-id="inline-nGDExYgYZcuHjGNwCsue"
-                  data-form-id="nGDExYgYZcuHjGNwCsue"
-                  title="Contact Form"
+                  data-form-name="Contact Form Website"
+                  data-height="511"
+                  data-layout-iframe-id="inline-b4Qn1S6E0UFidH567ZY6"
+                  data-form-id="b4Qn1S6E0UFidH567ZY6"
+                  title="Contact Form Website"
                 />
               </div>
             </div>
