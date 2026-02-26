@@ -238,7 +238,7 @@ export default function Home() {
               <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
               <iframe
                 className='lc_reviews_widget'
-                src='https://reputationhub.site/reputation/widgets/review_widget/s0YuoK12A9YPXCKsfUp3?widgetId=690b468e0591d2ab3477c77a'
+                src='https://reputationhub.site/reputation/widgets/review_widget/Arta9mf7m9NTEPdznlsP?widgetId=69a0a32d45ca82be2fa13370'
                 frameBorder='0'
                 scrolling='no'
                 style={{
