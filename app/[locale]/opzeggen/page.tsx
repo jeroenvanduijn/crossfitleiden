@@ -8,7 +8,7 @@ export default function OpzeggenPage() {
   useEffect(() => {
     // Load the HighLevel script for the cancellation form
     const script = document.createElement('script');
-    script.src = 'https://kilo.gymleadmachine.com/js/form_embed.js';
+    script.src = 'https://links.gymops.nl/js/form_embed.js';
     script.async = true;
     document.body.appendChild(script);
 
@@ -60,15 +60,15 @@ export default function OpzeggenPage() {
 
             <div className="bg-organic-bg rounded-lg overflow-hidden">
               <iframe
-                src="https://kilo.gymleadmachine.com/widget/form/w5EXGx4kP2dLSKIsFarq"
+                src="https://links.gymops.nl/widget/form/PbjexJEnp4gfrN0xz3vZ"
                 style={{
                   width: '100%',
                   height: '100%',
-                  minHeight: '1018px',
+                  minHeight: '1068px',
                   border: 'none',
-                  borderRadius: '7px'
+                  borderRadius: '3px'
                 }}
-                id="inline-w5EXGx4kP2dLSKIsFarq" 
+                id="inline-PbjexJEnp4gfrN0xz3vZ"
                 data-layout='{"id":"INLINE"}'
                 data-trigger-type="alwaysShow"
                 data-trigger-value=""
@@ -77,9 +77,9 @@ export default function OpzeggenPage() {
                 data-deactivation-type="neverDeactivate"
                 data-deactivation-value=""
                 data-form-name="Cancellation Form"
-                data-height="1018"
-                data-layout-iframe-id="inline-w5EXGx4kP2dLSKIsFarq"
-                data-form-id="w5EXGx4kP2dLSKIsFarq"
+                data-height="1068"
+                data-layout-iframe-id="inline-PbjexJEnp4gfrN0xz3vZ"
+                data-form-id="PbjexJEnp4gfrN0xz3vZ"
                 title="Cancellation Form"
               />
             </div>

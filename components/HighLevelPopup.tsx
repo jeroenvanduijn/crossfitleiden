@@ -9,7 +9,7 @@ export default function HighLevelPopup() {
   useEffect(() => {
     // Load the HighLevel script
     const script = document.createElement('script');
-    script.src = 'https://kilo.gymleadmachine.com/js/form_embed.js';
+    script.src = 'https://links.gymops.nl/js/form_embed.js';
     script.async = true;
     document.body.appendChild(script);
 
@@ -92,15 +92,15 @@ export default function HighLevelPopup() {
           {/* HighLevel Form Iframe */}
           <div className="cfl-popup-form">
             <iframe
-              src="https://kilo.gymleadmachine.com/widget/form/nGDExYgYZcuHjGNwCsue"
+              src="https://links.gymops.nl/widget/form/XceYD5LZEfvepWfcdvXJ"
               style={{
                 display: 'block',
                 width: '100%',
                 height: '100%',
                 border: 'none',
-                borderRadius: '8px'
+                borderRadius: '3px'
               }}
-              id="inline-nGDExYgYZcuHjGNwCsue"
+              id="inline-XceYD5LZEfvepWfcdvXJ"
               data-layout='{"id":"INLINE"}'
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -109,9 +109,9 @@ export default function HighLevelPopup() {
               data-deactivation-type="neverDeactivate"
               data-deactivation-value=""
               data-form-name="Website Form"
-              data-height="600"
-              data-layout-iframe-id="inline-nGDExYgYZcuHjGNwCsue"
-              data-form-id="nGDExYgYZcuHjGNwCsue"
+              data-height="535"
+              data-layout-iframe-id="inline-XceYD5LZEfvepWfcdvXJ"
+              data-form-id="XceYD5LZEfvepWfcdvXJ"
               title="Website Form"
             />
           </div>

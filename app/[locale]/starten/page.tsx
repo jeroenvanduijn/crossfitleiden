@@ -6,13 +6,13 @@ export default function StartenPage() {
   useEffect(() => {
     // Load HighLevel booking widget script
     const script = document.createElement('script');
-    script.src = 'https://kilo.gymleadmachine.com/js/form_embed.js';
+    script.src = 'https://links.gymops.nl/js/form_embed.js';
     script.async = true;
     document.body.appendChild(script);
 
     // Adjust iframe heights after script loads
     const adjustIframeHeight = () => {
-      const iframes = document.querySelectorAll('iframe[src*="gymleadmachine"]');
+      const iframes = document.querySelectorAll('iframe[src*="gymops"]');
       iframes.forEach((iframe: any) => {
         iframe.style.height = '700px';
       });
@@ -88,25 +88,15 @@ export default function StartenPage() {
               {/* Booking Calendar Iframe */}
               <div className="bg-organic-bg rounded-lg overflow-hidden shadow-sm">
                 <iframe
-                  src="https://kilo.gymleadmachine.com/widget/booking/rcNXO9PBrW3gx8CtKZhO"
+                  src="https://links.gymops.nl/widget/booking/Xx2YGcdzQDQVudn1Y5ta"
                   style={{
                     width: '100%',
                     height: '700px',
                     border: 'none',
-                    borderRadius: '8px'
+                    overflow: 'hidden'
                   }}
-                  id="inline-rcNXO9PBrW3gx8CtKZhO"
-                  data-layout='{"id":"INLINE"}'
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Fysieke Intro Booking"
-                  data-height="700"
-                  data-layout-iframe-id="inline-rcNXO9PBrW3gx8CtKZhO"
-                  data-form-id="rcNXO9PBrW3gx8CtKZhO"
+                  scrolling="no"
+                  id="F2vr6FiRZ8EEcaCqyjPU_1772141228524"
                   title="Fysieke Intro Booking"
                 />
               </div>
@@ -155,25 +145,15 @@ export default function StartenPage() {
               {/* Booking Calendar Iframe */}
               <div className="bg-organic-bg rounded-lg overflow-hidden shadow-sm">
                 <iframe
-                  src="https://kilo.gymleadmachine.com/widget/booking/rwOfSnWorZvegIJBRtHq"
+                  src="https://links.gymops.nl/widget/booking/bLCQAlE718t0sWd9Ojys"
                   style={{
                     width: '100%',
                     height: '700px',
                     border: 'none',
-                    borderRadius: '8px'
+                    overflow: 'hidden'
                   }}
-                  id="inline-rwOfSnWorZvegIJBRtHq"
-                  data-layout='{"id":"INLINE"}'
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Online Intro Booking"
-                  data-height="700"
-                  data-layout-iframe-id="inline-rwOfSnWorZvegIJBRtHq"
-                  data-form-id="rwOfSnWorZvegIJBRtHq"
+                  scrolling="no"
+                  id="F2vr6FiRZ8EEcaCqyjPU_1772141239107"
                   title="Online Intro Booking"
                 />
               </div>
