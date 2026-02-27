@@ -29,9 +29,9 @@ const CATEGORIES = [
     subtitle: "Prijzen, pauzeren, upgraden & opzeggen",
     color: "#EF4C37",
     actions: [
-      { label: "Opzeggen", href: "https://crossfitleiden.com/cancellation/" },
-      { label: "Pauzeren", href: "https://kilo.gymleadmachine.com/widget/form/ECApZQcGqg8K5FUnvePt" },
-      { label: "Goal Review boeken", href: "https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/goalreview" },
+      { label: "Opzeggen", href: "https://www.crossfitleiden.com/nl/opzeggen" },
+      { label: "Pauzeren", href: "https://links.gymops.nl/widget/form/9vXZ8MOHQwySdb0hhJAK" },
+      { label: "Goal Review boeken", href: "https://links.gymops.nl/widget/bookings/grgym" },
     ],
     faqs: [
       {
@@ -40,11 +40,11 @@ const CATEGORIES = [
       },
       {
         q: "Hoe kan ik mijn abonnement opzeggen?",
-        a: `Je kunt je abonnement pauzeren of opzeggen met een opzegtermijn van één kalendermaand. Dat betekent dat na je opzegging je abonnement pas de maand erna stopt.<br/><br/>Voorbeeld: als je op 31 december opzegt, stopt je abonnement per 1 februari.<br/><br/><a href="https://crossfitleiden.com/cancellation/" target="_blank" class="faq-link">→ Opzegformulier</a>`,
+        a: `Je kunt je abonnement pauzeren of opzeggen met een opzegtermijn van één kalendermaand. Dat betekent dat na je opzegging je abonnement pas de maand erna stopt.<br/><br/>Voorbeeld: als je op 31 december opzegt, stopt je abonnement per 1 februari.<br/><br/><a href="https://www.crossfitleiden.com/nl/opzeggen" target="_blank" class="faq-link">→ Opzegformulier</a>`,
       },
       {
         q: "Hoe kan ik mijn abonnement pauzeren?",
-        a: `Je kunt je abonnement pauzeren bij reizen, blessure of persoonlijke omstandigheden. De pauzefee is €50 per maand om je plek te behouden.<br/><br/>Bij een blessure of medische reden kun je een directe pauze aanvragen zonder opzegtermijn (met bewijs van je huisarts of fysiotherapeut).<br/><br/><a href="https://kilo.gymleadmachine.com/widget/form/ECApZQcGqg8K5FUnvePt" target="_blank" class="faq-link">→ Pauze aanvragen</a>`,
+        a: `Je kunt je abonnement pauzeren bij reizen, blessure of persoonlijke omstandigheden. De pauzefee is €50 per maand om je plek te behouden.<br/><br/>Bij een blessure of medische reden kun je een directe pauze aanvragen zonder opzegtermijn (met bewijs van je huisarts of fysiotherapeut).<br/><br/><a href="https://links.gymops.nl/widget/form/9vXZ8MOHQwySdb0hhJAK" target="_blank" class="faq-link">→ Pauze aanvragen</a>`,
       },
       {
         q: "Hoe kan ik upgraden of downgraden?",
@@ -52,7 +52,7 @@ const CATEGORIES = [
       },
       {
         q: "Bieden jullie drop-in classes aan?",
-        a: `Ja, voor bezoekers met minimaal 6 maanden CrossFit-ervaring. Niet alle klassen zijn beschikbaar voor drop-ins – we geven voorrang aan onze leden tijdens piekmomenten.`,
+        a: `Ja, voor bezoekers met minimaal 6 maanden CrossFit-ervaring. Niet alle klassen zijn beschikbaar voor drop-ins – we geven voorrang aan onze leden tijdens piekmomenten.<br/><br/><a href="https://www.crossfitleiden.com/nl/info/drop-in?page_history=%2Fnl+-%3E+%2Fnl%2Fopzeggen+-%3E+%2Fnl%2Finfo%2Fdrop-in" target="_blank" class="faq-link">→ Drop-in boeken</a>`,
       },
       {
         q: "Zijn er gezins- of koppelkortingen?",
@@ -68,7 +68,7 @@ const CATEGORIES = [
       },
       {
         q: "Hoe boek ik een Goal Review?",
-        a: `Een Goal Review is inbegrepen bij je abonnement en kun je elke 90 dagen boeken.<br/><br/><a href="https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/goalreview" target="_blank" class="faq-link">→ Goal Review boeken</a>`,
+        a: `Een Goal Review is inbegrepen bij je abonnement en kun je elke 90 dagen boeken.<br/><br/><a href="https://links.gymops.nl/widget/bookings/grgym" target="_blank" class="faq-link">→ Goal Review boeken</a>`,
       },
     ],
   },
@@ -132,6 +132,10 @@ const CATEGORIES = [
       {
         q: "Wat is het aanmeld- en afmeldbeleid?",
         a: `<strong>Aanmelden:</strong> Tot 1 week van tevoren en tot op het laatste moment<br/><strong>Afmelden:</strong> Tot 2 uur van tevoren zonder credit te verliezen<br/><strong>Vroege lessen & weekendlessen:</strong> Minimaal 8 uur van tevoren afmelden<br/><strong>Te laat afmelden:</strong> Kost een credit`,
+      },
+      {
+        q: "Wanneer worden lessen gecanceld door CrossFit Leiden?",
+        a: `We cancelen een les alleen als er minder dan 3 boekingen zijn. In dat geval nemen we altijd persoonlijk contact op met de 1 of 2 deelnemers, minimaal 2 uur van tevoren. We cancelen alleen als we iedereen kunnen bereiken en bieden altijd een alternatief aan, zoals een andere les op dezelfde dag of een ander moment.`,
       },
     ],
   },
@@ -222,7 +226,7 @@ const CATEGORIES = [
     subtitle: "1-op-1 coaching & tarieven",
     color: "#EF4C37",
     actions: [
-      { label: "Goal Review boeken", href: "https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/goalreview" },
+      { label: "Goal Review boeken", href: "https://links.gymops.nl/widget/bookings/grgym" },
     ],
     faqs: [
       {
@@ -231,7 +235,7 @@ const CATEGORIES = [
       },
       {
         q: "Hoe boek ik een PT sessie?",
-        a: `Begin met een Goal Review om je doelen te bespreken. Daarna plan je samen met je coach een traject van 5-10 sessies. Niet zeker welke coach? Neem contact op via Member Services.<br/><br/><a href="https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/goalreview" target="_blank" class="faq-link">→ Goal Review boeken</a>`,
+        a: `Begin met een Goal Review om je doelen te bespreken. Daarna plan je samen met je coach een traject van 5-10 sessies. Niet zeker welke coach? Neem contact op via Member Services.<br/><br/><a href="https://links.gymops.nl/widget/bookings/grgym" target="_blank" class="faq-link">→ Goal Review boeken</a>`,
       },
       {
         q: "Wat kost Personal Training?",
@@ -251,19 +255,15 @@ const CATEGORIES = [
     id: "nutrition",
     icon: "🥗",
     title: "Voeding & Lifestyle",
-    subtitle: "Coaching, InBody & programma's",
+    subtitle: "Coaching & programma's",
     color: "#F7CB15",
     actions: [
-      { label: "Gratis voedingsintake boeken", href: "https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/free-intro-nutrition" },
+      { label: "Gratis voedingsintake boeken", href: "https://links.gymops.nl/widget/bookings/cflnutritionintro" },
     ],
     faqs: [
       {
         q: "Bieden jullie voedingsadvies of -plannen aan?",
-        a: `<strong>1. Nutrition Kickstart</strong><br/>Hetzelfde programma als nieuwe leden volgen, op maat gemaakt. Investering: €220 voor 4 weken.<br/><br/><strong>2. Nutrition 1-op-1 Coaching</strong><br/>Volledig gepersonaliseerd programma met een coach. Investering: €350/maand.<br/><br/><a href="https://kilo.gymleadmachine.com/widget/bookings/crossfitleiden/free-intro-nutrition" target="_blank" class="faq-link">→ Gratis voedingsintake boeken</a>`,
-      },
-      {
-        q: "Kan ik alleen een InBody meting doen?",
-        a: `Nee, we bieden geen losse InBody metingen aan. De InBody is een waardevol hulpmiddel dat we gebruiken als onderdeel van onze coaching programma's.`,
+        a: `<strong>1. Nutrition Kickstart</strong><br/>Hetzelfde programma als nieuwe leden volgen, op maat gemaakt. Investering: €220 voor 4 weken.<br/><br/><strong>2. Nutrition 1-op-1 Coaching</strong><br/>Volledig gepersonaliseerd programma met een coach. Investering: €350/maand.<br/><br/><a href="https://links.gymops.nl/widget/bookings/cflnutritionintro" target="_blank" class="faq-link">→ Gratis voedingsintake boeken</a>`,
       },
     ],
   },
