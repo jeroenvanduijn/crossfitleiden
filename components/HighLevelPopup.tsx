@@ -13,6 +13,25 @@ export default function HighLevelPopup() {
     script.async = true;
     document.body.appendChild(script);
 
+    // Luister naar succesvolle formulier inzendingen van GHL
+    const handleGHLMessage = (e: MessageEvent) => {
+      if (e.data?.type === 'hsFormCallback' && e.data?.eventName === 'onFormSubmit') {
+        // Formulier is succesvol verzonden! Stuur event naar GA4:
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'generate_lead', {
+            'event_category': 'engagement',
+            'event_label': 'HighLevel Intake Form'
+          });
+        }
+
+        // Sluit de popup na 3 seconden
+        setTimeout(() => {
+          (window as any).closeCFLPopup();
+        }, 3000);
+      }
+    };
+    window.addEventListener('message', handleGHLMessage);
+
     // Open popup function (called by CTA buttons via window.openCFLPopup())
     (window as any).openCFLPopup = () => {
       const modal = document.getElementById('cfl-popup-modal');
@@ -53,6 +72,7 @@ export default function HighLevelPopup() {
     }
 
     return () => {
+      window.removeEventListener('message', handleGHLMessage);
       document.removeEventListener('keydown', handleEscKey);
       if (modal) {
         modal.removeEventListener('click', handleOverlayClick);
