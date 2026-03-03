@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import LayoutWrapper from "@/components/LayoutWrapper";
@@ -104,7 +104,18 @@ export default async function LocaleLayout({
             <PageHistoryTracker />
           </LayoutWrapper>
         </NextIntlClientProvider>
-        <GoogleAnalytics gaId="G-JPD4QBBYZ3" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JPD4QBBYZ3"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JPD4QBBYZ3');
+          `}
+        </Script>
         <Analytics />
         <SpeedInsights />
       </body>
