@@ -1,3 +1,13 @@
+/**
+ * STARTEN PAGE — /nl/starten | /en/starten
+ * 
+ * Dit is de pagina waar nieuwe leads hun No Sweat Intro / intake kunnen boeken.
+ * Bevat twee GHL booking calendars: Fysieke Intro (in de gym) en Online Intro (video call).
+ * 
+ * Na het invullen van het popup-formulier (HighLevelPopup) worden leads hierheen geredirect.
+ * 
+ * Keywords: intake, agenda, booking, calendar, no sweat intro, gratis intro, intake-plannen
+ */
 "use client";
 
 import { useEffect } from "react";
