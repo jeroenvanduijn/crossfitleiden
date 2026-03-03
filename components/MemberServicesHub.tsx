@@ -317,7 +317,7 @@ const CATEGORIES = [
       },
       {
         q: "Kan ik een factuur krijgen?",
-        a: `Ja, download facturen zelf via de mobiele app: My Account → Bills & Invoices.`,
+        a: `Ja, download facturen zelf via de mobiele app: My Account → Bills & Invoices.<br/><br/>Lukt het niet via de app? Dan kun je ook inloggen via de webversie:<br/><a href="https://creativesportscompany.sportbitapp.nl/web/nl/login" target="_blank" class="faq-link">→ Inloggen op SportBit Web</a><br/><br/>Klik na het inloggen op je naam in de titelbalk en kies <strong>Bestellingen</strong> om je facturen te downloaden.<br/><br/><img src="/images/sportbit-bestellingen.png" alt="SportBit Bestellingen menu" style="max-width:320px;width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.1);margin-top:8px;" />`,
       },
     ],
   },
