@@ -15,7 +15,8 @@ export default function HighLevelPopup() {
 
     // Luister naar succesvolle formulier inzendingen van GHL
     const handleGHLMessage = (e: MessageEvent) => {
-      if (e.data?.type === 'hsFormCallback' && e.data?.eventName === 'onFormSubmit') {
+      // GHL stuurt array-berichten: ["set-sticky-contacts", "_ud", data, locationId, contactId]
+      if (Array.isArray(e.data) && e.data[0] === 'set-sticky-contacts' && e.data[1] === '_ud') {
         // Formulier is succesvol verzonden! Stuur event naar GA4:
         if (typeof window !== 'undefined' && (window as any).gtag) {
           (window as any).gtag('event', 'generate_lead', {
@@ -23,11 +24,6 @@ export default function HighLevelPopup() {
             'event_label': 'HighLevel Intake Form'
           });
         }
-
-        // Sluit de popup na 3 seconden
-        setTimeout(() => {
-          (window as any).closeCFLPopup();
-        }, 3000);
       }
     };
     window.addEventListener('message', handleGHLMessage);
