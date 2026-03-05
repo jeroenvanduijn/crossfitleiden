@@ -1,5 +1,5 @@
 ---
-description: Checklist die na elke website-wijziging doorlopen moet worden om niets te vergeten.
+description: VERPLICHT uitvoeren na het aanmaken, wijzigen of verwijderen van pagina's, componenten of vertalingen. Doorloop deze checklist aan het einde van elke taak die de website wijzigt.
 ---
 
 # Post-Update Checklist
