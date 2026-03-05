@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import CTAButton from "@/components/CTAButton";
 import HighLevelPopup from "@/components/HighLevelPopup";
 import KickstartBlock from "@/components/KickstartBlock";
@@ -12,6 +12,7 @@ import { useInView } from "@/hooks/useInView";
 
 export default function Home() {
   const t = useTranslations('home');
+  const locale = useLocale();
 
   // Scroll-triggered animation hooks for each section
   const { ref: whyRef, isInView: whyInView } = useInView();
@@ -450,6 +451,24 @@ export default function Home() {
               <p className="text-gray-700 mt-4">
                 {t('faq.a6')}
               </p>
+            </details>
+
+            {/* FAQ 7 - Body-APK */}
+            <details className="bg-organic-bg rounded-lg p-6 shadow-sm group">
+              <summary className="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                <span>{t('faq.q7')}</span>
+                <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="mt-4 space-y-3">
+                <p className="text-gray-700">
+                  {t('faq.a7')}
+                </p>
+                <Link href={`/${locale}/aanbod/body-apk`} className="inline-block text-cinnabar font-semibold hover:underline text-sm">
+                  Meer over Body-APK →
+                </Link>
+              </div>
             </details>
           </div>
         </div>

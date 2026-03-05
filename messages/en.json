@@ -105,7 +105,9 @@
       "q5": "I really don't have time, with work and kids...",
       "a5": "We understand! That's why our classes last exactly 1 hour (including warm-up and cool-down). Our classes run from 06:00 to 22:00, so there's always a time that fits. Many members come before work, during lunch break or in the evening when the kids are in bed.",
       "q6": "What happens during the Free Intro?",
-      "a6": "The intro lasts 20-30 minutes. We get to know you, talk about your goals and concerns, show you the box and answer all your questions. You do NOT have to work out during this intro – just getting to know each other. Afterwards we create a plan together if you want to continue. No commitments, no pressure!"
+      "a6": "The intro lasts 20-30 minutes. We get to know you, talk about your goals and concerns, show you the box and answer all your questions. You do NOT have to work out during this intro – just getting to know each other. Afterwards we create a plan together if you want to continue. No commitments, no pressure!",
+      "q7": "I have recurring pain or complaints. Can I still exercise?",
+      "a7": "Absolutely, you're in the right place. We work with a movement specialist who can first analyze you through a Body-APK: an in-depth posture and movement analysis. This way we know exactly how to help you move safely. No membership required."
     },
     "memberStory": {
       "title": "Real member stories",
@@ -395,10 +397,11 @@
         "description": "For people with recurring pain or physical limitations. You train for 12 weeks in a small group on mobility, strength and movement quality, with a plan completely tailored to your body."
       },
       "bodyApk": {
-        "title": "Body APK",
-        "subtitle": "intake for UnlockMotion — included with UnlockMotion",
+        "title": "Body-APK",
+        "subtitle": "In-depth posture & movement analysis",
         "price": "€220",
-        "description": "A complete check of your posture, mobility and movements. You discover why you have (or get) complaints and receive a clear action plan."
+        "description": "In-depth posture and movement analysis by coach Jari. You receive slow-motion footage of your movement, posture photos and concrete next steps. No membership required. No obligation to continue.",
+        "link": "More about Body-APK →"
       },
       "pt": {
         "title": "Personal Training",
@@ -602,7 +605,7 @@
       "jari": {
         "name": "Jari Jansen",
         "role": "Movement Specialist",
-        "story": "Jari teaches small group classes, Unlock Motion sessions, and workshops. He helps members with pain, limited mobility, or technique. If you're dealing with something, chances are Jari can help you solve it."
+        "story": "Jari is our movement specialist. In addition to small group and Unlock Motion classes, he guides the Body-APK: an in-depth posture and movement analysis. He doesn't just look at where you feel pain, but at how your body moves as a whole. Have recurring pain or limitations? Jari is the coach who can help you move forward."
       },
       "max": {
         "name": "Max",

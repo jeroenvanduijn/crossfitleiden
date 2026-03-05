@@ -54,6 +54,20 @@ export default function OpzeggenPage() {
             </div>
           </div>
 
+          {/* Body-APK suggestion before cancellation */}
+          <div className="mb-8 bg-cinnabar/5 border-l-4 border-cinnabar rounded-r-xl p-6">
+            <h3 className="text-lg font-bold mb-2">Stoppen vanwege klachten of pijn?</h3>
+            <p className="text-gray-700 mb-3">
+              Voordat je opzegt: overweeg een Body-APK. Dit is een diepgaande houding- en bewegingsanalyse waarmee we de oorzaak van je klachten in kaart brengen. Geen lidmaatschap nodig.
+            </p>
+            <a
+              href={`/${locale}/aanbod/body-apk`}
+              className="inline-block text-cinnabar font-semibold hover:underline"
+            >
+              Meer over Body-APK →
+            </a>
+          </div>
+
           {/* HighLevel Cancellation Form */}
           <div className="bg-stone-50 rounded-xl p-8">
             <h3 className="text-xl font-bold mb-6 text-center">Opzegformulier</h3>

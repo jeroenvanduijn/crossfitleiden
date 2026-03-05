@@ -39,6 +39,7 @@ export default function Header() {
         { name: t('personalTraining'), href: `/${locale}/aanbod/private-coaching` },
         { name: t('hyrox'), href: `/${locale}/aanbod/hyrox` },
         { name: t('fysiofabriek'), href: `/${locale}/aanbod/fysiofabriek` },
+        { name: 'Body-APK', href: `/${locale}/aanbod/body-apk` },
         { name: t('sportPerformance'), href: `/${locale}/aanbod/sport-performance` },
         { name: t('nutrition'), href: `/${locale}/nutrition` },
         { name: t('teens'), href: `/${locale}/aanbod/teens` },
@@ -141,8 +142,8 @@ export default function Header() {
               <button
                 onClick={() => switchLocale('nl')}
                 className={`font-medium transition-colors ${locale === 'nl'
-                    ? 'text-gray-700'
-                    : 'text-gray-400 hover:text-[#E4572E]'
+                  ? 'text-gray-700'
+                  : 'text-gray-400 hover:text-[#E4572E]'
                   }`}
               >
                 NL
@@ -151,8 +152,8 @@ export default function Header() {
               <button
                 onClick={() => switchLocale('en')}
                 className={`transition-colors ${locale === 'en'
-                    ? 'text-gray-700 font-medium'
-                    : 'text-gray-400 hover:text-[#E4572E]'
+                  ? 'text-gray-700 font-medium'
+                  : 'text-gray-400 hover:text-[#E4572E]'
                   }`}
               >
                 EN
@@ -253,8 +254,8 @@ export default function Header() {
                 <button
                   onClick={() => switchLocale('nl')}
                   className={`font-medium transition-colors ${locale === 'nl'
-                      ? 'text-gray-700'
-                      : 'text-gray-400 hover:text-[#E4572E]'
+                    ? 'text-gray-700'
+                    : 'text-gray-400 hover:text-[#E4572E]'
                     }`}
                 >
                   NL
@@ -263,8 +264,8 @@ export default function Header() {
                 <button
                   onClick={() => switchLocale('en')}
                   className={`transition-colors ${locale === 'en'
-                      ? 'text-gray-700 font-medium'
-                      : 'text-gray-400 hover:text-[#E4572E]'
+                    ? 'text-gray-700 font-medium'
+                    : 'text-gray-400 hover:text-[#E4572E]'
                     }`}
                 >
                   EN

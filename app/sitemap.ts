@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/aanbod/workshops', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/aanbod/sport-performance', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/aanbod/fysiofabriek', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/aanbod/body-apk', priority: 0.8, changeFrequency: 'monthly' },
 
     // About pages
     { path: '/over-ons', priority: 0.8, changeFrequency: 'monthly' },

@@ -103,7 +103,7 @@ export default async function SemiPrivate() {
               <div className="text-4xl mb-4">🧘</div>
               <h3 className="text-2xl font-bold mb-3">Unlock Motion</h3>
               <p className="text-gray-700 mb-4">
-                Unlock Motion is ons semi private programma voor iedereen die beter wil bewegen. Je start met een Body APK waarin we kijken naar compensaties, houding, ademhaling en bewegingspatronen. Vanuit daar maken we een persoonlijk plan om pijnvrijer, sterker en stabieler te bewegen. Denk aan betere core kracht, betere mobiliteit en een betere basishouding.
+                Unlock Motion is ons semi private programma voor iedereen die beter wil bewegen. Je start met een <Link href={`/${locale}/aanbod/body-apk`} className="text-cinnabar font-semibold hover:underline">Body-APK</Link> waarin we kijken naar compensaties, houding, ademhaling en bewegingspatronen. Vanuit daar maken we een persoonlijk plan om pijnvrijer, sterker en stabieler te bewegen. Denk aan betere core kracht, betere mobiliteit en een betere basishouding.
               </p>
 
               {/* Coach */}

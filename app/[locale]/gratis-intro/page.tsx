@@ -128,6 +128,14 @@ export default function GratisIntroPage() {
                 <p className="text-gray-700">Boodschappen tillen. Met je kids spelen. Energie overhouden na je werk. Daar trainen we voor.</p>
               </div>
             </div>
+
+            <div className="bg-organic-bg rounded-xl p-6 flex items-start gap-4">
+              <span className="text-verdigris text-2xl font-bold">✓</span>
+              <div>
+                <h3 className="font-bold mb-2">Je hebt terugkerende klachten of pijn</h3>
+                <p className="text-gray-700">We kijken samen wat het beste past. Een <a href="/nl/aanbod/body-apk" className="text-cinnabar font-semibold hover:underline">Body-APK</a> kan een goede eerste stap zijn.</p>
+              </div>
+            </div>
           </div>
 
           <div className="mt-12 text-center">

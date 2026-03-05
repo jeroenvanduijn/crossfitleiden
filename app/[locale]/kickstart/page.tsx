@@ -31,7 +31,7 @@ const content = {
         { emoji: "👋", title: "Nieuwe Start", description: "Nog nooit CrossFit gedaan of lang niet gesport? We starten op jouw niveau." },
         { emoji: "👨‍👩‍👧‍👦", title: "Drukke Ouders", description: "Heb je structuur en een duidelijk plan nodig? De Kickstart geeft je houvast." },
         { emoji: "⏸️", title: "Weer Beginnen", description: "Wil je (opnieuw) starten of heropbouwen? We pakken rustig op vanaf waar jij staat." },
-        { emoji: "🩹", title: "Veilig Trainen", description: "Onzeker of oude blessure? We passen alles aan op jouw situatie en bouwen veilig op." }
+        { emoji: "🩹", title: "Veilig Trainen", description: "Onzeker of oude blessure? We passen alles aan op jouw situatie en bouwen veilig op. Heb je terugkerende klachten? Bekijk dan ook onze Body-APK." }
       ]
     },
     whatsIncluded: {
@@ -205,7 +205,7 @@ const content = {
         { emoji: "👋", title: "Fresh Start", description: "Never done CrossFit or haven't exercised in a while? We start at your level." },
         { emoji: "👨‍👩‍👧‍👦", title: "Busy Parents", description: "Need structure and a clear plan? The Kickstart provides guidance." },
         { emoji: "⏸️", title: "Starting Again", description: "Want to (re)start or rebuild? We'll pick up calmly from where you are." },
-        { emoji: "🩹", title: "Training Safely", description: "Uncertain or old injury? We adapt everything to your situation and build safely." }
+        { emoji: "🩹", title: "Training Safely", description: "Uncertain or old injury? We adapt everything to your situation and build safely. Have recurring complaints? Check out our Body-APK as well." }
       ]
     },
     whatsIncluded: {

@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import IntroCtaSection from "@/components/IntroCtaSection";
 
 // Branded SVGs for Comparison Section
@@ -168,6 +169,7 @@ const DiamondIcon = ({
 
 export default function Tarieven() {
   const t = useTranslations('pricing');
+  const locale = useLocale();
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   const toggleSection = (section: string) => {
@@ -609,6 +611,10 @@ export default function Tarieven() {
                       <p className="text-gray-700">
                         {t('programs.bodyApk.description')}
                       </p>
+
+                      <Link href={`/${locale}/aanbod/body-apk`} className="inline-block text-cinnabar font-semibold hover:underline">
+                        {t('programs.bodyApk.link')}
+                      </Link>
                     </div>
                   </div>
                 )}

@@ -164,6 +164,11 @@ export default async function Groepslessen() {
                     Vertel het gewoon aan de coach! We hebben veel ervaring met het aanpassen van oefeningen.
                     Oude knie? Rugpijn? We werken eromheen en zorgen dat je veilig kunt trainen zonder risico.
                   </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    Blijven je klachten terugkomen? Overweeg een{' '}
+                    <Link href={`/${locale}/aanbod/body-apk`} className="text-cinnabar font-semibold hover:underline">Body-APK</Link>
+                    {' '}— een diepgaande bewegingsanalyse om de oorzaak te achterhalen.
+                  </p>
                 </div>
               </div>
 

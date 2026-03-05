@@ -252,6 +252,22 @@ export default async function FysiofabriekPage() {
         </div>
       </section>
 
+      {/* Body-APK Cross-sell */}
+      <section className="section-padding bg-cinnabar/5">
+        <div className="container-custom max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-4">Terugkerende klachten?</h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Naast fysiotherapie bieden we ook de Body-APK aan: een diepgaande houding- en bewegingsanalyse door onze bewegingsspecialist. Zo achterhalen we niet alleen waar je pijn voelt, maar ook waarom.
+          </p>
+          <Link
+            href={`/${locale}/aanbod/body-apk`}
+            className="inline-block bg-cinnabar text-white px-8 py-4 rounded-lg font-bold hover:bg-cinnabar/90 transition-all shadow-md"
+          >
+            Meer over Body-APK
+          </Link>
+        </div>
+      </section>
+
       {/* CTA */}
       <IntroCtaSection
         title="Nieuw bij CrossFit Leiden?"

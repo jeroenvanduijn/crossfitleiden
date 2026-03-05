@@ -220,6 +220,34 @@ const CATEGORIES = [
     ],
   },
   {
+    id: "bodyapk",
+    icon: "🔍",
+    title: "Body-APK",
+    subtitle: "Houding- en bewegingsanalyse",
+    color: "#EF4C37",
+    actions: [
+      { label: "Body-APK pagina", href: "/nl/aanbod/body-apk" },
+    ],
+    faqs: [
+      {
+        q: "Wat is de Body-APK?",
+        a: `De Body-APK is een diepgaande houding- en bewegingsanalyse uitgevoerd door coach Jari (Movement Specialist). Hij kijkt naar je houding, ademhaling en bewegingspatronen. Je krijgt slow-motion beelden, houdingsfoto's en concrete vervolgstappen. <strong>Geen lidmaatschap nodig</strong> en <strong>geen verplicht vervolg</strong>.`,
+      },
+      {
+        q: "Voor wie is de Body-APK geschikt?",
+        a: `De Body-APK is geschikt voor:<br/><br/>• Mensen met <strong>terugkerende klachten of pijn</strong> die niet overgaan<br/>• Mensen die <strong>al van alles geprobeerd hebben</strong> (fysio, osteopaat, massage) zonder blijvend resultaat<br/>• Iedereen die wil begrijpen <strong>hoe zijn/haar lichaam beweegt</strong> en waar verbeterpunten liggen<br/><br/>Je hoeft geen lid te zijn van CrossFit Leiden.`,
+      },
+      {
+        q: "Wat kost de Body-APK?",
+        a: `De Body-APK kost <strong>€220</strong>. Dit is een eenmalige investering. Je krijgt een volledige analyse inclusief foto's, slow-motion beelden en een persoonlijk actieplan.`,
+      },
+      {
+        q: "Hoe boek ik een Body-APK?",
+        a: `Het begint met een gratis telefonisch kennismakingsgesprek van 15 minuten met coach Jari. Daarin bespreken we of de Body-APK de juiste stap voor je is.<br/><br/><a href="/nl/aanbod/body-apk" class="faq-link">→ Boek een gratis kennismaking</a>`,
+      },
+    ],
+  },
+  {
     id: "pt",
     icon: "🎯",
     title: "Personal Training",

@@ -105,7 +105,9 @@
       "q5": "Heb ik echt geen tijd, met werk en kinderen...",
       "a5": "We snappen dat! Daarom duren onze lessen precies 1 uur (inclusief warming-up en cooling-down). Onze lessen lopen van 06:00 tot 22:00, dus er is altijd een moment dat past. Veel leden komen voor het werk, in de lunchpauze of 's avonds als de kids op bed liggen.",
       "q6": "Wat gebeurt er tijdens de Gratis Intro?",
-      "a6": "De intro duurt 20-30 minuten. We leren je kennen, praten over je doelen en zorgen, laten je de box zien en beantwoorden al je vragen. Je hoeft NIET te sporten tijdens deze intro – gewoon kennismaken. Daarna maken we samen een plan als je door wilt. Geen verplichtingen, geen druk!"
+      "a6": "De intro duurt 20-30 minuten. We leren je kennen, praten over je doelen en zorgen, laten je de box zien en beantwoorden al je vragen. Je hoeft NIET te sporten tijdens deze intro – gewoon kennismaken. Daarna maken we samen een plan als je door wilt. Geen verplichtingen, geen druk!",
+      "q7": "Ik heb terugkerende klachten of pijn. Kan ik dan wel sporten?",
+      "a7": "Juist dan ben je bij ons aan het goede adres. We werken met een bewegingsspecialist die je eerst kan analyseren via een Body-APK: een diepgaande houding- en bewegingsanalyse. Zo weten we precies hoe we je veilig kunnen laten bewegen. Geen lidmaatschap nodig."
     },
     "memberStory": {
       "title": "Echte verhalen van leden",
@@ -395,10 +397,11 @@
         "description": "Voor mensen met terugkerende pijn of fysieke beperkingen. Je traint 12 weken in een kleine groep aan mobiliteit, kracht en bewegingskwaliteit, met een plan dat helemaal op jouw lichaam is afgestemd."
       },
       "bodyApk": {
-        "title": "Body APK",
-        "subtitle": "intake voor UnlockMotion — inbegrepen bij UnlockMotion",
+        "title": "Body-APK",
+        "subtitle": "Diepgaande houding- en bewegingsanalyse",
         "price": "€220",
-        "description": "Een volledige check van je houding, mobiliteit en bewegingen. Je ontdekt waarom je klachten hebt (of krijgt) en krijgt een duidelijk actieplan."
+        "description": "Diepgaande houding- en bewegingsanalyse door coach Jari. Je krijgt slow-motion beelden van je beweging, houdingsfoto's en concrete vervolgstappen. Geen lidmaatschap nodig. Geen verplicht vervolg.",
+        "link": "Meer over Body-APK →"
       },
       "pt": {
         "title": "Personal Training",
@@ -602,7 +605,7 @@
       "jari": {
         "name": "Jari Jansen",
         "role": "Movement Specialist",
-        "story": "Jari geeft small group lessen, de Unlock Motion lessen en workshops. Hij helpt leden met pijn, beperkte mobiliteit of techniek. Als jij ergens last van hebt, is de kans groot dat Jari je kan helpen dit op te lossen."
+        "story": "Jari is onze bewegingsspecialist. Naast small group- en Unlock Motion-lessen begeleidt hij de Body-APK: een diepgaande houding- en bewegingsanalyse. Hij kijkt niet alleen naar waar je klachten voelt, maar vooral naar hoe je lichaam als geheel beweegt. Heb je terugkerende pijn of beperkingen? Dan is Jari de coach die je verder helpt."
       },
       "max": {
         "name": "Max",

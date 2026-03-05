@@ -213,6 +213,18 @@ export default async function Aanbod() {
               </p>
               <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
             </Link>
+
+            {/* Body-APK */}
+            <Link href={`/${locale}/aanbod/body-apk`} className="bg-organic-bg rounded-xl p-6 hover:shadow-lg transition-all group">
+              <div className="text-4xl mb-3">🔍</div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-cinnabar transition-colors">Body-APK</h3>
+              <p className="text-sm text-gray-700 mb-3">
+                {locale === 'nl'
+                  ? 'Diepgaande houding- en bewegingsanalyse. Ontdek waar je klachten vandaan komen.'
+                  : 'In-depth posture and movement analysis. Discover where your complaints come from.'}
+              </p>
+              <p className="text-xs text-cinnabar font-semibold">Meer info →</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -46,6 +46,11 @@ export default async function Ervaringen() {
       vimeoId: "1133807460",
       name: "Fleur",
       title: "300 workouts strong"
+    },
+    {
+      vimeoId: "1169864962",
+      name: "Chantal",
+      title: "Body-APK ervaring"
     }
   ];
 
