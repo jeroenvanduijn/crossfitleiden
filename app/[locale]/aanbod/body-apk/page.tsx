@@ -142,7 +142,7 @@ export default async function BodyAPKPage() {
                         <h3 className="text-xl font-bold mb-4 text-center">
                             {isNl ? 'Bekijk de Body-APK in actie' : 'See the Body-APK in action'}
                         </h3>
-                        <div className="rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
+                        <div className="rounded-xl overflow-hidden shadow-lg w-full">
                             <div className="relative" style={{ padding: '56.25% 0 0 0' }}>
                                 <iframe
                                     src="https://player.vimeo.com/video/1162594482?badge=0&autopause=0&player_id=0&app_id=58479"
