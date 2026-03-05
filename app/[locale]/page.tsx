@@ -220,6 +220,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WAAR BEGIN JIJ? - Two paths */}
+      <section className="section-padding bg-stone-50">
+        <div className="container-custom">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {locale === 'nl' ? 'Waar begin jij?' : 'Where do you start?'}
+            </h2>
+            <p className="text-lg text-gray-600">
+              {locale === 'nl'
+                ? 'Iedereen begint ergens anders. Kies het pad dat bij jou past.'
+                : 'Everyone starts somewhere different. Choose the path that suits you.'}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* No Sweat Intro */}
+            <div className="bg-organic-bg rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-4xl mb-4">☕</div>
+              <h3 className="text-xl font-bold mb-3">
+                {locale === 'nl' ? 'Ik wil starten met sporten' : 'I want to start exercising'}
+              </h3>
+              <p className="text-gray-700 mb-6">
+                {locale === 'nl'
+                  ? 'Begin met een gratis, vrijblijvend kennismakingsgesprek. Geen workout, gewoon koffie en een goed gesprek over jouw doelen.'
+                  : 'Start with a free, no-commitment introductory meeting. No workout, just coffee and a good conversation about your goals.'}
+              </p>
+              <CTAButton variant="white-bg">
+                {locale === 'nl' ? 'Plan een No Sweat Intro' : 'Schedule a No Sweat Intro'}
+              </CTAButton>
+            </div>
+
+            {/* Body-APK */}
+            <Link href={`/${locale}/aanbod/body-apk`} className="bg-organic-bg rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow group block">
+              <div className="text-4xl mb-4">🔍</div>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-cinnabar transition-colors">
+                {locale === 'nl' ? 'Ik heb terugkerende klachten' : 'I have recurring complaints'}
+              </h3>
+              <p className="text-gray-700 mb-6">
+                {locale === 'nl'
+                  ? 'Al van alles geprobeerd? Start met een Body-APK: een diepgaande houding- en bewegingsanalyse. Geen lidmaatschap nodig.'
+                  : 'Tried everything already? Start with a Body-APK: an in-depth posture and movement analysis. No membership required.'}
+              </p>
+              <span className="inline-block text-cinnabar font-semibold group-hover:underline">
+                {locale === 'nl' ? 'Meer over Body-APK →' : 'More about Body-APK →'}
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 4. KICKSTART BLOCK - 28-day Beginner Program */}
       <KickstartBlock />
 
