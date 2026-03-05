@@ -136,6 +136,31 @@ export default async function BodyAPKPage() {
                             </p>
                         </div>
                     </div>
+
+                    {/* Video: Jari introduces Body-APK */}
+                    <div className="mt-10">
+                        <h3 className="text-xl font-bold mb-4 text-center">
+                            {isNl ? 'Bekijk de Body-APK in actie' : 'See the Body-APK in action'}
+                        </h3>
+                        <div className="rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
+                            <div className="relative" style={{ padding: '56.25% 0 0 0' }}>
+                                <iframe
+                                    src="https://player.vimeo.com/video/1162594482?badge=0&autopause=0&player_id=0&app_id=58479"
+                                    frameBorder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%'
+                                    }}
+                                    title={isNl ? 'Body-APK in actie met coach Jari' : 'Body-APK in action with coach Jari'}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
