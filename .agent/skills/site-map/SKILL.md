@@ -46,6 +46,7 @@ Raadpleeg dit bestand wanneer je een pagina, component of GHL-integratie moet vi
 | `/aanbod/teens` | Teens programma |
 | `/aanbod/pre-teens` | Pre-teens programma |
 | `/aanbod/fysiofabriek` | Fysiotherapie |
+| `/aanbod/body-apk` | Body-APK: houding- en bewegingsanalyse door coach Jari. GHL booking embed (`shoFMv6aUldZKsGsUxfm`) |
 | `/aanbod/workshops` | Workshops |
 
 ### Events (`/events/...`)
@@ -88,6 +89,7 @@ Raadpleeg dit bestand wanneer je een pagina, component of GHL-integratie moet vi
 | Opzeg formulier | `PbjexJEnp4gfrN0xz3vZ` | `opzeggen/page.tsx` |
 | Goal Review booking | `grgym` | `MemberServicesHub.tsx` |
 | Nutrition Intro booking | `cflnutritionintro` | `MemberServicesHub.tsx` |
+| Body-APK Intro Call | `shoFMv6aUldZKsGsUxfm` | `aanbod/body-apk/page.tsx` |
 | Embed script | `https://links.gymops.nl/js/form_embed.js` | Meerdere pagina's |
 
 ---
