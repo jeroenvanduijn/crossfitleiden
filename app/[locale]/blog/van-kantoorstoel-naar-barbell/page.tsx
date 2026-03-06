@@ -37,7 +37,7 @@ export default function BlogPost() {
                     {/* Image */}
                     <div className="aspect-video rounded-xl mb-8 overflow-hidden">
                         <img
-                            src="/images/blog/van-kantoorstoel-naar-barbell.jpg"
+                            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/blog/440-DSC06352.jpg"
                             alt="Training als tegenwicht voor een dag achter het bureau"
                             className="w-full h-full object-cover"
                         />

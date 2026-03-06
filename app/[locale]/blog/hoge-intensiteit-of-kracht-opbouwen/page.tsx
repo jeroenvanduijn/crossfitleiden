@@ -37,7 +37,7 @@ export default function BlogPost() {
                     {/* Image */}
                     <div className="aspect-video rounded-xl mb-8 overflow-hidden">
                         <img
-                            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-80.jpg"
+                            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/blog/6-DSC03078.jpg"
                             alt="CrossFit Leiden training — intensiteit én kracht"
                             className="w-full h-full object-cover"
                         />

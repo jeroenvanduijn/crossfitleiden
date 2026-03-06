@@ -37,7 +37,7 @@ export default function BlogPost() {
                     {/* Image */}
                     <div className="aspect-video rounded-xl mb-8 overflow-hidden">
                         <img
-                            src="/images/blog/terug-in-beweging-zwangerschap.jpg"
+                            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/blog/397-DSC05939.jpg"
                             alt="Vrouw traint na zwangerschap bij CrossFit Leiden"
                             className="w-full h-full object-cover"
                         />
