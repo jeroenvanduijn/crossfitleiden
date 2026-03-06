@@ -61,9 +61,9 @@ export default function BlogPost() {
 
                         <p className="text-lg leading-relaxed">Dat is precies waar het in de meeste gym-discussies mis gaat. Ze praten over methodes. Wij praten over mensen.</p>
 
-                        <p className="text-lg leading-relaxed">CrossFit Leiden bestaat 10 jaar. We hebben inmiddels meer dan 400 mensen zien groeien. Ouders die na de training meer energie hebben voor hun kinderen. Professionals die na een zware werkweek juist die ene les nodig hadden om hun hoofd leeg te maken. En mensen die voor het eerst in jaren weer trots op zichzelf zijn.</p>
+                        <p className="text-lg leading-relaxed">CrossFit Leiden bestaat 10 jaar. We hebben inmiddels meer dan 2000 mensen zien groeien. Ouders die na de training meer energie hebben voor hun kinderen. Professionals die na een zware werkweek juist die ene les nodig hadden om hun hoofd leeg te maken. En mensen die voor het eerst in jaren weer trots op zichzelf zijn.</p>
 
-                        <p className="text-lg leading-relaxed">Die 400 mensen hebben ons één ding geleerd: <strong>niemand heeft precies hetzelfde nodig.</strong></p>
+                        <p className="text-lg leading-relaxed">Die 2000 mensen hebben ons één ding geleerd: <strong>niemand heeft precies hetzelfde nodig.</strong></p>
 
                         <hr className="my-8 border-gray-200" />
 
@@ -89,7 +89,7 @@ export default function BlogPost() {
 
                         <hr className="my-8 border-gray-200" />
 
-                        <h2 className="text-3xl font-bold mt-8 mb-4">De kracht van een community van 400 mensen</h2>
+                        <h2 className="text-3xl font-bold mt-8 mb-4">De kracht van een community van 2000 mensen</h2>
 
                         <p className="text-lg leading-relaxed">Er is iets wat een kleine studio van 8 mensen je niet kan geven: de energie van een grote, diverse community die al jaren samen traint.</p>
 
@@ -131,7 +131,7 @@ export default function BlogPost() {
 
                     {/* Footer note */}
                     <div className="mt-8 text-center text-sm text-gray-500 italic">
-                        CrossFit Leiden, opgericht in 2016. Meer dan 400 leden. Gelegen in Leiden.
+                        CrossFit Leiden, opgericht in 2016. Meer dan 2000 leden. Gelegen in Leiden.
                     </div>
 
                     {/* Back to Blog */}
