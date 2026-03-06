@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/rooster', priority: 0.8, changeFrequency: 'daily' },
     { path: '/ervaringen', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/contact', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/member-service', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/fitness-test', priority: 0.8, changeFrequency: 'monthly' },
 
     // Blog

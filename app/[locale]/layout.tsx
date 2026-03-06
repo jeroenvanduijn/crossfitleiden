@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import PageHistoryTracker from "@/components/PageHistoryTracker";
+import StructuredData from "@/components/StructuredData";
 
 const baseUrl = 'https://www.crossfitleiden.com';
 
@@ -20,12 +21,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
 
   const title = locale === 'nl'
-    ? 'CrossFit Leiden - Everyday people, exceptionally strong'
-    : 'CrossFit Leiden - Everyday people, exceptionally strong';
+    ? 'CrossFit Leiden | CrossFit voor Beginners & Professionals | Gratis Proefles'
+    : 'CrossFit Leiden | CrossFit for Beginners & Professionals | Free Intro';
 
   const description = locale === 'nl'
-    ? 'CrossFit Leiden is meer dan een sportschool – het is een tweede thuis. Gewone mensen, buitengewoon sterk. Kom kennismaken!'
-    : 'CrossFit Leiden is more than a gym – it\'s a second home. Everyday people, exceptionally strong. Come meet us!';
+    ? 'CrossFit Leiden - Persoonlijke coaching voor beginners en gevorderden. Kleine groepen, ervaren trainers. Plan je gratis No Sweat Intro. 265+ 5-sterren reviews.'
+    : 'CrossFit Leiden - Personal coaching for beginners and experienced athletes. Small groups, expert trainers. Schedule your free No Sweat Intro. 265+ 5-star reviews.';
 
   return {
     metadataBase: new URL(baseUrl),
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       template: '%s | CrossFit Leiden',
     },
     description,
-    keywords: ['crossfit', 'leiden', 'fitness', 'gym', 'sport', 'training', 'community'],
+    keywords: ['CrossFit Leiden', 'fitness Leiden', 'groepslessen Leiden', 'personal training Leiden', 'crossfit beginners', 'no sweat intro', 'persoonlijke coaching', 'crossfit', 'gym Leiden', 'sport Leiden'],
     alternates: {
       canonical: `${baseUrl}/${locale}`,
       languages: {
@@ -67,6 +68,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     robots: {
       index: true,
       follow: true,
+    },
+    other: {
+      'geo.region': 'NL-ZH',
+      'geo.placename': 'Leiden',
+      'geo.position': '52.1518;4.4854',
+      'ICBM': '52.1518, 4.4854',
     },
   };
 }
@@ -143,6 +150,7 @@ export default async function LocaleLayout({
         />
         <Analytics />
         <SpeedInsights />
+        <StructuredData />
       </body>
     </html>
   );
