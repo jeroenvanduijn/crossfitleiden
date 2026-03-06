@@ -136,6 +136,11 @@ export default async function LocaleLayout({
             alt=""
           />
         </noscript>
+        <Script
+          src="https://links.gymops.nl/js/external-tracking.js"
+          data-tracking-id="tk_348787a4c93a414996dc9d11481a3c1c"
+          strategy="afterInteractive"
+        />
         <Analytics />
         <SpeedInsights />
       </body>

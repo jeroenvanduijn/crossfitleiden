@@ -55,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/terug-in-beweging-na-zwangerschap', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/blog/van-kantoorstoel-naar-barbell', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/blog/trainen-met-een-blessureverleden', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/blog/hoge-intensiteit-of-kracht-opbouwen', priority: 0.7, changeFrequency: 'monthly' },
 
     // Events
     { path: '/events/hyrox-simulation', priority: 0.7, changeFrequency: 'monthly' },

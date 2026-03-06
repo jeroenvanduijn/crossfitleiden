@@ -9,6 +9,14 @@ export default function Blog() {
   // Blog posts
   const blogPosts = [
     {
+      slug: "hoge-intensiteit-of-kracht-opbouwen",
+      title: "Hoge intensiteit of kracht opbouwen? Bij ons hoef je niet te kiezen.",
+      excerpt: "CrossFit te zwaar? Te veel? Wij denken dat de echte vraag anders is. Ontdek hoe wij intensiteit, coaching en community combineren — al 10 jaar lang.",
+      date: "6 Mrt 2026",
+      category: "Training & Coaching",
+      image: "https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/blog/hero-background-80.jpg",
+    },
+    {
       slug: "crossfit-na-je-40e",
       title: "CrossFit na je 40e: wat verandert er – en wat niet",
       excerpt: "Je bent 42, 47 of 55. En je denkt: is dit nog wel het moment? Goed nieuws. Juist nu. Leer hoe je slim traint na je 40e.",
@@ -106,7 +114,7 @@ export default function Blog() {
     },
   ];
 
-  const categories = ["All", "Training Tips", "Community", "Getting Started", "Gym Philosophy", "Trainen & Herstel", "Voor Moeders", "Trainen & Leven", "Blessures & Schalen"];
+  const categories = ["All", "Training Tips", "Training & Coaching", "Community", "Getting Started", "Gym Philosophy", "Trainen & Herstel", "Voor Moeders", "Trainen & Leven", "Blessures & Schalen"];
 
   return (
     <>

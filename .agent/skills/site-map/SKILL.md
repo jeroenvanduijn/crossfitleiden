@@ -57,6 +57,25 @@ Raadpleeg dit bestand wanneer je een pagina, component of GHL-integratie moet vi
 | `/events/hyrox-simulation` | HYROX simulatie event |
 | `/events/leidse-wintertriatlon` | Leidse Wintertriatlon |
 
+### Blog posts (`/blog/...`)
+
+| Route | Beschrijving |
+|-------|-------------|
+| `/blog` | Blog overzicht |
+| `/blog/hoge-intensiteit-of-kracht-opbouwen` | Hoge intensiteit of kracht opbouwen — intensiteit, coaching & community |
+| `/blog/crossfit-na-je-40e` | CrossFit na je 40e |
+| `/blog/terug-in-beweging-na-zwangerschap` | Terug in beweging na zwangerschap |
+| `/blog/van-kantoorstoel-naar-barbell` | Van kantoorstoel naar barbell |
+| `/blog/trainen-met-een-blessureverleden` | Trainen met een blessureverleden |
+| `/blog/nervous-to-start-one-small-step` | Nervous to start? One small step |
+| `/blog/no-sleeping-members` | No sleeping members |
+| `/blog/more-training-is-not-always-better` | More training is not always better |
+| `/blog/how-to-start-crossfit-when-youre-busy` | How to start when you're busy |
+| `/blog/is-crossfit-safe` | Is CrossFit safe? |
+| `/blog/why-80-percent-start-as-beginners` | Why 80% start as beginners |
+| `/blog/what-happens-during-free-intro` | What happens during a free intro |
+| `/blog/crossfit-for-40-plus-beginners` | CrossFit for 40+ beginners |
+
 ---
 
 ## Belangrijke Componenten (`components/`)
