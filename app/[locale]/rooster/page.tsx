@@ -90,7 +90,7 @@ export default function Rooster() {
                 {/* Hyrox */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
-                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/466-DSC06591-2.jpg" alt={t('groupClasses.hyrox.title')} fill className="object-cover" />
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/466-DSC06591-2.jpg" alt={t('groupClasses.hyrox.title')} fill className="object-cover object-bottom" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.hyrox.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -284,8 +284,8 @@ export default function Rooster() {
               <button
                 onClick={() => setActiveRooster('groepslessen')}
                 className={`flex-1 p-6 rounded-xl border-2 transition-all ${activeRooster === 'groepslessen'
-                    ? 'border-verdigris bg-verdigris/10 shadow-lg'
-                    : 'border-gray-200 bg-organic-bg hover:border-verdigris/50'
+                  ? 'border-verdigris bg-verdigris/10 shadow-lg'
+                  : 'border-gray-200 bg-organic-bg hover:border-verdigris/50'
                   }`}
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
@@ -307,8 +307,8 @@ export default function Rooster() {
               <button
                 onClick={() => setActiveRooster('small-group')}
                 className={`flex-1 p-6 rounded-xl border-2 transition-all ${activeRooster === 'small-group'
-                    ? 'border-cinnabar bg-cinnabar/10 shadow-lg'
-                    : 'border-gray-200 bg-organic-bg hover:border-cinnabar/50'
+                  ? 'border-cinnabar bg-cinnabar/10 shadow-lg'
+                  : 'border-gray-200 bg-organic-bg hover:border-cinnabar/50'
                   }`}
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
