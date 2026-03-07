@@ -183,7 +183,7 @@ export default function Tarieven() {
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/faciliteit/hero-background-15.jpg"
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/tarieven/Gemini_Generated_Image_74mr2z74mr2z74mr.jpg"
             alt={t('hero.imageAlt')}
             fill
             className="object-cover"

@@ -92,6 +92,7 @@ Raadpleeg dit bestand wanneer je een pagina, component of GHL-integratie moet vi
 | `KickstartBlock` | `KickstartBlock.tsx` | Kickstart info blok voor op pagina's |
 | `MemberServicesHub` | `MemberServicesHub.tsx` | Member services FAQ en links hub |
 | `PageHistoryTracker` | `PageHistoryTracker.tsx` | Trackt pagina-navigatie voor GHL |
+| `StructuredData` | `StructuredData.tsx` | JSON-LD structured data: LocalBusiness (NAP, openingstijden, reviews) + FAQPage schema voor Google rich snippets |
 | `CookieConsent` | `CookieConsent.tsx` | Cookie consent banner |
 | `IntroCtaSection` | `IntroCtaSection.tsx` | Intro CTA sectie |
 

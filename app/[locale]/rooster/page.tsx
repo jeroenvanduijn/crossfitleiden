@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
@@ -38,11 +39,21 @@ export default function Rooster() {
 
   return (
     <>
-      {/* Hero - Simplified */}
-      <section className="bg-gradient-to-r from-jonquil to-jonquil/80 text-gray-900 section-padding">
-        <div className="container-custom">
+      {/* Hero - with background image */}
+      <section className="relative bg-organic-text text-white overflow-hidden section-padding">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/CF%20Leiden%20Open%2025.1-23.jpg"
+            alt={t('hero.title')}
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/80 to-gray-900/60"></div>
+        </div>
+        <div className="relative z-20 container-custom">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('hero.title')}</h1>
-          <p className="text-xl max-w-2xl">
+          <p className="text-xl max-w-2xl text-white/90">
             {t('hero.subtitle')}
           </p>
         </div>
@@ -64,8 +75,8 @@ export default function Rooster() {
 
                 {/* Training */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-verdigris to-teal-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">💪</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/_DSC2937.jpg" alt={t('groupClasses.training.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.training.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -78,8 +89,8 @@ export default function Rooster() {
 
                 {/* Hyrox */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-cinnabar to-red-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🏃</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/466-DSC06591-2.jpg" alt={t('groupClasses.hyrox.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.hyrox.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -92,8 +103,8 @@ export default function Rooster() {
 
                 {/* Flex Friday */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-jonquil to-yellow-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🎉</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/_DSC2163.jpg" alt={t('groupClasses.flexFriday.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.flexFriday.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -106,8 +117,8 @@ export default function Rooster() {
 
                 {/* Running */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🏃‍♂️</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/171-DSC04406.jpg" alt={t('groupClasses.running.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.running.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -120,8 +131,8 @@ export default function Rooster() {
 
                 {/* Olympic Lifting */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🏋️</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/CFLeiden-280.jpg" alt={t('groupClasses.olympicLifting.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.olympicLifting.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -134,8 +145,8 @@ export default function Rooster() {
 
                 {/* Teens */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">👦</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/CFLeiden-67.jpg" alt={t('groupClasses.teens.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.teens.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -148,8 +159,8 @@ export default function Rooster() {
 
                 {/* Pre Teens */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🧒</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/CFLeiden-44.jpg" alt={t('groupClasses.preTeens.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.preTeens.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -160,24 +171,12 @@ export default function Rooster() {
                   </p>
                 </div>
 
-                {/* Urban Training */}
-                <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🌆</span>
-                  </div>
-                  <h4 className="text-xl font-bold mb-2">{t('groupClasses.urbanTraining.title')}</h4>
-                  <p className="text-gray-700 text-sm mb-3">
-                    {t('groupClasses.urbanTraining.description')}
-                  </p>
-                  <p className="text-xs text-cinnabar font-semibold">
-                    {t('groupClasses.urbanTraining.for')}
-                  </p>
-                </div>
+
 
                 {/* Mobility */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🧘</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/CFLeiden-238.jpg" alt={t('groupClasses.mobility.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.mobility.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -190,8 +189,8 @@ export default function Rooster() {
 
                 {/* Gymnastics */}
                 <div className="bg-organic-bg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-6xl">🤸</span>
+                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/_DSC5419.jpg" alt={t('groupClasses.gymnastics.title')} fill className="object-cover" />
                   </div>
                   <h4 className="text-xl font-bold mb-2">{t('groupClasses.gymnastics.title')}</h4>
                   <p className="text-gray-700 text-sm mb-3">
@@ -216,8 +215,8 @@ export default function Rooster() {
                     <h4 className="text-xl font-bold">{t('smallGroup.getShredded.title')}</h4>
                     <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
                   </div>
-                  <div className="h-40 bg-gradient-to-br from-orange-400 to-red-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-5xl">🔥</span>
+                  <div className="relative h-40 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/CFLeiden-226.jpg" alt={t('smallGroup.getShredded.title')} fill className="object-cover" />
                   </div>
                   <p className="text-gray-700 text-sm mb-3">
                     {t('smallGroup.getShredded.description')}
@@ -233,8 +232,8 @@ export default function Rooster() {
                     <h4 className="text-xl font-bold">{t('smallGroup.unlockMotion.title')}</h4>
                     <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
                   </div>
-                  <div className="h-40 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-5xl">🔓</span>
+                  <div className="relative h-40 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/_DSC2798.jpg" alt={t('smallGroup.unlockMotion.title')} fill className="object-cover" />
                   </div>
                   <p className="text-gray-700 text-sm mb-3">
                     {t('smallGroup.unlockMotion.description')}
@@ -250,8 +249,8 @@ export default function Rooster() {
                     <h4 className="text-xl font-bold">{t('smallGroup.kickstart.title')}</h4>
                     <span className="bg-cinnabar text-white text-xs px-2 py-1 rounded-full">{t('smallGroup.badge')}</span>
                   </div>
-                  <div className="h-40 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-5xl">🚀</span>
+                  <div className="relative h-40 rounded-lg mb-4 overflow-hidden">
+                    <Image src="https://t18gxeooihdd4vax.public.blob.vercel-storage.com/images/rooster/unnamed%20%281%29.jpg" alt={t('smallGroup.kickstart.title')} fill className="object-cover" />
                   </div>
                   <p className="text-gray-700 text-sm mb-3">
                     {t('smallGroup.kickstart.description')}
@@ -284,11 +283,10 @@ export default function Rooster() {
             <div className="flex flex-col md:flex-row gap-4 max-w-3xl mx-auto">
               <button
                 onClick={() => setActiveRooster('groepslessen')}
-                className={`flex-1 p-6 rounded-xl border-2 transition-all ${
-                  activeRooster === 'groepslessen'
+                className={`flex-1 p-6 rounded-xl border-2 transition-all ${activeRooster === 'groepslessen'
                     ? 'border-verdigris bg-verdigris/10 shadow-lg'
                     : 'border-gray-200 bg-organic-bg hover:border-verdigris/50'
-                }`}
+                  }`}
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-3xl">👥</span>
@@ -308,11 +306,10 @@ export default function Rooster() {
 
               <button
                 onClick={() => setActiveRooster('small-group')}
-                className={`flex-1 p-6 rounded-xl border-2 transition-all ${
-                  activeRooster === 'small-group'
+                className={`flex-1 p-6 rounded-xl border-2 transition-all ${activeRooster === 'small-group'
                     ? 'border-cinnabar bg-cinnabar/10 shadow-lg'
                     : 'border-gray-200 bg-organic-bg hover:border-cinnabar/50'
-                }`}
+                  }`}
               >
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-3xl">🎯</span>
