@@ -11,9 +11,9 @@ export default createMiddleware({
   // Always use locale prefix (e.g., /nl, /en)
   localePrefix: 'always',
 
-  // Enable automatic locale detection based on browser language
-  // Dutch visitors will see /nl, others (with English browser) see /en
-  localeDetection: true
+  // Disable automatic locale detection so all visitors land on /nl by default
+  // Visitors can still manually switch to /en
+  localeDetection: false
 });
 
 export const config = {
