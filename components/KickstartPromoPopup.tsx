@@ -11,21 +11,24 @@ export default function KickstartPromoPopup() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Don't show on kickstart page itself
-    if (pathname?.includes('/kickstart') || pathname?.includes('/starten')) {
+    // Don't show on kickstart, starten, or member-service pages
+    if (pathname?.includes('/kickstart') || pathname?.includes('/starten') || pathname?.includes('/member-service')) {
       return;
     }
 
-    // Check if popup was already shown in this session
-    const hasSeenPopup = sessionStorage.getItem('kickstart-promo-shown');
-    if (hasSeenPopup) {
-      return;
+    // Check if popup was shown in the last 7 days (localStorage persists across sessions)
+    const lastShown = localStorage.getItem('kickstart-promo-last-shown');
+    if (lastShown) {
+      const daysSinceShown = (Date.now() - parseInt(lastShown, 10)) / (1000 * 60 * 60 * 24);
+      if (daysSinceShown < 7) {
+        return;
+      }
     }
 
     // Show popup after 3 seconds
     const timer = setTimeout(() => {
       setIsVisible(true);
-      sessionStorage.setItem('kickstart-promo-shown', 'true');
+      localStorage.setItem('kickstart-promo-last-shown', Date.now().toString());
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -92,9 +95,9 @@ export default function KickstartPromoPopup() {
       marchTitle: "Maart Kickstart",
       marchSpots: "✓ Alle plekken gevuld",
       aprilTitle: "April Kickstart",
-      aprilSpots: "Nog 3 plekken beschikbaar",
+      aprilSpots: "✓ Alle plekken gevuld",
       mayTitle: "Mei Kickstart",
-      maySpots: "Nog 5 plekken beschikbaar",
+      maySpots: "Nog 3 plekken beschikbaar",
       description: "Ons populaire 28-Day Kickstart programma voor beginners. Kleine groepen, persoonlijke begeleiding.",
       cta: "Reserveer je plek →",
       close: "Sluiten"
@@ -105,9 +108,9 @@ export default function KickstartPromoPopup() {
       marchTitle: "March Kickstart",
       marchSpots: "✓ All spots filled",
       aprilTitle: "April Kickstart",
-      aprilSpots: "3 spots available",
+      aprilSpots: "✓ All spots filled",
       mayTitle: "May Kickstart",
-      maySpots: "5 spots available",
+      maySpots: "3 spots available",
       description: "Our popular 28-Day Kickstart program for beginners. Small groups, personal coaching.",
       cta: "Reserve your spot →",
       close: "Close"
@@ -162,23 +165,23 @@ export default function KickstartPromoPopup() {
               </p>
             </div>
 
-            {/* April Kickstart - 3 spots */}
-            <div className="bg-cinnabar/10 border-2 border-cinnabar rounded-xl p-4 mb-3">
+            {/* April Kickstart - FULL */}
+            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-3">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
                 {t.aprilTitle}
               </h3>
-              <p className="text-base font-semibold text-cinnabar">
-                🔥 {t.aprilSpots}
+              <p className="text-base font-semibold text-gray-600">
+                {t.aprilSpots}
               </p>
             </div>
 
-            {/* May Kickstart - 5 spots */}
-            <div className="bg-verdigris/10 border-2 border-verdigris rounded-xl p-4 mb-4">
+            {/* May Kickstart - 3 spots */}
+            <div className="bg-cinnabar/10 border-2 border-cinnabar rounded-xl p-4 mb-4">
               <h3 className="text-lg font-bold text-gray-900 mb-1">
                 {t.mayTitle}
               </h3>
-              <p className="text-base font-semibold text-verdigris">
-                ✨ {t.maySpots}
+              <p className="text-base font-semibold text-cinnabar">
+                🔥 {t.maySpots}
               </p>
             </div>
 
