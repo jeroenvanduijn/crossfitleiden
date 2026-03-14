@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import CTAButton from "./CTAButton";
@@ -10,6 +10,24 @@ import HighLevelPopup from "./HighLevelPopup";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+  const langDropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close language dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (langDropdownRef.current && !langDropdownRef.current.contains(event.target as Node)) {
+        setLangDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const localeConfig = {
+    nl: { flag: '🇳🇱', label: 'Nederlands', code: 'NL' },
+    en: { flag: '🇬🇧', label: 'English', code: 'EN' },
+  };
   const t = useTranslations('header');
   const locale = useLocale();
   const pathname = usePathname();
@@ -137,27 +155,44 @@ export default function Header() {
               </div>
             ))}
 
-            {/* Language Toggle */}
-            <div className="flex items-center space-x-2 text-sm">
+            {/* Language Switch */}
+            <div className="relative" ref={langDropdownRef}>
               <button
-                onClick={() => switchLocale('nl')}
-                className={`font-medium transition-colors ${locale === 'nl'
-                  ? 'text-gray-700'
-                  : 'text-gray-400 hover:text-[#E4572E]'
-                  }`}
+                onClick={() => setLangDropdownOpen(!langDropdownOpen)}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-200 bg-white hover:border-[#E4572E]/40 transition-all text-sm font-medium text-gray-700"
               >
-                NL
+                <span className="text-base leading-none">{localeConfig[locale as keyof typeof localeConfig]?.flag}</span>
+                <span>{localeConfig[locale as keyof typeof localeConfig]?.code}</span>
+                <svg
+                  className={`w-3.5 h-3.5 transition-transform ${langDropdownOpen ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </button>
-              <span className="text-gray-300">|</span>
-              <button
-                onClick={() => switchLocale('en')}
-                className={`transition-colors ${locale === 'en'
-                  ? 'text-gray-700 font-medium'
-                  : 'text-gray-400 hover:text-[#E4572E]'
-                  }`}
-              >
-                EN
-              </button>
+              {langDropdownOpen && (
+                <div className="absolute top-full right-0 mt-1 w-40 bg-white rounded-lg shadow-xl border border-gray-100 py-1 z-50">
+                  {Object.entries(localeConfig).map(([key, config]) => (
+                    <button
+                      key={key}
+                      onClick={() => {
+                        switchLocale(key);
+                        setLangDropdownOpen(false);
+                      }}
+                      className={`w-full flex items-center gap-3 px-4 py-2 text-sm transition-colors ${
+                        locale === key
+                          ? 'bg-[#E4572E]/5 text-[#E4572E] font-medium'
+                          : 'text-gray-700 hover:bg-gray-50'
+                      }`}
+                    >
+                      <span className="text-lg leading-none">{config.flag}</span>
+                      <span>{config.label}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* CTA Button */}
@@ -249,27 +284,25 @@ export default function Header() {
                 </CTAButton>
               </div>
 
-              {/* Language Toggle Mobile */}
-              <div className="flex items-center justify-center space-x-2 text-sm mt-4">
-                <button
-                  onClick={() => switchLocale('nl')}
-                  className={`font-medium transition-colors ${locale === 'nl'
-                    ? 'text-gray-700'
-                    : 'text-gray-400 hover:text-[#E4572E]'
+              {/* Language Switch Mobile */}
+              <div className="flex items-center justify-center gap-3 mt-4">
+                {Object.entries(localeConfig).map(([key, config]) => (
+                  <button
+                    key={key}
+                    onClick={() => {
+                      switchLocale(key);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-md border text-sm font-medium transition-all ${
+                      locale === key
+                        ? 'border-[#E4572E] bg-[#E4572E]/5 text-[#E4572E]'
+                        : 'border-gray-200 text-gray-600 hover:border-[#E4572E]/40'
                     }`}
-                >
-                  NL
-                </button>
-                <span className="text-gray-300">|</span>
-                <button
-                  onClick={() => switchLocale('en')}
-                  className={`transition-colors ${locale === 'en'
-                    ? 'text-gray-700 font-medium'
-                    : 'text-gray-400 hover:text-[#E4572E]'
-                    }`}
-                >
-                  EN
-                </button>
+                  >
+                    <span className="text-base leading-none">{config.flag}</span>
+                    <span>{config.code}</span>
+                  </button>
+                ))}
               </div>
             </div>
           </div>
